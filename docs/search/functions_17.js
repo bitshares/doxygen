@@ -14,8 +14,12 @@ var searchData=
   ['_7eop_5fevaluator',['~op_evaluator',['../classgraphene_1_1chain_1_1op__evaluator.html#a2324fb8242dc8a8bf4b5ac04c24822a6',1,'graphene::chain::op_evaluator']]],
   ['_7epending_5ftransactions_5frestorer',['~pending_transactions_restorer',['../structgraphene_1_1chain_1_1detail_1_1pending__transactions__restorer.html#a4cda6ae279aaddfc8a5ee768b489c10c',1,'graphene::chain::detail::pending_transactions_restorer']]],
   ['_7eplugin',['~plugin',['../classgraphene_1_1app_1_1plugin.html#a175311e034408609d5d145f2e01903be',1,'graphene::app::plugin']]],
+  ['_7eprecomputable_5ftransaction',['~precomputable_transaction',['../classgraphene_1_1chain_1_1precomputable__transaction.html#aad2facec4f2f115417ae89f0c14f2881',1,'graphene::chain::precomputable_transaction']]],
+  ['_7eprocessed_5ftransaction',['~processed_transaction',['../structgraphene_1_1chain_1_1processed__transaction.html#a89d1f2f408d562bb61fd8a40a4ce28fe',1,'graphene::chain::processed_transaction']]],
   ['_7epush_5fproposal_5fnesting_5fguard',['~push_proposal_nesting_guard',['../classgraphene_1_1chain_1_1push__proposal__nesting__guard.html#a7b9832c510a1db2a5370b3610b8cd60b',1,'graphene::chain::push_proposal_nesting_guard']]],
+  ['_7esigned_5ftransaction',['~signed_transaction',['../classgraphene_1_1chain_1_1signed__transaction.html#a7ea0fe8e47f3f07ab6cd9dd9660915ba',1,'graphene::chain::signed_transaction']]],
   ['_7eskip_5fflags_5frestorer',['~skip_flags_restorer',['../structgraphene_1_1chain_1_1detail_1_1skip__flags__restorer.html#a3f28c775efdef54d608d6f4b66101984',1,'graphene::chain::detail::skip_flags_restorer']]],
+  ['_7etransaction',['~transaction',['../classgraphene_1_1chain_1_1transaction.html#a850827b7688680d67a78d48de9f97404',1,'graphene::chain::transaction']]],
   ['_7ewallet_5fapi',['~wallet_api',['../classgraphene_1_1wallet_1_1wallet__api.html#a78315fd1d0d042032b2ceba25d5dc07d',1,'graphene::wallet::wallet_api']]],
   ['_7ewallet_5fapi_5fimpl',['~wallet_api_impl',['../classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a9c7abe57237a9a516eb1780f9273ee18',1,'graphene::wallet::detail::wallet_api_impl']]]
 ];

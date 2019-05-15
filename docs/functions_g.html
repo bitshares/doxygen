@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.0.0</span>
+   &#160;<span id="projectnumber">3.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -319,6 +319,9 @@ $(function() {
 <li>get_current_block_interval_in_seconds()
 : <a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a5a16866ca1ed46f734043f473fad7735">graphene::app::detail::application_impl</a>
 </li>
+<li>get_current_fees()
+: <a class="el" href="structgraphene_1_1chain_1_1chain__parameters.html#aa8bbb193d6a67f5112efa5583c013932">graphene::chain::chain_parameters</a>
+</li>
 <li>get_debt()
 : <a class="el" href="classgraphene_1_1chain_1_1call__order__object.html#a90552c5a02f02441d5b9f9000f22d51b">graphene::chain::call_order_object</a>
 </li>
@@ -365,8 +368,18 @@ $(function() {
 : <a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a169f751575f1c254aba4200fde31a879">graphene::app::detail::application_impl</a>
 </li>
 <li>get_htlc()
-: <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a7f1b28249096cc1bf8452ee4d42a2e7f">graphene::wallet::detail::wallet_api_impl</a>
+: <a class="el" href="classgraphene_1_1app_1_1database__api.html#a24c4ebfde75e1a9db87ddd96d2344ee7">graphene::app::database_api</a>
+, <a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ac87ee11f81219ca653718982d66204d3">graphene::app::database_api_impl</a>
+, <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a7f1b28249096cc1bf8452ee4d42a2e7f">graphene::wallet::detail::wallet_api_impl</a>
 , <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#a6a4975465400ec9dc479541d50d82237">graphene::wallet::wallet_api</a>
+</li>
+<li>get_htlc_by_from()
+: <a class="el" href="classgraphene_1_1app_1_1database__api.html#a4448bcbb3a64f6520da9be9446a10069">graphene::app::database_api</a>
+, <a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a19769ebc5973a7a38cd6bc7ec33d1562">graphene::app::database_api_impl</a>
+</li>
+<li>get_htlc_by_to()
+: <a class="el" href="classgraphene_1_1app_1_1database__api.html#aecc656e996089437b237ed8245f915bc">graphene::app::database_api</a>
+, <a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ac32f81181fd254d200f3790916dae095">graphene::app::database_api_impl</a>
 </li>
 <li>get_id()
 : <a class="el" href="classgraphene_1_1chain_1_1account__object.html#a2a07de0cc9ffd5af2d23156767d61bf7">graphene::chain::account_object</a>
@@ -390,6 +403,8 @@ $(function() {
 <li>get_key_references()
 : <a class="el" href="classgraphene_1_1app_1_1database__api.html#a0266fd5ec4869846461243beb9d7cb59">graphene::app::database_api</a>
 , <a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a752958134298f4bd079913b70228775c">graphene::app::database_api_impl</a>
+, <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a806f0ff3b6386808b93711ace5f011f3">graphene::wallet::detail::wallet_api_impl</a>
+, <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#a6e60b6118bff301c4513cd9cdc76d356">graphene::wallet::wallet_api</a>
 </li>
 <li>get_keys()
 : <a class="el" href="structgraphene_1_1chain_1_1authority.html#ac31f640cad7eb187030ed6cd267f32dd">graphene::chain::authority</a>
@@ -428,6 +443,9 @@ $(function() {
 <li>get_method_names()
 : <a class="el" href="classgraphene_1_1wallet_1_1api__documentation.html#a99527593df4207c775c2bfd446d6c392">graphene::wallet::api_documentation</a>
 </li>
+<li>get_mutable_fees()
+: <a class="el" href="structgraphene_1_1chain_1_1chain__parameters.html#a930e268181829d4850fa60997eb8579d">graphene::chain::chain_parameters</a>
+</li>
 <li>get_my_blind_accounts()
 : <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#a2d4ef36783314e156e6747379faebd3f">graphene::wallet::wallet_api</a>
 </li>
@@ -457,6 +475,9 @@ $(function() {
 <li>get_order_market()
 : <a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a6b507ea1f58b046fce6c0a72e835f33e">graphene::app::database_api_impl</a>
 </li>
+<li>get_owned_required_keys()
+: <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a8d79063ab24c10c0a49e276b704043ae">graphene::wallet::detail::wallet_api_impl</a>
+</li>
 <li>get_owner
 : <a class="el" href="structgraphene_1_1chain_1_1sign__state.html#acc5940a7e517b2160d6faf32f92c8a47">graphene::chain::sign_state</a>
 </li>
@@ -465,7 +486,7 @@ $(function() {
 , <a class="el" href="classgraphene_1_1chain_1_1transaction.html#ab41ae96311081467912e6722d3fe8592">graphene::chain::transaction</a>
 </li>
 <li>get_plugin()
-: <a class="el" href="classgraphene_1_1app_1_1application.html#a4484ef04016fe6d470d694376c3387a4">graphene::app::application</a>
+: <a class="el" href="classgraphene_1_1app_1_1application.html#a8a9a475ccf5b1c271e757c7c52b8b80f">graphene::app::application</a>
 </li>
 <li>get_potential_address_signatures()
 : <a class="el" href="classgraphene_1_1app_1_1database__api.html#ae40d3a430ca023b53c09f92351d9e904">graphene::app::database_api</a>
@@ -601,6 +622,10 @@ $(function() {
 <li>get_transaction_id()
 : <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#a1aa926a58bec526fa357dda9d3ea1833">graphene::wallet::wallet_api</a>
 </li>
+<li>get_transaction_signers()
+: <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a1327920224765a57faea4ecde709a7fb">graphene::wallet::detail::wallet_api_impl</a>
+, <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#a964c79f5e9dad305f01b21017fee767a">graphene::wallet::wallet_api</a>
+</li>
 <li>get_type()
 : <a class="el" href="classgraphene_1_1chain_1_1evaluator.html#a1fc01577ffad44dfa3283a5a1c79a7e6">graphene::chain::evaluator&lt; DerivedEvaluator &gt;</a>
 , <a class="el" href="classgraphene_1_1chain_1_1generic__evaluator.html#adfbfe3f65ee5a2e72865dc8e8c38f83b">graphene::chain::generic_evaluator</a>
@@ -683,7 +708,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 27 2019 15:04:33 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 15 2019 16:11:12 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

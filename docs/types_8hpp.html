@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.0.0</span>
+   &#160;<span id="projectnumber">3.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -90,7 +90,6 @@ $(function() {
 <code>#include &lt;fc/io/raw.hpp&gt;</code><br />
 <code>#include &lt;fc/uint128.hpp&gt;</code><br />
 <code>#include &lt;fc/static_variant.hpp&gt;</code><br />
-<code>#include &lt;fc/smart_ref_fwd.hpp&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;deque&gt;</code><br />
@@ -119,6 +118,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1extended__private__key__type.html">graphene::chain::extended_private_key_type</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1extended__private__key__type_1_1binary__key.html">graphene::chain::extended_private_key_type::binary_key</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfc_1_1get__typename_3_01std_1_1shared__ptr_3_01const_01graphene_1_1chain_1_1fee__schedule_01_4_01_4.html">fc::get_typename&lt; std::shared_ptr&lt; const graphene::chain::fee_schedule &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfc_1_1get__typename_3_01std_1_1shared__ptr_3_01graphene_1_1chain_1_1fee__schedule_01_4_01_4.html">fc::get_typename&lt; std::shared_ptr&lt; graphene::chain::fee_schedule &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -316,11 +319,13 @@ Functions</h2></td></tr>
 <tr class="separator:a8c212c703a61b700343ec341bb7c242f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c2f3725f5f595da305c3477af9c6780"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#a1c2f3725f5f595da305c3477af9c6780">fc::from_variant</a> (const fc::variant &amp;var, <a class="el" href="structgraphene_1_1chain_1_1extended__private__key__type.html">graphene::chain::extended_private_key_type</a> &amp;vo, uint32_t max_depth=2)</td></tr>
 <tr class="separator:a1c2f3725f5f595da305c3477af9c6780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b837db3ec2b22a4e3efafb1240283fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#a7b837db3ec2b22a4e3efafb1240283fc">fc::from_variant</a> (const fc::variant &amp;var, std::shared_ptr&lt; const <a class="el" href="structgraphene_1_1chain_1_1fee__schedule.html">graphene::chain::fee_schedule</a> &gt; &amp;vo, uint32_t max_depth=2)</td></tr>
+<tr class="separator:a7b837db3ec2b22a4e3efafb1240283fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 27 2019 15:04:32 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 15 2019 16:11:11 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

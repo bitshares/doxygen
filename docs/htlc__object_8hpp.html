@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.0.0</span>
+   &#160;<span id="projectnumber">3.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -99,6 +99,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1htlc__object_1_1from__extractor.html">graphene::chain::htlc_object::from_extractor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1htlc__object_1_1to__extractor.html">graphene::chain::htlc_object::to_extractor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -109,15 +111,15 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a16ff1e5b2180ce9bd9fc1bcf580c72fc"><td class="memItemLeft" align="right" valign="top">typedef multi_index_container&lt; htlc_object, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt;, ordered_unique&lt; tag&lt; by_expiration &gt;, composite_key&lt; htlc_object, htlc_object::timelock_extractor, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt;, ordered_unique&lt; tag&lt; by_from_id &gt;, composite_key&lt; htlc_object, htlc_object::from_extractor, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a16ff1e5b2180ce9bd9fc1bcf580c72fc">graphene::chain::htlc_object_index_type</a></td></tr>
-<tr class="separator:a16ff1e5b2180ce9bd9fc1bcf580c72fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06232478cb9c94ef587d99416759f316"><td class="memItemLeft" align="right" valign="top">typedef multi_index_container&lt; htlc_object, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt;, ordered_unique&lt; tag&lt; by_expiration &gt;, composite_key&lt; htlc_object, htlc_object::timelock_extractor, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt;, ordered_unique&lt; tag&lt; by_from_id &gt;, composite_key&lt; htlc_object, htlc_object::from_extractor, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt;, ordered_unique&lt; tag&lt; by_to_id &gt;, composite_key&lt; htlc_object, htlc_object::to_extractor, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a06232478cb9c94ef587d99416759f316">graphene::chain::htlc_object_index_type</a></td></tr>
+<tr class="separator:a06232478cb9c94ef587d99416759f316"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bf81c3662cf4747c634069d42e173d5"><td class="memItemLeft" align="right" valign="top">typedef generic_index&lt; htlc_object, htlc_object_index_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a7bf81c3662cf4747c634069d42e173d5">graphene::chain::htlc_index</a></td></tr>
 <tr class="separator:a7bf81c3662cf4747c634069d42e173d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 27 2019 15:04:32 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 15 2019 16:11:11 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
