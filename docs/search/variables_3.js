@@ -40,7 +40,7 @@ var searchData=
   ['current_5ffee_5fschedule',['current_fee_schedule',['../structgraphene_1_1app_1_1get__required__fees__helper.html#a5bc988de7f812f1e17f07655f9321cb1',1,'graphene::app::get_required_fees_helper']]],
   ['current_5ffeed',['current_feed',['../classgraphene_1_1chain_1_1asset__bitasset__data__object.html#a874b942d15af358de33636b530225f11',1,'graphene::chain::asset_bitasset_data_object']]],
   ['current_5ffeed_5fpublication_5ftime',['current_feed_publication_time',['../classgraphene_1_1chain_1_1asset__bitasset__data__object.html#a8ff500d4aad42067bdcefa153d3d863f',1,'graphene::chain::asset_bitasset_data_object']]],
-  ['current_5ffees',['current_fees',['../structgraphene_1_1chain_1_1chain__parameters.html#a75a895406dae65e6fd9f661cfb4f1bfa',1,'graphene::chain::chain_parameters']]],
+  ['current_5ffees',['current_fees',['../structgraphene_1_1chain_1_1chain__parameters.html#a6f1f07ff2e6fb060af837a91719cba3b',1,'graphene::chain::chain_parameters']]],
   ['current_5fmaintenance_5fcollateralization',['current_maintenance_collateralization',['../classgraphene_1_1chain_1_1asset__bitasset__data__object.html#a3541067035a7b76c760db8b06c0447a5',1,'graphene::chain::asset_bitasset_data_object']]],
   ['current_5fop',['current_op',['../structgraphene_1_1chain_1_1calc__fee__visitor.html#adbac5fae750e3dbb99b5ca877ce793a1',1,'graphene::chain::calc_fee_visitor']]],
   ['current_5frecursion',['current_recursion',['../structgraphene_1_1app_1_1get__required__fees__helper.html#abd43b89fd52416214e6db3201cb6a21b',1,'graphene::app::get_required_fees_helper']]],

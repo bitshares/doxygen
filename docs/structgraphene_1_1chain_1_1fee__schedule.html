@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.0.0</span>
+   &#160;<span id="projectnumber">3.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -83,8 +83,10 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7cc5fc9a07c6b029f7bedb182affde75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1fee__schedule.html#a7cc5fc9a07c6b029f7bedb182affde75">fee_schedule</a> ()</td></tr>
 <tr class="separator:a7cc5fc9a07c6b029f7bedb182affde75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a202d9b1da4ac4ba7503b9d577951fc02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1chain_1_1asset.html">asset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1fee__schedule.html#a202d9b1da4ac4ba7503b9d577951fc02">calculate_fee</a> (const <a class="el" href="group__operations.html#ga1f34da121b0143fb12ee42cffb9308e9">operation</a> &amp;op, const <a class="el" href="structgraphene_1_1chain_1_1price.html">price</a> &amp;core_exchange_rate=<a class="el" href="structgraphene_1_1chain_1_1price.html#aa6718b227f89176f631672c14a1314de">price::unit_price</a>()) const</td></tr>
-<tr class="separator:a202d9b1da4ac4ba7503b9d577951fc02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e885b8cc6af507685a7fb06fd6f28bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1chain_1_1asset.html">asset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1fee__schedule.html#a5e885b8cc6af507685a7fb06fd6f28bb">calculate_fee</a> (const <a class="el" href="group__operations.html#ga1f34da121b0143fb12ee42cffb9308e9">operation</a> &amp;op) const</td></tr>
+<tr class="separator:a5e885b8cc6af507685a7fb06fd6f28bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e93d0455a81b0a972d8b8390ea07be7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1chain_1_1asset.html">asset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1fee__schedule.html#a2e93d0455a81b0a972d8b8390ea07be7">calculate_fee</a> (const <a class="el" href="group__operations.html#ga1f34da121b0143fb12ee42cffb9308e9">operation</a> &amp;op, const <a class="el" href="structgraphene_1_1chain_1_1price.html">price</a> &amp;core_exchange_rate) const</td></tr>
+<tr class="separator:a2e93d0455a81b0a972d8b8390ea07be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac97fd96d020f88da2df9fe8246ec8049"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1chain_1_1asset.html">asset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1fee__schedule.html#ac97fd96d020f88da2df9fe8246ec8049">set_fee</a> (<a class="el" href="group__operations.html#ga1f34da121b0143fb12ee42cffb9308e9">operation</a> &amp;op, const <a class="el" href="structgraphene_1_1chain_1_1price.html">price</a> &amp;core_exchange_rate=<a class="el" href="structgraphene_1_1chain_1_1price.html#aa6718b227f89176f631672c14a1314de">price::unit_price</a>()) const</td></tr>
 <tr class="separator:ac97fd96d020f88da2df9fe8246ec8049"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c40e1bf4252fe43c56759ec5d1208b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1fee__schedule.html#a5c40e1bf4252fe43c56759ec5d1208b5">zero_all_fees</a> ()</td></tr>
@@ -117,7 +119,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>contains all of the parameters necessary to calculate the fee for any operation </p>
 
-<p class="definition">Definition at line <a class="el" href="fee__schedule_8hpp_source.html#l00154">154</a> of file <a class="el" href="fee__schedule_8hpp_source.html">fee_schedule.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fee__schedule_8hpp_source.html#l00153">153</a> of file <a class="el" href="fee__schedule_8hpp_source.html">fee_schedule.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7cc5fc9a07c6b029f7bedb182affde75"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7cc5fc9a07c6b029f7bedb182affde75">&#9670;&nbsp;</a></span>fee_schedule()</h2>
@@ -134,13 +136,34 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fee__schedule_8cpp_source.html#l00043">43</a> of file <a class="el" href="fee__schedule_8cpp_source.html">fee_schedule.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fee__schedule_8cpp_source.html#l00031">31</a> of file <a class="el" href="fee__schedule_8cpp_source.html">fee_schedule.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a202d9b1da4ac4ba7503b9d577951fc02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a202d9b1da4ac4ba7503b9d577951fc02">&#9670;&nbsp;</a></span>calculate_fee()</h2>
+<a id="a5e885b8cc6af507685a7fb06fd6f28bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e885b8cc6af507685a7fb06fd6f28bb">&#9670;&nbsp;</a></span>calculate_fee() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structgraphene_1_1chain_1_1asset.html">asset</a> graphene::chain::fee_schedule::calculate_fee </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__operations.html#ga1f34da121b0143fb12ee42cffb9308e9">operation</a> &amp;&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Finds the appropriate fee parameter struct for the operation and then calculates the appropriate fee in CORE asset. </p>
+
+<p class="definition">Definition at line <a class="el" href="fee__schedule_8cpp_source.html#l00118">118</a> of file <a class="el" href="fee__schedule_8cpp_source.html">fee_schedule.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2e93d0455a81b0a972d8b8390ea07be7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e93d0455a81b0a972d8b8390ea07be7">&#9670;&nbsp;</a></span>calculate_fee() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -155,7 +178,7 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structgraphene_1_1chain_1_1price.html">price</a> &amp;&#160;</td>
-          <td class="paramname"><em>core_exchange_rate</em> = <code><a class="el" href="structgraphene_1_1chain_1_1price.html#aa6718b227f89176f631672c14a1314de">price::unit_price</a>()</code>&#160;</td>
+          <td class="paramname"><em>core_exchange_rate</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -164,9 +187,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Finds the appropriate fee parameter struct for the operation and then calculates the appropriate fee. </p>
+<p>Finds the appropriate fee parameter struct for the operation and then calculates the appropriate fee in an asset specified implicitly by core_exchange_rate. </p>
 
-<p class="definition">Definition at line <a class="el" href="fee__schedule_8cpp_source.html#l00130">130</a> of file <a class="el" href="fee__schedule_8cpp_source.html">fee_schedule.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fee__schedule_8cpp_source.html#l00132">132</a> of file <a class="el" href="fee__schedule_8cpp_source.html">fee_schedule.cpp</a>.</p>
 
 </div>
 </div>
@@ -195,7 +218,7 @@ template&lt;typename Operation &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fee__schedule_8hpp_source.html#l00185">185</a> of file <a class="el" href="fee__schedule_8hpp_source.html">fee_schedule.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fee__schedule_8hpp_source.html#l00193">193</a> of file <a class="el" href="fee__schedule_8hpp_source.html">fee_schedule.hpp</a>.</p>
 
 </div>
 </div>
@@ -224,7 +247,7 @@ template&lt;typename Operation &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fee__schedule_8hpp_source.html#l00175">175</a> of file <a class="el" href="fee__schedule_8hpp_source.html">fee_schedule.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fee__schedule_8hpp_source.html#l00183">183</a> of file <a class="el" href="fee__schedule_8hpp_source.html">fee_schedule.hpp</a>.</p>
 
 </div>
 </div>
@@ -253,7 +276,7 @@ template&lt;typename Operation &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fee__schedule_8hpp_source.html#l00180">180</a> of file <a class="el" href="fee__schedule_8hpp_source.html">fee_schedule.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fee__schedule_8hpp_source.html#l00188">188</a> of file <a class="el" href="fee__schedule_8hpp_source.html">fee_schedule.hpp</a>.</p>
 
 </div>
 </div>
@@ -280,7 +303,7 @@ template&lt;typename Operation &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fee__schedule_8cpp_source.html#l00047">47</a> of file <a class="el" href="fee__schedule_8cpp_source.html">fee_schedule.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fee__schedule_8cpp_source.html#l00035">35</a> of file <a class="el" href="fee__schedule_8cpp_source.html">fee_schedule.cpp</a>.</p>
 
 </div>
 </div>
@@ -309,8 +332,9 @@ template&lt;typename Operation &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Updates the operation with appropriate fee and returns the fee. </p>
 
-<p class="definition">Definition at line <a class="el" href="fee__schedule_8cpp_source.html#l00147">147</a> of file <a class="el" href="fee__schedule_8cpp_source.html">fee_schedule.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fee__schedule_8cpp_source.html#l00137">137</a> of file <a class="el" href="fee__schedule_8cpp_source.html">fee_schedule.cpp</a>.</p>
 
 </div>
 </div>
@@ -330,7 +354,7 @@ template&lt;typename Operation &gt; </div>
 </div><div class="memdoc">
 <p>Validates all of the parameters are present and accounted for. </p>
 
-<p class="definition">Definition at line <a class="el" href="fee__schedule_8cpp_source.html#l00069">69</a> of file <a class="el" href="fee__schedule_8cpp_source.html">fee_schedule.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fee__schedule_8cpp_source.html#l00057">57</a> of file <a class="el" href="fee__schedule_8cpp_source.html">fee_schedule.cpp</a>.</p>
 
 </div>
 </div>
@@ -349,7 +373,7 @@ template&lt;typename Operation &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fee__schedule_8cpp_source.html#l00122">122</a> of file <a class="el" href="fee__schedule_8cpp_source.html">fee_schedule.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fee__schedule_8cpp_source.html#l00110">110</a> of file <a class="el" href="fee__schedule_8cpp_source.html">fee_schedule.cpp</a>.</p>
 
 </div>
 </div>
@@ -367,7 +391,7 @@ template&lt;typename Operation &gt; </div>
 </div><div class="memdoc">
 <dl class="section note"><dt>Note</dt><dd>must be sorted by fee_parameters.which() and have no duplicates </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="fee__schedule_8hpp_source.html#l00194">194</a> of file <a class="el" href="fee__schedule_8hpp_source.html">fee_schedule.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fee__schedule_8hpp_source.html#l00202">202</a> of file <a class="el" href="fee__schedule_8hpp_source.html">fee_schedule.hpp</a>.</p>
 
 </div>
 </div>
@@ -385,7 +409,7 @@ template&lt;typename Operation &gt; </div>
 
 <p>fee * scale / GRAPHENE_100_PERCENT </p>
 
-<p class="definition">Definition at line <a class="el" href="fee__schedule_8hpp_source.html#l00195">195</a> of file <a class="el" href="fee__schedule_8hpp_source.html">fee_schedule.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fee__schedule_8hpp_source.html#l00203">203</a> of file <a class="el" href="fee__schedule_8hpp_source.html">fee_schedule.hpp</a>.</p>
 
 </div>
 </div>
@@ -396,7 +420,7 @@ template&lt;typename Operation &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 27 2019 15:04:33 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 15 2019 16:11:11 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

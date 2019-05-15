@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.0.0</span>
+   &#160;<span id="projectnumber">3.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -698,9 +698,9 @@ Typedefs</h2></td></tr>
 <tr class="separator:a29c06e4b4630a41527d81af4a967fbda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a455f7a42385453236a3252fa8ba97654"><td class="memItemLeft" align="right" valign="top">typedef shared_ptr&lt; <a class="el" href="structgraphene_1_1chain_1_1fork__item.html">fork_item</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a455f7a42385453236a3252fa8ba97654">item_ptr</a></td></tr>
 <tr class="separator:a455f7a42385453236a3252fa8ba97654"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16ff1e5b2180ce9bd9fc1bcf580c72fc"><td class="memItemLeft" align="right" valign="top">typedef multi_index_container&lt; <a class="el" href="classgraphene_1_1chain_1_1htlc__object.html">htlc_object</a>, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt;, ordered_unique&lt; tag&lt; <a class="el" href="structgraphene_1_1chain_1_1by__expiration.html">by_expiration</a> &gt;, composite_key&lt; <a class="el" href="classgraphene_1_1chain_1_1htlc__object.html">htlc_object</a>, <a class="el" href="structgraphene_1_1chain_1_1htlc__object_1_1timelock__extractor.html">htlc_object::timelock_extractor</a>, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt;, ordered_unique&lt; tag&lt; by_from_id &gt;, composite_key&lt; <a class="el" href="classgraphene_1_1chain_1_1htlc__object.html">htlc_object</a>, <a class="el" href="structgraphene_1_1chain_1_1htlc__object_1_1from__extractor.html">htlc_object::from_extractor</a>, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a16ff1e5b2180ce9bd9fc1bcf580c72fc">htlc_object_index_type</a></td></tr>
-<tr class="separator:a16ff1e5b2180ce9bd9fc1bcf580c72fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bf81c3662cf4747c634069d42e173d5"><td class="memItemLeft" align="right" valign="top">typedef generic_index&lt; <a class="el" href="classgraphene_1_1chain_1_1htlc__object.html">htlc_object</a>, <a class="el" href="namespacegraphene_1_1chain.html#a16ff1e5b2180ce9bd9fc1bcf580c72fc">htlc_object_index_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a7bf81c3662cf4747c634069d42e173d5">htlc_index</a></td></tr>
+<tr class="memitem:a06232478cb9c94ef587d99416759f316"><td class="memItemLeft" align="right" valign="top">typedef multi_index_container&lt; <a class="el" href="classgraphene_1_1chain_1_1htlc__object.html">htlc_object</a>, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt;, ordered_unique&lt; tag&lt; <a class="el" href="structgraphene_1_1chain_1_1by__expiration.html">by_expiration</a> &gt;, composite_key&lt; <a class="el" href="classgraphene_1_1chain_1_1htlc__object.html">htlc_object</a>, <a class="el" href="structgraphene_1_1chain_1_1htlc__object_1_1timelock__extractor.html">htlc_object::timelock_extractor</a>, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt;, ordered_unique&lt; tag&lt; by_from_id &gt;, composite_key&lt; <a class="el" href="classgraphene_1_1chain_1_1htlc__object.html">htlc_object</a>, <a class="el" href="structgraphene_1_1chain_1_1htlc__object_1_1from__extractor.html">htlc_object::from_extractor</a>, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt;, ordered_unique&lt; tag&lt; by_to_id &gt;, composite_key&lt; <a class="el" href="classgraphene_1_1chain_1_1htlc__object.html">htlc_object</a>, <a class="el" href="structgraphene_1_1chain_1_1htlc__object_1_1to__extractor.html">htlc_object::to_extractor</a>, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a06232478cb9c94ef587d99416759f316">htlc_object_index_type</a></td></tr>
+<tr class="separator:a06232478cb9c94ef587d99416759f316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bf81c3662cf4747c634069d42e173d5"><td class="memItemLeft" align="right" valign="top">typedef generic_index&lt; <a class="el" href="classgraphene_1_1chain_1_1htlc__object.html">htlc_object</a>, <a class="el" href="namespacegraphene_1_1chain.html#a06232478cb9c94ef587d99416759f316">htlc_object_index_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a7bf81c3662cf4747c634069d42e173d5">htlc_index</a></td></tr>
 <tr class="separator:a7bf81c3662cf4747c634069d42e173d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab18f75c5880f6ee028ac36f22fae6ffa"><td class="memItemLeft" align="right" valign="top">typedef multi_index_container&lt; <a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html">limit_order_object</a>, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt;, ordered_unique&lt; tag&lt; <a class="el" href="structgraphene_1_1chain_1_1by__expiration.html">by_expiration</a> &gt;, composite_key&lt; <a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html">limit_order_object</a>, member&lt; <a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html">limit_order_object</a>, time_point_sec, &amp;<a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html#a5ba529f677c8917605db7f28dac8a05d">limit_order_object::expiration</a> &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt;, ordered_unique&lt; tag&lt; by_price &gt;, composite_key&lt; <a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html">limit_order_object</a>, member&lt; <a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html">limit_order_object</a>, <a class="el" href="structgraphene_1_1chain_1_1price.html">price</a>, &amp;<a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html#ae0546fce0941e19f3128cbb31fb49199">limit_order_object::sell_price</a> &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt;, composite_key_compare&lt; std::greater&lt; <a class="el" href="structgraphene_1_1chain_1_1price.html">price</a> &gt;, std::less&lt; object_id_type &gt; &gt; &gt;, ordered_unique&lt; tag&lt; by_account &gt;, composite_key&lt; <a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html">limit_order_object</a>, member&lt; <a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html">limit_order_object</a>, <a class="el" href="namespacegraphene_1_1chain.html#a11927fb343f953514ab6235d6e7233ee">account_id_type</a>, &amp;<a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html#a409d8c97cfaef8aaa60286afd0ae9c26">limit_order_object::seller</a> &gt;, member&lt; <a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html">limit_order_object</a>, <a class="el" href="structgraphene_1_1chain_1_1price.html">price</a>, &amp;<a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html#ae0546fce0941e19f3128cbb31fb49199">limit_order_object::sell_price</a> &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt;, composite_key_compare&lt; std::less&lt; <a class="el" href="namespacegraphene_1_1chain.html#a11927fb343f953514ab6235d6e7233ee">account_id_type</a> &gt;, std::greater&lt; <a class="el" href="structgraphene_1_1chain_1_1price.html">price</a> &gt;, std::less&lt; object_id_type &gt; &gt; &gt; &gt;&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#ab18f75c5880f6ee028ac36f22fae6ffa">limit_order_multi_index_type</a></td></tr>
 <tr class="separator:ab18f75c5880f6ee028ac36f22fae6ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1158,7 +1158,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00242">242</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00240">240</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -1206,7 +1206,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00202">202</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00200">200</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -1254,7 +1254,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00243">243</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00241">241</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -1302,7 +1302,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00249">249</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00247">247</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -1366,7 +1366,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00241">241</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00239">239</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -1414,7 +1414,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00240">240</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00238">238</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -1430,7 +1430,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00205">205</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00203">203</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -1478,7 +1478,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00217">217</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00215">215</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -1526,7 +1526,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00253">253</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00251">251</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -1574,7 +1574,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00259">259</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00257">257</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -1590,7 +1590,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00245">245</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00243">243</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -1606,7 +1606,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00252">252</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00250">250</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -1622,7 +1622,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00255">255</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00253">253</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -1670,7 +1670,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00210">210</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00208">208</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -1718,7 +1718,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00105">105</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00103">103</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -1734,7 +1734,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00250">250</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00248">248</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -1750,7 +1750,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00260">260</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00258">258</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -1766,7 +1766,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00257">257</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00255">255</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -1814,7 +1814,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00207">207</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00205">205</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -1862,7 +1862,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00211">211</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00209">209</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -1878,7 +1878,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00262">262</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00260">260</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -1894,7 +1894,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00239">239</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00237">237</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -1910,7 +1910,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00256">256</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00254">254</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -1926,7 +1926,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fee__schedule_8hpp_source.html#l00036">36</a> of file <a class="el" href="fee__schedule_8hpp_source.html">fee_schedule.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fee__schedule_8hpp_source.html#l00035">35</a> of file <a class="el" href="fee__schedule_8hpp_source.html">fee_schedule.hpp</a>.</p>
 
 </div>
 </div>
@@ -1942,7 +1942,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fee__schedule_8hpp_source.html#l00198">198</a> of file <a class="el" href="fee__schedule_8hpp_source.html">fee_schedule.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fee__schedule_8hpp_source.html#l00208">208</a> of file <a class="el" href="fee__schedule_8hpp_source.html">fee_schedule.hpp</a>.</p>
 
 </div>
 </div>
@@ -1958,7 +1958,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00206">206</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00204">204</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -2006,7 +2006,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00236">236</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00234">234</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -2086,7 +2086,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00218">218</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00216">216</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -2097,28 +2097,28 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef generic_index&lt; <a class="el" href="classgraphene_1_1chain_1_1htlc__object.html">htlc_object</a>, <a class="el" href="namespacegraphene_1_1chain.html#a16ff1e5b2180ce9bd9fc1bcf580c72fc">htlc_object_index_type</a> &gt; <a class="el" href="namespacegraphene_1_1chain.html#a7bf81c3662cf4747c634069d42e173d5">graphene::chain::htlc_index</a></td>
+          <td class="memname">typedef generic_index&lt; <a class="el" href="classgraphene_1_1chain_1_1htlc__object.html">htlc_object</a>, <a class="el" href="namespacegraphene_1_1chain.html#a06232478cb9c94ef587d99416759f316">htlc_object_index_type</a> &gt; <a class="el" href="namespacegraphene_1_1chain.html#a7bf81c3662cf4747c634069d42e173d5">graphene::chain::htlc_index</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="htlc__object_8hpp_source.html#l00102">102</a> of file <a class="el" href="htlc__object_8hpp_source.html">htlc_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="htlc__object_8hpp_source.html#l00118">118</a> of file <a class="el" href="htlc__object_8hpp_source.html">htlc_object.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a16ff1e5b2180ce9bd9fc1bcf580c72fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16ff1e5b2180ce9bd9fc1bcf580c72fc">&#9670;&nbsp;</a></span>htlc_object_index_type</h2>
+<a id="a06232478cb9c94ef587d99416759f316"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06232478cb9c94ef587d99416759f316">&#9670;&nbsp;</a></span>htlc_object_index_type</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef multi_index_container&lt; <a class="el" href="classgraphene_1_1chain_1_1htlc__object.html">htlc_object</a>, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt;, ordered_unique&lt; tag&lt; <a class="el" href="structgraphene_1_1chain_1_1by__expiration.html">by_expiration</a> &gt;, composite_key&lt; <a class="el" href="classgraphene_1_1chain_1_1htlc__object.html">htlc_object</a>, <a class="el" href="structgraphene_1_1chain_1_1htlc__object_1_1timelock__extractor.html">htlc_object::timelock_extractor</a>, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt;, ordered_unique&lt; tag&lt; by_from_id &gt;, composite_key&lt; <a class="el" href="classgraphene_1_1chain_1_1htlc__object.html">htlc_object</a>, <a class="el" href="structgraphene_1_1chain_1_1htlc__object_1_1from__extractor.html">htlc_object::from_extractor</a>, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt; &gt; &gt; <a class="el" href="namespacegraphene_1_1chain.html#a16ff1e5b2180ce9bd9fc1bcf580c72fc">graphene::chain::htlc_object_index_type</a></td>
+          <td class="memname">typedef multi_index_container&lt; <a class="el" href="classgraphene_1_1chain_1_1htlc__object.html">htlc_object</a>, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt;, ordered_unique&lt; tag&lt; <a class="el" href="structgraphene_1_1chain_1_1by__expiration.html">by_expiration</a> &gt;, composite_key&lt; <a class="el" href="classgraphene_1_1chain_1_1htlc__object.html">htlc_object</a>, <a class="el" href="structgraphene_1_1chain_1_1htlc__object_1_1timelock__extractor.html">htlc_object::timelock_extractor</a>, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt;, ordered_unique&lt; tag&lt; by_from_id &gt;, composite_key&lt; <a class="el" href="classgraphene_1_1chain_1_1htlc__object.html">htlc_object</a>, <a class="el" href="structgraphene_1_1chain_1_1htlc__object_1_1from__extractor.html">htlc_object::from_extractor</a>, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt;, ordered_unique&lt; tag&lt; by_to_id &gt;, composite_key&lt; <a class="el" href="classgraphene_1_1chain_1_1htlc__object.html">htlc_object</a>, <a class="el" href="structgraphene_1_1chain_1_1htlc__object_1_1to__extractor.html">htlc_object::to_extractor</a>, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt; &gt; &gt; <a class="el" href="namespacegraphene_1_1chain.html#a06232478cb9c94ef587d99416759f316">graphene::chain::htlc_object_index_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="htlc__object_8hpp_source.html#l00083">83</a> of file <a class="el" href="htlc__object_8hpp_source.html">htlc_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="htlc__object_8hpp_source.html#l00094">94</a> of file <a class="el" href="htlc__object_8hpp_source.html">htlc_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -2166,7 +2166,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00209">209</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00207">207</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -2214,7 +2214,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00213">213</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00211">211</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -2279,7 +2279,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00104">104</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00102">102</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -2295,7 +2295,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00212">212</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00210">210</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -2311,7 +2311,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="proposal__object_8hpp_source.html#l00098">98</a> of file <a class="el" href="proposal__object_8hpp_source.html">proposal_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="proposal__object_8hpp_source.html#l00103">103</a> of file <a class="el" href="proposal__object_8hpp_source.html">proposal_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -2327,7 +2327,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="proposal__object_8hpp_source.html#l00097">97</a> of file <a class="el" href="proposal__object_8hpp_source.html">proposal_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="proposal__object_8hpp_source.html#l00102">102</a> of file <a class="el" href="proposal__object_8hpp_source.html">proposal_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -2343,7 +2343,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00107">107</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00105">105</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -2359,7 +2359,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00264">264</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00262">262</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -2375,7 +2375,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00263">263</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00261">261</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -2407,7 +2407,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00254">254</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00252">252</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -2455,7 +2455,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00261">261</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00259">259</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -2503,7 +2503,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00244">244</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00242">242</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -2535,7 +2535,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00215">215</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00213">213</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -2615,7 +2615,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00265">265</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00263">263</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -2631,7 +2631,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00214">214</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00212">212</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -2679,7 +2679,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00208">208</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00206">206</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -2727,7 +2727,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00251">251</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00249">249</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -2743,7 +2743,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00216">216</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00214">214</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -2828,7 +2828,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00109">109</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00107">107</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -2887,7 +2887,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="ad3bef2f100b722a6c30fada38f6dcd73a24af034d43bc0c1931699dee9b8b3194"></a>impl_collateral_bid_object_type&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00163">163</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00161">161</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -2925,7 +2925,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00141">141</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00139">139</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -2946,7 +2946,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a92e55d4242187696c5e2c5eaafbd9400a81f35c04f1d3f3109dacaa6f2bef33c7"></a>implementation_ids&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00125">125</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00123">123</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -3051,7 +3051,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__evaluator_8cpp_source.html#l00407">407</a> of file <a class="el" href="asset__evaluator_8cpp_source.html">asset_evaluator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__evaluator_8cpp_source.html#l00396">396</a> of file <a class="el" href="asset__evaluator_8cpp_source.html">asset_evaluator.cpp</a>.</p>
 
 </div>
 </div>
@@ -3595,7 +3595,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00132">132</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00130">130</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -3904,7 +3904,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8cpp_source.html#l00085">85</a> of file <a class="el" href="types_8cpp_source.html">types.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8cpp_source.html#l00086">86</a> of file <a class="el" href="types_8cpp_source.html">types.cpp</a>.</p>
 
 </div>
 </div>
@@ -3934,7 +3934,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8cpp_source.html#l00139">139</a> of file <a class="el" href="types_8cpp_source.html">types.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8cpp_source.html#l00140">140</a> of file <a class="el" href="types_8cpp_source.html">types.cpp</a>.</p>
 
 </div>
 </div>
@@ -4002,7 +4002,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8cpp_source.html#l00193">193</a> of file <a class="el" href="types_8cpp_source.html">types.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8cpp_source.html#l00194">194</a> of file <a class="el" href="types_8cpp_source.html">types.cpp</a>.</p>
 
 </div>
 </div>
@@ -4450,7 +4450,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8cpp_source.html#l00075">75</a> of file <a class="el" href="types_8cpp_source.html">types.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8cpp_source.html#l00076">76</a> of file <a class="el" href="types_8cpp_source.html">types.cpp</a>.</p>
 
 </div>
 </div>
@@ -4480,7 +4480,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8cpp_source.html#l00080">80</a> of file <a class="el" href="types_8cpp_source.html">types.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8cpp_source.html#l00081">81</a> of file <a class="el" href="types_8cpp_source.html">types.cpp</a>.</p>
 
 </div>
 </div>
@@ -4510,7 +4510,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8cpp_source.html#l00129">129</a> of file <a class="el" href="types_8cpp_source.html">types.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8cpp_source.html#l00130">130</a> of file <a class="el" href="types_8cpp_source.html">types.cpp</a>.</p>
 
 </div>
 </div>
@@ -4540,7 +4540,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8cpp_source.html#l00134">134</a> of file <a class="el" href="types_8cpp_source.html">types.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8cpp_source.html#l00135">135</a> of file <a class="el" href="types_8cpp_source.html">types.cpp</a>.</p>
 
 </div>
 </div>
@@ -4600,7 +4600,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8cpp_source.html#l00183">183</a> of file <a class="el" href="types_8cpp_source.html">types.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8cpp_source.html#l00184">184</a> of file <a class="el" href="types_8cpp_source.html">types.cpp</a>.</p>
 
 </div>
 </div>
@@ -4630,7 +4630,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8cpp_source.html#l00188">188</a> of file <a class="el" href="types_8cpp_source.html">types.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8cpp_source.html#l00189">189</a> of file <a class="el" href="types_8cpp_source.html">types.cpp</a>.</p>
 
 </div>
 </div>
@@ -5318,7 +5318,7 @@ template&lt;typename Visitor &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 27 2019 15:04:32 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 15 2019 16:11:11 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

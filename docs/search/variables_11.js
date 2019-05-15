@@ -5,7 +5,7 @@ var searchData=
   ['recent_5fslots_5ffilled',['recent_slots_filled',['../classgraphene_1_1chain_1_1dynamic__global__property__object.html#a291e4b87492f0548b1dc6e94c4cb0a47',1,'graphene::chain::dynamic_global_property_object']]],
   ['recently_5fmissed_5fcount',['recently_missed_count',['../classgraphene_1_1chain_1_1dynamic__global__property__object.html#ae58fe8181a2e6b02cf3d78d29ccf0f08',1,'graphene::chain::dynamic_global_property_object']]],
   ['record',['record',['../classgraphene_1_1chain_1_1budget__record__object.html#adb9d179a5218c00166b7788c96130a98',1,'graphene::chain::budget_record_object']]],
-  ['redeemer',['redeemer',['../structgraphene_1_1chain_1_1htlc__redeem__operation.html#acf6e327a8e808d31e9120e94d46dbe3c',1,'graphene::chain::htlc_redeem_operation']]],
+  ['redeemer',['redeemer',['../structgraphene_1_1chain_1_1htlc__redeem__operation.html#acf6e327a8e808d31e9120e94d46dbe3c',1,'graphene::chain::htlc_redeem_operation::redeemer()'],['../structgraphene_1_1chain_1_1htlc__redeemed__operation.html#a1e8c94628650f193ef607f91384bf9fc',1,'graphene::chain::htlc_redeemed_operation::redeemer()']]],
   ['ref_5fblock_5fnum',['ref_block_num',['../classgraphene_1_1chain_1_1transaction.html#a3c3667e1bb02ad8f694f41206436e9cf',1,'graphene::chain::transaction']]],
   ['ref_5fblock_5fprefix',['ref_block_prefix',['../classgraphene_1_1chain_1_1transaction.html#afcebf54b05d6254e6ea53aecdd075975',1,'graphene::chain::transaction']]],
   ['referred_5fby',['referred_by',['../classgraphene_1_1chain_1_1account__referrer__index.html#a6342cf7925f86c27748625017a9d4e63',1,'graphene::chain::account_referrer_index']]],

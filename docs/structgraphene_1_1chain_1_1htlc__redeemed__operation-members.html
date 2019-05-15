@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.0.0</span>
+   &#160;<span id="projectnumber">3.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -83,14 +83,15 @@ $(function() {
   <tr><td class="entry"><a class="el" href="structgraphene_1_1chain_1_1base__operation.html#aff6e2d2b66117c8c87f6a6e7e7ddba1f">get_required_owner_authorities</a>(flat_set&lt; account_id_type &gt; &amp;) const</td><td class="entry"><a class="el" href="structgraphene_1_1chain_1_1base__operation.html">graphene::chain::base_operation</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structgraphene_1_1chain_1_1htlc__redeemed__operation.html#a873c27bdd351b1e917d9c1c3b2f9d111">htlc_id</a></td><td class="entry"><a class="el" href="structgraphene_1_1chain_1_1htlc__redeemed__operation.html">graphene::chain::htlc_redeemed_operation</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="structgraphene_1_1chain_1_1htlc__redeemed__operation.html#ab8435798ef28153e6296928cd9c6a5c5">htlc_redeemed_operation</a>()</td><td class="entry"><a class="el" href="structgraphene_1_1chain_1_1htlc__redeemed__operation.html">graphene::chain::htlc_redeemed_operation</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structgraphene_1_1chain_1_1htlc__redeemed__operation.html#a88195e287f3b57847d8733647241683a">htlc_redeemed_operation</a>(htlc_id_type htlc_id, account_id_type from, account_id_type to, asset amount)</td><td class="entry"><a class="el" href="structgraphene_1_1chain_1_1htlc__redeemed__operation.html">graphene::chain::htlc_redeemed_operation</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structgraphene_1_1chain_1_1htlc__redeemed__operation.html#a9bcb0cf39d28ccca8dabca51571c980c">to</a></td><td class="entry"><a class="el" href="structgraphene_1_1chain_1_1htlc__redeemed__operation.html">graphene::chain::htlc_redeemed_operation</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structgraphene_1_1chain_1_1htlc__redeemed__operation.html#a6bf460149e9823afc058bf7758431adc">validate</a>() const</td><td class="entry"><a class="el" href="structgraphene_1_1chain_1_1htlc__redeemed__operation.html">graphene::chain::htlc_redeemed_operation</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structgraphene_1_1chain_1_1base__operation.html#aba2bfdabb6d782e8b7843a363e85c69e">validate_parallel</a>(uint32_t skip) const</td><td class="entry"><a class="el" href="structgraphene_1_1chain_1_1base__operation.html">graphene::chain::base_operation</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structgraphene_1_1chain_1_1htlc__redeemed__operation.html#aaac1ff65316e23321e125952cf9b0ea1">htlc_redeemed_operation</a>(htlc_id_type htlc_id, account_id_type from, account_id_type to, account_id_type redeemer, asset amount)</td><td class="entry"><a class="el" href="structgraphene_1_1chain_1_1htlc__redeemed__operation.html">graphene::chain::htlc_redeemed_operation</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structgraphene_1_1chain_1_1htlc__redeemed__operation.html#a1e8c94628650f193ef607f91384bf9fc">redeemer</a></td><td class="entry"><a class="el" href="structgraphene_1_1chain_1_1htlc__redeemed__operation.html">graphene::chain::htlc_redeemed_operation</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structgraphene_1_1chain_1_1htlc__redeemed__operation.html#a9bcb0cf39d28ccca8dabca51571c980c">to</a></td><td class="entry"><a class="el" href="structgraphene_1_1chain_1_1htlc__redeemed__operation.html">graphene::chain::htlc_redeemed_operation</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structgraphene_1_1chain_1_1htlc__redeemed__operation.html#a6bf460149e9823afc058bf7758431adc">validate</a>() const</td><td class="entry"><a class="el" href="structgraphene_1_1chain_1_1htlc__redeemed__operation.html">graphene::chain::htlc_redeemed_operation</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structgraphene_1_1chain_1_1base__operation.html#aba2bfdabb6d782e8b7843a363e85c69e">validate_parallel</a>(uint32_t skip) const</td><td class="entry"><a class="el" href="structgraphene_1_1chain_1_1base__operation.html">graphene::chain::base_operation</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 27 2019 15:04:33 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 15 2019 16:11:12 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

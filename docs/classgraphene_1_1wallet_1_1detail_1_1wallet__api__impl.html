@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.0.0</span>
+   &#160;<span id="projectnumber">3.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -138,6 +138,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab704e6571ccbbefe2bd222e6c050f63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a014d840a64df24c0b628698545b5e9ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a014d840a64df24c0b628698545b5e9ad">load_wallet_file</a> (string wallet_filename=&quot;&quot;)</td></tr>
 <tr class="separator:a014d840a64df24c0b628698545b5e9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d79063ab24c10c0a49e276b704043ae"><td class="memItemLeft" align="right" valign="top">set&lt; <a class="el" href="structgraphene_1_1chain_1_1public__key__type.html">public_key_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a8d79063ab24c10c0a49e276b704043ae">get_owned_required_keys</a> (<a class="el" href="classgraphene_1_1chain_1_1signed__transaction.html">signed_transaction</a> &amp;tx, bool erase_existing_sigs=true)</td></tr>
+<tr class="separator:a8d79063ab24c10c0a49e276b704043ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae66516cbe631b25484765c715d16524"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1chain_1_1signed__transaction.html">signed_transaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#aae66516cbe631b25484765c715d16524">add_transaction_signature</a> (<a class="el" href="classgraphene_1_1chain_1_1signed__transaction.html">signed_transaction</a> tx, bool broadcast)</td></tr>
+<tr class="separator:aae66516cbe631b25484765c715d16524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2d159b43467e907fb7a544791fcdd09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#aa2d159b43467e907fb7a544791fcdd09">quit</a> ()</td></tr>
 <tr class="separator:aa2d159b43467e907fb7a544791fcdd09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af91e375d363fb2d2e7a10d81addc8d17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#af91e375d363fb2d2e7a10d81addc8d17">save_wallet_file</a> (string wallet_filename=&quot;&quot;)</td></tr>
@@ -232,6 +236,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a71b313bf560330cf76ffd6402f866d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca6e575c034edbc7a374f2346e2f4a06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1chain_1_1signed__transaction.html">signed_transaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#aca6e575c034edbc7a374f2346e2f4a06">sign_transaction</a> (<a class="el" href="classgraphene_1_1chain_1_1signed__transaction.html">signed_transaction</a> tx, bool broadcast=false)</td></tr>
 <tr class="separator:aca6e575c034edbc7a374f2346e2f4a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1327920224765a57faea4ecde709a7fb"><td class="memItemLeft" align="right" valign="top">flat_set&lt; <a class="el" href="structgraphene_1_1chain_1_1public__key__type.html">public_key_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a1327920224765a57faea4ecde709a7fb">get_transaction_signers</a> (const <a class="el" href="classgraphene_1_1chain_1_1signed__transaction.html">signed_transaction</a> &amp;tx) const</td></tr>
+<tr class="separator:a1327920224765a57faea4ecde709a7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a806f0ff3b6386808b93711ace5f011f3"><td class="memItemLeft" align="right" valign="top">vector&lt; vector&lt; <a class="el" href="namespacegraphene_1_1chain.html#a11927fb343f953514ab6235d6e7233ee">account_id_type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a806f0ff3b6386808b93711ace5f011f3">get_key_references</a> (const vector&lt; <a class="el" href="structgraphene_1_1chain_1_1public__key__type.html">public_key_type</a> &gt; &amp;keys) const</td></tr>
+<tr class="separator:a806f0ff3b6386808b93711ace5f011f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad83302c62c1727b3db0573d6e3d84acf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1chain_1_1memo__data.html">memo_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#ad83302c62c1727b3db0573d6e3d84acf">sign_memo</a> (string from, string to, string memo)</td></tr>
 <tr class="separator:ad83302c62c1727b3db0573d6e3d84acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6db86a275243dab75d2962d58fbb2f78"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a6db86a275243dab75d2962d58fbb2f78">read_memo</a> (const <a class="el" href="structgraphene_1_1chain_1_1memo__data.html">memo_data</a> &amp;md)</td></tr>
@@ -368,7 +376,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00429">429</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00437">437</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -395,7 +403,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00456">456</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00464">464</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -426,7 +434,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01670">1670</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01743">1743</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -453,7 +461,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00559">559</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00569">569</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -481,7 +489,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00605">605</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00615">615</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -519,7 +527,45 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00904">904</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00982">982</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aae66516cbe631b25484765c715d16524"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae66516cbe631b25484765c715d16524">&#9670;&nbsp;</a></span>add_transaction_signature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgraphene_1_1chain_1_1signed__transaction.html">signed_transaction</a> graphene::wallet::detail::wallet_api_impl::add_transaction_signature </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgraphene_1_1chain_1_1signed__transaction.html">signed_transaction</a>&#160;</td>
+          <td class="paramname"><em>tx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>broadcast</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00867">867</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -569,7 +615,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02695">2695</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02773">2773</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -597,7 +643,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00638">638</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00648">648</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -624,7 +670,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00897">897</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00975">975</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -680,7 +726,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01481">1481</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01552">1552</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -736,7 +782,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02213">2213</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02291">2291</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -798,7 +844,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02234">2234</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02312">2312</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -826,7 +872,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00954">954</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01032">1032</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -864,7 +910,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02258">2258</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02336">2336</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -908,7 +954,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01394">1394</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01465">1465</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -936,7 +982,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00489">489</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00497">497</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -998,7 +1044,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01209">1209</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01283">1283</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1060,7 +1106,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01134">1134</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01208">1208</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1122,7 +1168,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01224">1224</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01298">1298</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1166,7 +1212,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01522">1522</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01595">1595</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1210,7 +1256,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01617">1617</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01690">1690</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1284,7 +1330,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01677">1677</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01750">1750</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1322,7 +1368,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02754">2754</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02832">2832</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1360,7 +1406,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02737">2737</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02815">2815</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1398,7 +1444,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02728">2728</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02806">2806</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1436,7 +1482,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02747">2747</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02825">2825</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1464,7 +1510,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02761">2761</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02839">2839</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1492,7 +1538,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02768">2768</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02846">2846</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1530,7 +1576,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01784">1784</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01857">1857</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1557,7 +1603,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00472">472</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00480">480</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1585,7 +1631,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00645">645</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00655">655</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1613,7 +1659,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00650">650</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00660">660</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1641,7 +1687,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01103">1103</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01177">1177</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1679,7 +1725,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02837">2837</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02915">2915</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1729,7 +1775,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01370">1370</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01441">1441</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1757,7 +1803,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00612">612</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00622">622</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1785,7 +1831,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00620">620</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00630">630</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1813,7 +1859,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00634">634</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00644">644</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1841,7 +1887,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00669">669</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00679">679</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1869,7 +1915,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00675">675</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00685">685</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1897,7 +1943,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00694">694</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00704">704</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1924,7 +1970,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00593">593</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00603">603</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1952,7 +1998,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01583">1583</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01656">1656</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -1979,7 +2025,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00601">601</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00611">611</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2006,7 +2052,7 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00597">597</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00607">607</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2034,7 +2080,35 @@ template&lt;typename WorkerInit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00682">682</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00692">692</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a806f0ff3b6386808b93711ace5f011f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a806f0ff3b6386808b93711ace5f011f3">&#9670;&nbsp;</a></span>get_key_references()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;vector&lt;<a class="el" href="namespacegraphene_1_1chain.html#a11927fb343f953514ab6235d6e7233ee">account_id_type</a>&gt; &gt; graphene::wallet::detail::wallet_api_impl::get_key_references </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; <a class="el" href="structgraphene_1_1chain_1_1public__key__type.html">public_key_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>keys</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02209">2209</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2064,7 +2138,54 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00528">528</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00536">536</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8d79063ab24c10c0a49e276b704043ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d79063ab24c10c0a49e276b704043ae">&#9670;&nbsp;</a></span>get_owned_required_keys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">set&lt;<a class="el" href="structgraphene_1_1chain_1_1public__key__type.html">public_key_type</a>&gt; graphene::wallet::detail::wallet_api_impl::get_owned_required_keys </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgraphene_1_1chain_1_1signed__transaction.html">signed_transaction</a> &amp;&#160;</td>
+          <td class="paramname"><em>tx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>erase_existing_sigs</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the required public keys to sign the transaction which had been owned by us</p>
+<p>NOTE, if <code>erase_existing_sigs</code> set to true, the original trasaction's signatures will be erased</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tx</td><td>The transaction to be signed </td></tr>
+    <tr><td class="paramname">erase_existing_sigs</td><td>The transaction could have been partially signed already, if set to false, the corresponding public key of existing signatures won't be returned. If set to true, the existing signatures will be erased and all required keys returned. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00849">849</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2092,7 +2213,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00710">710</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00720">720</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2120,7 +2241,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00720">720</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00730">730</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2148,7 +2269,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02885">2885</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02963">2963</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2175,7 +2296,35 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02339">2339</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02417">2417</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1327920224765a57faea4ecde709a7fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1327920224765a57faea4ecde709a7fb">&#9670;&nbsp;</a></span>get_transaction_signers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">flat_set&lt;<a class="el" href="structgraphene_1_1chain_1_1public__key__type.html">public_key_type</a>&gt; graphene::wallet::detail::wallet_api_impl::get_transaction_signers </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgraphene_1_1chain_1_1signed__transaction.html">signed_transaction</a> &amp;&#160;</td>
+          <td class="paramname"><em>tx</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02204">2204</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2203,7 +2352,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01873">1873</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01946">1946</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2230,7 +2379,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00705">705</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00715">715</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2258,7 +2407,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01548">1548</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01621">1621</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2302,7 +2451,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01439">1439</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01510">1510</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2382,7 +2531,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01797">1797</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01870">1870</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2432,7 +2581,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01849">1849</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01922">1922</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2482,7 +2631,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01825">1825</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01898">1898</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2518,7 +2667,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l04233">4233</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l04327">4327</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2556,7 +2705,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00732">732</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00742">742</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2583,7 +2732,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00540">540</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00548">548</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2610,7 +2759,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00522">522</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00530">530</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2666,7 +2815,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02309">2309</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02387">2387</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2694,7 +2843,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00760">760</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00770">770</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2722,7 +2871,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02813">2813</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02891">2891</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2749,7 +2898,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02822">2822</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02900">2900</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2777,7 +2926,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00484">484</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00492">492</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2805,7 +2954,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00942">942</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01020">1020</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2855,7 +3004,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00966">966</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01044">1044</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2911,7 +3060,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00985">985</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01063">1063</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -2961,7 +3110,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02613">2613</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02691">2691</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -3011,7 +3160,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02579">2579</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02657">2657</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -3061,7 +3210,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01348">1348</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01419">1419</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -3088,7 +3237,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00824">824</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00902">902</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -3116,7 +3265,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02161">2161</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02239">2239</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -3184,7 +3333,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01012">1012</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01089">1089</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -3212,7 +3361,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01006">1006</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01084">1084</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -3256,7 +3405,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00909">909</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00987">987</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -3306,7 +3455,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01417">1417</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01488">1488</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -3334,7 +3483,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00831">831</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00909">909</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -3408,7 +3557,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02186">2186</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02264">2264</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -3458,7 +3607,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02047">2047</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02120">2120</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -3496,7 +3645,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00918">918</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00996">996</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -3534,7 +3683,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00534">534</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00542">542</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -3578,7 +3727,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02016">2016</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02089">2089</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -3628,7 +3777,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01460">1460</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01531">1531</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -3666,7 +3815,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00947">947</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01025">1025</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -3710,7 +3859,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02136">2136</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02214">2214</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -3748,7 +3897,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02073">2073</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02146">2146</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -3810,7 +3959,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02274">2274</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02352">2352</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -3860,7 +4009,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01249">1249</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01323">1323</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -3904,7 +4053,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01324">1324</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01395">1395</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -3948,7 +4097,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01280">1280</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01351">1351</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -3992,7 +4141,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01303">1303</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01374">1374</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4042,7 +4191,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01645">1645</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01718">1718</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4086,7 +4235,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01720">1720</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01793">1793</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4124,7 +4273,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01081">1081</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01156">1156</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4151,7 +4300,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02793">2793</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02871">2871</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4178,7 +4327,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02775">2775</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02853">2853</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4228,7 +4377,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01934">1934</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02007">2007</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4278,7 +4427,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01975">1975</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02048">2048</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4328,7 +4477,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01504">1504</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01577">1577</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4378,7 +4527,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01903">1903</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01976">1976</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4395,7 +4544,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02899">2899</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02977">2977</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4411,7 +4560,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02897">2897</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02975">2975</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4427,7 +4576,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02896">2896</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02974">2974</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4443,7 +4592,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02909">2909</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02987">2987</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4459,7 +4608,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02907">2907</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02985">2985</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4475,7 +4624,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02900">2900</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02978">2978</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4491,7 +4640,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02901">2901</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02979">2979</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4507,7 +4656,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02905">2905</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02983">2983</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4523,7 +4672,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02903">2903</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02981">2981</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4539,7 +4688,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02902">2902</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02980">2980</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4555,7 +4704,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02904">2904</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02982">2982</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4571,7 +4720,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02894">2894</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02972">2972</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4587,7 +4736,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02893">2893</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02971">2971</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4603,7 +4752,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02914">2914</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l02992">2992</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4635,7 +4784,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00428">428</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00436">436</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4645,7 +4794,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 27 2019 15:04:33 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 15 2019 16:11:12 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
