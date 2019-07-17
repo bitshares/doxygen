@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.1.0</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -83,11 +83,11 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7ceee226d4053e2061d900e735e8850a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1predicate__evaluator.html#a7ceee226d4053e2061d900e735e8850a">predicate_evaluator</a> (const <a class="el" href="classgraphene_1_1chain_1_1database.html">database</a> &amp;d)</td></tr>
 <tr class="separator:a7ceee226d4053e2061d900e735e8850a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27a643e8aa96cbef9fc1b99dc86f1727"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1predicate__evaluator.html#a27a643e8aa96cbef9fc1b99dc86f1727">operator()</a> (const <a class="el" href="structgraphene_1_1chain_1_1account__name__eq__lit__predicate.html">account_name_eq_lit_predicate</a> &amp;p) const</td></tr>
+<tr class="memitem:a27a643e8aa96cbef9fc1b99dc86f1727"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1predicate__evaluator.html#a27a643e8aa96cbef9fc1b99dc86f1727">operator()</a> (const account_name_eq_lit_predicate &amp;p) const</td></tr>
 <tr class="separator:a27a643e8aa96cbef9fc1b99dc86f1727"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3945e874d4d6cfd8eb3831a178ba1e3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1predicate__evaluator.html#a3945e874d4d6cfd8eb3831a178ba1e3a">operator()</a> (const <a class="el" href="structgraphene_1_1chain_1_1asset__symbol__eq__lit__predicate.html">asset_symbol_eq_lit_predicate</a> &amp;p) const</td></tr>
+<tr class="memitem:a3945e874d4d6cfd8eb3831a178ba1e3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1predicate__evaluator.html#a3945e874d4d6cfd8eb3831a178ba1e3a">operator()</a> (const asset_symbol_eq_lit_predicate &amp;p) const</td></tr>
 <tr class="separator:a3945e874d4d6cfd8eb3831a178ba1e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7f78b5a67c959078d89ffc32e619ab6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1predicate__evaluator.html#aa7f78b5a67c959078d89ffc32e619ab6">operator()</a> (const <a class="el" href="structgraphene_1_1chain_1_1block__id__predicate.html">block_id_predicate</a> &amp;p) const</td></tr>
+<tr class="memitem:aa7f78b5a67c959078d89ffc32e619ab6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1predicate__evaluator.html#aa7f78b5a67c959078d89ffc32e619ab6">operator()</a> (const block_id_predicate &amp;p) const</td></tr>
 <tr class="separator:aa7f78b5a67c959078d89ffc32e619ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -157,7 +157,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void graphene::chain::predicate_evaluator::operator() </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structgraphene_1_1chain_1_1account__name__eq__lit__predicate.html">account_name_eq_lit_predicate</a> &amp;&#160;</td>
+          <td class="paramtype">const account_name_eq_lit_predicate &amp;&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -185,7 +185,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void graphene::chain::predicate_evaluator::operator() </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structgraphene_1_1chain_1_1asset__symbol__eq__lit__predicate.html">asset_symbol_eq_lit_predicate</a> &amp;&#160;</td>
+          <td class="paramtype">const asset_symbol_eq_lit_predicate &amp;&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -213,7 +213,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void graphene::chain::predicate_evaluator::operator() </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structgraphene_1_1chain_1_1block__id__predicate.html">block_id_predicate</a> &amp;&#160;</td>
+          <td class="paramtype">const block_id_predicate &amp;&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -252,7 +252,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2019 16:11:12 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 17 2019 11:53:33 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

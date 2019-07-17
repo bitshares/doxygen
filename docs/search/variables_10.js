@@ -1,5 +1,20 @@
 var searchData=
 [
-  ['quote',['quote',['../structgraphene_1_1chain_1_1price.html#abc234b899e1c58c00993cf38d4cb75f9',1,'graphene::chain::price::quote()'],['../structgraphene_1_1app_1_1order.html#a35dc96da06763696d910a8ea106dc42e',1,'graphene::app::order::quote()'],['../structgraphene_1_1app_1_1order__book.html#a1c0763308e5143b454fb67524313047e',1,'graphene::app::order_book::quote()'],['../structgraphene_1_1app_1_1market__ticker.html#aa023e26dcfa6468727867995a2aed304',1,'graphene::app::market_ticker::quote()'],['../structgraphene_1_1app_1_1market__volume.html#a68f84b42923a8b4cf9b0444bf222592e',1,'graphene::app::market_volume::quote()']]],
-  ['quote_5fvolume',['quote_volume',['../structgraphene_1_1app_1_1market__ticker.html#af754c2f7b6f813ddb7909a21c1a42949',1,'graphene::app::market_ticker::quote_volume()'],['../structgraphene_1_1app_1_1market__volume.html#afe58887a5fe39c046350b9c1b417af89',1,'graphene::app::market_volume::quote_volume()']]]
+  ['recent_5fslots_5ffilled',['recent_slots_filled',['../classgraphene_1_1chain_1_1dynamic__global__property__object.html#a291e4b87492f0548b1dc6e94c4cb0a47',1,'graphene::chain::dynamic_global_property_object']]],
+  ['recently_5fmissed_5fcount',['recently_missed_count',['../classgraphene_1_1chain_1_1dynamic__global__property__object.html#ae58fe8181a2e6b02cf3d78d29ccf0f08',1,'graphene::chain::dynamic_global_property_object']]],
+  ['record',['record',['../classgraphene_1_1chain_1_1budget__record__object.html#adb9d179a5218c00166b7788c96130a98',1,'graphene::chain::budget_record_object']]],
+  ['referred_5fby',['referred_by',['../classgraphene_1_1chain_1_1account__referrer__index.html#a6342cf7925f86c27748625017a9d4e63',1,'graphene::chain::account_referrer_index']]],
+  ['referrer',['referrer',['../classgraphene_1_1chain_1_1account__object.html#a6ff595cad0456a433b37e30b966e9200',1,'graphene::chain::account_object']]],
+  ['referrer_5fname',['referrer_name',['../structgraphene_1_1app_1_1full__account.html#ad731f765f92ed3d7c96829dbac28ec8d',1,'graphene::app::full_account']]],
+  ['referrer_5frewards_5fpercentage',['referrer_rewards_percentage',['../classgraphene_1_1chain_1_1account__object.html#a9320e6656f81097554c1a9d51d50d5d5',1,'graphene::chain::account_object']]],
+  ['registrar',['registrar',['../classgraphene_1_1chain_1_1account__object.html#ae3e5ea3b236ea984eeaa49e9304361ce',1,'graphene::chain::account_object']]],
+  ['registrar_5fname',['registrar_name',['../structgraphene_1_1app_1_1full__account.html#a518404978a668bdd3060af494c56576a',1,'graphene::app::full_account']]],
+  ['removed_5fobjects',['removed_objects',['../classgraphene_1_1chain_1_1database.html#a9aa30b505cfa4e5cdc9a0b354d49e89e',1,'graphene::chain::database']]],
+  ['removed_5fops',['removed_ops',['../classgraphene_1_1chain_1_1account__statistics__object.html#aa0643a4b44f06ace7886893b5da661c3',1,'graphene::chain::account_statistics_object']]],
+  ['requested_5fwitness_5fbudget',['requested_witness_budget',['../structgraphene_1_1chain_1_1budget__record.html#a4664dac03b2d058d6b05a78d322e88eb',1,'graphene::chain::budget_record']]],
+  ['required_5factive_5fapprovals',['required_active_approvals',['../classgraphene_1_1chain_1_1proposal__object.html#abb764a31f14a6f02d27cbb759b663c42',1,'graphene::chain::proposal_object']]],
+  ['required_5fowner_5fapprovals',['required_owner_approvals',['../classgraphene_1_1chain_1_1proposal__object.html#a720ae65a9704e4813116565c6affc733',1,'graphene::chain::proposal_object']]],
+  ['result',['result',['../classgraphene_1_1chain_1_1operation__history__object.html#a3a8cf9058797fda8b539ee4fb40e8797',1,'graphene::chain::operation_history_object']]],
+  ['result_5fcount',['result_count',['../structgraphene_1_1wallet_1_1account__history__operation__detail.html#a0e6fbd2bb021e663888fceb29d7d99ef',1,'graphene::wallet::account_history_operation_detail']]],
+  ['review_5fperiod_5ftime',['review_period_time',['../classgraphene_1_1chain_1_1proposal__object.html#a51a2a94347b83a82b042465d2db19949',1,'graphene::chain::proposal_object']]]
 ];

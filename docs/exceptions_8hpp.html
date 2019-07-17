@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.1.0</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -73,7 +73,10 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;fc/exception/exception.hpp&gt;</code><br />
-<code>#include &lt;<a class="el" href="fee__schedule_8hpp_source.html">graphene/chain/protocol/fee_schedule.hpp</a>&gt;</code><br />
+<code>#include &lt;graphene/protocol/exceptions.hpp&gt;</code><br />
+<code>#include &lt;graphene/protocol/fee_schedule.hpp&gt;</code><br />
+<code>#include &lt;graphene/protocol/operations.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="types_8hpp_source.html">graphene/chain/types.hpp</a>&gt;</code><br />
 </div>
 <p><a href="exceptions_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -86,14 +89,18 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a60ce25e3b7ac526b5ac0c5a9a3c1dc3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exceptions_8hpp.html#a60ce25e3b7ac526b5ac0c5a9a3c1dc3c">GRAPHENE_ASSERT</a>(expr,  exc_type,  FORMAT, ...)</td></tr>
-<tr class="separator:a60ce25e3b7ac526b5ac0c5a9a3c1dc3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04299449220a673e8779ee5558f47d39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exceptions_8hpp.html#a04299449220a673e8779ee5558f47d39">GRAPHENE_DECLARE_OP_BASE_EXCEPTIONS</a>(op_name)</td></tr>
 <tr class="separator:a04299449220a673e8779ee5558f47d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63836897475eefdacd3706ae0dfb1330"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exceptions_8hpp.html#a63836897475eefdacd3706ae0dfb1330">GRAPHENE_IMPLEMENT_OP_BASE_EXCEPTIONS</a>(op_name)</td></tr>
+<tr class="separator:a63836897475eefdacd3706ae0dfb1330"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85cd52190f9658a54b62566383b9fc2b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exceptions_8hpp.html#a85cd52190f9658a54b62566383b9fc2b">GRAPHENE_DECLARE_OP_VALIDATE_EXCEPTION</a>(exc_name,  op_name,  seqnum,  msg)</td></tr>
 <tr class="separator:a85cd52190f9658a54b62566383b9fc2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84d4b21bece5c4a4be89242127f9feed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exceptions_8hpp.html#a84d4b21bece5c4a4be89242127f9feed">GRAPHENE_IMPLEMENT_OP_VALIDATE_EXCEPTION</a>(exc_name,  op_name,  seqnum,  msg)</td></tr>
+<tr class="separator:a84d4b21bece5c4a4be89242127f9feed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3b876dd975ab98d9a8854f1a315c9af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exceptions_8hpp.html#ad3b876dd975ab98d9a8854f1a315c9af">GRAPHENE_DECLARE_OP_EVALUATE_EXCEPTION</a>(exc_name,  op_name,  seqnum,  msg)</td></tr>
 <tr class="separator:ad3b876dd975ab98d9a8854f1a315c9af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf492419d2c2b21c94a031a45a9b1e08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exceptions_8hpp.html#acf492419d2c2b21c94a031a45a9b1e08">GRAPHENE_IMPLEMENT_OP_EVALUATE_EXCEPTION</a>(exc_name,  op_name,  seqnum,  msg)</td></tr>
+<tr class="separator:acf492419d2c2b21c94a031a45a9b1e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2376956f58433458088835f65c022a1e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exceptions_8hpp.html#a2376956f58433458088835f65c022a1e">GRAPHENE_TRY_NOTIFY</a>(signal, ...)</td></tr>
 <tr class="separator:a2376956f58433458088835f65c022a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a828d7d9aba94c583d33470802d6db9c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exceptions_8hpp.html#a828d7d9aba94c583d33470802d6db9c6">GRAPHENE_RECODE_EXC</a>(cause_type,  effect_type)</td></tr>
@@ -123,48 +130,6 @@ Functions</h2></td></tr>
 <tr class="separator:ac5b70c454163ad4446dcb6b4ec18f225"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a60ce25e3b7ac526b5ac0c5a9a3c1dc3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60ce25e3b7ac526b5ac0c5a9a3c1dc3c">&#9670;&nbsp;</a></span>GRAPHENE_ASSERT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GRAPHENE_ASSERT</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">expr, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">exc_type, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">FORMAT, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">FC_MULTILINE_MACRO_BEGIN                                           \</div><div class="line">   if( !(expr) )                                                      \</div><div class="line">      FC_THROW_EXCEPTION( exc_type, FORMAT, __VA_ARGS__ );            \</div><div class="line">   FC_MULTILINE_MACRO_END</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="exceptions_8hpp_source.html#l00029">29</a> of file <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a>.</p>
-
-</div>
-</div>
 <a id="a04299449220a673e8779ee5558f47d39"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a04299449220a673e8779ee5558f47d39">&#9670;&nbsp;</a></span>GRAPHENE_DECLARE_OP_BASE_EXCEPTIONS</h2>
 
@@ -180,8 +145,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">FC_DECLARE_DERIVED_EXCEPTION(                                      \</div><div class="line">      op_name ## _validate_exception,                                 \</div><div class="line">      graphene::chain::operation_validate_exception,                  \</div><div class="line">      3040000 + 100 * operation::tag&lt; op_name ## _operation &gt;::value, \</div><div class="line">      #op_name <span class="stringliteral">&quot;_operation validation exception&quot;</span>                      \</div><div class="line">      )                                                               \</div><div class="line">   FC_DECLARE_DERIVED_EXCEPTION(                                      \</div><div class="line">      op_name ## _evaluate_exception,                                 \</div><div class="line">      graphene::chain::operation_evaluate_exception,                  \</div><div class="line">      3050000 + 100 * operation::tag&lt; op_name ## _operation &gt;::value, \</div><div class="line">      #op_name <span class="stringliteral">&quot;_operation evaluation exception&quot;</span>                      \</div><div class="line">      )</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="exceptions_8hpp_source.html#l00036">36</a> of file <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line">FC_DECLARE_DERIVED_EXCEPTION(                                      \</div><div class="line">      op_name ## _validate_exception,                                 \</div><div class="line">      graphene::chain::operation_validate_exception,                  \</div><div class="line">      3040000 + 100 * operation::tag&lt; op_name ## _operation &gt;::value  \</div><div class="line">      )                                                               \</div><div class="line">   FC_DECLARE_DERIVED_EXCEPTION(                                      \</div><div class="line">      op_name ## _evaluate_exception,                                 \</div><div class="line">      graphene::chain::operation_evaluate_exception,                  \</div><div class="line">      3050000 + 100 * operation::tag&lt; op_name ## _operation &gt;::value  \</div><div class="line">      )</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="exceptions_8hpp_source.html#l00032">32</a> of file <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a>.</p>
 
 </div>
 </div>
@@ -222,8 +187,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">FC_DECLARE_DERIVED_EXCEPTION(                                      \</div><div class="line">      op_name ## _ ## exc_name,                                       \</div><div class="line">      graphene::chain::op_name ## _evaluate_exception,                \</div><div class="line">      3050000 + 100 * operation::tag&lt; op_name ## _operation &gt;::value  \</div><div class="line">         + seqnum,                                                    \</div><div class="line">      msg                                                             \</div><div class="line">      )</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="exceptions_8hpp_source.html#l00059">59</a> of file <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line">FC_DECLARE_DERIVED_EXCEPTION(                                      \</div><div class="line">      op_name ## _ ## exc_name,                                       \</div><div class="line">      graphene::chain::op_name ## _evaluate_exception,                \</div><div class="line">      3050000 + 100 * operation::tag&lt; op_name ## _operation &gt;::value  \</div><div class="line">         + seqnum                                                     \</div><div class="line">      )</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="exceptions_8hpp_source.html#l00075">75</a> of file <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a>.</p>
 
 </div>
 </div>
@@ -264,8 +229,112 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">FC_DECLARE_DERIVED_EXCEPTION(                                      \</div><div class="line">      op_name ## _ ## exc_name,                                       \</div><div class="line">      graphene::chain::op_name ## _validate_exception,                \</div><div class="line">      3040000 + 100 * operation::tag&lt; op_name ## _operation &gt;::value  \</div><div class="line">         + seqnum,                                                    \</div><div class="line">      msg                                                             \</div><div class="line">      )</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="exceptions_8hpp_source.html#l00050">50</a> of file <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line">FC_DECLARE_DERIVED_EXCEPTION(                                      \</div><div class="line">      op_name ## _ ## exc_name,                                       \</div><div class="line">      graphene::chain::op_name ## _validate_exception,                \</div><div class="line">      3040000 + 100 * operation::tag&lt; op_name ## _operation &gt;::value  \</div><div class="line">         + seqnum                                                     \</div><div class="line">      )</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="exceptions_8hpp_source.html#l00058">58</a> of file <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a63836897475eefdacd3706ae0dfb1330"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63836897475eefdacd3706ae0dfb1330">&#9670;&nbsp;</a></span>GRAPHENE_IMPLEMENT_OP_BASE_EXCEPTIONS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GRAPHENE_IMPLEMENT_OP_BASE_EXCEPTIONS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">op_name</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">FC_IMPLEMENT_DERIVED_EXCEPTION(                                    \</div><div class="line">      op_name ## _validate_exception,                                 \</div><div class="line">      graphene::chain::operation_validate_exception,                  \</div><div class="line">      3040000 + 100 * operation::tag&lt; op_name ## _operation &gt;::value, \</div><div class="line">      #op_name <span class="stringliteral">&quot;_operation validation exception&quot;</span>                      \</div><div class="line">      )                                                               \</div><div class="line">   FC_IMPLEMENT_DERIVED_EXCEPTION(                                    \</div><div class="line">      op_name ## _evaluate_exception,                                 \</div><div class="line">      graphene::chain::operation_evaluate_exception,                  \</div><div class="line">      3050000 + 100 * operation::tag&lt; op_name ## _operation &gt;::value, \</div><div class="line">      #op_name <span class="stringliteral">&quot;_operation evaluation exception&quot;</span>                      \</div><div class="line">      )</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="exceptions_8hpp_source.html#l00044">44</a> of file <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a>.</p>
+
+</div>
+</div>
+<a id="acf492419d2c2b21c94a031a45a9b1e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf492419d2c2b21c94a031a45a9b1e08">&#9670;&nbsp;</a></span>GRAPHENE_IMPLEMENT_OP_EVALUATE_EXCEPTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GRAPHENE_IMPLEMENT_OP_EVALUATE_EXCEPTION</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">exc_name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">op_name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">seqnum, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">FC_IMPLEMENT_DERIVED_EXCEPTION(                                    \</div><div class="line">      op_name ## _ ## exc_name,                                       \</div><div class="line">      graphene::chain::op_name ## _evaluate_exception,                \</div><div class="line">      3050000 + 100 * operation::tag&lt; op_name ## _operation &gt;::value  \</div><div class="line">         + seqnum,                                                    \</div><div class="line">      msg                                                             \</div><div class="line">      )</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="exceptions_8hpp_source.html#l00083">83</a> of file <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a84d4b21bece5c4a4be89242127f9feed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84d4b21bece5c4a4be89242127f9feed">&#9670;&nbsp;</a></span>GRAPHENE_IMPLEMENT_OP_VALIDATE_EXCEPTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GRAPHENE_IMPLEMENT_OP_VALIDATE_EXCEPTION</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">exc_name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">op_name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">seqnum, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">FC_IMPLEMENT_DERIVED_EXCEPTION(                                    \</div><div class="line">      op_name ## _ ## exc_name,                                       \</div><div class="line">      graphene::chain::op_name ## _validate_exception,                \</div><div class="line">      3040000 + 100 * operation::tag&lt; op_name ## _operation &gt;::value  \</div><div class="line">         + seqnum,                                                    \</div><div class="line">      msg                                                             \</div><div class="line">      )</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="exceptions_8hpp_source.html#l00066">66</a> of file <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a>.</p>
 
 </div>
 </div>
@@ -295,7 +364,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">catch</span>( <span class="keyword">const</span> cause_type&amp; e ) \</div><div class="line">      { <span class="keywordflow">throw</span>( effect_type( e.what(), e.get_log() ) ); }</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="exceptions_8hpp_source.html#l00267">267</a> of file <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="exceptions_8hpp_source.html#l00203">203</a> of file <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a>.</p>
 
 </div>
 </div>
@@ -325,14 +394,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">try</span>                                                                        \</div><div class="line">   {                                                                          \</div><div class="line">      signal( __VA_ARGS__ );                                                  \</div><div class="line">   }                                                                          \</div><div class="line">   catch( <span class="keyword">const</span> graphene::chain::plugin_exception&amp; e )                        \</div><div class="line">   {                                                                          \</div><div class="line">      elog( <span class="stringliteral">&quot;Caught plugin exception: ${e}&quot;</span>, (<span class="stringliteral">&quot;e&quot;</span>, e.to_detail_string() ) );  \</div><div class="line">      throw;                                                                  \</div><div class="line">   }                                                                          \</div><div class="line">   catch( ... )                                                               \</div><div class="line">   {                                                                          \</div><div class="line">      wlog( <span class="stringliteral">&quot;Caught unexpected exception in plugin&quot;</span> );                        \</div><div class="line">   }</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="exceptions_8hpp_source.html#l00068">68</a> of file <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="exceptions_8hpp_source.html#l00092">92</a> of file <a class="el" href="exceptions_8hpp_source.html">exceptions.hpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2019 16:11:11 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 17 2019 11:53:33 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['balance_5fobject_5ftype',['balance_object_type',['../namespacegraphene_1_1chain.html#aa6e32c79e2b22c998deddedcb696633da87cfe643d795d2b468fbc0bbf7b5d4ec',1,'graphene::chain']]],
-  ['base_5fobject_5ftype',['base_object_type',['../namespacegraphene_1_1chain.html#aa6e32c79e2b22c998deddedcb696633da218bdd07cd77f2b0715276fa6af58e49',1,'graphene::chain']]],
-  ['black_5flisted',['black_listed',['../structgraphene_1_1chain_1_1account__whitelist__operation.html#abba3d110e073c52309b894c4342fc660a52535472688741b32b3e8bc05ec61e73',1,'graphene::chain::account_whitelist_operation']]]
+  ['fba_5faccumulator_5fid_5fblind_5ftransfer',['fba_accumulator_id_blind_transfer',['../namespacegraphene_1_1chain.html#acdb82d2f8c178aa11ccb3df23ca32ccdabf42751f9a6dda7ad64f46694ad4c249',1,'graphene::chain']]],
+  ['fba_5faccumulator_5fid_5fcount',['fba_accumulator_id_count',['../namespacegraphene_1_1chain.html#acdb82d2f8c178aa11ccb3df23ca32ccdaadd2b1128df626e02420beb23efe7aaa',1,'graphene::chain']]],
+  ['fba_5faccumulator_5fid_5ftransfer_5ffrom_5fblind',['fba_accumulator_id_transfer_from_blind',['../namespacegraphene_1_1chain.html#acdb82d2f8c178aa11ccb3df23ca32ccdaad142486291cf46325fed49a43dadeaa',1,'graphene::chain']]],
+  ['fba_5faccumulator_5fid_5ftransfer_5fto_5fblind',['fba_accumulator_id_transfer_to_blind',['../namespacegraphene_1_1chain.html#acdb82d2f8c178aa11ccb3df23ca32ccdae90b1c4cdb81c92695797f50d1243025',1,'graphene::chain']]]
 ];

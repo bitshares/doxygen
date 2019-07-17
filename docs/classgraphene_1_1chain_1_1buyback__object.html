@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.1.0</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -85,21 +85,21 @@ Inheritance diagram for graphene::chain::buyback_object:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a972380515965598a66e2e479a7249aa6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1chain.html#a8719a403aa47e9d369890c01d60d0bb2">asset_id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1buyback__object.html#a972380515965598a66e2e479a7249aa6">asset_to_buy</a></td></tr>
+<tr class="memitem:a972380515965598a66e2e479a7249aa6"><td class="memItemLeft" align="right" valign="top">asset_id_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1buyback__object.html#a972380515965598a66e2e479a7249aa6">asset_to_buy</a></td></tr>
 <tr class="separator:a972380515965598a66e2e479a7249aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a65f22611105db6df3731d6a181568959"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1buyback__object.html#a65f22611105db6df3731d6a181568959">space_id</a> = <a class="el" href="namespacegraphene_1_1chain.html#a92e55d4242187696c5e2c5eaafbd9400a81f35c04f1d3f3109dacaa6f2bef33c7">implementation_ids</a></td></tr>
+<tr class="memitem:a65f22611105db6df3731d6a181568959"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1buyback__object.html#a65f22611105db6df3731d6a181568959">space_id</a> = implementation_ids</td></tr>
 <tr class="separator:a65f22611105db6df3731d6a181568959"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac744a0506865efeeaab7fb31e3b6bc3a"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1buyback__object.html#ac744a0506865efeeaab7fb31e3b6bc3a">type_id</a> = <a class="el" href="namespacegraphene_1_1chain.html#ad3bef2f100b722a6c30fada38f6dcd73a7a94b2d29fe39e6d30d5b3c5eb7ec42b">impl_buyback_object_type</a></td></tr>
+<tr class="memitem:ac744a0506865efeeaab7fb31e3b6bc3a"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1buyback__object.html#ac744a0506865efeeaab7fb31e3b6bc3a">type_id</a> = impl_buyback_object_type</td></tr>
 <tr class="separator:ac744a0506865efeeaab7fb31e3b6bc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>buyback_authority_object only exists to help with a specific indexing problem. We want to be able to iterate over all assets that have a buyback program. However, assets which have a buyback program are very rare. So rather than indexing <a class="el" href="classgraphene_1_1chain_1_1asset__object.html" title="tracks the parameters of an assetAll assets have a globally unique symbol name that controls how they...">asset_object</a> by the buyback field (requiring additional bookkeeping for every asset), we instead maintain a <a class="el" href="classgraphene_1_1chain_1_1buyback__object.html">buyback_object</a> pointing to each asset which has buyback (requiring additional bookkeeping only for every asset which has buyback).</p>
 <p>This class is an implementation detail. </p>
 
-<p class="definition">Definition at line <a class="el" href="buyback__object_8hpp_source.html#l00044">44</a> of file <a class="el" href="buyback__object_8hpp_source.html">buyback_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="buyback__object_8hpp_source.html#l00043">43</a> of file <a class="el" href="buyback__object_8hpp_source.html">buyback_object.hpp</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a972380515965598a66e2e479a7249aa6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a972380515965598a66e2e479a7249aa6">&#9670;&nbsp;</a></span>asset_to_buy</h2>
@@ -108,12 +108,12 @@ Static Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacegraphene_1_1chain.html#a8719a403aa47e9d369890c01d60d0bb2">asset_id_type</a> graphene::chain::buyback_object::asset_to_buy</td>
+          <td class="memname">asset_id_type graphene::chain::buyback_object::asset_to_buy</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="buyback__object_8hpp_source.html#l00050">50</a> of file <a class="el" href="buyback__object_8hpp_source.html">buyback_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="buyback__object_8hpp_source.html#l00049">49</a> of file <a class="el" href="buyback__object_8hpp_source.html">buyback_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -127,7 +127,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t graphene::chain::buyback_object::space_id = <a class="el" href="namespacegraphene_1_1chain.html#a92e55d4242187696c5e2c5eaafbd9400a81f35c04f1d3f3109dacaa6f2bef33c7">implementation_ids</a></td>
+          <td class="memname">const uint8_t graphene::chain::buyback_object::space_id = implementation_ids</td>
         </tr>
       </table>
   </td>
@@ -137,7 +137,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="buyback__object_8hpp_source.html#l00047">47</a> of file <a class="el" href="buyback__object_8hpp_source.html">buyback_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="buyback__object_8hpp_source.html#l00046">46</a> of file <a class="el" href="buyback__object_8hpp_source.html">buyback_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -151,7 +151,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t graphene::chain::buyback_object::type_id = <a class="el" href="namespacegraphene_1_1chain.html#ad3bef2f100b722a6c30fada38f6dcd73a7a94b2d29fe39e6d30d5b3c5eb7ec42b">impl_buyback_object_type</a></td>
+          <td class="memname">const uint8_t graphene::chain::buyback_object::type_id = impl_buyback_object_type</td>
         </tr>
       </table>
   </td>
@@ -161,7 +161,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="buyback__object_8hpp_source.html#l00048">48</a> of file <a class="el" href="buyback__object_8hpp_source.html">buyback_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="buyback__object_8hpp_source.html#l00047">47</a> of file <a class="el" href="buyback__object_8hpp_source.html">buyback_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -171,7 +171,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2019 16:11:11 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 17 2019 11:53:33 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

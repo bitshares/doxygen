@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['dynamic_5fflag_5fbits',['dynamic_flag_bits',['../classgraphene_1_1chain_1_1dynamic__global__property__object.html#a566f83c180a362c4296d06e5d1930482',1,'graphene::chain::dynamic_global_property_object']]]
+  ['validation_5fsteps',['validation_steps',['../classgraphene_1_1chain_1_1database.html#a6de6add85d012876641f2a50ad707726',1,'graphene::chain::database']]],
+  ['vesting_5fbalance_5ftype',['vesting_balance_type',['../namespacegraphene_1_1chain.html#a4efc4a0f6c3e0ba09fc0091955ed8bc7',1,'graphene::chain']]]
 ];

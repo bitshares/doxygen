@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.1.0</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -103,7 +103,6 @@ $(function() {
 <code>#include &lt;fc/network/http/websocket.hpp&gt;</code><br />
 <code>#include &lt;fc/rpc/cli.hpp&gt;</code><br />
 <code>#include &lt;fc/rpc/websocket_api.hpp&gt;</code><br />
-<code>#include &lt;fc/crypto/aes.hpp&gt;</code><br />
 <code>#include &lt;fc/crypto/hex.hpp&gt;</code><br />
 <code>#include &lt;fc/thread/mutex.hpp&gt;</code><br />
 <code>#include &lt;fc/thread/scoped_lock.hpp&gt;</code><br />
@@ -112,8 +111,8 @@ $(function() {
 <code>#include &lt;<a class="el" href="api_8hpp_source.html">graphene/app/api.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="util_8hpp_source.html">graphene/app/util.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__object_8hpp_source.html">graphene/chain/asset_object.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="fee__schedule_8hpp_source.html">graphene/chain/protocol/fee_schedule.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="htlc__object_8hpp_source.html">graphene/chain/htlc_object.hpp</a>&gt;</code><br />
+<code>#include &lt;graphene/protocol/fee_schedule.hpp&gt;</code><br />
+<code>#include &lt;graphene/protocol/pts_address.hpp&gt;</code><br />
 <code>#include &lt;graphene/chain/hardfork.hpp&gt;</code><br />
 <code>#include &lt;graphene/utilities/git_revision.hpp&gt;</code><br />
 <code>#include &lt;graphene/utilities/key_conversion.hpp&gt;</code><br />
@@ -122,6 +121,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="api__documentation_8hpp_source.html">graphene/wallet/api_documentation.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="reflect__util_8hpp_source.html">graphene/wallet/reflect_util.hpp</a>&gt;</code><br />
 <code>#include &lt;graphene/debug_witness/debug_api.hpp&gt;</code><br />
+<code>#include &lt;fc/crypto/aes.hpp&gt;</code><br />
 <code>#include &lt;sys/types.h&gt;</code><br />
 <code>#include &lt;sys/stat.h&gt;</code><br />
 </div>
@@ -163,7 +163,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a979ab353f66ec2473b4aa22897c4cfd7"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a979ab353f66ec2473b4aa22897c4cfd7"><td class="memTemplItemLeft" align="right" valign="top">optional&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1wallet_1_1detail.html#a979ab353f66ec2473b4aa22897c4cfd7">graphene::wallet::detail::maybe_id</a> (const string &amp;name_or_id)</td></tr>
 <tr class="separator:a979ab353f66ec2473b4aa22897c4cfd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1919254d982c593f07ba455857a1cfc"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1wallet_1_1detail.html#ab1919254d982c593f07ba455857a1cfc">graphene::wallet::detail::address_to_shorthash</a> (const <a class="el" href="classgraphene_1_1chain_1_1address.html">address</a> &amp;addr)</td></tr>
+<tr class="memitem:ab1919254d982c593f07ba455857a1cfc"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1wallet_1_1detail.html#ab1919254d982c593f07ba455857a1cfc">graphene::wallet::detail::address_to_shorthash</a> (const address &amp;addr)</td></tr>
 <tr class="separator:ab1919254d982c593f07ba455857a1cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a5667631b1d056590750526a0912fc6"><td class="memItemLeft" align="right" valign="top">fc::ecc::private_key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1wallet_1_1detail.html#a4a5667631b1d056590750526a0912fc6">graphene::wallet::detail::derive_private_key</a> (const std::string &amp;prefix_string, int sequence_number)</td></tr>
 <tr class="separator:a4a5667631b1d056590750526a0912fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,7 +187,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00089">89</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00090">90</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -203,14 +203,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00090">90</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00091">91</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2019 16:11:11 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 17 2019 11:53:33 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

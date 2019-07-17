@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.1.0</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -88,21 +88,21 @@ Inheritance diagram for graphene::chain::block_summary_object:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a6e91687e7f5fc4b2ed89e8bbbec3ba9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1chain.html#a314b030d7a6107c5641fd9945da7f568">block_id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1block__summary__object.html#a6e91687e7f5fc4b2ed89e8bbbec3ba9a">block_id</a></td></tr>
+<tr class="memitem:a6e91687e7f5fc4b2ed89e8bbbec3ba9a"><td class="memItemLeft" align="right" valign="top">block_id_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1block__summary__object.html#a6e91687e7f5fc4b2ed89e8bbbec3ba9a">block_id</a></td></tr>
 <tr class="separator:a6e91687e7f5fc4b2ed89e8bbbec3ba9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a283753e4440e524cbbcaa1d11b630fca"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1block__summary__object.html#a283753e4440e524cbbcaa1d11b630fca">space_id</a> = <a class="el" href="namespacegraphene_1_1chain.html#a92e55d4242187696c5e2c5eaafbd9400a81f35c04f1d3f3109dacaa6f2bef33c7">implementation_ids</a></td></tr>
+<tr class="memitem:a283753e4440e524cbbcaa1d11b630fca"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1block__summary__object.html#a283753e4440e524cbbcaa1d11b630fca">space_id</a> = implementation_ids</td></tr>
 <tr class="separator:a283753e4440e524cbbcaa1d11b630fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0abec15b37a4557651e83a24d98b9d3d"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1block__summary__object.html#a0abec15b37a4557651e83a24d98b9d3d">type_id</a> = <a class="el" href="namespacegraphene_1_1chain.html#ad3bef2f100b722a6c30fada38f6dcd73a650137ba77eb1c6a7bd45de1f8d34bc1">impl_block_summary_object_type</a></td></tr>
+<tr class="memitem:a0abec15b37a4557651e83a24d98b9d3d"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1block__summary__object.html#a0abec15b37a4557651e83a24d98b9d3d">type_id</a> = impl_block_summary_object_type</td></tr>
 <tr class="separator:a0abec15b37a4557651e83a24d98b9d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>tracks minimal information about past blocks to implement TaPOS</p>
 <p>When attempting to calculate the validity of a transaction we need to lookup a past block and check its block hash and the time it occurred so we can calculate whether the current transaction is valid and at what time it should expire. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__summary__object_8hpp_source.html#l00039">39</a> of file <a class="el" href="block__summary__object_8hpp_source.html">block_summary_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__summary__object_8hpp_source.html#l00040">40</a> of file <a class="el" href="block__summary__object_8hpp_source.html">block_summary_object.hpp</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a6e91687e7f5fc4b2ed89e8bbbec3ba9a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6e91687e7f5fc4b2ed89e8bbbec3ba9a">&#9670;&nbsp;</a></span>block_id</h2>
@@ -111,12 +111,12 @@ Static Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacegraphene_1_1chain.html#a314b030d7a6107c5641fd9945da7f568">block_id_type</a> graphene::chain::block_summary_object::block_id</td>
+          <td class="memname">block_id_type graphene::chain::block_summary_object::block_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="block__summary__object_8hpp_source.html#l00045">45</a> of file <a class="el" href="block__summary__object_8hpp_source.html">block_summary_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__summary__object_8hpp_source.html#l00046">46</a> of file <a class="el" href="block__summary__object_8hpp_source.html">block_summary_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -130,31 +130,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t graphene::chain::block_summary_object::space_id = <a class="el" href="namespacegraphene_1_1chain.html#a92e55d4242187696c5e2c5eaafbd9400a81f35c04f1d3f3109dacaa6f2bef33c7">implementation_ids</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="block__summary__object_8hpp_source.html#l00042">42</a> of file <a class="el" href="block__summary__object_8hpp_source.html">block_summary_object.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a0abec15b37a4557651e83a24d98b9d3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0abec15b37a4557651e83a24d98b9d3d">&#9670;&nbsp;</a></span>type_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const uint8_t graphene::chain::block_summary_object::type_id = <a class="el" href="namespacegraphene_1_1chain.html#ad3bef2f100b722a6c30fada38f6dcd73a650137ba77eb1c6a7bd45de1f8d34bc1">impl_block_summary_object_type</a></td>
+          <td class="memname">const uint8_t graphene::chain::block_summary_object::space_id = implementation_ids</td>
         </tr>
       </table>
   </td>
@@ -168,6 +144,30 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a0abec15b37a4557651e83a24d98b9d3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0abec15b37a4557651e83a24d98b9d3d">&#9670;&nbsp;</a></span>type_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t graphene::chain::block_summary_object::type_id = impl_block_summary_object_type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="block__summary__object_8hpp_source.html#l00044">44</a> of file <a class="el" href="block__summary__object_8hpp_source.html">block_summary_object.hpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>libraries/chain/include/graphene/chain/<a class="el" href="block__summary__object_8hpp_source.html">block_summary_object.hpp</a></li>
 <li>libraries/chain/<a class="el" href="db__init_8cpp_source.html">db_init.cpp</a></li>
@@ -175,7 +175,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2019 16:11:11 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 17 2019 11:53:33 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

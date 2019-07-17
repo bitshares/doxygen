@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['predicate',['predicate',['../namespacegraphene_1_1chain.html#a21d382f9713398018eaf0c67f61b9bc1',1,'graphene::chain']]],
-  ['private_5fkey_5ftype',['private_key_type',['../namespacegraphene_1_1chain.html#a9c45f50c97257b15a8793bba836c045a',1,'graphene::chain']]],
-  ['proposal_5fid_5ftype',['proposal_id_type',['../namespacegraphene_1_1chain.html#a2af50d1432f0f4faf76130e684982a0b',1,'graphene::chain']]],
-  ['proposal_5findex',['proposal_index',['../namespacegraphene_1_1chain.html#a250f3b5333d70e37f1c421e87dfbaa3b',1,'graphene::chain']]],
-  ['proposal_5fmulti_5findex_5fcontainer',['proposal_multi_index_container',['../namespacegraphene_1_1chain.html#ad418e49a7cc240ebe3ee84adcc58cfc9',1,'graphene::chain']]],
-  ['public_5fkey_5fdata',['public_key_data',['../namespacefc_1_1ecc.html#a86376367df56783963d35795bebddce6',1,'fc::ecc']]]
+  ['transaction_5fhandle_5ftype',['transaction_handle_type',['../namespacegraphene_1_1wallet.html#a385c5434f1c4e271cf812627f9ee759a',1,'graphene::wallet']]],
+  ['transaction_5findex',['transaction_index',['../namespacegraphene_1_1chain.html#a6735d1474fb46c8be23bffb0ea544f52',1,'graphene::chain']]],
+  ['transaction_5fmulti_5findex_5ftype',['transaction_multi_index_type',['../namespacegraphene_1_1chain.html#a3b4961928bcc772143d60f32b4a87b35',1,'graphene::chain']]]
 ];

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.1.0</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -74,7 +74,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Worker object contains the details of a blockchain worker. See <a class="el" href="group__workers.html">The Blockchain Worker System</a> for details.  
+<p>Worker object contains the details of a blockchain worker. See workers for details.  
  <a href="classgraphene_1_1chain_1_1worker__object.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>&gt;</code></p>
@@ -91,12 +91,12 @@ Inheritance diagram for graphene::chain::worker_object:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae8ad74d11c51f78619a015013ce79907"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1worker__object.html#ae8ad74d11c51f78619a015013ce79907">is_active</a> (fc::time_point_sec now) const</td></tr>
 <tr class="separator:ae8ad74d11c51f78619a015013ce79907"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a689234470f9ed7dab3b402e1c7e35cbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1chain.html#ab4bea4aef5fe40c66b42537da931bffe">share_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1worker__object.html#a689234470f9ed7dab3b402e1c7e35cbe">approving_stake</a> () const</td></tr>
+<tr class="memitem:a689234470f9ed7dab3b402e1c7e35cbe"><td class="memItemLeft" align="right" valign="top">share_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1worker__object.html#a689234470f9ed7dab3b402e1c7e35cbe">approving_stake</a> () const</td></tr>
 <tr class="separator:a689234470f9ed7dab3b402e1c7e35cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a8f85a7277840f8966a8f93b634b7d08d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1chain.html#a11927fb343f953514ab6235d6e7233ee">account_id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1worker__object.html#a8f85a7277840f8966a8f93b634b7d08d">worker_account</a></td></tr>
+<tr class="memitem:a8f85a7277840f8966a8f93b634b7d08d"><td class="memItemLeft" align="right" valign="top">account_id_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1worker__object.html#a8f85a7277840f8966a8f93b634b7d08d">worker_account</a></td></tr>
 <tr class="memdesc:a8f85a7277840f8966a8f93b634b7d08d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of the account which owns this worker.  <a href="#a8f85a7277840f8966a8f93b634b7d08d">More...</a><br /></td></tr>
 <tr class="separator:a8f85a7277840f8966a8f93b634b7d08d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9fe70637086fdf01697d083f834d417"><td class="memItemLeft" align="right" valign="top">time_point_sec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1worker__object.html#af9fe70637086fdf01697d083f834d417">work_begin_date</a></td></tr>
@@ -105,7 +105,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a7adef03c9c161025de19148e1a1c2938"><td class="memItemLeft" align="right" valign="top">time_point_sec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1worker__object.html#a7adef03c9c161025de19148e1a1c2938">work_end_date</a></td></tr>
 <tr class="memdesc:a7adef03c9c161025de19148e1a1c2938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time at which this worker will cease to receive pay. Worker will be deleted at this time.  <a href="#a7adef03c9c161025de19148e1a1c2938">More...</a><br /></td></tr>
 <tr class="separator:a7adef03c9c161025de19148e1a1c2938"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c2d8d4a16fe45f978a591a31aa8f848"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1chain.html#ab4bea4aef5fe40c66b42537da931bffe">share_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1worker__object.html#a6c2d8d4a16fe45f978a591a31aa8f848">daily_pay</a></td></tr>
+<tr class="memitem:a6c2d8d4a16fe45f978a591a31aa8f848"><td class="memItemLeft" align="right" valign="top">share_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1worker__object.html#a6c2d8d4a16fe45f978a591a31aa8f848">daily_pay</a></td></tr>
 <tr class="memdesc:a6c2d8d4a16fe45f978a591a31aa8f848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Amount in CORE this worker will be paid each day.  <a href="#a6c2d8d4a16fe45f978a591a31aa8f848">More...</a><br /></td></tr>
 <tr class="separator:a6c2d8d4a16fe45f978a591a31aa8f848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a815d5e45c913b5cfbfa159603d884aae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1chain.html#aff2faab1253f21209aaad5771fdda38c">worker_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1worker__object.html#a815d5e45c913b5cfbfa159603d884aae">worker</a></td></tr>
@@ -117,10 +117,10 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a6f136834f2437b86bf241f275a7cb47b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1worker__object.html#a6f136834f2437b86bf241f275a7cb47b">url</a></td></tr>
 <tr class="memdesc:a6f136834f2437b86bf241f275a7cb47b"><td class="mdescLeft">&#160;</td><td class="mdescRight">URL to a web page representing this worker.  <a href="#a6f136834f2437b86bf241f275a7cb47b">More...</a><br /></td></tr>
 <tr class="separator:a6f136834f2437b86bf241f275a7cb47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59fe30f86eb264a837de20f7060139fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1chain_1_1vote__id__type.html">vote_id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1worker__object.html#a59fe30f86eb264a837de20f7060139fe">vote_for</a></td></tr>
+<tr class="memitem:a59fe30f86eb264a837de20f7060139fe"><td class="memItemLeft" align="right" valign="top">vote_id_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1worker__object.html#a59fe30f86eb264a837de20f7060139fe">vote_for</a></td></tr>
 <tr class="memdesc:a59fe30f86eb264a837de20f7060139fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Voting ID which represents approval of this worker.  <a href="#a59fe30f86eb264a837de20f7060139fe">More...</a><br /></td></tr>
 <tr class="separator:a59fe30f86eb264a837de20f7060139fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04502ac21107ce051c9d4eac2417061a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1chain_1_1vote__id__type.html">vote_id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1worker__object.html#a04502ac21107ce051c9d4eac2417061a">vote_against</a></td></tr>
+<tr class="memitem:a04502ac21107ce051c9d4eac2417061a"><td class="memItemLeft" align="right" valign="top">vote_id_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1worker__object.html#a04502ac21107ce051c9d4eac2417061a">vote_against</a></td></tr>
 <tr class="memdesc:a04502ac21107ce051c9d4eac2417061a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Voting ID which represents disapproval of this worker.  <a href="#a04502ac21107ce051c9d4eac2417061a">More...</a><br /></td></tr>
 <tr class="separator:a04502ac21107ce051c9d4eac2417061a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af50e00a4516cbb8b9e991e2316ffba34"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1worker__object.html#af50e00a4516cbb8b9e991e2316ffba34">total_votes_for</a> = 0</td></tr>
@@ -130,15 +130,15 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a42487999635d7eaaabed8c4ba501dd01"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1worker__object.html#a42487999635d7eaaabed8c4ba501dd01">space_id</a> = <a class="el" href="namespacegraphene_1_1chain.html#a92e55d4242187696c5e2c5eaafbd9400a9dadbbe526b5096091138116c13d612d">protocol_ids</a></td></tr>
+<tr class="memitem:a42487999635d7eaaabed8c4ba501dd01"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1worker__object.html#a42487999635d7eaaabed8c4ba501dd01">space_id</a> = protocol_ids</td></tr>
 <tr class="separator:a42487999635d7eaaabed8c4ba501dd01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4defb57c4917c3391521a5e5b51fa861"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1worker__object.html#a4defb57c4917c3391521a5e5b51fa861">type_id</a> = <a class="el" href="namespacegraphene_1_1chain.html#aa6e32c79e2b22c998deddedcb696633da139435e4b7046de50fa6d55bc73676d6">worker_object_type</a></td></tr>
+<tr class="memitem:a4defb57c4917c3391521a5e5b51fa861"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1worker__object.html#a4defb57c4917c3391521a5e5b51fa861">type_id</a> = worker_object_type</td></tr>
 <tr class="separator:a4defb57c4917c3391521a5e5b51fa861"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Worker object contains the details of a blockchain worker. See <a class="el" href="group__workers.html">The Blockchain Worker System</a> for details. </p>
+<div class="textblock"><p>Worker object contains the details of a blockchain worker. See workers for details. </p>
 
-<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00105">105</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00107">107</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a689234470f9ed7dab3b402e1c7e35cbe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a689234470f9ed7dab3b402e1c7e35cbe">&#9670;&nbsp;</a></span>approving_stake()</h2>
@@ -150,7 +150,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacegraphene_1_1chain.html#ab4bea4aef5fe40c66b42537da931bffe">share_type</a> graphene::chain::worker_object::approving_stake </td>
+          <td class="memname">share_type graphene::chain::worker_object::approving_stake </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -163,7 +163,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00138">138</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00140">140</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -191,7 +191,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00134">134</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00136">136</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -203,14 +203,14 @@ Static Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacegraphene_1_1chain.html#ab4bea4aef5fe40c66b42537da931bffe">share_type</a> graphene::chain::worker_object::daily_pay</td>
+          <td class="memname">share_type graphene::chain::worker_object::daily_pay</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Amount in CORE this worker will be paid each day. </p>
 
-<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00118">118</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00120">120</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -228,7 +228,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Human-readable name for the worker. </p>
 
-<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00122">122</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00124">124</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -242,7 +242,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t graphene::chain::worker_object::space_id = <a class="el" href="namespacegraphene_1_1chain.html#a92e55d4242187696c5e2c5eaafbd9400a9dadbbe526b5096091138116c13d612d">protocol_ids</a></td>
+          <td class="memname">const uint8_t graphene::chain::worker_object::space_id = protocol_ids</td>
         </tr>
       </table>
   </td>
@@ -252,7 +252,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00108">108</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00110">110</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -268,7 +268,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00132">132</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00134">134</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -284,7 +284,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00131">131</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00133">133</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -298,7 +298,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t graphene::chain::worker_object::type_id = <a class="el" href="namespacegraphene_1_1chain.html#aa6e32c79e2b22c998deddedcb696633da139435e4b7046de50fa6d55bc73676d6">worker_object_type</a></td>
+          <td class="memname">const uint8_t graphene::chain::worker_object::type_id = worker_object_type</td>
         </tr>
       </table>
   </td>
@@ -308,7 +308,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00109">109</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00111">111</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -326,7 +326,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>URL to a web page representing this worker. </p>
 
-<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00124">124</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00126">126</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -337,14 +337,14 @@ Static Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structgraphene_1_1chain_1_1vote__id__type.html">vote_id_type</a> graphene::chain::worker_object::vote_against</td>
+          <td class="memname">vote_id_type graphene::chain::worker_object::vote_against</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Voting ID which represents disapproval of this worker. </p>
 
-<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00129">129</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00131">131</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -355,14 +355,14 @@ Static Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structgraphene_1_1chain_1_1vote__id__type.html">vote_id_type</a> graphene::chain::worker_object::vote_for</td>
+          <td class="memname">vote_id_type graphene::chain::worker_object::vote_for</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Voting ID which represents approval of this worker. </p>
 
-<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00127">127</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00129">129</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -380,7 +380,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Time at which this worker begins receiving pay, if elected. </p>
 
-<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00114">114</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00116">116</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -398,7 +398,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Time at which this worker will cease to receive pay. Worker will be deleted at this time. </p>
 
-<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00116">116</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00118">118</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -416,7 +416,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>ID of this worker's pay balance. </p>
 
-<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00120">120</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00122">122</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -427,14 +427,14 @@ Static Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacegraphene_1_1chain.html#a11927fb343f953514ab6235d6e7233ee">account_id_type</a> graphene::chain::worker_object::worker_account</td>
+          <td class="memname">account_id_type graphene::chain::worker_object::worker_account</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>ID of the account which owns this worker. </p>
 
-<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00112">112</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00114">114</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -445,7 +445,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2019 16:11:12 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 17 2019 11:53:33 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

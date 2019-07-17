@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['account_5flisting',['account_listing',['../structgraphene_1_1chain_1_1account__whitelist__operation.html#abba3d110e073c52309b894c4342fc660',1,'graphene::chain::account_whitelist_operation']]],
-  ['asset_5fissuer_5fpermission_5fflags',['asset_issuer_permission_flags',['../namespacegraphene_1_1chain.html#a6a12bfc3745c709e79e6bbcd1fa6c3d2',1,'graphene::chain']]]
+  ['dynamic_5fflag_5fbits',['dynamic_flag_bits',['../classgraphene_1_1chain_1_1dynamic__global__property__object.html#a566f83c180a362c4296d06e5d1930482',1,'graphene::chain::dynamic_global_property_object']]]
 ];

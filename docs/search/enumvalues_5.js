@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['global_5fsettle',['global_settle',['../namespacegraphene_1_1chain.html#a6a12bfc3745c709e79e6bbcd1fa6c3d2a58c0aa104472d6de38db9eb6ea4dd2d4',1,'graphene::chain']]]
+  ['witness',['witness',['../namespacegraphene_1_1chain.html#a4efc4a0f6c3e0ba09fc0091955ed8bc7a256f446b60e5cfbd429443fd756d01ef',1,'graphene::chain']]],
+  ['worker',['worker',['../namespacegraphene_1_1chain.html#a4efc4a0f6c3e0ba09fc0091955ed8bc7ab61822e8357dcaff77eaaccf348d9134',1,'graphene::chain']]]
 ];

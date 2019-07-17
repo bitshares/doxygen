@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.1.0</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -65,6 +65,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structgraphene_1_1chain_1_1index__entry-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -72,19 +73,52 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0ca38db7138dffdca03e6a9f488eccb0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1index__entry.html#a0ca38db7138dffdca03e6a9f488eccb0">index_entry</a> ()</td></tr>
+<tr class="separator:a0ca38db7138dffdca03e6a9f488eccb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ad6d051d55804f642aa39abd7ddcef7dd"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1index__entry.html#ad6d051d55804f642aa39abd7ddcef7dd">block_pos</a> = 0</td></tr>
-<tr class="separator:ad6d051d55804f642aa39abd7ddcef7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add87237c72042b8a22ca248d04af6b51"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1index__entry.html#add87237c72042b8a22ca248d04af6b51">block_size</a> = 0</td></tr>
-<tr class="separator:add87237c72042b8a22ca248d04af6b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43aa4a93e322c62f9036162b9bceec27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1chain.html#a314b030d7a6107c5641fd9945da7f568">block_id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1index__entry.html#a43aa4a93e322c62f9036162b9bceec27">block_id</a></td></tr>
+<tr class="memitem:acf5e6ef75930fa3f61eb6a49a4535486"><td class="memItemLeft" align="right" valign="top">boost::endian::little_uint64_buf_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1index__entry.html#acf5e6ef75930fa3f61eb6a49a4535486">block_pos</a></td></tr>
+<tr class="separator:acf5e6ef75930fa3f61eb6a49a4535486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7efdec6844b645cb68c80b1eabdc3990"><td class="memItemLeft" align="right" valign="top">boost::endian::little_uint32_buf_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1index__entry.html#a7efdec6844b645cb68c80b1eabdc3990">block_size</a></td></tr>
+<tr class="separator:a7efdec6844b645cb68c80b1eabdc3990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43aa4a93e322c62f9036162b9bceec27"><td class="memItemLeft" align="right" valign="top">block_id_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1index__entry.html#a43aa4a93e322c62f9036162b9bceec27">block_id</a></td></tr>
 <tr class="separator:a43aa4a93e322c62f9036162b9bceec27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="block__database_8cpp_source.html#l00030">30</a> of file <a class="el" href="block__database_8cpp_source.html">block_database.cpp</a>.</p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="block__database_8cpp_source.html#l00031">31</a> of file <a class="el" href="block__database_8cpp_source.html">block_database.cpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0ca38db7138dffdca03e6a9f488eccb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ca38db7138dffdca03e6a9f488eccb0">&#9670;&nbsp;</a></span>index_entry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">graphene::chain::index_entry::index_entry </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="block__database_8cpp_source.html#l00033">33</a> of file <a class="el" href="block__database_8cpp_source.html">block_database.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="a43aa4a93e322c62f9036162b9bceec27"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a43aa4a93e322c62f9036162b9bceec27">&#9670;&nbsp;</a></span>block_id</h2>
 
@@ -92,44 +126,44 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacegraphene_1_1chain.html#a314b030d7a6107c5641fd9945da7f568">block_id_type</a> graphene::chain::index_entry::block_id</td>
+          <td class="memname">block_id_type graphene::chain::index_entry::block_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="block__database_8cpp_source.html#l00034">34</a> of file <a class="el" href="block__database_8cpp_source.html">block_database.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__database_8cpp_source.html#l00039">39</a> of file <a class="el" href="block__database_8cpp_source.html">block_database.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ad6d051d55804f642aa39abd7ddcef7dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6d051d55804f642aa39abd7ddcef7dd">&#9670;&nbsp;</a></span>block_pos</h2>
+<a id="acf5e6ef75930fa3f61eb6a49a4535486"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf5e6ef75930fa3f61eb6a49a4535486">&#9670;&nbsp;</a></span>block_pos</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t graphene::chain::index_entry::block_pos = 0</td>
+          <td class="memname">boost::endian::little_uint64_buf_t graphene::chain::index_entry::block_pos</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="block__database_8cpp_source.html#l00032">32</a> of file <a class="el" href="block__database_8cpp_source.html">block_database.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__database_8cpp_source.html#l00036">36</a> of file <a class="el" href="block__database_8cpp_source.html">block_database.cpp</a>.</p>
 
 </div>
 </div>
-<a id="add87237c72042b8a22ca248d04af6b51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add87237c72042b8a22ca248d04af6b51">&#9670;&nbsp;</a></span>block_size</h2>
+<a id="a7efdec6844b645cb68c80b1eabdc3990"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7efdec6844b645cb68c80b1eabdc3990">&#9670;&nbsp;</a></span>block_size</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t graphene::chain::index_entry::block_size = 0</td>
+          <td class="memname">boost::endian::little_uint32_buf_t graphene::chain::index_entry::block_size</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="block__database_8cpp_source.html#l00033">33</a> of file <a class="el" href="block__database_8cpp_source.html">block_database.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__database_8cpp_source.html#l00038">38</a> of file <a class="el" href="block__database_8cpp_source.html">block_database.cpp</a>.</p>
 
 </div>
 </div>
@@ -139,7 +173,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2019 16:11:12 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 17 2019 11:53:33 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
