@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Bitshares-Core: libraries/chain/pts_address.cpp File Reference</title>
+<title>Bitshares-Core: libraries/protocol/pts_address.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.1.0</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -60,7 +60,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_bc0718b08fb2015b8e59c47b2805f60c.html">libraries</a></li><li class="navelem"><a class="el" href="dir_94df585d4e205d65756e56c0817a7014.html">chain</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_bc0718b08fb2015b8e59c47b2805f60c.html">libraries</a></li><li class="navelem"><a class="el" href="dir_72c3684b9b9fdee6da09925f80cf45e5.html">protocol</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,11 +71,11 @@ $(function() {
 <div class="title">pts_address.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="exceptions_8hpp_source.html">graphene/chain/exceptions.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="pts__address_8hpp_source.html">graphene/chain/pts_address.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="pts__address_8hpp_source.html">graphene/protocol/pts_address.hpp</a>&gt;</code><br />
 <code>#include &lt;fc/crypto/base58.hpp&gt;</code><br />
 <code>#include &lt;fc/crypto/elliptic.hpp&gt;</code><br />
 <code>#include &lt;fc/crypto/ripemd160.hpp&gt;</code><br />
+<code>#include &lt;fc/io/raw.hpp&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 </div>
 <p><a href="pts__address_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -84,22 +84,30 @@ $(function() {
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacegraphene"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene.html">graphene</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacegraphene_1_1chain"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html">graphene::chain</a></td></tr>
+<tr class="memitem:namespacegraphene_1_1protocol"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html">graphene::protocol</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacefc"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html">fc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacefc_1_1raw"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc_1_1raw.html">fc::raw</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a956076c9a19a34f489a311fe4e62eaed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#a956076c9a19a34f489a311fe4e62eaed">fc::to_variant</a> (const <a class="el" href="structgraphene_1_1chain_1_1pts__address.html">graphene::chain::pts_address</a> &amp;var, variant &amp;vo, uint32_t max_depth)</td></tr>
-<tr class="separator:a956076c9a19a34f489a311fe4e62eaed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88227672fa8bd40299befe1f231610dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#a88227672fa8bd40299befe1f231610dd">fc::from_variant</a> (const variant &amp;var, <a class="el" href="structgraphene_1_1chain_1_1pts__address.html">graphene::chain::pts_address</a> &amp;vo, uint32_t max_depth)</td></tr>
-<tr class="separator:a88227672fa8bd40299befe1f231610dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40d6a570e9437f4c6f8b940b2ca4ae1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#a40d6a570e9437f4c6f8b940b2ca4ae1e">fc::to_variant</a> (const <a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a> &amp;var, variant &amp;vo, uint32_t max_depth)</td></tr>
+<tr class="separator:a40d6a570e9437f4c6f8b940b2ca4ae1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf1f8dc5434409a27d5ed5b30bdf1af7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#acf1f8dc5434409a27d5ed5b30bdf1af7">fc::from_variant</a> (const variant &amp;var, <a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a> &amp;vo, uint32_t max_depth)</td></tr>
+<tr class="separator:acf1f8dc5434409a27d5ed5b30bdf1af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32a199697045525fbca469dfeeb161c1"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc_1_1raw.html#a32a199697045525fbca469dfeeb161c1">fc::raw::pack</a> (datastream&lt; size_t &gt; &amp;s, const <a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a> &amp;tx, uint32_t _max_depth)</td></tr>
+<tr class="separator:a32a199697045525fbca469dfeeb161c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0661099108a86db1bbbbe87d3b4fcf23"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc_1_1raw.html#a0661099108a86db1bbbbe87d3b4fcf23">fc::raw::pack</a> (datastream&lt; char *&gt; &amp;s, const <a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a> &amp;tx, uint32_t _max_depth)</td></tr>
+<tr class="separator:a0661099108a86db1bbbbe87d3b4fcf23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f26174b9936275643d584dc50f0f0f2"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc_1_1raw.html#a9f26174b9936275643d584dc50f0f0f2">fc::raw::unpack</a> (datastream&lt; const char *&gt; &amp;s, <a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a> &amp;tx, uint32_t _max_depth)</td></tr>
+<tr class="separator:a9f26174b9936275643d584dc50f0f0f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2019 16:11:11 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.1.0</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -95,15 +95,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae8d313e9878995bd04ae05fc89e5297a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1dc2668025ed93dac936a944c89d50d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1balances__by__account__index.html#ad1dc2668025ed93dac936a944c89d50d">object_modified</a> (const object &amp;after) override</td></tr>
 <tr class="separator:ad1dc2668025ed93dac936a944c89d50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a9d1a0a698c1af7531738267559d748"><td class="memItemLeft" align="right" valign="top">const map&lt; <a class="el" href="namespacegraphene_1_1chain.html#a8719a403aa47e9d369890c01d60d0bb2">asset_id_type</a>, const <a class="el" href="classgraphene_1_1chain_1_1account__balance__object.html">account_balance_object</a> *&gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1balances__by__account__index.html#a8a9d1a0a698c1af7531738267559d748">get_account_balances</a> (const <a class="el" href="namespacegraphene_1_1chain.html#a11927fb343f953514ab6235d6e7233ee">account_id_type</a> &amp;acct) const</td></tr>
+<tr class="memitem:a8a9d1a0a698c1af7531738267559d748"><td class="memItemLeft" align="right" valign="top">const map&lt; asset_id_type, const <a class="el" href="classgraphene_1_1chain_1_1account__balance__object.html">account_balance_object</a> *&gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1balances__by__account__index.html#a8a9d1a0a698c1af7531738267559d748">get_account_balances</a> (const account_id_type &amp;acct) const</td></tr>
 <tr class="separator:a8a9d1a0a698c1af7531738267559d748"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ff4406776dbf9b33b05d50fb4df9a82"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgraphene_1_1chain_1_1account__balance__object.html">account_balance_object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1balances__by__account__index.html#a6ff4406776dbf9b33b05d50fb4df9a82">get_account_balance</a> (const <a class="el" href="namespacegraphene_1_1chain.html#a11927fb343f953514ab6235d6e7233ee">account_id_type</a> &amp;acct, const <a class="el" href="namespacegraphene_1_1chain.html#a8719a403aa47e9d369890c01d60d0bb2">asset_id_type</a> &amp;<a class="el" href="structgraphene_1_1chain_1_1asset.html">asset</a>) const</td></tr>
+<tr class="memitem:a6ff4406776dbf9b33b05d50fb4df9a82"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgraphene_1_1chain_1_1account__balance__object.html">account_balance_object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1balances__by__account__index.html#a6ff4406776dbf9b33b05d50fb4df9a82">get_account_balance</a> (const account_id_type &amp;acct, const asset_id_type &amp;<a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a>) const</td></tr>
 <tr class="separator:a6ff4406776dbf9b33b05d50fb4df9a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This secondary index will allow fast access to the balance objects that belonging to an account. </p>
 
-<p class="definition">Definition at line <a class="el" href="account__object_8hpp_source.html#l00342">342</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="account__object_8hpp_source.html#l00347">347</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae8d313e9878995bd04ae05fc89e5297a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae8d313e9878995bd04ae05fc89e5297a">&#9670;&nbsp;</a></span>about_to_modify()</h2>
@@ -142,13 +142,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">const <a class="el" href="classgraphene_1_1chain_1_1account__balance__object.html">account_balance_object</a> * graphene::chain::balances_by_account_index::get_account_balance </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacegraphene_1_1chain.html#a11927fb343f953514ab6235d6e7233ee">account_id_type</a> &amp;&#160;</td>
+          <td class="paramtype">const account_id_type &amp;&#160;</td>
           <td class="paramname"><em>acct</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacegraphene_1_1chain.html#a8719a403aa47e9d369890c01d60d0bb2">asset_id_type</a> &amp;&#160;</td>
+          <td class="paramtype">const asset_id_type &amp;&#160;</td>
           <td class="paramname"><em>asset</em>&#160;</td>
         </tr>
         <tr>
@@ -170,9 +170,9 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const map&lt; <a class="el" href="namespacegraphene_1_1chain.html#a8719a403aa47e9d369890c01d60d0bb2">asset_id_type</a>, const <a class="el" href="classgraphene_1_1chain_1_1account__balance__object.html">account_balance_object</a> *&gt; &amp; graphene::chain::balances_by_account_index::get_account_balances </td>
+          <td class="memname">const map&lt; asset_id_type, const <a class="el" href="classgraphene_1_1chain_1_1account__balance__object.html">account_balance_object</a> *&gt; &amp; graphene::chain::balances_by_account_index::get_account_balances </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacegraphene_1_1chain.html#a11927fb343f953514ab6235d6e7233ee">account_id_type</a> &amp;&#160;</td>
+          <td class="paramtype">const account_id_type &amp;&#160;</td>
           <td class="paramname"><em>acct</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -274,7 +274,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2019 16:11:11 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

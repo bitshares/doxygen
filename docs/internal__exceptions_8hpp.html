@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.1.0</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -71,8 +71,7 @@ $(function() {
 <div class="title">internal_exceptions.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;fc/exception/exception.hpp&gt;</code><br />
-<code>#include &lt;<a class="el" href="exceptions_8hpp_source.html">graphene/chain/exceptions.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="chain_2include_2graphene_2chain_2exceptions_8hpp_source.html">graphene/chain/exceptions.hpp</a>&gt;</code><br />
 </div>
 <p><a href="internal__exceptions_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -87,6 +86,8 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a09fea956957bf3aa3a5733f9ff7df639"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="internal__exceptions_8hpp.html#a09fea956957bf3aa3a5733f9ff7df639">GRAPHENE_DECLARE_INTERNAL_EXCEPTION</a>(exc_name,  seqnum,  msg)</td></tr>
 <tr class="separator:a09fea956957bf3aa3a5733f9ff7df639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dcab3a167cd6e0b8967530b7247b42c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="internal__exceptions_8hpp.html#a3dcab3a167cd6e0b8967530b7247b42c">GRAPHENE_IMPLEMENT_INTERNAL_EXCEPTION</a>(exc_name,  seqnum,  msg)</td></tr>
+<tr class="separator:a3dcab3a167cd6e0b8967530b7247b42c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a09fea956957bf3aa3a5733f9ff7df639"></a>
@@ -120,15 +121,52 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">FC_DECLARE_DERIVED_EXCEPTION(                                      \</div><div class="line">      internal_ ## exc_name,                                          \</div><div class="line">      graphene::chain::internal_exception,                            \</div><div class="line">      3990000 + seqnum,                                               \</div><div class="line">      msg                                                             \</div><div class="line">      )</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="internal__exceptions_8hpp_source.html#l00029">29</a> of file <a class="el" href="internal__exceptions_8hpp_source.html">internal_exceptions.hpp</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line">FC_DECLARE_DERIVED_EXCEPTION(                                      \</div><div class="line">      internal_ ## exc_name,                                          \</div><div class="line">      graphene::chain::internal_exception,                            \</div><div class="line">      3990000 + seqnum                                                \</div><div class="line">      )</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="internal__exceptions_8hpp_source.html#l00028">28</a> of file <a class="el" href="internal__exceptions_8hpp_source.html">internal_exceptions.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a3dcab3a167cd6e0b8967530b7247b42c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dcab3a167cd6e0b8967530b7247b42c">&#9670;&nbsp;</a></span>GRAPHENE_IMPLEMENT_INTERNAL_EXCEPTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GRAPHENE_IMPLEMENT_INTERNAL_EXCEPTION</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">exc_name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">seqnum, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="namespacegraphene_1_1protocol.html#a16c54c83a62fa622b6593b5cf7f142b0">FC_IMPLEMENT_DERIVED_EXCEPTION</a>(                                      \</div><div class="line">      internal_ ## exc_name,                                          \</div><div class="line">      graphene::chain::internal_exception,                            \</div><div class="line">      3990000 + seqnum,                                               \</div><div class="line">      msg                                                             \</div><div class="line">      )</div><div class="ttc" id="namespacegraphene_1_1protocol_html_a16c54c83a62fa622b6593b5cf7f142b0"><div class="ttname"><a href="namespacegraphene_1_1protocol.html#a16c54c83a62fa622b6593b5cf7f142b0">graphene::protocol::FC_IMPLEMENT_DERIVED_EXCEPTION</a></div><div class="ttdeci">FC_IMPLEMENT_DERIVED_EXCEPTION(transaction_exception, protocol_exception, 4010000, &quot;transaction validation exception&quot;) FC_IMPLEMENT_DERIVED_EXCEPTION(tx_missing_active_auth</div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="internal__exceptions_8hpp_source.html#l00035">35</a> of file <a class="el" href="internal__exceptions_8hpp_source.html">internal_exceptions.hpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2019 16:11:11 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

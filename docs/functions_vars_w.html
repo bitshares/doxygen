@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.1.0</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -64,24 +64,24 @@ $(function() {
 
 <h3><a id="index_w"></a>- w -</h3><ul>
 <li>weight_threshold
-: <a class="el" href="structgraphene_1_1chain_1_1authority.html#ac31247040886c24bbab996edf795f512">graphene::chain::authority</a>
+: <a class="el" href="structgraphene_1_1protocol_1_1authority.html#ab504013ac93031171d91165ca420c1f1">graphene::protocol::authority</a>
 </li>
 <li>which
-: <a class="el" href="structgraphene_1_1chain_1_1graphene__extension__pack__read__visitor.html#aef7274b9a123fa807a204e03c06d6e0e">graphene::chain::graphene_extension_pack_read_visitor&lt; Stream, T &gt;</a>
-, <a class="el" href="structgraphene_1_1chain_1_1graphene__extension__unpack__visitor.html#af315c19687763709ddefd086a8087413">graphene::chain::graphene_extension_unpack_visitor&lt; Stream, T &gt;</a>
+: <a class="el" href="structgraphene_1_1protocol_1_1graphene__extension__pack__read__visitor.html#aa4d2428de8af06bbbca28cae64075896">graphene::protocol::graphene_extension_pack_read_visitor&lt; Stream, T &gt;</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1graphene__extension__unpack__visitor.html#a31bf1fa4d8c6fdef1d25e5755e679225">graphene::protocol::graphene_extension_unpack_visitor&lt; Stream, T &gt;</a>
 , <a class="el" href="structgraphene_1_1wallet_1_1impl_1_1static__variant__map__visitor.html#ad71c40d64f3d36c0f37b1e43b1285a05">graphene::wallet::impl::static_variant_map_visitor</a>
 </li>
 <li>which_to_name
 : <a class="el" href="structgraphene_1_1wallet_1_1static__variant__map.html#aa1b5cf8ede4a6e9e8b7ed1ea39935b2d">graphene::wallet::static_variant_map</a>
 </li>
 <li>whitelist_authorities
-: <a class="el" href="structgraphene_1_1chain_1_1asset__options.html#a9bb53490451f02ecb9fe07e01bce2da0">graphene::chain::asset_options</a>
+: <a class="el" href="structgraphene_1_1protocol_1_1asset__options.html#af6594e3bfce4ff7062f7150725c9eb71">graphene::protocol::asset_options</a>
 </li>
 <li>whitelist_market_fee_sharing
-: <a class="el" href="structgraphene_1_1chain_1_1additional__asset__options.html#ab0d5457d66db847edbf38e6b4526d969">graphene::chain::additional_asset_options</a>
+: <a class="el" href="structgraphene_1_1protocol_1_1additional__asset__options.html#aa1f3ffc8332d5ff50ba3b095fef207d1">graphene::protocol::additional_asset_options</a>
 </li>
 <li>whitelist_markets
-: <a class="el" href="structgraphene_1_1chain_1_1asset__options.html#a1d035949834b38d6044e2870c9a937e5">graphene::chain::asset_options</a>
+: <a class="el" href="structgraphene_1_1protocol_1_1asset__options.html#a9c29d13ef622de8d5c039f469d3ddbc3">graphene::protocol::asset_options</a>
 </li>
 <li>whitelisted_accounts
 : <a class="el" href="classgraphene_1_1chain_1_1account__object.html#a3e1bd4c318ce23cb83eb74c07af73af7">graphene::chain::account_object</a>
@@ -93,63 +93,68 @@ $(function() {
 : <a class="el" href="structgraphene_1_1wallet_1_1brain__key__info.html#a2e2fa5bdcdf1522433ef2079b7975cbd">graphene::wallet::brain_key_info</a>
 </li>
 <li>withdraw_from_account
-: <a class="el" href="structgraphene_1_1chain_1_1withdraw__permission__claim__operation.html#af19f378f38846c1df32c54dc85ca712c">graphene::chain::withdraw_permission_claim_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1withdraw__permission__create__operation.html#a3f224eb045127d24f819b4fabf2f9ab8">graphene::chain::withdraw_permission_create_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1withdraw__permission__delete__operation.html#af09e19f67d1ffd2e1bd8207e721627bd">graphene::chain::withdraw_permission_delete_operation</a>
-, <a class="el" href="classgraphene_1_1chain_1_1withdraw__permission__object.html#ad0625fbe1d350edecf66799080675dc6">graphene::chain::withdraw_permission_object</a>
-, <a class="el" href="structgraphene_1_1chain_1_1withdraw__permission__update__operation.html#a1b6b2af2b8423960f86107703cb3202a">graphene::chain::withdraw_permission_update_operation</a>
+: <a class="el" href="classgraphene_1_1chain_1_1withdraw__permission__object.html#ad0625fbe1d350edecf66799080675dc6">graphene::chain::withdraw_permission_object</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1withdraw__permission__claim__operation.html#a2507d2593b57b35ee338770161143941">graphene::protocol::withdraw_permission_claim_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1withdraw__permission__create__operation.html#a9ab68cfc3e8151a2087e77dbb8f7a5a6">graphene::protocol::withdraw_permission_create_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1withdraw__permission__delete__operation.html#ab813723fa43a7f150a056215087bacf4">graphene::protocol::withdraw_permission_delete_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1withdraw__permission__update__operation.html#a8d309dd6004d9cadcec7da01dbc14759">graphene::protocol::withdraw_permission_update_operation</a>
 </li>
 <li>withdraw_permission
-: <a class="el" href="structgraphene_1_1chain_1_1withdraw__permission__claim__operation.html#a6eaf7439a6af330b76846a54e24e160e">graphene::chain::withdraw_permission_claim_operation</a>
+: <a class="el" href="structgraphene_1_1protocol_1_1withdraw__permission__claim__operation.html#abd5f6548855e7c7b4998a06482cb5405">graphene::protocol::withdraw_permission_claim_operation</a>
 </li>
 <li>withdraw_to_account
-: <a class="el" href="structgraphene_1_1chain_1_1withdraw__permission__claim__operation.html#acca0cb50c7f624e3b094a580106f01c4">graphene::chain::withdraw_permission_claim_operation</a>
+: <a class="el" href="structgraphene_1_1protocol_1_1withdraw__permission__claim__operation.html#a552b286d1a18331da7a852c0f5a34b3c">graphene::protocol::withdraw_permission_claim_operation</a>
 </li>
 <li>withdrawal_limit
-: <a class="el" href="structgraphene_1_1chain_1_1withdraw__permission__create__operation.html#abd9bd5a87fc8dad69fa130dc8d7e5f6e">graphene::chain::withdraw_permission_create_operation</a>
-, <a class="el" href="classgraphene_1_1chain_1_1withdraw__permission__object.html#a913df749570eb66da566c0ba830356a7">graphene::chain::withdraw_permission_object</a>
-, <a class="el" href="structgraphene_1_1chain_1_1withdraw__permission__update__operation.html#a09901c4ab820bdfbcab782083832a44d">graphene::chain::withdraw_permission_update_operation</a>
+: <a class="el" href="classgraphene_1_1chain_1_1withdraw__permission__object.html#a913df749570eb66da566c0ba830356a7">graphene::chain::withdraw_permission_object</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1withdraw__permission__create__operation.html#a5d265bb989e21fde5733884583ac08cc">graphene::protocol::withdraw_permission_create_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1withdraw__permission__update__operation.html#a66f21d51626e39952a39dd4713f53ac5">graphene::protocol::withdraw_permission_update_operation</a>
 </li>
 <li>withdrawal_period_sec
-: <a class="el" href="structgraphene_1_1chain_1_1withdraw__permission__create__operation.html#a90e0adf59bec7d98008ba49c49e02919">graphene::chain::withdraw_permission_create_operation</a>
-, <a class="el" href="classgraphene_1_1chain_1_1withdraw__permission__object.html#aeae2111853fb00e6b1e977fbea3f964b">graphene::chain::withdraw_permission_object</a>
-, <a class="el" href="structgraphene_1_1chain_1_1withdraw__permission__update__operation.html#a817fd0b540d3706ee52800ae6486036c">graphene::chain::withdraw_permission_update_operation</a>
+: <a class="el" href="classgraphene_1_1chain_1_1withdraw__permission__object.html#aeae2111853fb00e6b1e977fbea3f964b">graphene::chain::withdraw_permission_object</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1withdraw__permission__create__operation.html#a7d6b8a5b31d16e82d56b763bcd1c8eee">graphene::protocol::withdraw_permission_create_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1withdraw__permission__update__operation.html#a90372f0f894dea3d695c34458fd1bdc8">graphene::protocol::withdraw_permission_update_operation</a>
 </li>
 <li>withdrawal_permission
-: <a class="el" href="structgraphene_1_1chain_1_1withdraw__permission__delete__operation.html#a6831c48fa1ef0a99bc611826309b5e79">graphene::chain::withdraw_permission_delete_operation</a>
+: <a class="el" href="structgraphene_1_1protocol_1_1withdraw__permission__delete__operation.html#adc50e3a0b8066ebdd578958871082fe5">graphene::protocol::withdraw_permission_delete_operation</a>
 </li>
-<li>withdraws
-: <a class="el" href="structgraphene_1_1app_1_1full__account.html#acdc51f080e00d83a523721e5d65c46a5">graphene::app::full_account</a>
+<li>withdraws_from
+: <a class="el" href="structgraphene_1_1app_1_1full__account.html#a8e2cb06898c8e6dc0a99bdfbf28a995b">graphene::app::full_account</a>
+, <a class="el" href="structgraphene_1_1app_1_1more__data.html#a9a6e28d8d554a3133181e86e7ac802e4">graphene::app::more_data</a>
+</li>
+<li>withdraws_to
+: <a class="el" href="structgraphene_1_1app_1_1full__account.html#ae0afd8e06fb5a4663b3de26841ecbcb2">graphene::app::full_account</a>
+, <a class="el" href="structgraphene_1_1app_1_1more__data.html#a88a231537550824f1bf4a38015ec7485">graphene::app::more_data</a>
 </li>
 <li>witness
-: <a class="el" href="classgraphene_1_1chain_1_1block__header.html#a270e6e6c8ba607ea2ba8ac23c2302c9f">graphene::chain::block_header</a>
-, <a class="el" href="structgraphene_1_1chain_1_1witness__update__operation.html#ab0daee0ca319c4fa0cb0e035bf7522fe">graphene::chain::witness_update_operation</a>
+: <a class="el" href="classgraphene_1_1protocol_1_1block__header.html#a1086bc96de1ee0d95cedaacf3f475cd5">graphene::protocol::block_header</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1witness__update__operation.html#a741f9507fab2152be30777f492c15abe">graphene::protocol::witness_update_operation</a>
 </li>
 <li>witness_account
-: <a class="el" href="structgraphene_1_1chain_1_1witness__create__operation.html#ab9bef82021074a8b3a313b652d4732d3">graphene::chain::witness_create_operation</a>
-, <a class="el" href="classgraphene_1_1chain_1_1witness__object.html#a64388167dad5135a79764204baaffe6e">graphene::chain::witness_object</a>
-, <a class="el" href="structgraphene_1_1chain_1_1witness__update__operation.html#a6e7be1fca3b51e0244c5dd0d22e7b35f">graphene::chain::witness_update_operation</a>
+: <a class="el" href="classgraphene_1_1chain_1_1witness__object.html#a64388167dad5135a79764204baaffe6e">graphene::chain::witness_object</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1witness__create__operation.html#a242ad124ac2aa39f2e4d738079e43b67">graphene::protocol::witness_create_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1witness__update__operation.html#af64acf48b20b1bc3b3292dcea925dd8d">graphene::protocol::witness_update_operation</a>
 </li>
 <li>witness_budget
 : <a class="el" href="structgraphene_1_1chain_1_1budget__record.html#ac6f306529f5107da4ae0a7c49b1d7ea7">graphene::chain::budget_record</a>
 , <a class="el" href="classgraphene_1_1chain_1_1dynamic__global__property__object.html#a6fd44ac88fdcfe657ba2b0af43adceb5">graphene::chain::dynamic_global_property_object</a>
 </li>
 <li>witness_pay_per_block
-: <a class="el" href="structgraphene_1_1chain_1_1chain__parameters.html#a81662769b541a3ecde3c556c4c582eb5">graphene::chain::chain_parameters</a>
+: <a class="el" href="structgraphene_1_1protocol_1_1chain__parameters.html#ae7d529c138047373c4955d5c93a34747">graphene::protocol::chain_parameters</a>
 </li>
 <li>witness_pay_vesting_seconds
-: <a class="el" href="structgraphene_1_1chain_1_1chain__parameters.html#a58eaf075d53074fefe6973a4cd30cd4b">graphene::chain::chain_parameters</a>
+: <a class="el" href="structgraphene_1_1protocol_1_1chain__parameters.html#a014e98c0b24765ab08d09cf2691755be">graphene::protocol::chain_parameters</a>
 </li>
 <li>witness_signature
-: <a class="el" href="classgraphene_1_1chain_1_1signed__block__header.html#a4280fac9bac0ea22d2fb063efc964674">graphene::chain::signed_block_header</a>
+: <a class="el" href="classgraphene_1_1protocol_1_1signed__block__header.html#a461eb13434f1ae9999e58abbfb96cf7f">graphene::protocol::signed_block_header</a>
 </li>
 <li>work_begin_date
-: <a class="el" href="structgraphene_1_1chain_1_1worker__create__operation.html#a8c4e101a47089640878487ba1b059f6f">graphene::chain::worker_create_operation</a>
-, <a class="el" href="classgraphene_1_1chain_1_1worker__object.html#af9fe70637086fdf01697d083f834d417">graphene::chain::worker_object</a>
+: <a class="el" href="classgraphene_1_1chain_1_1worker__object.html#af9fe70637086fdf01697d083f834d417">graphene::chain::worker_object</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1worker__create__operation.html#a0a02ad08392650b99ef0dde2bd333fe7">graphene::protocol::worker_create_operation</a>
 </li>
 <li>work_end_date
-: <a class="el" href="structgraphene_1_1chain_1_1worker__create__operation.html#a01cf4b22421fc18b552846a257165c74">graphene::chain::worker_create_operation</a>
-, <a class="el" href="classgraphene_1_1chain_1_1worker__object.html#a7adef03c9c161025de19148e1a1c2938">graphene::chain::worker_object</a>
+: <a class="el" href="classgraphene_1_1chain_1_1worker__object.html#a7adef03c9c161025de19148e1a1c2938">graphene::chain::worker_object</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1worker__create__operation.html#a050dba590771b4520501348d3cff61e1">graphene::protocol::worker_create_operation</a>
 </li>
 <li>worker
 : <a class="el" href="structgraphene_1_1chain_1_1worker__init__visitor.html#a359286c4992a381657644c15ee882f72">graphene::chain::worker_init_visitor</a>
@@ -162,7 +167,7 @@ $(function() {
 : <a class="el" href="structgraphene_1_1chain_1_1budget__record.html#a8dc99f9f8e376774c65df903cd25648b">graphene::chain::budget_record</a>
 </li>
 <li>worker_budget_per_day
-: <a class="el" href="structgraphene_1_1chain_1_1chain__parameters.html#a212ac97427bf90761885d32c3400a6c6">graphene::chain::chain_parameters</a>
+: <a class="el" href="structgraphene_1_1protocol_1_1chain__parameters.html#adcde3fcabdd3079a8dc157a030a14fdd">graphene::protocol::chain_parameters</a>
 </li>
 <li>ws_password
 : <a class="el" href="structgraphene_1_1wallet_1_1wallet__data.html#a996d40d7789a7904c01f470c16339171">graphene::wallet::wallet_data</a>
@@ -177,7 +182,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2019 16:11:12 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 17 2019 16:30:09 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

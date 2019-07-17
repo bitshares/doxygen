@@ -6,13 +6,14 @@ var searchData=
   ['genesis_5fstate_5ftype',['genesis_state_type',['../structgraphene_1_1chain_1_1genesis__state__type.html',1,'graphene::chain']]],
   ['get_5fimpacted_5faccount_5fvisitor',['get_impacted_account_visitor',['../structget__impacted__account__visitor.html',1,'']]],
   ['get_5frequired_5ffees_5fhelper',['get_required_fees_helper',['../structgraphene_1_1app_1_1get__required__fees__helper.html',1,'graphene::app']]],
-  ['get_5ftypename_3c_20graphene_3a_3achain_3a_3aextension_3c_20t_20_3e_20_3e',['get_typename&lt; graphene::chain::extension&lt; T &gt; &gt;',['../structfc_1_1get__typename_3_01graphene_1_1chain_1_1extension_3_01_t_01_4_01_4.html',1,'fc']]],
-  ['get_5ftypename_3c_20std_3a_3ashared_5fptr_3c_20const_20graphene_3a_3achain_3a_3afee_5fschedule_20_3e_20_3e',['get_typename&lt; std::shared_ptr&lt; const graphene::chain::fee_schedule &gt; &gt;',['../structfc_1_1get__typename_3_01std_1_1shared__ptr_3_01const_01graphene_1_1chain_1_1fee__schedule_01_4_01_4.html',1,'fc']]],
-  ['get_5ftypename_3c_20std_3a_3ashared_5fptr_3c_20graphene_3a_3achain_3a_3afee_5fschedule_20_3e_20_3e',['get_typename&lt; std::shared_ptr&lt; graphene::chain::fee_schedule &gt; &gt;',['../structfc_1_1get__typename_3_01std_1_1shared__ptr_3_01graphene_1_1chain_1_1fee__schedule_01_4_01_4.html',1,'fc']]],
+  ['get_5ftypename_3c_20graphene_3a_3adb_3a_3aobject_5fid_3c_20spaceid_2c_20typeid_20_3e_20_3e',['get_typename&lt; graphene::db::object_id&lt; SpaceID, TypeID &gt; &gt;',['../structfc_1_1get__typename_3_01graphene_1_1db_1_1object__id_3_01_space_i_d_00_01_type_i_d_01_4_01_4.html',1,'fc']]],
+  ['get_5ftypename_3c_20graphene_3a_3aprotocol_3a_3aextension_3c_20t_20_3e_20_3e',['get_typename&lt; graphene::protocol::extension&lt; T &gt; &gt;',['../structfc_1_1get__typename_3_01graphene_1_1protocol_1_1extension_3_01_t_01_4_01_4.html',1,'fc']]],
+  ['get_5ftypename_3c_20std_3a_3ashared_5fptr_3c_20const_20graphene_3a_3aprotocol_3a_3afee_5fschedule_20_3e_20_3e',['get_typename&lt; std::shared_ptr&lt; const graphene::protocol::fee_schedule &gt; &gt;',['../structfc_1_1get__typename_3_01std_1_1shared__ptr_3_01const_01graphene_1_1protocol_1_1fee__schedule_01_4_01_4.html',1,'fc']]],
+  ['get_5ftypename_3c_20std_3a_3ashared_5fptr_3c_20graphene_3a_3aprotocol_3a_3afee_5fschedule_20_3e_20_3e',['get_typename&lt; std::shared_ptr&lt; graphene::protocol::fee_schedule &gt; &gt;',['../structfc_1_1get__typename_3_01std_1_1shared__ptr_3_01graphene_1_1protocol_1_1fee__schedule_01_4_01_4.html',1,'fc']]],
   ['global_5fproperty_5fobject',['global_property_object',['../classgraphene_1_1chain_1_1global__property__object.html',1,'graphene::chain']]],
   ['graphene_5fextension_5ffrom_5fvariant_5fvisitor',['graphene_extension_from_variant_visitor',['../structfc_1_1graphene__extension__from__variant__visitor.html',1,'fc']]],
-  ['graphene_5fextension_5fpack_5fcount_5fvisitor',['graphene_extension_pack_count_visitor',['../structgraphene_1_1chain_1_1graphene__extension__pack__count__visitor.html',1,'graphene::chain']]],
-  ['graphene_5fextension_5fpack_5fread_5fvisitor',['graphene_extension_pack_read_visitor',['../structgraphene_1_1chain_1_1graphene__extension__pack__read__visitor.html',1,'graphene::chain']]],
+  ['graphene_5fextension_5fpack_5fcount_5fvisitor',['graphene_extension_pack_count_visitor',['../structgraphene_1_1protocol_1_1graphene__extension__pack__count__visitor.html',1,'graphene::protocol']]],
+  ['graphene_5fextension_5fpack_5fread_5fvisitor',['graphene_extension_pack_read_visitor',['../structgraphene_1_1protocol_1_1graphene__extension__pack__read__visitor.html',1,'graphene::protocol']]],
   ['graphene_5fextension_5fto_5fvariant_5fvisitor',['graphene_extension_to_variant_visitor',['../structfc_1_1graphene__extension__to__variant__visitor.html',1,'fc']]],
-  ['graphene_5fextension_5funpack_5fvisitor',['graphene_extension_unpack_visitor',['../structgraphene_1_1chain_1_1graphene__extension__unpack__visitor.html',1,'graphene::chain']]]
+  ['graphene_5fextension_5funpack_5fvisitor',['graphene_extension_unpack_visitor',['../structgraphene_1_1protocol_1_1graphene__extension__unpack__visitor.html',1,'graphene::protocol']]]
 ];

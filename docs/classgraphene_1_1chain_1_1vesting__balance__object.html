@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.1.0</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -89,29 +89,29 @@ Inheritance diagram for graphene::chain::vesting_balance_object:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9e14dd77a333cbcf73bcc814a6dfc9dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#a9e14dd77a333cbcf73bcc814a6dfc9dd">vesting_balance_object</a> ()</td></tr>
 <tr class="separator:a9e14dd77a333cbcf73bcc814a6dfc9dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a178b417cc5b0124693b0137b057be8fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#a178b417cc5b0124693b0137b057be8fb">deposit</a> (const fc::time_point_sec &amp;now, const <a class="el" href="structgraphene_1_1chain_1_1asset.html">asset</a> &amp;amount)</td></tr>
+<tr class="memitem:a178b417cc5b0124693b0137b057be8fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#a178b417cc5b0124693b0137b057be8fb">deposit</a> (const fc::time_point_sec &amp;now, const <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &amp;amount)</td></tr>
 <tr class="memdesc:a178b417cc5b0124693b0137b057be8fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deposit amount into vesting balance, requiring it to vest before withdrawal.  <a href="#a178b417cc5b0124693b0137b057be8fb">More...</a><br /></td></tr>
 <tr class="separator:a178b417cc5b0124693b0137b057be8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5ee63be625ac79eb18fa545a8e9aa4d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#aa5ee63be625ac79eb18fa545a8e9aa4d">is_deposit_allowed</a> (const fc::time_point_sec &amp;now, const <a class="el" href="structgraphene_1_1chain_1_1asset.html">asset</a> &amp;amount) const</td></tr>
+<tr class="memitem:aa5ee63be625ac79eb18fa545a8e9aa4d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#aa5ee63be625ac79eb18fa545a8e9aa4d">is_deposit_allowed</a> (const fc::time_point_sec &amp;now, const <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &amp;amount) const</td></tr>
 <tr class="separator:aa5ee63be625ac79eb18fa545a8e9aa4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0abf048f7d0c3b1dc5fd20a528862c79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#a0abf048f7d0c3b1dc5fd20a528862c79">deposit_vested</a> (const fc::time_point_sec &amp;now, const <a class="el" href="structgraphene_1_1chain_1_1asset.html">asset</a> &amp;amount)</td></tr>
+<tr class="memitem:a0abf048f7d0c3b1dc5fd20a528862c79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#a0abf048f7d0c3b1dc5fd20a528862c79">deposit_vested</a> (const fc::time_point_sec &amp;now, const <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &amp;amount)</td></tr>
 <tr class="memdesc:a0abf048f7d0c3b1dc5fd20a528862c79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deposit amount into vesting balance, making the new funds vest immediately.  <a href="#a0abf048f7d0c3b1dc5fd20a528862c79">More...</a><br /></td></tr>
 <tr class="separator:a0abf048f7d0c3b1dc5fd20a528862c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe28f237ac1ead090a9d64d10fa30af2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#abe28f237ac1ead090a9d64d10fa30af2">is_deposit_vested_allowed</a> (const fc::time_point_sec &amp;now, const <a class="el" href="structgraphene_1_1chain_1_1asset.html">asset</a> &amp;amount) const</td></tr>
+<tr class="memitem:abe28f237ac1ead090a9d64d10fa30af2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#abe28f237ac1ead090a9d64d10fa30af2">is_deposit_vested_allowed</a> (const fc::time_point_sec &amp;now, const <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &amp;amount) const</td></tr>
 <tr class="separator:abe28f237ac1ead090a9d64d10fa30af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a132a8aeae6d15ca91bcd6a78966f4919"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#a132a8aeae6d15ca91bcd6a78966f4919">withdraw</a> (const fc::time_point_sec &amp;now, const <a class="el" href="structgraphene_1_1chain_1_1asset.html">asset</a> &amp;amount)</td></tr>
+<tr class="memitem:a132a8aeae6d15ca91bcd6a78966f4919"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#a132a8aeae6d15ca91bcd6a78966f4919">withdraw</a> (const fc::time_point_sec &amp;now, const <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &amp;amount)</td></tr>
 <tr class="separator:a132a8aeae6d15ca91bcd6a78966f4919"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77d833f9dc36c18ec756b43b98e01b54"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#a77d833f9dc36c18ec756b43b98e01b54">is_withdraw_allowed</a> (const fc::time_point_sec &amp;now, const <a class="el" href="structgraphene_1_1chain_1_1asset.html">asset</a> &amp;amount) const</td></tr>
+<tr class="memitem:a77d833f9dc36c18ec756b43b98e01b54"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#a77d833f9dc36c18ec756b43b98e01b54">is_withdraw_allowed</a> (const fc::time_point_sec &amp;now, const <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &amp;amount) const</td></tr>
 <tr class="separator:a77d833f9dc36c18ec756b43b98e01b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac603d34434a36d083c4220f4ee90bb45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1chain_1_1asset.html">asset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#ac603d34434a36d083c4220f4ee90bb45">get_allowed_withdraw</a> (const time_point_sec &amp;now) const</td></tr>
+<tr class="memitem:ac603d34434a36d083c4220f4ee90bb45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#ac603d34434a36d083c4220f4ee90bb45">get_allowed_withdraw</a> (const time_point_sec &amp;now) const</td></tr>
 <tr class="separator:ac603d34434a36d083c4220f4ee90bb45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a67fcfc288de5c0094d1d97ccf4c67108"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1chain.html#a11927fb343f953514ab6235d6e7233ee">account_id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#a67fcfc288de5c0094d1d97ccf4c67108">owner</a></td></tr>
+<tr class="memitem:a67fcfc288de5c0094d1d97ccf4c67108"><td class="memItemLeft" align="right" valign="top">account_id_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#a67fcfc288de5c0094d1d97ccf4c67108">owner</a></td></tr>
 <tr class="memdesc:a67fcfc288de5c0094d1d97ccf4c67108"><td class="mdescLeft">&#160;</td><td class="mdescRight">Account which owns and may withdraw from this vesting balance.  <a href="#a67fcfc288de5c0094d1d97ccf4c67108">More...</a><br /></td></tr>
 <tr class="separator:a67fcfc288de5c0094d1d97ccf4c67108"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0a453c90b0555f470fe04692400a770"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1chain_1_1asset.html">asset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#ad0a453c90b0555f470fe04692400a770">balance</a></td></tr>
+<tr class="memitem:ad0a453c90b0555f470fe04692400a770"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#ad0a453c90b0555f470fe04692400a770">balance</a></td></tr>
 <tr class="separator:ad0a453c90b0555f470fe04692400a770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c40157fb6d2fb86c6f158437aece76d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1chain.html#ada5fee9165e8f378bf91976a523747c2">vesting_policy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#a9c40157fb6d2fb86c6f158437aece76d">policy</a></td></tr>
 <tr class="memdesc:a9c40157fb6d2fb86c6f158437aece76d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The vesting policy stores details on when funds vest, and controls when they may be withdrawn.  <a href="#a9c40157fb6d2fb86c6f158437aece76d">More...</a><br /></td></tr>
@@ -122,15 +122,15 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:ab999fcca9be4d932dbb2586b9a7d339d"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#ab999fcca9be4d932dbb2586b9a7d339d">space_id</a> = <a class="el" href="namespacegraphene_1_1chain.html#a92e55d4242187696c5e2c5eaafbd9400a9dadbbe526b5096091138116c13d612d">protocol_ids</a></td></tr>
+<tr class="memitem:ab999fcca9be4d932dbb2586b9a7d339d"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#ab999fcca9be4d932dbb2586b9a7d339d">space_id</a> = protocol_ids</td></tr>
 <tr class="separator:ab999fcca9be4d932dbb2586b9a7d339d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ed5e43ebf715f6eb711139e035255c7"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#a5ed5e43ebf715f6eb711139e035255c7">type_id</a> = <a class="el" href="namespacegraphene_1_1chain.html#aa6e32c79e2b22c998deddedcb696633da910ef1b8a52e0047fb3692cdaee9f9ee">vesting_balance_object_type</a></td></tr>
+<tr class="memitem:a5ed5e43ebf715f6eb711139e035255c7"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#a5ed5e43ebf715f6eb711139e035255c7">type_id</a> = vesting_balance_object_type</td></tr>
 <tr class="separator:a5ed5e43ebf715f6eb711139e035255c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Vesting balance object is a balance that is locked by the blockchain for a period of time. </p>
 
-<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8hpp_source.html#l00156">156</a> of file <a class="el" href="vesting__balance__object_8hpp_source.html">vesting_balance_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8hpp_source.html#l00151">151</a> of file <a class="el" href="vesting__balance__object_8hpp_source.html">vesting_balance_object.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9e14dd77a333cbcf73bcc814a6dfc9dd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e14dd77a333cbcf73bcc814a6dfc9dd">&#9670;&nbsp;</a></span>vesting_balance_object()</h2>
@@ -155,7 +155,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8hpp_source.html#l00172">172</a> of file <a class="el" href="vesting__balance__object_8hpp_source.html">vesting_balance_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8hpp_source.html#l00167">167</a> of file <a class="el" href="vesting__balance__object_8hpp_source.html">vesting_balance_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -175,7 +175,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structgraphene_1_1chain_1_1asset.html">asset</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &amp;&#160;</td>
           <td class="paramname"><em>amount</em>&#160;</td>
         </tr>
         <tr>
@@ -188,7 +188,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Deposit amount into vesting balance, requiring it to vest before withdrawal. </p>
 
-<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8cpp_source.html#l00237">237</a> of file <a class="el" href="vesting__balance__object_8cpp_source.html">vesting_balance_object.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8cpp_source.html#l00239">239</a> of file <a class="el" href="vesting__balance__object_8cpp_source.html">vesting_balance_object.cpp</a>.</p>
 
 </div>
 </div>
@@ -207,7 +207,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structgraphene_1_1chain_1_1asset.html">asset</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &amp;&#160;</td>
           <td class="paramname"><em>amount</em>&#160;</td>
         </tr>
         <tr>
@@ -220,7 +220,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Deposit amount into vesting balance, making the new funds vest immediately. </p>
 
-<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8cpp_source.html#l00244">244</a> of file <a class="el" href="vesting__balance__object_8cpp_source.html">vesting_balance_object.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8cpp_source.html#l00246">246</a> of file <a class="el" href="vesting__balance__object_8cpp_source.html">vesting_balance_object.cpp</a>.</p>
 
 </div>
 </div>
@@ -231,7 +231,7 @@ Static Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structgraphene_1_1chain_1_1asset.html">asset</a> graphene::chain::vesting_balance_object::get_allowed_withdraw </td>
+          <td class="memname"><a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> graphene::chain::vesting_balance_object::get_allowed_withdraw </td>
           <td>(</td>
           <td class="paramtype">const time_point_sec &amp;&#160;</td>
           <td class="paramname"><em>now</em></td><td>)</td>
@@ -241,7 +241,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get amount of allowed withdrawal. </p>
 
-<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8cpp_source.html#l00264">264</a> of file <a class="el" href="vesting__balance__object_8cpp_source.html">vesting_balance_object.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8cpp_source.html#l00266">266</a> of file <a class="el" href="vesting__balance__object_8cpp_source.html">vesting_balance_object.cpp</a>.</p>
 
 </div>
 </div>
@@ -260,7 +260,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structgraphene_1_1chain_1_1asset.html">asset</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &amp;&#160;</td>
           <td class="paramname"><em>amount</em>&#160;</td>
         </tr>
         <tr>
@@ -271,7 +271,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8cpp_source.html#l00223">223</a> of file <a class="el" href="vesting__balance__object_8cpp_source.html">vesting_balance_object.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8cpp_source.html#l00225">225</a> of file <a class="el" href="vesting__balance__object_8cpp_source.html">vesting_balance_object.cpp</a>.</p>
 
 </div>
 </div>
@@ -290,7 +290,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structgraphene_1_1chain_1_1asset.html">asset</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &amp;&#160;</td>
           <td class="paramname"><em>amount</em>&#160;</td>
         </tr>
         <tr>
@@ -301,7 +301,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8cpp_source.html#l00251">251</a> of file <a class="el" href="vesting__balance__object_8cpp_source.html">vesting_balance_object.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8cpp_source.html#l00253">253</a> of file <a class="el" href="vesting__balance__object_8cpp_source.html">vesting_balance_object.cpp</a>.</p>
 
 </div>
 </div>
@@ -320,7 +320,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structgraphene_1_1chain_1_1asset.html">asset</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &amp;&#160;</td>
           <td class="paramname"><em>amount</em>&#160;</td>
         </tr>
         <tr>
@@ -331,7 +331,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8cpp_source.html#l00228">228</a> of file <a class="el" href="vesting__balance__object_8cpp_source.html">vesting_balance_object.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8cpp_source.html#l00230">230</a> of file <a class="el" href="vesting__balance__object_8cpp_source.html">vesting_balance_object.cpp</a>.</p>
 
 </div>
 </div>
@@ -350,7 +350,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structgraphene_1_1chain_1_1asset.html">asset</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &amp;&#160;</td>
           <td class="paramname"><em>amount</em>&#160;</td>
         </tr>
         <tr>
@@ -363,7 +363,7 @@ Static Public Attributes</h2></td></tr>
 <p>Used to remove a vesting balance from the VBO. As well as the balance field, coin_seconds_earned and coin_seconds_earned_last_update fields are updated.</p>
 <p>The money doesn't "go" anywhere; the caller is responsible for crediting it to the proper account. </p>
 
-<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8cpp_source.html#l00256">256</a> of file <a class="el" href="vesting__balance__object_8cpp_source.html">vesting_balance_object.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8cpp_source.html#l00258">258</a> of file <a class="el" href="vesting__balance__object_8cpp_source.html">vesting_balance_object.cpp</a>.</p>
 
 </div>
 </div>
@@ -375,13 +375,13 @@ Static Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structgraphene_1_1chain_1_1asset.html">asset</a> graphene::chain::vesting_balance_object::balance</td>
+          <td class="memname"><a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> graphene::chain::vesting_balance_object::balance</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Total amount remaining in this vesting balance Includes the unvested funds, and the vested funds which have not yet been withdrawn </p>
 
-<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8hpp_source.html#l00166">166</a> of file <a class="el" href="vesting__balance__object_8hpp_source.html">vesting_balance_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8hpp_source.html#l00161">161</a> of file <a class="el" href="vesting__balance__object_8hpp_source.html">vesting_balance_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -399,7 +399,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>type of the vesting balance </p>
 
-<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8hpp_source.html#l00170">170</a> of file <a class="el" href="vesting__balance__object_8hpp_source.html">vesting_balance_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8hpp_source.html#l00165">165</a> of file <a class="el" href="vesting__balance__object_8hpp_source.html">vesting_balance_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -410,14 +410,14 @@ Static Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacegraphene_1_1chain.html#a11927fb343f953514ab6235d6e7233ee">account_id_type</a> graphene::chain::vesting_balance_object::owner</td>
+          <td class="memname">account_id_type graphene::chain::vesting_balance_object::owner</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Account which owns and may withdraw from this vesting balance. </p>
 
-<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8hpp_source.html#l00163">163</a> of file <a class="el" href="vesting__balance__object_8hpp_source.html">vesting_balance_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8hpp_source.html#l00158">158</a> of file <a class="el" href="vesting__balance__object_8hpp_source.html">vesting_balance_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -435,7 +435,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>The vesting policy stores details on when funds vest, and controls when they may be withdrawn. </p>
 
-<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8hpp_source.html#l00168">168</a> of file <a class="el" href="vesting__balance__object_8hpp_source.html">vesting_balance_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8hpp_source.html#l00163">163</a> of file <a class="el" href="vesting__balance__object_8hpp_source.html">vesting_balance_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -449,7 +449,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t graphene::chain::vesting_balance_object::space_id = <a class="el" href="namespacegraphene_1_1chain.html#a92e55d4242187696c5e2c5eaafbd9400a9dadbbe526b5096091138116c13d612d">protocol_ids</a></td>
+          <td class="memname">const uint8_t graphene::chain::vesting_balance_object::space_id = protocol_ids</td>
         </tr>
       </table>
   </td>
@@ -459,7 +459,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8hpp_source.html#l00159">159</a> of file <a class="el" href="vesting__balance__object_8hpp_source.html">vesting_balance_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8hpp_source.html#l00154">154</a> of file <a class="el" href="vesting__balance__object_8hpp_source.html">vesting_balance_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -473,7 +473,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t graphene::chain::vesting_balance_object::type_id = <a class="el" href="namespacegraphene_1_1chain.html#aa6e32c79e2b22c998deddedcb696633da910ef1b8a52e0047fb3692cdaee9f9ee">vesting_balance_object_type</a></td>
+          <td class="memname">const uint8_t graphene::chain::vesting_balance_object::type_id = vesting_balance_object_type</td>
         </tr>
       </table>
   </td>
@@ -483,7 +483,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8hpp_source.html#l00160">160</a> of file <a class="el" href="vesting__balance__object_8hpp_source.html">vesting_balance_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vesting__balance__object_8hpp_source.html#l00155">155</a> of file <a class="el" href="vesting__balance__object_8hpp_source.html">vesting_balance_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -495,7 +495,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2019 16:11:12 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

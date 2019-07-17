@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['get_5factive',['get_active',['../structgraphene_1_1chain_1_1sign__state.html#a785aad6f730b11b0f1c0ce5c1f3f92c2',1,'graphene::chain::sign_state']]],
-  ['get_5fowner',['get_owner',['../structgraphene_1_1chain_1_1sign__state.html#acc5940a7e517b2160d6faf32f92c8a47',1,'graphene::chain::sign_state']]]
+  ['get_5factive',['get_active',['../structgraphene_1_1protocol_1_1sign__state.html#a98e3fa0cb91c14c351cb9f18235e5148',1,'graphene::protocol::sign_state']]],
+  ['get_5fowner',['get_owner',['../structgraphene_1_1protocol_1_1sign__state.html#a0f11a00f8cae91d18e60b66f3adca50d',1,'graphene::protocol::sign_state']]]
 ];

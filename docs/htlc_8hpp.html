@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Bitshares-Core: libraries/chain/include/graphene/chain/protocol/htlc.hpp File Reference</title>
+<title>Bitshares-Core: libraries/protocol/include/graphene/protocol/htlc.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.1.0</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -60,7 +60,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_bc0718b08fb2015b8e59c47b2805f60c.html">libraries</a></li><li class="navelem"><a class="el" href="dir_94df585d4e205d65756e56c0817a7014.html">chain</a></li><li class="navelem"><a class="el" href="dir_a71d7923f5ab56910d75ee22c339d1cc.html">include</a></li><li class="navelem"><a class="el" href="dir_199ab2bfff81b05809410b5276d9b335.html">graphene</a></li><li class="navelem"><a class="el" href="dir_85bf628abe6c08a86b0db77f8bd81c4e.html">chain</a></li><li class="navelem"><a class="el" href="dir_88bb0b7a0369deae7dcd36c79a63cea0.html">protocol</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_bc0718b08fb2015b8e59c47b2805f60c.html">libraries</a></li><li class="navelem"><a class="el" href="dir_72c3684b9b9fdee6da09925f80cf45e5.html">protocol</a></li><li class="navelem"><a class="el" href="dir_abca06504e74218a020fe4838ae0b428.html">include</a></li><li class="navelem"><a class="el" href="dir_c2b39a27bac435817b634bc70310c456.html">graphene</a></li><li class="navelem"><a class="el" href="dir_c6521a9c264a9b50437c211382341cd1.html">protocol</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -72,62 +72,58 @@ $(function() {
 <div class="title">htlc.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;fc/crypto/ripemd160.hpp&gt;</code><br />
-<code>#include &lt;fc/crypto/sha1.hpp&gt;</code><br />
-<code>#include &lt;fc/crypto/sha256.hpp&gt;</code><br />
-<code>#include &lt;fc/time.hpp&gt;</code><br />
-<code>#include &lt;boost/container/flat_set.hpp&gt;</code><br />
-<code>#include &lt;<a class="el" href="base_8hpp_source.html">graphene/chain/protocol/base.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="types_8hpp_source.html">graphene/chain/protocol/types.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;fc/time.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="base_8hpp_source.html">graphene/protocol/base.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="asset_8hpp_source.html">graphene/protocol/asset.hpp</a>&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 </div>
 <p><a href="htlc_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1htlc__create__operation.html">graphene::chain::htlc_create_operation</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1htlc__create__operation.html">graphene::protocol::htlc_create_operation</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1htlc__create__operation_1_1fee__parameters__type.html">graphene::chain::htlc_create_operation::fee_parameters_type</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1htlc__create__operation_1_1fee__parameters__type.html">graphene::protocol::htlc_create_operation::fee_parameters_type</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1htlc__redeem__operation.html">graphene::chain::htlc_redeem_operation</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1htlc__redeem__operation.html">graphene::protocol::htlc_redeem_operation</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1htlc__redeem__operation_1_1fee__parameters__type.html">graphene::chain::htlc_redeem_operation::fee_parameters_type</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1htlc__redeem__operation_1_1fee__parameters__type.html">graphene::protocol::htlc_redeem_operation::fee_parameters_type</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1htlc__redeemed__operation.html">graphene::chain::htlc_redeemed_operation</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1htlc__redeemed__operation.html">graphene::protocol::htlc_redeemed_operation</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1htlc__redeemed__operation_1_1fee__parameters__type.html">graphene::chain::htlc_redeemed_operation::fee_parameters_type</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1htlc__redeemed__operation_1_1fee__parameters__type.html">graphene::protocol::htlc_redeemed_operation::fee_parameters_type</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1htlc__extend__operation.html">graphene::chain::htlc_extend_operation</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1htlc__extend__operation.html">graphene::protocol::htlc_extend_operation</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1htlc__extend__operation_1_1fee__parameters__type.html">graphene::chain::htlc_extend_operation::fee_parameters_type</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1htlc__extend__operation_1_1fee__parameters__type.html">graphene::protocol::htlc_extend_operation::fee_parameters_type</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1htlc__refund__operation.html">graphene::chain::htlc_refund_operation</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1htlc__refund__operation.html">graphene::protocol::htlc_refund_operation</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1htlc__refund__operation_1_1fee__parameters__type.html">graphene::chain::htlc_refund_operation::fee_parameters_type</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1htlc__refund__operation_1_1fee__parameters__type.html">graphene::protocol::htlc_refund_operation::fee_parameters_type</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacegraphene"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene.html">graphene</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacegraphene_1_1chain"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html">graphene::chain</a></td></tr>
+<tr class="memitem:namespacegraphene_1_1protocol"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html">graphene::protocol</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a05eac50de0c5b9176dd0ab18c979b219"><td class="memItemLeft" align="right" valign="top">typedef fc::ripemd160&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a05eac50de0c5b9176dd0ab18c979b219">graphene::chain::htlc_algo_ripemd160</a></td></tr>
-<tr class="separator:a05eac50de0c5b9176dd0ab18c979b219"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a902ac0fdd3b993846867213060ead403"><td class="memItemLeft" align="right" valign="top">typedef fc::sha1&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a902ac0fdd3b993846867213060ead403">graphene::chain::htlc_algo_sha1</a></td></tr>
-<tr class="separator:a902ac0fdd3b993846867213060ead403"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3137b27c6cf00a905a98d28c54232dc3"><td class="memItemLeft" align="right" valign="top">typedef fc::sha256&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a3137b27c6cf00a905a98d28c54232dc3">graphene::chain::htlc_algo_sha256</a></td></tr>
-<tr class="separator:a3137b27c6cf00a905a98d28c54232dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f2db45047e0e7c24fb0a83a8369231a"><td class="memItemLeft" align="right" valign="top">typedef fc::static_variant&lt; htlc_algo_ripemd160, htlc_algo_sha1, htlc_algo_sha256 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a9f2db45047e0e7c24fb0a83a8369231a">graphene::chain::htlc_hash</a></td></tr>
-<tr class="separator:a9f2db45047e0e7c24fb0a83a8369231a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bae001b47b8d864a79406219d67b832"><td class="memItemLeft" align="right" valign="top">typedef fc::ripemd160&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#a1bae001b47b8d864a79406219d67b832">graphene::protocol::htlc_algo_ripemd160</a></td></tr>
+<tr class="separator:a1bae001b47b8d864a79406219d67b832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7a995704f215556cbfd73295621d059"><td class="memItemLeft" align="right" valign="top">typedef fc::sha1&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#ac7a995704f215556cbfd73295621d059">graphene::protocol::htlc_algo_sha1</a></td></tr>
+<tr class="separator:ac7a995704f215556cbfd73295621d059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5938be26ca395e77538fb8632c71d8a5"><td class="memItemLeft" align="right" valign="top">typedef fc::sha256&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#a5938be26ca395e77538fb8632c71d8a5">graphene::protocol::htlc_algo_sha256</a></td></tr>
+<tr class="separator:a5938be26ca395e77538fb8632c71d8a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefb49a2e093f5166d881a5e7cd47b648"><td class="memItemLeft" align="right" valign="top">typedef fc::static_variant&lt; htlc_algo_ripemd160, htlc_algo_sha1, htlc_algo_sha256 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#aefb49a2e093f5166d881a5e7cd47b648">graphene::protocol::htlc_hash</a></td></tr>
+<tr class="separator:aefb49a2e093f5166d881a5e7cd47b648"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2019 16:11:11 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

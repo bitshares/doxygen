@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.1.0</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -78,7 +78,7 @@ $(function() {
 
 <h3><a id="index_e"></a>- e -</h3><ul>
 <li>extensions_type
-: <a class="el" href="structgraphene_1_1chain_1_1call__order__update__operation.html#a9a6c133d27114e297f5ca7d23dd781a9">graphene::chain::call_order_update_operation</a>
+: <a class="el" href="structgraphene_1_1protocol_1_1call__order__update__operation.html#aa01d6fd58f9fa49f701615aac8ec8048">graphene::protocol::call_order_update_operation</a>
 </li>
 </ul>
 
@@ -86,6 +86,16 @@ $(function() {
 <h3><a id="index_f"></a>- f -</h3><ul>
 <li>fork_multi_index_type
 : <a class="el" href="classgraphene_1_1chain_1_1fork__database.html#a632498ce1db11194e52bba4b389e196e">graphene::chain::fork_database</a>
+</li>
+</ul>
+
+
+<h3><a id="index_i"></a>- i -</h3><ul>
+<li>is_defined
+: <a class="el" href="structfc_1_1reflector_3_01graphene_1_1db_1_1object__id_3_01_space_i_d_00_01_type_i_d_01_4_01_4.html#a2391c0e3efde6a23ee87126b7c822839">fc::reflector&lt; graphene::db::object_id&lt; SpaceID, TypeID &gt; &gt;</a>
+</li>
+<li>is_enum
+: <a class="el" href="structfc_1_1reflector_3_01graphene_1_1db_1_1object__id_3_01_space_i_d_00_01_type_i_d_01_4_01_4.html#a4c11573a09256609ff4b0987efd96816">fc::reflector&lt; graphene::db::object_id&lt; SpaceID, TypeID &gt; &gt;</a>
 </li>
 </ul>
 
@@ -150,8 +160,6 @@ $(function() {
 <li>result_type
 : <a class="el" href="structget__impacted__account__visitor.html#af9f23494b90c117cf88e16787bb9a4cd">get_impacted_account_visitor</a>
 , <a class="el" href="structgraphene_1_1chain_1_1bitasset__short__backing__asset__extractor.html#a9641f5a8b29f735cf145ba808008cb24">graphene::chain::bitasset_short_backing_asset_extractor</a>
-, <a class="el" href="structgraphene_1_1chain_1_1calc__fee__visitor.html#a1e7190b06c564ee7cd9c0475f331c2a5">graphene::chain::calc_fee_visitor</a>
-, <a class="el" href="structgraphene_1_1chain_1_1fee__schedule__validate__visitor.html#a50e51f69244e4b720fe1db2df24f3406">graphene::chain::fee_schedule_validate_visitor</a>
 , <a class="el" href="classgraphene_1_1chain_1_1hardfork__visitor__1479.html#a8b0a001dd5e88e05ae3aa2cf6b7ed3ab">graphene::chain::hardfork_visitor_1479</a>
 , <a class="el" href="structgraphene_1_1chain_1_1hardfork__visitor__214.html#adc6f5d9c841af795bef9532aebbc0549">graphene::chain::hardfork_visitor_214</a>
 , <a class="el" href="structgraphene_1_1chain_1_1htlc__object_1_1from__extractor.html#aa920e14121d584b4d2df19a9b149f2d8">graphene::chain::htlc_object::from_extractor</a>
@@ -159,17 +167,19 @@ $(function() {
 , <a class="el" href="structgraphene_1_1chain_1_1htlc__object_1_1to__extractor.html#aa99fcbdfa53b717d5238449c5f9d14d1">graphene::chain::htlc_object::to_extractor</a>
 , <a class="el" href="classgraphene_1_1chain_1_1htlc__redeem__visitor.html#ae3af049290ec40a50161c5a171059350">graphene::chain::htlc_redeem_visitor</a>
 , <a class="el" href="structgraphene_1_1chain_1_1init__policy__visitor.html#a45f589224ca6b77de23278ab62b0d83e">graphene::chain::init_policy_visitor</a>
-, <a class="el" href="structgraphene_1_1chain_1_1operation__get__required__auth.html#a0346b99dfa3fe44346cfc51d2e3f5f2e">graphene::chain::operation_get_required_auth</a>
-, <a class="el" href="structgraphene_1_1chain_1_1operation__validator.html#af303acbd6b32c60c6c4cf6cc25a03250">graphene::chain::operation_validator</a>
 , <a class="el" href="structgraphene_1_1chain_1_1predicate__evaluator.html#a9deb39a5ff1d6e99985cc8b4130e96a4">graphene::chain::predicate_evaluator</a>
-, <a class="el" href="structgraphene_1_1chain_1_1predicate__validator.html#a208cd019ff28824d0f44c107aa29d61a">graphene::chain::predicate_validator</a>
 , <a class="el" href="structgraphene_1_1chain_1_1proposal__operation__hardfork__visitor.html#adb804e5e83320af04f6cdb29b944a36d">graphene::chain::proposal_operation_hardfork_visitor</a>
-, <a class="el" href="structgraphene_1_1chain_1_1set__fee__visitor.html#a8b61eb4b9e72dd14b9f9db90ea7c4f12">graphene::chain::set_fee_visitor</a>
 , <a class="el" href="structgraphene_1_1chain_1_1special__authority__evaluate__visitor.html#a52ba1daeb1ea8e14dca07d97ad3bd479">graphene::chain::special_authority_evaluate_visitor</a>
-, <a class="el" href="structgraphene_1_1chain_1_1special__authority__validate__visitor.html#aa3afcc19b00ed9e14fe742655500bcbf">graphene::chain::special_authority_validate_visitor</a>
 , <a class="el" href="structgraphene_1_1chain_1_1worker__init__visitor.html#a0f18ba10c0349df5eb56ce05713ff828">graphene::chain::worker_init_visitor</a>
 , <a class="el" href="structgraphene_1_1chain_1_1worker__pay__visitor.html#a51e2650924e4da89bd6f70c1ff13f659">graphene::chain::worker_pay_visitor</a>
-, <a class="el" href="structgraphene_1_1chain_1_1zero__fee__visitor.html#a2fba36c11afdcca48724ea72b0808608">graphene::chain::zero_fee_visitor</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1calc__fee__visitor.html#a0bfb19bd9783c6cac15c570ef29f7ff3">graphene::protocol::calc_fee_visitor</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1fee__schedule__validate__visitor.html#ac609406d48dfcd8c6d198d8451035b5b">graphene::protocol::fee_schedule_validate_visitor</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1operation__get__required__auth.html#a2e3aff02fa3b0f4eab186339a4858e09">graphene::protocol::operation_get_required_auth</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1operation__validator.html#ad49e0814461c90b33546d8ca450a57a7">graphene::protocol::operation_validator</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1predicate__validator.html#a1ab3358730b05a535810ee422be2c256">graphene::protocol::predicate_validator</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1set__fee__visitor.html#ac22031e5b72fc31e1f1591bf7fdae7f5">graphene::protocol::set_fee_visitor</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1special__authority__validate__visitor.html#a0d73f3360befe248e39817f57968c590">graphene::protocol::special_authority_validate_visitor</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1zero__fee__visitor.html#ac9dcaad0fb1fd0be559287ffc690e254">graphene::protocol::zero_fee_visitor</a>
 , <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1htlc__hash__to__string__visitor.html#a082d32d65679bf66f3a93b0c916de6da">graphene::wallet::detail::htlc_hash_to_string_visitor</a>
 , <a class="el" href="structgraphene_1_1wallet_1_1detail_1_1op__prototype__visitor.html#ae3366d2715037cf18c4a2762ab8a5fba">graphene::wallet::detail::op_prototype_visitor</a>
 , <a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#a27a02e6f0013618f1a7e0b818f8249f2">graphene::wallet::detail::operation_printer</a>
@@ -182,13 +192,15 @@ $(function() {
 
 <h3><a id="index_t"></a>- t -</h3><ul>
 <li>type
-: <a class="el" href="structgraphene_1_1chain_1_1transform__to__fee__parameters_3_01fc_1_1static__variant_3_01_t_8_8_8_01_4_01_4.html#a4fbd907f979a5c623286a05aa50a8bf0">graphene::chain::transform_to_fee_parameters&lt; fc::static_variant&lt; T... &gt; &gt;</a>
+: <a class="el" href="structfc_1_1reflector_3_01graphene_1_1db_1_1object__id_3_01_space_i_d_00_01_type_i_d_01_4_01_4.html#ae32ca61f48bf6c13644b181a58b2ee22">fc::reflector&lt; graphene::db::object_id&lt; SpaceID, TypeID &gt; &gt;</a>
+, <a class="el" href="structgraphene_1_1db_1_1object__downcast.html#ae3c948176b86bad30ad5c6da96c35136">graphene::db::object_downcast&lt; ObjectID &gt;</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1transform__to__fee__parameters_3_01fc_1_1static__variant_3_01_t_8_8_8_01_4_01_4.html#a74cda7734a7e34e138a7d94b01ce2fbc">graphene::protocol::transform_to_fee_parameters&lt; fc::static_variant&lt; T... &gt; &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2019 16:11:12 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 17 2019 16:30:09 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.1.0</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -88,9 +88,9 @@ Inheritance diagram for graphene::chain::committee_member_object:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a002acc4bcf8032c69c2e064fc29b4427"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1chain.html#a11927fb343f953514ab6235d6e7233ee">account_id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1committee__member__object.html#a002acc4bcf8032c69c2e064fc29b4427">committee_member_account</a></td></tr>
+<tr class="memitem:a002acc4bcf8032c69c2e064fc29b4427"><td class="memItemLeft" align="right" valign="top">account_id_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1committee__member__object.html#a002acc4bcf8032c69c2e064fc29b4427">committee_member_account</a></td></tr>
 <tr class="separator:a002acc4bcf8032c69c2e064fc29b4427"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7628533b7d5fd6eacc2a95e1ad77d15c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1chain_1_1vote__id__type.html">vote_id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1committee__member__object.html#a7628533b7d5fd6eacc2a95e1ad77d15c">vote_id</a></td></tr>
+<tr class="memitem:a7628533b7d5fd6eacc2a95e1ad77d15c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html">vote_id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1committee__member__object.html#a7628533b7d5fd6eacc2a95e1ad77d15c">vote_id</a></td></tr>
 <tr class="separator:a7628533b7d5fd6eacc2a95e1ad77d15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad375fb11aaad7e48beca98ecc31e8a3"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1committee__member__object.html#aad375fb11aaad7e48beca98ecc31e8a3">total_votes</a> = 0</td></tr>
 <tr class="separator:aad375fb11aaad7e48beca98ecc31e8a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,9 +99,9 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a4e41c27773494ee4c2c5b730473c075a"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1committee__member__object.html#a4e41c27773494ee4c2c5b730473c075a">space_id</a> = <a class="el" href="namespacegraphene_1_1chain.html#a92e55d4242187696c5e2c5eaafbd9400a9dadbbe526b5096091138116c13d612d">protocol_ids</a></td></tr>
+<tr class="memitem:a4e41c27773494ee4c2c5b730473c075a"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1committee__member__object.html#a4e41c27773494ee4c2c5b730473c075a">space_id</a> = protocol_ids</td></tr>
 <tr class="separator:a4e41c27773494ee4c2c5b730473c075a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69e8dd993ba88e610452a82979dc8647"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1committee__member__object.html#a69e8dd993ba88e610452a82979dc8647">type_id</a> = <a class="el" href="namespacegraphene_1_1chain.html#aa6e32c79e2b22c998deddedcb696633da98d1de42a5d75aecbbad0b4af247da0c">committee_member_object_type</a></td></tr>
+<tr class="memitem:a69e8dd993ba88e610452a82979dc8647"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1committee__member__object.html#a69e8dd993ba88e610452a82979dc8647">type_id</a> = committee_member_object_type</td></tr>
 <tr class="separator:a69e8dd993ba88e610452a82979dc8647"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -109,7 +109,7 @@ Static Public Attributes</h2></td></tr>
 <p>A committee_member is responsible for setting blockchain parameters and has dynamic multi-sig control over the committee account. The current set of active committee_members has control. </p>
 <p>committee_members were separated into a separate object to make iterating over the set of committee_member easy. </p>
 
-<p class="definition">Definition at line <a class="el" href="committee__member__object_8hpp_source.html#l00045">45</a> of file <a class="el" href="committee__member__object_8hpp_source.html">committee_member_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="committee__member__object_8hpp_source.html#l00043">43</a> of file <a class="el" href="committee__member__object_8hpp_source.html">committee_member_object.hpp</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a002acc4bcf8032c69c2e064fc29b4427"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a002acc4bcf8032c69c2e064fc29b4427">&#9670;&nbsp;</a></span>committee_member_account</h2>
@@ -118,12 +118,12 @@ Static Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacegraphene_1_1chain.html#a11927fb343f953514ab6235d6e7233ee">account_id_type</a> graphene::chain::committee_member_object::committee_member_account</td>
+          <td class="memname">account_id_type graphene::chain::committee_member_object::committee_member_account</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="committee__member__object_8hpp_source.html#l00051">51</a> of file <a class="el" href="committee__member__object_8hpp_source.html">committee_member_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="committee__member__object_8hpp_source.html#l00049">49</a> of file <a class="el" href="committee__member__object_8hpp_source.html">committee_member_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -137,7 +137,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t graphene::chain::committee_member_object::space_id = <a class="el" href="namespacegraphene_1_1chain.html#a92e55d4242187696c5e2c5eaafbd9400a9dadbbe526b5096091138116c13d612d">protocol_ids</a></td>
+          <td class="memname">const uint8_t graphene::chain::committee_member_object::space_id = protocol_ids</td>
         </tr>
       </table>
   </td>
@@ -147,7 +147,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="committee__member__object_8hpp_source.html#l00048">48</a> of file <a class="el" href="committee__member__object_8hpp_source.html">committee_member_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="committee__member__object_8hpp_source.html#l00046">46</a> of file <a class="el" href="committee__member__object_8hpp_source.html">committee_member_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -163,7 +163,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="committee__member__object_8hpp_source.html#l00053">53</a> of file <a class="el" href="committee__member__object_8hpp_source.html">committee_member_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="committee__member__object_8hpp_source.html#l00051">51</a> of file <a class="el" href="committee__member__object_8hpp_source.html">committee_member_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -177,7 +177,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t graphene::chain::committee_member_object::type_id = <a class="el" href="namespacegraphene_1_1chain.html#aa6e32c79e2b22c998deddedcb696633da98d1de42a5d75aecbbad0b4af247da0c">committee_member_object_type</a></td>
+          <td class="memname">const uint8_t graphene::chain::committee_member_object::type_id = committee_member_object_type</td>
         </tr>
       </table>
   </td>
@@ -187,7 +187,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="committee__member__object_8hpp_source.html#l00049">49</a> of file <a class="el" href="committee__member__object_8hpp_source.html">committee_member_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="committee__member__object_8hpp_source.html#l00047">47</a> of file <a class="el" href="committee__member__object_8hpp_source.html">committee_member_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -203,7 +203,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="committee__member__object_8hpp_source.html#l00054">54</a> of file <a class="el" href="committee__member__object_8hpp_source.html">committee_member_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="committee__member__object_8hpp_source.html#l00052">52</a> of file <a class="el" href="committee__member__object_8hpp_source.html">committee_member_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -214,12 +214,12 @@ Static Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structgraphene_1_1chain_1_1vote__id__type.html">vote_id_type</a> graphene::chain::committee_member_object::vote_id</td>
+          <td class="memname"><a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html">vote_id_type</a> graphene::chain::committee_member_object::vote_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="committee__member__object_8hpp_source.html#l00052">52</a> of file <a class="el" href="committee__member__object_8hpp_source.html">committee_member_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="committee__member__object_8hpp_source.html#l00050">50</a> of file <a class="el" href="committee__member__object_8hpp_source.html">committee_member_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -230,7 +230,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2019 16:11:11 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.1.0</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -100,8 +100,9 @@ $(function() {
 : <a class="el" href="structgraphene_1_1chain_1_1htlc__object_1_1condition__info.html#a40cb58a4bdc2008b534c195d6cc2b0cf">graphene::chain::htlc_object::condition_info</a>
 </li>
 <li>hash_value
-: <a class="el" href="classgraphene_1_1chain_1_1address.html#ae4ce2352ad36d5689d87fc2f59b22d9d">graphene::chain::address</a>
-, <a class="el" href="structgraphene_1_1chain_1_1vote__id__type.html#a5c46a07b7559a27aae62782ee0a26897">graphene::chain::vote_id_type</a>
+: <a class="el" href="structgraphene_1_1db_1_1object__id.html#ab3d40a0856870104fdfe009c1ce9dcc0">graphene::db::object_id&lt; SpaceID, TypeID &gt;</a>
+, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html#ad5c975cff18718b89715b4142fc15351">graphene::db::object_id_type</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html#a5c46a07b7559a27aae62782ee0a26897">graphene::protocol::vote_id_type</a>
 </li>
 <li>head()
 : <a class="el" href="classgraphene_1_1chain_1_1fork__database.html#ac8f037c13ce941cf69397608566732a5">graphene::chain::fork_database</a>
@@ -143,10 +144,10 @@ $(function() {
 , <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#ae8f0ab32a3be8f144bb2172ac117fa2a">graphene::wallet::wallet_api</a>
 </li>
 <li>htlc_id
-: <a class="el" href="structgraphene_1_1chain_1_1htlc__extend__operation.html#aaf22e1e0fcfa8327e65bbd67fcaa06a3">graphene::chain::htlc_extend_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1htlc__redeem__operation.html#acdafecc3b377ad61c0f1b6c96d6e49db">graphene::chain::htlc_redeem_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1htlc__redeemed__operation.html#a873c27bdd351b1e917d9c1c3b2f9d111">graphene::chain::htlc_redeemed_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1htlc__refund__operation.html#a4d8e501e24887a7d72f649cbffab250a">graphene::chain::htlc_refund_operation</a>
+: <a class="el" href="structgraphene_1_1protocol_1_1htlc__extend__operation.html#a188c1f2b2d6ba57b8012ac1668d71be4">graphene::protocol::htlc_extend_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1htlc__redeem__operation.html#ae29922b025264352a1ecc1dad9c13838">graphene::protocol::htlc_redeem_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1htlc__redeemed__operation.html#ad0db1ffcad745b5c261f5a11d2b31ba7">graphene::protocol::htlc_redeemed_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1htlc__refund__operation.html#ae178e900b3b43d754fdf4db657b73e15">graphene::protocol::htlc_refund_operation</a>
 </li>
 <li>htlc_obj
 : <a class="el" href="classgraphene_1_1chain_1_1htlc__extend__evaluator.html#aea28dda1bb67a3374e750a46f8652820">graphene::chain::htlc_extend_evaluator</a>
@@ -160,19 +161,24 @@ $(function() {
 : <a class="el" href="classgraphene_1_1chain_1_1htlc__redeem__visitor.html#a7aa6582f24b396b6b3f6d138369523ce">graphene::chain::htlc_redeem_visitor</a>
 </li>
 <li>htlc_redeemed_operation()
-: <a class="el" href="structgraphene_1_1chain_1_1htlc__redeemed__operation.html#ab8435798ef28153e6296928cd9c6a5c5">graphene::chain::htlc_redeemed_operation</a>
+: <a class="el" href="structgraphene_1_1protocol_1_1htlc__redeemed__operation.html#a25dbc50704e571b753c4ab6e18f4fa98">graphene::protocol::htlc_redeemed_operation</a>
 </li>
 <li>htlc_refund_operation()
-: <a class="el" href="structgraphene_1_1chain_1_1htlc__refund__operation.html#a1aad19ec77a226c36b038590ab8f3b80">graphene::chain::htlc_refund_operation</a>
+: <a class="el" href="structgraphene_1_1protocol_1_1htlc__refund__operation.html#ae8cbe3dd5099a60129de958e61c07e40">graphene::protocol::htlc_refund_operation</a>
 </li>
-<li>htlcs
-: <a class="el" href="structgraphene_1_1app_1_1full__account.html#ace05f4d13e3964ad9f6de0f5b4024ef9">graphene::app::full_account</a>
+<li>htlcs_from
+: <a class="el" href="structgraphene_1_1app_1_1full__account.html#a01d87da4a0411f12f9ed7f1a3d6a8f93">graphene::app::full_account</a>
+, <a class="el" href="structgraphene_1_1app_1_1more__data.html#aeb5e03716249fd866f571c9e9348b0ba">graphene::app::more_data</a>
+</li>
+<li>htlcs_to
+: <a class="el" href="structgraphene_1_1app_1_1full__account.html#ab22ffa5ebe4b799c9a530f2cca7e5d0d">graphene::app::full_account</a>
+, <a class="el" href="structgraphene_1_1app_1_1more__data.html#a1b3d224200353517add65c8002d33da6">graphene::app::more_data</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2019 16:11:12 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 17 2019 16:30:09 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
