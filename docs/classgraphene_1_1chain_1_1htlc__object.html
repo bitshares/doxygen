@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.1.0</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -66,7 +66,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classgraphene_1_1chain_1_1htlc__object-members.html">List of all members</a>  </div>
@@ -101,11 +100,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1htlc__object_1_1transfer__info.html">transfer_info</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a7961f5cf38d737209b330d4540476ccc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1htlc__object.html#a7961f5cf38d737209b330d4540476ccc">operator==</a> (const <a class="el" href="classgraphene_1_1chain_1_1htlc__object.html">htlc_object</a> &amp;in)</td></tr>
-<tr class="separator:a7961f5cf38d737209b330d4540476ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:afae31794067be0d970ed6ee719ad53da"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structgraphene_1_1chain_1_1htlc__object_1_1transfer__info.html">graphene::chain::htlc_object::transfer_info</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1htlc__object.html#afae31794067be0d970ed6ee719ad53da">transfer</a></td></tr>
@@ -115,46 +109,17 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a4811b91adcc46453979d47dbf5e0330f"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1htlc__object.html#a4811b91adcc46453979d47dbf5e0330f">space_id</a> = <a class="el" href="namespacegraphene_1_1chain.html#a92e55d4242187696c5e2c5eaafbd9400a9dadbbe526b5096091138116c13d612d">protocol_ids</a></td></tr>
+<tr class="memitem:a4811b91adcc46453979d47dbf5e0330f"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1htlc__object.html#a4811b91adcc46453979d47dbf5e0330f">space_id</a> = protocol_ids</td></tr>
 <tr class="separator:a4811b91adcc46453979d47dbf5e0330f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22617dafd9557b3bff40c3d0463b168d"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1htlc__object.html#a22617dafd9557b3bff40c3d0463b168d">type_id</a> = <a class="el" href="namespacegraphene_1_1chain.html#aa6e32c79e2b22c998deddedcb696633da84b3665fd62843bc777795c6d40b0f0d">htlc_object_type</a></td></tr>
+<tr class="memitem:a22617dafd9557b3bff40c3d0463b168d"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1htlc__object.html#a22617dafd9557b3bff40c3d0463b168d">type_id</a> = htlc_object_type</td></tr>
 <tr class="separator:a22617dafd9557b3bff40c3d0463b168d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>database object to store HTLCs </p>
 <p>This object is stored in the database while an HTLC is active. The HTLC will become inactive at expiration or when unlocked via the preimage. </p>
 
-<p class="definition">Definition at line <a class="el" href="htlc__object_8hpp_source.html#l00042">42</a> of file <a class="el" href="htlc__object_8hpp_source.html">htlc_object.hpp</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7961f5cf38d737209b330d4540476ccc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7961f5cf38d737209b330d4540476ccc">&#9670;&nbsp;</a></span>operator==()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool graphene::chain::htlc_object::operator== </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classgraphene_1_1chain_1_1htlc__object.html">htlc_object</a> &amp;&#160;</td>
-          <td class="paramname"><em>in</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="htlc__object_8hpp_source.html#l00088">88</a> of file <a class="el" href="htlc__object_8hpp_source.html">htlc_object.hpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="htlc__object_8hpp_source.html#l00040">40</a> of file <a class="el" href="htlc__object_8hpp_source.html">htlc_object.hpp</a>.</p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="ad574e7e681d94e0c65c3be5bc35b9500"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad574e7e681d94e0c65c3be5bc35b9500">&#9670;&nbsp;</a></span>conditions</h2>
 
@@ -179,7 +144,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t graphene::chain::htlc_object::space_id = <a class="el" href="namespacegraphene_1_1chain.html#a92e55d4242187696c5e2c5eaafbd9400a9dadbbe526b5096091138116c13d612d">protocol_ids</a></td>
+          <td class="memname">const uint8_t graphene::chain::htlc_object::space_id = protocol_ids</td>
         </tr>
       </table>
   </td>
@@ -189,7 +154,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="htlc__object_8hpp_source.html#l00045">45</a> of file <a class="el" href="htlc__object_8hpp_source.html">htlc_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="htlc__object_8hpp_source.html#l00043">43</a> of file <a class="el" href="htlc__object_8hpp_source.html">htlc_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -217,7 +182,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t graphene::chain::htlc_object::type_id = <a class="el" href="namespacegraphene_1_1chain.html#aa6e32c79e2b22c998deddedcb696633da84b3665fd62843bc777795c6d40b0f0d">htlc_object_type</a></td>
+          <td class="memname">const uint8_t graphene::chain::htlc_object::type_id = htlc_object_type</td>
         </tr>
       </table>
   </td>
@@ -227,7 +192,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="htlc__object_8hpp_source.html#l00046">46</a> of file <a class="el" href="htlc__object_8hpp_source.html">htlc_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="htlc__object_8hpp_source.html#l00044">44</a> of file <a class="el" href="htlc__object_8hpp_source.html">htlc_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -238,7 +203,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2019 16:11:12 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

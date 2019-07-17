@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.1.0</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -72,8 +72,7 @@ $(function() {
 <div class="title">witness_object.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="asset_8hpp_source.html">graphene/chain/protocol/asset.hpp</a>&gt;</code><br />
-<code>#include &lt;graphene/db/object.hpp&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="asset_8hpp_source.html">graphene/protocol/asset.hpp</a>&gt;</code><br />
 <code>#include &lt;graphene/db/generic_index.hpp&gt;</code><br />
 </div>
 <p><a href="witness__object_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -92,7 +91,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:aa0f051c3b803688473930d49a98ec8e2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#aa0f051c3b803688473930d49a98ec8e2">graphene::chain::witness_multi_index_type</a> = multi_index_container&lt; witness_object, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt;, ordered_unique&lt; tag&lt; by_account &gt;, member&lt; witness_object, account_id_type, &amp;witness_object::witness_account &gt; &gt;, ordered_unique&lt; tag&lt; by_vote_id &gt;, member&lt; witness_object, vote_id_type, &amp;witness_object::vote_id &gt; &gt; &gt; &gt;</td></tr>
+<tr class="memitem:aa0f051c3b803688473930d49a98ec8e2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#aa0f051c3b803688473930d49a98ec8e2">graphene::chain::witness_multi_index_type</a> = multi_index_container&lt; witness_object, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>, &amp;object::id &gt; &gt;, ordered_unique&lt; tag&lt; by_account &gt;, member&lt; witness_object, account_id_type, &amp;witness_object::witness_account &gt; &gt;, ordered_unique&lt; tag&lt; by_vote_id &gt;, member&lt; witness_object, vote_id_type, &amp;witness_object::vote_id &gt; &gt; &gt; &gt;</td></tr>
 <tr class="separator:aa0f051c3b803688473930d49a98ec8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98ada320d7732377d0913aa7efafd4ba"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a98ada320d7732377d0913aa7efafd4ba">graphene::chain::witness_index</a> = generic_index&lt; witness_object, witness_multi_index_type &gt;</td></tr>
 <tr class="separator:a98ada320d7732377d0913aa7efafd4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,7 +99,7 @@ Typedefs</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2019 16:11:11 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

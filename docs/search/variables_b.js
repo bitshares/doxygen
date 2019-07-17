@@ -15,10 +15,10 @@ var searchData=
   ['lifetime_5freferrer',['lifetime_referrer',['../classgraphene_1_1chain_1_1account__object.html#a30f76968ef4c60fa570a0974f8417543',1,'graphene::chain::account_object']]],
   ['lifetime_5freferrer_5ffee_5fpercentage',['lifetime_referrer_fee_percentage',['../classgraphene_1_1chain_1_1account__object.html#a740544ffa778d3f11fccd468bfb2e90e',1,'graphene::chain::account_object']]],
   ['lifetime_5freferrer_5fname',['lifetime_referrer_name',['../structgraphene_1_1app_1_1full__account.html#a34ae5d2ed2f6150080b643bc77d0006f',1,'graphene::app::full_account']]],
-  ['lifetime_5freferrer_5fpercent_5fof_5ffee',['lifetime_referrer_percent_of_fee',['../structgraphene_1_1chain_1_1chain__parameters.html#a9b30881e02622c6dc73373eac1a77831',1,'graphene::chain::chain_parameters']]],
-  ['limit_5forders',['limit_orders',['../structgraphene_1_1app_1_1full__account.html#a8a7da90d80002d1b61aa9d16b13547e7',1,'graphene::app::full_account']]],
+  ['lifetime_5freferrer_5fpercent_5fof_5ffee',['lifetime_referrer_percent_of_fee',['../structgraphene_1_1protocol_1_1chain__parameters.html#a1a2f8f1a0e1556b12db1d5ea7eda8e00',1,'graphene::protocol::chain_parameters']]],
+  ['limit_5forders',['limit_orders',['../structgraphene_1_1app_1_1more__data.html#ad7bc0adf522c3a0546e9587c3eab0d4d',1,'graphene::app::more_data::limit_orders()'],['../structgraphene_1_1app_1_1full__account.html#a8a7da90d80002d1b61aa9d16b13547e7',1,'graphene::app::full_account::limit_orders()']]],
   ['listed_5faccount',['listed_account',['../classgraphene_1_1chain_1_1account__whitelist__evaluator.html#a3c28a75a53773fec80783f30ca95fa6f',1,'graphene::chain::account_whitelist_evaluator']]],
   ['lock_5fchanged',['lock_changed',['../classgraphene_1_1wallet_1_1wallet__api.html#a333834072c4aaa8f25d7ea52b39a76bd',1,'graphene::wallet::wallet_api']]],
-  ['long_5fsymbol',['long_symbol',['../structgraphene_1_1chain_1_1asset__create__operation_1_1fee__parameters__type.html#a0626b08aa1fed9e5f533d56f646c4681',1,'graphene::chain::asset_create_operation::fee_parameters_type']]],
+  ['long_5fsymbol',['long_symbol',['../structgraphene_1_1protocol_1_1asset__create__operation_1_1fee__parameters__type.html#a6a4f0f55958a6d38b9b4a48a1cdf6415',1,'graphene::protocol::asset_create_operation::fee_parameters_type']]],
   ['lowest_5fask',['lowest_ask',['../structgraphene_1_1app_1_1market__ticker.html#aa2e6803f35f251f8b3a825a906810707',1,'graphene::app::market_ticker']]]
 ];

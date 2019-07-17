@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['htlc_5falgo_5fripemd160',['htlc_algo_ripemd160',['../namespacegraphene_1_1chain.html#a05eac50de0c5b9176dd0ab18c979b219',1,'graphene::chain']]],
-  ['htlc_5falgo_5fsha1',['htlc_algo_sha1',['../namespacegraphene_1_1chain.html#a902ac0fdd3b993846867213060ead403',1,'graphene::chain']]],
-  ['htlc_5falgo_5fsha256',['htlc_algo_sha256',['../namespacegraphene_1_1chain.html#a3137b27c6cf00a905a98d28c54232dc3',1,'graphene::chain']]],
-  ['htlc_5fhash',['htlc_hash',['../namespacegraphene_1_1chain.html#a9f2db45047e0e7c24fb0a83a8369231a',1,'graphene::chain']]],
-  ['htlc_5fid_5ftype',['htlc_id_type',['../namespacegraphene_1_1chain.html#a4b58c1f668e22dcd9fe62fe18b3b0843',1,'graphene::chain']]],
-  ['htlc_5findex',['htlc_index',['../namespacegraphene_1_1chain.html#a7bf81c3662cf4747c634069d42e173d5',1,'graphene::chain']]],
-  ['htlc_5fobject_5findex_5ftype',['htlc_object_index_type',['../namespacegraphene_1_1chain.html#a06232478cb9c94ef587d99416759f316',1,'graphene::chain']]]
+  ['int128_5ft',['int128_t',['../namespacegraphene_1_1protocol.html#a9e409ec264da7a0b73a44b3fc76f214f',1,'graphene::protocol']]],
+  ['is_5fdefined',['is_defined',['../structfc_1_1reflector_3_01graphene_1_1db_1_1object__id_3_01_space_i_d_00_01_type_i_d_01_4_01_4.html#a2391c0e3efde6a23ee87126b7c822839',1,'fc::reflector&lt; graphene::db::object_id&lt; SpaceID, TypeID &gt; &gt;']]],
+  ['is_5fenum',['is_enum',['../structfc_1_1reflector_3_01graphene_1_1db_1_1object__id_3_01_space_i_d_00_01_type_i_d_01_4_01_4.html#a4c11573a09256609ff4b0987efd96816',1,'fc::reflector&lt; graphene::db::object_id&lt; SpaceID, TypeID &gt; &gt;']]],
+  ['item_5fptr',['item_ptr',['../namespacegraphene_1_1chain.html#a455f7a42385453236a3252fa8ba97654',1,'graphene::chain']]]
 ];

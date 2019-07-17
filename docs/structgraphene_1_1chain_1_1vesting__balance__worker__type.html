@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.1.0</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -80,12 +80,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a00fb9176eed69899e130e454919bff90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1vesting__balance__worker__type.html#a00fb9176eed69899e130e454919bff90">pay_worker</a> (<a class="el" href="namespacegraphene_1_1chain.html#ab4bea4aef5fe40c66b42537da931bffe">share_type</a> pay, <a class="el" href="classgraphene_1_1chain_1_1database.html">database</a> &amp;db)</td></tr>
+<tr class="memitem:a00fb9176eed69899e130e454919bff90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1vesting__balance__worker__type.html#a00fb9176eed69899e130e454919bff90">pay_worker</a> (<a class="el" href="namespacegraphene_1_1protocol.html#a69b2104c1c11eed2d17bd29b86713347">share_type</a> pay, <a class="el" href="classgraphene_1_1chain_1_1database.html">database</a> &amp;db)</td></tr>
 <tr class="separator:a00fb9176eed69899e130e454919bff90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a140f1a5e1384bc8cfafe0fef76d5bd73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1chain.html#a3c7832a7fb78912c0bd3b8b50a19c3f1">vesting_balance_id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1vesting__balance__worker__type.html#a140f1a5e1384bc8cfafe0fef76d5bd73">balance</a></td></tr>
+<tr class="memitem:a140f1a5e1384bc8cfafe0fef76d5bd73"><td class="memItemLeft" align="right" valign="top">vesting_balance_id_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1chain_1_1vesting__balance__worker__type.html#a140f1a5e1384bc8cfafe0fef76d5bd73">balance</a></td></tr>
 <tr class="memdesc:a140f1a5e1384bc8cfafe0fef76d5bd73"><td class="mdescLeft">&#160;</td><td class="mdescRight">The balance this worker pays into.  <a href="#a140f1a5e1384bc8cfafe0fef76d5bd73">More...</a><br /></td></tr>
 <tr class="separator:a140f1a5e1384bc8cfafe0fef76d5bd73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -93,7 +93,7 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>A worker who sends his pay to a vesting balance. </p>
 <p>This worker type takes all of his pay and places it into a vesting balance </p>
 
-<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00072">72</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00074">74</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a00fb9176eed69899e130e454919bff90"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a00fb9176eed69899e130e454919bff90">&#9670;&nbsp;</a></span>pay_worker()</h2>
@@ -104,7 +104,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void graphene::chain::vesting_balance_worker_type::pay_worker </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacegraphene_1_1chain.html#ab4bea4aef5fe40c66b42537da931bffe">share_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacegraphene_1_1protocol.html#a69b2104c1c11eed2d17bd29b86713347">share_type</a>&#160;</td>
           <td class="paramname"><em>pay</em>, </td>
         </tr>
         <tr>
@@ -133,14 +133,14 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacegraphene_1_1chain.html#a3c7832a7fb78912c0bd3b8b50a19c3f1">vesting_balance_id_type</a> graphene::chain::vesting_balance_worker_type::balance</td>
+          <td class="memname">vesting_balance_id_type graphene::chain::vesting_balance_worker_type::balance</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>The balance this worker pays into. </p>
 
-<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00075">75</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="worker__object_8hpp_source.html#l00077">77</a> of file <a class="el" href="worker__object_8hpp_source.html">worker_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -151,7 +151,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2019 16:11:12 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

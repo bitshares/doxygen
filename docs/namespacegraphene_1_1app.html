@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.1.0</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -130,6 +130,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1market__volume.html">market_volume</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1more__data.html">more_data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1network__broadcast__api.html">network_broadcast_api</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classgraphene_1_1app_1_1network__broadcast__api.html" title="The network_broadcast_api class allows broadcasting of transactions. ">network_broadcast_api</a> class allows broadcasting of transactions.  <a href="classgraphene_1_1app_1_1network__broadcast__api.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,9 +169,9 @@ Functions</h2></td></tr>
 <tr class="separator:af047f47d42f0057b71b692a49d87051b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac983e2615e3c4305778d61b9f0c4450a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1app.html#ac983e2615e3c4305778d61b9f0c4450a">uint128_amount_to_string</a> (const fc::uint128 &amp;amount, const uint8_t precision)</td></tr>
 <tr class="separator:ac983e2615e3c4305778d61b9f0c4450a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5c778a6ce322d86a92a25bceeeffdd2"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1app.html#aa5c778a6ce322d86a92a25bceeeffdd2">price_to_string</a> (const <a class="el" href="structgraphene_1_1chain_1_1price.html">price</a> &amp;_price, const uint8_t base_precision, const uint8_t quote_precision)</td></tr>
+<tr class="memitem:aa5c778a6ce322d86a92a25bceeeffdd2"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1app.html#aa5c778a6ce322d86a92a25bceeeffdd2">price_to_string</a> (const <a class="el" href="structgraphene_1_1protocol_1_1price.html">price</a> &amp;_price, const uint8_t base_precision, const uint8_t quote_precision)</td></tr>
 <tr class="separator:aa5c778a6ce322d86a92a25bceeeffdd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4960f0d94097a5cda651acec71c461ac"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1app.html#a4960f0d94097a5cda651acec71c461ac">price_diff_percent_string</a> (const <a class="el" href="structgraphene_1_1chain_1_1price.html">price</a> &amp;old_price, const <a class="el" href="structgraphene_1_1chain_1_1price.html">price</a> &amp;new_price)</td></tr>
+<tr class="memitem:a4960f0d94097a5cda651acec71c461ac"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1app.html#a4960f0d94097a5cda651acec71c461ac">price_diff_percent_string</a> (const <a class="el" href="structgraphene_1_1protocol_1_1price.html">price</a> &amp;old_price, const <a class="el" href="structgraphene_1_1protocol_1_1price.html">price</a> &amp;new_price)</td></tr>
 <tr class="separator:a4960f0d94097a5cda651acec71c461ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a0d7b9dd9560bcbbbfe65c4562a17ceb8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
@@ -306,13 +308,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">string graphene::app::price_diff_percent_string </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structgraphene_1_1chain_1_1price.html">price</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1price.html">price</a> &amp;&#160;</td>
           <td class="paramname"><em>old_price</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structgraphene_1_1chain_1_1price.html">price</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1price.html">price</a> &amp;&#160;</td>
           <td class="paramname"><em>new_price</em>&#160;</td>
         </tr>
         <tr>
@@ -336,7 +338,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">string graphene::app::price_to_string </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structgraphene_1_1chain_1_1price.html">price</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1price.html">price</a> &amp;&#160;</td>
           <td class="paramname"><em>_price</em>, </td>
         </tr>
         <tr>
@@ -436,7 +438,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2019 16:11:11 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

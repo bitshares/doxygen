@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.1.0</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -64,6 +64,13 @@ $(function() {
 <div class="title">BitShares Core </div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p><a href="https://travis-ci.org/bitshares/bitshares-core/branches">Build Status</a>:</p>
+<table class="doxtable">
+<tr>
+<th><code>master</code> </th><th><code>develop</code> </th><th><code>hardfork</code> </th><th><code>testnet</code> </th><th><code>bitshares-fc</code>  </th></tr>
+<tr>
+<td><a href="https://travis-ci.org/bitshares/bitshares-core"></a> </td><td><a href="https://travis-ci.org/bitshares/bitshares-core"></a> </td><td><a href="https://travis-ci.org/bitshares/bitshares-core"></a> </td><td><a href="https://travis-ci.org/bitshares/bitshares-core"></a> </td><td><a href="https://travis-ci.org/bitshares/bitshares-fc"></a> </td></tr>
+</table>
 <ul>
 <li><a href="#getting-started">Getting Started</a></li>
 <li><a href="#support">Support</a></li>
@@ -94,7 +101,7 @@ git pull
 git submodule update --init --recursive # this command may fail
 git submodule sync --recursive
 git submodule update --init --recursive
-</pre><p><b>NOTE:</b> Versions of <a href="http://www.boost.org/">Boost</a> 1.57 through 1.69 are supported. Newer versions may work, but have not been tested. If your system came pre-installed with a version of Boost that you do not wish to use, you may manually build your preferred version and use it with BitShares by specifying it on the CMake command line.</p>
+</pre><p><b>NOTE:</b> Versions of <a href="http://www.boost.org/">Boost</a> 1.58 through 1.69 are supported. Newer versions may work, but have not been tested. If your system came pre-installed with a version of Boost that you do not wish to use, you may manually build your preferred version and use it with BitShares by specifying it on the CMake command line.</p>
 <p>Example: <code>cmake -DBOOST_ROOT=/path/to/boost .</code></p>
 <p><b>NOTE:</b> BitShares requires a 64-bit operating system to build, and will not build on a 32-bit OS.</p>
 <p><b>NOTE:</b> BitShares now supports Ubuntu 18.04 LTS</p>
@@ -193,7 +200,7 @@ $ wscat -c ws://127.0.0.1:8090
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2019 16:11:12 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 17 2019 16:30:09 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

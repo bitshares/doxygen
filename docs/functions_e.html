@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.1.0</span>
+   &#160;<span id="projectnumber">3.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -80,7 +80,7 @@ $(function() {
 , <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#a00e6ac75e8dc86221d62bf6c7c87d4e5">graphene::wallet::wallet_api</a>
 </li>
 <li>encrypted_memo
-: <a class="el" href="structgraphene_1_1chain_1_1stealth__confirmation.html#a5a45865dd7207979af62e2a8608669ac">graphene::chain::stealth_confirmation</a>
+: <a class="el" href="structgraphene_1_1protocol_1_1stealth__confirmation.html#a69c9082b72157f95c138cd3797e54ef4">graphene::protocol::stealth_confirmation</a>
 </li>
 <li>encrypted_private_keys
 : <a class="el" href="structgraphene_1_1wallet_1_1exported__account__keys.html#a67be2eee583e282acee6b78c4f445257">graphene::wallet::exported_account_keys</a>
@@ -104,73 +104,67 @@ $(function() {
 : <a class="el" href="classgraphene_1_1chain_1_1database.html#aeb2506f031441c93b369b3c21552131d">graphene::chain::database</a>
 </li>
 <li>execute_bid_operation()
-: <a class="el" href="structgraphene_1_1chain_1_1execute__bid__operation.html#ac12239b87b164a4e2670fceb7f4d81c8">graphene::chain::execute_bid_operation</a>
+: <a class="el" href="structgraphene_1_1protocol_1_1execute__bid__operation.html#aac8cd8d16cc838b6eca7357518700f9f">graphene::protocol::execute_bid_operation</a>
 </li>
 <li>exists()
-: <a class="el" href="structgraphene_1_1chain_1_1fee__schedule.html#a7c7531988cd465bea062e93944710334">graphene::chain::fee_schedule</a>
+: <a class="el" href="structgraphene_1_1protocol_1_1fee__schedule.html#a617938f112beb4720480f47e8e9a7722">graphene::protocol::fee_schedule</a>
 </li>
 <li>expiration
 : <a class="el" href="structgraphene_1_1chain_1_1htlc__object_1_1condition__info_1_1time__lock__info.html#aa04ec47ce1bd2e9d056117b470738859">graphene::chain::htlc_object::condition_info::time_lock_info</a>
-, <a class="el" href="structgraphene_1_1chain_1_1limit__order__create__operation.html#a3e4662cebca7efb7f26abc792e7eef5b">graphene::chain::limit_order_create_operation</a>
 , <a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html#a5ba529f677c8917605db7f28dac8a05d">graphene::chain::limit_order_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1transaction.html#a31fbf0cfaa89497d13fc35fb51319a32">graphene::chain::transaction</a>
 , <a class="el" href="classgraphene_1_1chain_1_1withdraw__permission__object.html#aee496512e5274d67e09bb0071c001a82">graphene::chain::withdraw_permission_object</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1limit__order__create__operation.html#a3c7a09bfaeebeb0fab8e56664dccb73d">graphene::protocol::limit_order_create_operation</a>
+, <a class="el" href="classgraphene_1_1protocol_1_1transaction.html#a303447df940705d8ab860d2d52317e80">graphene::protocol::transaction</a>
 </li>
 <li>expiration_time
-: <a class="el" href="structgraphene_1_1chain_1_1proposal__create__operation.html#a139682525efeb84af7f1816c42b26ef3">graphene::chain::proposal_create_operation</a>
-, <a class="el" href="classgraphene_1_1chain_1_1proposal__object.html#aaa68f7f84d178e7141e6a66b2217bc7d">graphene::chain::proposal_object</a>
-</li>
-<li>extended_private_key_type()
-: <a class="el" href="structgraphene_1_1chain_1_1extended__private__key__type.html#a8161617e7e8c5f94854e17f5633bfee8">graphene::chain::extended_private_key_type</a>
-</li>
-<li>extended_public_key_type()
-: <a class="el" href="structgraphene_1_1chain_1_1extended__public__key__type.html#a32640da767e5bc27638be8d0037d5195">graphene::chain::extended_public_key_type</a>
+: <a class="el" href="classgraphene_1_1chain_1_1proposal__object.html#aaa68f7f84d178e7141e6a66b2217bc7d">graphene::chain::proposal_object</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1proposal__create__operation.html#ad6d410faad937a65932c2f51d668abb7">graphene::protocol::proposal_create_operation</a>
 </li>
 <li>extension()
-: <a class="el" href="structgraphene_1_1chain_1_1extension.html#aa911a316e588fcd586ffd5b1ef4c1279">graphene::chain::extension&lt; T &gt;</a>
+: <a class="el" href="structgraphene_1_1protocol_1_1extension.html#a2ce945ca1fcb9f6744e52d82d33f6d53">graphene::protocol::extension&lt; T &gt;</a>
 </li>
 <li>extensions
-: <a class="el" href="structgraphene_1_1chain_1_1account__create__operation.html#ad41627b18e2043de78b71a29b24d154f">graphene::chain::account_create_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1account__options.html#a0fef49f86d71a8cb237f268415f7ee6e">graphene::chain::account_options</a>
-, <a class="el" href="structgraphene_1_1chain_1_1account__transfer__operation.html#a8054d1e0f9e41ff992936cb6a2661952">graphene::chain::account_transfer_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1account__update__operation.html#abd1ac89fc473b847db7a1a478c211af4">graphene::chain::account_update_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1account__upgrade__operation.html#a1c30ee89e622050b590be79b4b8d9bea">graphene::chain::account_upgrade_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1account__whitelist__operation.html#a7bf993f10107daffadff7d33c0f744f5">graphene::chain::account_whitelist_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1assert__operation.html#a5b0be39dd72bac52454928cab9e168a9">graphene::chain::assert_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1asset__claim__fees__operation.html#a4ede0f89e3d8e6965cfea67cbe606d45">graphene::chain::asset_claim_fees_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1asset__claim__pool__operation.html#aff30d50415f7699532055f15a41e3dba">graphene::chain::asset_claim_pool_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1asset__create__operation.html#ad167178813ec132701ebf055174a095e">graphene::chain::asset_create_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1asset__fund__fee__pool__operation.html#a5b42f4bbb4591e1819b2d638ce81ae31">graphene::chain::asset_fund_fee_pool_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1asset__global__settle__operation.html#a74188467b0395d135afe487a259f2068">graphene::chain::asset_global_settle_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1asset__issue__operation.html#ade42d5033eab51a635890f0600579a23">graphene::chain::asset_issue_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1asset__options.html#ae63616ca2142461f70c9570cfd79052e">graphene::chain::asset_options</a>
-, <a class="el" href="structgraphene_1_1chain_1_1asset__publish__feed__operation.html#a88dd0e60d25a95536b44bd44a04f56ff">graphene::chain::asset_publish_feed_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1asset__reserve__operation.html#a62358b4a804f9951a1354c86f5f6011f">graphene::chain::asset_reserve_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1asset__settle__cancel__operation.html#a36fbd1e94db1485c6435b735df1700cb">graphene::chain::asset_settle_cancel_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1asset__settle__operation.html#a47f0b67c247db76caeabc812f67b5ab1">graphene::chain::asset_settle_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1asset__update__bitasset__operation.html#ae3220075cac5991f571d65262a93c931">graphene::chain::asset_update_bitasset_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1asset__update__feed__producers__operation.html#a1fce528a5e306d99d0a58496bdf75520">graphene::chain::asset_update_feed_producers_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1asset__update__issuer__operation.html#ad0c5dcee16fd9853996a63a078e617e5">graphene::chain::asset_update_issuer_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1asset__update__operation.html#a8a1672cf315facdbe053f28474b24fe7">graphene::chain::asset_update_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1bid__collateral__operation.html#ac22368b0c93c89ab36f2953ef4c9df96">graphene::chain::bid_collateral_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1bitasset__options.html#a75a4618ac43edea683778bc0a32685fc">graphene::chain::bitasset_options</a>
-, <a class="el" href="classgraphene_1_1chain_1_1block__header.html#ae14913bd512fc9decb34cac18c380bbc">graphene::chain::block_header</a>
-, <a class="el" href="structgraphene_1_1chain_1_1call__order__update__operation.html#a89ac4bd0e4a38f7964cd37877c26177d">graphene::chain::call_order_update_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1chain__parameters.html#a54e6b9e1b908b0a1d99176e11b49e1e6">graphene::chain::chain_parameters</a>
-, <a class="el" href="structgraphene_1_1chain_1_1htlc__create__operation.html#aa02a4de1814878e4fe842e0ae4ba4673">graphene::chain::htlc_create_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1htlc__extend__operation.html#a4b9eecfc16268e4cb133631ba898ad50">graphene::chain::htlc_extend_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1htlc__redeem__operation.html#a946e8d6e4dd9924819c537181378ab5c">graphene::chain::htlc_redeem_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1limit__order__cancel__operation.html#aa74a8372019393355adf8d9c8871b4fe">graphene::chain::limit_order_cancel_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1limit__order__create__operation.html#a103d1670664d88badeccd7de398555f3">graphene::chain::limit_order_create_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1override__transfer__operation.html#a3c184c0645969c1d02f747faa1bb85bc">graphene::chain::override_transfer_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1proposal__create__operation.html#a6e90f6317b32815f5bd500911197162d">graphene::chain::proposal_create_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1proposal__delete__operation.html#a4a313fb6e619ced0061fed0325629771">graphene::chain::proposal_delete_operation</a>
-, <a class="el" href="structgraphene_1_1chain_1_1proposal__update__operation.html#a8e91e115e4021d4c0872cad92626ab33">graphene::chain::proposal_update_operation</a>
-, <a class="el" href="classgraphene_1_1chain_1_1transaction.html#a4f405d9c07b4655ef38e4388852caf38">graphene::chain::transaction</a>
-, <a class="el" href="structgraphene_1_1chain_1_1transfer__operation.html#ad4acf8e4541b8df4e4d5b596a5ef63f9">graphene::chain::transfer_operation</a>
+: <a class="el" href="structgraphene_1_1protocol_1_1account__create__operation.html#a6606590ca1ae443c7e7ac12e53013517">graphene::protocol::account_create_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1account__options.html#a36e25634d8b3670116c0b0bb7b6b0542">graphene::protocol::account_options</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1account__transfer__operation.html#a7998663278a073a2c05538f31cc0800b">graphene::protocol::account_transfer_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1account__update__operation.html#a9d924483d64dc0760e9abfd89fec259b">graphene::protocol::account_update_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1account__upgrade__operation.html#acce979b01bdd9e982936ec6857218b1b">graphene::protocol::account_upgrade_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1account__whitelist__operation.html#aee3a865d74e38ddee4df58eb4c6459b7">graphene::protocol::account_whitelist_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1assert__operation.html#a959afa6003a198a80c7e12cc751d5e7e">graphene::protocol::assert_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1asset__claim__fees__operation.html#aec43fc4728468c7641de361ac578b3db">graphene::protocol::asset_claim_fees_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1asset__claim__pool__operation.html#a86641cce3e855e9b465dccbb158bc59b">graphene::protocol::asset_claim_pool_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1asset__create__operation.html#a94415a058b3ca8e17766a95c108c18f8">graphene::protocol::asset_create_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1asset__fund__fee__pool__operation.html#a66dcdfdf844f05aeceb6a074b957e5eb">graphene::protocol::asset_fund_fee_pool_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1asset__global__settle__operation.html#af64930e77e05b3c4809ba6cec43bc48b">graphene::protocol::asset_global_settle_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1asset__issue__operation.html#ad7edf2dcc73a0e273bce11d38acf5d77">graphene::protocol::asset_issue_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1asset__options.html#a461c14cf2529d2bf320cccf213d8ed81">graphene::protocol::asset_options</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1asset__publish__feed__operation.html#af76e26ede97fb8b43620cae8431febf8">graphene::protocol::asset_publish_feed_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1asset__reserve__operation.html#ae2df61a530896e29808ac5b2e2ac65a3">graphene::protocol::asset_reserve_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1asset__settle__cancel__operation.html#a9ec4af02d9f9ddd2ef137f0949281880">graphene::protocol::asset_settle_cancel_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1asset__settle__operation.html#afd952bfd95a9a13836b27f1b3aea8401">graphene::protocol::asset_settle_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1asset__update__bitasset__operation.html#ae86000abe34ca6649d8136fd7a4ef6e8">graphene::protocol::asset_update_bitasset_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1asset__update__feed__producers__operation.html#af5a0f2e5ca70f313cf258084e6b409fe">graphene::protocol::asset_update_feed_producers_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1asset__update__issuer__operation.html#a83265241e17a0bc61519da1b043d40a3">graphene::protocol::asset_update_issuer_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1asset__update__operation.html#a14c82eacbd043bdab07b64caecac18e2">graphene::protocol::asset_update_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1bid__collateral__operation.html#a3d29393f0723a867b4a72c830b0c92fd">graphene::protocol::bid_collateral_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1bitasset__options.html#acd7dac516b40586ffe48103ecc2834da">graphene::protocol::bitasset_options</a>
+, <a class="el" href="classgraphene_1_1protocol_1_1block__header.html#a0ff96f81938e2b3d445b5823ec563779">graphene::protocol::block_header</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1call__order__update__operation.html#ac7aa115b1d0f3f94db675fafede9fa77">graphene::protocol::call_order_update_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1chain__parameters.html#abc19c5e14915700118ff4efe9e652f02">graphene::protocol::chain_parameters</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1htlc__create__operation.html#aab6db6d7704bb4372c883d454144e471">graphene::protocol::htlc_create_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1htlc__extend__operation.html#a016941c02eac7c8ced65e061e38681ae">graphene::protocol::htlc_extend_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1htlc__redeem__operation.html#a67ffd778812594e8b37d258806d9bea2">graphene::protocol::htlc_redeem_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1limit__order__cancel__operation.html#aabe748809f6863da6968daf6e65e405c">graphene::protocol::limit_order_cancel_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1limit__order__create__operation.html#a22b2749ba786a28fcd644d7820f68ddf">graphene::protocol::limit_order_create_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1override__transfer__operation.html#a058211c441c83a7d4e8341f2133b75bb">graphene::protocol::override_transfer_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1proposal__create__operation.html#ac3c219622310fa1a79761c3768c2957f">graphene::protocol::proposal_create_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1proposal__delete__operation.html#adf333482175c7fc8d41782c2cc74f18e">graphene::protocol::proposal_delete_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1proposal__update__operation.html#a43e443ca20179bd00ede465b90de0cb1">graphene::protocol::proposal_update_operation</a>
+, <a class="el" href="classgraphene_1_1protocol_1_1transaction.html#ac4922d0bbee524ba5eacc8a665888be2">graphene::protocol::transaction</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1transfer__operation.html#abdb2497aff901022ce11f232a0f97edb">graphene::protocol::transfer_operation</a>
 </li>
 <li>extensions_type
-: <a class="el" href="structgraphene_1_1chain_1_1call__order__update__operation.html#a9a6c133d27114e297f5ca7d23dd781a9">graphene::chain::call_order_update_operation</a>
+: <a class="el" href="structgraphene_1_1protocol_1_1call__order__update__operation.html#aa01d6fd58f9fa49f701615aac8ec8048">graphene::protocol::call_order_update_operation</a>
 </li>
 <li>extra_keys
 : <a class="el" href="structgraphene_1_1wallet_1_1wallet__data.html#a5283ce0f34df2e4b30252645eefc9627">graphene::wallet::wallet_data</a>
@@ -179,7 +173,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 15 2019 16:11:12 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 17 2019 16:30:09 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
