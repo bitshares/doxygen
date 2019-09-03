@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -73,6 +73,12 @@ $(function() {
 <li>last_aslot
 : <a class="el" href="classgraphene_1_1chain_1_1witness__object.html#a0b6afcff19d10b92ed58bf65fc920dc6">graphene::chain::witness_object</a>
 </li>
+<li>last_block_delegate_has_seen
+: <a class="el" href="classgraphene_1_1net_1_1peer__connection.html#a482e6437f2acb29ee0326e3e87a276b3">graphene::net::peer_connection</a>
+</li>
+<li>last_block_time_delegate_has_seen
+: <a class="el" href="classgraphene_1_1net_1_1peer__connection.html#ae99ecdf3308476fc65e9cf8acb3821d7">graphene::net::peer_connection</a>
+</li>
 <li>last_budget_time
 : <a class="el" href="classgraphene_1_1chain_1_1dynamic__global__property__object.html#a6885010b682e4f90ba14d6a3ea4b61bb">graphene::chain::dynamic_global_property_object</a>
 </li>
@@ -82,8 +88,39 @@ $(function() {
 <li>last_confirmed_block_num
 : <a class="el" href="classgraphene_1_1chain_1_1witness__object.html#a19274ffd2f316d389724aef1e3b44450">graphene::chain::witness_object</a>
 </li>
+<li>last_connection_attempt_time
+: <a class="el" href="structgraphene_1_1net_1_1potential__peer__record.html#a59173718c9e9ac2f8edd74b35c1997bb">graphene::net::potential_peer_record</a>
+</li>
+<li>last_connection_disposition
+: <a class="el" href="structgraphene_1_1net_1_1potential__peer__record.html#a17b2f2ad7f13fe219e71c5257c20a81a">graphene::net::potential_peer_record</a>
+</li>
+<li>last_day_base
+: <a class="el" href="structgraphene_1_1market__history_1_1market__ticker__object.html#ab6b428a966e7a5becc34e16000f4c0a3">graphene::market_history::market_ticker_object</a>
+</li>
+<li>last_day_quote
+: <a class="el" href="structgraphene_1_1market__history_1_1market__ticker__object.html#ac999a6cb8cbc59b4dc364126c0b16806">graphene::market_history::market_ticker_object</a>
+</li>
+<li>last_error
+: <a class="el" href="structgraphene_1_1net_1_1potential__peer__record.html#ab69dba4ee581c97bbb5dc29ece4ea665">graphene::net::potential_peer_record</a>
+</li>
 <li>last_irreversible_block_num
 : <a class="el" href="classgraphene_1_1chain_1_1dynamic__global__property__object.html#a74dfc7b21530d28ade644ce1ff13a2b7">graphene::chain::dynamic_global_property_object</a>
+</li>
+<li>last_known_fork_block_number
+: <a class="el" href="classgraphene_1_1net_1_1peer__connection.html#ad3906b5c828ae801c22d289189b99425">graphene::net::peer_connection</a>
+</li>
+<li>last_processed_remote_head
+: <a class="el" href="structgraphene_1_1delayed__node_1_1detail_1_1delayed__node__plugin__impl.html#a71e38bbdbcac65ba6b4cb3da83ad6e3a">graphene::delayed_node::detail::delayed_node_plugin_impl</a>
+</li>
+<li>last_received_remote_head
+: <a class="el" href="structgraphene_1_1delayed__node_1_1detail_1_1delayed__node__plugin__impl.html#ab096d69526b64ce9d6c563e30aec8c15">graphene::delayed_node::detail::delayed_node_plugin_impl</a>
+</li>
+<li>last_seen_time
+: <a class="el" href="structgraphene_1_1net_1_1address__info.html#a26f9e28595f51f8ed5c3fa4cbf0d2df1">graphene::net::address_info</a>
+, <a class="el" href="structgraphene_1_1net_1_1potential__peer__record.html#a63bb5d5a5225755fb291d08788f1a91f">graphene::net::potential_peer_record</a>
+</li>
+<li>last_sync_item_received_time
+: <a class="el" href="classgraphene_1_1net_1_1peer__connection.html#a5a21e7b0a686ea910bbd3865e6d5240a">graphene::net::peer_connection</a>
 </li>
 <li>last_vote_time
 : <a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#acccc9ad8c3bbd69b889d53c3c8d5cfc7">graphene::chain::account_statistics_object</a>
@@ -91,11 +128,35 @@ $(function() {
 <li>last_votes
 : <a class="el" href="structgraphene_1_1chain_1_1vote__counter.html#ae6819bf7130489f65ac6f995700bb8b2">graphene::chain::vote_counter</a>
 </li>
+<li>latency
+: <a class="el" href="structgraphene_1_1net_1_1address__info.html#a6ab3b79c9af6ac0a00d89ce3e41b9cb2">graphene::net::address_info</a>
+</li>
 <li>latest
 : <a class="el" href="structgraphene_1_1app_1_1market__ticker.html#aafa541b0693d9a512950ba6aaec62fba">graphene::app::market_ticker</a>
 </li>
+<li>latest_base
+: <a class="el" href="structgraphene_1_1market__history_1_1market__ticker__object.html#a1cf986610dc46bd049984075c6d3fbd9">graphene::market_history::market_ticker_object</a>
+</li>
+<li>latest_quote
+: <a class="el" href="structgraphene_1_1market__history_1_1market__ticker__object.html#a8f12e46f5a397e53b47375ab2216c0d1">graphene::market_history::market_ticker_object</a>
+</li>
+<li>lc
+: <a class="el" href="classfc_1_1console__appender_1_1impl.html#af44d61eb9751176bee7d6a506a923ca6">fc::console_appender::impl</a>
+</li>
 <li>leftover_worker_funds
 : <a class="el" href="structgraphene_1_1chain_1_1budget__record.html#a7c2bb619a75be2b272eadcde3412c7ff">graphene::chain::budget_record</a>
+</li>
+<li>length
+: <a class="el" href="classfc_1_1detail_1_1rate__limited__operation.html#ae8457a63170710103e077ec951c26564">fc::detail::rate_limited_operation</a>
+</li>
+<li>level
+: <a class="el" href="structfc_1_1console__appender_1_1level__color.html#a2bc69990b0da10c38fb1ac4f2f1f0cd1">fc::console_appender::level_color</a>
+, <a class="el" href="classfc_1_1detail_1_1log__context__impl.html#a23a661d71fa37497ac1e4517cd04b082">fc::detail::log_context_impl</a>
+, <a class="el" href="structfc_1_1logger__config.html#a42e2cd3922ecfb1db67406ff152ee7f2">fc::logger_config</a>
+, <a class="el" href="structfc_1_1test_1_1item.html#a13f1fe24c9c91d2c611e1141f91062a5">fc::test::item</a>
+</li>
+<li>level_colors
+: <a class="el" href="structfc_1_1console__appender_1_1config.html#a2ef55ff9563d0e4285c543f94bfe0dbb">fc::console_appender::config</a>
 </li>
 <li>lifetime_fees_paid
 : <a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#adfd506e7176772143a194e1f214feaa2">graphene::chain::account_statistics_object</a>
@@ -112,18 +173,36 @@ $(function() {
 <li>lifetime_referrer_percent_of_fee
 : <a class="el" href="structgraphene_1_1protocol_1_1chain__parameters.html#a1a2f8f1a0e1556b12db1d5ea7eda8e00">graphene::protocol::chain_parameters</a>
 </li>
+<li>limit_documents
+: <a class="el" href="classgraphene_1_1elasticsearch_1_1detail_1_1elasticsearch__plugin__impl.html#af2d55b50d258b2051b0d3e955b1f054e">graphene::elasticsearch::detail::elasticsearch_plugin_impl</a>
+</li>
 <li>limit_orders
 : <a class="el" href="structgraphene_1_1app_1_1full__account.html#a8a7da90d80002d1b61aa9d16b13547e7">graphene::app::full_account</a>
 , <a class="el" href="structgraphene_1_1app_1_1more__data.html#ad7bc0adf522c3a0546e9587c3eab0d4d">graphene::app::more_data</a>
 </li>
+<li>line
+: <a class="el" href="classfc_1_1detail_1_1log__context__impl.html#a511e41014c95a1ea35be989559ceb7c7">fc::detail::log_context_impl</a>
+</li>
 <li>listed_account
 : <a class="el" href="classgraphene_1_1chain_1_1account__whitelist__evaluator.html#a3c28a75a53773fec80783f30ca95fa6f">graphene::chain::account_whitelist_evaluator</a>
+</li>
+<li>listen_endpoint
+: <a class="el" href="structgraphene_1_1net_1_1detail_1_1node__configuration.html#a449677799f680e5acb42c1da3441d75e">graphene::net::detail::node_configuration</a>
 </li>
 <li>lock_changed
 : <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#a333834072c4aaa8f25d7ea52b39a76bd">graphene::wallet::wallet_api</a>
 </li>
+<li>loggers
+: <a class="el" href="structfc_1_1logging__config.html#a1a9da85cddeca8c8997bd666e7b29784">fc::logging_config</a>
+</li>
 <li>long_symbol
 : <a class="el" href="structgraphene_1_1protocol_1_1asset__create__operation_1_1fee__parameters__type.html#a6a4f0f55958a6d38b9b4a48a1cdf6415">graphene::protocol::asset_create_operation::fee_parameters_type</a>
+</li>
+<li>low_base
+: <a class="el" href="structgraphene_1_1market__history_1_1bucket__object.html#aa5b866415882efbf4b3fa125dbbdb98a">graphene::market_history::bucket_object</a>
+</li>
+<li>low_quote
+: <a class="el" href="structgraphene_1_1market__history_1_1bucket__object.html#a32c4efbb9d76791202d876cf071a4160">graphene::market_history::bucket_object</a>
 </li>
 <li>lowest_ask
 : <a class="el" href="structgraphene_1_1app_1_1market__ticker.html#aa2e6803f35f251f8b3a825a906810707">graphene::app::market_ticker</a>
@@ -132,7 +211,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 17 2019 16:30:09 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 3 2019 18:33:19 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

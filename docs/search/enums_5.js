@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['reserved_5fspaces',['reserved_spaces',['../namespacegraphene_1_1protocol.html#a7fe50b12d88be67656c1550cbfd52d68',1,'graphene::protocol']]]
+  ['firewall_5fcheck_5fresult',['firewall_check_result',['../namespacegraphene_1_1net.html#a944c5187a3e11e7aee2c5dca7d0c3b4e',1,'graphene::net']]],
+  ['firewalled_5fstate',['firewalled_state',['../namespacegraphene_1_1net.html#a9a91847dec341192d7a7ae1104cb4aa2',1,'graphene::net']]]
 ];

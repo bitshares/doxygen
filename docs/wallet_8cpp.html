@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -96,32 +96,33 @@ $(function() {
 <code>#include &lt;boost/multi_index/tag.hpp&gt;</code><br />
 <code>#include &lt;boost/multi_index/sequenced_index.hpp&gt;</code><br />
 <code>#include &lt;boost/multi_index/hashed_index.hpp&gt;</code><br />
-<code>#include &lt;fc/git_revision.hpp&gt;</code><br />
-<code>#include &lt;fc/io/fstream.hpp&gt;</code><br />
-<code>#include &lt;fc/io/json.hpp&gt;</code><br />
-<code>#include &lt;fc/io/stdio.hpp&gt;</code><br />
-<code>#include &lt;fc/network/http/websocket.hpp&gt;</code><br />
-<code>#include &lt;fc/rpc/cli.hpp&gt;</code><br />
-<code>#include &lt;fc/rpc/websocket_api.hpp&gt;</code><br />
-<code>#include &lt;fc/crypto/hex.hpp&gt;</code><br />
-<code>#include &lt;fc/thread/mutex.hpp&gt;</code><br />
-<code>#include &lt;fc/thread/scoped_lock.hpp&gt;</code><br />
-<code>#include &lt;fc/rpc/api_connection.hpp&gt;</code><br />
-<code>#include &lt;fc/crypto/base58.hpp&gt;</code><br />
-<code>#include &lt;<a class="el" href="api_8hpp_source.html">graphene/app/api.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="fc_2include_2fc_2git__revision_8hpp_source.html">fc/git_revision.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="fstream_8hpp_source.html">fc/io/fstream.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="json_8hpp_source.html">fc/io/json.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="stdio_8hpp_source.html">fc/io/stdio.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="websocket_8hpp_source.html">fc/network/http/websocket.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="cli_8hpp_source.html">fc/rpc/cli.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="websocket__api_8hpp_source.html">fc/rpc/websocket_api.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="hex_8hpp_source.html">fc/crypto/hex.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mutex_8hpp_source.html">fc/thread/mutex.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="scoped__lock_8hpp_source.html">fc/thread/scoped_lock.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="api__connection_8hpp_source.html">fc/rpc/api_connection.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="base58_8hpp_source.html">fc/crypto/base58.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="popcount_8hpp_source.html">fc/popcount.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html">graphene/app/api.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="util_8hpp_source.html">graphene/app/util.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__object_8hpp_source.html">graphene/chain/asset_object.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="fee__schedule_8hpp_source.html">graphene/protocol/fee_schedule.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="pts__address_8hpp_source.html">graphene/protocol/pts_address.hpp</a>&gt;</code><br />
 <code>#include &lt;graphene/chain/hardfork.hpp&gt;</code><br />
-<code>#include &lt;graphene/utilities/git_revision.hpp&gt;</code><br />
-<code>#include &lt;graphene/utilities/key_conversion.hpp&gt;</code><br />
-<code>#include &lt;graphene/utilities/words.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="utilities_2include_2graphene_2utilities_2git__revision_8hpp_source.html">graphene/utilities/git_revision.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="key__conversion_8hpp_source.html">graphene/utilities/key_conversion.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="words_8hpp_source.html">graphene/utilities/words.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="wallet_8hpp_source.html">graphene/wallet/wallet.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="api__documentation_8hpp_source.html">graphene/wallet/api_documentation.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="reflect__util_8hpp_source.html">graphene/wallet/reflect_util.hpp</a>&gt;</code><br />
-<code>#include &lt;graphene/debug_witness/debug_api.hpp&gt;</code><br />
-<code>#include &lt;fc/crypto/aes.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="debug__api_8hpp_source.html">graphene/debug_witness/debug_api.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="aes_8hpp_source.html">fc/crypto/aes.hpp</a>&gt;</code><br />
 <code>#include &lt;sys/types.h&gt;</code><br />
 <code>#include &lt;sys/stat.h&gt;</code><br />
 </div>
@@ -161,17 +162,17 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a979ab353f66ec2473b4aa22897c4cfd7"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a979ab353f66ec2473b4aa22897c4cfd7"><td class="memTemplItemLeft" align="right" valign="top">optional&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1wallet_1_1detail.html#a979ab353f66ec2473b4aa22897c4cfd7">graphene::wallet::detail::maybe_id</a> (const string &amp;name_or_id)</td></tr>
+<tr class="memitem:a979ab353f66ec2473b4aa22897c4cfd7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1optional.html">optional</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1wallet_1_1detail.html#a979ab353f66ec2473b4aa22897c4cfd7">graphene::wallet::detail::maybe_id</a> (const string &amp;name_or_id)</td></tr>
 <tr class="separator:a979ab353f66ec2473b4aa22897c4cfd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1919254d982c593f07ba455857a1cfc"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1wallet_1_1detail.html#ab1919254d982c593f07ba455857a1cfc">graphene::wallet::detail::address_to_shorthash</a> (const <a class="el" href="classgraphene_1_1protocol_1_1address.html">address</a> &amp;addr)</td></tr>
 <tr class="separator:ab1919254d982c593f07ba455857a1cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a5667631b1d056590750526a0912fc6"><td class="memItemLeft" align="right" valign="top">fc::ecc::private_key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1wallet_1_1detail.html#a4a5667631b1d056590750526a0912fc6">graphene::wallet::detail::derive_private_key</a> (const std::string &amp;prefix_string, int sequence_number)</td></tr>
+<tr class="memitem:a4a5667631b1d056590750526a0912fc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1ecc_1_1private__key.html">fc::ecc::private_key</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1wallet_1_1detail.html#a4a5667631b1d056590750526a0912fc6">graphene::wallet::detail::derive_private_key</a> (const std::string &amp;prefix_string, int sequence_number)</td></tr>
 <tr class="separator:a4a5667631b1d056590750526a0912fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0dc05ce8662a76f8608d0a7adca5013"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1wallet_1_1detail.html#ab0dc05ce8662a76f8608d0a7adca5013">graphene::wallet::detail::normalize_brain_key</a> (string s)</td></tr>
 <tr class="separator:ab0dc05ce8662a76f8608d0a7adca5013"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c3f07e0187947e20a5ce2f97f9815f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#a5c3f07e0187947e20a5ce2f97f9815f4">fc::to_variant</a> (const <a class="el" href="namespacegraphene_1_1chain.html#a2cb69664c48f3d41eb5ac8b6bc4847cc">account_multi_index_type</a> &amp;accts, variant &amp;vo, uint32_t max_depth)</td></tr>
+<tr class="memitem:a5c3f07e0187947e20a5ce2f97f9815f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#a5c3f07e0187947e20a5ce2f97f9815f4">fc::to_variant</a> (const <a class="el" href="namespacegraphene_1_1chain.html#a2cb69664c48f3d41eb5ac8b6bc4847cc">account_multi_index_type</a> &amp;accts, <a class="el" href="classfc_1_1variant.html">variant</a> &amp;vo, uint32_t max_depth)</td></tr>
 <tr class="separator:a5c3f07e0187947e20a5ce2f97f9815f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad381cfba18e8742b3ccab06107f55d4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#ad381cfba18e8742b3ccab06107f55d4b">fc::from_variant</a> (const variant &amp;var, <a class="el" href="namespacegraphene_1_1chain.html#a2cb69664c48f3d41eb5ac8b6bc4847cc">account_multi_index_type</a> &amp;vo, uint32_t max_depth)</td></tr>
+<tr class="memitem:ad381cfba18e8742b3ccab06107f55d4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#ad381cfba18e8742b3ccab06107f55d4b">fc::from_variant</a> (const <a class="el" href="classfc_1_1variant.html">variant</a> &amp;var, <a class="el" href="namespacegraphene_1_1chain.html#a2cb69664c48f3d41eb5ac8b6bc4847cc">account_multi_index_type</a> &amp;vo, uint32_t max_depth)</td></tr>
 <tr class="separator:ad381cfba18e8742b3ccab06107f55d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -187,7 +188,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00090">90</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00091">91</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -203,14 +204,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00091">91</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l00092">92</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 3 2019 18:33:15 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

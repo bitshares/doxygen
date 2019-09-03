@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['graphene_5ffba_5faccumulator_5fid_5fenum',['graphene_fba_accumulator_id_enum',['../namespacegraphene_1_1chain.html#acdb82d2f8c178aa11ccb3df23ca32ccd',1,'graphene::chain']]]
+  ['dynamic_5fflag_5fbits',['dynamic_flag_bits',['../classgraphene_1_1chain_1_1dynamic__global__property__object.html#a566f83c180a362c4296d06e5d1930482',1,'graphene::chain::dynamic_global_property_object']]]
 ];

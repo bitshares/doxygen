@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -73,7 +73,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="transaction_8hpp_source.html">graphene/protocol/transaction.hpp</a>&gt;</code><br />
-<code>#include &lt;graphene/db/generic_index.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="generic__index_8hpp_source.html">graphene/db/generic_index.hpp</a>&gt;</code><br />
 <code>#include &lt;boost/multi_index_container.hpp&gt;</code><br />
 <code>#include &lt;boost/multi_index/member.hpp&gt;</code><br />
 <code>#include &lt;boost/multi_index/ordered_index.hpp&gt;</code><br />
@@ -96,15 +96,15 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a3b4961928bcc772143d60f32b4a87b35"><td class="memItemLeft" align="right" valign="top">typedef multi_index_container&lt; transaction_history_object, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>, &amp;object::id &gt; &gt;, hashed_unique&lt; tag&lt; by_trx_id &gt;, BOOST_MULTI_INDEX_MEMBER(transaction_history_object, transaction_id_type, trx_id), std::hash&lt; transaction_id_type &gt; &gt;, ordered_non_unique&lt; tag&lt; by_expiration &gt;, const_mem_fun&lt; transaction_history_object, time_point_sec, &amp;transaction_history_object::get_expiration &gt; &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a3b4961928bcc772143d60f32b4a87b35">graphene::chain::transaction_multi_index_type</a></td></tr>
+<tr class="memitem:a3b4961928bcc772143d60f32b4a87b35"><td class="memItemLeft" align="right" valign="top">typedef multi_index_container&lt; transaction_history_object, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>, &amp;object::id &gt; &gt;, hashed_unique&lt; tag&lt; by_trx_id &gt;, BOOST_MULTI_INDEX_MEMBER(transaction_history_object, transaction_id_type, trx_id), std::hash&lt; transaction_id_type &gt; &gt;, ordered_non_unique&lt; tag&lt; by_expiration &gt;, const_mem_fun&lt; transaction_history_object, time_point_sec, &amp;transaction_history_object::get_expiration &gt; &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a3b4961928bcc772143d60f32b4a87b35">graphene::chain::transaction_multi_index_type</a></td></tr>
 <tr class="separator:a3b4961928bcc772143d60f32b4a87b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6735d1474fb46c8be23bffb0ea544f52"><td class="memItemLeft" align="right" valign="top">typedef generic_index&lt; transaction_history_object, transaction_multi_index_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a6735d1474fb46c8be23bffb0ea544f52">graphene::chain::transaction_index</a></td></tr>
+<tr class="memitem:a6735d1474fb46c8be23bffb0ea544f52"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classgraphene_1_1db_1_1generic__index.html">generic_index</a>&lt; transaction_history_object, transaction_multi_index_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a6735d1474fb46c8be23bffb0ea544f52">graphene::chain::transaction_index</a></td></tr>
 <tr class="separator:a6735d1474fb46c8be23bffb0ea544f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 3 2019 18:33:15 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

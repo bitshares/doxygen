@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -64,14 +64,50 @@ $(function() {
 
 <h3><a id="index_i"></a>- i -</h3><ul>
 <li>id
-: <a class="el" href="structgraphene_1_1app_1_1network__broadcast__api_1_1transaction__confirmation.html#a29c7cc4e034c9cf708417135792736db">graphene::app::network_broadcast_api::transaction_confirmation</a>
+: <a class="el" href="classfc_1_1detail_1_1idle__notifier__impl.html#aa87666e2009609a8c20418eea2db3ce9">fc::detail::idle_notifier_impl</a>
+, <a class="el" href="structfc_1_1rpc_1_1request.html#a5fe4949323e5b961b6d45a8411ee6cac">fc::rpc::request</a>
+, <a class="el" href="structfc_1_1rpc_1_1response.html#a70186b662e344a529bb50816b410fd94">fc::rpc::response</a>
+, <a class="el" href="structgraphene_1_1app_1_1network__broadcast__api_1_1transaction__confirmation.html#a29c7cc4e034c9cf708417135792736db">graphene::app::network_broadcast_api::transaction_confirmation</a>
 , <a class="el" href="structgraphene_1_1chain_1_1fork__item.html#a3d96781568fcbebf3cfa0a53e08530c3">graphene::chain::fork_item</a>
+, <a class="el" href="classgraphene_1_1db_1_1object.html#a2ce812569d565a45dda1420cfbdf79ad">graphene::db::object</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1block__id__predicate.html#ac63f2f333675380289a06d09d45688fa">graphene::protocol::block_id_predicate</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1custom__operation.html#a2b3fc747e2bf2f1da3bf3cd368a6410e">graphene::protocol::custom_operation</a>
+</li>
+<li>ids_of_items_being_processed
+: <a class="el" href="classgraphene_1_1net_1_1peer__connection.html#aa6c35b1f3eae294d2d072c3600dd5131">graphene::net::peer_connection</a>
+</li>
+<li>ids_of_items_to_get
+: <a class="el" href="classgraphene_1_1net_1_1peer__connection.html#a34dbf395eb7b5b7695944bb941891a36">graphene::net::peer_connection</a>
+</li>
+<li>ifs
+: <a class="el" href="classfc_1_1ifstream_1_1impl.html#a82f3ad7def74e9bd140ba7a72b6e8ef9">fc::ifstream::impl</a>
 </li>
 <li>immutable_parameters
 : <a class="el" href="classgraphene_1_1chain_1_1chain__property__object.html#a730ddd0f1a437d556301309a18075546">graphene::chain::chain_property_object</a>
 , <a class="el" href="structgraphene_1_1chain_1_1genesis__state__type.html#aabe55e6545f84f58db331d10c4825b1f">graphene::chain::genesis_state_type</a>
+</li>
+<li>inbound_address
+: <a class="el" href="structgraphene_1_1net_1_1hello__message.html#a1a880915cf7ab22b895a28d63ee25935">graphene::net::hello_message</a>
+, <a class="el" href="classgraphene_1_1net_1_1peer__connection.html#a3b55b821c4296b62200b770d4f2a2c31">graphene::net::peer_connection</a>
+</li>
+<li>inbound_port
+: <a class="el" href="structgraphene_1_1net_1_1hello__message.html#a29305a5eec2869c93ce9dcc4ebca1cb6">graphene::net::hello_message</a>
+, <a class="el" href="classgraphene_1_1net_1_1peer__connection.html#a2c73beeb2725e7ab0e8a05ca843b0fd9">graphene::net::peer_connection</a>
+</li>
+<li>includes
+: <a class="el" href="structfc_1_1logging__config.html#a7e30a543b2d4aec4324c6ec958a2dd13">fc::logging_config</a>
+</li>
+<li>index_name
+: <a class="el" href="classgraphene_1_1elasticsearch_1_1detail_1_1elasticsearch__plugin__impl.html#a2ed1c9b550eeb60d6017e4e456a04d46">graphene::elasticsearch::detail::elasticsearch_plugin_impl</a>
+</li>
+<li>index_prefix
+: <a class="el" href="classgraphene_1_1utilities_1_1_e_s.html#a3338a8e663e5d3d5c21a02ead25f2d34">graphene::utilities::ES</a>
+</li>
+<li>info
+: <a class="el" href="structgraphene_1_1net_1_1peer__status.html#a703d05a4f7773346ba8d598606793127">graphene::net::peer_status</a>
+</li>
+<li>inhibit_fetching_sync_blocks
+: <a class="el" href="classgraphene_1_1net_1_1peer__connection.html#a4f234861a14d26da41d9441b337cdbe2">graphene::net::peer_connection</a>
 </li>
 <li>init_balance
 : <a class="el" href="structgraphene_1_1chain_1_1init__policy__visitor.html#ae3cffc89dc76e0c36726f96212ac0677">graphene::chain::init_policy_visitor</a>
@@ -116,24 +152,46 @@ $(function() {
 : <a class="el" href="structgraphene_1_1protocol_1_1blind__transfer__operation.html#a80c972baaec23a4100df0abfafc1ac3f">graphene::protocol::blind_transfer_operation</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1transfer__from__blind__operation.html#adc6177f40dd19b055c7a073385f21b5b">graphene::protocol::transfer_from_blind_operation</a>
 </li>
+<li>inserted_element_count_
+: <a class="el" href="classfc_1_1bloom__filter.html#aeb75fe01b8b19f559c8ea27c2e6e54b6">fc::bloom_filter</a>
+</li>
 <li>instance
 : <a class="el" href="structgraphene_1_1db_1_1object__id.html#a53a17baa085becb05f84b6d0d4bbe6bb">graphene::db::object_id&lt; SpaceID, TypeID &gt;</a>
 </li>
 <li>inv_swan_price
 : <a class="el" href="classgraphene_1_1chain_1_1collateral__bid__object.html#a918e9c9fd9d7dadcd9144ff79dc5fb1f">graphene::chain::collateral_bid_object</a>
 </li>
+<li>inventory_advertised_to_peer
+: <a class="el" href="classgraphene_1_1net_1_1peer__connection.html#a5900c7867a7e8687c65a25bdcb1604ff">graphene::net::peer_connection</a>
+</li>
+<li>inventory_peer_advertised_to_us
+: <a class="el" href="classgraphene_1_1net_1_1peer__connection.html#ac004cc3b646a35365075ec71c679e6d4">graphene::net::peer_connection</a>
+</li>
+<li>io
+: <a class="el" href="classfc_1_1asio_1_1default__io__service__scope.html#a58b8063762f2940c7cc45fd0bd99d74f">fc::asio::default_io_service_scope</a>
+</li>
 <li>is_bitasset
 : <a class="el" href="structgraphene_1_1chain_1_1genesis__state__type_1_1initial__asset__type.html#a680c87fa3ac385c87d886f0bd3eff247">graphene::chain::genesis_state_type::initial_asset_type</a>
+</li>
+<li>is_firewalled
+: <a class="el" href="classgraphene_1_1net_1_1peer__connection.html#aea47877a167f7e02a932da3fa796eaae">graphene::net::peer_connection</a>
+</li>
+<li>is_idle
+: <a class="el" href="classfc_1_1detail_1_1idle__notifier__impl.html#a500c2b169d497b62fbffc8740224c4c4">fc::detail::idle_notifier_impl</a>
 </li>
 <li>is_lifetime_member
 : <a class="el" href="structgraphene_1_1chain_1_1genesis__state__type_1_1initial__account__type.html#a91b22759fd2443bb91e0b3db09087d13">graphene::chain::genesis_state_type::initial_account_type</a>
 </li>
 <li>is_maker
-: <a class="el" href="structgraphene_1_1protocol_1_1fill__order__operation.html#a38f3b237dd2ae48f34fe0ce5358b8b56">graphene::protocol::fill_order_operation</a>
+: <a class="el" href="structgraphene_1_1elasticsearch_1_1fill__struct.html#a2344e289c8ca01f17179c2efefc69b3e">graphene::elasticsearch::fill_struct</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1fill__order__operation.html#a38f3b237dd2ae48f34fe0ce5358b8b56">graphene::protocol::fill_order_operation</a>
 </li>
 <li>is_prediction_market
 : <a class="el" href="classgraphene_1_1chain_1_1asset__bitasset__data__object.html#af28db7bb58ddf850416f7346697e3b7c">graphene::chain::asset_bitasset_data_object</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1asset__create__operation.html#a87aa0f916e688d1097328daf2c82b258">graphene::protocol::asset_create_operation</a>
+</li>
+<li>is_sync
+: <a class="el" href="classgraphene_1_1elasticsearch_1_1detail_1_1elasticsearch__plugin__impl.html#a4097b4b7b324099db2638367a4584cca">graphene::elasticsearch::detail::elasticsearch_plugin_impl</a>
 </li>
 <li>is_voting
 : <a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#a06ae5e2d0e70e61a3a7121f58f371a74">graphene::chain::account_statistics_object</a>
@@ -160,11 +218,38 @@ $(function() {
 <li>issuer_permissions
 : <a class="el" href="structgraphene_1_1protocol_1_1asset__options.html#aa7eeee6df8b5c680a023073a84528d2c">graphene::protocol::asset_options</a>
 </li>
+<li>item
+: <a class="el" href="structgraphene_1_1net_1_1detail_1_1prioritized__item__id.html#a3451668a3006b9b82f7ce026558756b7">graphene::net::detail::prioritized_item_id</a>
+, <a class="el" href="structgraphene_1_1net_1_1peer__connection_1_1timestamped__item__id.html#ac4a4a62b942bf54aa72a36c819605476">graphene::net::peer_connection::timestamped_item_id</a>
+</li>
+<li>item_hash
+: <a class="el" href="structgraphene_1_1net_1_1item__id.html#ac91bc16a9eb819f2cac9425d8bdef099">graphene::net::item_id</a>
+</li>
+<li>item_hashes_available
+: <a class="el" href="structgraphene_1_1net_1_1blockchain__item__ids__inventory__message.html#a60631b35f6107b553b62110600bd4f4d">graphene::net::blockchain_item_ids_inventory_message</a>
+, <a class="el" href="structgraphene_1_1net_1_1item__ids__inventory__message.html#aa5ab52b11d64336cecc574b117f6c77a">graphene::net::item_ids_inventory_message</a>
+</li>
+<li>item_ids_requested_from_peer
+: <a class="el" href="classgraphene_1_1net_1_1peer__connection.html#a1db2486ae47972391f8d3b3689d027fa">graphene::net::peer_connection</a>
+</li>
+<li>item_type
+: <a class="el" href="structgraphene_1_1net_1_1blockchain__item__ids__inventory__message.html#aed229b74708ebc999073f1df604c9211">graphene::net::blockchain_item_ids_inventory_message</a>
+, <a class="el" href="structgraphene_1_1net_1_1fetch__blockchain__item__ids__message.html#aedd7227cbfb5a4e5aec2d49bfb09d0ef">graphene::net::fetch_blockchain_item_ids_message</a>
+, <a class="el" href="structgraphene_1_1net_1_1fetch__items__message.html#aafb2fc731d898ea231a255a7f70f5ace">graphene::net::fetch_items_message</a>
+, <a class="el" href="structgraphene_1_1net_1_1item__id.html#a24750ba25be057e2a42f14f1fb704dd3">graphene::net::item_id</a>
+, <a class="el" href="structgraphene_1_1net_1_1item__ids__inventory__message.html#a39fb13b90684ce4bc55318c9180ecd0c">graphene::net::item_ids_inventory_message</a>
+</li>
+<li>items_requested_from_peer
+: <a class="el" href="classgraphene_1_1net_1_1peer__connection.html#a64a25e3df43e06723c9fa2c28b707e4a">graphene::net::peer_connection</a>
+</li>
+<li>items_to_fetch
+: <a class="el" href="structgraphene_1_1net_1_1fetch__items__message.html#ae743e8181e6d2bedc0bb80286eae84b8">graphene::net::fetch_items_message</a>
+</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 17 2019 16:30:09 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 3 2019 18:33:19 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

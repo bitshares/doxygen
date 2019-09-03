@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -80,7 +80,7 @@ $(function() {
 Public Types</h2></td></tr>
 <tr class="memitem:a1f06faf4817e8fedc44cb3b56f77ee1a"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; <a class="el" href="namespacegraphene_1_1chain.html#a455f7a42385453236a3252fa8ba97654">item_ptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1fork__database.html#a1f06faf4817e8fedc44cb3b56f77ee1a">branch_type</a></td></tr>
 <tr class="separator:a1f06faf4817e8fedc44cb3b56f77ee1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a632498ce1db11194e52bba4b389e196e"><td class="memItemLeft" align="right" valign="top">typedef multi_index_container&lt; <a class="el" href="namespacegraphene_1_1chain.html#a455f7a42385453236a3252fa8ba97654">item_ptr</a>, indexed_by&lt; hashed_unique&lt; tag&lt; block_id &gt;, member&lt; <a class="el" href="structgraphene_1_1chain_1_1fork__item.html">fork_item</a>, <a class="el" href="namespacegraphene_1_1protocol.html#a32e784a8edceba5506db2c130ed9cb9c">block_id_type</a>, &amp;<a class="el" href="structgraphene_1_1chain_1_1fork__item.html#a3d96781568fcbebf3cfa0a53e08530c3">fork_item::id</a> &gt;, std::hash&lt; fc::ripemd160 &gt; &gt;, ordered_non_unique&lt; tag&lt; block_num &gt;, member&lt; <a class="el" href="structgraphene_1_1chain_1_1fork__item.html">fork_item</a>, uint32_t,&amp;<a class="el" href="structgraphene_1_1chain_1_1fork__item.html#a382a00efd04e95349085a60530134fa9">fork_item::num</a> &gt; &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1fork__database.html#a632498ce1db11194e52bba4b389e196e">fork_multi_index_type</a></td></tr>
+<tr class="memitem:a632498ce1db11194e52bba4b389e196e"><td class="memItemLeft" align="right" valign="top">typedef multi_index_container&lt; <a class="el" href="namespacegraphene_1_1chain.html#a455f7a42385453236a3252fa8ba97654">item_ptr</a>, indexed_by&lt; hashed_unique&lt; tag&lt; block_id &gt;, member&lt; <a class="el" href="structgraphene_1_1chain_1_1fork__item.html">fork_item</a>, <a class="el" href="namespacegraphene_1_1protocol.html#a32e784a8edceba5506db2c130ed9cb9c">block_id_type</a>, &amp;<a class="el" href="structgraphene_1_1chain_1_1fork__item.html#a3d96781568fcbebf3cfa0a53e08530c3">fork_item::id</a> &gt;, std::hash&lt; <a class="el" href="classfc_1_1ripemd160.html">fc::ripemd160</a> &gt; &gt;, ordered_non_unique&lt; tag&lt; block_num &gt;, member&lt; <a class="el" href="structgraphene_1_1chain_1_1fork__item.html">fork_item</a>, uint32_t,&amp;<a class="el" href="structgraphene_1_1chain_1_1fork__item.html#a382a00efd04e95349085a60530134fa9">fork_item::num</a> &gt; &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1fork__database.html#a632498ce1db11194e52bba4b389e196e">fork_multi_index_type</a></td></tr>
 <tr class="separator:a632498ce1db11194e52bba4b389e196e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -147,7 +147,7 @@ Static Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef multi_index_container&lt; <a class="el" href="namespacegraphene_1_1chain.html#a455f7a42385453236a3252fa8ba97654">item_ptr</a>, indexed_by&lt; hashed_unique&lt;tag&lt;block_id&gt;, member&lt;<a class="el" href="structgraphene_1_1chain_1_1fork__item.html">fork_item</a>, <a class="el" href="namespacegraphene_1_1protocol.html#a32e784a8edceba5506db2c130ed9cb9c">block_id_type</a>, &amp;<a class="el" href="structgraphene_1_1chain_1_1fork__item.html#a3d96781568fcbebf3cfa0a53e08530c3">fork_item::id</a>&gt;, std::hash&lt;fc::ripemd160&gt; &gt;, ordered_non_unique&lt;tag&lt;block_num&gt;, member&lt;<a class="el" href="structgraphene_1_1chain_1_1fork__item.html">fork_item</a>,uint32_t,&amp;<a class="el" href="structgraphene_1_1chain_1_1fork__item.html#a382a00efd04e95349085a60530134fa9">fork_item::num</a>&gt; &gt; &gt; &gt; <a class="el" href="classgraphene_1_1chain_1_1fork__database.html#a632498ce1db11194e52bba4b389e196e">graphene::chain::fork_database::fork_multi_index_type</a></td>
+          <td class="memname">typedef multi_index_container&lt; <a class="el" href="namespacegraphene_1_1chain.html#a455f7a42385453236a3252fa8ba97654">item_ptr</a>, indexed_by&lt; hashed_unique&lt;tag&lt;block_id&gt;, member&lt;<a class="el" href="structgraphene_1_1chain_1_1fork__item.html">fork_item</a>, <a class="el" href="namespacegraphene_1_1protocol.html#a32e784a8edceba5506db2c130ed9cb9c">block_id_type</a>, &amp;<a class="el" href="structgraphene_1_1chain_1_1fork__item.html#a3d96781568fcbebf3cfa0a53e08530c3">fork_item::id</a>&gt;, std::hash&lt;<a class="el" href="classfc_1_1ripemd160.html">fc::ripemd160</a>&gt; &gt;, ordered_non_unique&lt;tag&lt;block_num&gt;, member&lt;<a class="el" href="structgraphene_1_1chain_1_1fork__item.html">fork_item</a>,uint32_t,&amp;<a class="el" href="structgraphene_1_1chain_1_1fork__item.html#a382a00efd04e95349085a60530134fa9">fork_item::num</a>&gt; &gt; &gt; &gt; <a class="el" href="classgraphene_1_1chain_1_1fork__database.html#a632498ce1db11194e52bba4b389e196e">graphene::chain::fork_database::fork_multi_index_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -469,7 +469,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 3 2019 18:33:17 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

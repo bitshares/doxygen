@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -73,7 +73,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="chain_2include_2graphene_2chain_2types_8hpp_source.html">graphene/chain/types.hpp</a>&gt;</code><br />
-<code>#include &lt;graphene/db/generic_index.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="generic__index_8hpp_source.html">graphene/db/generic_index.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="vote_8hpp_source.html">graphene/protocol/vote.hpp</a>&gt;</code><br />
 </div>
 <p><a href="committee__member__object_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -93,15 +93,15 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:aeff1c4b0789e9b25b942d2e22525d14b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#aeff1c4b0789e9b25b942d2e22525d14b">graphene::chain::committee_member_multi_index_type</a> = multi_index_container&lt; committee_member_object, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>, &amp;object::id &gt; &gt;, ordered_unique&lt; tag&lt; by_account &gt;, member&lt; committee_member_object, account_id_type, &amp;committee_member_object::committee_member_account &gt; &gt;, ordered_unique&lt; tag&lt; by_vote_id &gt;, member&lt; committee_member_object, vote_id_type, &amp;committee_member_object::vote_id &gt; &gt; &gt; &gt;</td></tr>
+<tr class="memitem:aeff1c4b0789e9b25b942d2e22525d14b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#aeff1c4b0789e9b25b942d2e22525d14b">graphene::chain::committee_member_multi_index_type</a> = multi_index_container&lt; committee_member_object, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>, &amp;object::id &gt; &gt;, ordered_unique&lt; tag&lt; by_account &gt;, member&lt; committee_member_object, account_id_type, &amp;committee_member_object::committee_member_account &gt; &gt;, ordered_unique&lt; tag&lt; by_vote_id &gt;, member&lt; committee_member_object, vote_id_type, &amp;committee_member_object::vote_id &gt; &gt; &gt; &gt;</td></tr>
 <tr class="separator:aeff1c4b0789e9b25b942d2e22525d14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a981fd6f22492a40a81b1732b1aec531a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a981fd6f22492a40a81b1732b1aec531a">graphene::chain::committee_member_index</a> = generic_index&lt; committee_member_object, committee_member_multi_index_type &gt;</td></tr>
+<tr class="memitem:a981fd6f22492a40a81b1732b1aec531a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a981fd6f22492a40a81b1732b1aec531a">graphene::chain::committee_member_index</a> = <a class="el" href="classgraphene_1_1db_1_1generic__index.html">generic_index</a>&lt; committee_member_object, committee_member_multi_index_type &gt;</td></tr>
 <tr class="separator:a981fd6f22492a40a81b1732b1aec531a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 3 2019 18:33:15 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

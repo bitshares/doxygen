@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['classification',['classification',['../structgraphene_1_1protocol_1_1authority.html#abec2499d61c1985d82dc5f813d215afe',1,'graphene::protocol::authority']]]
+  ['block_5fproduction_5fcondition_5fenum',['block_production_condition_enum',['../namespacegraphene_1_1witness__plugin_1_1block__production__condition.html#add25f11b2b7e729abdc013acde00d785',1,'graphene::witness_plugin::block_production_condition']]]
 ];

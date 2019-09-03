@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -73,8 +73,8 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html">graphene/protocol/types.hpp</a>&gt;</code><br />
-<code>#include &lt;fc/crypto/ripemd160.hpp&gt;</code><br />
-<code>#include &lt;fc/reflect/typename.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="elliptic_8hpp_source.html">fc/crypto/elliptic.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ripemd160_8hpp_source.html">fc/crypto/ripemd160.hpp</a>&gt;</code><br />
 </div>
 <p><a href="address_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -101,15 +101,15 @@ Functions</h2></td></tr>
 <tr class="separator:ae0ea32cd151c5f57a2b47f4527e9e5d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac278db20c5fbf361341c28c1c9a02e74"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#ac278db20c5fbf361341c28c1c9a02e74">graphene::protocol::operator&lt;</a> (const address &amp;a, const address &amp;b)</td></tr>
 <tr class="separator:ac278db20c5fbf361341c28c1c9a02e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05038042784b108c1e3f85220171331e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#a05038042784b108c1e3f85220171331e">fc::to_variant</a> (const <a class="el" href="classgraphene_1_1protocol_1_1address.html">graphene::protocol::address</a> &amp;var, fc::variant &amp;vo, uint32_t max_depth=1)</td></tr>
-<tr class="separator:a05038042784b108c1e3f85220171331e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24fe10b88e5d559c112227aef64d0eda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#a24fe10b88e5d559c112227aef64d0eda">fc::from_variant</a> (const fc::variant &amp;var, <a class="el" href="classgraphene_1_1protocol_1_1address.html">graphene::protocol::address</a> &amp;vo, uint32_t max_depth=1)</td></tr>
-<tr class="separator:a24fe10b88e5d559c112227aef64d0eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad11bf17bb1033f28ca5c558c1adf9dc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#ad11bf17bb1033f28ca5c558c1adf9dc1">fc::to_variant</a> (const <a class="el" href="classgraphene_1_1protocol_1_1address.html">graphene::protocol::address</a> &amp;var, variant &amp;vo, uint32_t max_depth)</td></tr>
+<tr class="separator:ad11bf17bb1033f28ca5c558c1adf9dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeceb4cd05c4f09395d67cfda0808dbbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#aeceb4cd05c4f09395d67cfda0808dbbf">fc::from_variant</a> (const variant &amp;var, <a class="el" href="classgraphene_1_1protocol_1_1address.html">graphene::protocol::address</a> &amp;vo, uint32_t max_depth)</td></tr>
+<tr class="separator:aeceb4cd05c4f09395d67cfda0808dbbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 3 2019 18:33:15 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

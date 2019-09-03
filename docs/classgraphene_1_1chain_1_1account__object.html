@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -85,6 +85,8 @@ Inheritance diagram for graphene::chain::account_object:</div>
  <div class="center">
   <img src="classgraphene_1_1chain_1_1account__object.png" usemap="#graphene::chain::account_5Fobject_map" alt=""/>
   <map id="graphene::chain::account_5Fobject_map" name="graphene::chain::account_5Fobject_map">
+<area href="classgraphene_1_1db_1_1abstract__object.html" alt="graphene::db::abstract_object&lt; account_object &gt;" shape="rect" coords="0,56,288,80"/>
+<area href="classgraphene_1_1db_1_1object.html" title="base for all database objects " alt="graphene::db::object" shape="rect" coords="0,0,288,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -102,18 +104,33 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aca4f45e72c944f9920d85ead4201c827"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a297dd50b1672a4a97e2b50d42cfa5664"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__object.html#a297dd50b1672a4a97e2b50d42cfa5664">is_lifetime_member</a> () const</td></tr>
 <tr class="separator:a297dd50b1672a4a97e2b50d42cfa5664"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9da3633451253951b732df60422fedca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__object.html#a9da3633451253951b732df60422fedca">is_basic_account</a> (time_point_sec now) const</td></tr>
+<tr class="memitem:a9da3633451253951b732df60422fedca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__object.html#a9da3633451253951b732df60422fedca">is_basic_account</a> (<a class="el" href="classfc_1_1time__point__sec.html">time_point_sec</a> now) const</td></tr>
 <tr class="separator:a9da3633451253951b732df60422fedca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c666ee5bfeb9263cfbfa1c161798c69"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__object.html#a2c666ee5bfeb9263cfbfa1c161798c69">is_annual_member</a> (time_point_sec now) const</td></tr>
+<tr class="memitem:a2c666ee5bfeb9263cfbfa1c161798c69"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__object.html#a2c666ee5bfeb9263cfbfa1c161798c69">is_annual_member</a> (<a class="el" href="classfc_1_1time__point__sec.html">time_point_sec</a> now) const</td></tr>
 <tr class="separator:a2c666ee5bfeb9263cfbfa1c161798c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa11e7440e6260e5a71e6f2dd62c22d85"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__object.html#aa11e7440e6260e5a71e6f2dd62c22d85">is_member</a> (time_point_sec now) const</td></tr>
+<tr class="memitem:aa11e7440e6260e5a71e6f2dd62c22d85"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__object.html#aa11e7440e6260e5a71e6f2dd62c22d85">is_member</a> (<a class="el" href="classfc_1_1time__point__sec.html">time_point_sec</a> now) const</td></tr>
 <tr class="separator:aa11e7440e6260e5a71e6f2dd62c22d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a07de0cc9ffd5af2d23156767d61bf7"><td class="memItemLeft" align="right" valign="top">account_id_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__object.html#a2a07de0cc9ffd5af2d23156767d61bf7">get_id</a> () const</td></tr>
 <tr class="separator:a2a07de0cc9ffd5af2d23156767d61bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classgraphene_1_1db_1_1abstract__object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgraphene_1_1db_1_1abstract__object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classgraphene_1_1db_1_1abstract__object.html">graphene::db::abstract_object&lt; account_object &gt;</a></td></tr>
+<tr class="memitem:a189144fd7eef0317898bc83b30b143c6 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memItemLeft" align="right" valign="top">virtual unique_ptr&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html#a189144fd7eef0317898bc83b30b143c6">clone</a> () const</td></tr>
+<tr class="memdesc:a189144fd7eef0317898bc83b30b143c6 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">these methods are implemented for derived classes by inheriting abstract_object&lt;DerivedClass&gt;  <a href="classgraphene_1_1db_1_1abstract__object.html#a189144fd7eef0317898bc83b30b143c6">More...</a><br /></td></tr>
+<tr class="separator:a189144fd7eef0317898bc83b30b143c6 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7329292e8fa9035cf2596d72c4868b5 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html#ad7329292e8fa9035cf2596d72c4868b5">move_from</a> (<a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj)</td></tr>
+<tr class="separator:ad7329292e8fa9035cf2596d72c4868b5 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f0f2e9eb0399057ff3334bf328b5007 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfc_1_1variant.html">variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html#a6f0f2e9eb0399057ff3334bf328b5007">to_variant</a> () const</td></tr>
+<tr class="separator:a6f0f2e9eb0399057ff3334bf328b5007 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a792a9c05cfe1cf7628cb6f8c4a65b0f7 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memItemLeft" align="right" valign="top">virtual vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html#a792a9c05cfe1cf7628cb6f8c4a65b0f7">pack</a> () const</td></tr>
+<tr class="separator:a792a9c05cfe1cf7628cb6f8c4a65b0f7 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classgraphene_1_1db_1_1object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgraphene_1_1db_1_1object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classgraphene_1_1db_1_1object.html">graphene::db::object</a></td></tr>
+<tr class="memitem:a64864992a46d9d52836afe1a52a2e394 inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#a64864992a46d9d52836afe1a52a2e394">object</a> ()</td></tr>
+<tr class="separator:a64864992a46d9d52836afe1a52a2e394 inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac457a859418c22014c07a3bcdc67ed04 inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#ac457a859418c22014c07a3bcdc67ed04">~object</a> ()</td></tr>
+<tr class="separator:ac457a859418c22014c07a3bcdc67ed04 inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a901b57f630eaa3f077f8d29e317b70ed"><td class="memItemLeft" align="right" valign="top">time_point_sec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__object.html#a901b57f630eaa3f077f8d29e317b70ed">membership_expiration_date</a></td></tr>
+<tr class="memitem:a901b57f630eaa3f077f8d29e317b70ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1time__point__sec.html">time_point_sec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__object.html#a901b57f630eaa3f077f8d29e317b70ed">membership_expiration_date</a></td></tr>
 <tr class="separator:a901b57f630eaa3f077f8d29e317b70ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3e5ea3b236ea984eeaa49e9304361ce"><td class="memItemLeft" align="right" valign="top">account_id_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__object.html#ae3e5ea3b236ea984eeaa49e9304361ce">registrar</a></td></tr>
 <tr class="memdesc:ae3e5ea3b236ea984eeaa49e9304361ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">The account that paid the fee to register this account. Receives a percentage of referral rewards.  <a href="#ae3e5ea3b236ea984eeaa49e9304361ce">More...</a><br /></td></tr>
@@ -162,6 +179,9 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a3e1bd4c318ce23cb83eb74c07af73af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4be78ed6ac2d40a5e3cea18d907bf3e5"><td class="memItemLeft" align="right" valign="top">set&lt; account_id_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__object.html#a4be78ed6ac2d40a5e3cea18d907bf3e5">blacklisted_accounts</a></td></tr>
 <tr class="separator:a4be78ed6ac2d40a5e3cea18d907bf3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classgraphene_1_1db_1_1object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classgraphene_1_1db_1_1object')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classgraphene_1_1db_1_1object.html">graphene::db::object</a></td></tr>
+<tr class="memitem:a2ce812569d565a45dda1420cfbdf79ad inherit pub_attribs_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#a2ce812569d565a45dda1420cfbdf79ad">id</a></td></tr>
+<tr class="separator:a2ce812569d565a45dda1420cfbdf79ad inherit pub_attribs_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -173,6 +193,11 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a78c917dcdc4060163e7be0ae2348f301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c020b43bc5610c258f423c373f4528e"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__object.html#a2c020b43bc5610c258f423c373f4528e">top_n_control_active</a> = 2</td></tr>
 <tr class="separator:a2c020b43bc5610c258f423c373f4528e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classgraphene_1_1db_1_1object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classgraphene_1_1db_1_1object')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classgraphene_1_1db_1_1object.html">graphene::db::object</a></td></tr>
+<tr class="memitem:af4fa36c46acc14681746e93adbc812f8 inherit pub_static_attribs_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#af4fa36c46acc14681746e93adbc812f8">space_id</a> = 0</td></tr>
+<tr class="separator:af4fa36c46acc14681746e93adbc812f8 inherit pub_static_attribs_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4b608265ad59cb1acdff271b9aa2ac5 inherit pub_static_attribs_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#ac4b608265ad59cb1acdff271b9aa2ac5">type_id</a> = 0</td></tr>
+<tr class="separator:ac4b608265ad59cb1acdff271b9aa2ac5 inherit pub_static_attribs_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class represents an account on the object graph</p>
@@ -293,7 +318,7 @@ template&lt;typename DB &gt; </div>
         <tr>
           <td class="memname">bool graphene::chain::account_object::is_annual_member </td>
           <td>(</td>
-          <td class="paramtype">time_point_sec&#160;</td>
+          <td class="paramtype"><a class="el" href="classfc_1_1time__point__sec.html">time_point_sec</a>&#160;</td>
           <td class="paramname"><em>now</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -323,7 +348,7 @@ template&lt;typename DB &gt; </div>
         <tr>
           <td class="memname">bool graphene::chain::account_object::is_basic_account </td>
           <td>(</td>
-          <td class="paramtype">time_point_sec&#160;</td>
+          <td class="paramtype"><a class="el" href="classfc_1_1time__point__sec.html">time_point_sec</a>&#160;</td>
           <td class="paramname"><em>now</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -380,7 +405,7 @@ template&lt;typename DB &gt; </div>
         <tr>
           <td class="memname">bool graphene::chain::account_object::is_member </td>
           <td>(</td>
-          <td class="paramtype">time_point_sec&#160;</td>
+          <td class="paramtype"><a class="el" href="classfc_1_1time__point__sec.html">time_point_sec</a>&#160;</td>
           <td class="paramname"><em>now</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -541,11 +566,11 @@ template&lt;typename DB &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">time_point_sec graphene::chain::account_object::membership_expiration_date</td>
+          <td class="memname"><a class="el" href="classfc_1_1time__point__sec.html">time_point_sec</a> graphene::chain::account_object::membership_expiration_date</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The time at which this account's membership expires. If set to any time in the past, the account is a basic account. If set to time_point_sec::maximum(), the account is a lifetime member. If set to any time not in the past less than time_point_sec::maximum(), the account is an annual member.</p>
+<p>The time at which this account's membership expires. If set to any time in the past, the account is a basic account. If set to <a class="el" href="classfc_1_1time__point__sec.html#a45d3b7342e76cfb07ef1845d75b57a39">time_point_sec::maximum()</a>, the account is a lifetime member. If set to any time not in the past less than <a class="el" href="classfc_1_1time__point__sec.html#a45d3b7342e76cfb07ef1845d75b57a39">time_point_sec::maximum()</a>, the account is an annual member.</p>
 <p>See <a class="el" href="classgraphene_1_1chain_1_1account__object.html#a297dd50b1672a4a97e2b50d42cfa5664">is_lifetime_member</a>, <a class="el" href="classgraphene_1_1chain_1_1account__object.html#a9da3633451253951b732df60422fedca">is_basic_account</a>, <a class="el" href="classgraphene_1_1chain_1_1account__object.html#a2c666ee5bfeb9263cfbfa1c161798c69">is_annual_member</a>, and <a class="el" href="classgraphene_1_1chain_1_1account__object.html#aa11e7440e6260e5a71e6f2dd62c22d85">is_member</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="account__object_8hpp_source.html#l00166">166</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
@@ -862,7 +887,7 @@ template&lt;typename DB &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 3 2019 18:33:16 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -63,18 +63,71 @@ $(function() {
 &#160;
 
 <h3><a id="index_u"></a>- u -</h3><ul>
+<li>udp_socket()
+: <a class="el" href="classfc_1_1udp__socket.html#a2df5a8406c77e5e10e102b47eff97038">fc::udp_socket</a>
+</li>
+<li>unblock()
+: <a class="el" href="classfc_1_1thread__d.html#a0315fbeed6717e7dd56e4dddfe3f3c2a">fc::thread_d</a>
+</li>
+<li>undo()
+: <a class="el" href="classgraphene_1_1db_1_1undo__database_1_1session.html#af1bcd33b0298fcbc1e6db7b5d3109048">graphene::db::undo_database::session</a>
+</li>
+<li>undo_database()
+: <a class="el" href="classgraphene_1_1db_1_1undo__database.html#a76e67c5afaea117b87410dc4ceb4bd93">graphene::db::undo_database</a>
+</li>
+<li>unhandled_exception()
+: <a class="el" href="classfc_1_1unhandled__exception.html#a819e457fd9bd6f9d941133d6527758d0">fc::unhandled_exception</a>
+</li>
+<li>unique_lock()
+: <a class="el" href="classfc_1_1unique__lock.html#a79efa8d968dcc96feb8cd71273d97e13">fc::unique_lock&lt; T &gt;</a>
+</li>
 <li>unit_price()
 : <a class="el" href="structgraphene_1_1protocol_1_1price.html#af7da4b4f58613cb400bfe587232e091f">graphene::protocol::price</a>
 </li>
 <li>unlock()
-: <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#ae16994a63cfdef1616b6b968117fd29d">graphene::wallet::wallet_api</a>
+: <a class="el" href="classfc_1_1mutex.html#a9631571a059b48fe90022923795bfab4">fc::mutex</a>
+, <a class="el" href="classfc_1_1spin__lock.html#a138ff8e449306b5f9c3f98073efbfc71">fc::spin_lock</a>
+, <a class="el" href="classfc_1_1spin__yield__lock.html#a71054710dbef2a6ea7f19260f6053931">fc::spin_yield_lock</a>
+, <a class="el" href="classfc_1_1unique__lock.html#adba107b3df79e49b2850a84e657c1f28">fc::unique_lock&lt; T &gt;</a>
+, <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#ae16994a63cfdef1616b6b968117fd29d">graphene::wallet::wallet_api</a>
+</li>
+<li>unpack()
+: <a class="el" href="structfc_1_1raw_1_1detail_1_1if__class_3_01int16__t_00_01void_01_4.html#a616db0d7375849069d22dadc6aa4c51d">fc::raw::detail::if_class&lt; int16_t, void &gt;</a>
+, <a class="el" href="structfc_1_1raw_1_1detail_1_1if__class_3_01int32__t_00_01void_01_4.html#a2ffbdfb0e80565c2fb2c63d8eaf0e30c">fc::raw::detail::if_class&lt; int32_t, void &gt;</a>
+, <a class="el" href="structfc_1_1raw_1_1detail_1_1if__class_3_01int64__t_00_01void_01_4.html#ae6312964a69604baf93a34dfe66a0e8c">fc::raw::detail::if_class&lt; int64_t, void &gt;</a>
+, <a class="el" href="structfc_1_1raw_1_1detail_1_1if__class_3_01int8__t_00_01void_01_4.html#acca68ef86887e5c5661b143bad3df66e">fc::raw::detail::if_class&lt; int8_t, void &gt;</a>
+, <a class="el" href="structfc_1_1raw_1_1detail_1_1if__class_3_01_t_00_01std_1_1enable__if__t_3_9std_1_1is__class_3_01_t_01_4_1_1value_01_4_01_4.html#ad318f01e7d43acdb863460bf3ac97cd1">fc::raw::detail::if_class&lt; T, std::enable_if_t&lt;!std::is_class&lt; T &gt;::value &gt; &gt;</a>
+, <a class="el" href="structfc_1_1raw_1_1detail_1_1if__class_3_01uint16__t_00_01void_01_4.html#aaabf32f4aedf1cfb867e99c10eb4ff64">fc::raw::detail::if_class&lt; uint16_t, void &gt;</a>
+, <a class="el" href="structfc_1_1raw_1_1detail_1_1if__class_3_01uint32__t_00_01void_01_4.html#a64d1a615c748849a5409894a6f3ca3a6">fc::raw::detail::if_class&lt; uint32_t, void &gt;</a>
+, <a class="el" href="structfc_1_1raw_1_1detail_1_1if__class_3_01uint64__t_00_01void_01_4.html#a08e937d293c084e0dd68a3254586f4f1">fc::raw::detail::if_class&lt; uint64_t, void &gt;</a>
+, <a class="el" href="structfc_1_1raw_1_1detail_1_1if__class_3_01uint8__t_00_01void_01_4.html#aef8b6a3b718325f464898cbc025d0555">fc::raw::detail::if_class&lt; uint8_t, void &gt;</a>
+, <a class="el" href="structfc_1_1raw_1_1detail_1_1if__enum_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__enum_3_01_t_01_4_1_1value_01_4_01_4.html#ac0a4dc5d6f75d09709bb847e26dba391">fc::raw::detail::if_enum&lt; T, std::enable_if_t&lt; std::is_enum&lt; T &gt;::value &gt; &gt;</a>
+, <a class="el" href="structfc_1_1raw_1_1detail_1_1if__enum_3_01_t_00_01std_1_1enable__if__t_3_9std_1_1is__enum_3_01_t_01_4_1_1value_01_4_01_4.html#adb7878347c302e7531de6050538933a5">fc::raw::detail::if_enum&lt; T, std::enable_if_t&lt;!std::is_enum&lt; T &gt;::value &gt; &gt;</a>
+, <a class="el" href="structfc_1_1raw_1_1detail_1_1if__reflected.html#a4ec1e1110c855c115c701d8a6188fed4">fc::raw::detail::if_reflected&lt; IsReflected &gt;</a>
+, <a class="el" href="structfc_1_1raw_1_1detail_1_1if__reflected_3_01std_1_1true__type_01_4.html#abe60e8c407a432a0a0991d1fb6cc13d0">fc::raw::detail::if_reflected&lt; std::true_type &gt;</a>
+</li>
+<li>unpack_object_visitor()
+: <a class="el" href="structfc_1_1raw_1_1detail_1_1unpack__object__visitor.html#a2f8b3588807280fbf195ee29df454ad7">fc::raw::detail::unpack_object_visitor&lt; Stream, Class &gt;</a>
+</li>
+<li>unpack_static_variant()
+: <a class="el" href="structfc_1_1raw_1_1unpack__static__variant.html#ac2fd77a3399aa728075774b2c0d17487">fc::raw::unpack_static_variant&lt; Stream &gt;</a>
+</li>
+<li>unsigned_int()
+: <a class="el" href="structfc_1_1unsigned__int.html#aa355d24afea5747482acd2e01793efb6">fc::unsigned_int</a>
 </li>
 <li>unsubscribe_from_market()
 : <a class="el" href="classgraphene_1_1app_1_1database__api.html#a56e8e3de3827d2ed993d28bd22b943de">graphene::app::database_api</a>
 , <a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a50f5bf4428137943bd874d6e2883b4af">graphene::app::database_api_impl</a>
 </li>
+<li>update()
+: <a class="el" href="classfc_1_1detail_1_1average__rate__meter.html#ada9b561ff55964f5c3dd3f56a68858dc">fc::detail::average_rate_meter</a>
+</li>
 <li>update_account()
 : <a class="el" href="structgraphene_1_1wallet_1_1wallet__data.html#a7e45dcef220b45e13f0918b1036cbf41">graphene::wallet::wallet_data</a>
+</li>
+<li>update_account_histories()
+: <a class="el" href="classgraphene_1_1account__history_1_1detail_1_1account__history__plugin__impl.html#ae9cbcd5fbfe7d6802a33ba9c641d0ce8">graphene::account_history::detail::account_history_plugin_impl</a>
+, <a class="el" href="classgraphene_1_1elasticsearch_1_1detail_1_1elasticsearch__plugin__impl.html#ad79aeca3d113a98c22a7ff908c435e61">graphene::elasticsearch::detail::elasticsearch_plugin_impl</a>
 </li>
 <li>update_asset()
 : <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a6fd558bb8b6a914226d5977bb131d013">graphene::wallet::detail::wallet_api_impl</a>
@@ -88,12 +141,22 @@ $(function() {
 : <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a200ac1eda38c6b19686dd14e66478645">graphene::wallet::detail::wallet_api_impl</a>
 , <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#aa42085004d8575c031d2694aad17971f">graphene::wallet::wallet_api</a>
 </li>
+<li>update_bandwidth_data()
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a06a97a071e8e0e13d40e227b33cd5fe5">graphene::net::detail::node_impl</a>
+</li>
 <li>update_bitasset()
 : <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#afe09084869d8b6883bc84a7ccb7c35a7">graphene::wallet::detail::wallet_api_impl</a>
 , <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#aebe4459f45a748739595939d60b95b6b">graphene::wallet::wallet_api</a>
 </li>
 <li>update_coin_seconds_earned()
 : <a class="el" href="structgraphene_1_1chain_1_1cdd__vesting__policy.html#a6114585395e35c3f5b3c3a24c508946c">graphene::chain::cdd_vesting_policy</a>
+</li>
+<li>update_entry()
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1peer__database__impl.html#a90a0cbe9603d5772bd4cb65d4b3d24b3">graphene::net::detail::peer_database_impl</a>
+, <a class="el" href="classgraphene_1_1net_1_1peer__database.html#aac4ced3eaae8d87d1a93dd40cbacc4ac">graphene::net::peer_database</a>
+</li>
+<li>update_market_histories()
+: <a class="el" href="classgraphene_1_1market__history_1_1detail_1_1market__history__plugin__impl.html#a19951cb626e2b93196197919d53bfb6d">graphene::market_history::detail::market_history_plugin_impl</a>
 </li>
 <li>update_median_feeds()
 : <a class="el" href="classgraphene_1_1chain_1_1asset__bitasset__data__object.html#a8a463d9f2ac83fffe60c97534e992094">graphene::chain::asset_bitasset_data_object</a>
@@ -113,17 +176,28 @@ $(function() {
 : <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a3a998b0aa403a0c4643d7b8ecc6c3296">graphene::wallet::detail::wallet_api_impl</a>
 , <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#af2145755728919d7e4aaf0f02d7c4e82">graphene::wallet::wallet_api</a>
 </li>
+<li>url()
+: <a class="el" href="classfc_1_1url.html#aea2a56853fd24a7d6ba990e3ae92ba44">fc::url</a>
+</li>
 <li>use_debug_api()
 : <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a6aff9e87dc4fbc78419cabb67d8a3b31">graphene::wallet::detail::wallet_api_impl</a>
 </li>
 <li>use_network_node_api()
 : <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#ac0550c9f1f54d8383cccbe5873cc70bd">graphene::wallet::detail::wallet_api_impl</a>
 </li>
+<li>use_next_id()
+: <a class="el" href="classgraphene_1_1db_1_1index.html#a5e874427eaf74f45dbf23d148f2dc708">graphene::db::index</a>
+, <a class="el" href="classgraphene_1_1db_1_1primary__index.html#aec0a52baa71b8de23292c608f50dd49b">graphene::db::primary_index&lt; DerivedIndex, DirectBits &gt;</a>
+</li>
+<li>user()
+: <a class="el" href="classfc_1_1mutable__url.html#a1ab18477658498f3067c4025444633b0">fc::mutable_url</a>
+, <a class="el" href="classfc_1_1url.html#ac1a5470dba235aeb41a1b248d0f83ca3">fc::url</a>
+</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 17 2019 16:30:09 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 3 2019 18:33:19 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

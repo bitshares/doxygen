@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -74,6 +74,31 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html">abstract_object</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the Curiously Recurring Template Pattern to automatically add the ability to clone, serialize, and move objects polymorphically.  <a href="classgraphene_1_1db_1_1abstract__object.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1annotated__object.html">annotated_object</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An object that is easily extended by providing pointers to other objects, one for each space.  <a href="classgraphene_1_1db_1_1annotated__object.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__primary__index.html">base_primary_index</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1direct__index.html">direct_index</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A secondary index that tracks objects in vectors indexed by object id. It is meant for fully (or almost fully) populated indexes only (will fail when loading an <a class="el" href="classgraphene_1_1db_1_1object__database.html" title="maintains a set of indexed objects that can be modified with multi-level rollback support ...">object_database</a> with large gaps).  <a href="classgraphene_1_1db_1_1direct__index.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1generic__index.html">generic_index</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1index.html">index</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">abstract base class for accessing objects indexed in various ways.  <a href="classgraphene_1_1db_1_1index.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1index__observer.html">index_observer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">used to get callbacks when objects change  <a href="classgraphene_1_1db_1_1index__observer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html">object</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">base for all database objects  <a href="classgraphene_1_1db_1_1object.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html">object_database</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">maintains a set of indexed objects that can be modified with multi-level rollback support  <a href="classgraphene_1_1db_1_1object__database.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1db_1_1object__downcast.html">object_downcast</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This template is used to downcast a generic object type to a specific xyz_object type.  <a href="structgraphene_1_1db_1_1object__downcast.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -81,14 +106,48 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html">primary_index</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps a derived index to intercept calls to create, modify, and remove so that callbacks may be fired and undo state saved.  <a href="classgraphene_1_1db_1_1primary__index.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1secondary__index.html">secondary_index</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1simple__index.html">simple_index</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple index uses a vector&lt;unique_ptr&lt;T&gt;&gt; to store data.  <a href="classgraphene_1_1db_1_1simple__index.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1db_1_1sparse__index.html">sparse_index</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An index type for objects which may be deleted.  <a href="structgraphene_1_1db_1_1sparse__index.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1undo__database.html">undo_database</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">tracks changes to the state and allows changes to be undone  <a href="classgraphene_1_1db_1_1undo__database.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1db_1_1undo__state.html">undo_state</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a79ca14ce939452c7bdbad36c069fa317"><td class="memItemLeft" align="right" valign="top">typedef flat_map&lt; uint8_t, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1db.html#a79ca14ce939452c7bdbad36c069fa317">annotation_map</a></td></tr>
+<tr class="separator:a79ca14ce939452c7bdbad36c069fa317"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb11826d88001d85931beeca2eff73f9"><td class="memTemplParams" colspan="2">template&lt;typename ObjectID &gt; </td></tr>
 <tr class="memitem:abb11826d88001d85931beeca2eff73f9"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1db.html#abb11826d88001d85931beeca2eff73f9">object_downcast_t</a> = typename <a class="el" href="structgraphene_1_1db_1_1object__downcast.html">object_downcast</a>&lt; ObjectID &gt;::type</td></tr>
 <tr class="separator:abb11826d88001d85931beeca2eff73f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="a79ca14ce939452c7bdbad36c069fa317"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79ca14ce939452c7bdbad36c069fa317">&#9670;&nbsp;</a></span>annotation_map</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef flat_map&lt;uint8_t, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>&gt; <a class="el" href="namespacegraphene_1_1db.html#a79ca14ce939452c7bdbad36c069fa317">graphene::db::annotation_map</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="object_8hpp_source.html#l00106">106</a> of file <a class="el" href="object_8hpp_source.html">object.hpp</a>.</p>
+
+</div>
+</div>
 <a id="abb11826d88001d85931beeca2eff73f9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abb11826d88001d85931beeca2eff73f9">&#9670;&nbsp;</a></span>object_downcast_t</h2>
 
@@ -110,7 +169,7 @@ template&lt;typename ObjectID &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 17 2019 16:30:09 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 3 2019 18:33:17 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

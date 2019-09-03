@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -85,6 +85,7 @@ Inheritance diagram for graphene::chain::database:</div>
  <div class="center">
   <img src="classgraphene_1_1chain_1_1database.png" usemap="#graphene::chain::database_map" alt=""/>
   <map id="graphene::chain::database_map" name="graphene::chain::database_map">
+<area href="classgraphene_1_1db_1_1object__database.html" title="maintains a set of indexed objects that can be modified with multi-level rollback support ..." alt="graphene::db::object_database" shape="rect" coords="0,0,184,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -113,13 +114,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5314db2d542f49fe5487e144a03c2ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1733f5bf8a8ea84dcd8f962eb61debe1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a1733f5bf8a8ea84dcd8f962eb61debe1">~database</a> ()</td></tr>
 <tr class="separator:a1733f5bf8a8ea84dcd8f962eb61debe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d5356973d8d14d8267b7d49a2c6d939"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a2d5356973d8d14d8267b7d49a2c6d939">open</a> (const fc::path &amp;data_dir, std::function&lt; <a class="el" href="structgraphene_1_1chain_1_1genesis__state__type.html">genesis_state_type</a>()&gt; genesis_loader, const std::string &amp;db_version)</td></tr>
+<tr class="memitem:a2d5356973d8d14d8267b7d49a2c6d939"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a2d5356973d8d14d8267b7d49a2c6d939">open</a> (const <a class="el" href="classfc_1_1path.html">fc::path</a> &amp;data_dir, std::function&lt; <a class="el" href="structgraphene_1_1chain_1_1genesis__state__type.html">genesis_state_type</a>()&gt; genesis_loader, const std::string &amp;db_version)</td></tr>
 <tr class="memdesc:a2d5356973d8d14d8267b7d49a2c6d939"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a database, creating a new one if necessary.  <a href="#a2d5356973d8d14d8267b7d49a2c6d939">More...</a><br /></td></tr>
 <tr class="separator:a2d5356973d8d14d8267b7d49a2c6d939"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9a4bc8bc2683554aac84fdd1e96b710"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#ad9a4bc8bc2683554aac84fdd1e96b710">reindex</a> (fc::path data_dir)</td></tr>
+<tr class="memitem:ad9a4bc8bc2683554aac84fdd1e96b710"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#ad9a4bc8bc2683554aac84fdd1e96b710">reindex</a> (<a class="el" href="classfc_1_1path.html">fc::path</a> data_dir)</td></tr>
 <tr class="memdesc:ad9a4bc8bc2683554aac84fdd1e96b710"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rebuild object graph from block history and open detabase.  <a href="#ad9a4bc8bc2683554aac84fdd1e96b710">More...</a><br /></td></tr>
 <tr class="separator:ad9a4bc8bc2683554aac84fdd1e96b710"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37463bb4fc61d94effff3f5784a2f168"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a37463bb4fc61d94effff3f5784a2f168">wipe</a> (const fc::path &amp;data_dir, bool include_blocks)</td></tr>
+<tr class="memitem:a37463bb4fc61d94effff3f5784a2f168"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a37463bb4fc61d94effff3f5784a2f168">wipe</a> (const <a class="el" href="classfc_1_1path.html">fc::path</a> &amp;data_dir, bool include_blocks)</td></tr>
 <tr class="memdesc:a37463bb4fc61d94effff3f5784a2f168"><td class="mdescLeft">&#160;</td><td class="mdescRight">wipe Delete database from disk, and potentially the raw chain as well.  <a href="#a37463bb4fc61d94effff3f5784a2f168">More...</a><br /></td></tr>
 <tr class="separator:a37463bb4fc61d94effff3f5784a2f168"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaef6e311f1eb8ddfea82751b4e2df2d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#aaef6e311f1eb8ddfea82751b4e2df2d2">close</a> (bool rewind=true)</td></tr>
@@ -130,9 +131,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0600c987cf89e038128684da9b8c2829"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4294f12b2299bab7684555c986abac76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1protocol.html#a32e784a8edceba5506db2c130ed9cb9c">block_id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a4294f12b2299bab7684555c986abac76">get_block_id_for_num</a> (uint32_t block_num) const</td></tr>
 <tr class="separator:a4294f12b2299bab7684555c986abac76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae517d3ed2a2362a70d120962536e16a0"><td class="memItemLeft" align="right" valign="top">optional&lt; <a class="el" href="classgraphene_1_1protocol_1_1signed__block.html">signed_block</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#ae517d3ed2a2362a70d120962536e16a0">fetch_block_by_id</a> (const <a class="el" href="namespacegraphene_1_1protocol.html#a32e784a8edceba5506db2c130ed9cb9c">block_id_type</a> &amp;id) const</td></tr>
+<tr class="memitem:ae517d3ed2a2362a70d120962536e16a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1optional.html">optional</a>&lt; <a class="el" href="classgraphene_1_1protocol_1_1signed__block.html">signed_block</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#ae517d3ed2a2362a70d120962536e16a0">fetch_block_by_id</a> (const <a class="el" href="namespacegraphene_1_1protocol.html#a32e784a8edceba5506db2c130ed9cb9c">block_id_type</a> &amp;id) const</td></tr>
 <tr class="separator:ae517d3ed2a2362a70d120962536e16a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a380a803937941dbbf86321373279a218"><td class="memItemLeft" align="right" valign="top">optional&lt; <a class="el" href="classgraphene_1_1protocol_1_1signed__block.html">signed_block</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a380a803937941dbbf86321373279a218">fetch_block_by_number</a> (uint32_t num) const</td></tr>
+<tr class="memitem:a380a803937941dbbf86321373279a218"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1optional.html">optional</a>&lt; <a class="el" href="classgraphene_1_1protocol_1_1signed__block.html">signed_block</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a380a803937941dbbf86321373279a218">fetch_block_by_number</a> (uint32_t num) const</td></tr>
 <tr class="separator:a380a803937941dbbf86321373279a218"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19352bf8822d30ed4c71dd65fd62f0ca"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgraphene_1_1protocol_1_1signed__transaction.html">signed_transaction</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a19352bf8822d30ed4c71dd65fd62f0ca">get_recent_transaction</a> (const <a class="el" href="namespacegraphene_1_1protocol.html#a040f9f71bff896e89dc9ee3ff92bb076">transaction_id_type</a> &amp;trx_id) const</td></tr>
 <tr class="separator:a19352bf8822d30ed4c71dd65fd62f0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,9 +157,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad8ca84ffcf797732a8227b27b335c66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5abeddad5156d1bcad2e97256d54fa0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1protocol_1_1processed__transaction.html">processed_transaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#ab5abeddad5156d1bcad2e97256d54fa0">push_proposal</a> (const <a class="el" href="classgraphene_1_1chain_1_1proposal__object.html">proposal_object</a> &amp;proposal)</td></tr>
 <tr class="separator:ab5abeddad5156d1bcad2e97256d54fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8f11489883556cf872c893bc90fae53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1protocol_1_1signed__block.html">signed_block</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#ae8f11489883556cf872c893bc90fae53">generate_block</a> (const fc::time_point_sec when, witness_id_type witness_id, const fc::ecc::private_key &amp;block_signing_private_key, uint32_t skip)</td></tr>
+<tr class="memitem:ae8f11489883556cf872c893bc90fae53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1protocol_1_1signed__block.html">signed_block</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#ae8f11489883556cf872c893bc90fae53">generate_block</a> (const <a class="el" href="classfc_1_1time__point__sec.html">fc::time_point_sec</a> when, witness_id_type witness_id, const <a class="el" href="classfc_1_1ecc_1_1private__key.html">fc::ecc::private_key</a> &amp;block_signing_private_key, uint32_t skip)</td></tr>
 <tr class="separator:ae8f11489883556cf872c893bc90fae53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a581a8d9539e3d2337d5665932048156c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1protocol_1_1signed__block.html">signed_block</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a581a8d9539e3d2337d5665932048156c">_generate_block</a> (const fc::time_point_sec when, witness_id_type witness_id, const fc::ecc::private_key &amp;block_signing_private_key)</td></tr>
+<tr class="memitem:a581a8d9539e3d2337d5665932048156c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1protocol_1_1signed__block.html">signed_block</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a581a8d9539e3d2337d5665932048156c">_generate_block</a> (const <a class="el" href="classfc_1_1time__point__sec.html">fc::time_point_sec</a> when, witness_id_type witness_id, const <a class="el" href="classfc_1_1ecc_1_1private__key.html">fc::ecc::private_key</a> &amp;block_signing_private_key)</td></tr>
 <tr class="separator:a581a8d9539e3d2337d5665932048156c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03253124ee8714af752c1d68b7cc206c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a03253124ee8714af752c1d68b7cc206c">pop_block</a> ()</td></tr>
 <tr class="separator:a03253124ee8714af752c1d68b7cc206c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,16 +169,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2fef3858781108d62da007cc155ccec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d85784b1e8dd37a7cecce893e248061"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a1d85784b1e8dd37a7cecce893e248061">set_applied_operation_result</a> (uint32_t op_id, const <a class="el" href="group__operations.html#gaff5b9634318c12aa876a1fc037db8954">operation_result</a> &amp;r)</td></tr>
 <tr class="separator:a1d85784b1e8dd37a7cecce893e248061"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87c74f1ef2f8840261c3d9789151b305"><td class="memItemLeft" align="right" valign="top">const vector&lt; optional&lt; <a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html">operation_history_object</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a87c74f1ef2f8840261c3d9789151b305">get_applied_operations</a> () const</td></tr>
+<tr class="memitem:a87c74f1ef2f8840261c3d9789151b305"><td class="memItemLeft" align="right" valign="top">const vector&lt; <a class="el" href="classfc_1_1optional.html">optional</a>&lt; <a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html">operation_history_object</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a87c74f1ef2f8840261c3d9789151b305">get_applied_operations</a> () const</td></tr>
 <tr class="separator:a87c74f1ef2f8840261c3d9789151b305"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ebd612bd6895e9acf40c71ac69baed8"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a5ebd612bd6895e9acf40c71ac69baed8">to_pretty_string</a> (const <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &amp;a) const</td></tr>
 <tr class="separator:a5ebd612bd6895e9acf40c71ac69baed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3daf7627fbbad235bc99cecc6464731b"><td class="memItemLeft" align="right" valign="top">witness_id_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a3daf7627fbbad235bc99cecc6464731b">get_scheduled_witness</a> (uint32_t slot_num) const</td></tr>
 <tr class="memdesc:a3daf7627fbbad235bc99cecc6464731b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the witness scheduled for block production in a slot.  <a href="#a3daf7627fbbad235bc99cecc6464731b">More...</a><br /></td></tr>
 <tr class="separator:a3daf7627fbbad235bc99cecc6464731b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a40590812847fac95aaded9dcac020e"><td class="memItemLeft" align="right" valign="top">fc::time_point_sec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a7a40590812847fac95aaded9dcac020e">get_slot_time</a> (uint32_t slot_num) const</td></tr>
+<tr class="memitem:a7a40590812847fac95aaded9dcac020e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1time__point__sec.html">fc::time_point_sec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a7a40590812847fac95aaded9dcac020e">get_slot_time</a> (uint32_t slot_num) const</td></tr>
 <tr class="separator:a7a40590812847fac95aaded9dcac020e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f6a3131085a7411a46db17a818fd1ca"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a9f6a3131085a7411a46db17a818fd1ca">get_slot_at_time</a> (fc::time_point_sec when) const</td></tr>
+<tr class="memitem:a9f6a3131085a7411a46db17a818fd1ca"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a9f6a3131085a7411a46db17a818fd1ca">get_slot_at_time</a> (<a class="el" href="classfc_1_1time__point__sec.html">fc::time_point_sec</a> when) const</td></tr>
 <tr class="separator:a9f6a3131085a7411a46db17a818fd1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa10c1d73609828c1594e4054e4399b9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#aa10c1d73609828c1594e4054e4399b9a">update_witness_schedule</a> ()</td></tr>
 <tr class="separator:aa10c1d73609828c1594e4054e4399b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,7 +202,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1fecc8c74e7c53dc3429bcfebda91775"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e31a33a034747e485b88aa194b048e5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgraphene_1_1chain_1_1witness__schedule__object.html">witness_schedule_object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a8e31a33a034747e485b88aa194b048e5">get_witness_schedule_object</a> () const</td></tr>
 <tr class="separator:a8e31a33a034747e485b88aa194b048e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa53e34701c0ab1b1c124b9c9e9c50ba1"><td class="memItemLeft" align="right" valign="top">time_point_sec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#aa53e34701c0ab1b1c124b9c9e9c50ba1">head_block_time</a> () const</td></tr>
+<tr class="memitem:aa53e34701c0ab1b1c124b9c9e9c50ba1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1time__point__sec.html">time_point_sec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#aa53e34701c0ab1b1c124b9c9e9c50ba1">head_block_time</a> () const</td></tr>
 <tr class="separator:aa53e34701c0ab1b1c124b9c9e9c50ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed39a6bd1c0356d6b7016af12509726d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#aed39a6bd1c0356d6b7016af12509726d">head_block_num</a> () const</td></tr>
 <tr class="separator:aed39a6bd1c0356d6b7016af12509726d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,7 +238,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae62c01ea5a924d30bf3bc7a16af185d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#ae62c01ea5a924d30bf3bc7a16af185d9">get_market_fee_vesting_balance</a> (const account_id_type &amp;account_id, const asset_id_type &amp;asset_id)</td></tr>
 <tr class="memdesc:ae62c01ea5a924d30bf3bc7a16af185d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a particular account's market fee vesting balance in a given asset.  <a href="#ae62c01ea5a924d30bf3bc7a16af185d9">More...</a><br /></td></tr>
 <tr class="separator:ae62c01ea5a924d30bf3bc7a16af185d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47c4b977b360da1178df3a5ef5d1cb0e"><td class="memItemLeft" align="right" valign="top">optional&lt; vesting_balance_id_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a47c4b977b360da1178df3a5ef5d1cb0e">deposit_lazy_vesting</a> (const optional&lt; vesting_balance_id_type &gt; &amp;ovbid, <a class="el" href="namespacegraphene_1_1protocol.html#a69b2104c1c11eed2d17bd29b86713347">share_type</a> amount, uint32_t req_vesting_seconds, <a class="el" href="namespacegraphene_1_1chain.html#a4efc4a0f6c3e0ba09fc0091955ed8bc7">vesting_balance_type</a> balance_type, account_id_type req_owner, bool require_vesting)</td></tr>
+<tr class="memitem:a47c4b977b360da1178df3a5ef5d1cb0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1optional.html">optional</a>&lt; vesting_balance_id_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a47c4b977b360da1178df3a5ef5d1cb0e">deposit_lazy_vesting</a> (const <a class="el" href="classfc_1_1optional.html">optional</a>&lt; vesting_balance_id_type &gt; &amp;ovbid, <a class="el" href="namespacegraphene_1_1protocol.html#a69b2104c1c11eed2d17bd29b86713347">share_type</a> amount, uint32_t req_vesting_seconds, <a class="el" href="namespacegraphene_1_1chain.html#a4efc4a0f6c3e0ba09fc0091955ed8bc7">vesting_balance_type</a> balance_type, account_id_type req_owner, bool require_vesting)</td></tr>
 <tr class="memdesc:a47c4b977b360da1178df3a5ef5d1cb0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to make lazy deposit to CDD VBO.  <a href="#a47c4b977b360da1178df3a5ef5d1cb0e">More...</a><br /></td></tr>
 <tr class="separator:a47c4b977b360da1178df3a5ef5d1cb0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada0ca07bcd351e7ee1f95719b8543579"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#ada0ca07bcd351e7ee1f95719b8543579">deposit_cashback</a> (const <a class="el" href="classgraphene_1_1chain_1_1account__object.html">account_object</a> &amp;acct, <a class="el" href="namespacegraphene_1_1protocol.html#a69b2104c1c11eed2d17bd29b86713347">share_type</a> amount, bool require_vesting=true)</td></tr>
@@ -248,7 +249,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae82d4e2f0f40a9b7a5b13eb23315d637"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a805900b1a5c1ee4672b8f2732fda0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a8a805900b1a5c1ee4672b8f2732fda0a">apply_debug_updates</a> ()</td></tr>
 <tr class="separator:a8a805900b1a5c1ee4672b8f2732fda0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69528d69a226d6a75670f5e31187db3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a69528d69a226d6a75670f5e31187db3f">debug_update</a> (const fc::variant_object &amp;update)</td></tr>
+<tr class="memitem:a69528d69a226d6a75670f5e31187db3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a69528d69a226d6a75670f5e31187db3f">debug_update</a> (const <a class="el" href="classfc_1_1variant__object.html">fc::variant_object</a> &amp;update)</td></tr>
 <tr class="separator:a69528d69a226d6a75670f5e31187db3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af380d754e57a21159b78dece2f4daf1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#af380d754e57a21159b78dece2f4daf1e">match</a> (const <a class="el" href="classgraphene_1_1chain_1_1call__order__object.html">call_order_object</a> &amp;call, const <a class="el" href="classgraphene_1_1chain_1_1force__settlement__object.html">force_settlement_object</a> &amp;settle, const <a class="el" href="structgraphene_1_1protocol_1_1price.html">price</a> &amp;match_price, <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> max_settlement, const <a class="el" href="structgraphene_1_1protocol_1_1price.html">price</a> &amp;fill_price)</td></tr>
 <tr class="separator:af380d754e57a21159b78dece2f4daf1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -271,9 +272,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abbc9d3f6064163078b9a21c2c580f24b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#abbc9d3f6064163078b9a21c2c580f24b">enable_standby_votes_tracking</a> (bool enable)</td></tr>
 <tr class="memdesc:abbc9d3f6064163078b9a21c2c580f24b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable tracking of votes of standby witnesses and committee members.  <a href="#abbc9d3f6064163078b9a21c2c580f24b">More...</a><br /></td></tr>
 <tr class="separator:abbc9d3f6064163078b9a21c2c580f24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34c54fd8e47f00cdfe23de1eb8a55bb8"><td class="memItemLeft" align="right" valign="top">fc::future&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a34c54fd8e47f00cdfe23de1eb8a55bb8">precompute_parallel</a> (const <a class="el" href="classgraphene_1_1protocol_1_1signed__block.html">signed_block</a> &amp;block, const uint32_t skip=<a class="el" href="classgraphene_1_1chain_1_1database.html#a6de6add85d012876641f2a50ad707726afbe701c12ae94e417ef9424306aabbdc">skip_nothing</a>) const</td></tr>
+<tr class="memitem:a34c54fd8e47f00cdfe23de1eb8a55bb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1future.html">fc::future</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a34c54fd8e47f00cdfe23de1eb8a55bb8">precompute_parallel</a> (const <a class="el" href="classgraphene_1_1protocol_1_1signed__block.html">signed_block</a> &amp;block, const uint32_t skip=<a class="el" href="classgraphene_1_1chain_1_1database.html#a6de6add85d012876641f2a50ad707726afbe701c12ae94e417ef9424306aabbdc">skip_nothing</a>) const</td></tr>
 <tr class="separator:a34c54fd8e47f00cdfe23de1eb8a55bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad76db729d92b453958e49c4ca7b9e382"><td class="memItemLeft" align="right" valign="top">fc::future&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#ad76db729d92b453958e49c4ca7b9e382">precompute_parallel</a> (const <a class="el" href="classgraphene_1_1protocol_1_1precomputable__transaction.html">precomputable_transaction</a> &amp;trx) const</td></tr>
+<tr class="memitem:ad76db729d92b453958e49c4ca7b9e382"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1future.html">fc::future</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#ad76db729d92b453958e49c4ca7b9e382">precompute_parallel</a> (const <a class="el" href="classgraphene_1_1protocol_1_1precomputable__transaction.html">precomputable_transaction</a> &amp;trx) const</td></tr>
 <tr class="separator:ad76db729d92b453958e49c4ca7b9e382"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9556e43f26824c2036c8916d0bc460c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#af9556e43f26824c2036c8916d0bc460c">apply_block</a> (const <a class="el" href="classgraphene_1_1protocol_1_1signed__block.html">signed_block</a> &amp;next_block, uint32_t skip=<a class="el" href="classgraphene_1_1chain_1_1database.html#a6de6add85d012876641f2a50ad707726afbe701c12ae94e417ef9424306aabbdc">skip_nothing</a>)</td></tr>
 <tr class="separator:af9556e43f26824c2036c8916d0bc460c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -305,19 +306,83 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af9c87315935a2dc72806984f941866bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83513d51e6e629ef3b2a7815caefcdf3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a83513d51e6e629ef3b2a7815caefcdf3">match</a> (const <a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html">limit_order_object</a> &amp;taker, const <a class="el" href="classgraphene_1_1chain_1_1call__order__object.html">call_order_object</a> &amp;maker, const <a class="el" href="structgraphene_1_1protocol_1_1price.html">price</a> &amp;trade_price, const <a class="el" href="structgraphene_1_1protocol_1_1price.html">price</a> &amp;feed_price, const uint16_t maintenance_collateral_ratio, const optional&lt; <a class="el" href="structgraphene_1_1protocol_1_1price.html">price</a> &gt; &amp;maintenance_collateralization)</td></tr>
 <tr class="separator:a83513d51e6e629ef3b2a7815caefcdf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classgraphene_1_1db_1_1object__database"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgraphene_1_1db_1_1object__database')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classgraphene_1_1db_1_1object__database.html">graphene::db::object_database</a></td></tr>
+<tr class="memitem:a63ad25dd455b179cafced627e8a43e88 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#a63ad25dd455b179cafced627e8a43e88">object_database</a> ()</td></tr>
+<tr class="separator:a63ad25dd455b179cafced627e8a43e88 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad11a7de3f9e5220858a997648a98b6a6 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#ad11a7de3f9e5220858a997648a98b6a6">~object_database</a> ()</td></tr>
+<tr class="separator:ad11a7de3f9e5220858a997648a98b6a6 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0aee0c82f1fe2380b56c7a13fb87a98 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#ac0aee0c82f1fe2380b56c7a13fb87a98">reset_indexes</a> ()</td></tr>
+<tr class="separator:ac0aee0c82f1fe2380b56c7a13fb87a98 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e179b70876f837430d1b3a1af683a03 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#a0e179b70876f837430d1b3a1af683a03">open</a> (const <a class="el" href="classfc_1_1path.html">fc::path</a> &amp;data_dir)</td></tr>
+<tr class="separator:a0e179b70876f837430d1b3a1af683a03 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0732ee7acd14e92c44638d4601bbedde inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#a0732ee7acd14e92c44638d4601bbedde">flush</a> ()</td></tr>
+<tr class="separator:a0732ee7acd14e92c44638d4601bbedde inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a762ede07c458acb11142340ce71d1e27 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#a762ede07c458acb11142340ce71d1e27">wipe</a> (const <a class="el" href="classfc_1_1path.html">fc::path</a> &amp;data_dir)</td></tr>
+<tr class="separator:a762ede07c458acb11142340ce71d1e27 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a076e75fbe95c3cbd0bf637c258973533 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#a076e75fbe95c3cbd0bf637c258973533">close</a> ()</td></tr>
+<tr class="separator:a076e75fbe95c3cbd0bf637c258973533 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ab509742fb251702ee056ee234d94fa inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplParams" colspan="2">template&lt;typename T , typename F &gt; </td></tr>
+<tr class="memitem:a8ab509742fb251702ee056ee234d94fa inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#a8ab509742fb251702ee056ee234d94fa">create</a> (F &amp;&amp;constructor)</td></tr>
+<tr class="separator:a8ab509742fb251702ee056ee234d94fa inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a205639c7210be58c21d07b8415ed1875 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#a205639c7210be58c21d07b8415ed1875">get_object</a> (<a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a> id) const</td></tr>
+<tr class="separator:a205639c7210be58c21d07b8415ed1875 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a898cfd0fe656b69e6f71590800b77c inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#a3a898cfd0fe656b69e6f71590800b77c">find_object</a> (<a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a> id) const</td></tr>
+<tr class="separator:a3a898cfd0fe656b69e6f71590800b77c inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4999fda5ff212460e8935027e125a11 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae4999fda5ff212460e8935027e125a11 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#ae4999fda5ff212460e8935027e125a11">get</a> (<a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a> id) const</td></tr>
+<tr class="separator:ae4999fda5ff212460e8935027e125a11 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07ca8ab428c8959bc2bdb6944cc600eb inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a07ca8ab428c8959bc2bdb6944cc600eb inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplItemLeft" align="right" valign="top">const T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#a07ca8ab428c8959bc2bdb6944cc600eb">find</a> (<a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a> id) const</td></tr>
+<tr class="separator:a07ca8ab428c8959bc2bdb6944cc600eb inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefc63988a96581c41718563bb64c1a21 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplParams" colspan="2">template&lt;uint8_t SpaceID, uint8_t TypeID&gt; </td></tr>
+<tr class="memitem:aefc63988a96581c41718563bb64c1a21 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#aefc63988a96581c41718563bb64c1a21">find</a> (<a class="el" href="structgraphene_1_1db_1_1object__id.html">object_id</a>&lt; SpaceID, TypeID &gt; id) const -&gt; const <a class="el" href="namespacegraphene_1_1db.html#abb11826d88001d85931beeca2eff73f9">object_downcast_t</a>&lt; decltype(id)&gt; *</td></tr>
+<tr class="separator:aefc63988a96581c41718563bb64c1a21 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea2978b8a489de774479a6cc96e3cad inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplParams" colspan="2">template&lt;uint8_t SpaceID, uint8_t TypeID&gt; </td></tr>
+<tr class="memitem:a2ea2978b8a489de774479a6cc96e3cad inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#a2ea2978b8a489de774479a6cc96e3cad">get</a> (<a class="el" href="structgraphene_1_1db_1_1object__id.html">object_id</a>&lt; SpaceID, TypeID &gt; id) const -&gt; const <a class="el" href="namespacegraphene_1_1db.html#abb11826d88001d85931beeca2eff73f9">object_downcast_t</a>&lt; decltype(id)&gt; &amp;</td></tr>
+<tr class="separator:a2ea2978b8a489de774479a6cc96e3cad inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82b09b4adc04d3468706cfb5b73a4798 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplParams" colspan="2">template&lt;typename IndexType &gt; </td></tr>
+<tr class="memitem:a82b09b4adc04d3468706cfb5b73a4798 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplItemLeft" align="right" valign="top">IndexType *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#a82b09b4adc04d3468706cfb5b73a4798">add_index</a> ()</td></tr>
+<tr class="separator:a82b09b4adc04d3468706cfb5b73a4798 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fa6f4541c4595ead30e4fad08bce5e1 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplParams" colspan="2">template&lt;typename IndexType , typename SecondaryIndexType , typename... Args&gt; </td></tr>
+<tr class="memitem:a2fa6f4541c4595ead30e4fad08bce5e1 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplItemLeft" align="right" valign="top">SecondaryIndexType *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#a2fa6f4541c4595ead30e4fad08bce5e1">add_secondary_index</a> (Args... args)</td></tr>
+<tr class="separator:a2fa6f4541c4595ead30e4fad08bce5e1 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a529568086dbb56423c6bc2f329f5fa8c inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#a529568086dbb56423c6bc2f329f5fa8c">pop_undo</a> ()</td></tr>
+<tr class="separator:a529568086dbb56423c6bc2f329f5fa8c inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77bb98b3d49362133fff779b6587facf inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1path.html">fc::path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#a77bb98b3d49362133fff779b6587facf">get_data_dir</a> () const</td></tr>
+<tr class="separator:a77bb98b3d49362133fff779b6587facf inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8fc93c417524922d380dd3ee95fc2b0 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplParams" colspan="2">template&lt;typename IndexType &gt; </td></tr>
+<tr class="memitem:ad8fc93c417524922d380dd3ee95fc2b0 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplItemLeft" align="right" valign="top">const IndexType &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#ad8fc93c417524922d380dd3ee95fc2b0">get_index_type</a> () const</td></tr>
+<tr class="separator:ad8fc93c417524922d380dd3ee95fc2b0 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace1d662d6cb889e6363468702b8639b2 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ace1d662d6cb889e6363468702b8639b2 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="classgraphene_1_1db_1_1index.html">index</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#ace1d662d6cb889e6363468702b8639b2">get_index</a> () const</td></tr>
+<tr class="separator:ace1d662d6cb889e6363468702b8639b2 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a622efe7a25196b0d226ad6b1e454b0ae inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgraphene_1_1db_1_1index.html">index</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#a622efe7a25196b0d226ad6b1e454b0ae">get_index</a> (uint8_t space_id, uint8_t type_id) const</td></tr>
+<tr class="separator:a622efe7a25196b0d226ad6b1e454b0ae inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a7db72c76d7ac2230e2659ca4c7231 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgraphene_1_1db_1_1index.html">index</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#ad4a7db72c76d7ac2230e2659ca4c7231">get_index</a> (<a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a> id) const</td></tr>
+<tr class="separator:ad4a7db72c76d7ac2230e2659ca4c7231 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab417fee5b66b97908a142864d582c671 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#ab417fee5b66b97908a142864d582c671">insert</a> (<a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;&amp;obj)</td></tr>
+<tr class="separator:ab417fee5b66b97908a142864d582c671 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a991969449bef27210b5308f689871d25 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#a991969449bef27210b5308f689871d25">remove</a> (const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj)</td></tr>
+<tr class="separator:a991969449bef27210b5308f689871d25 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88949a42022fae3668dabba8b1cccd40 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Lambda &gt; </td></tr>
+<tr class="memitem:a88949a42022fae3668dabba8b1cccd40 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#a88949a42022fae3668dabba8b1cccd40">modify</a> (const T &amp;obj, const Lambda &amp;m)</td></tr>
+<tr class="separator:a88949a42022fae3668dabba8b1cccd40 inherit pub_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a3e6934dcd3926a0064ef136afc242c33"><td class="memItemLeft" align="right" valign="top">fc::signal&lt; void(const <a class="el" href="classgraphene_1_1protocol_1_1signed__block.html">signed_block</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a3e6934dcd3926a0064ef136afc242c33">applied_block</a></td></tr>
+<tr class="memitem:a3e6934dcd3926a0064ef136afc242c33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefc.html#a6c2f257e2f2f1a64dbdfe8b7b5e0f411">fc::signal</a>&lt; void(const <a class="el" href="classgraphene_1_1protocol_1_1signed__block.html">signed_block</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a3e6934dcd3926a0064ef136afc242c33">applied_block</a></td></tr>
 <tr class="separator:a3e6934dcd3926a0064ef136afc242c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0747f461aea199b260777d4b1975013d"><td class="memItemLeft" align="right" valign="top">fc::signal&lt; void(const <a class="el" href="classgraphene_1_1protocol_1_1signed__transaction.html">signed_transaction</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a0747f461aea199b260777d4b1975013d">on_pending_transaction</a></td></tr>
+<tr class="memitem:a0747f461aea199b260777d4b1975013d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefc.html#a6c2f257e2f2f1a64dbdfe8b7b5e0f411">fc::signal</a>&lt; void(const <a class="el" href="classgraphene_1_1protocol_1_1signed__transaction.html">signed_transaction</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a0747f461aea199b260777d4b1975013d">on_pending_transaction</a></td></tr>
 <tr class="separator:a0747f461aea199b260777d4b1975013d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11eac7e673b4a9bb4458282b3b01e21f"><td class="memItemLeft" align="right" valign="top">fc::signal&lt; void(const vector&lt; <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a> &gt; &amp;, const flat_set&lt; account_id_type &gt; &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a11eac7e673b4a9bb4458282b3b01e21f">new_objects</a></td></tr>
+<tr class="memitem:a11eac7e673b4a9bb4458282b3b01e21f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefc.html#a6c2f257e2f2f1a64dbdfe8b7b5e0f411">fc::signal</a>&lt; void(const vector&lt; <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a> &gt; &amp;, const flat_set&lt; account_id_type &gt; &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a11eac7e673b4a9bb4458282b3b01e21f">new_objects</a></td></tr>
 <tr class="separator:a11eac7e673b4a9bb4458282b3b01e21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89c462c2ed0224b34cd6b6b06985d046"><td class="memItemLeft" align="right" valign="top">fc::signal&lt; void(const vector&lt; <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a> &gt; &amp;, const flat_set&lt; account_id_type &gt; &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a89c462c2ed0224b34cd6b6b06985d046">changed_objects</a></td></tr>
+<tr class="memitem:a89c462c2ed0224b34cd6b6b06985d046"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefc.html#a6c2f257e2f2f1a64dbdfe8b7b5e0f411">fc::signal</a>&lt; void(const vector&lt; <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a> &gt; &amp;, const flat_set&lt; account_id_type &gt; &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a89c462c2ed0224b34cd6b6b06985d046">changed_objects</a></td></tr>
 <tr class="separator:a89c462c2ed0224b34cd6b6b06985d046"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9aa30b505cfa4e5cdc9a0b354d49e89e"><td class="memItemLeft" align="right" valign="top">fc::signal&lt; void(const vector&lt; <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a> &gt; &amp;, const vector&lt; const object * &gt; &amp;, const flat_set&lt; account_id_type &gt; &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a9aa30b505cfa4e5cdc9a0b354d49e89e">removed_objects</a></td></tr>
+<tr class="memitem:a9aa30b505cfa4e5cdc9a0b354d49e89e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefc.html#a6c2f257e2f2f1a64dbdfe8b7b5e0f411">fc::signal</a>&lt; void(const vector&lt; <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a> &gt; &amp;, const vector&lt; const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> * &gt; &amp;, const flat_set&lt; account_id_type &gt; &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a9aa30b505cfa4e5cdc9a0b354d49e89e">removed_objects</a></td></tr>
 <tr class="separator:a9aa30b505cfa4e5cdc9a0b354d49e89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classgraphene_1_1db_1_1object__database"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classgraphene_1_1db_1_1object__database')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classgraphene_1_1db_1_1object__database.html">graphene::db::object_database</a></td></tr>
+<tr class="memitem:a4fc57af0f2725f5a33631c05a1b62b37 inherit pub_attribs_classgraphene_1_1db_1_1object__database"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1db_1_1undo__database.html">undo_database</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#a4fc57af0f2725f5a33631c05a1b62b37">_undo_db</a></td></tr>
+<tr class="separator:a4fc57af0f2725f5a33631c05a1b62b37 inherit pub_attribs_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -329,10 +394,31 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a9b827a50067542ef8c1ea9f2e6177f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3f480762bbb94cfecf98dd81fe3ed6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#ae3f480762bbb94cfecf98dd81fe3ed6e">notify_changed_objects</a> ()</td></tr>
 <tr class="separator:ae3f480762bbb94cfecf98dd81fe3ed6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classgraphene_1_1db_1_1object__database"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classgraphene_1_1db_1_1object__database')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classgraphene_1_1db_1_1object__database.html">graphene::db::object_database</a></td></tr>
+<tr class="memitem:a3ca684af9f341d319209b8c1163eb1d5 inherit pro_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplParams" colspan="2">template&lt;typename IndexType &gt; </td></tr>
+<tr class="memitem:a3ca684af9f341d319209b8c1163eb1d5 inherit pro_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplItemLeft" align="right" valign="top">IndexType &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#a3ca684af9f341d319209b8c1163eb1d5">get_mutable_index_type</a> ()</td></tr>
+<tr class="separator:a3ca684af9f341d319209b8c1163eb1d5 inherit pro_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae74125300ed2da8d46e3c7436fbfc0d2 inherit pro_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae74125300ed2da8d46e3c7436fbfc0d2 inherit pro_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1db_1_1index.html">index</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#ae74125300ed2da8d46e3c7436fbfc0d2">get_mutable_index</a> ()</td></tr>
+<tr class="separator:ae74125300ed2da8d46e3c7436fbfc0d2 inherit pro_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af571bd5359590a3dc16de115c59d18a0 inherit pro_methods_classgraphene_1_1db_1_1object__database"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1db_1_1index.html">index</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#af571bd5359590a3dc16de115c59d18a0">get_mutable_index</a> (<a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a> id)</td></tr>
+<tr class="separator:af571bd5359590a3dc16de115c59d18a0 inherit pro_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ec111d856befc5bcec11d0d76eefd7f inherit pro_methods_classgraphene_1_1db_1_1object__database"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1db_1_1index.html">index</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#a6ec111d856befc5bcec11d0d76eefd7f">get_mutable_index</a> (uint8_t space_id, uint8_t type_id)</td></tr>
+<tr class="separator:a6ec111d856befc5bcec11d0d76eefd7f inherit pro_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c5fdb41f8fff0fa1aecc3c7778bf28c"><td class="memItemLeft" align="right" valign="top">std::deque&lt; <a class="el" href="classgraphene_1_1protocol_1_1precomputable__transaction.html">precomputable_transaction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a6c5fdb41f8fff0fa1aecc3c7778bf28c">_popped_tx</a></td></tr>
 <tr class="separator:a6c5fdb41f8fff0fa1aecc3c7778bf28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a414ee96a9f64b119cd3849266885d93d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1protocol_1_1processed__transaction.html">processed_transaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a414ee96a9f64b119cd3849266885d93d">validate_transaction</a> (const <a class="el" href="classgraphene_1_1protocol_1_1signed__transaction.html">signed_transaction</a> &amp;trx)</td></tr>
 <tr class="separator:a414ee96a9f64b119cd3849266885d93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classgraphene_1_1db_1_1object__database"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classgraphene_1_1db_1_1object__database')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classgraphene_1_1db_1_1object__database.html">graphene::db::object_database</a></td></tr>
+<tr class="memitem:aa17265d1f5b4b8e8d669543a00b2d5a7 inherit pub_static_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa17265d1f5b4b8e8d669543a00b2d5a7 inherit pub_static_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplItemLeft" align="right" valign="top">static const T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#aa17265d1f5b4b8e8d669543a00b2d5a7">cast</a> (const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj)</td></tr>
+<tr class="separator:aa17265d1f5b4b8e8d669543a00b2d5a7 inherit pub_static_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a690bd73898c375cc17a024af631a35b2 inherit pub_static_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a690bd73898c375cc17a024af631a35b2 inherit pub_static_methods_classgraphene_1_1db_1_1object__database"><td class="memTemplItemLeft" align="right" valign="top">static T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#a690bd73898c375cc17a024af631a35b2">cast</a> (<a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj)</td></tr>
+<tr class="separator:a690bd73898c375cc17a024af631a35b2 inherit pub_static_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>tracks the blockchain state in an extensible manner </p>
@@ -425,7 +511,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classgraphene_1_1protocol_1_1signed__block.html">signed_block</a> graphene::chain::database::_generate_block </td>
           <td>(</td>
-          <td class="paramtype">const fc::time_point_sec&#160;</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1time__point__sec.html">fc::time_point_sec</a>&#160;</td>
           <td class="paramname"><em>when</em>, </td>
         </tr>
         <tr>
@@ -437,7 +523,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const fc::ecc::private_key &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1ecc_1_1private__key.html">fc::ecc::private_key</a> &amp;&#160;</td>
           <td class="paramname"><em>block_signing_private_key</em>&#160;</td>
         </tr>
         <tr>
@@ -508,7 +594,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="db__block_8cpp_source.html#l00749">749</a> of file <a class="el" href="db__block_8cpp_source.html">db_block.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__block_8cpp_source.html#l00754">754</a> of file <a class="el" href="db__block_8cpp_source.html">db_block.cpp</a>.</p>
 
 </div>
 </div>
@@ -626,7 +712,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="db__block_8cpp_source.html#l00704">704</a> of file <a class="el" href="db__block_8cpp_source.html">db_block.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__block_8cpp_source.html#l00709">709</a> of file <a class="el" href="db__block_8cpp_source.html">db_block.cpp</a>.</p>
 
 </div>
 </div>
@@ -656,7 +742,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00394">394</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00396">396</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
 
 </div>
 </div>
@@ -696,7 +782,7 @@ Protected Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if order was completely filled; false otherwise</dd></dl>
 <p>This function takes a new limit order, and runs the markets attempting to match it with existing orders already on the books. </p>
 
-<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00343">343</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00345">345</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
 
 </div>
 </div>
@@ -745,7 +831,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="db__block_8cpp_source.html#l00755">755</a> of file <a class="el" href="db__block_8cpp_source.html">db_block.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__block_8cpp_source.html#l00760">760</a> of file <a class="el" href="db__block_8cpp_source.html">db_block.cpp</a>.</p>
 
 </div>
 </div>
@@ -775,7 +861,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l01189">1189</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l01191">1191</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
 
 </div>
 </div>
@@ -805,7 +891,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00161">161</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00163">163</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
 
 </div>
 </div>
@@ -841,7 +927,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00221">221</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00223">223</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
 
 </div>
 </div>
@@ -871,7 +957,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00206">206</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00208">208</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
 
 </div>
 </div>
@@ -925,7 +1011,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if a margin call was executed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00971">971</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00973">973</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
 
 </div>
 </div>
@@ -964,7 +1050,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="db__management_8cpp_source.html#l00228">228</a> of file <a class="el" href="db__management_8cpp_source.html">db_management.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__management_8cpp_source.html#l00227">227</a> of file <a class="el" href="db__management_8cpp_source.html">db_management.cpp</a>.</p>
 
 </div>
 </div>
@@ -1016,7 +1102,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void graphene::chain::database::debug_update </td>
           <td>(</td>
-          <td class="paramtype">const fc::variant_object &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1variant__object.html">fc::variant_object</a> &amp;&#160;</td>
           <td class="paramname"><em>update</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1070,9 +1156,9 @@ Protected Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">optional&lt; vesting_balance_id_type &gt; graphene::chain::database::deposit_lazy_vesting </td>
+          <td class="memname"><a class="el" href="classfc_1_1optional.html">optional</a>&lt; vesting_balance_id_type &gt; graphene::chain::database::deposit_lazy_vesting </td>
           <td>(</td>
-          <td class="paramtype">const optional&lt; vesting_balance_id_type &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1optional.html">optional</a>&lt; vesting_balance_id_type &gt; &amp;&#160;</td>
           <td class="paramname"><em>ovbid</em>, </td>
         </tr>
         <tr>
@@ -1250,7 +1336,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00176">176</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00178">178</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
 
 </div>
 </div>
@@ -1261,7 +1347,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">optional&lt; <a class="el" href="classgraphene_1_1protocol_1_1signed__block.html">signed_block</a> &gt; graphene::chain::database::fetch_block_by_id </td>
+          <td class="memname"><a class="el" href="classfc_1_1optional.html">optional</a>&lt; <a class="el" href="classgraphene_1_1protocol_1_1signed__block.html">signed_block</a> &gt; graphene::chain::database::fetch_block_by_id </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacegraphene_1_1protocol.html#a32e784a8edceba5506db2c130ed9cb9c">block_id_type</a> &amp;&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -1281,7 +1367,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">optional&lt; <a class="el" href="classgraphene_1_1protocol_1_1signed__block.html">signed_block</a> &gt; graphene::chain::database::fetch_block_by_number </td>
+          <td class="memname"><a class="el" href="classfc_1_1optional.html">optional</a>&lt; <a class="el" href="classgraphene_1_1protocol_1_1signed__block.html">signed_block</a> &gt; graphene::chain::database::fetch_block_by_number </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>num</em></td><td>)</td>
@@ -1338,7 +1424,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00867">867</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00869">869</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
 
 </div>
 </div>
@@ -1393,7 +1479,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true if the order was completely filled and thus freed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00811">811</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00813">813</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
 
 </div>
 </div>
@@ -1441,7 +1527,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00930">930</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00932">932</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
 
 </div>
 </div>
@@ -1454,7 +1540,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classgraphene_1_1protocol_1_1signed__block.html">signed_block</a> graphene::chain::database::generate_block </td>
           <td>(</td>
-          <td class="paramtype">const fc::time_point_sec&#160;</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1time__point__sec.html">fc::time_point_sec</a>&#160;</td>
           <td class="paramname"><em>when</em>, </td>
         </tr>
         <tr>
@@ -1466,7 +1552,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const fc::ecc::private_key &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1ecc_1_1private__key.html">fc::ecc::private_key</a> &amp;&#160;</td>
           <td class="paramname"><em>block_signing_private_key</em>, </td>
         </tr>
         <tr>
@@ -1514,7 +1600,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const vector&lt; optional&lt; <a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html">operation_history_object</a> &gt; &gt; &amp; graphene::chain::database::get_applied_operations </td>
+          <td class="memname">const vector&lt; <a class="el" href="classfc_1_1optional.html">optional</a>&lt; <a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html">operation_history_object</a> &gt; &gt; &amp; graphene::chain::database::get_applied_operations </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1880,7 +1966,7 @@ Protected Member Functions</h2></td></tr>
 <p>Use the <a class="el" href="classgraphene_1_1chain_1_1database.html#a7a40590812847fac95aaded9dcac020e">get_slot_time()</a> and <a class="el" href="classgraphene_1_1chain_1_1database.html#a9f6a3131085a7411a46db17a818fd1ca">get_slot_at_time()</a> functions to convert between slot_num and timestamp.</p>
 <p>Passing slot_num == 0 returns GRAPHENE_NULL_WITNESS </p>
 
-<p class="definition">Definition at line <a class="el" href="db__witness__schedule_8cpp_source.html#l00034">34</a> of file <a class="el" href="db__witness__schedule_8cpp_source.html">db_witness_schedule.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__witness__schedule_8cpp_source.html#l00036">36</a> of file <a class="el" href="db__witness__schedule_8cpp_source.html">db_witness_schedule.cpp</a>.</p>
 
 </div>
 </div>
@@ -1893,7 +1979,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">uint32_t graphene::chain::database::get_slot_at_time </td>
           <td>(</td>
-          <td class="paramtype">fc::time_point_sec&#160;</td>
+          <td class="paramtype"><a class="el" href="classfc_1_1time__point__sec.html">fc::time_point_sec</a>&#160;</td>
           <td class="paramname"><em>when</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1903,7 +1989,7 @@ Protected Member Functions</h2></td></tr>
 <p>The return value is the greatest value N such that get_slot_time( N ) &lt;= when.</p>
 <p>If no such N exists, return 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="db__witness__schedule_8cpp_source.html#l00072">72</a> of file <a class="el" href="db__witness__schedule_8cpp_source.html">db_witness_schedule.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__witness__schedule_8cpp_source.html#l00074">74</a> of file <a class="el" href="db__witness__schedule_8cpp_source.html">db_witness_schedule.cpp</a>.</p>
 
 </div>
 </div>
@@ -1914,7 +2000,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">fc::time_point_sec graphene::chain::database::get_slot_time </td>
+          <td class="memname"><a class="el" href="classfc_1_1time__point__sec.html">fc::time_point_sec</a> graphene::chain::database::get_slot_time </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>slot_num</em></td><td>)</td>
@@ -1926,7 +2012,7 @@ Protected Member Functions</h2></td></tr>
 <p>If slot_num == 0, return time_point_sec().</p>
 <p>If slot_num == N for N &gt; 0, return the Nth next block-interval-aligned time greater than <a class="el" href="classgraphene_1_1chain_1_1database.html#aa53e34701c0ab1b1c124b9c9e9c50ba1">head_block_time()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="db__witness__schedule_8cpp_source.html#l00042">42</a> of file <a class="el" href="db__witness__schedule_8cpp_source.html">db_witness_schedule.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__witness__schedule_8cpp_source.html#l00044">44</a> of file <a class="el" href="db__witness__schedule_8cpp_source.html">db_witness_schedule.cpp</a>.</p>
 
 </div>
 </div>
@@ -1979,7 +2065,7 @@ Protected Member Functions</h2></td></tr>
 <p>All margin positions are force closed at the swan price Collateral received goes into a force-settlement fund No new margin positions can be created for this asset Force settlement happens without delay at the swan price, deducting from force-settlement fund No more asset updates may be issued. </p>
 <p>After all margin positions are closed, the current supply will be reported as 0, but that is a lie, the supply didn't change. We need to capture the current supply before filling all call orders and then restore it afterward. Then in the force settlement evaluator reduce the supply </p>
 
-<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00055">55</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00057">57</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
 
 </div>
 </div>
@@ -2028,7 +2114,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">time_point_sec graphene::chain::database::head_block_time </td>
+          <td class="memname"><a class="el" href="classfc_1_1time__point__sec.html">time_point_sec</a> graphene::chain::database::head_block_time </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -2073,7 +2159,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="db__init_8cpp_source.html#l00233">233</a> of file <a class="el" href="db__init_8cpp_source.html">db_init.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__init_8cpp_source.html#l00232">232</a> of file <a class="el" href="db__init_8cpp_source.html">db_init.cpp</a>.</p>
 
 </div>
 </div>
@@ -2092,7 +2178,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="db__init_8cpp_source.html#l00132">132</a> of file <a class="el" href="db__init_8cpp_source.html">db_init.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__init_8cpp_source.html#l00131">131</a> of file <a class="el" href="db__init_8cpp_source.html">db_init.cpp</a>.</p>
 
 </div>
 </div>
@@ -2113,7 +2199,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reset the object graph in-memory. </p>
 
-<p class="definition">Definition at line <a class="el" href="db__init_8cpp_source.html#l00184">184</a> of file <a class="el" href="db__init_8cpp_source.html">db_init.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__init_8cpp_source.html#l00183">183</a> of file <a class="el" href="db__init_8cpp_source.html">db_init.cpp</a>.</p>
 
 </div>
 </div>
@@ -2213,7 +2299,7 @@ Protected Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>a bit field indicating which orders were filled (and thus removed)</dd></dl>
 <p>0 - no orders were matched 1 - taker was filled 2 - maker was filled 3 - both were filled </p>
 
-<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00564">564</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00566">566</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
 
 </div>
 </div>
@@ -2267,7 +2353,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00631">631</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00633">633</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
 
 </div>
 </div>
@@ -2317,7 +2403,7 @@ Protected Member Functions</h2></td></tr>
 <p>Matches the two orders, the first parameter is taker, the second is maker. </p><dl class="section return"><dt>Returns</dt><dd>the amount of asset settled </dd></dl>
 <p>If the least collateralized call position lacks sufficient collateral to cover at the match price then this indicates a black swan event according to the price feed, but only the market can trigger a black swan. So now we must cancel the forced settlement object.</p>
 
-<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00705">705</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00707">707</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
 
 </div>
 </div>
@@ -2432,7 +2518,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void graphene::chain::database::open </td>
           <td>(</td>
-          <td class="paramtype">const fc::path &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1path.html">fc::path</a> &amp;&#160;</td>
           <td class="paramname"><em>data_dir</em>, </td>
         </tr>
         <tr>
@@ -2467,7 +2553,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="db__management_8cpp_source.html#l00174">174</a> of file <a class="el" href="db__management_8cpp_source.html">db_management.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__management_8cpp_source.html#l00173">173</a> of file <a class="el" href="db__management_8cpp_source.html">db_management.cpp</a>.</p>
 
 </div>
 </div>
@@ -2497,7 +2583,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l01207">1207</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l01209">1209</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
 
 </div>
 </div>
@@ -2533,7 +2619,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l01225">1225</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l01227">1227</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
 
 </div>
 </div>
@@ -2569,7 +2655,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l01177">1177</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l01179">1179</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
 
 </div>
 </div>
@@ -2627,7 +2713,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">fc::future&lt; void &gt; graphene::chain::database::precompute_parallel </td>
+          <td class="memname"><a class="el" href="classfc_1_1future.html">fc::future</a>&lt; void &gt; graphene::chain::database::precompute_parallel </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classgraphene_1_1protocol_1_1signed__block.html">signed_block</a> &amp;&#160;</td>
           <td class="paramname"><em>block</em>, </td>
@@ -2655,7 +2741,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a future that will resolve to the input block with precomputations applied </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="db__block_8cpp_source.html#l00779">779</a> of file <a class="el" href="db__block_8cpp_source.html">db_block.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__block_8cpp_source.html#l00784">784</a> of file <a class="el" href="db__block_8cpp_source.html">db_block.cpp</a>.</p>
 
 </div>
 </div>
@@ -2666,7 +2752,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">fc::future&lt; void &gt; graphene::chain::database::precompute_parallel </td>
+          <td class="memname"><a class="el" href="classfc_1_1future.html">fc::future</a>&lt; void &gt; graphene::chain::database::precompute_parallel </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classgraphene_1_1protocol_1_1precomputable__transaction.html">precomputable_transaction</a> &amp;&#160;</td>
           <td class="paramname"><em>trx</em></td><td>)</td>
@@ -2683,7 +2769,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a future that will resolve to the input transaction with precomputations applied </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="db__block_8cpp_source.html#l00816">816</a> of file <a class="el" href="db__block_8cpp_source.html">db_block.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__block_8cpp_source.html#l00821">821</a> of file <a class="el" href="db__block_8cpp_source.html">db_block.cpp</a>.</p>
 
 </div>
 </div>
@@ -2758,7 +2844,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">fc::exception</td><td>if the proposed transaction fails to apply. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classfc_1_1exception.html" title="Used to generate a useful error report when an exception is thrown.At each level in the stack where t...">fc::exception</a></td><td>if the proposed transaction fails to apply. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2837,7 +2923,7 @@ template&lt;typename EvaluatorType &gt; </div>
         <tr>
           <td class="memname">void graphene::chain::database::reindex </td>
           <td>(</td>
-          <td class="paramtype">fc::path&#160;</td>
+          <td class="paramtype"><a class="el" href="classfc_1_1path.html">fc::path</a>&#160;</td>
           <td class="paramname"><em>data_dir</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2867,7 +2953,7 @@ template&lt;typename EvaluatorType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00112">112</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__market_8cpp_source.html#l00114">114</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
 
 </div>
 </div>
@@ -2937,7 +3023,7 @@ template&lt;typename EvaluatorType &gt; </div>
 </div><div class="memdoc">
 <p>High performance random generator <a href="http://xorshift.di.unimi.it/">http://xorshift.di.unimi.it/</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="db__witness__schedule_8cpp_source.html#l00102">102</a> of file <a class="el" href="db__witness__schedule_8cpp_source.html">db_witness_schedule.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__witness__schedule_8cpp_source.html#l00104">104</a> of file <a class="el" href="db__witness__schedule_8cpp_source.html">db_witness_schedule.cpp</a>.</p>
 
 </div>
 </div>
@@ -2971,7 +3057,7 @@ template&lt;typename EvaluatorType &gt; </div>
         <tr>
           <td class="memname">void graphene::chain::database::wipe </td>
           <td>(</td>
-          <td class="paramtype">const fc::path &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1path.html">fc::path</a> &amp;&#160;</td>
           <td class="paramname"><em>data_dir</em>, </td>
         </tr>
         <tr>
@@ -2997,7 +3083,7 @@ template&lt;typename EvaluatorType &gt; </div>
 </dl>
 <p>Will close the database before wiping. Database will be closed when this function returns. </p>
 
-<p class="definition">Definition at line <a class="el" href="db__management_8cpp_source.html#l00163">163</a> of file <a class="el" href="db__management_8cpp_source.html">db_management.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__management_8cpp_source.html#l00162">162</a> of file <a class="el" href="db__management_8cpp_source.html">db_management.cpp</a>.</p>
 
 </div>
 </div>
@@ -3017,7 +3103,7 @@ template&lt;typename EvaluatorType &gt; </div>
 </div><div class="memdoc">
 <p>Calculate the percent of block production slots that were missed in the past 128 blocks, not including the current block. </p>
 
-<p class="definition">Definition at line <a class="el" href="db__witness__schedule_8cpp_source.html#l00096">96</a> of file <a class="el" href="db__witness__schedule_8cpp_source.html">db_witness_schedule.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="db__witness__schedule_8cpp_source.html#l00098">98</a> of file <a class="el" href="db__witness__schedule_8cpp_source.html">db_witness_schedule.cpp</a>.</p>
 
 </div>
 </div>
@@ -3046,7 +3132,7 @@ template&lt;typename EvaluatorType &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">fc::signal&lt;void(const <a class="el" href="classgraphene_1_1protocol_1_1signed__block.html">signed_block</a>&amp;)&gt; graphene::chain::database::applied_block</td>
+          <td class="memname"><a class="el" href="namespacefc.html#a6c2f257e2f2f1a64dbdfe8b7b5e0f411">fc::signal</a>&lt;void(const <a class="el" href="classgraphene_1_1protocol_1_1signed__block.html">signed_block</a>&amp;)&gt; graphene::chain::database::applied_block</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3064,7 +3150,7 @@ template&lt;typename EvaluatorType &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">fc::signal&lt;void(const vector&lt;<a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>&gt;&amp;, const flat_set&lt;account_id_type&gt;&amp;)&gt; graphene::chain::database::changed_objects</td>
+          <td class="memname"><a class="el" href="namespacefc.html#a6c2f257e2f2f1a64dbdfe8b7b5e0f411">fc::signal</a>&lt;void(const vector&lt;<a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>&gt;&amp;, const flat_set&lt;account_id_type&gt;&amp;)&gt; graphene::chain::database::changed_objects</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3081,7 +3167,7 @@ template&lt;typename EvaluatorType &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">fc::signal&lt;void(const vector&lt;<a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>&gt;&amp;, const flat_set&lt;account_id_type&gt;&amp;)&gt; graphene::chain::database::new_objects</td>
+          <td class="memname"><a class="el" href="namespacefc.html#a6c2f257e2f2f1a64dbdfe8b7b5e0f411">fc::signal</a>&lt;void(const vector&lt;<a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>&gt;&amp;, const flat_set&lt;account_id_type&gt;&amp;)&gt; graphene::chain::database::new_objects</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3098,7 +3184,7 @@ template&lt;typename EvaluatorType &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">fc::signal&lt;void(const <a class="el" href="classgraphene_1_1protocol_1_1signed__transaction.html">signed_transaction</a>&amp;)&gt; graphene::chain::database::on_pending_transaction</td>
+          <td class="memname"><a class="el" href="namespacefc.html#a6c2f257e2f2f1a64dbdfe8b7b5e0f411">fc::signal</a>&lt;void(const <a class="el" href="classgraphene_1_1protocol_1_1signed__transaction.html">signed_transaction</a>&amp;)&gt; graphene::chain::database::on_pending_transaction</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3115,7 +3201,7 @@ template&lt;typename EvaluatorType &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">fc::signal&lt;void(const vector&lt;<a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>&gt;&amp;, const vector&lt;const object*&gt;&amp;, const flat_set&lt;account_id_type&gt;&amp;)&gt; graphene::chain::database::removed_objects</td>
+          <td class="memname"><a class="el" href="namespacefc.html#a6c2f257e2f2f1a64dbdfe8b7b5e0f411">fc::signal</a>&lt;void(const vector&lt;<a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>&gt;&amp;, const vector&lt;const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>*&gt;&amp;, const flat_set&lt;account_id_type&gt;&amp;)&gt; graphene::chain::database::removed_objects</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3142,7 +3228,7 @@ template&lt;typename EvaluatorType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 3 2019 18:33:17 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

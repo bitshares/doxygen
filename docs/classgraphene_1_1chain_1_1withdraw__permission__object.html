@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -84,13 +84,30 @@ Inheritance diagram for graphene::chain::withdraw_permission_object:</div>
  <div class="center">
   <img src="classgraphene_1_1chain_1_1withdraw__permission__object.png" usemap="#graphene::chain::withdraw_5Fpermission_5Fobject_map" alt=""/>
   <map id="graphene::chain::withdraw_5Fpermission_5Fobject_map" name="graphene::chain::withdraw_5Fpermission_5Fobject_map">
+<area href="classgraphene_1_1db_1_1abstract__object.html" alt="graphene::db::abstract_object&lt; withdraw_permission_object &gt;" shape="rect" coords="0,56,360,80"/>
+<area href="classgraphene_1_1db_1_1object.html" title="base for all database objects " alt="graphene::db::object" shape="rect" coords="0,0,360,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa70296c7cc6e7acf0d6f3b7dbe299081"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1withdraw__permission__object.html#aa70296c7cc6e7acf0d6f3b7dbe299081">available_this_period</a> (fc::time_point_sec current_time) const</td></tr>
+<tr class="memitem:aa70296c7cc6e7acf0d6f3b7dbe299081"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1withdraw__permission__object.html#aa70296c7cc6e7acf0d6f3b7dbe299081">available_this_period</a> (<a class="el" href="classfc_1_1time__point__sec.html">fc::time_point_sec</a> current_time) const</td></tr>
 <tr class="separator:aa70296c7cc6e7acf0d6f3b7dbe299081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classgraphene_1_1db_1_1abstract__object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgraphene_1_1db_1_1abstract__object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classgraphene_1_1db_1_1abstract__object.html">graphene::db::abstract_object&lt; withdraw_permission_object &gt;</a></td></tr>
+<tr class="memitem:a189144fd7eef0317898bc83b30b143c6 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memItemLeft" align="right" valign="top">virtual unique_ptr&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html#a189144fd7eef0317898bc83b30b143c6">clone</a> () const</td></tr>
+<tr class="memdesc:a189144fd7eef0317898bc83b30b143c6 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">these methods are implemented for derived classes by inheriting abstract_object&lt;DerivedClass&gt;  <a href="classgraphene_1_1db_1_1abstract__object.html#a189144fd7eef0317898bc83b30b143c6">More...</a><br /></td></tr>
+<tr class="separator:a189144fd7eef0317898bc83b30b143c6 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7329292e8fa9035cf2596d72c4868b5 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html#ad7329292e8fa9035cf2596d72c4868b5">move_from</a> (<a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj)</td></tr>
+<tr class="separator:ad7329292e8fa9035cf2596d72c4868b5 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f0f2e9eb0399057ff3334bf328b5007 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfc_1_1variant.html">variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html#a6f0f2e9eb0399057ff3334bf328b5007">to_variant</a> () const</td></tr>
+<tr class="separator:a6f0f2e9eb0399057ff3334bf328b5007 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a792a9c05cfe1cf7628cb6f8c4a65b0f7 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memItemLeft" align="right" valign="top">virtual vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html#a792a9c05cfe1cf7628cb6f8c4a65b0f7">pack</a> () const</td></tr>
+<tr class="separator:a792a9c05cfe1cf7628cb6f8c4a65b0f7 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classgraphene_1_1db_1_1object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgraphene_1_1db_1_1object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classgraphene_1_1db_1_1object.html">graphene::db::object</a></td></tr>
+<tr class="memitem:a64864992a46d9d52836afe1a52a2e394 inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#a64864992a46d9d52836afe1a52a2e394">object</a> ()</td></tr>
+<tr class="separator:a64864992a46d9d52836afe1a52a2e394 inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac457a859418c22014c07a3bcdc67ed04 inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#ac457a859418c22014c07a3bcdc67ed04">~object</a> ()</td></tr>
+<tr class="separator:ac457a859418c22014c07a3bcdc67ed04 inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -106,13 +123,16 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:aeae2111853fb00e6b1e977fbea3f964b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1withdraw__permission__object.html#aeae2111853fb00e6b1e977fbea3f964b">withdrawal_period_sec</a> = 0</td></tr>
 <tr class="memdesc:aeae2111853fb00e6b1e977fbea3f964b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The duration of a withdrawal period in seconds.  <a href="#aeae2111853fb00e6b1e977fbea3f964b">More...</a><br /></td></tr>
 <tr class="separator:aeae2111853fb00e6b1e977fbea3f964b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedb247706c383a90c0122a25a0d54930"><td class="memItemLeft" align="right" valign="top">time_point_sec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1withdraw__permission__object.html#aedb247706c383a90c0122a25a0d54930">period_start_time</a></td></tr>
+<tr class="memitem:aedb247706c383a90c0122a25a0d54930"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1time__point__sec.html">time_point_sec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1withdraw__permission__object.html#aedb247706c383a90c0122a25a0d54930">period_start_time</a></td></tr>
 <tr class="separator:aedb247706c383a90c0122a25a0d54930"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee496512e5274d67e09bb0071c001a82"><td class="memItemLeft" align="right" valign="top">time_point_sec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1withdraw__permission__object.html#aee496512e5274d67e09bb0071c001a82">expiration</a></td></tr>
+<tr class="memitem:aee496512e5274d67e09bb0071c001a82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1time__point__sec.html">time_point_sec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1withdraw__permission__object.html#aee496512e5274d67e09bb0071c001a82">expiration</a></td></tr>
 <tr class="memdesc:aee496512e5274d67e09bb0071c001a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time at which this withdraw permission expires.  <a href="#aee496512e5274d67e09bb0071c001a82">More...</a><br /></td></tr>
 <tr class="separator:aee496512e5274d67e09bb0071c001a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3e615c1854f48684c2988c1b0ad2971"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1protocol.html#a69b2104c1c11eed2d17bd29b86713347">share_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1withdraw__permission__object.html#ab3e615c1854f48684c2988c1b0ad2971">claimed_this_period</a></td></tr>
 <tr class="separator:ab3e615c1854f48684c2988c1b0ad2971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classgraphene_1_1db_1_1object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classgraphene_1_1db_1_1object')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classgraphene_1_1db_1_1object.html">graphene::db::object</a></td></tr>
+<tr class="memitem:a2ce812569d565a45dda1420cfbdf79ad inherit pub_attribs_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#a2ce812569d565a45dda1420cfbdf79ad">id</a></td></tr>
+<tr class="separator:a2ce812569d565a45dda1420cfbdf79ad inherit pub_attribs_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -120,6 +140,11 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a2b4088e9b2744187ebad20cd8ba12689"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06b8545d0e186dabd684beffaeafa838"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1withdraw__permission__object.html#a06b8545d0e186dabd684beffaeafa838">type_id</a> = withdraw_permission_object_type</td></tr>
 <tr class="separator:a06b8545d0e186dabd684beffaeafa838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classgraphene_1_1db_1_1object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classgraphene_1_1db_1_1object')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classgraphene_1_1db_1_1object.html">graphene::db::object</a></td></tr>
+<tr class="memitem:af4fa36c46acc14681746e93adbc812f8 inherit pub_static_attribs_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#af4fa36c46acc14681746e93adbc812f8">space_id</a> = 0</td></tr>
+<tr class="separator:af4fa36c46acc14681746e93adbc812f8 inherit pub_static_attribs_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4b608265ad59cb1acdff271b9aa2ac5 inherit pub_static_attribs_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#ac4b608265ad59cb1acdff271b9aa2ac5">type_id</a> = 0</td></tr>
+<tr class="separator:ac4b608265ad59cb1acdff271b9aa2ac5 inherit pub_static_attribs_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Grants another account authority to withdraw a limited amount of funds per interval. </p>
@@ -139,7 +164,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> graphene::chain::withdraw_permission_object::available_this_period </td>
           <td>(</td>
-          <td class="paramtype">fc::time_point_sec&#160;</td>
+          <td class="paramtype"><a class="el" href="classfc_1_1time__point__sec.html">fc::time_point_sec</a>&#160;</td>
           <td class="paramname"><em>current_time</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -197,7 +222,7 @@ Static Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">time_point_sec graphene::chain::withdraw_permission_object::expiration</td>
+          <td class="memname"><a class="el" href="classfc_1_1time__point__sec.html">time_point_sec</a> graphene::chain::withdraw_permission_object::expiration</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -215,7 +240,7 @@ Static Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">time_point_sec graphene::chain::withdraw_permission_object::period_start_time</td>
+          <td class="memname"><a class="el" href="classfc_1_1time__point__sec.html">time_point_sec</a> graphene::chain::withdraw_permission_object::period_start_time</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -333,7 +358,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 3 2019 18:33:17 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -63,29 +63,76 @@ $(function() {
 &#160;
 
 <h3><a id="index_o"></a>- o -</h3><ul>
+<li>object()
+: <a class="el" href="classgraphene_1_1db_1_1object.html#a64864992a46d9d52836afe1a52a2e394">graphene::db::object</a>
+</li>
+<li>object_database()
+: <a class="el" href="classgraphene_1_1db_1_1object__database.html#a63ad25dd455b179cafced627e8a43e88">graphene::db::object_database</a>
+</li>
+<li>object_default()
+: <a class="el" href="classgraphene_1_1db_1_1index.html#aefb954473263f0736d5ba394f5437ec1">graphene::db::index</a>
+, <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a444a7f0d30a921eec2bfc62959c3001a">graphene::db::primary_index&lt; DerivedIndex, DirectBits &gt;</a>
+</li>
+<li>object_from_variant()
+: <a class="el" href="classgraphene_1_1db_1_1index.html#aaebd5c0ba3eb4e6ca9d0a82061e61793">graphene::db::index</a>
+, <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a90f0474bc0996a94faa7f40213158a39">graphene::db::primary_index&lt; DerivedIndex, DirectBits &gt;</a>
+</li>
 <li>object_id()
-: <a class="el" href="structgraphene_1_1db_1_1object__id.html#a0400f4c7262bcc18db2540e772575688">graphene::db::object_id&lt; SpaceID, TypeID &gt;</a>
+: <a class="el" href="structgraphene_1_1db_1_1object__id.html#ad5943d0bd30b5d9f076512cd4e57c6b6">graphene::db::object_id&lt; SpaceID, TypeID &gt;</a>
 </li>
 <li>object_id_type()
 : <a class="el" href="structgraphene_1_1db_1_1object__id__type.html#ae1c4674d41267e86bcd2fee1c5099b62">graphene::db::object_id_type</a>
 </li>
 <li>object_inserted()
-: <a class="el" href="classgraphene_1_1chain_1_1account__member__index.html#a1fc6394bcaee29e672305a4b9cdcee57">graphene::chain::account_member_index</a>
+: <a class="el" href="classgraphene_1_1api__helper__indexes_1_1amount__in__collateral__index.html#accd80b6facd2c187c1e7085d0487aba5">graphene::api_helper_indexes::amount_in_collateral_index</a>
+, <a class="el" href="classgraphene_1_1chain_1_1account__member__index.html#a1fc6394bcaee29e672305a4b9cdcee57">graphene::chain::account_member_index</a>
 , <a class="el" href="classgraphene_1_1chain_1_1account__referrer__index.html#a353949d4ecd8b0456ae383c1f3d0be11">graphene::chain::account_referrer_index</a>
 , <a class="el" href="classgraphene_1_1chain_1_1balances__by__account__index.html#aa08b58598300b14cd728fbfd0288a5f1">graphene::chain::balances_by_account_index</a>
 , <a class="el" href="classgraphene_1_1chain_1_1required__approval__index.html#a279d0b55a651894574a62e49db0ac260">graphene::chain::required_approval_index</a>
+, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#ac466ffad3b02fa27c56f77ffbff3ca06">graphene::db::direct_index&lt; Object, chunkbits &gt;</a>
+, <a class="el" href="classgraphene_1_1db_1_1secondary__index.html#a1547c2ff1f51b54cc58fa35c458f0b88">graphene::db::secondary_index</a>
+, <a class="el" href="classgraphene_1_1grouped__orders_1_1detail_1_1limit__order__group__index.html#a949beb638ea2457e410104a89f3e6ea8">graphene::grouped_orders::detail::limit_order_group_index</a>
 </li>
 <li>object_modified()
-: <a class="el" href="classgraphene_1_1chain_1_1account__member__index.html#aa469fb8cc93d67ec3e8a25b814d54418">graphene::chain::account_member_index</a>
+: <a class="el" href="classgraphene_1_1api__helper__indexes_1_1amount__in__collateral__index.html#a609d8a7c8dbe592d9cf643e2a3227470">graphene::api_helper_indexes::amount_in_collateral_index</a>
+, <a class="el" href="classgraphene_1_1chain_1_1account__member__index.html#aa469fb8cc93d67ec3e8a25b814d54418">graphene::chain::account_member_index</a>
 , <a class="el" href="classgraphene_1_1chain_1_1account__referrer__index.html#a9708eb5c78b3163999d95e4d71353e54">graphene::chain::account_referrer_index</a>
 , <a class="el" href="classgraphene_1_1chain_1_1balances__by__account__index.html#ad1dc2668025ed93dac936a944c89d50d">graphene::chain::balances_by_account_index</a>
 , <a class="el" href="classgraphene_1_1chain_1_1required__approval__index.html#a9c17955bbff402db635689184caa222a">graphene::chain::required_approval_index</a>
+, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#a9525b515b23070ac0658a323e0935874">graphene::db::direct_index&lt; Object, chunkbits &gt;</a>
+, <a class="el" href="classgraphene_1_1db_1_1secondary__index.html#a3e21e2a429a0993b9c14052451c6d549">graphene::db::secondary_index</a>
+, <a class="el" href="classgraphene_1_1grouped__orders_1_1detail_1_1limit__order__group__index.html#ac0dfd223d4218feba4c8923604905e14">graphene::grouped_orders::detail::limit_order_group_index</a>
 </li>
 <li>object_removed()
-: <a class="el" href="classgraphene_1_1chain_1_1account__member__index.html#a289cbc24df1a0c582079c491cb6d795f">graphene::chain::account_member_index</a>
+: <a class="el" href="classgraphene_1_1api__helper__indexes_1_1amount__in__collateral__index.html#a8a4ababe9039e81893916a4b45c34296">graphene::api_helper_indexes::amount_in_collateral_index</a>
+, <a class="el" href="classgraphene_1_1chain_1_1account__member__index.html#a289cbc24df1a0c582079c491cb6d795f">graphene::chain::account_member_index</a>
 , <a class="el" href="classgraphene_1_1chain_1_1account__referrer__index.html#ad5305ac928521e9c969715e59609c30f">graphene::chain::account_referrer_index</a>
 , <a class="el" href="classgraphene_1_1chain_1_1balances__by__account__index.html#a11bea578dbc56c2dca72a6cafedbe366">graphene::chain::balances_by_account_index</a>
 , <a class="el" href="classgraphene_1_1chain_1_1required__approval__index.html#aedceac62ad3a5954c03e057ee25598e5">graphene::chain::required_approval_index</a>
+, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#a5d7f0a45d16f84e67cf47426e088b614">graphene::db::direct_index&lt; Object, chunkbits &gt;</a>
+, <a class="el" href="classgraphene_1_1db_1_1secondary__index.html#ab0fb2b00a61cf3c56525bc4c11307493">graphene::db::secondary_index</a>
+, <a class="el" href="classgraphene_1_1grouped__orders_1_1detail_1_1limit__order__group__index.html#afa8b7efb8cd16080daaec2093d6af1e2">graphene::grouped_orders::detail::limit_order_group_index</a>
+</li>
+<li>object_space_id()
+: <a class="el" href="classgraphene_1_1db_1_1index.html#a94bbe39fc8bba240fb1b6687036aa64a">graphene::db::index</a>
+, <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a5d878f7becdbb7b6d09ca5ca5fabf178">graphene::db::primary_index&lt; DerivedIndex, DirectBits &gt;</a>
+</li>
+<li>object_type_id()
+: <a class="el" href="classgraphene_1_1db_1_1index.html#a8f4f84338efa7f8eac43c8df3c456634">graphene::db::index</a>
+, <a class="el" href="classgraphene_1_1db_1_1primary__index.html#afa6b9266cab104eb60f6491a92f70c12">graphene::db::primary_index&lt; DerivedIndex, DirectBits &gt;</a>
+</li>
+<li>ofstream()
+: <a class="el" href="classfc_1_1ofstream.html#aba5851c564ed150f83aa464ba68ae95e">fc::ofstream</a>
+</li>
+<li>on_add()
+: <a class="el" href="classgraphene_1_1db_1_1base__primary__index.html#a66192343c484ac5d4365a3b562bc99c2">graphene::db::base_primary_index</a>
+, <a class="el" href="classgraphene_1_1db_1_1index__observer.html#a86867e0936ff246a3deb30ddaee52164">graphene::db::index_observer</a>
+</li>
+<li>on_address_message()
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a4a4118f53a2756094b9671ce0949b510">graphene::net::detail::node_impl</a>
+</li>
+<li>on_address_request_message()
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a1df69ee4268c455ec10119b7455b970a">graphene::net::detail::node_impl</a>
 </li>
 <li>on_applied_block()
 : <a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ae7b704ead77565a89c50fa327288d1a1">graphene::app::database_api_impl</a>
@@ -93,6 +140,52 @@ $(function() {
 </li>
 <li>on_block_applied()
 : <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a5393053e219946a56bf5e4b83f5c9d1d">graphene::wallet::detail::wallet_api_impl</a>
+</li>
+<li>on_blockchain_item_ids_inventory_message()
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a160de3da1e512097a629ff159758eec9">graphene::net::detail::node_impl</a>
+</li>
+<li>on_check_firewall_message()
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a23ae9120c257e32cd87b559be4325b25">graphene::net::detail::node_impl</a>
+</li>
+<li>on_check_firewall_reply_message()
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a0f184ad53ccd6848475c4da38103adb5">graphene::net::detail::node_impl</a>
+</li>
+<li>on_closing_connection_message()
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a2be50c8371065160e4e47472b8a57d63">graphene::net::detail::node_impl</a>
+</li>
+<li>on_complete()
+: <a class="el" href="classfc_1_1detail_1_1completion__handler.html#ae808afa47432aea0cdc99363f02287c4">fc::detail::completion_handler</a>
+, <a class="el" href="classfc_1_1detail_1_1completion__handler__impl.html#acc415ba7fc39d6f4c21298bd6f807be0">fc::detail::completion_handler_impl&lt; Functor, T &gt;</a>
+, <a class="el" href="classfc_1_1detail_1_1completion__handler__impl_3_01_functor_00_01void_01_4.html#a7db032b9197b45d8454f69f95926e592">fc::detail::completion_handler_impl&lt; Functor, void &gt;</a>
+, <a class="el" href="classfc_1_1future.html#a793d3473173308dc560b3eba7cf65c19">fc::future&lt; T &gt;</a>
+, <a class="el" href="classfc_1_1future_3_01void_01_4.html#ae6d7a2a541d41fc7ad42c5618007794c">fc::future&lt; void &gt;</a>
+, <a class="el" href="classfc_1_1promise.html#a0006a67d05e17baf042e25b08889541f">fc::promise&lt; T &gt;</a>
+, <a class="el" href="classfc_1_1promise_3_01void_01_4.html#a3740bccd020ad35b5da175325b4088f7">fc::promise&lt; void &gt;</a>
+</li>
+<li>on_connection()
+: <a class="el" href="classfc_1_1http_1_1websocket__server.html#a0e81ec85a9a677aa112ad37a7b747e17">fc::http::websocket_server</a>
+, <a class="el" href="classfc_1_1http_1_1websocket__tls__server.html#a66f43ace76bfd7a523d4b7a362ff87b3">fc::http::websocket_tls_server</a>
+</li>
+<li>on_connection_accepted_message()
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#ae9043924a0ee10998d1b23bc07ba4d30">graphene::net::detail::node_impl</a>
+</li>
+<li>on_connection_closed()
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#aa4b92bf370f9b6eb35d5ac2b1b7509f7">graphene::net::detail::node_impl</a>
+, <a class="el" href="classgraphene_1_1net_1_1message__oriented__connection__delegate.html#a04d990b17b898a3562a5ca77738eaa67">graphene::net::message_oriented_connection_delegate</a>
+, <a class="el" href="classgraphene_1_1net_1_1peer__connection.html#a2c13af90dc86a5940694c1a1197e7281">graphene::net::peer_connection</a>
+, <a class="el" href="classgraphene_1_1net_1_1peer__connection__delegate.html#a6d47e4587eff65009547eae6fe5c8c0b">graphene::net::peer_connection_delegate</a>
+</li>
+<li>on_connection_rejected_message()
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a79e65bc0bc4e058c05cd6c76ab2fe142">graphene::net::detail::node_impl</a>
+</li>
+<li>on_create()
+: <a class="el" href="classgraphene_1_1db_1_1undo__database.html#a3630ad1beced2dd83695e1d342039432">graphene::db::undo_database</a>
+</li>
+<li>on_current_time_reply_message()
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a9884c88c47903bf7ca1d53900bd09ca2">graphene::net::detail::node_impl</a>
+</li>
+<li>on_current_time_request_message()
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a70acfdec32ffb018126a2622a930a74d">graphene::net::detail::node_impl</a>
 </li>
 <li>on_deposit()
 : <a class="el" href="structgraphene_1_1chain_1_1cdd__vesting__policy.html#a3fa0b5e01c624e0e3babb7b9b93f18d2">graphene::chain::cdd_vesting_policy</a>
@@ -104,6 +197,49 @@ $(function() {
 , <a class="el" href="structgraphene_1_1chain_1_1instant__vesting__policy.html#a2fc541bed3ea9436364c2b19d1779d6c">graphene::chain::instant_vesting_policy</a>
 , <a class="el" href="structgraphene_1_1chain_1_1linear__vesting__policy.html#a507404f11be8a9f3ec72b69fea12667a">graphene::chain::linear_vesting_policy</a>
 </li>
+<li>on_fetch_blockchain_item_ids_message()
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#aa27add1a01bbb87626386fec496ff60f">graphene::net::detail::node_impl</a>
+</li>
+<li>on_fetch_items_message()
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#ac60f3771b9c021dc1f6e3051af7cb50e">graphene::net::detail::node_impl</a>
+</li>
+<li>on_get_current_connections_reply_message()
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a05281e72d4550b0a810e4851799c98ce">graphene::net::detail::node_impl</a>
+</li>
+<li>on_get_current_connections_request_message()
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a01b02f180f3ffb54a24f584ebc03ca1a">graphene::net::detail::node_impl</a>
+</li>
+<li>on_hello_message()
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#aff36d66edd2ec2aec2a4369dcaee9e12">graphene::net::detail::node_impl</a>
+</li>
+<li>on_http()
+: <a class="el" href="classfc_1_1http_1_1websocket__connection.html#a769ba4073f446d2cfa5f08f7fad4b9eb">fc::http::websocket_connection</a>
+</li>
+<li>on_http_handler()
+: <a class="el" href="classfc_1_1http_1_1websocket__connection.html#ad4acda2cfb8bd74f42f41163743ac3db">fc::http::websocket_connection</a>
+</li>
+<li>on_item_ids_inventory_message()
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#ad65a90e2fa88dbe04511bf8760f8d922">graphene::net::detail::node_impl</a>
+</li>
+<li>on_item_not_available_message()
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#aacef8c55523e25690cab0900c5b217bf">graphene::net::detail::node_impl</a>
+</li>
+<li>on_message()
+: <a class="el" href="classfc_1_1http_1_1websocket__connection.html#aa2eff4c7416a21a16f2711ebc5080998">fc::http::websocket_connection</a>
+, <a class="el" href="classfc_1_1rpc_1_1websocket__api__connection.html#a9a447bd392ba4ec70d4563ea41554aa9">fc::rpc::websocket_api_connection</a>
+, <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#af36524135d300ed3222ebbf3751d300f">graphene::net::detail::node_impl</a>
+, <a class="el" href="classgraphene_1_1net_1_1message__oriented__connection__delegate.html#a6aa4b95d232e1af0be578e3b5796d73a">graphene::net::message_oriented_connection_delegate</a>
+, <a class="el" href="classgraphene_1_1net_1_1peer__connection.html#a8871e3e1d4a2fc425d232e1bd0956c29">graphene::net::peer_connection</a>
+, <a class="el" href="classgraphene_1_1net_1_1peer__connection__delegate.html#a9075116c55b168c7b49a84e79960cf09">graphene::net::peer_connection_delegate</a>
+</li>
+<li>on_message_handler()
+: <a class="el" href="classfc_1_1http_1_1websocket__connection.html#ad2a068c4e45ff2881780422817bacd43">fc::http::websocket_connection</a>
+</li>
+<li>on_modify()
+: <a class="el" href="classgraphene_1_1db_1_1base__primary__index.html#a6c226e6c22c5e2d062414af5e556e28e">graphene::db::base_primary_index</a>
+, <a class="el" href="classgraphene_1_1db_1_1index__observer.html#a2f74e22b0b312c6bf54fdd09e4e596b9">graphene::db::index_observer</a>
+, <a class="el" href="classgraphene_1_1db_1_1undo__database.html#af49a06cdb49babd9ded4a6b8422191bc">graphene::db::undo_database</a>
+</li>
 <li>on_objects_changed()
 : <a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ad55c3a34c9ad6e65d4fe87261d76bef4">graphene::app::database_api_impl</a>
 </li>
@@ -113,10 +249,35 @@ $(function() {
 <li>on_objects_removed()
 : <a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a1bc7ccfd792ccbe1d2f852f3dcc1bfcd">graphene::app::database_api_impl</a>
 </li>
+<li>on_remove()
+: <a class="el" href="classgraphene_1_1db_1_1base__primary__index.html#a0f070b78ed522daa7ec43fbec6a4e775">graphene::db::base_primary_index</a>
+, <a class="el" href="classgraphene_1_1db_1_1index__observer.html#af0c254bbee3a186f536877c0d59c69a5">graphene::db::index_observer</a>
+, <a class="el" href="classgraphene_1_1db_1_1undo__database.html#ad5ca52ea871377ebd3a5543798ae821c">graphene::db::undo_database</a>
+</li>
+<li>on_request()
+: <a class="el" href="classfc_1_1rpc_1_1websocket__api__connection.html#a3a8fd0814cdf86ca24f327fc75f18f41">fc::rpc::websocket_api_connection</a>
+</li>
+<li>on_response()
+: <a class="el" href="classfc_1_1rpc_1_1websocket__api__connection.html#ab35378643f2249154c9f1ee421767dd8">fc::rpc::websocket_api_connection</a>
+</li>
+<li>on_result()
+: <a class="el" href="classcalculator.html#ad7de495e3be0a2eee49998d09d68899e">calculator</a>
+, <a class="el" href="classsome__calculator.html#af28d8b9113c33a29b3676df10cbd62b0">some_calculator</a>
+</li>
+<li>on_result2()
+: <a class="el" href="classcalculator.html#ae3cc601f2877fcfd507f9500fcdd5561">calculator</a>
+, <a class="el" href="classsome__calculator.html#a40e02d7862a8041e7a89e94371205e27">some_calculator</a>
+</li>
+<li>on_unhandled()
+: <a class="el" href="classfc_1_1rpc_1_1state.html#a9632d44eb9bb091da7edded1f2440c51">fc::rpc::state</a>
+</li>
 <li>on_withdraw()
 : <a class="el" href="structgraphene_1_1chain_1_1cdd__vesting__policy.html#aca39435d8a7837ce5e6320beb6c670f4">graphene::chain::cdd_vesting_policy</a>
 , <a class="el" href="structgraphene_1_1chain_1_1instant__vesting__policy.html#a9d9117a317cea3b18e357c51f2826fad">graphene::chain::instant_vesting_policy</a>
 , <a class="el" href="structgraphene_1_1chain_1_1linear__vesting__policy.html#a6e38f1307201d96080804e26b920f575">graphene::chain::linear_vesting_policy</a>
+</li>
+<li>onBlock()
+: <a class="el" href="classgraphene_1_1template__plugin_1_1detail_1_1template__plugin__impl.html#aa9152805c67dea30176175e4f3ff290c">graphene::template_plugin::detail::template_plugin_impl</a>
 </li>
 <li>op_prototype_visitor()
 : <a class="el" href="structgraphene_1_1wallet_1_1detail_1_1op__prototype__visitor.html#a380d6a712355cef41b6ff722fef7539e">graphene::wallet::detail::op_prototype_visitor</a>
@@ -125,8 +286,23 @@ $(function() {
 : <a class="el" href="structgraphene_1_1protocol_1_1op__wrapper.html#a594264dc203efb2c902eb14e49d6dd9c">graphene::protocol::op_wrapper</a>
 </li>
 <li>open()
-: <a class="el" href="classgraphene_1_1chain_1_1block__database.html#aed048c18ca30b52e49a4af776f02fa75">graphene::chain::block_database</a>
+: <a class="el" href="classfc_1_1ifstream.html#a64c37a9cca24b2735a840c5c68a6f0b4">fc::ifstream</a>
+, <a class="el" href="classfc_1_1ofstream.html#af21393591afb29efebb27b882ef68266">fc::ofstream</a>
+, <a class="el" href="classfc_1_1tcp__socket.html#adf8fd15b0e9efa616bcae32d8313d8de">fc::tcp_socket</a>
+, <a class="el" href="classfc_1_1udp__socket.html#ae38731361b74a2841f4691066ac31d86">fc::udp_socket</a>
+, <a class="el" href="classgraphene_1_1chain_1_1block__database.html#aed048c18ca30b52e49a4af776f02fa75">graphene::chain::block_database</a>
 , <a class="el" href="classgraphene_1_1chain_1_1database.html#a2d5356973d8d14d8267b7d49a2c6d939">graphene::chain::database</a>
+, <a class="el" href="classgraphene_1_1db_1_1index.html#ab8aa118aac8da723cfd556078b498bec">graphene::db::index</a>
+, <a class="el" href="classgraphene_1_1db_1_1object__database.html#a0e179b70876f837430d1b3a1af683a03">graphene::db::object_database</a>
+, <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a964b3f951cb36b7ae5507014e285d474">graphene::db::primary_index&lt; DerivedIndex, DirectBits &gt;</a>
+, <a class="el" href="classgraphene_1_1net_1_1detail_1_1peer__database__impl.html#ac0c9646e6ff89816de81840cdc6743b2">graphene::net::detail::peer_database_impl</a>
+, <a class="el" href="classgraphene_1_1net_1_1peer__database.html#aa1425218b142d5d38faa6618e2dd0632">graphene::net::peer_database</a>
+</li>
+<li>openssl_scope()
+: <a class="el" href="structfc_1_1openssl__scope.html#ace4e4b0fa9245c7b1e85bea455c4c20a">fc::openssl_scope</a>
+</li>
+<li>openssl_thread_config()
+: <a class="el" href="structfc_1_1openssl__thread__config.html#a50994941fdfbf77424fe4a244f3a2497">fc::openssl_thread_config</a>
 </li>
 <li>operation_get_required_auth()
 : <a class="el" href="structgraphene_1_1protocol_1_1operation__get__required__auth.html#a3bf98d4a1bfadc6b4e46680a523691ad">graphene::protocol::operation_get_required_auth</a>
@@ -137,8 +313,35 @@ $(function() {
 <li>operation_printer()
 : <a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#abd00441e2de8be992341399499f0ff6a">graphene::wallet::detail::operation_printer</a>
 </li>
+<li>operation_process_fill_order()
+: <a class="el" href="structgraphene_1_1market__history_1_1detail_1_1operation__process__fill__order.html#af6c5cc5b3d5e41fc5d27fd2166384aee">graphene::market_history::detail::operation_process_fill_order</a>
+</li>
 <li>operation_result_printer()
 : <a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__result__printer.html#a53d3940ed3f418d43ab1abde0f2277c1">graphene::wallet::detail::operation_result_printer</a>
+</li>
+<li>operator &amp;()
+: <a class="el" href="class_c_auto_b_n___c_t_x.html#a5cb1e357f7d9f6ae1a58d4fe760757ad">CAutoBN_CTX</a>
+</li>
+<li>operator BN_CTX *()
+: <a class="el" href="class_c_auto_b_n___c_t_x.html#a17f28434d1ddfb3133ba34aaa73d44b4">CAutoBN_CTX</a>
+</li>
+<li>operator bool()
+: <a class="el" href="classfc_1_1bigint.html#ad2fed7f0d170376ea3ef7e9dd364b321">fc::bigint</a>
+, <a class="el" href="classfc_1_1optional.html#a78b84e12915697430ab7a1ea37b1c5ae">fc::optional&lt; T &gt;</a>
+, <a class="el" href="classfc_1_1task__specific__ptr.html#ac75949dd95cdd884522dee577667ad39">fc::task_specific_ptr&lt; T &gt;</a>
+, <a class="el" href="classfc_1_1temp__file__base.html#acaeded53c182bd84c6f76ebbf38f76ce">fc::temp_file_base</a>
+, <a class="el" href="classfc_1_1thread__specific__ptr.html#aaec02f786fd2b4d4f7ae79d3cacbc0a3">fc::thread_specific_ptr&lt; T &gt;</a>
+, <a class="el" href="classfc_1_1unique__lock.html#a8d594c1520df4eddadd042e926517041">fc::unique_lock&lt; T &gt;</a>
+</li>
+<li>operator const ssl_type *()
+: <a class="el" href="structfc_1_1ssl__wrapper.html#a5fbccf113824c9904bb1cb86e57eac2a">fc::ssl_wrapper&lt; ssl_type &gt;</a>
+</li>
+<li>operator const T &amp;()
+: <a class="el" href="classfc_1_1future.html#aee82545083a56b226df4fc8d3a0031b8">fc::future&lt; T &gt;</a>
+, <a class="el" href="classfc_1_1fwd.html#a1ed02450b92795421332c41207b291ce">fc::fwd&lt; T, S, Align &gt;</a>
+</li>
+<li>operator EnumType()
+: <a class="el" href="classfc_1_1enum__type.html#af0773eac818e95a1f6addd5dc892a44d">fc::enum_type&lt; IntType, EnumType &gt;</a>
 </li>
 <li>operator fc::ecc::public_key()
 : <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html#ab77b28cf07dde21c39ac3b68e4f11f9c">graphene::protocol::public_key_type</a>
@@ -146,47 +349,141 @@ $(function() {
 <li>operator fc::ecc::public_key_data()
 : <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html#aa167a5a5a2c73ff0c0f0f3d255592cdf">graphene::protocol::public_key_type</a>
 </li>
+<li>operator int()
+: <a class="el" href="classfc_1_1log__level.html#a34e31d7311a699c957aa7ee5e3ed292e">fc::log_level</a>
+</li>
+<li>operator IntType()
+: <a class="el" href="classfc_1_1enum__type.html#a22c917928cbb64ddb37e6ecc3ecf8c23">fc::enum_type&lt; IntType, EnumType &gt;</a>
+</li>
 <li>operator object_id_type()
 : <a class="el" href="structgraphene_1_1db_1_1object__id.html#a523056466de29b1aecb16a8cb17cbf22">graphene::db::object_id&lt; SpaceID, TypeID &gt;</a>
 </li>
+<li>operator private_key_secret()
+: <a class="el" href="classfc_1_1ecc_1_1private__key.html#a2cc3896accde0c4a48663fec0d075979">fc::ecc::private_key</a>
+</li>
+<li>operator public_key_data()
+: <a class="el" href="classfc_1_1ecc_1_1public__key.html#a4123143ccd9ce438a44a88738fc5e493">fc::ecc::public_key</a>
+</li>
+<li>operator ssl_type *()
+: <a class="el" href="structfc_1_1ssl__wrapper.html#acdf3448c036a48686cd098d52be8b982">fc::ssl_wrapper&lt; ssl_type &gt;</a>
+</li>
 <li>operator std::string()
-: <a class="el" href="structgraphene_1_1db_1_1object__id__type.html#a232b18a990ebf72eb018b36de8ad27c4">graphene::db::object_id_type</a>
+: <a class="el" href="classfc_1_1bigint.html#a07d20c4ef6a92d936e788a50f8d359b8">fc::bigint</a>
+, <a class="el" href="classfc_1_1enum__type.html#ae0627e8e9651ef61c1e66ba3b570ff0a">fc::enum_type&lt; IntType, EnumType &gt;</a>
+, <a class="el" href="classfc_1_1ip_1_1address.html#ac3699fa4f12c5a8aefb3c8d3d58a442f">fc::ip::address</a>
+, <a class="el" href="classfc_1_1sha1.html#ab1189afaf89ed46c7465b11cd4b12df1">fc::sha1</a>
+, <a class="el" href="classfc_1_1sha512.html#a4078fad2223277520373d37e6e81d456">fc::sha512</a>
+, <a class="el" href="classfc_1_1time__point.html#a10a9b8cebed86de891d42e2fa778b62b">fc::time_point</a>
+, <a class="el" href="classfc_1_1time__point__sec.html#a335a0bbaf7cc5b2a2b71714e32cf8e01">fc::time_point_sec</a>
+, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html#a232b18a990ebf72eb018b36de8ad27c4">graphene::db::object_id_type</a>
 , <a class="el" href="classgraphene_1_1protocol_1_1address.html#aa97eed02016b45ddaa2ad177fde420ab">graphene::protocol::address</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#a22b4dd27236e91cbe66235da9b3f0060">graphene::protocol::pts_address</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html#abc2929e6586e4202497e6d067092dc35">graphene::protocol::public_key_type</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html#a183aa7becaaedc283e6d7fb96fcbfe81">graphene::protocol::vote_id_type</a>
 </li>
+<li>operator std::vector&lt; char &gt;()
+: <a class="el" href="classfc_1_1bigint.html#a8c10185176c6dfb4a10f16a760b79d72">fc::bigint</a>
+</li>
 <li>operator string()
-: <a class="el" href="structgraphene_1_1protocol_1_1stealth__confirmation.html#a6d7274152aaa2dc60aa8ce33f9b3c5b5">graphene::protocol::stealth_confirmation</a>
+: <a class="el" href="classfc_1_1ip_1_1endpoint.html#a8a44fd8cffdec158ae2a548db5d64a56">fc::ip::endpoint</a>
+, <a class="el" href="classfc_1_1mutable__url.html#a5799f73986cf03b80babc4fa031654e1">fc::mutable_url</a>
+, <a class="el" href="classfc_1_1ripemd160.html#a49a10ca063f02f4302a5e2a8fc1a8a22">fc::ripemd160</a>
+, <a class="el" href="classfc_1_1sha224.html#a60dce074da8e4e78283baf7f377b7715">fc::sha224</a>
+, <a class="el" href="classfc_1_1sha256.html#aa236932583dfb63e556950ca1dcf22ed">fc::sha256</a>
+, <a class="el" href="classfc_1_1url.html#ae400aa57813f9192a421e32e02b0791e">fc::url</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1stealth__confirmation.html#a6d7274152aaa2dc60aa8ce33f9b3c5b5">graphene::protocol::stealth_confirmation</a>
+</li>
+<li>operator T()
+: <a class="el" href="structfc_1_1unsigned__int.html#aa37f0e53dbe5d7ae629e2ec8b65c4429">fc::unsigned_int</a>
+</li>
+<li>operator T &amp;()
+: <a class="el" href="classfc_1_1fwd.html#acdf78bbd392b5abdfbb0cf7163244c49">fc::fwd&lt; T, S, Align &gt;</a>
+</li>
+<li>operator time_point()
+: <a class="el" href="classfc_1_1time__point__sec.html#a73dd13953a525b22dd371903d337c2c9">fc::time_point_sec</a>
 </li>
 <li>operator uint32_t()
-: <a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html#a01b18ee5a4ca505d08af4c531ff773b6">graphene::protocol::vote_id_type</a>
+: <a class="el" href="classfc_1_1ip_1_1address.html#a705d307a09a6f079579933fa1cf54cdb">fc::ip::address</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html#a01b18ee5a4ca505d08af4c531ff773b6">graphene::protocol::vote_id_type</a>
 </li>
 <li>operator uint64_t()
 : <a class="el" href="structgraphene_1_1db_1_1object__id.html#a76ee2a302a51b92efaee65656c70f4c6">graphene::db::object_id&lt; SpaceID, TypeID &gt;</a>
 , <a class="el" href="structgraphene_1_1db_1_1object__id__type.html#abc357184b7b37059d55b9d22846dba03">graphene::db::object_id_type</a>
 </li>
+<li>operator!()
+: <a class="el" href="class_c_auto_b_n___c_t_x.html#a33c967d143efcbfafcac9f863fce1d4f">CAutoBN_CTX</a>
+, <a class="el" href="class_c_big_num.html#a913c8446faf36d6cfebf5dc88a7fef9a">CBigNum</a>
+, <a class="el" href="classfc_1_1bloom__filter.html#a948856dcae6bdd746147a2e7ffa6e09b">fc::bloom_filter</a>
+, <a class="el" href="classfc_1_1bloom__parameters.html#a025f422def06d21c3c81f7fdcfe7d2fd">fc::bloom_parameters</a>
+, <a class="el" href="classfc_1_1fwd.html#a159397b4c41de004ccbcd32ca574c84d">fc::fwd&lt; T, S, Align &gt;</a>
+, <a class="el" href="classfc_1_1optional.html#aa52792317833d4e9880bece4515bc26d">fc::optional&lt; T &gt;</a>
+, <a class="el" href="classfc_1_1temp__file__base.html#aa22f86ff2cd875a66bd61f6dbececed7">fc::temp_file_base</a>
+</li>
+<li>operator!=()
+: <a class="el" href="classfc_1_1bigint.html#ab887f3066de9cd1daad336cec80437c0">fc::bigint</a>
+, <a class="el" href="classfc_1_1bloom__filter.html#ae8f909c2a5c07dfeb84438dfbacbadd5">fc::bloom_filter</a>
+, <a class="el" href="classfc_1_1microseconds.html#a47acd58eabdf1b5d1e023d8a69dd37cd">fc::microseconds</a>
+, <a class="el" href="classfc_1_1time__point.html#ab6e9bdfda529a482160341939380a79e">fc::time_point</a>
+</li>
+<li>operator%()
+: <a class="el" href="classfc_1_1bigint.html#a824ed8d894a438619d3dac72189838fc">fc::bigint</a>
+</li>
+<li>operator%=()
+: <a class="el" href="class_c_big_num.html#ac5bec8d967502c15e2dffc8600c933e6">CBigNum</a>
+, <a class="el" href="structfc_1_1safe.html#aa7cbd15964373b0131abf421074cbd71">fc::safe&lt; T &gt;</a>
+</li>
+<li>operator&amp;=()
+: <a class="el" href="classfc_1_1bloom__filter.html#a0a1558ba9af650018ff2c221bf09f840">fc::bloom_filter</a>
+</li>
 <li>operator()()
-: <a class="el" href="structfc_1_1graphene__extension__from__variant__visitor.html#aadba00108d87f4d04137c3ba45e72856">fc::graphene_extension_from_variant_visitor&lt; T &gt;</a>
+: <a class="el" href="structfc_1_1asio_1_1detail_1_1non__blocking.html#a18809e4f2312c7ae481eb47d980d69b8">fc::asio::detail::non_blocking&lt; C &gt;</a>
+, <a class="el" href="classfc_1_1asio_1_1detail_1_1read__write__handler.html#a3e6ace1937a754a57e5dce0eec0d93d3">fc::asio::detail::read_write_handler</a>
+, <a class="el" href="classfc_1_1asio_1_1detail_1_1read__write__handler__with__buffer.html#ab302c7ee6160596e48b86c79db196763">fc::asio::detail::read_write_handler_with_buffer</a>
+, <a class="el" href="classfc_1_1detail_1_1callback__functor.html#ad5b8e454d89e73b403deddca38dd48b8">fc::detail::callback_functor&lt; Signature &gt;</a>
+, <a class="el" href="classfc_1_1detail_1_1callback__functor_3_01void_07_args_8_8_8_08_4.html#ad7f8a981067e3dde292d5d3e3dd802ae">fc::detail::callback_functor&lt; void(Args...)&gt;</a>
+, <a class="el" href="structfc_1_1detail_1_1is__operation__shorter.html#a627302d610ca6e526f14f56462b27aa0">fc::detail::is_operation_shorter</a>
+, <a class="el" href="structfc_1_1from__static__variant.html#a21c6151940ecd7dce7841d7d2cce5874">fc::from_static_variant</a>
+, <a class="el" href="classfc_1_1from__variant__visitor.html#a12bbcb40a620b94586095d351b68322c">fc::from_variant_visitor&lt; T &gt;</a>
+, <a class="el" href="structfc_1_1graphene__extension__from__variant__visitor.html#aadba00108d87f4d04137c3ba45e72856">fc::graphene_extension_from_variant_visitor&lt; T &gt;</a>
 , <a class="el" href="structfc_1_1graphene__extension__to__variant__visitor.html#a5e3cc969ad544f39de015ec1b8799756">fc::graphene_extension_to_variant_visitor&lt; T &gt;</a>
-, <a class="el" href="structget__impacted__account__visitor.html#a0cec828f156db02f304debb1d1daa18e">get_impacted_account_visitor</a>
+, <a class="el" href="structfc_1_1impl_1_1copy__construct.html#a6885670b9d7d894394f208d7a8119c56">fc::impl::copy_construct&lt; StaticVariant &gt;</a>
+, <a class="el" href="structfc_1_1impl_1_1move__construct.html#a5b59735cfc6d2f8fdff3744b0b7b7ac6">fc::impl::move_construct&lt; StaticVariant &gt;</a>
+, <a class="el" href="classfc_1_1limited__mutable__variant__object.html#a66a8c23b812d213cfa87d742dc4e7279">fc::limited_mutable_variant_object</a>
+, <a class="el" href="classfc_1_1mutable__variant__object.html#abf0e2fbf4cc0976c5e780a0094c299d2">fc::mutable_variant_object</a>
+, <a class="el" href="structfc_1_1raw_1_1detail_1_1pack__object__visitor.html#ab0b97edab0ba6c9263397d8a84c48671">fc::raw::detail::pack_object_visitor&lt; Stream, Class &gt;</a>
+, <a class="el" href="structfc_1_1raw_1_1detail_1_1unpack__object__visitor.html#afb18bd4ffc10e2a0295984a7782a6f63">fc::raw::detail::unpack_object_visitor&lt; Stream, Class &gt;</a>
+, <a class="el" href="structfc_1_1raw_1_1pack__static__variant.html#a998dd814917112234d68eb743ba779e5">fc::raw::pack_static_variant&lt; Stream &gt;</a>
+, <a class="el" href="structfc_1_1raw_1_1unpack__static__variant.html#ae32fe99a9e9fb691b325a7f517fc8ca9">fc::raw::unpack_static_variant&lt; Stream &gt;</a>
+, <a class="el" href="structfc_1_1sleep__priority__less.html#ac1cc07b446485301eb7f17d48ccac1bb">fc::sleep_priority_less</a>
+, <a class="el" href="structfc_1_1thread__d_1_1task__priority__less.html#a5029792c1a7e8a7936fd9caef8a3bf15">fc::thread_d::task_priority_less</a>
+, <a class="el" href="structfc_1_1thread__d_1_1task__when__less.html#aede263ddea5042fd145c7b5113fe402d">fc::thread_d::task_when_less</a>
+, <a class="el" href="structfc_1_1to__static__variant.html#a85c0345161fea92d7528a5b0743f771d">fc::to_static_variant</a>
+, <a class="el" href="classfc_1_1to__variant__visitor.html#a059d120f54abf982bb2deb6845100df3">fc::to_variant_visitor&lt; T &gt;</a>
+, <a class="el" href="structfc_1_1vtable__copy__visitor.html#a8f21e689d562619f58ced3f8a0ef8c00">fc::vtable_copy_visitor&lt; OtherType &gt;</a>
+, <a class="el" href="structget__impacted__account__visitor.html#a45201f215947ce1f6424338a99177f6a">get_impacted_account_visitor</a>
 , <a class="el" href="structgraphene_1_1chain_1_1bitasset__short__backing__asset__extractor.html#adc66588fe37704e08dbd21e60e226254">graphene::chain::bitasset_short_backing_asset_extractor</a>
 , <a class="el" href="structgraphene_1_1chain_1_1detail_1_1vbo__mfs__key.html#aa82a505529f5e4dc791def6ff9d3b839">graphene::chain::detail::vbo_mfs_key</a>
 , <a class="el" href="structgraphene_1_1chain_1_1detail_1_1vesting__balance__object__equal.html#ac44be6a5edb8a4e109b9d8fe02ea44d2">graphene::chain::detail::vesting_balance_object_equal</a>
 , <a class="el" href="structgraphene_1_1chain_1_1detail_1_1vesting__balance__object__hash.html#a098642c484251c801bc7fd42a29e85f4">graphene::chain::detail::vesting_balance_object_hash</a>
-, <a class="el" href="classgraphene_1_1chain_1_1hardfork__visitor__1479.html#a9a99804a89665a49a1a6e93e27000421">graphene::chain::hardfork_visitor_1479</a>
+, <a class="el" href="classgraphene_1_1chain_1_1hardfork__visitor__1479.html#ade46db2296d10992156a233439484e17">graphene::chain::hardfork_visitor_1479</a>
 , <a class="el" href="structgraphene_1_1chain_1_1hardfork__visitor__214.html#a3a779434c26b44161222a0f6d7f6d6b4">graphene::chain::hardfork_visitor_214</a>
 , <a class="el" href="structgraphene_1_1chain_1_1htlc__object_1_1from__extractor.html#a281fabb06e9f44559104db9dacd3777d">graphene::chain::htlc_object::from_extractor</a>
 , <a class="el" href="structgraphene_1_1chain_1_1htlc__object_1_1timelock__extractor.html#a301ded1872221b365708352ee532b57e">graphene::chain::htlc_object::timelock_extractor</a>
 , <a class="el" href="structgraphene_1_1chain_1_1htlc__object_1_1to__extractor.html#a558e5f11ebdacf5820aef5aa7c96fa6f">graphene::chain::htlc_object::to_extractor</a>
 , <a class="el" href="classgraphene_1_1chain_1_1htlc__redeem__visitor.html#a659a3ab3d68dc94c7807bcc66a200223">graphene::chain::htlc_redeem_visitor</a>
 , <a class="el" href="structgraphene_1_1chain_1_1init__policy__visitor.html#a9febe8208991e5b00b851fd189d7794b">graphene::chain::init_policy_visitor</a>
-, <a class="el" href="structgraphene_1_1chain_1_1predicate__evaluator.html#aa7f78b5a67c959078d89ffc32e619ab6">graphene::chain::predicate_evaluator</a>
-, <a class="el" href="structgraphene_1_1chain_1_1proposal__operation__hardfork__visitor.html#a56618d4712e99e76d9b423f0f13dac32">graphene::chain::proposal_operation_hardfork_visitor</a>
+, <a class="el" href="structgraphene_1_1chain_1_1predicate__evaluator.html#a27a643e8aa96cbef9fc1b99dc86f1727">graphene::chain::predicate_evaluator</a>
+, <a class="el" href="structgraphene_1_1chain_1_1proposal__operation__hardfork__visitor.html#add434bd02a501d483afec4a8c35b7d65">graphene::chain::proposal_operation_hardfork_visitor</a>
 , <a class="el" href="structgraphene_1_1chain_1_1special__authority__evaluate__visitor.html#a3d3072c90d1971340b7d91ba1d3cc33f">graphene::chain::special_authority_evaluate_visitor</a>
 , <a class="el" href="structgraphene_1_1chain_1_1worker__init__visitor.html#a6abf766c06c3004976a2091e7cd79a2f">graphene::chain::worker_init_visitor</a>
 , <a class="el" href="structgraphene_1_1chain_1_1worker__pay__visitor.html#aee8150892c4d2b14f5e763b69264564b">graphene::chain::worker_pay_visitor</a>
 , <a class="el" href="structgraphene_1_1db_1_1object__id.html#a0bea414b63c8fce930285cea4ebfff6f">graphene::db::object_id&lt; SpaceID, TypeID &gt;</a>
+, <a class="el" href="structgraphene_1_1elasticsearch_1_1operation__visitor.html#a2eea9e0a8a75322fa62af038075c63e1">graphene::elasticsearch::operation_visitor</a>
+, <a class="el" href="structgraphene_1_1market__history_1_1detail_1_1operation__process__fill__order.html#ae0b048845945a983dc4efa50e9e4456b">graphene::market_history::detail::operation_process_fill_order</a>
+, <a class="el" href="structgraphene_1_1market__history_1_1order__history__object__key__base__extractor.html#af95ec0911b2039c75d6af940693ab3d1">graphene::market_history::order_history_object_key_base_extractor</a>
+, <a class="el" href="structgraphene_1_1market__history_1_1order__history__object__key__quote__extractor.html#aa333d8722d7b3721c3be0a6e1bd780c5">graphene::market_history::order_history_object_key_quote_extractor</a>
+, <a class="el" href="structgraphene_1_1market__history_1_1order__history__object__key__sequence__extractor.html#a93dfd541d19a80321141dbac7a1be291">graphene::market_history::order_history_object_key_sequence_extractor</a>
+, <a class="el" href="structgraphene_1_1net_1_1detail_1_1node__impl__deleter.html#adb5310c74911c8db58c6183c26ac9bb5">graphene::net::detail::node_impl_deleter</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1calc__fee__visitor.html#a91d2fe1323ffe8c0a63bd772b524e303">graphene::protocol::calc_fee_visitor</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1fee__schedule__validate__visitor.html#a2f3fbfd4488eb5e4fe00eefb01c18c1b">graphene::protocol::fee_schedule_validate_visitor</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1graphene__extension__pack__count__visitor.html#a0bf5bebfbccff972b17e8c79646bcf6d">graphene::protocol::graphene_extension_pack_count_visitor&lt; T &gt;</a>
@@ -200,30 +497,192 @@ $(function() {
 , <a class="el" href="structgraphene_1_1protocol_1_1special__authority__validate__visitor.html#af7add80c234015d693d40240c1b1da02">graphene::protocol::special_authority_validate_visitor</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1zero__fee__visitor.html#afdb8f42e6c15881ebc5041373463eb41">graphene::protocol::zero_fee_visitor</a>
 , <a class="el" href="structgraphene_1_1wallet_1_1detail_1_1help__visitor.html#a2510a0ec95db249c73fd854d4375d23d">graphene::wallet::detail::help_visitor</a>
-, <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1htlc__hash__to__string__visitor.html#a8215ba90874ca3cb7f483d062b11411b">graphene::wallet::detail::htlc_hash_to_string_visitor</a>
+, <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1htlc__hash__to__string__visitor.html#af91dce165da1479c113ee17537787441">graphene::wallet::detail::htlc_hash_to_string_visitor</a>
 , <a class="el" href="structgraphene_1_1wallet_1_1detail_1_1op__prototype__visitor.html#a64ab203e2d6b28c8dfad290bf44e7b20">graphene::wallet::detail::op_prototype_visitor</a>
-, <a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#a7c22745486a88c50bf9c21c8ecab55b8">graphene::wallet::detail::operation_printer</a>
-, <a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__result__printer.html#af981a18bb573794f6fa58307802c911f">graphene::wallet::detail::operation_result_printer</a>
+, <a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#ae08e459c53f1105f80f4e88ac3551cb6">graphene::wallet::detail::operation_printer</a>
+, <a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__result__printer.html#aacd3457e059a39cdb92177ab0a6514ef">graphene::wallet::detail::operation_result_printer</a>
 , <a class="el" href="structgraphene_1_1wallet_1_1impl_1_1from__which__visitor.html#aca4809ecb40146a57b2e3f26ac4991b4">graphene::wallet::impl::from_which_visitor&lt; StaticVariant &gt;</a>
 , <a class="el" href="structgraphene_1_1wallet_1_1impl_1_1static__variant__map__visitor.html#a7019e28f29d1b210a0d496bcd3e39a97">graphene::wallet::impl::static_variant_map_visitor</a>
+, <a class="el" href="structstd_1_1hash_3_01fc_1_1ip_1_1endpoint_01_4.html#a7d874df3e01cdb82556249143b8b2219">std::hash&lt; fc::ip::endpoint &gt;</a>
+, <a class="el" href="structstd_1_1hash_3_01fc_1_1ripemd160_01_4.html#acde89667059e1500837a79a0b7c96130">std::hash&lt; fc::ripemd160 &gt;</a>
+, <a class="el" href="structstd_1_1hash_3_01fc_1_1sha1_01_4.html#a0418ebf62d6c052f83dc517cbb0dfeba">std::hash&lt; fc::sha1 &gt;</a>
+, <a class="el" href="structstd_1_1hash_3_01fc_1_1sha224_01_4.html#a28b35c93a65d7e597851e8eca3475b4d">std::hash&lt; fc::sha224 &gt;</a>
+, <a class="el" href="structstd_1_1hash_3_01fc_1_1sha256_01_4.html#a9ebcc9ac56bc809132acdcd49825afe0">std::hash&lt; fc::sha256 &gt;</a>
+, <a class="el" href="structstd_1_1hash_3_01fc_1_1unsigned__int_01_4.html#ab1867f4b1e1d9af857338387acf7a38d">std::hash&lt; fc::unsigned_int &gt;</a>
 , <a class="el" href="structstd_1_1hash_3_01graphene_1_1db_1_1object__id__type_01_4.html#a3af8b232f3bb3379a01c7e657374b5dc">std::hash&lt; graphene::db::object_id_type &gt;</a>
 , <a class="el" href="structstd_1_1hash_3_01graphene_1_1protocol_1_1pts__address_01_4.html#a6f2704cc04955473016e2346b6bb5a93">std::hash&lt; graphene::protocol::pts_address &gt;</a>
 </li>
+<li>operator*()
+: <a class="el" href="class_c_auto_b_n___c_t_x.html#a3850675de213c20d764575850a37ddfd">CAutoBN_CTX</a>
+, <a class="el" href="classfc_1_1api.html#a5340a6682e5f47f2e0a6761fb126391f">fc::api&lt; Interface, Transform &gt;</a>
+, <a class="el" href="classfc_1_1bigint.html#a34e71f5ebcd8d8d53db777bcd8b53f00">fc::bigint</a>
+, <a class="el" href="classfc_1_1directory__iterator.html#ad06ef6b54ef483d56672d8d8bddd5e26">fc::directory_iterator</a>
+, <a class="el" href="classfc_1_1fwd.html#aeeac438894ec4a1946d70c473d01eb97">fc::fwd&lt; T, S, Align &gt;</a>
+, <a class="el" href="classfc_1_1optional.html#af02761ab4fcc8f61a382dda8f97fd6b7">fc::optional&lt; T &gt;</a>
+, <a class="el" href="classfc_1_1recursive__directory__iterator.html#ab1110dc12bc36920131fcd6fb7f69037">fc::recursive_directory_iterator</a>
+, <a class="el" href="classfc_1_1task__specific__ptr.html#aa81f5ec74845c5b547aefb08c4a5dbe5">fc::task_specific_ptr&lt; T &gt;</a>
+, <a class="el" href="classfc_1_1thread__specific__ptr.html#a66d89a0b831dc924abbbcaae72fa8d0d">fc::thread_specific_ptr&lt; T &gt;</a>
+, <a class="el" href="classgraphene_1_1db_1_1simple__index_1_1const__iterator.html#ace4afad5b8a9c79aad9840a6e8228d71">graphene::db::simple_index&lt; T &gt;::const_iterator</a>
+</li>
+<li>operator*=()
+: <a class="el" href="class_c_big_num.html#aedd26ffda5c04c4765ba8e18d25d9ff0">CBigNum</a>
+, <a class="el" href="classfc_1_1bigint.html#ab672316597423732aaebff19d43012fa">fc::bigint</a>
+, <a class="el" href="structfc_1_1safe.html#a0657fe2766175a3bebdce27df39d05b3">fc::safe&lt; T &gt;</a>
+</li>
+<li>operator+()
+: <a class="el" href="classfc_1_1bigint.html#a40ba09f4b0d2420bbd69823e41b13145">fc::bigint</a>
+, <a class="el" href="classfc_1_1time__point.html#a35420c20bee5c77617a68a70204c5234">fc::time_point</a>
+, <a class="el" href="classfc_1_1time__point__sec.html#a164110f5cea5ec455243a061e4267fa3">fc::time_point_sec</a>
+</li>
 <li>operator++()
-: <a class="el" href="structgraphene_1_1db_1_1object__id__type.html#aafc429ede442121e43bb72de2eae0764">graphene::db::object_id_type</a>
+: <a class="el" href="class_c_big_num.html#ac9421f22614796d8520be7e6ade71ee8">CBigNum</a>
+, <a class="el" href="classfc_1_1bigint.html#aeeed63218ddee1945d2903ec8de127df">fc::bigint</a>
+, <a class="el" href="classfc_1_1directory__iterator.html#a4e372b3729bd88b0801f5c50bb0bb07a">fc::directory_iterator</a>
+, <a class="el" href="classfc_1_1recursive__directory__iterator.html#aee0d9246b8ea4c0a35afc3f1fc671e0c">fc::recursive_directory_iterator</a>
+, <a class="el" href="structfc_1_1safe.html#af1c879152b3d86f7e30a706555268b2c">fc::safe&lt; T &gt;</a>
+, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html#aacd1aebdb14da6e59efc3678f010b9db">graphene::db::object_id_type</a>
+, <a class="el" href="classgraphene_1_1db_1_1simple__index_1_1const__iterator.html#a077941d4b1c6a9acf0b90634e015318d">graphene::db::simple_index&lt; T &gt;::const_iterator</a>
 </li>
 <li>operator+=()
-: <a class="el" href="structgraphene_1_1protocol_1_1asset.html#aaeb8509d5eb67653f62217e1da0c5837">graphene::protocol::asset</a>
+: <a class="el" href="class_c_big_num.html#ac3da33626c8ab06d6a049b310c086dd5">CBigNum</a>
+, <a class="el" href="classfc_1_1bigint.html#a899c326f06b59a060dab8b903199213d">fc::bigint</a>
+, <a class="el" href="classfc_1_1microseconds.html#a7057e7821df5af6e99737bd765f60953">fc::microseconds</a>
+, <a class="el" href="structfc_1_1safe.html#a25e4c7a4c87c1186e0032541f223aeb4">fc::safe&lt; T &gt;</a>
+, <a class="el" href="classfc_1_1time__point.html#a5b18fb63d14039935fbf3a1c2fb43c92">fc::time_point</a>
+, <a class="el" href="classfc_1_1time__point__sec.html#a3bfad5ac28831576796cb103a3554abe">fc::time_point_sec</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1asset.html#aaeb8509d5eb67653f62217e1da0c5837">graphene::protocol::asset</a>
 </li>
 <li>operator-()
-: <a class="el" href="structgraphene_1_1protocol_1_1asset.html#a81b9a894f29048a5646c6d69b3bd8f1d">graphene::protocol::asset</a>
+: <a class="el" href="classfc_1_1bigint.html#acf0167324b72a936b3777f5f4efcf15a">fc::bigint</a>
+, <a class="el" href="structfc_1_1safe.html#a616c63b4c91c615a74c1d545d6b20a56">fc::safe&lt; T &gt;</a>
+, <a class="el" href="classfc_1_1time__point.html#a9d7e8bdb373d46afef955f4e4a201b6e">fc::time_point</a>
+, <a class="el" href="classfc_1_1time__point__sec.html#a9249354e81b17de7e676316145a1b2e6">fc::time_point_sec</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1asset.html#a81b9a894f29048a5646c6d69b3bd8f1d">graphene::protocol::asset</a>
+</li>
+<li>operator--()
+: <a class="el" href="class_c_big_num.html#a47920287946fb3a55e84af70e953e78f">CBigNum</a>
+, <a class="el" href="classfc_1_1bigint.html#a14299996f33c1f7abb645a1d0b20f8fd">fc::bigint</a>
+, <a class="el" href="structfc_1_1safe.html#a05d910ac6feda1016cfa2f98edc0ee00">fc::safe&lt; T &gt;</a>
 </li>
 <li>operator-=()
-: <a class="el" href="structgraphene_1_1protocol_1_1asset.html#aab0c149346cea2c3ae79d25dce1d91ab">graphene::protocol::asset</a>
+: <a class="el" href="class_c_big_num.html#a4fe724fd22129eefc4e1f34d95505381">CBigNum</a>
+, <a class="el" href="classfc_1_1bigint.html#a8df3ffe8605b849cc71c8111818c53a3">fc::bigint</a>
+, <a class="el" href="classfc_1_1microseconds.html#a17b674779305e76b06ec25e456775fbf">fc::microseconds</a>
+, <a class="el" href="structfc_1_1safe.html#a1494539bb9d6fa9204d38b776a36fe07">fc::safe&lt; T &gt;</a>
+, <a class="el" href="classfc_1_1time__point.html#aae57570284a342e14814c4099a51c7b4">fc::time_point</a>
+, <a class="el" href="classfc_1_1time__point__sec.html#a91ec1c14f3ca1d6ff920f58aff9142ed">fc::time_point_sec</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1asset.html#aab0c149346cea2c3ae79d25dce1d91ab">graphene::protocol::asset</a>
+</li>
+<li>operator-&gt;()
+: <a class="el" href="classfc_1_1api.html#a0e0506ac81fd37177b65e4ed9633a360">fc::api&lt; Interface, Transform &gt;</a>
+, <a class="el" href="classfc_1_1detail_1_1path__wrapper.html#a86914f05c76c6cd01e204b0e4d823586">fc::detail::path_wrapper</a>
+, <a class="el" href="classfc_1_1directory__iterator.html#aea174ce25dce1bae67c9dab956cc5750">fc::directory_iterator</a>
+, <a class="el" href="classfc_1_1fwd.html#a2e26988316119316ef358fa5f5d1f855">fc::fwd&lt; T, S, Align &gt;</a>
+, <a class="el" href="classfc_1_1optional.html#aef7d32f415f5adb898ff9d1056b1a0eb">fc::optional&lt; T &gt;</a>
+, <a class="el" href="structfc_1_1ssl__wrapper.html#ac4a546f41e95361042ddf0ca87cb38e1">fc::ssl_wrapper&lt; ssl_type &gt;</a>
+, <a class="el" href="classfc_1_1task__specific__ptr.html#ab8bdb755690c5a954ccdf5c911de0614">fc::task_specific_ptr&lt; T &gt;</a>
+, <a class="el" href="classfc_1_1thread__specific__ptr.html#a2467f5659725ab1ba41916ba192a63c5">fc::thread_specific_ptr&lt; T &gt;</a>
+</li>
+<li>operator/()
+: <a class="el" href="classfc_1_1bigint.html#a502fa596e53b743dc04a72879a21eb9d">fc::bigint</a>
+</li>
+<li>operator/=()
+: <a class="el" href="class_c_big_num.html#a213f7dc5a2d8212d3e7402a06ee5d5b9">CBigNum</a>
+, <a class="el" href="classfc_1_1bigint.html#aec66b7c4e3adfc4bb40c748afcff0b3e">fc::bigint</a>
+, <a class="el" href="classfc_1_1path.html#addfacdbec90fcbdea3161373d314300d">fc::path</a>
+, <a class="el" href="structfc_1_1safe.html#af4e60fa3a585c1dcb5dd96b43d09dc01">fc::safe&lt; T &gt;</a>
+</li>
+<li>operator&lt;()
+: <a class="el" href="classfc_1_1bigint.html#a8fcaf1fa0b03c87ce99abaf4c32840ee">fc::bigint</a>
+, <a class="el" href="classfc_1_1enum__type.html#a7c681516050d6eceac8a0c571f72500e">fc::enum_type&lt; IntType, EnumType &gt;</a>
+, <a class="el" href="classfc_1_1priority.html#a58f1113a93145a7e6e79e89d084d01ad">fc::priority</a>
+, <a class="el" href="classfc_1_1time__point.html#ab13056b8561d13e378baff1526839440">fc::time_point</a>
+, <a class="el" href="structgraphene_1_1net_1_1detail_1_1prioritized__item__id.html#a767b488ee8baf6a1a5ed85afc99749c6">graphene::net::detail::prioritized_item_id</a>
+</li>
+<li>operator&lt;&lt;=()
+: <a class="el" href="class_c_big_num.html#a784951e3a24199fa6b994a951453d156">CBigNum</a>
+, <a class="el" href="classfc_1_1bigint.html#a459bafab93e3ce8ed07939595fe1fc34">fc::bigint</a>
+</li>
+<li>operator&lt;=()
+: <a class="el" href="classfc_1_1enum__type.html#a53f9929b8853c133181f296c8a6c6d58">fc::enum_type&lt; IntType, EnumType &gt;</a>
+, <a class="el" href="classfc_1_1time__point.html#a2b153e7ba438bc292e1460e572b2e132">fc::time_point</a>
 </li>
 <li>operator=()
-: <a class="el" href="structgraphene_1_1protocol_1_1chain__parameters.html#a9629be78295170cbebf2af63771dfe9d">graphene::protocol::chain_parameters</a>
+: <a class="el" href="class_c_auto_b_n___c_t_x.html#a954a9a333d2041861500e5cb471fa8f6">CAutoBN_CTX</a>
+, <a class="el" href="class_c_big_num.html#a575e705d2120b0a43d74d798eaef48ee">CBigNum</a>
+, <a class="el" href="classfc_1_1bigint.html#a3d6a9c0873e3b4e1546003ab9bb3f024">fc::bigint</a>
+, <a class="el" href="classfc_1_1bloom__filter.html#aaa5d5b00255f6b03da2f46d49524eeda">fc::bloom_filter</a>
+, <a class="el" href="classfc_1_1buffered__istream.html#aa312532164c62e95fc7ecb2927d15465">fc::buffered_istream</a>
+, <a class="el" href="classfc_1_1buffered__ostream.html#ac6b4fd3956ec31f976ad50da28bbef2b">fc::buffered_ostream</a>
+, <a class="el" href="classfc_1_1ecc_1_1detail_1_1private__key__impl.html#a9a114d32d88f0621d7d280d7b627542d">fc::ecc::detail::private_key_impl</a>
+, <a class="el" href="classfc_1_1ecc_1_1detail_1_1public__key__impl.html#a46caebdeb132ce6a8d3d69adce124f25">fc::ecc::detail::public_key_impl</a>
+, <a class="el" href="classfc_1_1ecc_1_1private__key.html#a2cec7b462875dee7ccaa51d94185d9fa">fc::ecc::private_key</a>
+, <a class="el" href="classfc_1_1ecc_1_1public__key.html#a22e892436cb6e8d7e56b5125e32b9e9d">fc::ecc::public_key</a>
+, <a class="el" href="classfc_1_1enum__type.html#ae9f685bb1a3400f4ba16cec4ad1f0b89">fc::enum_type&lt; IntType, EnumType &gt;</a>
+, <a class="el" href="classfc_1_1exception.html#a4f257882990e94900d31d030be6601b2">fc::exception</a>
+, <a class="el" href="classfc_1_1future.html#acdd34f7904a663e8771bdc5edd4022d7">fc::future&lt; T &gt;</a>
+, <a class="el" href="classfc_1_1future_3_01void_01_4.html#adb010686a4a96468bd6cef9c2981cc2f">fc::future&lt; void &gt;</a>
+, <a class="el" href="classfc_1_1fwd.html#a0f1d678a573b3d69a6411f5acfa286ee">fc::fwd&lt; T, S, Align &gt;</a>
+, <a class="el" href="classfc_1_1ip_1_1address.html#a6d4bf277281f2a36130ac492a26b6939">fc::ip::address</a>
+, <a class="el" href="classfc_1_1logger.html#a393c825c3bde5d27ff565e08ce2035de">fc::logger</a>
+, <a class="el" href="classfc_1_1mutable__url.html#a431a4ea442db379419203773f2cb5585">fc::mutable_url</a>
+, <a class="el" href="classfc_1_1mutable__variant__object.html#a9bd4cf377f1b73daba3b6ebdb85b0456">fc::mutable_variant_object</a>
+, <a class="el" href="classfc_1_1optional.html#a15bcd4eed1211821573f8a7cc6af1b97">fc::optional&lt; T &gt;</a>
+, <a class="el" href="classfc_1_1path.html#a76df00a037a781a2ebb3ae3100e06929">fc::path</a>
+, <a class="el" href="classfc_1_1static__variant.html#aba7bff21c84651e5c173e83970e89068">fc::static_variant&lt; Types &gt;</a>
+, <a class="el" href="classfc_1_1temp__directory.html#acc19b932765f7e89457b6936ae4a9060">fc::temp_directory</a>
+, <a class="el" href="classfc_1_1temp__file.html#ac241c440bacd13927eee3743843f13d5">fc::temp_file</a>
+, <a class="el" href="classfc_1_1thread.html#ac1cda1aeac47261bc10fa47227b0db6b">fc::thread</a>
+, <a class="el" href="classfc_1_1time__point__sec.html#adf354265ae353527155c2cd9086f5d50">fc::time_point_sec</a>
+, <a class="el" href="structfc_1_1unsigned__int.html#a4608c48a5eb887cdc97739a2d30b966c">fc::unsigned_int</a>
+, <a class="el" href="classfc_1_1url.html#a01d044f81a0b8630cad9658f1ff75fc5">fc::url</a>
+, <a class="el" href="classfc_1_1variant.html#a0dca5e5489ee3baac5bdab51417d9e02">fc::variant</a>
+, <a class="el" href="classfc_1_1variant__object_1_1entry.html#a54669b8a1ba8a9dd3fa1d4fac4cec0bd">fc::variant_object::entry</a>
+, <a class="el" href="classfc_1_1variant__object.html#a96520c61594003f59d0e507b013949cf">fc::variant_object</a>
+, <a class="el" href="classgraphene_1_1db_1_1undo__database_1_1session.html#a35b5ff1224a8461f63025fcf7c25f4f7">graphene::db::undo_database::session</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1chain__parameters.html#a9629be78295170cbebf2af63771dfe9d">graphene::protocol::chain_parameters</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html#afed2fa8ec45ef64b45e92cf0f5e0035f">graphene::protocol::vote_id_type</a>
+</li>
+<li>operator==()
+: <a class="el" href="classfc_1_1bigint.html#a649bffcc80e6348453a9704072f99b7e">fc::bigint</a>
+, <a class="el" href="classfc_1_1bloom__filter.html#a84ebbb3010a0ec2bfba07738deb7990b">fc::bloom_filter</a>
+, <a class="el" href="classfc_1_1microseconds.html#a4ef8353a74c1f7dd4ae84e850f59a94a">fc::microseconds</a>
+, <a class="el" href="classfc_1_1mutable__url.html#a3ec93ac122ce1020149acb6523d44e7d">fc::mutable_url</a>
+, <a class="el" href="classfc_1_1time__point.html#a518a8071f161f1ac2d70f82911d08a47">fc::time_point</a>
+, <a class="el" href="classfc_1_1url.html#af9b0c1ce36beb2844d32621649598951">fc::url</a>
+, <a class="el" href="structgraphene_1_1net_1_1item__id.html#a23651c2de24821831da1f089345ffd39">graphene::net::item_id</a>
+</li>
+<li>operator&gt;()
+: <a class="el" href="classfc_1_1bigint.html#a79a57688c437dca31a7b3e394b41acba">fc::bigint</a>
+, <a class="el" href="classfc_1_1enum__type.html#a37bab60221d5bfaee42c0f03a7e6879a">fc::enum_type&lt; IntType, EnumType &gt;</a>
+, <a class="el" href="classfc_1_1time__point.html#a7703cda4b67e4f413bb30b9b50339ee1">fc::time_point</a>
+</li>
+<li>operator&gt;=()
+: <a class="el" href="classfc_1_1bigint.html#a1b52e45b5efa4098d406376f78749e48">fc::bigint</a>
+, <a class="el" href="classfc_1_1enum__type.html#a92d7cbbdb071304598bb632621ac3b0e">fc::enum_type&lt; IntType, EnumType &gt;</a>
+, <a class="el" href="classfc_1_1time__point.html#a7f785a12a1941259887eda2d6f6f518a">fc::time_point</a>
+</li>
+<li>operator&gt;&gt;=()
+: <a class="el" href="class_c_big_num.html#a7d2759e104a02502891b185dfb704ad1">CBigNum</a>
+, <a class="el" href="classfc_1_1bigint.html#abe6fa0986e47e98753b42924ad157a57">fc::bigint</a>
+</li>
+<li>operator[]()
+: <a class="el" href="structfc_1_1json__relaxed_1_1_char_value_table.html#a521d7126931677e3557e2d358308a3a6">fc::json_relaxed::CharValueTable</a>
+, <a class="el" href="classfc_1_1mutable__variant__object.html#ad35da3501e3996a3ee8e78dca04dcdf9">fc::mutable_variant_object</a>
+, <a class="el" href="classfc_1_1variant.html#af88be0a0533f9d58f36d88339d42f9fd">fc::variant</a>
+, <a class="el" href="classfc_1_1variant__object.html#ac1ce4210cfe70480c944fcb98bc9deb8">fc::variant_object</a>
+</li>
+<li>operator^=()
+: <a class="el" href="classfc_1_1bloom__filter.html#a3050a30e8b36af958818961ab826d439">fc::bloom_filter</a>
+</li>
+<li>operator|=()
+: <a class="el" href="classfc_1_1bloom__filter.html#a5814c50d4a7ef4f75289c5e8b187cb62">fc::bloom_filter</a>
+</li>
+<li>optimal_parameters_t()
+: <a class="el" href="structfc_1_1bloom__parameters_1_1optimal__parameters__t.html#ad1533b1ed4004ce80fca761a87dfb5f7">fc::bloom_parameters::optimal_parameters_t</a>
+</li>
+<li>optional()
+: <a class="el" href="classfc_1_1optional.html#ae46cc01e5127eb4e5f4d51b9478fd57d">fc::optional&lt; T &gt;</a>
 </li>
 <li>orders()
 : <a class="el" href="classgraphene_1_1app_1_1login__api.html#a1f19beba188d12000f45f63359dbd48d">graphene::app::login_api</a>
@@ -231,11 +690,14 @@ $(function() {
 <li>orders_api()
 : <a class="el" href="classgraphene_1_1app_1_1orders__api.html#a1c1a0920781506af3b59128c6f8912aa">graphene::app::orders_api</a>
 </li>
+<li>ostream()
+: <a class="el" href="classfc_1_1asio_1_1ostream.html#ae5076dce37cc78c9cad73b5aa0357e3d">fc::asio::ostream&lt; AsyncWriteStream &gt;</a>
+</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 17 2019 16:30:09 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 3 2019 18:33:19 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
