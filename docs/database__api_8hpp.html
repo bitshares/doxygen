@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -66,32 +66,24 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">database_api.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="full__account_8hpp_source.html">graphene/app/full_account.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="api__objects_8hpp_source.html">graphene/app/api_objects.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html">graphene/protocol/types.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="database_8hpp_source.html">graphene/chain/database.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="account__object_8hpp_source.html">graphene/chain/account_object.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="asset__object_8hpp_source.html">graphene/chain/asset_object.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="balance__object_8hpp_source.html">graphene/chain/balance_object.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="chain__property__object_8hpp_source.html">graphene/chain/chain_property_object.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="committee__member__object_8hpp_source.html">graphene/chain/committee_member_object.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="confidential__object_8hpp_source.html">graphene/chain/confidential_object.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="market__object_8hpp_source.html">graphene/chain/market_object.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="operation__history__object_8hpp_source.html">graphene/chain/operation_history_object.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="proposal__object_8hpp_source.html">graphene/chain/proposal_object.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="worker__object_8hpp_source.html">graphene/chain/worker_object.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="witness__object_8hpp_source.html">graphene/chain/witness_object.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="htlc__object_8hpp_source.html">graphene/chain/htlc_object.hpp</a>&gt;</code><br />
-<code>#include &lt;graphene/market_history/market_history_plugin.hpp&gt;</code><br />
-<code>#include &lt;fc/api.hpp&gt;</code><br />
-<code>#include &lt;fc/optional.hpp&gt;</code><br />
-<code>#include &lt;fc/variant_object.hpp&gt;</code><br />
-<code>#include &lt;fc/network/ip.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="fc_2include_2fc_2api_8hpp_source.html">fc/api.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="variant__object_8hpp_source.html">fc/variant_object.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ip_8hpp_source.html">fc/network/ip.hpp</a>&gt;</code><br />
 <code>#include &lt;boost/container/flat_set.hpp&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
@@ -102,16 +94,6 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1order.html">graphene::app::order</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1order__book.html">graphene::app::order_book</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1market__ticker.html">graphene::app::market_ticker</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1market__volume.html">graphene::app::market_volume</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1market__trade.html">graphene::app::market_trade</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api.html">graphene::app::database_api</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classgraphene_1_1app_1_1database__api.html" title="The database_api class implements the RPC API for the chain database. ">database_api</a> class implements the RPC API for the chain database.  <a href="classgraphene_1_1app_1_1database__api.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,165 +104,11 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacegraphene_1_1app"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1app.html">graphene::app</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:abdf593e10560058e6157660e5b8487d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="database__api_8hpp.html#abdf593e10560058e6157660e5b8487d7">FC_REFLECT</a> (<a class="el" href="structgraphene_1_1app_1_1order.html">graphene::app::order</a>,(price)(quote)(base))</td></tr>
-<tr class="separator:abdf593e10560058e6157660e5b8487d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad48a1c3658cb69bb8154a02b5b47f61f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="database__api_8hpp.html#ad48a1c3658cb69bb8154a02b5b47f61f">FC_REFLECT</a> (<a class="el" href="structgraphene_1_1app_1_1order__book.html">graphene::app::order_book</a>,(base)(quote)(bids)(asks))</td></tr>
-<tr class="separator:ad48a1c3658cb69bb8154a02b5b47f61f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec50546c607e0ef01d2e2de9a648ec9c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="database__api_8hpp.html#aec50546c607e0ef01d2e2de9a648ec9c">FC_REFLECT</a> (<a class="el" href="structgraphene_1_1app_1_1market__ticker.html">graphene::app::market_ticker</a>,(time)(base)(quote)(latest)(lowest_ask)(highest_bid)(percent_change)(base_volume)(quote_volume))</td></tr>
-<tr class="separator:aec50546c607e0ef01d2e2de9a648ec9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7c083722916572cf3645b93c92ea4a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="database__api_8hpp.html#aa7c083722916572cf3645b93c92ea4a9">FC_REFLECT</a> (<a class="el" href="structgraphene_1_1app_1_1market__volume.html">graphene::app::market_volume</a>,(time)(base)(quote)(base_volume)(quote_volume))</td></tr>
-<tr class="separator:aa7c083722916572cf3645b93c92ea4a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa942c9981f641a8c0c665a439fdb0924"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="database__api_8hpp.html#aa942c9981f641a8c0c665a439fdb0924">FC_REFLECT</a> (<a class="el" href="structgraphene_1_1app_1_1market__trade.html">graphene::app::market_trade</a>,(sequence)(date)(price)(amount)(value)(side1_account_id)(side2_account_id))</td></tr>
-<tr class="separator:aa942c9981f641a8c0c665a439fdb0924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="abdf593e10560058e6157660e5b8487d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdf593e10560058e6157660e5b8487d7">&#9670;&nbsp;</a></span>FC_REFLECT() <span class="overload">[1/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FC_REFLECT </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structgraphene_1_1app_1_1order.html">graphene::app::order</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">(price)(quote)(base)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad48a1c3658cb69bb8154a02b5b47f61f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad48a1c3658cb69bb8154a02b5b47f61f">&#9670;&nbsp;</a></span>FC_REFLECT() <span class="overload">[2/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FC_REFLECT </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structgraphene_1_1app_1_1order__book.html">graphene::app::order_book</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">(base)(quote)(bids)(asks)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aec50546c607e0ef01d2e2de9a648ec9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec50546c607e0ef01d2e2de9a648ec9c">&#9670;&nbsp;</a></span>FC_REFLECT() <span class="overload">[3/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FC_REFLECT </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structgraphene_1_1app_1_1market__ticker.html">graphene::app::market_ticker</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">(time)(base)(quote)(latest)(lowest_ask)(highest_bid)(percent_change)(base_volume)(quote_volume)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa7c083722916572cf3645b93c92ea4a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7c083722916572cf3645b93c92ea4a9">&#9670;&nbsp;</a></span>FC_REFLECT() <span class="overload">[4/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FC_REFLECT </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structgraphene_1_1app_1_1market__volume.html">graphene::app::market_volume</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">(time)(base)(quote)(base_volume)(quote_volume)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa942c9981f641a8c0c665a439fdb0924"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa942c9981f641a8c0c665a439fdb0924">&#9670;&nbsp;</a></span>FC_REFLECT() <span class="overload">[5/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FC_REFLECT </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structgraphene_1_1app_1_1market__trade.html">graphene::app::market_trade</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">(sequence)(date)(price)(amount)(value)(side1_account_id)(side2_account_id)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 3 2019 18:33:15 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

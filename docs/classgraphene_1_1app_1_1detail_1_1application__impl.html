@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -80,16 +80,17 @@ Inheritance diagram for graphene::app::detail::application_impl:</div>
  <div class="center">
   <img src="classgraphene_1_1app_1_1detail_1_1application__impl.png" usemap="#graphene::app::detail::application_5Fimpl_map" alt=""/>
   <map id="graphene::app::detail::application_5Fimpl_map" name="graphene::app::detail::application_5Fimpl_map">
+<area href="classgraphene_1_1net_1_1node__delegate.html" title="used by node reports status to client or fetch data from client " alt="graphene::net::node_delegate" shape="rect" coords="0,0,225,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a05f6b598c146b0707f86c2e46ccdeb58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a05f6b598c146b0707f86c2e46ccdeb58">reset_p2p_node</a> (const fc::path &amp;data_dir)</td></tr>
+<tr class="memitem:a05f6b598c146b0707f86c2e46ccdeb58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a05f6b598c146b0707f86c2e46ccdeb58">reset_p2p_node</a> (const <a class="el" href="classfc_1_1path.html">fc::path</a> &amp;data_dir)</td></tr>
 <tr class="separator:a05f6b598c146b0707f86c2e46ccdeb58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a393516074e60a340567cd9b66e58d9c2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; fc::ip::endpoint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a393516074e60a340567cd9b66e58d9c2">resolve_string_to_ip_endpoints</a> (const std::string &amp;endpoint_string)</td></tr>
+<tr class="memitem:a393516074e60a340567cd9b66e58d9c2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a393516074e60a340567cd9b66e58d9c2">resolve_string_to_ip_endpoints</a> (const std::string &amp;endpoint_string)</td></tr>
 <tr class="separator:a393516074e60a340567cd9b66e58d9c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53299364447764a4628a0f2b9018871b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a53299364447764a4628a0f2b9018871b">new_connection</a> (const fc::http::websocket_connection_ptr &amp;c)</td></tr>
+<tr class="memitem:a53299364447764a4628a0f2b9018871b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a53299364447764a4628a0f2b9018871b">new_connection</a> (const <a class="el" href="namespacefc_1_1http.html#a530cf9528ae810584e918888da48f53d">fc::http::websocket_connection_ptr</a> &amp;c)</td></tr>
 <tr class="separator:a53299364447764a4628a0f2b9018871b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0951d21a6e4640c78c8dba4dd53b6a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#aa0951d21a6e4640c78c8dba4dd53b6a8">reset_websocket_server</a> ()</td></tr>
 <tr class="separator:aa0951d21a6e4640c78c8dba4dd53b6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -105,49 +106,56 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a93839de48da01b3e3105e13321a1e8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2367bb23a57aa6b4608e7176c63cd9f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a2367bb23a57aa6b4608e7176c63cd9f6">startup</a> ()</td></tr>
 <tr class="separator:a2367bb23a57aa6b4608e7176c63cd9f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cd01553607a8c532a89f265412e6121"><td class="memItemLeft" align="right" valign="top">fc::optional&lt; <a class="el" href="structgraphene_1_1app_1_1api__access__info.html">api_access_info</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a1cd01553607a8c532a89f265412e6121">get_api_access_info</a> (const string &amp;username) const</td></tr>
+<tr class="memitem:a1cd01553607a8c532a89f265412e6121"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1optional.html">fc::optional</a>&lt; <a class="el" href="structgraphene_1_1app_1_1api__access__info.html">api_access_info</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a1cd01553607a8c532a89f265412e6121">get_api_access_info</a> (const string &amp;username) const</td></tr>
 <tr class="separator:a1cd01553607a8c532a89f265412e6121"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87f3404e89bb5e4426986a7248ece785"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a87f3404e89bb5e4426986a7248ece785">set_api_access_info</a> (const string &amp;username, <a class="el" href="structgraphene_1_1app_1_1api__access__info.html">api_access_info</a> &amp;&amp;permissions)</td></tr>
 <tr class="separator:a87f3404e89bb5e4426986a7248ece785"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46e14a1b20cb3b78e93f8267af3028de"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a46e14a1b20cb3b78e93f8267af3028de">has_item</a> (const net::item_id &amp;id) override</td></tr>
+<tr class="memitem:a46e14a1b20cb3b78e93f8267af3028de"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a46e14a1b20cb3b78e93f8267af3028de">has_item</a> (const <a class="el" href="structgraphene_1_1net_1_1item__id.html">net::item_id</a> &amp;id) override</td></tr>
 <tr class="separator:a46e14a1b20cb3b78e93f8267af3028de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a273e2fecedd3bab5130df1d8c84cbc92"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a273e2fecedd3bab5130df1d8c84cbc92">handle_block</a> (const graphene::net::block_message &amp;blk_msg, bool sync_mode, std::vector&lt; fc::uint160_t &gt; &amp;contained_transaction_message_ids) override</td></tr>
+<tr class="memitem:a273e2fecedd3bab5130df1d8c84cbc92"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a273e2fecedd3bab5130df1d8c84cbc92">handle_block</a> (const <a class="el" href="structgraphene_1_1net_1_1block__message.html">graphene::net::block_message</a> &amp;blk_msg, bool sync_mode, std::vector&lt; <a class="el" href="namespacefc.html#a5d143859f1f34b560f2f2f13d9d078d4">fc::uint160_t</a> &gt; &amp;contained_transaction_message_ids) override</td></tr>
 <tr class="memdesc:a273e2fecedd3bab5130df1d8c84cbc92"><td class="mdescLeft">&#160;</td><td class="mdescRight">allows the application to validate an item prior to broadcasting to peers.  <a href="#a273e2fecedd3bab5130df1d8c84cbc92">More...</a><br /></td></tr>
 <tr class="separator:a273e2fecedd3bab5130df1d8c84cbc92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1957c5d15b2e71ffcdc8e3d26a81ef51"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a1957c5d15b2e71ffcdc8e3d26a81ef51">handle_transaction</a> (const graphene::net::trx_message &amp;transaction_message) override</td></tr>
+<tr class="memitem:a1957c5d15b2e71ffcdc8e3d26a81ef51"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a1957c5d15b2e71ffcdc8e3d26a81ef51">handle_transaction</a> (const <a class="el" href="structgraphene_1_1net_1_1trx__message.html">graphene::net::trx_message</a> &amp;transaction_message) override</td></tr>
+<tr class="memdesc:a1957c5d15b2e71ffcdc8e3d26a81ef51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a new transaction comes in from the network.  <a href="#a1957c5d15b2e71ffcdc8e3d26a81ef51">More...</a><br /></td></tr>
 <tr class="separator:a1957c5d15b2e71ffcdc8e3d26a81ef51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dc565859e27afcfd6f3752bd4feea00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a8dc565859e27afcfd6f3752bd4feea00">handle_message</a> (const graphene::net::message &amp;message_to_process) override</td></tr>
+<tr class="memitem:a8dc565859e27afcfd6f3752bd4feea00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a8dc565859e27afcfd6f3752bd4feea00">handle_message</a> (const <a class="el" href="structgraphene_1_1net_1_1message.html">graphene::net::message</a> &amp;message_to_process) override</td></tr>
+<tr class="memdesc:a8dc565859e27afcfd6f3752bd4feea00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a new message comes in from the network other than a block or a transaction. Currently there are no other possible messages, so this should never be called.  <a href="#a8dc565859e27afcfd6f3752bd4feea00">More...</a><br /></td></tr>
 <tr class="separator:a8dc565859e27afcfd6f3752bd4feea00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d67c953aa24b3c76b8f94502d2a004a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a5d67c953aa24b3c76b8f94502d2a004a">is_included_block</a> (const <a class="el" href="namespacegraphene_1_1protocol.html#a32e784a8edceba5506db2c130ed9cb9c">graphene::chain::block_id_type</a> &amp;block_id)</td></tr>
 <tr class="separator:a5d67c953aa24b3c76b8f94502d2a004a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6e738ecab68c50c82c14f5797936194"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; graphene::net::item_hash_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#aa6e738ecab68c50c82c14f5797936194">get_block_ids</a> (const std::vector&lt; graphene::net::item_hash_t &gt; &amp;blockchain_synopsis, uint32_t &amp;remaining_item_count, uint32_t limit) override</td></tr>
+<tr class="memitem:aa6e738ecab68c50c82c14f5797936194"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="namespacegraphene_1_1net.html#ae6a74bd458bbef0d6d21dd35c74c6235">graphene::net::item_hash_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#aa6e738ecab68c50c82c14f5797936194">get_block_ids</a> (const std::vector&lt; <a class="el" href="namespacegraphene_1_1net.html#ae6a74bd458bbef0d6d21dd35c74c6235">graphene::net::item_hash_t</a> &gt; &amp;blockchain_synopsis, uint32_t &amp;remaining_item_count, uint32_t limit) override</td></tr>
 <tr class="separator:aa6e738ecab68c50c82c14f5797936194"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff166590e90eec9081d50a5d63fd97a8"><td class="memItemLeft" align="right" valign="top">virtual graphene::net::message&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#aff166590e90eec9081d50a5d63fd97a8">get_item</a> (const graphene::net::item_id &amp;id) override</td></tr>
+<tr class="memitem:aff166590e90eec9081d50a5d63fd97a8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structgraphene_1_1net_1_1message.html">graphene::net::message</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#aff166590e90eec9081d50a5d63fd97a8">get_item</a> (const <a class="el" href="structgraphene_1_1net_1_1item__id.html">graphene::net::item_id</a> &amp;id) override</td></tr>
 <tr class="separator:aff166590e90eec9081d50a5d63fd97a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae901d1ad1ef060f430822036fa152ff6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacegraphene_1_1protocol.html#a56354f39ed89f6a0a13fe90ba8228809">graphene::chain::chain_id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#ae901d1ad1ef060f430822036fa152ff6">get_chain_id</a> () const override</td></tr>
 <tr class="separator:ae901d1ad1ef060f430822036fa152ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2696bb9c0a104b9726f059bbd340a88d"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; graphene::net::item_hash_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a2696bb9c0a104b9726f059bbd340a88d">get_blockchain_synopsis</a> (const graphene::net::item_hash_t &amp;reference_point, uint32_t number_of_blocks_after_reference_point) override</td></tr>
+<tr class="memitem:a2696bb9c0a104b9726f059bbd340a88d"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="namespacegraphene_1_1net.html#ae6a74bd458bbef0d6d21dd35c74c6235">graphene::net::item_hash_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a2696bb9c0a104b9726f059bbd340a88d">get_blockchain_synopsis</a> (const <a class="el" href="namespacegraphene_1_1net.html#ae6a74bd458bbef0d6d21dd35c74c6235">graphene::net::item_hash_t</a> &amp;reference_point, uint32_t number_of_blocks_after_reference_point) override</td></tr>
 <tr class="separator:a2696bb9c0a104b9726f059bbd340a88d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5eec95c126c0fd0e2e7d6cab4fa60e85"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a5eec95c126c0fd0e2e7d6cab4fa60e85">sync_status</a> (uint32_t item_type, uint32_t item_count) override</td></tr>
 <tr class="separator:a5eec95c126c0fd0e2e7d6cab4fa60e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01bbb97b242780b662ea626cf0636903"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a01bbb97b242780b662ea626cf0636903">connection_count_changed</a> (uint32_t c) override</td></tr>
 <tr class="separator:a01bbb97b242780b662ea626cf0636903"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a679ccffe63b7c317c4db783b04e8df25"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a679ccffe63b7c317c4db783b04e8df25">get_block_number</a> (const graphene::net::item_hash_t &amp;block_id) override</td></tr>
+<tr class="memitem:a679ccffe63b7c317c4db783b04e8df25"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a679ccffe63b7c317c4db783b04e8df25">get_block_number</a> (const <a class="el" href="namespacegraphene_1_1net.html#ae6a74bd458bbef0d6d21dd35c74c6235">graphene::net::item_hash_t</a> &amp;block_id) override</td></tr>
 <tr class="separator:a679ccffe63b7c317c4db783b04e8df25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c811120f251bdf274099b988560768d"><td class="memItemLeft" align="right" valign="top">virtual fc::time_point_sec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a6c811120f251bdf274099b988560768d">get_block_time</a> (const graphene::net::item_hash_t &amp;block_id) override</td></tr>
+<tr class="memitem:a6c811120f251bdf274099b988560768d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfc_1_1time__point__sec.html">fc::time_point_sec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a6c811120f251bdf274099b988560768d">get_block_time</a> (const <a class="el" href="namespacegraphene_1_1net.html#ae6a74bd458bbef0d6d21dd35c74c6235">graphene::net::item_hash_t</a> &amp;block_id) override</td></tr>
 <tr class="separator:a6c811120f251bdf274099b988560768d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a169f751575f1c254aba4200fde31a879"><td class="memItemLeft" align="right" valign="top">virtual graphene::net::item_hash_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a169f751575f1c254aba4200fde31a879">get_head_block_id</a> () const override</td></tr>
+<tr class="memitem:a169f751575f1c254aba4200fde31a879"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacegraphene_1_1net.html#ae6a74bd458bbef0d6d21dd35c74c6235">graphene::net::item_hash_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a169f751575f1c254aba4200fde31a879">get_head_block_id</a> () const override</td></tr>
 <tr class="separator:a169f751575f1c254aba4200fde31a879"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b0ee0db78442dc1b75de0acc634c12e"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a6b0ee0db78442dc1b75de0acc634c12e">estimate_last_known_fork_from_git_revision_timestamp</a> (uint32_t unix_timestamp) const override</td></tr>
 <tr class="separator:a6b0ee0db78442dc1b75de0acc634c12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a0e962fe925e8e987208e3dc6c21863"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a2a0e962fe925e8e987208e3dc6c21863">error_encountered</a> (const std::string &amp;message, const fc::oexception &amp;error) override</td></tr>
+<tr class="memitem:a2a0e962fe925e8e987208e3dc6c21863"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a2a0e962fe925e8e987208e3dc6c21863">error_encountered</a> (const std::string &amp;<a class="el" href="structgraphene_1_1net_1_1message.html">message</a>, const <a class="el" href="namespacefc.html#a16f272a3d05d2641cb2bf67bac4673dc">fc::oexception</a> &amp;error) override</td></tr>
 <tr class="separator:a2a0e962fe925e8e987208e3dc6c21863"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a16866ca1ed46f734043f473fad7735"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a5a16866ca1ed46f734043f473fad7735">get_current_block_interval_in_seconds</a> () const override</td></tr>
 <tr class="separator:a5a16866ca1ed46f734043f473fad7735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classgraphene_1_1net_1_1node__delegate"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgraphene_1_1net_1_1node__delegate')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classgraphene_1_1net_1_1node__delegate.html">graphene::net::node_delegate</a></td></tr>
+<tr class="memitem:a49a17956290635b42fb40f1a9fcc6392 inherit pub_methods_classgraphene_1_1net_1_1node__delegate"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a49a17956290635b42fb40f1a9fcc6392">~node_delegate</a> ()</td></tr>
+<tr class="separator:a49a17956290635b42fb40f1a9fcc6392 inherit pub_methods_classgraphene_1_1net_1_1node__delegate"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74b20c0bd09734e2e483809f0fb1d81a inherit pub_methods_classgraphene_1_1net_1_1node__delegate"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="namespacegraphene_1_1net.html#ae6a74bd458bbef0d6d21dd35c74c6235">item_hash_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a74b20c0bd09734e2e483809f0fb1d81a">get_block_ids</a> (const std::vector&lt; <a class="el" href="namespacegraphene_1_1net.html#ae6a74bd458bbef0d6d21dd35c74c6235">item_hash_t</a> &gt; &amp;blockchain_synopsis, uint32_t &amp;remaining_item_count, uint32_t limit=2000)=0</td></tr>
+<tr class="separator:a74b20c0bd09734e2e483809f0fb1d81a inherit pub_methods_classgraphene_1_1net_1_1node__delegate"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af07b5b8d6e16afe34208c9755f6416f5"><td class="memItemLeft" align="right" valign="top">fc::optional&lt; fc::temp_file &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#af07b5b8d6e16afe34208c9755f6416f5">_lock_file</a></td></tr>
+<tr class="memitem:af07b5b8d6e16afe34208c9755f6416f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1optional.html">fc::optional</a>&lt; <a class="el" href="classfc_1_1temp__file.html">fc::temp_file</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#af07b5b8d6e16afe34208c9755f6416f5">_lock_file</a></td></tr>
 <tr class="separator:af07b5b8d6e16afe34208c9755f6416f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14c8a3eab603c26744a2ece452aa0bc7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a14c8a3eab603c26744a2ece452aa0bc7">_is_block_producer</a> = false</td></tr>
 <tr class="separator:a14c8a3eab603c26744a2ece452aa0bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,7 +165,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a9f3e0210e9e170a068a4fe6bc4259cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01326317118046e1a808c998a7fd509e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1app_1_1application.html">application</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a01326317118046e1a808c998a7fd509e">_self</a></td></tr>
 <tr class="separator:a01326317118046e1a808c998a7fd509e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31f4ebabcfc8d3304706120af8ac74a5"><td class="memItemLeft" align="right" valign="top">fc::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a31f4ebabcfc8d3304706120af8ac74a5">_data_dir</a></td></tr>
+<tr class="memitem:a31f4ebabcfc8d3304706120af8ac74a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1path.html">fc::path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a31f4ebabcfc8d3304706120af8ac74a5">_data_dir</a></td></tr>
 <tr class="separator:a31f4ebabcfc8d3304706120af8ac74a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49cafc50881c6f6dc4f2e2e7b14ea784"><td class="memItemLeft" align="right" valign="top">const boost::program_options::variables_map *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a49cafc50881c6f6dc4f2e2e7b14ea784">_options</a> = nullptr</td></tr>
 <tr class="separator:a49cafc50881c6f6dc4f2e2e7b14ea784"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,11 +173,11 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aaf6a8332d0bafd2d58acc8bca108fadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab81da4ed3068cb9e85380007471e2985"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classgraphene_1_1chain_1_1database.html">graphene::chain::database</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#ab81da4ed3068cb9e85380007471e2985">_chain_db</a></td></tr>
 <tr class="separator:ab81da4ed3068cb9e85380007471e2985"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a00a599276f8d7d30910da38a27d9a4"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; graphene::net::node &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a0a00a599276f8d7d30910da38a27d9a4">_p2p_network</a></td></tr>
+<tr class="memitem:a0a00a599276f8d7d30910da38a27d9a4"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classgraphene_1_1net_1_1node.html">graphene::net::node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a0a00a599276f8d7d30910da38a27d9a4">_p2p_network</a></td></tr>
 <tr class="separator:a0a00a599276f8d7d30910da38a27d9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6447c7cc434945337456c18d0103ef1"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; fc::http::websocket_server &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#ae6447c7cc434945337456c18d0103ef1">_websocket_server</a></td></tr>
+<tr class="memitem:ae6447c7cc434945337456c18d0103ef1"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classfc_1_1http_1_1websocket__server.html">fc::http::websocket_server</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#ae6447c7cc434945337456c18d0103ef1">_websocket_server</a></td></tr>
 <tr class="separator:ae6447c7cc434945337456c18d0103ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca6d490958bb5748c84cb89488f0bb3e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; fc::http::websocket_tls_server &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#aca6d490958bb5748c84cb89488f0bb3e">_websocket_tls_server</a></td></tr>
+<tr class="memitem:aca6d490958bb5748c84cb89488f0bb3e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classfc_1_1http_1_1websocket__tls__server.html">fc::http::websocket_tls_server</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#aca6d490958bb5748c84cb89488f0bb3e">_websocket_tls_server</a></td></tr>
 <tr class="separator:aca6d490958bb5748c84cb89488f0bb3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09eaa3fcdfaa628b3ab5746e9458ab5c"><td class="memItemLeft" align="right" valign="top">std::map&lt; string, std::shared_ptr&lt; <a class="el" href="classgraphene_1_1app_1_1abstract__plugin.html">abstract_plugin</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a09eaa3fcdfaa628b3ab5746e9458ab5c">_active_plugins</a></td></tr>
 <tr class="separator:a09eaa3fcdfaa628b3ab5746e9458ab5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -263,7 +271,9 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Call any time the number of connected peers changes. </p>
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00940">940</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#aeb54b89d68318b06a155f5eff640f2df">graphene::net::node_delegate</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00927">927</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -285,7 +295,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const fc::oexception &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefc.html#a16f272a3d05d2641cb2bf67bac4673dc">fc::oexception</a> &amp;&#160;</td>
           <td class="paramname"><em>error</em>&#160;</td>
         </tr>
         <tr>
@@ -301,7 +311,9 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00971">971</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a1e4d4a7ce301380c67d2908c4d8e8aeb">graphene::net::node_delegate</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00958">958</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -329,7 +341,9 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00966">966</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#ac9075e9cdef0eb9d3757ef375efcdff1">graphene::net::node_delegate</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00953">953</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -340,7 +354,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">optional&lt; <a class="el" href="structgraphene_1_1app_1_1api__access__info.html">api_access_info</a> &gt; graphene::app::detail::application_impl::get_api_access_info </td>
+          <td class="memname"><a class="el" href="classfc_1_1optional.html">optional</a>&lt; <a class="el" href="structgraphene_1_1app_1_1api__access__info.html">api_access_info</a> &gt; graphene::app::detail::application_impl::get_api_access_info </td>
           <td>(</td>
           <td class="paramtype">const string &amp;&#160;</td>
           <td class="paramname"><em>username</em></td><td>)</td>
@@ -349,7 +363,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00526">526</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00511">511</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -365,7 +379,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">std::vector&lt; item_hash_t &gt; graphene::app::detail::application_impl::get_block_ids </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; graphene::net::item_hash_t &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacegraphene_1_1net.html#ae6a74bd458bbef0d6d21dd35c74c6235">graphene::net::item_hash_t</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>blockchain_synopsis</em>, </td>
         </tr>
         <tr>
@@ -395,7 +409,7 @@ Public Attributes</h2></td></tr>
 <p>Assuming all data elements are ordered in some way, this method should return up to limit ids that occur <em>after</em> the last ID in synopsis that we recognize.</p>
 <p>On return, remaining_item_count will be set to the number of items in our blockchain after the last item returned in the result, or 0 if the result contains the last item in the blockchain </p>
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00675">675</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00662">662</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -411,7 +425,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">uint32_t graphene::app::detail::application_impl::get_block_number </td>
           <td>(</td>
-          <td class="paramtype">const graphene::net::item_hash_t &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacegraphene_1_1net.html#ae6a74bd458bbef0d6d21dd35c74c6235">graphene::net::item_hash_t</a> &amp;&#160;</td>
           <td class="paramname"><em>block_id</em></td><td>)</td>
           <td></td>
         </tr>
@@ -423,7 +437,9 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00945">945</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a8620fff6f74e76e5583f4046f7ca3b46">graphene::net::node_delegate</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00932">932</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -437,9 +453,9 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">fc::time_point_sec graphene::app::detail::application_impl::get_block_time </td>
+          <td class="memname"><a class="el" href="classfc_1_1time__point__sec.html">fc::time_point_sec</a> graphene::app::detail::application_impl::get_block_time </td>
           <td>(</td>
-          <td class="paramtype">const graphene::net::item_hash_t &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacegraphene_1_1net.html#ae6a74bd458bbef0d6d21dd35c74c6235">graphene::net::item_hash_t</a> &amp;&#160;</td>
           <td class="paramname"><em>block_id</em></td><td>)</td>
           <td></td>
         </tr>
@@ -450,9 +466,11 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the time a block was produced (if block_id = 0, returns genesis time). If we don't know about the block, returns time_point_sec::min() </p>
+<p>Returns the time a block was produced (if block_id = 0, returns genesis time). If we don't know about the block, returns <a class="el" href="classfc_1_1time__point__sec.html#a9e403874fef172903950ad8d0f3120c6">time_point_sec::min()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00954">954</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a4795a26af1b8ac700479e7e0fd293bd0">graphene::net::node_delegate</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00941">941</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -468,7 +486,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">std::vector&lt; item_hash_t &gt; graphene::app::detail::application_impl::get_blockchain_synopsis </td>
           <td>(</td>
-          <td class="paramtype">const graphene::net::item_hash_t &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacegraphene_1_1net.html#ae6a74bd458bbef0d6d21dd35c74c6235">graphene::net::item_hash_t</a> &amp;&#160;</td>
           <td class="paramname"><em>reference_point</em>, </td>
         </tr>
         <tr>
@@ -500,7 +518,9 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 <li>the block ids they've previously sent us Segment 3 is handled in the p2p code, it just tells us the number of blocks it has (in number_of_blocks_after_reference_point) so we can leave space in the synopsis for them. We're responsible for constructing the synopsis of Segments 1 and 2 from our active blockchain and fork database. The reference_point parameter is the last block from that peer that has been successfully pushed to the blockchain, so that tells us whether the peer is on a fork or on the main chain. </li>
 </ol>
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00805">805</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a0f144d17fc3bd79ac59ef4f3372d406a">graphene::net::node_delegate</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00792">792</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -527,7 +547,9 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00742">742</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a6abb2ff8bf61ef04b31e1a3685dff950">graphene::net::node_delegate</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00729">729</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -549,12 +571,14 @@ the next 2000 ids" because they may have switched forks themselves and they don'
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00976">976</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a74351fae3daf10fcb9c5ae2505eeab19">graphene::net::node_delegate</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00963">963</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -581,7 +605,9 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00961">961</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#ae9da839865d1ac8902096b65c7e13502">graphene::net::node_delegate</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00948">948</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -595,9 +621,9 @@ the next 2000 ids" because they may have switched forks themselves and they don'
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">message graphene::app::detail::application_impl::get_item </td>
+          <td class="memname"><a class="el" href="structgraphene_1_1net_1_1message.html">message</a> graphene::app::detail::application_impl::get_item </td>
           <td>(</td>
-          <td class="paramtype">const graphene::net::item_id &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1net_1_1item__id.html">graphene::net::item_id</a> &amp;&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
         </tr>
@@ -610,7 +636,9 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 </div><div class="memdoc">
 <p>Given the hash of the requested data, fetch the body. </p>
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00726">726</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#ad45df7b4d849fa221356a266f408b617">graphene::net::node_delegate</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00713">713</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -626,7 +654,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
         <tr>
           <td class="memname">bool graphene::app::detail::application_impl::handle_block </td>
           <td>(</td>
-          <td class="paramtype">const graphene::net::block_message &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1net_1_1block__message.html">graphene::net::block_message</a> &amp;&#160;</td>
           <td class="paramname"><em>blk_msg</em>, </td>
         </tr>
         <tr>
@@ -638,7 +666,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; fc::uint160_t &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacefc.html#a5d143859f1f34b560f2f2f13d9d078d4">fc::uint160_t</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>contained_transaction_message_ids</em>&#160;</td>
         </tr>
         <tr>
@@ -669,7 +697,9 @@ the next 2000 ids" because they may have switched forks themselves and they don'
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00567">567</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a45d5e096caa804db426c5ce092092b25">graphene::net::node_delegate</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00552">552</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -685,19 +715,29 @@ the next 2000 ids" because they may have switched forks themselves and they don'
         <tr>
           <td class="memname">void graphene::app::detail::application_impl::handle_message </td>
           <td>(</td>
-          <td class="paramtype">const graphene::net::message &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1net_1_1message.html">graphene::net::message</a> &amp;&#160;</td>
           <td class="paramname"><em>message_to_process</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00653">653</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Called when a new message comes in from the network other than a block or a transaction. Currently there are no other possible messages, so this should never be called. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">exception</td><td>if error validating the item, otherwise the item is safe to broadcast on. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a738c6181f8e461b147934d7b79e710f8">graphene::net::node_delegate</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00640">640</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -713,8 +753,8 @@ the next 2000 ids" because they may have switched forks themselves and they don'
         <tr>
           <td class="memname">void graphene::app::detail::application_impl::handle_transaction </td>
           <td>(</td>
-          <td class="paramtype">const graphene::net::trx_message &amp;&#160;</td>
-          <td class="paramname"><em>transaction_message</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1net_1_1trx__message.html">graphene::net::trx_message</a> &amp;&#160;</td>
+          <td class="paramname"><em>trx_msg</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -725,7 +765,17 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00637">637</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Called when a new transaction comes in from the network. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">exception</td><td>if error validating the item, otherwise the item is safe to broadcast on. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a012e220463b248980525219ae44ee0a3">graphene::net::node_delegate</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00624">624</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -741,7 +791,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
         <tr>
           <td class="memname">bool graphene::app::detail::application_impl::has_item </td>
           <td>(</td>
-          <td class="paramtype">const net::item_id &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1net_1_1item__id.html">net::item_id</a> &amp;&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
         </tr>
@@ -754,7 +804,9 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 </div><div class="memdoc">
 <p>If delegate has the item, the network has no need to fetch it. </p>
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00547">547</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#ae73a8679f1f836d42e5ee06ae0951201">graphene::net::node_delegate</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00532">532</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -774,7 +826,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00659">659</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00646">646</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -787,14 +839,14 @@ the next 2000 ids" because they may have switched forks themselves and they don'
         <tr>
           <td class="memname">void graphene::app::detail::application_impl::new_connection </td>
           <td>(</td>
-          <td class="paramtype">const fc::http::websocket_connection_ptr &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefc_1_1http.html#a530cf9528ae810584e918888da48f53d">fc::http::websocket_connection_ptr</a> &amp;&#160;</td>
           <td class="paramname"><em>c</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00247">247</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00229">229</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -807,7 +859,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
         <tr>
           <td class="memname">void graphene::app::detail::application_impl::reset_p2p_node </td>
           <td>(</td>
-          <td class="paramtype">const fc::path &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1path.html">fc::path</a> &amp;&#160;</td>
           <td class="paramname"><em>data_dir</em></td><td>)</td>
           <td></td>
         </tr>
@@ -833,7 +885,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00279">279</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00261">261</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -852,7 +904,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00292">292</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00274">274</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -863,7 +915,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; fc::ip::endpoint &gt; graphene::app::detail::application_impl::resolve_string_to_ip_endpoints </td>
+          <td class="memname">std::vector&lt; <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &gt; graphene::app::detail::application_impl::resolve_string_to_ip_endpoints </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>endpoint_string</em></td><td>)</td>
@@ -872,7 +924,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00217">217</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00199">199</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -902,7 +954,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00539">539</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00524">524</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -921,7 +973,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00321">321</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00303">303</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -951,7 +1003,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00311">311</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00293">293</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -970,7 +1022,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00369">369</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00354">354</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -1016,7 +1068,9 @@ the next 2000 ids" because they may have switched forks themselves and they don'
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00932">932</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a0f6d68640e7fca4c2f7effbcddcdd9f1">graphene::net::node_delegate</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00919">919</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -1108,7 +1162,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">fc::path graphene::app::detail::application_impl::_data_dir</td>
+          <td class="memname"><a class="el" href="classfc_1_1path.html">fc::path</a> graphene::app::detail::application_impl::_data_dir</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1172,7 +1226,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">fc::optional&lt;fc::temp_file&gt; graphene::app::detail::application_impl::_lock_file</td>
+          <td class="memname"><a class="el" href="classfc_1_1optional.html">fc::optional</a>&lt;<a class="el" href="classfc_1_1temp__file.html">fc::temp_file</a>&gt; graphene::app::detail::application_impl::_lock_file</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1204,7 +1258,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;graphene::net::node&gt; graphene::app::detail::application_impl::_p2p_network</td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classgraphene_1_1net_1_1node.html">graphene::net::node</a>&gt; graphene::app::detail::application_impl::_p2p_network</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1236,7 +1290,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;fc::http::websocket_server&gt; graphene::app::detail::application_impl::_websocket_server</td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classfc_1_1http_1_1websocket__server.html">fc::http::websocket_server</a>&gt; graphene::app::detail::application_impl::_websocket_server</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1252,7 +1306,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;fc::http::websocket_tls_server&gt; graphene::app::detail::application_impl::_websocket_tls_server</td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classfc_1_1http_1_1websocket__tls__server.html">fc::http::websocket_tls_server</a>&gt; graphene::app::detail::application_impl::_websocket_tls_server</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1268,7 +1322,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 3 2019 18:33:16 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

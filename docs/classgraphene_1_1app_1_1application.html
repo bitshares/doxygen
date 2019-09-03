@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -83,7 +83,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a52c41787f656c18fadf1ab4ad80622f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29c6faba273632e19155b9d17659bdfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1application.html#a29c6faba273632e19155b9d17659bdfb">set_program_options</a> (boost::program_options::options_description &amp;command_line_options, boost::program_options::options_description &amp;configuration_file_options) const</td></tr>
 <tr class="separator:a29c6faba273632e19155b9d17659bdfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03bacda67229d058034d478751b4da08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1application.html#a03bacda67229d058034d478751b4da08">initialize</a> (const fc::path &amp;data_dir, const boost::program_options::variables_map &amp;options)</td></tr>
+<tr class="memitem:a03bacda67229d058034d478751b4da08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1application.html#a03bacda67229d058034d478751b4da08">initialize</a> (const <a class="el" href="classfc_1_1path.html">fc::path</a> &amp;data_dir, const boost::program_options::variables_map &amp;options)</td></tr>
 <tr class="separator:a03bacda67229d058034d478751b4da08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16a9f54da2720e1690ecf2c02f1b51d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1application.html#a16a9f54da2720e1690ecf2c02f1b51d0">initialize_plugins</a> (const boost::program_options::variables_map &amp;options)</td></tr>
 <tr class="separator:a16a9f54da2720e1690ecf2c02f1b51d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -103,7 +103,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4484ef04016fe6d470d694376c3387a4"><td class="memTemplParams" colspan="2">template&lt;typename PluginType &gt; </td></tr>
 <tr class="memitem:a4484ef04016fe6d470d694376c3387a4"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; PluginType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1application.html#a4484ef04016fe6d470d694376c3387a4">get_plugin</a> (const string &amp;name) const</td></tr>
 <tr class="separator:a4484ef04016fe6d470d694376c3387a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6be3372ebe64a14abe6d5c6a26b0f0b"><td class="memItemLeft" align="right" valign="top">net::node_ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1application.html#ac6be3372ebe64a14abe6d5c6a26b0f0b">p2p_node</a> ()</td></tr>
+<tr class="memitem:ac6be3372ebe64a14abe6d5c6a26b0f0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1net.html#ad97d72f1316982932a07e4b2df43aac5">net::node_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1application.html#ac6be3372ebe64a14abe6d5c6a26b0f0b">p2p_node</a> ()</td></tr>
 <tr class="separator:ac6be3372ebe64a14abe6d5c6a26b0f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af856dd23a0f0c0d961022d8c453e47d1"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classgraphene_1_1chain_1_1database.html">chain::database</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1application.html#af856dd23a0f0c0d961022d8c453e47d1">chain_database</a> () const</td></tr>
 <tr class="separator:af856dd23a0f0c0d961022d8c453e47d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,7 +111,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab3a7cb3e8f8562a8d1c897103617d2ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6901555c199caa9535f30375667df3f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1application.html#a6901555c199caa9535f30375667df3f0">set_block_production</a> (bool producing_blocks)</td></tr>
 <tr class="separator:a6901555c199caa9535f30375667df3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ec1e91d393732aca493f27265860ffb"><td class="memItemLeft" align="right" valign="top">fc::optional&lt; <a class="el" href="structgraphene_1_1app_1_1api__access__info.html">api_access_info</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1application.html#a5ec1e91d393732aca493f27265860ffb">get_api_access_info</a> (const string &amp;username) const</td></tr>
+<tr class="memitem:a5ec1e91d393732aca493f27265860ffb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1optional.html">fc::optional</a>&lt; <a class="el" href="structgraphene_1_1app_1_1api__access__info.html">api_access_info</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1application.html#a5ec1e91d393732aca493f27265860ffb">get_api_access_info</a> (const string &amp;username) const</td></tr>
 <tr class="separator:a5ec1e91d393732aca493f27265860ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a327e69e154b57da1da036166cb61d154"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1application.html#a327e69e154b57da1da036166cb61d154">set_api_access_info</a> (const string &amp;username, <a class="el" href="structgraphene_1_1app_1_1api__access__info.html">api_access_info</a> &amp;&amp;permissions)</td></tr>
 <tr class="separator:a327e69e154b57da1da036166cb61d154"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,16 +121,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a27e57fad3d041f065c7a86d34e95cc81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac96d67f1d2d9ba8cb18dcc9f4ea5ad38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1application.html#ac96d67f1d2d9ba8cb18dcc9f4ea5ad38">enable_plugin</a> (const string &amp;name)</td></tr>
 <tr class="separator:ac96d67f1d2d9ba8cb18dcc9f4ea5ad38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2be7bd21116718e5c2b2b9374500aaa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1application.html#aa2be7bd21116718e5c2b2b9374500aaa">is_plugin_enabled</a> (const string &amp;name) const</td></tr>
+<tr class="separator:aa2be7bd21116718e5c2b2b9374500aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a695e67b3eafbf752b6350c7313ef10f7"><td class="memItemLeft" align="right" valign="top">boost::signals2::signal&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1application.html#a695e67b3eafbf752b6350c7313ef10f7">syncing_finished</a></td></tr>
 <tr class="memdesc:a695e67b3eafbf752b6350c7313ef10f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emitted when syncing finishes (is_finished_syncing will return true)  <a href="#a695e67b3eafbf752b6350c7313ef10f7">More...</a><br /></td></tr>
 <tr class="separator:a695e67b3eafbf752b6350c7313ef10f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a668e7fd37142a4612699270e4fec37bc"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classfc_1_1thread.html">fc::thread</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1application.html#a668e7fd37142a4612699270e4fec37bc">elasticsearch_thread</a></td></tr>
+<tr class="separator:a668e7fd37142a4612699270e4fec37bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="application_8hpp_source.html#l00060">60</a> of file <a class="el" href="application_8hpp_source.html">application.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8hpp_source.html#l00061">61</a> of file <a class="el" href="application_8hpp_source.html">application.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a26da774787b3b3b7ad711c91f2730984"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a26da774787b3b3b7ad711c91f2730984">&#9670;&nbsp;</a></span>application()</h2>
@@ -147,7 +151,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00987">987</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00974">974</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -166,7 +170,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00991">991</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00978">978</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -186,7 +190,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01121">1121</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01113">1113</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -206,7 +210,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01146">1146</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01138">1138</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -217,7 +221,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">optional&lt; <a class="el" href="structgraphene_1_1app_1_1api__access__info.html">api_access_info</a> &gt; graphene::app::application::get_api_access_info </td>
+          <td class="memname"><a class="el" href="classfc_1_1optional.html">optional</a>&lt; <a class="el" href="structgraphene_1_1app_1_1api__access__info.html">api_access_info</a> &gt; graphene::app::application::get_api_access_info </td>
           <td>(</td>
           <td class="paramtype">const string &amp;&#160;</td>
           <td class="paramname"><em>username</em></td><td>)</td>
@@ -226,7 +230,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01131">1131</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01123">1123</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -245,7 +249,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01192">1192</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01184">1184</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -265,7 +269,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01111">1111</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01098">1098</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -295,7 +299,7 @@ template&lt;typename PluginType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8hpp_source.html#l00105">105</a> of file <a class="el" href="application_8hpp_source.html">application.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8hpp_source.html#l00106">106</a> of file <a class="el" href="application_8hpp_source.html">application.hpp</a>.</p>
 
 </div>
 </div>
@@ -308,7 +312,7 @@ template&lt;typename PluginType &gt; </div>
         <tr>
           <td class="memname">void graphene::app::application::initialize </td>
           <td>(</td>
-          <td class="paramtype">const fc::path &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1path.html">fc::path</a> &amp;&#160;</td>
           <td class="paramname"><em>data_dir</em>, </td>
         </tr>
         <tr>
@@ -325,7 +329,7 @@ template&lt;typename PluginType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01074">1074</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01061">1061</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -345,7 +349,7 @@ template&lt;typename PluginType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01175">1175</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01167">1167</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -364,7 +368,27 @@ template&lt;typename PluginType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01141">1141</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01133">1133</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa2be7bd21116718e5c2b2b9374500aaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2be7bd21116718e5c2b2b9374500aaa">&#9670;&nbsp;</a></span>is_plugin_enabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool graphene::app::application::is_plugin_enabled </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01103">1103</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -375,7 +399,7 @@ template&lt;typename PluginType &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">net::node_ptr graphene::app::application::p2p_node </td>
+          <td class="memname"><a class="el" href="namespacegraphene_1_1net.html#ad97d72f1316982932a07e4b2df43aac5">net::node_ptr</a> graphene::app::application::p2p_node </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -383,7 +407,7 @@ template&lt;typename PluginType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01116">1116</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01108">1108</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -413,7 +437,7 @@ template&lt;typename PluginType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8hpp_source.html#l00076">76</a> of file <a class="el" href="application_8hpp_source.html">application.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8hpp_source.html#l00077">77</a> of file <a class="el" href="application_8hpp_source.html">application.hpp</a>.</p>
 
 </div>
 </div>
@@ -443,7 +467,7 @@ template&lt;typename PluginType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01136">1136</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01128">1128</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -462,7 +486,7 @@ template&lt;typename PluginType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01099">1099</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01086">1086</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -482,7 +506,7 @@ template&lt;typename PluginType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01126">1126</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01118">1118</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -512,7 +536,7 @@ template&lt;typename PluginType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01004">1004</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l00991">991</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -531,7 +555,7 @@ template&lt;typename PluginType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01164">1164</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01156">1156</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -550,7 +574,7 @@ template&lt;typename PluginType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01158">1158</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01150">1150</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -569,7 +593,7 @@ template&lt;typename PluginType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01086">1086</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01073">1073</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -588,11 +612,27 @@ template&lt;typename PluginType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01182">1182</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8cpp_source.html#l01174">1174</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a668e7fd37142a4612699270e4fec37bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a668e7fd37142a4612699270e4fec37bc">&#9670;&nbsp;</a></span>elasticsearch_thread</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classfc_1_1thread.html">fc::thread</a>&gt; graphene::app::application::elasticsearch_thread</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="application_8hpp_source.html#l00131">131</a> of file <a class="el" href="application_8hpp_source.html">application.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a695e67b3eafbf752b6350c7313ef10f7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a695e67b3eafbf752b6350c7313ef10f7">&#9670;&nbsp;</a></span>syncing_finished</h2>
 
@@ -607,7 +647,7 @@ template&lt;typename PluginType &gt; </div>
 
 <p>Emitted when syncing finishes (is_finished_syncing will return true) </p>
 
-<p class="definition">Definition at line <a class="el" href="application_8hpp_source.html#l00122">122</a> of file <a class="el" href="application_8hpp_source.html">application.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="application_8hpp_source.html#l00123">123</a> of file <a class="el" href="application_8hpp_source.html">application.hpp</a>.</p>
 
 </div>
 </div>
@@ -618,7 +658,7 @@ template&lt;typename PluginType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 3 2019 18:33:16 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

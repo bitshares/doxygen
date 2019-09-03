@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -74,13 +74,13 @@ $(function() {
 <div class="title">vesting_balance_object.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;graphene/db/generic_index.hpp&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="generic__index_8hpp_source.html">graphene/db/generic_index.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset_8hpp_source.html">graphene/protocol/asset.hpp</a>&gt;</code><br />
 <code>#include &lt;boost/multi_index/composite_key.hpp&gt;</code><br />
 <code>#include &lt;boost/multi_index/hashed_index.hpp&gt;</code><br />
 <code>#include &lt;boost/multi_index/identity.hpp&gt;</code><br />
-<code>#include &lt;fc/static_variant.hpp&gt;</code><br />
-<code>#include &lt;fc/uint128.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="static__variant_8hpp_source.html">fc/static_variant.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="uint128_8hpp_source.html">fc/uint128.hpp</a>&gt;</code><br />
 </div>
 <p><a href="vesting__balance__object_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -115,11 +115,11 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ada5fee9165e8f378bf91976a523747c2"><td class="memItemLeft" align="right" valign="top">typedef fc::static_variant&lt; linear_vesting_policy, cdd_vesting_policy, instant_vesting_policy &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#ada5fee9165e8f378bf91976a523747c2">graphene::chain::vesting_policy</a></td></tr>
+<tr class="memitem:ada5fee9165e8f378bf91976a523747c2"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classfc_1_1static__variant.html">fc::static_variant</a>&lt; linear_vesting_policy, cdd_vesting_policy, instant_vesting_policy &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#ada5fee9165e8f378bf91976a523747c2">graphene::chain::vesting_policy</a></td></tr>
 <tr class="separator:ada5fee9165e8f378bf91976a523747c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5df2b2b04b2faf511e46a478fca8df91"><td class="memItemLeft" align="right" valign="top">typedef multi_index_container&lt; vesting_balance_object, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>, &amp;object::id &gt; &gt;, ordered_non_unique&lt; tag&lt; by_account &gt;, member&lt; vesting_balance_object, account_id_type, &amp;vesting_balance_object::owner &gt; &gt;, hashed_unique&lt; tag&lt; by_vesting_type &gt;, identity&lt; vesting_balance_object &gt;, detail::vesting_balance_object_hash, detail::vesting_balance_object_equal &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a5df2b2b04b2faf511e46a478fca8df91">graphene::chain::vesting_balance_multi_index_type</a></td></tr>
+<tr class="memitem:a5df2b2b04b2faf511e46a478fca8df91"><td class="memItemLeft" align="right" valign="top">typedef multi_index_container&lt; vesting_balance_object, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>, &amp;object::id &gt; &gt;, ordered_non_unique&lt; tag&lt; by_account &gt;, member&lt; vesting_balance_object, account_id_type, &amp;vesting_balance_object::owner &gt; &gt;, hashed_unique&lt; tag&lt; by_vesting_type &gt;, identity&lt; vesting_balance_object &gt;, detail::vesting_balance_object_hash, detail::vesting_balance_object_equal &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a5df2b2b04b2faf511e46a478fca8df91">graphene::chain::vesting_balance_multi_index_type</a></td></tr>
 <tr class="separator:a5df2b2b04b2faf511e46a478fca8df91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab04613b07ed5a248119544dce7824ea4"><td class="memItemLeft" align="right" valign="top">typedef generic_index&lt; vesting_balance_object, vesting_balance_multi_index_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#ab04613b07ed5a248119544dce7824ea4">graphene::chain::vesting_balance_index</a></td></tr>
+<tr class="memitem:ab04613b07ed5a248119544dce7824ea4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classgraphene_1_1db_1_1generic__index.html">generic_index</a>&lt; vesting_balance_object, vesting_balance_multi_index_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#ab04613b07ed5a248119544dce7824ea4">graphene::chain::vesting_balance_index</a></td></tr>
 <tr class="separator:ab04613b07ed5a248119544dce7824ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -143,7 +143,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 3 2019 18:33:15 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

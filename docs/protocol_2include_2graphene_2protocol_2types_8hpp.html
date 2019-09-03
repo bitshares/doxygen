@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -86,24 +86,23 @@ $(function() {
 <code>#include &lt;boost/preprocessor/tuple/elem.hpp&gt;</code><br />
 <code>#include &lt;boost/preprocessor/cat.hpp&gt;</code><br />
 <code>#include &lt;boost/rational.hpp&gt;</code><br />
-<code>#include &lt;fc/container/flat_fwd.hpp&gt;</code><br />
-<code>#include &lt;fc/io/varint.hpp&gt;</code><br />
-<code>#include &lt;fc/io/enum_type.hpp&gt;</code><br />
-<code>#include &lt;fc/crypto/ripemd160.hpp&gt;</code><br />
-<code>#include &lt;fc/crypto/sha1.hpp&gt;</code><br />
-<code>#include &lt;fc/crypto/sha224.hpp&gt;</code><br />
-<code>#include &lt;fc/crypto/sha256.hpp&gt;</code><br />
-<code>#include &lt;fc/crypto/elliptic.hpp&gt;</code><br />
-<code>#include &lt;fc/reflect/reflect.hpp&gt;</code><br />
-<code>#include &lt;fc/reflect/variant.hpp&gt;</code><br />
-<code>#include &lt;fc/optional.hpp&gt;</code><br />
-<code>#include &lt;fc/safe.hpp&gt;</code><br />
-<code>#include &lt;fc/container/flat.hpp&gt;</code><br />
-<code>#include &lt;fc/string.hpp&gt;</code><br />
-<code>#include &lt;fc/io/datastream.hpp&gt;</code><br />
-<code>#include &lt;fc/io/raw_fwd.hpp&gt;</code><br />
-<code>#include &lt;fc/uint128.hpp&gt;</code><br />
-<code>#include &lt;fc/static_variant.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="flat__fwd_8hpp_source.html">fc/container/flat_fwd.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="varint_8hpp_source.html">fc/io/varint.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="enum__type_8hpp_source.html">fc/io/enum_type.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ripemd160_8hpp_source.html">fc/crypto/ripemd160.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="sha1_8hpp_source.html">fc/crypto/sha1.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="sha224_8hpp_source.html">fc/crypto/sha224.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="sha256_8hpp_source.html">fc/crypto/sha256.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="elliptic_8hpp_source.html">fc/crypto/elliptic.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="reflect_8hpp_source.html">fc/reflect/reflect.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="reflect_2variant_8hpp_source.html">fc/reflect/variant.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="optional_8hpp_source.html">fc/optional.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="safe_8hpp_source.html">fc/safe.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="flat_8hpp_source.html">fc/container/flat.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="string_8hpp_source.html">fc/string.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="datastream_8hpp_source.html">fc/io/datastream.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="raw__fwd_8hpp_source.html">fc/io/raw_fwd.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="static__variant_8hpp_source.html">fc/static_variant.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="object__id_8hpp_source.html">graphene/protocol/object_id.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="protocol_2include_2graphene_2protocol_2config_8hpp_source.html">graphene/protocol/config.hpp</a>&gt;</code><br />
 </div>
@@ -149,28 +148,28 @@ Macros</h2></td></tr>
 <tr class="separator:a72efaeec74478f20bdc74ec1fea17f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf0261b5b04826cc2bfcd0c0a814c442"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp.html#abf0261b5b04826cc2bfcd0c0a814c442">GRAPHENE_DECLARE_ID</a>(x,  space_prefix_seq,  name)</td></tr>
 <tr class="separator:abf0261b5b04826cc2bfcd0c0a814c442"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf7f87dada1602e8cf0776abd0f06ce2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp.html#adf7f87dada1602e8cf0776abd0f06ce2">GRAPHENE_REFLECT_ID</a>(x,  id_namespace,  name)&#160;&#160;&#160;FC_REFLECT_TYPENAME(graphene::id_namespace::name)</td></tr>
+<tr class="memitem:adf7f87dada1602e8cf0776abd0f06ce2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp.html#adf7f87dada1602e8cf0776abd0f06ce2">GRAPHENE_REFLECT_ID</a>(x,  id_namespace,  name)&#160;&#160;&#160;<a class="el" href="log__message_8hpp.html#aa0b61f6968f811ab4871538712795174">FC_REFLECT_TYPENAME</a>(graphene::id_namespace::name)</td></tr>
 <tr class="separator:adf7f87dada1602e8cf0776abd0f06ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48e02ad46d5a9f2bb56f2914cfc4a799"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp.html#a48e02ad46d5a9f2bb56f2914cfc4a799">GRAPHENE_DEFINE_IDS</a>(id_namespace,  object_space,  object_type_prefix,  names_seq)</td></tr>
 <tr class="separator:a48e02ad46d5a9f2bb56f2914cfc4a799"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a73d07cdf7c96887580ecfab2909ae548"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#a73d07cdf7c96887580ecfab2909ae548">graphene::protocol::private_key_type</a> = fc::ecc::private_key</td></tr>
+<tr class="memitem:a73d07cdf7c96887580ecfab2909ae548"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#a73d07cdf7c96887580ecfab2909ae548">graphene::protocol::private_key_type</a> = <a class="el" href="classfc_1_1ecc_1_1private__key.html">fc::ecc::private_key</a></td></tr>
 <tr class="separator:a73d07cdf7c96887580ecfab2909ae548"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56354f39ed89f6a0a13fe90ba8228809"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#a56354f39ed89f6a0a13fe90ba8228809">graphene::protocol::chain_id_type</a> = fc::sha256</td></tr>
+<tr class="memitem:a56354f39ed89f6a0a13fe90ba8228809"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#a56354f39ed89f6a0a13fe90ba8228809">graphene::protocol::chain_id_type</a> = <a class="el" href="classfc_1_1sha256.html">fc::sha256</a></td></tr>
 <tr class="separator:a56354f39ed89f6a0a13fe90ba8228809"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54851df9ea21bef79e7cdb2da2e3e3cc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#a54851df9ea21bef79e7cdb2da2e3e3cc">graphene::protocol::ratio_type</a> = boost::rational&lt; int32_t &gt;</td></tr>
 <tr class="separator:a54851df9ea21bef79e7cdb2da2e3e3cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32e784a8edceba5506db2c130ed9cb9c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#a32e784a8edceba5506db2c130ed9cb9c">graphene::protocol::block_id_type</a> = fc::ripemd160</td></tr>
+<tr class="memitem:a32e784a8edceba5506db2c130ed9cb9c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#a32e784a8edceba5506db2c130ed9cb9c">graphene::protocol::block_id_type</a> = <a class="el" href="classfc_1_1ripemd160.html">fc::ripemd160</a></td></tr>
 <tr class="separator:a32e784a8edceba5506db2c130ed9cb9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3268cd3ebeb529ab0c0681d9564dab4a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#a3268cd3ebeb529ab0c0681d9564dab4a">graphene::protocol::checksum_type</a> = fc::ripemd160</td></tr>
+<tr class="memitem:a3268cd3ebeb529ab0c0681d9564dab4a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#a3268cd3ebeb529ab0c0681d9564dab4a">graphene::protocol::checksum_type</a> = <a class="el" href="classfc_1_1ripemd160.html">fc::ripemd160</a></td></tr>
 <tr class="separator:a3268cd3ebeb529ab0c0681d9564dab4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a040f9f71bff896e89dc9ee3ff92bb076"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#a040f9f71bff896e89dc9ee3ff92bb076">graphene::protocol::transaction_id_type</a> = fc::ripemd160</td></tr>
+<tr class="memitem:a040f9f71bff896e89dc9ee3ff92bb076"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#a040f9f71bff896e89dc9ee3ff92bb076">graphene::protocol::transaction_id_type</a> = <a class="el" href="classfc_1_1ripemd160.html">fc::ripemd160</a></td></tr>
 <tr class="separator:a040f9f71bff896e89dc9ee3ff92bb076"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ba2f090fee47759ed812b7849c6fee8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#a4ba2f090fee47759ed812b7849c6fee8">graphene::protocol::digest_type</a> = fc::sha256</td></tr>
+<tr class="memitem:a4ba2f090fee47759ed812b7849c6fee8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#a4ba2f090fee47759ed812b7849c6fee8">graphene::protocol::digest_type</a> = <a class="el" href="classfc_1_1sha256.html">fc::sha256</a></td></tr>
 <tr class="separator:a4ba2f090fee47759ed812b7849c6fee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade0535fb9b29fcc7de372c0f1ff5d218"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#ade0535fb9b29fcc7de372c0f1ff5d218">graphene::protocol::signature_type</a> = fc::ecc::compact_signature</td></tr>
+<tr class="memitem:ade0535fb9b29fcc7de372c0f1ff5d218"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#ade0535fb9b29fcc7de372c0f1ff5d218">graphene::protocol::signature_type</a> = <a class="el" href="namespacefc_1_1ecc.html#a38a548547320ad8e9bf07b7dbc875e9d">fc::ecc::compact_signature</a></td></tr>
 <tr class="separator:ade0535fb9b29fcc7de372c0f1ff5d218"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69b2104c1c11eed2d17bd29b86713347"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#a69b2104c1c11eed2d17bd29b86713347">graphene::protocol::share_type</a> = safe&lt; int64_t &gt;</td></tr>
 <tr class="separator:a69b2104c1c11eed2d17bd29b86713347"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,11 +203,11 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a7fa29913989b73d976f47c02d07db6c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#a7fa29913989b73d976f47c02d07db6c2">graphene::protocol::is_relative</a> (<a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a> o)</td></tr>
 <tr class="separator:a7fa29913989b73d976f47c02d07db6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a099c854b2ae216f51d33dd2aca7e6712"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#a099c854b2ae216f51d33dd2aca7e6712">fc::to_variant</a> (const <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">graphene::protocol::public_key_type</a> &amp;var, fc::variant &amp;vo, uint32_t max_depth=2)</td></tr>
+<tr class="memitem:a099c854b2ae216f51d33dd2aca7e6712"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#a099c854b2ae216f51d33dd2aca7e6712">fc::to_variant</a> (const <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">graphene::protocol::public_key_type</a> &amp;var, <a class="el" href="classfc_1_1variant.html">fc::variant</a> &amp;vo, uint32_t max_depth=2)</td></tr>
 <tr class="separator:a099c854b2ae216f51d33dd2aca7e6712"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6059746b6bd2ea431fd22c9294e7cf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#aa6059746b6bd2ea431fd22c9294e7cf4">fc::from_variant</a> (const fc::variant &amp;var, <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">graphene::protocol::public_key_type</a> &amp;vo, uint32_t max_depth=2)</td></tr>
+<tr class="memitem:aa6059746b6bd2ea431fd22c9294e7cf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#aa6059746b6bd2ea431fd22c9294e7cf4">fc::from_variant</a> (const <a class="el" href="classfc_1_1variant.html">fc::variant</a> &amp;var, <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">graphene::protocol::public_key_type</a> &amp;vo, uint32_t max_depth=2)</td></tr>
 <tr class="separator:aa6059746b6bd2ea431fd22c9294e7cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b658e1a375d1c5ebc142b9a03dff7fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#a5b658e1a375d1c5ebc142b9a03dff7fd">fc::from_variant</a> (const fc::variant &amp;var, std::shared_ptr&lt; const <a class="el" href="structgraphene_1_1protocol_1_1fee__schedule.html">graphene::protocol::fee_schedule</a> &gt; &amp;vo, uint32_t max_depth=2)</td></tr>
+<tr class="memitem:a5b658e1a375d1c5ebc142b9a03dff7fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#a5b658e1a375d1c5ebc142b9a03dff7fd">fc::from_variant</a> (const <a class="el" href="classfc_1_1variant.html">fc::variant</a> &amp;var, std::shared_ptr&lt; const <a class="el" href="structgraphene_1_1protocol_1_1fee__schedule.html">graphene::protocol::fee_schedule</a> &gt; &amp;vo, uint32_t max_depth=2)</td></tr>
 <tr class="separator:a5b658e1a375d1c5ebc142b9a03dff7fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -243,9 +242,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code" href="namespacefc.html">fc</a> { \</div><div class="line">template&lt;&gt; <span class="keyword">struct </span>reflector&lt;TYPE&gt; {\</div><div class="line">    typedef TYPE type; \</div><div class="line">    typedef fc::true_type  is_defined; \</div><div class="line">    typedef fc::false_type is_enum; \</div><div class="line">    enum  member_count_enum {  \</div><div class="line">      local_member_count = 0  BOOST_PP_SEQ_FOR_EACH( FC_REFLECT_MEMBER_COUNT, +, MEMBERS ),\</div><div class="line">      total_member_count = local_member_count BOOST_PP_SEQ_FOR_EACH( FC_REFLECT_BASE_MEMBER_COUNT, +, INHERITS )\</div><div class="line">    }; \</div><div class="line">    FC_REFLECT_DERIVED_IMPL_INLINE( TYPE, INHERITS, MEMBERS ) \</div><div class="line">}; \</div><div class="line">}</div><div class="ttc" id="namespacefc_html"><div class="ttname"><a href="namespacefc.html">fc</a></div><div class="ttdef"><b>Definition:</b> <a href="wallet_8hpp_source.html#l00037">wallet.hpp:37</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code" href="namespacefc.html">fc</a> { \</div><div class="line">template&lt;&gt; <span class="keyword">struct </span>reflector&lt;TYPE&gt; {\</div><div class="line">    typedef TYPE <a class="code" href="structfc_1_1reflector.html#a5ce7f9fd0c0e55be9c7772905767c0c7">type</a>; \</div><div class="line">    typedef std::true_type <a class="code" href="structfc_1_1reflector.html#ac22b0130328be101cc76c96592bc383a">is_defined</a>; \</div><div class="line">    enum  member_count_enum {  \</div><div class="line">      local_member_count = 0  BOOST_PP_SEQ_FOR_EACH( <a class="code" href="reflect_8hpp.html#a7f5c0805b721d4cd8f1e7f1fe0a2df7d">FC_REFLECT_MEMBER_COUNT</a>, +, MEMBERS ),\</div><div class="line">      total_member_count = local_member_count BOOST_PP_SEQ_FOR_EACH( <a class="code" href="reflect_8hpp.html#ab1e2d3906d3ec6b50589d7d85295ef6a">FC_REFLECT_BASE_MEMBER_COUNT</a>, +, INHERITS )\</div><div class="line">    }; \</div><div class="line">    FC_REFLECT_DERIVED_IMPL_INLINE( TYPE, INHERITS, MEMBERS ) \</div><div class="line">}; \</div><div class="line">}</div><div class="ttc" id="reflect_8hpp_html_ab1e2d3906d3ec6b50589d7d85295ef6a"><div class="ttname"><a href="reflect_8hpp.html#ab1e2d3906d3ec6b50589d7d85295ef6a">FC_REFLECT_BASE_MEMBER_COUNT</a></div><div class="ttdeci">#define FC_REFLECT_BASE_MEMBER_COUNT(r, OP, elem)</div><div class="ttdef"><b>Definition:</b> <a href="reflect_8hpp_source.html#l00094">reflect.hpp:94</a></div></div>
+<div class="ttc" id="reflect_8hpp_html_a7f5c0805b721d4cd8f1e7f1fe0a2df7d"><div class="ttname"><a href="reflect_8hpp.html#a7f5c0805b721d4cd8f1e7f1fe0a2df7d">FC_REFLECT_MEMBER_COUNT</a></div><div class="ttdeci">#define FC_REFLECT_MEMBER_COUNT(r, OP, elem)</div><div class="ttdef"><b>Definition:</b> <a href="reflect_8hpp_source.html#l00097">reflect.hpp:97</a></div></div>
+<div class="ttc" id="structfc_1_1reflector_html_a5ce7f9fd0c0e55be9c7772905767c0c7"><div class="ttname"><a href="structfc_1_1reflector.html#a5ce7f9fd0c0e55be9c7772905767c0c7">fc::reflector::type</a></div><div class="ttdeci">T type</div><div class="ttdef"><b>Definition:</b> <a href="reflect_8hpp_source.html#l00035">reflect.hpp:35</a></div></div>
+<div class="ttc" id="structfc_1_1reflector_html_ac22b0130328be101cc76c96592bc383a"><div class="ttname"><a href="structfc_1_1reflector.html#ac22b0130328be101cc76c96592bc383a">fc::reflector::is_defined</a></div><div class="ttdeci">std::false_type is_defined</div><div class="ttdef"><b>Definition:</b> <a href="reflect_8hpp_source.html#l00036">reflect.hpp:36</a></div></div>
+<div class="ttc" id="namespacefc_html"><div class="ttname"><a href="namespacefc.html">fc</a></div><div class="ttdef"><b>Definition:</b> <a href="wallet_8hpp_source.html#l00037">wallet.hpp:37</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00076">76</a> of file <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00075">75</a> of file <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -265,7 +268,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00073">73</a> of file <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00072">72</a> of file <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -302,7 +305,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">using</span> BOOST_PP_CAT(name, _id_type) = <a class="code" href="structgraphene_1_1db_1_1object__id.html">object_id</a>&lt;BOOST_PP_TUPLE_ELEM(2, 0, space_prefix_seq), \</div><div class="line">                            GRAPHENE_NAME_TO_OBJECT_TYPE(x, BOOST_PP_TUPLE_ELEM(2, 1, space_prefix_seq), name)&gt;;</div><div class="ttc" id="structgraphene_1_1db_1_1object__id_html"><div class="ttname"><a href="structgraphene_1_1db_1_1object__id.html">graphene::db::object_id</a></div><div class="ttdef"><b>Definition:</b> <a href="object__id_8hpp_source.html#l00108">object_id.hpp:108</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00092">92</a> of file <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00090">90</a> of file <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -343,13 +346,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code" href="namespacegraphene.html">graphene</a> { <span class="keyword">namespace </span>id_namespace { \</div><div class="line">   \</div><div class="line">   enum BOOST_PP_CAT(object_type_prefix, object_type) { \</div><div class="line">      BOOST_PP_SEQ_ENUM(BOOST_PP_SEQ_TRANSFORM(<a class="code" href="protocol_2include_2graphene_2protocol_2types_8hpp.html#a94c17f6deff4fe66e29ac5e384bda2a7">GRAPHENE_NAME_TO_OBJECT_TYPE</a>, object_type_prefix, names_seq)) \</div><div class="line">   }; \</div><div class="line">   \</div><div class="line">   BOOST_PP_SEQ_FOR_EACH(<a class="code" href="protocol_2include_2graphene_2protocol_2types_8hpp.html#abf0261b5b04826cc2bfcd0c0a814c442">GRAPHENE_DECLARE_ID</a>, (object_space, object_type_prefix), names_seq) \</div><div class="line">   \</div><div class="line">   } } \</div><div class="line">   \</div><div class="line">   FC_REFLECT_ENUM(graphene::id_namespace::BOOST_PP_CAT(object_type_prefix, object_type), \</div><div class="line">                   BOOST_PP_SEQ_TRANSFORM(<a class="code" href="protocol_2include_2graphene_2protocol_2types_8hpp.html#a94c17f6deff4fe66e29ac5e384bda2a7">GRAPHENE_NAME_TO_OBJECT_TYPE</a>, object_type_prefix, names_seq)) \</div><div class="line">   BOOST_PP_SEQ_FOR_EACH(<a class="code" href="protocol_2include_2graphene_2protocol_2types_8hpp.html#adf7f87dada1602e8cf0776abd0f06ce2">GRAPHENE_REFLECT_ID</a>, id_namespace, BOOST_PP_SEQ_TRANSFORM(<a class="code" href="protocol_2include_2graphene_2protocol_2types_8hpp.html#a72efaeec74478f20bdc74ec1fea17f3b">GRAPHENE_NAME_TO_ID_TYPE</a>, , names_seq))</div><div class="ttc" id="protocol_2include_2graphene_2protocol_2types_8hpp_html_abf0261b5b04826cc2bfcd0c0a814c442"><div class="ttname"><a href="protocol_2include_2graphene_2protocol_2types_8hpp.html#abf0261b5b04826cc2bfcd0c0a814c442">GRAPHENE_DECLARE_ID</a></div><div class="ttdeci">#define GRAPHENE_DECLARE_ID(x, space_prefix_seq, name)</div><div class="ttdef"><b>Definition:</b> <a href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00092">types.hpp:92</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code" href="namespacegraphene.html">graphene</a> { <span class="keyword">namespace </span>id_namespace { \</div><div class="line">   \</div><div class="line">   enum BOOST_PP_CAT(object_type_prefix, object_type) { \</div><div class="line">      BOOST_PP_SEQ_ENUM(BOOST_PP_SEQ_TRANSFORM(<a class="code" href="protocol_2include_2graphene_2protocol_2types_8hpp.html#a94c17f6deff4fe66e29ac5e384bda2a7">GRAPHENE_NAME_TO_OBJECT_TYPE</a>, object_type_prefix, names_seq)) \</div><div class="line">   }; \</div><div class="line">   \</div><div class="line">   BOOST_PP_SEQ_FOR_EACH(<a class="code" href="protocol_2include_2graphene_2protocol_2types_8hpp.html#abf0261b5b04826cc2bfcd0c0a814c442">GRAPHENE_DECLARE_ID</a>, (object_space, object_type_prefix), names_seq) \</div><div class="line">   \</div><div class="line">   } } <a class="code" href="core__messages_8hpp.html#ad27347f9f26bc0317361f47ec09cbc56">\</a></div><div class="line"><a class="code" href="core__messages_8hpp.html#ad27347f9f26bc0317361f47ec09cbc56">   \</a></div><div class="line"><a class="code" href="core__messages_8hpp.html#ad27347f9f26bc0317361f47ec09cbc56">   FC_REFLECT_ENUM</a>(graphene::id_namespace::BOOST_PP_CAT(object_type_prefix, object_type), \</div><div class="line">                   BOOST_PP_SEQ_TRANSFORM(<a class="code" href="protocol_2include_2graphene_2protocol_2types_8hpp.html#a94c17f6deff4fe66e29ac5e384bda2a7">GRAPHENE_NAME_TO_OBJECT_TYPE</a>, object_type_prefix, names_seq)) \</div><div class="line">   BOOST_PP_SEQ_FOR_EACH(<a class="code" href="protocol_2include_2graphene_2protocol_2types_8hpp.html#adf7f87dada1602e8cf0776abd0f06ce2">GRAPHENE_REFLECT_ID</a>, id_namespace, BOOST_PP_SEQ_TRANSFORM(<a class="code" href="protocol_2include_2graphene_2protocol_2types_8hpp.html#a72efaeec74478f20bdc74ec1fea17f3b">GRAPHENE_NAME_TO_ID_TYPE</a>, , names_seq))</div><div class="ttc" id="protocol_2include_2graphene_2protocol_2types_8hpp_html_abf0261b5b04826cc2bfcd0c0a814c442"><div class="ttname"><a href="protocol_2include_2graphene_2protocol_2types_8hpp.html#abf0261b5b04826cc2bfcd0c0a814c442">GRAPHENE_DECLARE_ID</a></div><div class="ttdeci">#define GRAPHENE_DECLARE_ID(x, space_prefix_seq, name)</div><div class="ttdef"><b>Definition:</b> <a href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00090">types.hpp:90</a></div></div>
 <div class="ttc" id="namespacegraphene_html"><div class="ttname"><a href="namespacegraphene.html">graphene</a></div><div class="ttdef"><b>Definition:</b> <a href="account__evaluator_8cpp_source.html#l00040">account_evaluator.cpp:40</a></div></div>
-<div class="ttc" id="protocol_2include_2graphene_2protocol_2types_8hpp_html_a72efaeec74478f20bdc74ec1fea17f3b"><div class="ttname"><a href="protocol_2include_2graphene_2protocol_2types_8hpp.html#a72efaeec74478f20bdc74ec1fea17f3b">GRAPHENE_NAME_TO_ID_TYPE</a></div><div class="ttdeci">#define GRAPHENE_NAME_TO_ID_TYPE(x, y, name)</div><div class="ttdef"><b>Definition:</b> <a href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00091">types.hpp:91</a></div></div>
-<div class="ttc" id="protocol_2include_2graphene_2protocol_2types_8hpp_html_a94c17f6deff4fe66e29ac5e384bda2a7"><div class="ttname"><a href="protocol_2include_2graphene_2protocol_2types_8hpp.html#a94c17f6deff4fe66e29ac5e384bda2a7">GRAPHENE_NAME_TO_OBJECT_TYPE</a></div><div class="ttdeci">#define GRAPHENE_NAME_TO_OBJECT_TYPE(x, prefix, name)</div><div class="ttdef"><b>Definition:</b> <a href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00090">types.hpp:90</a></div></div>
-<div class="ttc" id="protocol_2include_2graphene_2protocol_2types_8hpp_html_adf7f87dada1602e8cf0776abd0f06ce2"><div class="ttname"><a href="protocol_2include_2graphene_2protocol_2types_8hpp.html#adf7f87dada1602e8cf0776abd0f06ce2">GRAPHENE_REFLECT_ID</a></div><div class="ttdeci">#define GRAPHENE_REFLECT_ID(x, id_namespace, name)</div><div class="ttdef"><b>Definition:</b> <a href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00095">types.hpp:95</a></div></div>
+<div class="ttc" id="protocol_2include_2graphene_2protocol_2types_8hpp_html_a72efaeec74478f20bdc74ec1fea17f3b"><div class="ttname"><a href="protocol_2include_2graphene_2protocol_2types_8hpp.html#a72efaeec74478f20bdc74ec1fea17f3b">GRAPHENE_NAME_TO_ID_TYPE</a></div><div class="ttdeci">#define GRAPHENE_NAME_TO_ID_TYPE(x, y, name)</div><div class="ttdef"><b>Definition:</b> <a href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00089">types.hpp:89</a></div></div>
+<div class="ttc" id="protocol_2include_2graphene_2protocol_2types_8hpp_html_a94c17f6deff4fe66e29ac5e384bda2a7"><div class="ttname"><a href="protocol_2include_2graphene_2protocol_2types_8hpp.html#a94c17f6deff4fe66e29ac5e384bda2a7">GRAPHENE_NAME_TO_OBJECT_TYPE</a></div><div class="ttdeci">#define GRAPHENE_NAME_TO_OBJECT_TYPE(x, prefix, name)</div><div class="ttdef"><b>Definition:</b> <a href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00088">types.hpp:88</a></div></div>
+<div class="ttc" id="core__messages_8hpp_html_ad27347f9f26bc0317361f47ec09cbc56"><div class="ttname"><a href="core__messages_8hpp.html#ad27347f9f26bc0317361f47ec09cbc56">FC_REFLECT_ENUM</a></div><div class="ttdeci">FC_REFLECT_ENUM(graphene::net::core_message_type_enum,(trx_message_type)(block_message_type)(core_message_type_first)(item_ids_inventory_message_type)(blockchain_item_ids_inventory_message_type)(fetch_blockchain_item_ids_message_type)(fetch_items_message_type)(item_not_available_message_type)(hello_message_type)(connection_accepted_message_type)(connection_rejected_message_type)(address_request_message_type)(address_message_type)(closing_connection_message_type)(current_time_request_message_type)(current_time_reply_message_type)(check_firewall_message_type)(check_firewall_reply_message_type)(get_current_connections_request_message_type)(get_current_connections_reply_message_type)(core_message_type_last))(different_chain)(already_connected)(connected_to_self)(not_accepting_connections)(blocked)(invalid_hello_message)(client_too_old))(inbound)(outbound))(firewalled)(not_firewalled))(unable_to_connect)(connection_successful)) namespace std</div><div class="ttdef"><b>Definition:</b> <a href="core__messages_8hpp_source.html#l00404">core_messages.hpp:404</a></div></div>
+<div class="ttc" id="protocol_2include_2graphene_2protocol_2types_8hpp_html_adf7f87dada1602e8cf0776abd0f06ce2"><div class="ttname"><a href="protocol_2include_2graphene_2protocol_2types_8hpp.html#adf7f87dada1602e8cf0776abd0f06ce2">GRAPHENE_REFLECT_ID</a></div><div class="ttdeci">#define GRAPHENE_REFLECT_ID(x, id_namespace, name)</div><div class="ttdef"><b>Definition:</b> <a href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00093">types.hpp:93</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00097">97</a> of file <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00095">95</a> of file <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -378,11 +382,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code" href="namespacefc.html">fc</a> { \</div><div class="line">   ext <span class="keyword">template</span> <span class="keywordtype">void</span> <a class="code" href="namespacefc.html#ad381cfba18e8742b3ccab06107f55d4b">from_variant</a>( <span class="keyword">const</span> variant&amp; v, type&amp; vo, uint32_t max_depth ); \</div><div class="line">   ext <span class="keyword">template</span> <span class="keywordtype">void</span> <a class="code" href="namespacefc.html#a5c3f07e0187947e20a5ce2f97f9815f4">to_variant</a>( <span class="keyword">const</span> type&amp; v, variant&amp; vo, uint32_t max_depth ); \</div><div class="line">namespace raw { \</div><div class="line">   ext <span class="keyword">template</span> <span class="keywordtype">void</span> pack&lt; datastream&lt;size_t&gt;, type &gt;( datastream&lt;size_t&gt;&amp; s, <span class="keyword">const</span> type&amp; tx, uint32_t _max_depth ); \</div><div class="line">   ext <span class="keyword">template</span> <span class="keywordtype">void</span> pack&lt; sha256::encoder, type &gt;( sha256::encoder&amp; s, <span class="keyword">const</span> type&amp; tx, uint32_t _max_depth ); \</div><div class="line">   ext <span class="keyword">template</span> <span class="keywordtype">void</span> pack&lt; datastream&lt;char*&gt;, type &gt;( datastream&lt;char*&gt;&amp; s, <span class="keyword">const</span> type&amp; tx, uint32_t _max_depth ); \</div><div class="line">   ext <span class="keyword">template</span> <span class="keywordtype">void</span> unpack&lt; datastream&lt;const char*&gt;, type &gt;( datastream&lt;const char*&gt;&amp; s, type&amp; tx, uint32_t _max_depth ); \</div><div class="line">} }</div><div class="ttc" id="namespacefc_html_ad381cfba18e8742b3ccab06107f55d4b"><div class="ttname"><a href="namespacefc.html#ad381cfba18e8742b3ccab06107f55d4b">fc::from_variant</a></div><div class="ttdeci">void from_variant(const variant &amp;var, account_multi_index_type &amp;vo, uint32_t max_depth)</div><div class="ttdef"><b>Definition:</b> <a href="wallet_8cpp_source.html#l05100">wallet.cpp:5100</a></div></div>
-<div class="ttc" id="namespacefc_html_a5c3f07e0187947e20a5ce2f97f9815f4"><div class="ttname"><a href="namespacefc.html#a5c3f07e0187947e20a5ce2f97f9815f4">fc::to_variant</a></div><div class="ttdeci">void to_variant(const account_multi_index_type &amp;accts, variant &amp;vo, uint32_t max_depth)</div><div class="ttdef"><b>Definition:</b> <a href="wallet_8cpp_source.html#l05095">wallet.cpp:5095</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code" href="namespacefc.html">fc</a> { \</div><div class="line">   ext <span class="keyword">template</span> <span class="keywordtype">void</span> <a class="code" href="namespacefc.html#ad381cfba18e8742b3ccab06107f55d4b">from_variant</a>( <span class="keyword">const</span> variant&amp; v, type&amp; vo, uint32_t max_depth ); \</div><div class="line">   ext <span class="keyword">template</span> <span class="keywordtype">void</span> <a class="code" href="namespacefc.html#a5c3f07e0187947e20a5ce2f97f9815f4">to_variant</a>( <span class="keyword">const</span> type&amp; v, variant&amp; vo, uint32_t max_depth ); \</div><div class="line">namespace raw { \</div><div class="line">   ext <span class="keyword">template</span> <span class="keywordtype">void</span> pack&lt; datastream&lt;size_t&gt;, type &gt;( datastream&lt;size_t&gt;&amp; s, <span class="keyword">const</span> type&amp; tx, uint32_t _max_depth ); \</div><div class="line">   ext <span class="keyword">template</span> <span class="keywordtype">void</span> pack&lt; sha256::encoder, type &gt;( sha256::encoder&amp; s, <span class="keyword">const</span> type&amp; tx, uint32_t _max_depth ); \</div><div class="line">   ext <span class="keyword">template</span> <span class="keywordtype">void</span> pack&lt; datastream&lt;char*&gt;, type &gt;( datastream&lt;char*&gt;&amp; s, <span class="keyword">const</span> type&amp; tx, uint32_t _max_depth ); \</div><div class="line">   ext <span class="keyword">template</span> <span class="keywordtype">void</span> unpack&lt; datastream&lt;const char*&gt;, type &gt;( datastream&lt;const char*&gt;&amp; s, type&amp; tx, uint32_t _max_depth ); \</div><div class="line">} }</div><div class="ttc" id="namespacefc_html_ad381cfba18e8742b3ccab06107f55d4b"><div class="ttname"><a href="namespacefc.html#ad381cfba18e8742b3ccab06107f55d4b">fc::from_variant</a></div><div class="ttdeci">void from_variant(const variant &amp;var, account_multi_index_type &amp;vo, uint32_t max_depth)</div><div class="ttdef"><b>Definition:</b> <a href="wallet_8cpp_source.html#l05216">wallet.cpp:5216</a></div></div>
+<div class="ttc" id="namespacefc_html_a5c3f07e0187947e20a5ce2f97f9815f4"><div class="ttname"><a href="namespacefc.html#a5c3f07e0187947e20a5ce2f97f9815f4">fc::to_variant</a></div><div class="ttdeci">void to_variant(const account_multi_index_type &amp;accts, variant &amp;vo, uint32_t max_depth)</div><div class="ttdef"><b>Definition:</b> <a href="wallet_8cpp_source.html#l05211">wallet.cpp:5211</a></div></div>
 <div class="ttc" id="namespacefc_html"><div class="ttname"><a href="namespacefc.html">fc</a></div><div class="ttdef"><b>Definition:</b> <a href="wallet_8hpp_source.html#l00037">wallet.hpp:37</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00063">63</a> of file <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00062">62</a> of file <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -402,7 +406,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00074">74</a> of file <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00073">73</a> of file <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -438,7 +442,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00091">91</a> of file <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00089">89</a> of file <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -474,7 +478,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00090">90</a> of file <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00088">88</a> of file <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -505,19 +509,19 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;FC_REFLECT_TYPENAME(graphene::id_namespace::name)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="log__message_8hpp.html#aa0b61f6968f811ab4871538712795174">FC_REFLECT_TYPENAME</a>(graphene::id_namespace::name)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00095">95</a> of file <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html">types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html#l00093">93</a> of file <a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 3 2019 18:33:15 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

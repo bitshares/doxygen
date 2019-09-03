@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -63,11 +63,60 @@ $(function() {
 &#160;
 
 <h3><a id="index_r"></a>- r -</h3><ul>
+<li>random_seed
+: <a class="el" href="classfc_1_1bloom__parameters.html#a4cf047e8014a53cbacb96755cad0c805">fc::bloom_parameters</a>
+</li>
+<li>random_seed_
+: <a class="el" href="classfc_1_1bloom__filter.html#afca8eb2c8812ac907106407a5e9324da">fc::bloom_filter</a>
+</li>
 <li>range_proof
 : <a class="el" href="structgraphene_1_1protocol_1_1blind__output.html#af2a7dba1e847babffa9f1e7179e07e9f">graphene::protocol::blind_output</a>
 </li>
+<li>raw_buffer
+: <a class="el" href="classfc_1_1detail_1_1rate__limited__tcp__read__operation.html#a13d0bf1fee25d9e43e8dadc16ed3e0f1">fc::detail::rate_limited_tcp_read_operation</a>
+, <a class="el" href="classfc_1_1detail_1_1rate__limited__tcp__write__operation.html#ab5343397e7574c37408274dbe835eb07">fc::detail::rate_limited_tcp_write_operation</a>
+</li>
+<li>raw_table_size_
+: <a class="el" href="classfc_1_1bloom__filter.html#abf3a0473b9cf4df2c4f000ca87f6649d">fc::bloom_filter</a>
+</li>
+<li>read_pos
+: <a class="el" href="structfc_1_1cin__buffer.html#aaa627f4dfad728497f448d8f6d90febf">fc::cin_buffer</a>
+</li>
+<li>read_ready
+: <a class="el" href="structfc_1_1cin__buffer.html#a5e99d5ade4c25a7c2d45a773af5102c3">fc::cin_buffer</a>
+</li>
+<li>read_ready_mutex
+: <a class="el" href="structfc_1_1cin__buffer.html#a5382682cd9367504502485bbe0ebcad4">fc::cin_buffer</a>
+</li>
+<li>ready_heap
+: <a class="el" href="classfc_1_1thread__d.html#a90e798c3874b609291c43ce53fed0afd">fc::thread_d</a>
+</li>
+<li>reason_code
+: <a class="el" href="structgraphene_1_1net_1_1connection__rejected__message.html#a374ee5c0a48386eda3f434aa4fb160b9">graphene::net::connection_rejected_message</a>
+</li>
+<li>reason_for_closing
+: <a class="el" href="structgraphene_1_1net_1_1closing__connection__message.html#a5f8fa9d142b7c2f59a8b15ec25bd67e8">graphene::net::closing_connection_message</a>
+</li>
+<li>reason_string
+: <a class="el" href="structgraphene_1_1net_1_1connection__rejected__message.html#a99661a094e28df6081e3a7f67a5c3a84">graphene::net::connection_rejected_message</a>
+</li>
+<li>received_time
+: <a class="el" href="structgraphene_1_1net_1_1message__propagation__data.html#a4346cdf6e31eedad96637fe822ea62f2">graphene::net::message_propagation_data</a>
+</li>
 <li>receives
 : <a class="el" href="structgraphene_1_1protocol_1_1fill__order__operation.html#a46e1ad8889dff02756a140a794aef322">graphene::protocol::fill_order_operation</a>
+</li>
+<li>receives_amount
+: <a class="el" href="structgraphene_1_1elasticsearch_1_1fill__struct.html#afbc6381795db100ee96ed51a60071215">graphene::elasticsearch::fill_struct</a>
+</li>
+<li>receives_amount_units
+: <a class="el" href="structgraphene_1_1elasticsearch_1_1fill__struct.html#a5ec1e993b44ae1286c965e6a84aa4909">graphene::elasticsearch::fill_struct</a>
+</li>
+<li>receives_asset_id
+: <a class="el" href="structgraphene_1_1elasticsearch_1_1fill__struct.html#a8b5547cca8d08f593985df4f52c24905">graphene::elasticsearch::fill_struct</a>
+</li>
+<li>receives_asset_name
+: <a class="el" href="structgraphene_1_1elasticsearch_1_1fill__struct.html#a798cc78c683c23e3c8098eff9d04eb91">graphene::elasticsearch::fill_struct</a>
 </li>
 <li>recent_slots_filled
 : <a class="el" href="classgraphene_1_1chain_1_1dynamic__global__property__object.html#a291e4b87492f0548b1dc6e94c4cb0a47">graphene::chain::dynamic_global_property_object</a>
@@ -111,14 +160,43 @@ $(function() {
 <li>registrar_name
 : <a class="el" href="structgraphene_1_1app_1_1full__account.html#a518404978a668bdd3060af494c56576a">graphene::app::full_account</a>
 </li>
+<li>remote_endpoint
+: <a class="el" href="structfc_1_1http_1_1request.html#ad26694490e3adb3ce390f866a467afe4">fc::http::request</a>
+, <a class="el" href="structgraphene_1_1delayed__node_1_1detail_1_1delayed__node__plugin__impl.html#a523e67feadce793f8eb1e47400a43340">graphene::delayed_node::detail::delayed_node_plugin_impl</a>
+, <a class="el" href="structgraphene_1_1net_1_1address__info.html#aa6c0e82e6ee58477cd96aa6a6b41e9fa">graphene::net::address_info</a>
+, <a class="el" href="structgraphene_1_1net_1_1connection__rejected__message.html#a55f9a926f5b4d61f12352da4926bb1ac">graphene::net::connection_rejected_message</a>
+, <a class="el" href="structgraphene_1_1net_1_1current__connection__data.html#a2e3f2608c06c3f6378d48423b77c5b8b">graphene::net::current_connection_data</a>
+</li>
+<li>removed
+: <a class="el" href="structgraphene_1_1db_1_1undo__state.html#a1c8d5c55907802f1c726f9f92295d9ce">graphene::db::undo_state</a>
+</li>
 <li>removed_objects
 : <a class="el" href="classgraphene_1_1chain_1_1database.html#a9aa30b505cfa4e5cdc9a0b354d49e89e">graphene::chain::database</a>
 </li>
 <li>removed_ops
 : <a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#aa0643a4b44f06ace7886893b5da661c3">graphene::chain::account_statistics_object</a>
 </li>
+<li>reply_transmitted_time
+: <a class="el" href="structgraphene_1_1net_1_1current__time__reply__message.html#a37b65190175dcdd28ad376afa2853b5b">graphene::net::current_time_reply_message</a>
+</li>
+<li>request_received_time
+: <a class="el" href="structgraphene_1_1net_1_1current__time__reply__message.html#a04f0a01a28eda9737f27b1dd4b06ef25">graphene::net::current_time_reply_message</a>
+</li>
+<li>request_sent_time
+: <a class="el" href="structgraphene_1_1net_1_1current__time__reply__message.html#a49e75a6cebd3a5f721de352bdda6e39c">graphene::net::current_time_reply_message</a>
+, <a class="el" href="structgraphene_1_1net_1_1current__time__request__message.html#aef24d729174d43a4a0ec6523f8440667">graphene::net::current_time_request_message</a>
+</li>
+<li>requested_item
+: <a class="el" href="structgraphene_1_1net_1_1item__not__available__message.html#aeb2b9911c0e9710695e6f75bd1302c80">graphene::net::item_not_available_message</a>
+</li>
 <li>requested_witness_budget
 : <a class="el" href="structgraphene_1_1chain_1_1budget__record.html#a4664dac03b2d058d6b05a78d322e88eb">graphene::chain::budget_record</a>
+</li>
+<li>requesting_peer
+: <a class="el" href="structgraphene_1_1net_1_1firewall__check__state__data.html#ac062ff8691b267e3200e463d7e245785">graphene::net::firewall_check_state_data</a>
+</li>
+<li>required
+: <a class="el" href="structfc_1_1context_1_1blocked__promise.html#ae8b7bc72833ca231ba09035726f9b671">fc::context::blocked_promise</a>
 </li>
 <li>required_active_approvals
 : <a class="el" href="classgraphene_1_1chain_1_1proposal__object.html#abb764a31f14a6f02d27cbb759b663c42">graphene::chain::proposal_object</a>
@@ -134,10 +212,16 @@ $(function() {
 : <a class="el" href="structgraphene_1_1protocol_1_1chain__parameters.html#a89a9454667ce8c69fa2ad2672ad5c453">graphene::protocol::chain_parameters</a>
 </li>
 <li>result
-: <a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html#a3a8cf9058797fda8b539ee4fb40e8797">graphene::chain::operation_history_object</a>
+: <a class="el" href="classfc_1_1promise.html#a4f890afd6fb589d0e76359d71182166a">fc::promise&lt; T &gt;</a>
+, <a class="el" href="structfc_1_1rpc_1_1response.html#a73813fdfd47d3703499f074016366c58">fc::rpc::response</a>
+, <a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html#a3a8cf9058797fda8b539ee4fb40e8797">graphene::chain::operation_history_object</a>
+, <a class="el" href="structgraphene_1_1net_1_1check__firewall__reply__message.html#a14ab9d823e84859ce337e7c9cd1f45db">graphene::net::check_firewall_reply_message</a>
 </li>
 <li>result_count
 : <a class="el" href="structgraphene_1_1wallet_1_1account__history__operation__detail.html#a0e6fbd2bb021e663888fceb29d7d99ef">graphene::wallet::account_history_operation_detail</a>
+</li>
+<li>resume_time
+: <a class="el" href="structfc_1_1context.html#af182b58d83293a4d7a6e0c8fefe863d0">fc::context</a>
 </li>
 <li>review_period_seconds
 : <a class="el" href="structgraphene_1_1protocol_1_1proposal__create__operation.html#a3fa5418c4e45dfb1d146ac19efb6516f">graphene::protocol::proposal_create_operation</a>
@@ -148,11 +232,27 @@ $(function() {
 <li>reward_percent
 : <a class="el" href="structgraphene_1_1protocol_1_1additional__asset__options.html#a37dd294bb7ed7043386e8d15c2f95c55">graphene::protocol::additional_asset_options</a>
 </li>
+<li>rolling_min_order_his_id
+: <a class="el" href="structgraphene_1_1market__history_1_1market__ticker__meta__object.html#a1334575e625196620f33c67f3ad92c98">graphene::market_history::market_ticker_meta_object</a>
+</li>
+<li>rotate
+: <a class="el" href="structfc_1_1file__appender_1_1config.html#a38692f04146205b9d212ade09e00944c">fc::file_appender::config</a>
+</li>
+<li>rotation_interval
+: <a class="el" href="structfc_1_1file__appender_1_1config.html#a39880b4aeef0c7c27c4f420712cd5ebf">fc::file_appender::config</a>
+</li>
+<li>rotation_limit
+: <a class="el" href="structfc_1_1file__appender_1_1config.html#ae34c1c1b64fdb94736dbbc5b190a9fa0">fc::file_appender::config</a>
+</li>
+<li>round_trip_delay
+: <a class="el" href="structgraphene_1_1net_1_1current__connection__data.html#ab8f74f292f3f40d922995587ba848ab4">graphene::net::current_connection_data</a>
+, <a class="el" href="classgraphene_1_1net_1_1peer__connection.html#aff1a611955fa9701e5a04d5b520753f7">graphene::net::peer_connection</a>
+</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 17 2019 16:30:09 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 3 2019 18:33:19 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -74,8 +74,8 @@ $(function() {
 <div class="title">object_id.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;fc/exception/exception.hpp&gt;</code><br />
-<code>#include &lt;fc/io/varint.hpp&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="exception_8hpp_source.html">fc/exception/exception.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="varint_8hpp_source.html">fc/io/varint.hpp</a>&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 </div>
 <p><a href="object__id_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -122,15 +122,15 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5b6019f9cfab7d54d9700103d953841d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#a5b6019f9cfab7d54d9700103d953841d">fc::to_variant</a> (const <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">graphene::db::object_id_type</a> &amp;var, fc::variant &amp;vo, uint32_t max_depth=1)</td></tr>
+<tr class="memitem:a5b6019f9cfab7d54d9700103d953841d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#a5b6019f9cfab7d54d9700103d953841d">fc::to_variant</a> (const <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">graphene::db::object_id_type</a> &amp;var, <a class="el" href="classfc_1_1variant.html">fc::variant</a> &amp;vo, uint32_t max_depth=1)</td></tr>
 <tr class="separator:a5b6019f9cfab7d54d9700103d953841d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e53b4a48caca4d808323ce8ef0fa106"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#a5e53b4a48caca4d808323ce8ef0fa106">fc::from_variant</a> (const fc::variant &amp;var, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">graphene::db::object_id_type</a> &amp;vo, uint32_t max_depth=1)</td></tr>
+<tr class="memitem:a5e53b4a48caca4d808323ce8ef0fa106"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#a5e53b4a48caca4d808323ce8ef0fa106">fc::from_variant</a> (const <a class="el" href="classfc_1_1variant.html">fc::variant</a> &amp;var, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">graphene::db::object_id_type</a> &amp;vo, uint32_t max_depth=1)</td></tr>
 <tr class="separator:a5e53b4a48caca4d808323ce8ef0fa106"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49dd4766f5ea1d4f5e30c9353f5ea813"><td class="memTemplParams" colspan="2">template&lt;uint8_t SpaceID, uint8_t TypeID&gt; </td></tr>
-<tr class="memitem:a49dd4766f5ea1d4f5e30c9353f5ea813"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefc.html#a49dd4766f5ea1d4f5e30c9353f5ea813">fc::to_variant</a> (const <a class="el" href="structgraphene_1_1db_1_1object__id.html">graphene::db::object_id</a>&lt; SpaceID, TypeID &gt; &amp;var, fc::variant &amp;vo, uint32_t max_depth=1)</td></tr>
+<tr class="memitem:a49dd4766f5ea1d4f5e30c9353f5ea813"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefc.html#a49dd4766f5ea1d4f5e30c9353f5ea813">fc::to_variant</a> (const <a class="el" href="structgraphene_1_1db_1_1object__id.html">graphene::db::object_id</a>&lt; SpaceID, TypeID &gt; &amp;var, <a class="el" href="classfc_1_1variant.html">fc::variant</a> &amp;vo, uint32_t max_depth=1)</td></tr>
 <tr class="separator:a49dd4766f5ea1d4f5e30c9353f5ea813"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1179cd3b9e7f1abe536d66aebfd124c8"><td class="memTemplParams" colspan="2">template&lt;uint8_t SpaceID, uint8_t TypeID&gt; </td></tr>
-<tr class="memitem:a1179cd3b9e7f1abe536d66aebfd124c8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefc.html#a1179cd3b9e7f1abe536d66aebfd124c8">fc::from_variant</a> (const fc::variant &amp;var, <a class="el" href="structgraphene_1_1db_1_1object__id.html">graphene::db::object_id</a>&lt; SpaceID, TypeID &gt; &amp;vo, uint32_t max_depth=1)</td></tr>
+<tr class="memitem:a1179cd3b9e7f1abe536d66aebfd124c8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefc.html#a1179cd3b9e7f1abe536d66aebfd124c8">fc::from_variant</a> (const <a class="el" href="classfc_1_1variant.html">fc::variant</a> &amp;var, <a class="el" href="structgraphene_1_1db_1_1object__id.html">graphene::db::object_id</a>&lt; SpaceID, TypeID &gt; &amp;vo, uint32_t max_depth=1)</td></tr>
 <tr class="separator:a1179cd3b9e7f1abe536d66aebfd124c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -175,7 +175,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 3 2019 18:33:15 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

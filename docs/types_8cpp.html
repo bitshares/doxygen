@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -73,10 +73,10 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html">graphene/protocol/types.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="fee__schedule_8hpp_source.html">graphene/protocol/fee_schedule.hpp</a>&gt;</code><br />
-<code>#include &lt;fc/crypto/base58.hpp&gt;</code><br />
-<code>#include &lt;fc/crypto/ripemd160.hpp&gt;</code><br />
-<code>#include &lt;fc/exception/exception.hpp&gt;</code><br />
-<code>#include &lt;fc/io/raw.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="base58_8hpp_source.html">fc/crypto/base58.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ripemd160_8hpp_source.html">fc/crypto/ripemd160.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="exception_8hpp_source.html">fc/exception/exception.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="raw_8hpp_source.html">fc/io/raw.hpp</a>&gt;</code><br />
 </div>
 <p><a href="types_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -93,29 +93,29 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af8dccb085c6e9752f218974f2660207d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#af8dccb085c6e9752f218974f2660207d">graphene::protocol::operator==</a> (const public_key_type &amp;p1, const fc::ecc::public_key &amp;p2)</td></tr>
+<tr class="memitem:af8dccb085c6e9752f218974f2660207d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#af8dccb085c6e9752f218974f2660207d">graphene::protocol::operator==</a> (const public_key_type &amp;p1, const <a class="el" href="classfc_1_1ecc_1_1public__key.html">fc::ecc::public_key</a> &amp;p2)</td></tr>
 <tr class="separator:af8dccb085c6e9752f218974f2660207d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ba82e45361a4ea39926919b8f5ac013"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#a2ba82e45361a4ea39926919b8f5ac013">graphene::protocol::operator==</a> (const public_key_type &amp;p1, const public_key_type &amp;p2)</td></tr>
 <tr class="separator:a2ba82e45361a4ea39926919b8f5ac013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac81ba4c9ea6ae042873ec67c152a4a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1protocol.html#aac81ba4c9ea6ae042873ec67c152a4a9">graphene::protocol::operator!=</a> (const public_key_type &amp;p1, const public_key_type &amp;p2)</td></tr>
 <tr class="separator:aac81ba4c9ea6ae042873ec67c152a4a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a099c854b2ae216f51d33dd2aca7e6712"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#a099c854b2ae216f51d33dd2aca7e6712">fc::to_variant</a> (const <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">graphene::protocol::public_key_type</a> &amp;var, fc::variant &amp;vo, uint32_t max_depth=2)</td></tr>
+<tr class="memitem:a099c854b2ae216f51d33dd2aca7e6712"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#a099c854b2ae216f51d33dd2aca7e6712">fc::to_variant</a> (const <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">graphene::protocol::public_key_type</a> &amp;var, <a class="el" href="classfc_1_1variant.html">fc::variant</a> &amp;vo, uint32_t max_depth=2)</td></tr>
 <tr class="separator:a099c854b2ae216f51d33dd2aca7e6712"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6059746b6bd2ea431fd22c9294e7cf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#aa6059746b6bd2ea431fd22c9294e7cf4">fc::from_variant</a> (const fc::variant &amp;var, <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">graphene::protocol::public_key_type</a> &amp;vo, uint32_t max_depth=2)</td></tr>
+<tr class="memitem:aa6059746b6bd2ea431fd22c9294e7cf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#aa6059746b6bd2ea431fd22c9294e7cf4">fc::from_variant</a> (const <a class="el" href="classfc_1_1variant.html">fc::variant</a> &amp;var, <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">graphene::protocol::public_key_type</a> &amp;vo, uint32_t max_depth=2)</td></tr>
 <tr class="separator:aa6059746b6bd2ea431fd22c9294e7cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b658e1a375d1c5ebc142b9a03dff7fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#a5b658e1a375d1c5ebc142b9a03dff7fd">fc::from_variant</a> (const fc::variant &amp;var, std::shared_ptr&lt; const <a class="el" href="structgraphene_1_1protocol_1_1fee__schedule.html">graphene::protocol::fee_schedule</a> &gt; &amp;vo, uint32_t max_depth=2)</td></tr>
+<tr class="memitem:a5b658e1a375d1c5ebc142b9a03dff7fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html#a5b658e1a375d1c5ebc142b9a03dff7fd">fc::from_variant</a> (const <a class="el" href="classfc_1_1variant.html">fc::variant</a> &amp;var, std::shared_ptr&lt; const <a class="el" href="structgraphene_1_1protocol_1_1fee__schedule.html">graphene::protocol::fee_schedule</a> &gt; &amp;vo, uint32_t max_depth=2)</td></tr>
 <tr class="separator:a5b658e1a375d1c5ebc142b9a03dff7fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc75bf53849c3eca153e7b43f7ef7e29"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc_1_1raw.html#abc75bf53849c3eca153e7b43f7ef7e29">fc::raw::pack</a> (datastream&lt; size_t &gt; &amp;s, const <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">graphene::protocol::public_key_type</a> &amp;tx, uint32_t _max_depth=FC_PACK_MAX_DEPTH)</td></tr>
+<tr class="memitem:abc75bf53849c3eca153e7b43f7ef7e29"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc_1_1raw.html#abc75bf53849c3eca153e7b43f7ef7e29">fc::raw::pack</a> (datastream&lt; size_t &gt; &amp;s, const <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">graphene::protocol::public_key_type</a> &amp;tx, uint32_t _max_depth=<a class="el" href="fc_2include_2fc_2config_8hpp.html#afbd29dd00d5136a6ec9cc7cfdcadc9d0">FC_PACK_MAX_DEPTH</a>)</td></tr>
 <tr class="separator:abc75bf53849c3eca153e7b43f7ef7e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a026c54b0882f93c9f9b6e3a8e0e69fe4"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc_1_1raw.html#a026c54b0882f93c9f9b6e3a8e0e69fe4">fc::raw::pack</a> (datastream&lt; char *&gt; &amp;s, const <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">graphene::protocol::public_key_type</a> &amp;tx, uint32_t _max_depth=FC_PACK_MAX_DEPTH)</td></tr>
+<tr class="memitem:a026c54b0882f93c9f9b6e3a8e0e69fe4"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc_1_1raw.html#a026c54b0882f93c9f9b6e3a8e0e69fe4">fc::raw::pack</a> (datastream&lt; char *&gt; &amp;s, const <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">graphene::protocol::public_key_type</a> &amp;tx, uint32_t _max_depth=<a class="el" href="fc_2include_2fc_2config_8hpp.html#afbd29dd00d5136a6ec9cc7cfdcadc9d0">FC_PACK_MAX_DEPTH</a>)</td></tr>
 <tr class="separator:a026c54b0882f93c9f9b6e3a8e0e69fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a844eae7e15c9b4a41f93cba66c73d548"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc_1_1raw.html#a844eae7e15c9b4a41f93cba66c73d548">fc::raw::unpack</a> (datastream&lt; const char *&gt; &amp;s, <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">graphene::protocol::public_key_type</a> &amp;tx, uint32_t _max_depth=FC_PACK_MAX_DEPTH)</td></tr>
+<tr class="memitem:a844eae7e15c9b4a41f93cba66c73d548"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc_1_1raw.html#a844eae7e15c9b4a41f93cba66c73d548">fc::raw::unpack</a> (datastream&lt; const char *&gt; &amp;s, <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">graphene::protocol::public_key_type</a> &amp;tx, uint32_t _max_depth=<a class="el" href="fc_2include_2fc_2config_8hpp.html#afbd29dd00d5136a6ec9cc7cfdcadc9d0">FC_PACK_MAX_DEPTH</a>)</td></tr>
 <tr class="separator:a844eae7e15c9b4a41f93cba66c73d548"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 3 2019 18:33:15 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Bitshares-Core
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.3.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -96,6 +96,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1application__options.html">application_options</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1asset__api.html">asset_api</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classgraphene_1_1app_1_1asset__api.html" title="The asset_api class allows query of info about asset holders. ">asset_api</a> class allows query of info about asset holders.  <a href="classgraphene_1_1app_1_1asset__api.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1asset__holders.html">asset_holders</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -103,11 +104,14 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block api.  <a href="classgraphene_1_1app_1_1block__api.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html">crypto_api</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classgraphene_1_1app_1_1crypto__api.html" title="The crypto_api class allows computations related to blinded transfers. ">crypto_api</a> class allows computations related to blinded transfers.  <a href="classgraphene_1_1app_1_1crypto__api.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api.html">database_api</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classgraphene_1_1app_1_1database__api.html" title="The database_api class implements the RPC API for the chain database. ">database_api</a> class implements the RPC API for the chain database.  <a href="classgraphene_1_1app_1_1database__api.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html">database_api_impl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1extended__asset__object.html">extended_asset_object</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1full__account.html">full_account</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,44 +158,42 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a68cce708efd2be5859a5e75899e3f4f1"><td class="memItemLeft" align="right" valign="top">typedef boost::multiprecision::uint256_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1app.html#a68cce708efd2be5859a5e75899e3f4f1">u256</a></td></tr>
-<tr class="separator:a68cce708efd2be5859a5e75899e3f4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26804ee36d39c9a57ef54ba85f3ca894"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::pair&lt; graphene::chain::asset_id_type, graphene::chain::asset_id_type &gt;, std::vector&lt; <a class="el" href="classfc_1_1variant.html">fc::variant</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1app.html#a26804ee36d39c9a57ef54ba85f3ca894">market_queue_type</a></td></tr>
+<tr class="separator:a26804ee36d39c9a57ef54ba85f3ca894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:acff79f90fbb15c501c462c2621c052b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1app.html#acff79f90fbb15c501c462c2621c052b7">load_configuration_options</a> (const fc::path &amp;data_dir, const bpo::options_description &amp;cfg_options, bpo::variables_map &amp;options)</td></tr>
+<tr class="memitem:acff79f90fbb15c501c462c2621c052b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1app.html#acff79f90fbb15c501c462c2621c052b7">load_configuration_options</a> (const <a class="el" href="classfc_1_1path.html">fc::path</a> &amp;data_dir, const bpo::options_description &amp;cfg_options, bpo::variables_map &amp;options)</td></tr>
 <tr class="separator:acff79f90fbb15c501c462c2621c052b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecfed3795b040035a074171c248c08d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1app.html#aecfed3795b040035a074171c248c08d9">load_configuration_options</a> (const fc::path &amp;data_dir, const boost::program_options::options_description &amp;cfg_options, boost::program_options::variables_map &amp;options)</td></tr>
+<tr class="memitem:aecfed3795b040035a074171c248c08d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1app.html#aecfed3795b040035a074171c248c08d9">load_configuration_options</a> (const <a class="el" href="classfc_1_1path.html">fc::path</a> &amp;data_dir, const boost::program_options::options_description &amp;cfg_options, boost::program_options::variables_map &amp;options)</td></tr>
 <tr class="separator:aecfed3795b040035a074171c248c08d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8235359fc02af7a350bb55033b850dd8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1app.html#a68cce708efd2be5859a5e75899e3f4f1">u256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1app.html#a8235359fc02af7a350bb55033b850dd8">to256</a> (const fc::uint128 &amp;t)</td></tr>
-<tr class="separator:a8235359fc02af7a350bb55033b850dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af047f47d42f0057b71b692a49d87051b"><td class="memItemLeft" align="right" valign="top">fc::uint128&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1app.html#af047f47d42f0057b71b692a49d87051b">to_capped128</a> (const <a class="el" href="namespacegraphene_1_1app.html#a68cce708efd2be5859a5e75899e3f4f1">u256</a> &amp;t)</td></tr>
-<tr class="separator:af047f47d42f0057b71b692a49d87051b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac983e2615e3c4305778d61b9f0c4450a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1app.html#ac983e2615e3c4305778d61b9f0c4450a">uint128_amount_to_string</a> (const fc::uint128 &amp;amount, const uint8_t precision)</td></tr>
-<tr class="separator:ac983e2615e3c4305778d61b9f0c4450a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5c778a6ce322d86a92a25bceeeffdd2"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1app.html#aa5c778a6ce322d86a92a25bceeeffdd2">price_to_string</a> (const <a class="el" href="structgraphene_1_1protocol_1_1price.html">price</a> &amp;_price, const uint8_t base_precision, const uint8_t quote_precision)</td></tr>
-<tr class="separator:aa5c778a6ce322d86a92a25bceeeffdd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4960f0d94097a5cda651acec71c461ac"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1app.html#a4960f0d94097a5cda651acec71c461ac">price_diff_percent_string</a> (const <a class="el" href="structgraphene_1_1protocol_1_1price.html">price</a> &amp;old_price, const <a class="el" href="structgraphene_1_1protocol_1_1price.html">price</a> &amp;new_price)</td></tr>
-<tr class="separator:a4960f0d94097a5cda651acec71c461ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbd852a2885fb5bd35312a04bf192bd0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1app.html#acbd852a2885fb5bd35312a04bf192bd0">uint128_amount_to_string</a> (const fc::uint128_t &amp;amount, const uint8_t precision)</td></tr>
+<tr class="separator:acbd852a2885fb5bd35312a04bf192bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dfa3f93151c8127c89ab6e5dcd3cdf6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1app.html#a7dfa3f93151c8127c89ab6e5dcd3cdf6">price_to_string</a> (const <a class="el" href="structgraphene_1_1protocol_1_1price.html">graphene::protocol::price</a> &amp;_price, const uint8_t base_precision, const uint8_t quote_precision)</td></tr>
+<tr class="separator:a7dfa3f93151c8127c89ab6e5dcd3cdf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0735634d911657e6f34b4734dfeaf0c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1app.html#ab0735634d911657e6f34b4734dfeaf0c">price_to_string</a> (const <a class="el" href="structgraphene_1_1protocol_1_1price.html">graphene::protocol::price</a> &amp;_price, const <a class="el" href="classgraphene_1_1chain_1_1asset__object.html">graphene::chain::asset_object</a> &amp;_base, const <a class="el" href="classgraphene_1_1chain_1_1asset__object.html">graphene::chain::asset_object</a> &amp;_quote)</td></tr>
+<tr class="separator:ab0735634d911657e6f34b4734dfeaf0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80b57dd51b4fdd0f9cce94a056f74cb7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1app.html#a80b57dd51b4fdd0f9cce94a056f74cb7">price_diff_percent_string</a> (const <a class="el" href="structgraphene_1_1protocol_1_1price.html">graphene::protocol::price</a> &amp;old_price, const <a class="el" href="structgraphene_1_1protocol_1_1price.html">graphene::protocol::price</a> &amp;new_price)</td></tr>
+<tr class="separator:a80b57dd51b4fdd0f9cce94a056f74cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a0d7b9dd9560bcbbbfe65c4562a17ceb8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a0d7b9dd9560bcbbbfe65c4562a17ceb8"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1app.html#a0d7b9dd9560bcbbbfe65c4562a17ceb8">dejsonify</a> (const string &amp;s, uint32_t max_depth)</td></tr>
 <tr class="separator:a0d7b9dd9560bcbbbfe65c4562a17ceb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a68cce708efd2be5859a5e75899e3f4f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68cce708efd2be5859a5e75899e3f4f1">&#9670;&nbsp;</a></span>u256</h2>
+<a id="a26804ee36d39c9a57ef54ba85f3ca894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26804ee36d39c9a57ef54ba85f3ca894">&#9670;&nbsp;</a></span>market_queue_type</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::multiprecision::uint256_t <a class="el" href="namespacegraphene_1_1app.html#a68cce708efd2be5859a5e75899e3f4f1">graphene::app::u256</a></td>
+          <td class="memname">typedef std::map&lt; std::pair&lt;graphene::chain::asset_id_type, graphene::chain::asset_id_type&gt;, std::vector&lt;<a class="el" href="classfc_1_1variant.html">fc::variant</a>&gt; &gt; <a class="el" href="namespacegraphene_1_1app.html#a26804ee36d39c9a57ef54ba85f3ca894">graphene::app::market_queue_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="util_8hpp_source.html#l00035">35</a> of file <a class="el" href="util_8hpp_source.html">util.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00034">34</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -238,7 +240,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void graphene::app::load_configuration_options </td>
           <td>(</td>
-          <td class="paramtype">const fc::path &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1path.html">fc::path</a> &amp;&#160;</td>
           <td class="paramname"><em>data_dir</em>, </td>
         </tr>
         <tr>
@@ -272,7 +274,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void graphene::app::load_configuration_options </td>
           <td>(</td>
-          <td class="paramtype">const fc::path &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1path.html">fc::path</a> &amp;&#160;</td>
           <td class="paramname"><em>data_dir</em>, </td>
         </tr>
         <tr>
@@ -299,22 +301,22 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a4960f0d94097a5cda651acec71c461ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4960f0d94097a5cda651acec71c461ac">&#9670;&nbsp;</a></span>price_diff_percent_string()</h2>
+<a id="a80b57dd51b4fdd0f9cce94a056f74cb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80b57dd51b4fdd0f9cce94a056f74cb7">&#9670;&nbsp;</a></span>price_diff_percent_string()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string graphene::app::price_diff_percent_string </td>
+          <td class="memname">std::string graphene::app::price_diff_percent_string </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1price.html">price</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1price.html">graphene::protocol::price</a> &amp;&#160;</td>
           <td class="paramname"><em>old_price</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1price.html">price</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1price.html">graphene::protocol::price</a> &amp;&#160;</td>
           <td class="paramname"><em>new_price</em>&#160;</td>
         </tr>
         <tr>
@@ -325,20 +327,20 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="util_8cpp_source.html#l00102">102</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_8cpp_source.html#l00104">104</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 </div>
 </div>
-<a id="aa5c778a6ce322d86a92a25bceeeffdd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5c778a6ce322d86a92a25bceeeffdd2">&#9670;&nbsp;</a></span>price_to_string()</h2>
+<a id="a7dfa3f93151c8127c89ab6e5dcd3cdf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dfa3f93151c8127c89ab6e5dcd3cdf6">&#9670;&nbsp;</a></span>price_to_string() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string graphene::app::price_to_string </td>
+          <td class="memname">std::string graphene::app::price_to_string </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1price.html">price</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1price.html">graphene::protocol::price</a> &amp;&#160;</td>
           <td class="paramname"><em>_price</em>, </td>
         </tr>
         <tr>
@@ -361,60 +363,56 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="util_8cpp_source.html#l00080">80</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_8cpp_source.html#l00068">68</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a8235359fc02af7a350bb55033b850dd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8235359fc02af7a350bb55033b850dd8">&#9670;&nbsp;</a></span>to256()</h2>
+<a id="ab0735634d911657e6f34b4734dfeaf0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0735634d911657e6f34b4734dfeaf0c">&#9670;&nbsp;</a></span>price_to_string() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacegraphene_1_1app.html#a68cce708efd2be5859a5e75899e3f4f1">u256</a> graphene::app::to256 </td>
+          <td class="memname">std::string graphene::app::price_to_string </td>
           <td>(</td>
-          <td class="paramtype">const fc::uint128 &amp;&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1price.html">graphene::protocol::price</a> &amp;&#160;</td>
+          <td class="paramname"><em>_price</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="classgraphene_1_1chain_1_1asset__object.html">graphene::chain::asset_object</a> &amp;&#160;</td>
+          <td class="paramname"><em>_base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgraphene_1_1chain_1_1asset__object.html">graphene::chain::asset_object</a> &amp;&#160;</td>
+          <td class="paramname"><em>_quote</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="util_8cpp_source.html#l00030">30</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_8cpp_source.html#l00092">92</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 </div>
 </div>
-<a id="af047f47d42f0057b71b692a49d87051b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af047f47d42f0057b71b692a49d87051b">&#9670;&nbsp;</a></span>to_capped128()</h2>
+<a id="acbd852a2885fb5bd35312a04bf192bd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbd852a2885fb5bd35312a04bf192bd0">&#9670;&nbsp;</a></span>uint128_amount_to_string()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">fc::uint128 graphene::app::to_capped128 </td>
+          <td class="memname">std::string graphene::app::uint128_amount_to_string </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacegraphene_1_1app.html#a68cce708efd2be5859a5e75899e3f4f1">u256</a> &amp;&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="util_8cpp_source.html#l00038">38</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
-
-</div>
-</div>
-<a id="ac983e2615e3c4305778d61b9f0c4450a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac983e2615e3c4305778d61b9f0c4450a">&#9670;&nbsp;</a></span>uint128_amount_to_string()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string graphene::app::uint128_amount_to_string </td>
-          <td>(</td>
-          <td class="paramtype">const fc::uint128 &amp;&#160;</td>
+          <td class="paramtype">const fc::uint128_t &amp;&#160;</td>
           <td class="paramname"><em>amount</em>, </td>
         </tr>
         <tr>
@@ -431,14 +429,14 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="util_8cpp_source.html#l00054">54</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_8cpp_source.html#l00042">42</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 17 2019 16:30:08 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 3 2019 18:33:16 for Bitshares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

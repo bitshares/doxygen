@@ -1,12 +1,10 @@
 var searchData=
 [
-  ['weight_5ftype',['weight_type',['../namespacegraphene_1_1protocol.html#a0b8cef782b0ba0eb807da61f2cc811bf',1,'graphene::protocol']]],
-  ['withdraw_5fpermission_5findex',['withdraw_permission_index',['../namespacegraphene_1_1chain.html#a448e9811f840d88cab8b0dbb7057a4a4',1,'graphene::chain']]],
-  ['withdraw_5fpermission_5fobject_5fmulti_5findex_5ftype',['withdraw_permission_object_multi_index_type',['../namespacegraphene_1_1chain.html#a30912eb7ae8ddcbc58e6b62c5be237d0',1,'graphene::chain']]],
-  ['witness_5findex',['witness_index',['../namespacegraphene_1_1chain.html#a98ada320d7732377d0913aa7efafd4ba',1,'graphene::chain']]],
-  ['witness_5fmulti_5findex_5ftype',['witness_multi_index_type',['../namespacegraphene_1_1chain.html#aa0f051c3b803688473930d49a98ec8e2',1,'graphene::chain']]],
-  ['worker_5findex',['worker_index',['../namespacegraphene_1_1chain.html#ad0445f69e4dc63af75eb5a699a04ec8b',1,'graphene::chain']]],
-  ['worker_5finitializer',['worker_initializer',['../group__workers.html#gacad8e9996ced0a2fc8e66f65210701d9',1,'graphene::protocol']]],
-  ['worker_5fobject_5fmulti_5findex_5ftype',['worker_object_multi_index_type',['../namespacegraphene_1_1chain.html#ab64de8d6045f62c2e57025a092c9d153',1,'graphene::chain']]],
-  ['worker_5ftype',['worker_type',['../namespacegraphene_1_1chain.html#aff2faab1253f21209aaad5771fdda38c',1,'graphene::chain']]]
+  ['value_5ftype',['value_type',['../classgraphene_1_1db_1_1simple__index_1_1const__iterator.html#a316f2f0e3ee1eb2648517fd918384cc2',1,'graphene::db::simple_index::const_iterator::value_type()'],['../classfc_1_1optional.html#a60c8ee406455667ec37c5ee2e69aa41c',1,'fc::optional::value_type()']]],
+  ['variants',['variants',['../namespacefc.html#a2e5e6bdb302dfb79e684336f3fbbd8bc',1,'fc']]],
+  ['vesting_5fbalance_5findex',['vesting_balance_index',['../namespacegraphene_1_1chain.html#ab04613b07ed5a248119544dce7824ea4',1,'graphene::chain']]],
+  ['vesting_5fbalance_5fmulti_5findex_5ftype',['vesting_balance_multi_index_type',['../namespacegraphene_1_1chain.html#a5df2b2b04b2faf511e46a478fca8df91',1,'graphene::chain']]],
+  ['vesting_5fpolicy',['vesting_policy',['../namespacegraphene_1_1chain.html#ada5fee9165e8f378bf91976a523747c2',1,'graphene::chain']]],
+  ['vesting_5fpolicy_5finitializer',['vesting_policy_initializer',['../namespacegraphene_1_1protocol.html#aae2f87c394dcd3096561bb3ca5962148',1,'graphene::protocol']]],
+  ['vtable_5ftype',['vtable_type',['../classfc_1_1api.html#a11b72f22d33b7b21a6e3768f2f5876a2',1,'fc::api']]]
 ];

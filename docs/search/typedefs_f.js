@@ -1,8 +1,14 @@
 var searchData=
 [
-  ['transaction_5fhandle_5ftype',['transaction_handle_type',['../namespacegraphene_1_1wallet.html#a385c5434f1c4e271cf812627f9ee759a',1,'graphene::wallet']]],
-  ['transaction_5fid_5ftype',['transaction_id_type',['../namespacegraphene_1_1protocol.html#a040f9f71bff896e89dc9ee3ff92bb076',1,'graphene::protocol']]],
-  ['transaction_5findex',['transaction_index',['../namespacegraphene_1_1chain.html#a6735d1474fb46c8be23bffb0ea544f52',1,'graphene::chain']]],
-  ['transaction_5fmulti_5findex_5ftype',['transaction_multi_index_type',['../namespacegraphene_1_1chain.html#a3b4961928bcc772143d60f32b4a87b35',1,'graphene::chain']]],
-  ['type',['type',['../structgraphene_1_1protocol_1_1transform__to__fee__parameters_3_01fc_1_1static__variant_3_01_t_8_8_8_01_4_01_4.html#a74cda7734a7e34e138a7d94b01ce2fbc',1,'graphene::protocol::transform_to_fee_parameters&lt; fc::static_variant&lt; T... &gt; &gt;::type()'],['../structgraphene_1_1db_1_1object__downcast.html#ae3c948176b86bad30ad5c6da96c35136',1,'graphene::db::object_downcast::type()'],['../structfc_1_1reflector_3_01graphene_1_1db_1_1object__id_3_01_space_i_d_00_01_type_i_d_01_4_01_4.html#ae32ca61f48bf6c13644b181a58b2ee22',1,'fc::reflector&lt; graphene::db::object_id&lt; SpaceID, TypeID &gt; &gt;::type()']]]
+  ['scoped_5fconnection',['scoped_connection',['../namespacefc.html#ab664699ec38ccad4e689cd838a3d9d35',1,'fc']]],
+  ['share_5ftype',['share_type',['../namespacegraphene_1_1protocol.html#a69b2104c1c11eed2d17bd29b86713347',1,'graphene::protocol']]],
+  ['signal',['signal',['../namespacefc.html#a6c2f257e2f2f1a64dbdfe8b7b5e0f411',1,'fc']]],
+  ['signature',['signature',['../namespacefc_1_1ecc.html#a9c6eb3fdbac8cae41c060b767f751f94',1,'fc::ecc']]],
+  ['signature_5ftype',['signature_type',['../namespacegraphene_1_1protocol.html#ade0535fb9b29fcc7de372c0f1ff5d218',1,'graphene::protocol']]],
+  ['simulated_5fnetwork_5fptr',['simulated_network_ptr',['../namespacegraphene_1_1net.html#a889ad94dfc15dff048ba0746c8147906',1,'graphene::net']]],
+  ['socket_5ftype',['socket_type',['../structfc_1_1http_1_1detail_1_1asio__with__stub__log_1_1transport__config.html#a0a8f4f1fa6acd33291ef557113ee6806',1,'fc::http::detail::asio_with_stub_log::transport_config::socket_type()'],['../structfc_1_1http_1_1detail_1_1asio__tls__with__stub__log_1_1transport__config.html#aa949cbea45c52b0a0db014b2fc551355',1,'fc::http::detail::asio_tls_with_stub_log::transport_config::socket_type()'],['../structfc_1_1http_1_1detail_1_1asio__tls__stub__log_1_1transport__config.html#a03da1dc53ca36fddc5bf880b07d16b75',1,'fc::http::detail::asio_tls_stub_log::transport_config::socket_type()']]],
+  ['special_5fauthority',['special_authority',['../namespacegraphene_1_1protocol.html#a0e74afece7dbfa1a51f7b183624850d4',1,'graphene::protocol']]],
+  ['special_5fauthority_5findex',['special_authority_index',['../namespacegraphene_1_1chain.html#adb4a7278fc672d4e6dab3163222aa92b',1,'graphene::chain']]],
+  ['special_5fauthority_5fmulti_5findex_5ftype',['special_authority_multi_index_type',['../namespacegraphene_1_1chain.html#a8ba4f8afbe95a825f0c3cf2992c209de',1,'graphene::chain']]],
+  ['stcp_5fsocket_5fptr',['stcp_socket_ptr',['../namespacegraphene_1_1net.html#a0c9ce0c439b115a40ee255c80406bc88',1,'graphene::net']]]
 ];
