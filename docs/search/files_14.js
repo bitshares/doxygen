@@ -10,7 +10,6 @@ var searchData=
   ['url_2ehpp',['url.hpp',['../url_8hpp.html',1,'']]],
   ['utf8_2ecpp',['utf8.cpp',['../utf8_8cpp.html',1,'']]],
   ['utf8_2ehpp',['utf8.hpp',['../utf8_8hpp.html',1,'']]],
-  ['utf8_5ftest_2ecpp',['utf8_test.cpp',['../utf8__test_8cpp.html',1,'']]],
   ['util_2ecpp',['util.cpp',['../util_8cpp.html',1,'']]],
   ['util_2ehpp',['util.hpp',['../util_8hpp.html',1,'']]]
 ];

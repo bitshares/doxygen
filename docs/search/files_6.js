@@ -6,6 +6,7 @@ var searchData=
   ['fba_5fobject_2ehpp',['fba_object.hpp',['../fba__object_8hpp.html',1,'']]],
   ['fee_5fschedule_2ecpp',['fee_schedule.cpp',['../fee__schedule_8cpp.html',1,'']]],
   ['fee_5fschedule_2ehpp',['fee_schedule.hpp',['../fee__schedule_8hpp.html',1,'']]],
+  ['fee_5fschedule_5fcalc_2ecpp',['fee_schedule_calc.cpp',['../fee__schedule__calc_8cpp.html',1,'']]],
   ['file_5fappender_2ecpp',['file_appender.cpp',['../file__appender_8cpp.html',1,'']]],
   ['file_5fappender_2ehpp',['file_appender.hpp',['../file__appender_8hpp.html',1,'']]],
   ['file_5fmapping_2ecpp',['file_mapping.cpp',['../file__mapping_8cpp.html',1,'']]],

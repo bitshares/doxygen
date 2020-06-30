@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['ecc_5ftest_2ecpp',['ecc_test.cpp',['../ecc__test_8cpp.html',1,'']]],
   ['egenesis_2ehpp',['egenesis.hpp',['../egenesis_8hpp.html',1,'']]],
   ['egenesis_5fnone_2ecpp',['egenesis_none.cpp',['../egenesis__none_8cpp.html',1,'']]],
   ['elasticsearch_2ecpp',['elasticsearch.cpp',['../elasticsearch_8cpp.html',1,'']]],
@@ -11,7 +10,6 @@ var searchData=
   ['elliptic_5fcommon_2ecpp',['elliptic_common.cpp',['../elliptic__common_8cpp.html',1,'']]],
   ['elliptic_5fimpl_5fpriv_2ecpp',['elliptic_impl_priv.cpp',['../elliptic__impl__priv_8cpp.html',1,'']]],
   ['elliptic_5fsecp256k1_2ecpp',['elliptic_secp256k1.cpp',['../elliptic__secp256k1_8cpp.html',1,'']]],
-  ['embed_5fgenesis_2ecpp',['embed_genesis.cpp',['../embed__genesis_8cpp.html',1,'']]],
   ['enum_5ftype_2ehpp',['enum_type.hpp',['../enum__type_8hpp.html',1,'']]],
   ['es_5fobjects_2ecpp',['es_objects.cpp',['../es__objects_8cpp.html',1,'']]],
   ['es_5fobjects_2ehpp',['es_objects.hpp',['../es__objects_8hpp.html',1,'']]],
@@ -19,7 +17,10 @@ var searchData=
   ['evaluator_2ehpp',['evaluator.hpp',['../evaluator_8hpp.html',1,'']]],
   ['exception_2ecpp',['exception.cpp',['../exception_8cpp.html',1,'']]],
   ['exception_2ehpp',['exception.hpp',['../exception_8hpp.html',1,'']]],
-  ['exceptions_2ecpp',['exceptions.cpp',['../chain_2exceptions_8cpp.html',1,'(Global Namespace)'],['../net_2exceptions_8cpp.html',1,'(Global Namespace)']]],
-  ['exceptions_2ehpp',['exceptions.hpp',['../chain_2include_2graphene_2chain_2exceptions_8hpp.html',1,'(Global Namespace)'],['../protocol_2include_2graphene_2protocol_2exceptions_8hpp.html',1,'(Global Namespace)'],['../net_2include_2graphene_2net_2exceptions_8hpp.html',1,'(Global Namespace)']]],
+  ['exceptions_2ecpp',['exceptions.cpp',['../chain_2exceptions_8cpp.html',1,'']]],
+  ['exceptions_2ecpp',['exceptions.cpp',['../net_2exceptions_8cpp.html',1,'']]],
+  ['exceptions_2ehpp',['exceptions.hpp',['../net_2include_2graphene_2net_2exceptions_8hpp.html',1,'']]],
+  ['exceptions_2ehpp',['exceptions.hpp',['../chain_2include_2graphene_2chain_2exceptions_8hpp.html',1,'']]],
+  ['exceptions_2ehpp',['exceptions.hpp',['../protocol_2include_2graphene_2protocol_2exceptions_8hpp.html',1,'']]],
   ['ext_2ehpp',['ext.hpp',['../ext_8hpp.html',1,'']]]
 ];

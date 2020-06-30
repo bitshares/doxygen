@@ -3,7 +3,6 @@ var searchData=
   ['padding_5fostream_2ehpp',['padding_ostream.hpp',['../padding__ostream_8hpp.html',1,'']]],
   ['parallel_2ecpp',['parallel.cpp',['../parallel_8cpp.html',1,'']]],
   ['parallel_2ehpp',['parallel.hpp',['../parallel_8hpp.html',1,'']]],
-  ['parallel_5ftests_2ecpp',['parallel_tests.cpp',['../parallel__tests_8cpp.html',1,'']]],
   ['peer_5fconnection_2ecpp',['peer_connection.cpp',['../peer__connection_8cpp.html',1,'']]],
   ['peer_5fconnection_2ehpp',['peer_connection.hpp',['../peer__connection_8hpp.html',1,'']]],
   ['peer_5fdatabase_2ecpp',['peer_database.cpp',['../peer__database_8cpp.html',1,'']]],
