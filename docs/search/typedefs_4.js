@@ -4,7 +4,9 @@ var searchData=
   ['endpoint',['endpoint',['../namespacefc_1_1asio_1_1tcp.html#aaaf875000d53a6ec4c33850f99fb2e88',1,'fc::asio::tcp::endpoint()'],['../namespacefc_1_1asio_1_1udp.html#a0079c4581a72fcaea245cc1ddad864e7',1,'fc::asio::udp::endpoint()']]],
   ['endpoint_5fmsg_5fmanager_5ftype',['endpoint_msg_manager_type',['../structfc_1_1http_1_1detail_1_1asio__with__stub__log.html#abf17f51787a9c0455999609bbcb23a1c',1,'fc::http::detail::asio_with_stub_log::endpoint_msg_manager_type()'],['../structfc_1_1http_1_1detail_1_1asio__tls__with__stub__log.html#ac2f69eacbeb9cc8051db85cbbbbf2ff8',1,'fc::http::detail::asio_tls_with_stub_log::endpoint_msg_manager_type()'],['../structfc_1_1http_1_1detail_1_1asio__tls__stub__log.html#a916f497d87ae6810d665c18a2d5bd57e',1,'fc::http::detail::asio_tls_stub_log::endpoint_msg_manager_type()']]],
   ['entry',['entry',['../classfc_1_1mutable__variant__object.html#af1bee50fbfdee30defa012c06dbe8107',1,'fc::mutable_variant_object']]],
+  ['equal',['equal',['../structgraphene_1_1protocol_1_1predicate__ne.html#a38bfdfae640d99283cf73367738d2a71',1,'graphene::protocol::predicate_ne']]],
+  ['equality_5ftypes_5flist',['equality_types_list',['../namespacegraphene_1_1protocol.html#a0493c0127f1b120d66443f1ff1241538',1,'graphene::protocol']]],
   ['exception_5fptr',['exception_ptr',['../namespacefc.html#a15170d1be1e682691dfe6ae09790edce',1,'fc']]],
-  ['extended_5fkey_5fdata',['extended_key_data',['../namespacefc_1_1ecc.html#a94ddee7d090a51ed7693309c04490243',1,'fc::ecc']]],
-  ['extensions_5ftype',['extensions_type',['../structgraphene_1_1protocol_1_1call__order__update__operation.html#aa01d6fd58f9fa49f701615aac8ec8048',1,'graphene::protocol::call_order_update_operation::extensions_type()'],['../group__operations.html#ga10cfb9bd22260c851c06b3b33ac0c512',1,'graphene::protocol::extensions_type()']]]
+  ['extended_5fkey_5fdata',['extended_key_data',['../namespacefc_1_1ecc.html#a0ade047116801918646abc8a1062a3cd',1,'fc::ecc']]],
+  ['extensions_5ftype',['extensions_type',['../structgraphene_1_1protocol_1_1call__order__update__operation.html#aa01d6fd58f9fa49f701615aac8ec8048',1,'graphene::protocol::call_order_update_operation::extensions_type()'],['../group__operations.html#gabaddcaf5bde76414891b4c29031d9288',1,'graphene::protocol::extensions_type()']]]
 ];

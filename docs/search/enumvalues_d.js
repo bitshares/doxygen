@@ -12,6 +12,7 @@ var searchData=
   ['not_5ftime_5fyet',['not_time_yet',['../namespacegraphene_1_1witness__plugin_1_1block__production__condition.html#add25f11b2b7e729abdc013acde00d785ab5c164d6dfee90b492ac3f4092423267',1,'graphene::witness_plugin::block_production_condition']]],
   ['notauthorized',['NotAuthorized',['../structfc_1_1http_1_1reply.html#abcd43db4a13e11cef4cae85c5dbe1b5ca15e1039a60eb1d511afe49049195bef4',1,'fc::http::reply']]],
   ['notfound',['NotFound',['../structfc_1_1http_1_1reply.html#abcd43db4a13e11cef4cae85c5dbe1b5caab47fff39fd4308ee03adebeea0097f5',1,'fc::http::reply']]],
+  ['null_5foptional',['null_optional',['../structgraphene_1_1protocol_1_1predicate__result.html#a8846e55ae46f35a16a81c0cf0850f19ca78cb9d9f026b24a9b11362c8a5d5be20',1,'graphene::protocol::predicate_result']]],
   ['null_5foptional_5fcode',['null_optional_code',['../namespacefc.html#ab52b42f18c442a260897c74c66c3d35ca594c9e76fdd2f38b1a829a2dff2f0cf8',1,'fc']]],
   ['null_5ftype',['null_type',['../classfc_1_1variant.html#a8e472a4f69eccec5336dde2646c69c5fa5e16cde26441090f51ebd51c04d7a185',1,'fc::variant']]]
 ];

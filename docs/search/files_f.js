@@ -7,6 +7,8 @@ var searchData=
   ['openssl_2ecpp',['openssl.cpp',['../openssl_8cpp.html',1,'']]],
   ['openssl_2ehpp',['openssl.hpp',['../openssl_8hpp.html',1,'']]],
   ['operation_5fhistory_5fobject_2ehpp',['operation_history_object.hpp',['../operation__history__object_8hpp.html',1,'']]],
+  ['operation_5fprinter_2ecpp',['operation_printer.cpp',['../operation__printer_8cpp.html',1,'']]],
+  ['operation_5fprinter_2ehpp',['operation_printer.hpp',['../operation__printer_8hpp.html',1,'']]],
   ['operations_2ecpp',['operations.cpp',['../operations_8cpp.html',1,'']]],
   ['operations_2ehpp',['operations.hpp',['../operations_8hpp.html',1,'']]],
   ['optional_2ehpp',['optional.hpp',['../optional_8hpp.html',1,'']]]

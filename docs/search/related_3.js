@@ -2,6 +2,7 @@ var searchData=
 [
   ['account_5fhistory_5fplugin_5fimpl',['account_history_plugin_impl',['../classgraphene_1_1account__history_1_1account__history__plugin.html#a93216c4404ba9db5e25d500b75e69d72',1,'graphene::account_history::account_history_plugin']]],
   ['api_5fhelper_5findexes_5fimpl',['api_helper_indexes_impl',['../classgraphene_1_1api__helper__indexes_1_1api__helper__indexes.html#a39f2b6364f4841eb5af9f67469e168ec',1,'graphene::api_helper_indexes::api_helper_indexes']]],
+  ['custom_5foperations_5fplugin_5fimpl',['custom_operations_plugin_impl',['../classgraphene_1_1custom__operations_1_1custom__operations__plugin.html#ae6aabf16047807ed57db82017fb1e6f6',1,'graphene::custom_operations::custom_operations_plugin']]],
   ['elasticsearch_5fplugin_5fimpl',['elasticsearch_plugin_impl',['../classgraphene_1_1elasticsearch_1_1elasticsearch__plugin.html#a7b9c8659d13bbe4bb18ccd6b7fee617c',1,'graphene::elasticsearch::elasticsearch_plugin']]],
   ['es_5fobjects_5fplugin_5fimpl',['es_objects_plugin_impl',['../classgraphene_1_1es__objects_1_1es__objects__plugin.html#a70ec37d5cedb5d02f2bebfc52148c9b8',1,'graphene::es_objects::es_objects_plugin']]],
   ['get_5fnext_5funused_5ftask_5fstorage_5fslot',['get_next_unused_task_storage_slot',['../classfc_1_1thread.html#a3df4541cfddbd2d06a2880dbd9d2a0d7',1,'fc::thread']]],

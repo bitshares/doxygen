@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['copy_5fconstruct',['copy_construct',['../classfc_1_1static__variant.html#a6010df8092a905016b6bf328ef0b2274',1,'fc::static_variant']]],
-  ['move_5fconstruct',['move_construct',['../classfc_1_1static__variant.html#ae3385fa2f5b46bf5d07c0024550bdf75',1,'fc::static_variant']]]
+  ['mapped_5fregion',['mapped_region',['../classfc_1_1file__mapping.html#a81825327c2aa0356634ea482a1403672',1,'fc::file_mapping']]],
+  ['mutable_5furl',['mutable_url',['../classfc_1_1url.html#a8fcf17901a1b195dcdf8f64c90b86e6e',1,'fc::url']]],
+  ['mutable_5fvariant_5fobject',['mutable_variant_object',['../classfc_1_1variant__object.html#a8bc4fdcd652f006622ab45f1dfb948b7',1,'fc::variant_object']]],
+  ['mutex',['mutex',['../classfc_1_1thread.html#a6f4535025b9df015e1a7d35f4e2bbee7',1,'fc::thread']]]
 ];
