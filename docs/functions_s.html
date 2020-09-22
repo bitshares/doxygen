@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">4.0.0</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -584,6 +584,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>sha512()
 : <a class="el" href="classfc_1_1sha512.html#a821d8aad5a2756af7345ce05dea6fa9a">fc::sha512</a>
 </li>
+<li>share_amount
+: <a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__withdraw__operation.html#a3c0caf3d7390bc572f95185085590ccb">graphene::protocol::liquidity_pool_withdraw_operation</a>
+</li>
+<li>share_asset
+: <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__object.html#a26db66f167d22c1614e1d2c99f7ac4d7">graphene::chain::liquidity_pool_object</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__create__operation.html#af04aa9b48c3129b8d5726d96f2d168c2">graphene::protocol::liquidity_pool_create_operation</a>
+</li>
 <li>shared_buffer
 : <a class="el" href="classfc_1_1detail_1_1rate__limited__tcp__read__operation.html#a0828f567076e86c02d32596215fa9fb6">fc::detail::rate_limited_tcp_read_operation</a>
 , <a class="el" href="classfc_1_1detail_1_1rate__limited__tcp__write__operation.html#a8eecc0c17095acd1c5062ffcaed266e5">fc::detail::rate_limited_tcp_write_operation</a>
@@ -682,6 +689,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classgraphene_1_1db_1_1simple__index.html#a52e644180c422165ca5a8faaeda62e41">graphene::db::simple_index&lt; T &gt;</a>
 , <a class="el" href="classgraphene_1_1db_1_1undo__database.html#a6d7f3dc0427bae5f7a79ed905e4c8d25">graphene::db::undo_database</a>
 , <a class="el" href="classgraphene_1_1net_1_1detail_1_1blockchain__tied__message__cache.html#abbf287f05f84515b24549fedc05c8988">graphene::net::detail::blockchain_tied_message_cache</a>
+, <a class="el" href="classgraphene_1_1net_1_1detail_1_1concurrent__unordered__set.html#a25b6b3b5d545344c45ac9b02a6b8b19f">graphene::net::detail::concurrent_unordered_set&lt; Key, Hash, Pred &gt;</a>
 , <a class="el" href="classgraphene_1_1net_1_1detail_1_1peer__database__impl.html#a1c2fe698ccde4ed1412381f5ba369d32">graphene::net::detail::peer_database_impl</a>
 , <a class="el" href="structgraphene_1_1net_1_1message__header.html#a0ae8fd3d0ef34b30c71a7fa35c48cd08">graphene::net::message_header</a>
 , <a class="el" href="classgraphene_1_1net_1_1peer__database.html#a42b4d3074210bfeddbe023bc5a132c84">graphene::net::peer_database</a>
@@ -763,46 +771,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="structgraphene_1_1db_1_1object__id__type.html#a486dc4e2462aafab867b6ad4e697df47">graphene::db::object_id_type</a>
 </li>
 <li>space_id
-: <a class="el" href="classgraphene_1_1chain_1_1account__balance__object.html#a1afbff7a0e078ff30120a6f1aa64a0dd">graphene::chain::account_balance_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1account__object.html#a0f562851b5dc2a4a7c2c28cc77658a53">graphene::chain::account_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#a7be7e9ec8e44e415dd2294f05d94674b">graphene::chain::account_statistics_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1account__transaction__history__object.html#a374a5017d1804024cd84641d871cbc1c">graphene::chain::account_transaction_history_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1asset__bitasset__data__object.html#a8fdd72439535733275ff94cf326f7c29">graphene::chain::asset_bitasset_data_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1asset__dynamic__data__object.html#a7d9e4a0bcc9775291b8b53fe6150bd68">graphene::chain::asset_dynamic_data_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1asset__object.html#a2ec03bf0f8b75cc3de37168452cb1b48">graphene::chain::asset_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1balance__object.html#a45d1c432b110c300994b4ae54a2f1b79">graphene::chain::balance_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1blinded__balance__object.html#a6c2841c2a5d77a652b05a144fa59ced3">graphene::chain::blinded_balance_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1block__summary__object.html#a283753e4440e524cbbcaa1d11b630fca">graphene::chain::block_summary_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1budget__record__object.html#ae4b3b4eddf7b7aeafcaa96cc4455cd29">graphene::chain::budget_record_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1buyback__object.html#a65f22611105db6df3731d6a181568959">graphene::chain::buyback_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1call__order__object.html#a384e8843ed00719c044a631f97d76479">graphene::chain::call_order_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1chain__property__object.html#adc4b64bb92373054130d2f5afb475fd7">graphene::chain::chain_property_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1collateral__bid__object.html#a291f944b1c35515d58c5a9440145b405">graphene::chain::collateral_bid_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1committee__member__object.html#a4e41c27773494ee4c2c5b730473c075a">graphene::chain::committee_member_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1custom__authority__object.html#ae5929e5352c423b1e1acb7ac0009a338">graphene::chain::custom_authority_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1dynamic__global__property__object.html#a41784d88561fbdb998a85c37ca6b77f9">graphene::chain::dynamic_global_property_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1fba__accumulator__object.html#a7a232de1c37b967c9f79b333c49bc083">graphene::chain::fba_accumulator_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1force__settlement__object.html#a76affdac9144f3c636f988b0d46cda6a">graphene::chain::force_settlement_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1global__property__object.html#acc2ba859edfbb7a78378879be5bb1853">graphene::chain::global_property_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1htlc__object.html#a4811b91adcc46453979d47dbf5e0330f">graphene::chain::htlc_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html#a31428f2f4f6bcf394de2809752fabfd5">graphene::chain::limit_order_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html#aceab3313fb6186e16699ddf04d056fd2">graphene::chain::operation_history_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1proposal__object.html#a76da455fa1feee65e202055d975bd14e">graphene::chain::proposal_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1special__authority__object.html#ad8856ff29ad6ee3c3f5f43091b4623fc">graphene::chain::special_authority_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1ticket__object.html#a9bf9689bc198f4f6cde13ae97847adc5">graphene::chain::ticket_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1transaction__history__object.html#adef48270cb96b26c8aca4093d160fc9a">graphene::chain::transaction_history_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#ab999fcca9be4d932dbb2586b9a7d339d">graphene::chain::vesting_balance_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1withdraw__permission__object.html#a2b4088e9b2744187ebad20cd8ba12689">graphene::chain::withdraw_permission_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1witness__object.html#a05550b88a0245c6c3ef94644302608cb">graphene::chain::witness_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1witness__schedule__object.html#a621fbb0dcced9a79024b8192cacbe05d">graphene::chain::witness_schedule_object</a>
-, <a class="el" href="classgraphene_1_1chain_1_1worker__object.html#a42487999635d7eaaabed8c4ba501dd01">graphene::chain::worker_object</a>
-, <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#ae284ebfaabc6e5536aad0ff35a5568fa">graphene::custom_operations::account_storage_object</a>
-, <a class="el" href="classgraphene_1_1db_1_1object.html#af4fa36c46acc14681746e93adbc812f8">graphene::db::object</a>
-, <a class="el" href="structgraphene_1_1db_1_1object__id.html#a856d3e3d298900f9b8ac29cb0f473286">graphene::db::object_id&lt; SpaceID, TypeID &gt;</a>
-, <a class="el" href="structgraphene_1_1market__history_1_1bucket__object.html#a6db2fbb4b348c809495db1acd8b1f5be">graphene::market_history::bucket_object</a>
-, <a class="el" href="structgraphene_1_1market__history_1_1market__ticker__meta__object.html#a4e859bd2e0b2696c2e5d31438d9b798b">graphene::market_history::market_ticker_meta_object</a>
-, <a class="el" href="structgraphene_1_1market__history_1_1market__ticker__object.html#abdac8ff3acd53d31719bab0acdea07d2">graphene::market_history::market_ticker_object</a>
-, <a class="el" href="structgraphene_1_1market__history_1_1order__history__object.html#aa8566bafa3532ca304600a75991aa28e">graphene::market_history::order_history_object</a>
+: <a class="el" href="classgraphene_1_1chain_1_1account__balance__object.html#a3af0eb82e6aeae772dc136b6100a4325">graphene::chain::account_balance_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1account__object.html#a167145390ed1b08f2c4f969ce2876877">graphene::chain::account_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#a18757e1317f241d2019f54dd77b16ade">graphene::chain::account_statistics_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1account__transaction__history__object.html#a471ffb292a5e6c7a9a450cdc6ce54e95">graphene::chain::account_transaction_history_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1asset__bitasset__data__object.html#a3875e60e02988146faaeb6a6810f6937">graphene::chain::asset_bitasset_data_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1asset__dynamic__data__object.html#a1f86ef59c9e38f598f14f13ef3e9bf80">graphene::chain::asset_dynamic_data_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1asset__object.html#add8ca6d9e7e0468d2fac122e32a9601e">graphene::chain::asset_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1balance__object.html#a8709a0978c2e7ea84dc6fc94cc900be0">graphene::chain::balance_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1blinded__balance__object.html#a085cdac1baf9eeb1055b321bb4197631">graphene::chain::blinded_balance_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1block__summary__object.html#a34b160d908fb508356ddc337880008e9">graphene::chain::block_summary_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1budget__record__object.html#ae9984a9147f7f36941a6fd6405116198">graphene::chain::budget_record_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1buyback__object.html#ab2bba97f88234c177055555198ce445e">graphene::chain::buyback_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1call__order__object.html#a5a8ff475ca3deea6c2f2d6c7888a08f5">graphene::chain::call_order_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1chain__property__object.html#ac9e1b4a332666252e9efdb34c91b0a8e">graphene::chain::chain_property_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1collateral__bid__object.html#af00c3546d243a501d9f62ef3b707c179">graphene::chain::collateral_bid_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1committee__member__object.html#ab98965b3fe2209b7fa4584ea9b9d53a7">graphene::chain::committee_member_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1custom__authority__object.html#a5e13a6f976ed525008744559d353deb0">graphene::chain::custom_authority_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1dynamic__global__property__object.html#a2959013ab1491bf1eb360c4b893e5160">graphene::chain::dynamic_global_property_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1fba__accumulator__object.html#a4287e1961173edce2317f659347b544d">graphene::chain::fba_accumulator_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1force__settlement__object.html#ae71caed1188514b60962da480c281022">graphene::chain::force_settlement_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1global__property__object.html#adb4d1365c321e70f927154390dca6e4d">graphene::chain::global_property_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1htlc__object.html#a2f6a9bcf5856bf8989fd5c7aeaa02263">graphene::chain::htlc_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html#a23a51aebb2a45cd5a57b4ee35ada9f66">graphene::chain::limit_order_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__object.html#ae90af2d1806a6452ec79bf41437dd70f">graphene::chain::liquidity_pool_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html#a431fd7447bedea2ff86b091441342a9c">graphene::chain::operation_history_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1proposal__object.html#a22ce00ca6398b782a7cd64b43e0d5c41">graphene::chain::proposal_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1special__authority__object.html#a0be5da539d798417c2b8373f444176c1">graphene::chain::special_authority_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1ticket__object.html#a0ebb6f197c4d998732d3356f8045c25c">graphene::chain::ticket_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1transaction__history__object.html#adbb2c6a67a1df37a2d142f67bd19dc66">graphene::chain::transaction_history_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1vesting__balance__object.html#ad6c3b4fd1d1a69304b800a16457f93cd">graphene::chain::vesting_balance_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1withdraw__permission__object.html#aed6abab5b122abaf8068c3d8858d2afb">graphene::chain::withdraw_permission_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1witness__object.html#a48814fbd95f2da07bacc7cc745743637">graphene::chain::witness_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1witness__schedule__object.html#a161a1ddcd52b6084857bd14690651f78">graphene::chain::witness_schedule_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1worker__object.html#a040240fd8776e735db3b59d5f8a106b3">graphene::chain::worker_object</a>
+, <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a189a6d2eba45918f9532a162656659f7">graphene::custom_operations::account_storage_object</a>
+, <a class="el" href="structgraphene_1_1db_1_1object__id.html#af2acbad0bbf47bab71417ee49a774917">graphene::db::object_id&lt; SpaceID, TypeID &gt;</a>
+, <a class="el" href="structgraphene_1_1market__history_1_1bucket__object.html#a3f0c01971ca352912ab90b81906363d9">graphene::market_history::bucket_object</a>
+, <a class="el" href="structgraphene_1_1market__history_1_1market__ticker__meta__object.html#ad3653c4789798e1ca26db1ae8059a343">graphene::market_history::market_ticker_meta_object</a>
+, <a class="el" href="structgraphene_1_1market__history_1_1market__ticker__object.html#a3f941a66b099a2908579d17175a28f22">graphene::market_history::market_ticker_object</a>
+, <a class="el" href="structgraphene_1_1market__history_1_1order__history__object.html#ab0dddfdd93c54f160d8069061d13e113">graphene::market_history::order_history_object</a>
 </li>
 <li>space_type()
 : <a class="el" href="structgraphene_1_1db_1_1object__id__type.html#a63ee232eac181c5e63ad379b623139bf">graphene::db::object_id_type</a>
@@ -878,7 +886,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classgraphene_1_1app_1_1application.html#abc4a8c64f729d58289f8bcbc24737fa8">graphene::app::application</a>
 </li>
 <li>static_variant()
-: <a class="el" href="classfc_1_1static__variant.html#a38f834c72dfffa8f6f2b9cd75ab0a289">fc::static_variant&lt; Types &gt;</a>
+: <a class="el" href="classfc_1_1static__variant.html#af150f40b5b3860e28be1ef0710dc9718">fc::static_variant&lt; Types &gt;</a>
 , <a class="el" href="classfc_1_1static__variant_3_4.html#af5a166ff410e83b7d0a77e229c5007b6">fc::static_variant&lt;&gt;</a>
 </li>
 <li>static_variant_map_visitor()
@@ -924,6 +932,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>stop_listening()
 : <a class="el" href="classfc_1_1http_1_1websocket__server.html#a045cbe13660fe9878eae302ec6d32ff9">fc::http::websocket_server</a>
+, <a class="el" href="classfc_1_1http_1_1websocket__tls__server.html#a1572b73d63ebd0f72ad8b12e7728b66b">fc::http::websocket_tls_server</a>
 </li>
 <li>storage
 : <a class="el" href="classfc_1_1static__variant.html#a48520140372c08b994d3ca27a683f9c9">fc::static_variant&lt; Types &gt;</a>
@@ -959,7 +968,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classfc_1_1json.html#afbd7971f1c3f78682333330895f02e5da3335effe22a8bbd67f2312fd58662269">fc::json</a>
 </li>
 <li>stringstream()
-: <a class="el" href="classfc_1_1stringstream.html#a755ea31b673e173462ff6e4c631fc937">fc::stringstream</a>
+: <a class="el" href="classfc_1_1stringstream.html#aa7a10578e9c1163bc45f96656a3fbdca">fc::stringstream</a>
 </li>
 <li>subscribe_to_item()
 : <a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#aa57048eb9af8413ef0e2e5726b07ab34">graphene::app::database_api_impl</a>
@@ -1024,7 +1033,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 30 2020 00:57:02 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 22 2020 19:51:23 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

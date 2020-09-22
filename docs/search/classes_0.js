@@ -26,6 +26,7 @@ var searchData=
   ['abstract_5fobject_3c_20global_5fproperty_5fobject_20_3e',['abstract_object&lt; global_property_object &gt;',['../classgraphene_1_1db_1_1abstract__object.html',1,'graphene::db']]],
   ['abstract_5fobject_3c_20htlc_5fobject_20_3e',['abstract_object&lt; htlc_object &gt;',['../classgraphene_1_1db_1_1abstract__object.html',1,'graphene::db']]],
   ['abstract_5fobject_3c_20limit_5forder_5fobject_20_3e',['abstract_object&lt; limit_order_object &gt;',['../classgraphene_1_1db_1_1abstract__object.html',1,'graphene::db']]],
+  ['abstract_5fobject_3c_20liquidity_5fpool_5fobject_20_3e',['abstract_object&lt; liquidity_pool_object &gt;',['../classgraphene_1_1db_1_1abstract__object.html',1,'graphene::db']]],
   ['abstract_5fobject_3c_20market_5fticker_5fmeta_5fobject_20_3e',['abstract_object&lt; market_ticker_meta_object &gt;',['../classgraphene_1_1db_1_1abstract__object.html',1,'graphene::db']]],
   ['abstract_5fobject_3c_20market_5fticker_5fobject_20_3e',['abstract_object&lt; market_ticker_object &gt;',['../classgraphene_1_1db_1_1abstract__object.html',1,'graphene::db']]],
   ['abstract_5fobject_3c_20operation_5fhistory_5fobject_20_3e',['abstract_object&lt; operation_history_object &gt;',['../classgraphene_1_1db_1_1abstract__object.html',1,'graphene::db']]],

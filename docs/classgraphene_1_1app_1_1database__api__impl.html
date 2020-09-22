@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">4.0.0</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -156,6 +156,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8a4126a29ea149d26c165600ec82308c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d7b0e58cdc997f431dd80bfab9da0ea"><td class="memItemLeft" align="right" valign="top">std::map&lt; string, <a class="el" href="structgraphene_1_1app_1_1full__account.html">full_account</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a7d7b0e58cdc997f431dd80bfab9da0ea">get_full_accounts</a> (const vector&lt; string &gt; &amp;names_or_ids, optional&lt; bool &gt; subscribe)</td></tr>
 <tr class="separator:a7d7b0e58cdc997f431dd80bfab9da0ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afff241ae460cd5a5f8b97f2c4131cedf"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html">account_statistics_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#afff241ae460cd5a5f8b97f2c4131cedf">get_top_voters</a> (uint32_t limit) const </td></tr>
+<tr class="separator:afff241ae460cd5a5f8b97f2c4131cedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5c1fd29358dcde88ec644292de59304"><td class="memItemLeft" align="right" valign="top">optional&lt; <a class="el" href="classgraphene_1_1chain_1_1account__object.html">account_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ac5c1fd29358dcde88ec644292de59304">get_account_by_name</a> (string name) const </td></tr>
 <tr class="separator:ac5c1fd29358dcde88ec644292de59304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f794f3c0a8ef81a30577bad0f407234"><td class="memItemLeft" align="right" valign="top">vector&lt; account_id_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a0f794f3c0a8ef81a30577bad0f407234">get_account_references</a> (const std::string account_id_or_name) const </td></tr>
@@ -222,6 +224,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5a1dec96969a01f52afe2716480f5396"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4f19478fbdfa54472942c2e9ca0a9f2"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1app_1_1market__trade.html">market_trade</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#aa4f19478fbdfa54472942c2e9ca0a9f2">get_trade_history_by_sequence</a> (const string &amp;base, const string &amp;quote, int64_t start, <a class="el" href="classfc_1_1time__point__sec.html">fc::time_point_sec</a> stop, unsigned limit=100) const </td></tr>
 <tr class="separator:aa4f19478fbdfa54472942c2e9ca0a9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76239f98f427184a14986dd59c72300e"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__object.html">liquidity_pool_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a76239f98f427184a14986dd59c72300e">get_liquidity_pools_by_asset_a</a> (std::string asset_symbol_or_id, optional&lt; uint32_t &gt; limit=101, optional&lt; liquidity_pool_id_type &gt; start_id=optional&lt; liquidity_pool_id_type &gt;()) const </td></tr>
+<tr class="separator:a76239f98f427184a14986dd59c72300e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a309dbacd0bccb92ee7f7b57f0da5442f"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__object.html">liquidity_pool_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a309dbacd0bccb92ee7f7b57f0da5442f">get_liquidity_pools_by_asset_b</a> (std::string asset_symbol_or_id, optional&lt; uint32_t &gt; limit=101, optional&lt; liquidity_pool_id_type &gt; start_id=optional&lt; liquidity_pool_id_type &gt;()) const </td></tr>
+<tr class="separator:a309dbacd0bccb92ee7f7b57f0da5442f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa2fe8a05b54e39a11dfeaa494ed373d"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__object.html">liquidity_pool_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#afa2fe8a05b54e39a11dfeaa494ed373d">get_liquidity_pools_by_both_assets</a> (std::string asset_symbol_or_id_a, std::string asset_symbol_or_id_b, optional&lt; uint32_t &gt; limit=101, optional&lt; liquidity_pool_id_type &gt; start_id=optional&lt; liquidity_pool_id_type &gt;()) const </td></tr>
+<tr class="separator:afa2fe8a05b54e39a11dfeaa494ed373d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7990b22d9ed0ccdf882bbfd50980114a"><td class="memItemLeft" align="right" valign="top">vector&lt; optional&lt; <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__object.html">liquidity_pool_object</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a7990b22d9ed0ccdf882bbfd50980114a">get_liquidity_pools_by_share_asset</a> (const vector&lt; std::string &gt; &amp;asset_symbols_or_ids, optional&lt; bool &gt; subscribe=optional&lt; bool &gt;()) const </td></tr>
+<tr class="separator:a7990b22d9ed0ccdf882bbfd50980114a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02a1cbebce0918634c7bac919d4485cc"><td class="memItemLeft" align="right" valign="top">vector&lt; optional&lt; <a class="el" href="classgraphene_1_1chain_1_1witness__object.html">witness_object</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a02a1cbebce0918634c7bac919d4485cc">get_witnesses</a> (const vector&lt; witness_id_type &gt; &amp;witness_ids) const </td></tr>
 <tr class="separator:a02a1cbebce0918634c7bac919d4485cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e69b6bee0247c19feb0d0e5c0a56742"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1optional.html">fc::optional</a>&lt; <a class="el" href="classgraphene_1_1chain_1_1witness__object.html">witness_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a1e69b6bee0247c19feb0d0e5c0a56742">get_witness_by_account</a> (const std::string account_id_or_name) const </td></tr>
@@ -291,6 +301,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae37ae8e6b54cbf59dc81a33e5584062f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d2d475d94b76c8fdf1b0087105cb5a6"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html">limit_order_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a3d2d475d94b76c8fdf1b0087105cb5a6">get_limit_orders</a> (const asset_id_type a, const asset_id_type b, const uint32_t limit) const </td></tr>
 <tr class="separator:a3d2d475d94b76c8fdf1b0087105cb5a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23876f2b2587a92452a935e90e8e6fae"><td class="memTemplParams" colspan="2">template&lt;typename X &gt; </td></tr>
+<tr class="memitem:a23876f2b2587a92452a935e90e8e6fae"><td class="memTemplItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__object.html">liquidity_pool_object</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a23876f2b2587a92452a935e90e8e6fae">get_liquidity_pools_by_asset_x</a> (std::string asset_symbol_or_id, optional&lt; uint32_t &gt; olimit, optional&lt; liquidity_pool_id_type &gt; ostart_id) const </td></tr>
+<tr class="separator:a23876f2b2587a92452a935e90e8e6fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31f2506dfe8e4e9bac4d689cd8cef2b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a31f2506dfe8e4e9bac4d689cd8cef2b7">get_whether_to_subscribe</a> (optional&lt; bool &gt; subscribe) const </td></tr>
 <tr class="separator:a31f2506dfe8e4e9bac4d689cd8cef2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14570ed6210976669e9a63c67f34a620"><td class="memItemLeft" align="right" valign="top">vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a14570ed6210976669e9a63c67f34a620">get_subscription_key</a> (const object_id_type &amp;item) const </td></tr>
@@ -441,7 +454,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02667">2667</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02828">2828</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -459,7 +472,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02656">2656</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02817">2817</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -531,7 +544,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00313">313</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00371">371</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -559,7 +572,7 @@ template&lt;class ASSET &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00214">214</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00233">233</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -587,7 +600,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01395">1395</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01421">1421</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -615,7 +628,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00759">759</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00785">785</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -633,7 +646,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00648">648</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00674">674</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -650,7 +663,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00742">742</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00768">768</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -678,7 +691,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02549">2549</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02710">2710</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -746,7 +759,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01060">1060</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01086">1086</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -764,7 +777,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00662">662</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00688">688</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -810,7 +823,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01895">1895</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02056">2056</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -827,7 +840,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00929">929</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00955">955</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -855,7 +868,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02569">2569</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02730">2730</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -899,7 +912,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00877">877</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00903">903</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -927,7 +940,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02590">2590</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02751">2751</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -961,7 +974,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00940">940</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00966">966</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -979,7 +992,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00796">796</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00822">822</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -997,7 +1010,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02350">2350</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02511">2511</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1079,7 +1092,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01150">1150</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01176">1176</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1113,7 +1126,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01179">1179</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01205">1205</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1181,7 +1194,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01292">1292</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01318">1318</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1198,7 +1211,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01878">1878</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02039">2039</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1216,7 +1229,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01827">1827</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01988">1988</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1234,7 +1247,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01808">1808</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01969">1969</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1296,7 +1309,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00464">464</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00469">469</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1341,7 +1354,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02449">2449</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02610">2610</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1375,7 +1388,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02465">2465</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02626">2626</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1409,7 +1422,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02495">2495</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02656">2656</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1462,7 +1475,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00998">998</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01024">1024</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1496,7 +1509,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02609">2609</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02770">2770</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1530,7 +1543,187 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01019">1019</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01045">1045</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a76239f98f427184a14986dd59c72300e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__object.html">liquidity_pool_object</a> &gt; graphene::app::database_api_impl::get_liquidity_pools_by_asset_a </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>asset_symbol_or_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">optional&lt; uint32_t &gt;&#160;</td>
+          <td class="paramname"><em>limit</em> = <code>101</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">optional&lt; liquidity_pool_id_type &gt;&#160;</td>
+          <td class="paramname"><em>start_id</em> = <code>optional&lt;liquidity_pool_id_type&gt;()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01756">1756</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a309dbacd0bccb92ee7f7b57f0da5442f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__object.html">liquidity_pool_object</a> &gt; graphene::app::database_api_impl::get_liquidity_pools_by_asset_b </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>asset_symbol_or_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">optional&lt; uint32_t &gt;&#160;</td>
+          <td class="paramname"><em>limit</em> = <code>101</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">optional&lt; liquidity_pool_id_type &gt;&#160;</td>
+          <td class="paramname"><em>start_id</em> = <code>optional&lt;liquidity_pool_id_type&gt;()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01778">1778</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a23876f2b2587a92452a935e90e8e6fae"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename X &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__object.html">liquidity_pool_object</a>&gt; graphene::app::database_api_impl::get_liquidity_pools_by_asset_x </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>asset_symbol_or_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">optional&lt; uint32_t &gt;&#160;</td>
+          <td class="paramname"><em>olimit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">optional&lt; liquidity_pool_id_type &gt;&#160;</td>
+          <td class="paramname"><em>ostart_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00266">266</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afa2fe8a05b54e39a11dfeaa494ed373d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__object.html">liquidity_pool_object</a> &gt; graphene::app::database_api_impl::get_liquidity_pools_by_both_assets </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>asset_symbol_or_id_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>asset_symbol_or_id_b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">optional&lt; uint32_t &gt;&#160;</td>
+          <td class="paramname"><em>limit</em> = <code>101</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">optional&lt; liquidity_pool_id_type &gt;&#160;</td>
+          <td class="paramname"><em>start_id</em> = <code>optional&lt;liquidity_pool_id_type&gt;()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01802">1802</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7990b22d9ed0ccdf882bbfd50980114a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; optional&lt; <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__object.html">liquidity_pool_object</a> &gt; &gt; graphene::app::database_api_impl::get_liquidity_pools_by_share_asset </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>asset_symbols_or_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">optional&lt; bool &gt;&#160;</td>
+          <td class="paramname"><em>subscribe</em> = <code>optional&lt;bool&gt;()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01848">1848</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1548,7 +1741,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01267">1267</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01293">1293</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1636,7 +1829,7 @@ template&lt;class ASSET &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01414">1414</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01440">1440</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1664,7 +1857,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00297">297</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00355">355</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -1690,7 +1883,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00303">303</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00361">361</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -1708,7 +1901,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02129">2129</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02290">2290</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1726,7 +1919,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02090">2090</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02251">2251</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1744,7 +1937,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02314">2314</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02475">2475</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1772,7 +1965,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02280">2280</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02441">2441</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1800,7 +1993,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02065">2065</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02226">2226</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1828,7 +2021,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01206">1206</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01232">1232</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1862,7 +2055,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01237">1237</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01263">1263</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1888,7 +2081,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00264">264</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00322">322</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -1922,7 +2115,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01361">1361</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01387">1387</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1940,7 +2133,25 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01466">1466</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01492">1492</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afff241ae460cd5a5f8b97f2c4131cedf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html">account_statistics_object</a> &gt; graphene::app::database_api_impl::get_top_voters </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>limit</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00648">648</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1986,7 +2197,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01503">1503</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01529">1529</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2032,7 +2243,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01605">1605</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01631">1631</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2078,7 +2289,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02042">2042</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02203">2203</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2096,7 +2307,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02053">2053</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02214">2214</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2114,7 +2325,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00824">824</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00850">850</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2132,7 +2343,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00842">842</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00868">868</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2158,7 +2369,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00246">246</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00304">304</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -2192,7 +2403,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02379">2379</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02540">2540</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2226,7 +2437,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02413">2413</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02574">2574</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2244,7 +2455,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01741">1741</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01902">1902</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2261,7 +2472,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01791">1791</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01952">1952</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2279,7 +2490,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01724">1724</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01885">1885</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2296,7 +2507,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01947">1947</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02108">2108</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2314,7 +2525,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01928">1928</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02089">2089</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2360,7 +2571,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02717">2717</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02878">2878</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2378,7 +2589,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02646">2646</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02807">2807</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2424,7 +2635,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00283">283</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00341">341</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -2452,7 +2663,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00901">901</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00927">927</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2480,7 +2691,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02524">2524</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02685">2685</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2498,7 +2709,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00688">688</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00714">714</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2532,7 +2743,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00708">708</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00734">734</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2550,7 +2761,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00968">968</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00994">994</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2578,7 +2789,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01844">1844</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02005">2005</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2596,7 +2807,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01965">1965</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02126">2126</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2624,7 +2835,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01757">1757</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01918">1918</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2643,7 +2854,7 @@ template&lt;typename T &gt; </div>
 <p>note: this method cannot yield because it is called in the middle of apply a block. </p>
 <p>we need to ensure the <a class="el" href="classgraphene_1_1app_1_1database__api.html" title="The database_api class implements the RPC API for the chain database. ">database_api</a> is not deleted for the life of the async operation </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02779">2779</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02940">2940</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2671,7 +2882,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02709">2709</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02870">2870</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2700,7 +2911,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>called every time a block is applied to report the objects that were changed </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02701">2701</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02862">2862</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2734,7 +2945,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02683">2683</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02844">2844</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2844,7 +3055,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00270">270</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00328">328</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -2878,7 +3089,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01330">1330</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01356">1356</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2906,7 +3117,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01346">1346</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01372">1372</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2924,7 +3135,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02213">2213</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02374">2374</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2952,7 +3163,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02182">2182</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02343">2343</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2970,7 +3181,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02163">2163</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02324">2324</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2985,7 +3196,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00364">364</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00422">422</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -2999,7 +3210,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00358">358</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00416">416</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3013,7 +3224,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00353">353</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00411">411</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3027,7 +3238,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00356">356</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00414">414</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3041,7 +3252,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00363">363</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00421">421</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3055,7 +3266,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00346">346</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00404">404</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3069,7 +3280,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00361">361</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00419">419</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3083,7 +3294,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00355">355</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00413">413</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3097,7 +3308,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00345">345</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00403">403</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3111,7 +3322,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00352">352</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00410">410</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3125,7 +3336,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00359">359</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00417">417</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3139,7 +3350,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00357">357</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00415">415</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3153,7 +3364,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00351">351</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00409">409</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3175,7 +3386,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00348">348</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00406">406</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3189,7 +3400,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00349">349</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00407">407</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3203,7 +3414,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00366">366</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00424">424</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3214,7 +3425,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 30 2020 00:56:54 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 22 2020 19:51:20 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

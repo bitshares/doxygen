@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">4.0.0</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -229,6 +229,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="structgraphene_1_1protocol_1_1htlc__refund__operation.html#a61ac36f2c76db4805eb7bbd776f27c3e">graphene::protocol::htlc_refund_operation</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1limit__order__cancel__operation.html#a7a2a557adf7e88371278aedb13ad1385">graphene::protocol::limit_order_cancel_operation</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1limit__order__create__operation.html#aeda3fa611ca1f8bdc665cbb310ba7d7c">graphene::protocol::limit_order_create_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__create__operation.html#aa74e830bcbae1dbef3282400cce16d24">graphene::protocol::liquidity_pool_create_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__delete__operation.html#a0c0a70f0d9badc945f241d13d69f0ff8">graphene::protocol::liquidity_pool_delete_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__deposit__operation.html#a76d9304173021b93c43f2cb4edf46265">graphene::protocol::liquidity_pool_deposit_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__exchange__operation.html#a3c655c9e43d20a296435fbe90066a3ce">graphene::protocol::liquidity_pool_exchange_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__withdraw__operation.html#ae208aae67ec8715a7e187932c78518b2">graphene::protocol::liquidity_pool_withdraw_operation</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1override__transfer__operation.html#ab9821fddc1806e4728fa9bcdcb604be7">graphene::protocol::override_transfer_operation</a>
 , <a class="el" href="classgraphene_1_1protocol_1_1precomputable__transaction.html#aff4373557a8bf96de54ce19414755a30">graphene::protocol::precomputable_transaction</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1price.html#add6aa3df0601e69fc11fc386905501ef">graphene::protocol::price</a>
@@ -299,7 +304,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="structgraphene_1_1protocol_1_1graphene__extension__unpack__visitor.html#a10f15b33b30ea559605c5cfd84235146">graphene::protocol::graphene_extension_unpack_visitor&lt; Stream, T &gt;</a>
 </li>
 <li>value_multiplier()
-: <a class="el" href="classgraphene_1_1chain_1_1ticket__object.html#a5641b1b942c627553ed8fe9737071ef3">graphene::chain::ticket_object</a>
+: <a class="el" href="classgraphene_1_1chain_1_1ticket__object.html#a6bcbb6affb311d953dae4d2b2d855b60">graphene::chain::ticket_object</a>
 </li>
 <li>value_out
 : <a class="el" href="structgraphene_1_1app_1_1verify__range__proof__rewind__result.html#adc837d6beb483aa0e38e1158c0d8e4d3">graphene::app::verify_range_proof_rewind_result</a>
@@ -316,7 +321,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="structfc_1_1to__static__variant.html#a5bdf204d5d80e06acee6670c7fb5fb29">fc::to_static_variant</a>
 </li>
 <li>variant()
-: <a class="el" href="classfc_1_1variant.html#ad6d9b871d2b6334234d90bb99280e8f3">fc::variant</a>
+: <a class="el" href="classfc_1_1variant.html#ab18b9c0de85df3571204f86805bf6c5e">fc::variant</a>
 </li>
 <li>Variant
 : <a class="el" href="structgraphene_1_1protocol_1_1variant__assertion_3_01fc_1_1optional_3_01static__variant_3_01_types_8_8_8_01_4_01_4_01_4.html#ab13e46e25a461d4f32fbdf27fccf2f88">graphene::protocol::variant_assertion&lt; fc::optional&lt; static_variant&lt; Types... &gt; &gt; &gt;</a>
@@ -327,7 +332,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>variant_object
 : <a class="el" href="classfc_1_1mutable__variant__object.html#a5176d6f7f43fdd9dbd614ce9b8f4b1fe">fc::mutable_variant_object</a>
-, <a class="el" href="classfc_1_1variant__object.html#ad5d30ab5e0dcc6f681055d4448091eef">fc::variant_object</a>
+, <a class="el" href="classfc_1_1variant__object.html#ace7473ca89fd326892850e1a6e6d8eb6">fc::variant_object</a>
 </li>
 <li>variant_packer()
 : <a class="el" href="classfc_1_1raw_1_1variant__packer.html#adb77005522b204010a8452a0ec7591b6">fc::raw::variant_packer&lt; Stream &gt;</a>
@@ -411,9 +416,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html#a04cc2ed8c2b67ef3b13df9f46cf5e492">graphene::chain::operation_history_object</a>
 , <a class="el" href="structgraphene_1_1elasticsearch_1_1operation__history__struct.html#aefdef6b4a8688b0af74431593ef7fd7e">graphene::elasticsearch::operation_history_struct</a>
 </li>
+<li>virtual_value
+: <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__object.html#afcf73364f1102c26f6303936ff39998a">graphene::chain::liquidity_pool_object</a>
+</li>
 <li>visit()
 : <a class="el" href="structfc_1_1reflector_3_01graphene_1_1db_1_1object__id_3_01_space_i_d_00_01_type_i_d_01_4_01_4.html#a8cc1a0fce00de40b0f9dbb571455ff71">fc::reflector&lt; graphene::db::object_id&lt; SpaceID, TypeID &gt; &gt;</a>
-, <a class="el" href="classfc_1_1static__variant.html#a788be57abf5a751d7c87c4a2168f85d8">fc::static_variant&lt; Types &gt;</a>
+, <a class="el" href="classfc_1_1static__variant.html#ada2479eb3f11e2067bb81766864faede">fc::static_variant&lt; Types &gt;</a>
 , <a class="el" href="classfc_1_1variant.html#a7719317ad8aa6bbb98f6ebbe7d314a2b">fc::variant</a>
 , <a class="el" href="classgraphene_1_1protocol_1_1transaction.html#a00813917deaf56177dc010944765f8c4">graphene::protocol::transaction</a>
 </li>
@@ -445,10 +453,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classgraphene_1_1chain_1_1witness__object.html#aa9ae30d474319543424c6156b11e3a1e">graphene::chain::witness_object</a>
 </li>
 <li>vote_id_type()
-: <a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html#a0ca7dca3c0ce250db29b64f64c6788f6">graphene::protocol::vote_id_type</a>
+: <a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html#a24c95dbe8177c72eec0b746d93b29133">graphene::protocol::vote_id_type</a>
 </li>
 <li>vote_recalc_options()
 : <a class="el" href="structgraphene_1_1chain_1_1detail_1_1vote__recalc__options.html#af43e5d9ba249c54795e91d28a5be740d">graphene::chain::detail::vote_recalc_options</a>
+</li>
+<li>vote_tally_time
+: <a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#ac941c0ffc81ff687e18234b82b619c2c">graphene::chain::account_statistics_object</a>
 </li>
 <li>vote_type
 : <a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html#af485364161ef1e41d0b78282db87f9c6">graphene::protocol::vote_id_type</a>
@@ -462,6 +473,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>voting_account
 : <a class="el" href="structgraphene_1_1protocol_1_1account__options.html#a6ac45c09dda1b78fe445ddc7a75de3bc">graphene::protocol::account_options</a>
+</li>
+<li>vp_active
+: <a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#a74b95db3df9125060131fe4210c17108">graphene::chain::account_statistics_object</a>
+</li>
+<li>vp_all
+: <a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#aa0e5c0f0b079ff2a307a9d0fa87fc2ee">graphene::chain::account_statistics_object</a>
+</li>
+<li>vp_committee
+: <a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#a996bd487b7c3f4a5b5bafafb5b576938">graphene::chain::account_statistics_object</a>
+</li>
+<li>vp_witness
+: <a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#af603a745f741eb68f37062892a30cb79">graphene::chain::account_statistics_object</a>
+</li>
+<li>vp_worker
+: <a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#a9013c81c90730cc9c4378ab638440db3">graphene::chain::account_statistics_object</a>
 </li>
 <li>vs
 : <a class="el" href="classgraphene_1_1elasticsearch_1_1detail_1_1elasticsearch__plugin__impl.html#ae0fdd9e2a80eacad8327b0f3db16b921">graphene::elasticsearch::detail::elasticsearch_plugin_impl</a>
@@ -479,7 +505,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 30 2020 00:57:02 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 22 2020 19:51:23 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">4.0.0</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -94,7 +94,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structfc_1_1http_1_1detail_1_1asio__tls__with__stub__log-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">fc::http::detail::asio_tls_with_stub_log Struct Reference</div>  </div>
@@ -111,6 +110,8 @@ Inheritance diagram for fc::http::detail::asio_tls_with_stub_log:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfc_1_1http_1_1detail_1_1asio__tls__with__stub__log_1_1permessage__deflate__config.html">permessage_deflate_config</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfc_1_1http_1_1detail_1_1asio__tls__with__stub__log_1_1transport__config.html">transport_config</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -133,7 +134,6 @@ Public Types</h2></td></tr>
 <tr class="memitem:ac2f69eacbeb9cc8051db85cbbbbf2ff8"><td class="memItemLeft" align="right" valign="top">typedef base::endpoint_msg_manager_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfc_1_1http_1_1detail_1_1asio__tls__with__stub__log.html#ac2f69eacbeb9cc8051db85cbbbbf2ff8">endpoint_msg_manager_type</a></td></tr>
 <tr class="separator:ac2f69eacbeb9cc8051db85cbbbbf2ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a177a938c77ac170dcfa69a43b4931084"><td class="memItemLeft" align="right" valign="top">typedef websocketpp::log::stub&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfc_1_1http_1_1detail_1_1asio__tls__with__stub__log.html#a177a938c77ac170dcfa69a43b4931084">elog_type</a></td></tr>
-<tr class="memdesc:a177a938c77ac170dcfa69a43b4931084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custom Logging policies.  <a href="#a177a938c77ac170dcfa69a43b4931084">More...</a><br /></td></tr>
 <tr class="separator:a177a938c77ac170dcfa69a43b4931084"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fa8ec074158fe664cf1c24bc49a3cd0"><td class="memItemLeft" align="right" valign="top">typedef websocketpp::log::stub&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfc_1_1http_1_1detail_1_1asio__tls__with__stub__log.html#a5fa8ec074158fe664cf1c24bc49a3cd0">alog_type</a></td></tr>
 <tr class="separator:a5fa8ec074158fe664cf1c24bc49a3cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,15 +141,12 @@ Public Types</h2></td></tr>
 <tr class="separator:a5c770e22a0b5e71cde688ba68ba33210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf9d3552aff49e6b6e0155cfc196c85f"><td class="memItemLeft" align="right" valign="top">typedef websocketpp::transport::asio::endpoint&lt; <a class="el" href="structfc_1_1http_1_1detail_1_1asio__tls__with__stub__log_1_1transport__config.html">transport_config</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfc_1_1http_1_1detail_1_1asio__tls__with__stub__log.html#aaf9d3552aff49e6b6e0155cfc196c85f">transport_type</a></td></tr>
 <tr class="separator:aaf9d3552aff49e6b6e0155cfc196c85f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a0912f9d4fb9a5313f2f3674fd6439218"><td class="memItemLeft" align="right" valign="top">static const long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfc_1_1http_1_1detail_1_1asio__tls__with__stub__log.html#a0912f9d4fb9a5313f2f3674fd6439218">timeout_open_handshake</a> = 0</td></tr>
-<tr class="separator:a0912f9d4fb9a5313f2f3674fd6439218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab18d533ece0b25807661e9d8e09aad6b"><td class="memItemLeft" align="right" valign="top">typedef websocketpp::extensions::permessage_deflate::disabled&lt; <a class="el" href="structfc_1_1http_1_1detail_1_1asio__tls__with__stub__log_1_1permessage__deflate__config.html">permessage_deflate_config</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfc_1_1http_1_1detail_1_1asio__tls__with__stub__log.html#ab18d533ece0b25807661e9d8e09aad6b">permessage_deflate_type</a></td></tr>
+<tr class="separator:ab18d533ece0b25807661e9d8e09aad6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00113">113</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00102">102</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a5fa8ec074158fe664cf1c24bc49a3cd0"></a>
 <div class="memitem">
@@ -161,7 +158,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00136">136</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00117">117</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
 
 </div>
 </div>
@@ -175,7 +172,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00116">116</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00105">105</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
 
 </div>
 </div>
@@ -189,7 +186,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00124">124</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00113">113</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
 
 </div>
 </div>
@@ -203,7 +200,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00118">118</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00107">107</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
 
 </div>
 </div>
@@ -217,9 +214,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Custom Logging policies. </p>
-
-<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00135">135</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00116">116</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
 
 </div>
 </div>
@@ -233,7 +228,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00125">125</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00114">114</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
 
 </div>
 </div>
@@ -247,7 +242,21 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00123">123</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00112">112</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab18d533ece0b25807661e9d8e09aad6b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef websocketpp::extensions::permessage_deflate::disabled&lt;<a class="el" href="structfc_1_1http_1_1detail_1_1asio__tls__with__stub__log_1_1permessage__deflate__config.html">permessage_deflate_config</a>&gt; <a class="el" href="structfc_1_1http_1_1detail_1_1asio__tls__with__stub__log.html#ab18d533ece0b25807661e9d8e09aad6b">fc::http::detail::asio_tls_with_stub_log::permessage_deflate_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00139">139</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
 
 </div>
 </div>
@@ -261,7 +270,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00120">120</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00109">109</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
 
 </div>
 </div>
@@ -275,7 +284,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00121">121</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00110">110</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
 
 </div>
 </div>
@@ -289,7 +298,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00138">138</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00119">119</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
 
 </div>
 </div>
@@ -303,7 +312,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00150">150</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00130">130</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
 
 </div>
 </div>
@@ -317,30 +326,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00115">115</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a0912f9d4fb9a5313f2f3674fd6439218"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const long fc::http::detail::asio_tls_with_stub_log::timeout_open_handshake = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00152">152</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00104">104</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
 
 </div>
 </div>
@@ -350,7 +336,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 30 2020 00:56:53 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 22 2020 19:51:19 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

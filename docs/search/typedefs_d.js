@@ -3,7 +3,7 @@ var searchData=
   ['pack_5fcutter_5ft',['pack_cutter_t',['../structfc_1_1detail_1_1optionals__callable.html#ad7d93e72470243f0d0da97d81bb5e114',1,'fc::detail::optionals_callable']]],
   ['path_5ft',['path_t',['../classfc_1_1temp__file__base.html#a6c5d734a924b0d93a424ae3d4585abce',1,'fc::temp_file_base']]],
   ['peer_5fconnection_5fptr',['peer_connection_ptr',['../namespacegraphene_1_1net.html#a7c2063384e09cb0fc4191590fa004b89',1,'graphene::net']]],
-  ['permessage_5fdeflate_5ftype',['permessage_deflate_type',['../structfc_1_1http_1_1detail_1_1asio__with__stub__log.html#aaf52dcd9340e25dd734ec40889ee45d4',1,'fc::http::detail::asio_with_stub_log']]],
+  ['permessage_5fdeflate_5ftype',['permessage_deflate_type',['../structfc_1_1http_1_1detail_1_1asio__with__stub__log.html#aaf52dcd9340e25dd734ec40889ee45d4',1,'fc::http::detail::asio_with_stub_log::permessage_deflate_type()'],['../structfc_1_1http_1_1detail_1_1asio__tls__with__stub__log.html#ab18d533ece0b25807661e9d8e09aad6b',1,'fc::http::detail::asio_tls_with_stub_log::permessage_deflate_type()'],['../structfc_1_1http_1_1detail_1_1asio__tls__stub__log.html#a586e2f1b585c6d98a384e91d359acffa',1,'fc::http::detail::asio_tls_stub_log::permessage_deflate_type()']]],
   ['pointer',['pointer',['../classgraphene_1_1db_1_1simple__index_1_1const__iterator.html#abbb729060f6f19c8fbe4bfd877ce9509',1,'graphene::db::simple_index::const_iterator']]],
   ['potential_5fpeer_5fset',['potential_peer_set',['../classgraphene_1_1net_1_1detail_1_1peer__database__impl.html#aefbc45cdfe27fa89302e4a0d9c8275f4',1,'graphene::net::detail::peer_database_impl']]],
   ['predicate',['predicate',['../namespacegraphene_1_1protocol.html#a94748a50b37ab05b15fb496d1b9f7685',1,'graphene::protocol']]],

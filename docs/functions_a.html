@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">4.0.0</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -185,6 +185,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="structgraphene_1_1protocol_1_1custom__authority__create__operation.html#aaf89241cc3ab4622edf0267d6747bfe1">graphene::protocol::custom_authority_create_operation</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1custom__authority__delete__operation.html#a8126b80641107b893e563e04110dc826">graphene::protocol::custom_authority_delete_operation</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1custom__authority__update__operation.html#a96641c8c99fecbab8f211cb0533b2741">graphene::protocol::custom_authority_update_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__create__operation.html#a8f1c9e6c66b0f61bb80844a609d9df5a">graphene::protocol::liquidity_pool_create_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__delete__operation.html#a5df251254eef9f33e898bae97d321b46">graphene::protocol::liquidity_pool_delete_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__deposit__operation.html#a67d0a3045a280b05208cf4b1ae1aae89">graphene::protocol::liquidity_pool_deposit_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__exchange__operation.html#a845e16abc564ef7aab8247eac0e93fb4">graphene::protocol::liquidity_pool_exchange_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__withdraw__operation.html#a95024dd4b181b67922307241c812d6c9">graphene::protocol::liquidity_pool_withdraw_operation</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1ticket__create__operation.html#a400968bbffd83c6346d7773bd7f9650d">graphene::protocol::ticket_create_operation</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1ticket__update__operation.html#a35a6eaf950461b5b7ff2e8ac90f309e9">graphene::protocol::ticket_update_operation</a>
 , <a class="el" href="structgraphene_1_1wallet_1_1signed__message__meta.html#afa2eaf19975675ddf5ea8956feea2708">graphene::wallet::signed_message_meta</a>
@@ -405,7 +410,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="structgraphene_1_1net_1_1address__message.html#a72f6fce41c514915be05e9cdc4e067f7">graphene::net::address_message</a>
 </li>
 <li>adjust_amount()
-: <a class="el" href="classgraphene_1_1chain_1_1ticket__object.html#a6ba5aa8bc7d8aa1167050dfefa39868c">graphene::chain::ticket_object</a>
+: <a class="el" href="classgraphene_1_1chain_1_1ticket__object.html#a42270c0b526dedf32373be96123bcf28">graphene::chain::ticket_object</a>
 </li>
 <li>adjust_balance()
 : <a class="el" href="classgraphene_1_1chain_1_1account__balance__object.html#a6e5861b4393b52bc3cc395042730627c">graphene::chain::account_balance_object</a>
@@ -485,6 +490,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="structgraphene_1_1wallet_1_1blind__balance.html#a0963d0f3b8629cffa26696bf7b700f35">graphene::wallet::blind_balance</a>
 , <a class="el" href="structgraphene_1_1wallet_1_1blind__receipt.html#a5dba7cbd837ee6e87158eb38fbac304a">graphene::wallet::blind_receipt</a>
 </li>
+<li>amount_a
+: <a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__deposit__operation.html#ae96aafc01d02acad408f405013f30482">graphene::protocol::liquidity_pool_deposit_operation</a>
+</li>
+<li>amount_b
+: <a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__deposit__operation.html#a73c58f69cd5070589f8b928da903ba0e">graphene::protocol::liquidity_pool_deposit_operation</a>
+</li>
 <li>amount_for_new_target
 : <a class="el" href="structgraphene_1_1protocol_1_1ticket__update__operation.html#a986c366948413cbc15b38989fe00ad7e">graphene::protocol::ticket_update_operation</a>
 </li>
@@ -513,9 +524,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>amount_to_sell
 : <a class="el" href="structgraphene_1_1protocol_1_1limit__order__create__operation.html#ad92e268075a9c7ea51aaecc6e9670951">graphene::protocol::limit_order_create_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__exchange__operation.html#ad39e4d4d8acb9e001b3c6426a1f19a15">graphene::protocol::liquidity_pool_exchange_operation</a>
 </li>
 <li>amount_to_string()
-: <a class="el" href="classgraphene_1_1chain_1_1asset__object.html#ab4cedf5d69891b6fa72645e550bbdfcb">graphene::chain::asset_object</a>
+: <a class="el" href="classgraphene_1_1chain_1_1asset__object.html#a893a428ae64a08b2346b4cdf35bd7be5">graphene::chain::asset_object</a>
 </li>
 <li>amount_to_withdraw
 : <a class="el" href="structgraphene_1_1protocol_1_1withdraw__permission__claim__operation.html#a4adf30fb0cc003e1bf88ef788f3dfa9f">graphene::protocol::withdraw_permission_claim_operation</a>
@@ -531,7 +543,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classfc_1_1detail_1_1any__api.html#a4ca3597c7722daa10cbe3e780d7a7d36">fc::detail::any_api</a>
 </li>
 <li>api()
-: <a class="el" href="classfc_1_1api.html#a255981b8f6e5350f515a81b4ade179cf">fc::api&lt; Interface, Transform &gt;</a>
+: <a class="el" href="classfc_1_1api.html#a6c20ba1caacd7897d0d0579df8a6ba1a">fc::api&lt; Interface, Transform &gt;</a>
 </li>
 <li>api_base()
 : <a class="el" href="classfc_1_1api__base.html#a8defc5c5b610084dcb77e9ddcdef3e2e">fc::api_base</a>
@@ -593,6 +605,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>api_limit_get_limit_orders_by_account
 : <a class="el" href="classgraphene_1_1app_1_1application__options.html#a8d314067b21cf57f7d6c6bab1638a90a">graphene::app::application_options</a>
 </li>
+<li>api_limit_get_liquidity_pools
+: <a class="el" href="classgraphene_1_1app_1_1application__options.html#a276fbb7e84df8e619264a57185619738">graphene::app::application_options</a>
+</li>
 <li>api_limit_get_order_book
 : <a class="el" href="classgraphene_1_1app_1_1application__options.html#a233026b13344609bdafc0b8e54c7b801">graphene::app::application_options</a>
 </li>
@@ -604,6 +619,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>api_limit_get_top_markets
 : <a class="el" href="classgraphene_1_1app_1_1application__options.html#a8936b3ecc38bdb45125afe9a8828baf6">graphene::app::application_options</a>
+</li>
+<li>api_limit_get_top_voters
+: <a class="el" href="classgraphene_1_1app_1_1application__options.html#a0103a6d9b36afe53d23e5ccb6232f0ba">graphene::app::application_options</a>
 </li>
 <li>api_limit_get_trade_history
 : <a class="el" href="classgraphene_1_1app_1_1application__options.html#a896a4b7bb581588400c407a5fe0b4c87">graphene::app::application_options</a>
@@ -641,6 +659,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>append_context()
 : <a class="el" href="classfc_1_1log__context.html#a08135b074e6f41cc6480597cec199887">fc::log_context</a>
+</li>
+<li>append_header()
+: <a class="el" href="classfc_1_1http_1_1websocket__client.html#aabb767356fcd55c2e5bebee97b067cbd">fc::http::websocket_client</a>
 </li>
 <li>append_log()
 : <a class="el" href="classfc_1_1exception.html#a685fab238fa9b86dcf64b35417eb63b2">fc::exception</a>
@@ -710,7 +731,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>as()
 : <a class="el" href="classfc_1_1api__base.html#a922163f7944289eb48c7dfb8acd8ba02">fc::api_base</a>
-, <a class="el" href="classfc_1_1variant.html#a7b04f9caad4bcd546926fe38f4262dc7">fc::variant</a>
+, <a class="el" href="classfc_1_1variant.html#adffd0b8c7fcf66352c4ff600c6f8b368">fc::variant</a>
 , <a class="el" href="structgraphene_1_1db_1_1object__id__type.html#ab2deac1bbbe9cae7764a38def4a8fa6c">graphene::db::object_id_type</a>
 , <a class="el" href="structgraphene_1_1net_1_1message.html#ad07acf827c47cc97c357745c78fdfffe">graphene::net::message</a>
 </li>
@@ -742,8 +763,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="structgraphene_1_1protocol_1_1asset.html#a29e7740506e2a9b589962babe4a2a546">graphene::protocol::asset</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1top__holders__special__authority.html#ac92a39315392c8b287120af944d55032">graphene::protocol::top_holders_special_authority</a>
 </li>
+<li>asset_a
+: <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__object.html#a69d7ba539a04cd7af4beef00a5745b0d">graphene::chain::liquidity_pool_object</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__create__operation.html#a006b6c7e6742ed71829e0f868b693ca8">graphene::protocol::liquidity_pool_create_operation</a>
+</li>
 <li>asset_api()
 : <a class="el" href="classgraphene_1_1app_1_1asset__api.html#a2be74609de33cf295986e52b9f1ac92d">graphene::app::asset_api</a>
+</li>
+<li>asset_b
+: <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__object.html#a4d4fc058999c71f0d7b61caf6e396474">graphene::chain::liquidity_pool_object</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__create__operation.html#ae6c2de99584093ee48f2d141587c5c7e">graphene::protocol::liquidity_pool_create_operation</a>
 </li>
 <li>asset_cer_updated
 : <a class="el" href="classgraphene_1_1chain_1_1asset__bitasset__data__object.html#a5f91410db5c681ba6f2a81d769d8738a">graphene::chain::asset_bitasset_data_object</a>
@@ -845,7 +874,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="structgraphene_1_1protocol_1_1account__whitelist__operation.html#acbd532309f41c96bfd92a41f940bb2a6">graphene::protocol::account_whitelist_operation</a>
 </li>
 <li>auto_update()
-: <a class="el" href="classgraphene_1_1chain_1_1ticket__object.html#a3ab0486630085475c630998c5fe93700">graphene::chain::ticket_object</a>
+: <a class="el" href="classgraphene_1_1chain_1_1ticket__object.html#a1f0c90dd2a708fe54103c82732bbee19">graphene::chain::ticket_object</a>
 </li>
 <li>available()
 : <a class="el" href="classgraphene_1_1chain_1_1balance__object.html#aff0534736df59a2201bd795346988d56">graphene::chain::balance_object</a>
@@ -875,7 +904,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 30 2020 00:57:02 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 22 2020 19:51:23 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

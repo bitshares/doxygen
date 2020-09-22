@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">4.0.0</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -113,6 +113,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="global__property__object_8hpp_source.html">graphene/chain/global_property_object.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="market__object_8hpp_source.html">graphene/chain/market_object.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="special__authority__object_8hpp_source.html">graphene/chain/special_authority_object.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ticket__object_8hpp_source.html">graphene/chain/ticket_object.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="vesting__balance__object_8hpp_source.html">graphene/chain/vesting_balance_object.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="vote__count_8hpp_source.html">graphene/chain/vote_count.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="witness__object_8hpp_source.html">graphene/chain/witness_object.hpp</a>&gt;</code><br />
@@ -173,11 +174,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a2283a9e80c557fd899f758791112692b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a2283a9e80c557fd899f758791112692b">graphene::chain::delete_expired_custom_authorities</a> (database &amp;db)</td></tr>
 <tr class="memdesc:a2283a9e80c557fd899f758791112692b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove any custom active authorities whose expiration dates are in the past.  <a href="namespacegraphene_1_1chain.html#a2283a9e80c557fd899f758791112692b">More...</a><br /></td></tr>
 <tr class="separator:a2283a9e80c557fd899f758791112692b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af851b1b86654e2b28e2bc1c606fa16d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#af851b1b86654e2b28e2bc1c606fa16d1">graphene::chain::process_hf_2262</a> (database &amp;db)</td></tr>
+<tr class="memdesc:af851b1b86654e2b28e2bc1c606fa16d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A one-time data process to set values of existing liquid tickets to zero.  <a href="namespacegraphene_1_1chain.html#af851b1b86654e2b28e2bc1c606fa16d1">More...</a><br /></td></tr>
+<tr class="separator:af851b1b86654e2b28e2bc1c606fa16d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 30 2020 00:56:26 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 22 2020 19:51:18 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

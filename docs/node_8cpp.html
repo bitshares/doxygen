@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">4.0.0</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -286,9 +286,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">, BOOST_PP_CAT(_, BOOST_PP_CAT(method_name, _execution_accumulator))(boost::accumulators::tag::rolling_window::window_size = <a class="code" href="node_8cpp.html#a663a583f9e609791c5f88079500e44da">ROLLING_WINDOW_SIZE</a>) \</div><div class="line">      , BOOST_PP_CAT(_, BOOST_PP_CAT(method_name, _delay_before_accumulator))(boost::accumulators::tag::rolling_window::window_size = <a class="code" href="node_8cpp.html#a663a583f9e609791c5f88079500e44da">ROLLING_WINDOW_SIZE</a>) \</div><div class="line">      , BOOST_PP_CAT(_, BOOST_PP_CAT(method_name, _delay_after_accumulator))(boost::accumulators::tag::rolling_window::window_size = <a class="code" href="node_8cpp.html#a663a583f9e609791c5f88079500e44da">ROLLING_WINDOW_SIZE</a>)</div><div class="ttc" id="node_8cpp_html_a663a583f9e609791c5f88079500e44da"><div class="ttname"><a href="node_8cpp.html#a663a583f9e609791c5f88079500e44da">ROLLING_WINDOW_SIZE</a></div><div class="ttdeci">#define ROLLING_WINDOW_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="node_8cpp_source.html#l05001">node.cpp:5001</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">, BOOST_PP_CAT(_, BOOST_PP_CAT(method_name, _execution_accumulator))(boost::accumulators::tag::rolling_window::window_size = <a class="code" href="node_8cpp.html#a663a583f9e609791c5f88079500e44da">ROLLING_WINDOW_SIZE</a>) \</div><div class="line">      , BOOST_PP_CAT(_, BOOST_PP_CAT(method_name, _delay_before_accumulator))(boost::accumulators::tag::rolling_window::window_size = <a class="code" href="node_8cpp.html#a663a583f9e609791c5f88079500e44da">ROLLING_WINDOW_SIZE</a>) \</div><div class="line">      , BOOST_PP_CAT(_, BOOST_PP_CAT(method_name, _delay_after_accumulator))(boost::accumulators::tag::rolling_window::window_size = <a class="code" href="node_8cpp.html#a663a583f9e609791c5f88079500e44da">ROLLING_WINDOW_SIZE</a>)</div><div class="ttc" id="node_8cpp_html_a663a583f9e609791c5f88079500e44da"><div class="ttname"><a href="node_8cpp.html#a663a583f9e609791c5f88079500e44da">ROLLING_WINDOW_SIZE</a></div><div class="ttdeci">#define ROLLING_WINDOW_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="node_8cpp_source.html#l05103">node.cpp:5103</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l05002">5002</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l05104">5104</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -335,7 +335,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">std::shared_ptr&lt;call_statistics_collector&gt; statistics_collector = std::make_shared&lt;call_statistics_collector&gt;( \</div><div class="line"><span class="preprocessor">                                                   #method_name, \</span></div><div class="line"><span class="preprocessor">                                                   &amp;_ ## method_name ## _execution_accumulator, \</span></div><div class="line"><span class="preprocessor">                                                   &amp;_ ## method_name ## _delay_before_accumulator, \</span></div><div class="line"><span class="preprocessor">                                                   &amp;_ ## method_name ## _delay_after_accumulator); \</span></div><div class="line"><span class="preprocessor">    if (_thread-&gt;is_current()) \</span></div><div class="line"><span class="preprocessor">    { \</span></div><div class="line"><span class="preprocessor">      call_statistics_collector::actual_execution_measurement_helper helper(statistics_collector); \</span></div><div class="line"><span class="preprocessor">      return _node_delegate-&gt;method_name(__VA_ARGS__); \</span></div><div class="line"><span class="preprocessor">    } \</span></div><div class="line"><span class="preprocessor">    else \</span></div><div class="line"><span class="preprocessor">      return _thread-&gt;async([&amp;, statistics_collector](){ \</span></div><div class="line"><span class="preprocessor">        call_statistics_collector::actual_execution_measurement_helper helper(statistics_collector); \</span></div><div class="line"><span class="preprocessor">        return _node_delegate-&gt;method_name(__VA_ARGS__); \</span></div><div class="line"><span class="preprocessor">      }, &quot;invoke &quot; BOOST_STRINGIZE(method_name)).wait()</span></div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l05083">5083</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l05185">5185</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -363,7 +363,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l04779">4779</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04881">4881</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -419,7 +419,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l05001">5001</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l05103">5103</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -478,7 +478,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 30 2020 00:56:51 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 22 2020 19:51:18 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

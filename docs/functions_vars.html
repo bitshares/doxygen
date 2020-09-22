@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">4.0.0</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -139,11 +139,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>_account
 : <a class="el" href="classgraphene_1_1custom__operations_1_1custom__generic__evaluator.html#a9d8a8de3655ec9fcb4c2686282aefb5a">graphene::custom_operations::custom_generic_evaluator</a>
 </li>
+<li>_account_receives
+: <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__deposit__evaluator.html#a39c6b62e8b2c1411238ee4ac6779c828">graphene::chain::liquidity_pool_deposit_evaluator</a>
+, <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__exchange__evaluator.html#a4a78376836916e16fd30239d4f976f30">graphene::chain::liquidity_pool_exchange_evaluator</a>
+</li>
 <li>_account_to_proposals
 : <a class="el" href="classgraphene_1_1chain_1_1required__approval__index.html#a45bf422073fcbe6c65a01183535004cd">graphene::chain::required_approval_index</a>
 </li>
 <li>_active_connections
-: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a3b69554fe366927475a6630aa207363a">graphene::net::detail::node_impl</a>
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a7399d608a96b2fd0eb660696055247c9">graphene::net::detail::node_impl</a>
 </li>
 <li>_active_context
 : <a class="el" href="classfc_1_1task__base.html#aefaec2571643ac1efd3c3d49bdc845cb">fc::task_base</a>
@@ -171,6 +175,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>_advertise_inventory_loop_done
 : <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#ae3bcc0b745f57413121feb7a9c1840f4">graphene::net::detail::node_impl</a>
+</li>
+<li>_all_connections_closed
+: <a class="el" href="classfc_1_1http_1_1detail_1_1generic__websocket__server__impl.html#aed014f55d8bf2f6d1bbd35013dd71b60">fc::http::detail::generic_websocket_server_impl&lt; T &gt;</a>
 </li>
 <li>_api_connection
 : <a class="el" href="classfc_1_1detail_1_1any__api.html#aae058b58c4a7d62908df6de21ad6a73a">fc::detail::any_api</a>
@@ -270,11 +277,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>_closed
 : <a class="el" href="classfc_1_1http_1_1detail_1_1generic__websocket__client__impl.html#a416911763da8b579fb285fabdd1a63a7">fc::http::detail::generic_websocket_client_impl&lt; T &gt;</a>
-, <a class="el" href="classfc_1_1http_1_1detail_1_1websocket__server__impl.html#a9f896ee86403bab1665d4a3bc586e0b3">fc::http::detail::websocket_server_impl</a>
-, <a class="el" href="classfc_1_1http_1_1detail_1_1websocket__tls__server__impl.html#a590be98464c65432291f7877b417f0b4">fc::http::detail::websocket_tls_server_impl</a>
 </li>
 <li>_closing_connections
-: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a44d7bcd1865d95144e92e45ad9506fee">graphene::net::detail::node_impl</a>
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#aa6cb6c012db19622d548125352da3cd6">graphene::net::detail::node_impl</a>
 </li>
 <li>_closing_order
 : <a class="el" href="classgraphene_1_1chain_1_1call__order__update__evaluator.html#a99e7a0e48a2f9135d61828fd321a5e96">graphene::chain::call_order_update_evaluator</a>
@@ -290,8 +295,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classfc_1_1rpc_1_1websocket__api__connection.html#a497cf1dece4d99109fd6e834cf3303e0">fc::rpc::websocket_api_connection</a>
 </li>
 <li>_connections
-: <a class="el" href="classfc_1_1http_1_1detail_1_1websocket__server__impl.html#a6c7b347434f594331e4c8a6db85617d2">fc::http::detail::websocket_server_impl</a>
-, <a class="el" href="classfc_1_1http_1_1detail_1_1websocket__tls__server__impl.html#a586e78cb3dd377d33fc9d3a3deaf8859">fc::http::detail::websocket_tls_server_impl</a>
+: <a class="el" href="classfc_1_1http_1_1detail_1_1generic__websocket__server__impl.html#a1db794aec77baee02aabf925b1567beb">fc::http::detail::generic_websocket_server_impl&lt; T &gt;</a>
 </li>
 <li>_custom_operations
 : <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a666d9edf2f3866102de9049ba7e6188c">graphene::wallet::detail::wallet_api_impl</a>
@@ -418,6 +422,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>_executed_proposal
 : <a class="el" href="classgraphene_1_1chain_1_1proposal__update__evaluator.html#a756060a973c474f66a77dde8d4b109d1">graphene::chain::proposal_update_evaluator</a>
 </li>
+<li>_extended_history_accounts
+: <a class="el" href="classgraphene_1_1account__history_1_1detail_1_1account__history__plugin__impl.html#a80f4651453e024ad6d43e1f696dfdc72">graphene::account_history::detail::account_history_plugin_impl</a>
+</li>
+<li>_extended_history_registrars
+: <a class="el" href="classgraphene_1_1account__history_1_1detail_1_1account__history__plugin__impl.html#afbfee5184f056d8f68737110981818ac">graphene::account_history::detail::account_history_plugin_impl</a>
+</li>
+<li>_extended_max_ops_per_account
+: <a class="el" href="classgraphene_1_1account__history_1_1detail_1_1account__history__plugin__impl.html#af68d7b12119e4bea8f3a8463526e9e6a">graphene::account_history::detail::account_history_plugin_impl</a>
+</li>
 <li>_fee
 : <a class="el" href="structgraphene_1_1protocol_1_1set__fee__visitor.html#a148e9c25514b2c5fdee87bd5b3ab4402">graphene::protocol::set_fee_visitor</a>
 </li>
@@ -436,6 +449,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>_force_validate
 : <a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#ad6aadf4191041d2fa601241542256e40">graphene::app::detail::application_impl</a>
 </li>
+<li>_forward_header_key
+: <a class="el" href="classfc_1_1http_1_1detail_1_1generic__websocket__server__impl.html#a514f5d3e8fb9c0d5289d8a7b1acc6abb">fc::http::detail::generic_websocket_server_impl&lt; T &gt;</a>
+</li>
 <li>_functor
 : <a class="el" href="classfc_1_1task__base.html#a24254c5230e57ae25c4285b9d8caa0fd">fc::task_base</a>
 </li>
@@ -446,7 +462,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#aa08c712bd961b94b7a0d76fd4a53129c">graphene::net::detail::node_impl</a>
 </li>
 <li>_handshaking_connections
-: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a4fd2b260899bd6c8a2319f588d981328">graphene::net::detail::node_impl</a>
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a69141b54099ab6ca8145f9e309bbf1fd">graphene::net::detail::node_impl</a>
 </li>
 <li>_hard_fork_block_numbers
 : <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a658cefdb0f4330c7534c663f93c1ae9e">graphene::net::detail::node_impl</a>
@@ -528,6 +544,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>_lock_file
 : <a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#af07b5b8d6e16afe34208c9755f6416f5">graphene::app::detail::application_impl</a>
+</li>
+<li>_maker_market_fee
+: <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__exchange__evaluator.html#a23bfc0c20994524d718797d196412c83">graphene::chain::liquidity_pool_exchange_evaluator</a>
 </li>
 <li>_market_subscriptions
 : <a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a466336fd22c476e6b2e0b4e52ef6dce5">graphene::app::database_api_impl</a>
@@ -631,8 +650,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="structgraphene_1_1chain_1_1detail_1_1skip__flags__restorer.html#acdd8afa64daeb10f68470d3cd3afe2ec">graphene::chain::detail::skip_flags_restorer</a>
 </li>
 <li>_on_connection
-: <a class="el" href="classfc_1_1http_1_1detail_1_1websocket__server__impl.html#a27a2a20f48262ef6c7541f4f03c7c455">fc::http::detail::websocket_server_impl</a>
-, <a class="el" href="classfc_1_1http_1_1detail_1_1websocket__tls__server__impl.html#a2f8c138692ff3cc21320c3e337842fd0">fc::http::detail::websocket_tls_server_impl</a>
+: <a class="el" href="classfc_1_1http_1_1detail_1_1generic__websocket__server__impl.html#a824120a2bf80e7f653922fad1f70c2c0">fc::http::detail::generic_websocket_server_impl&lt; T &gt;</a>
 </li>
 <li>_op
 : <a class="el" href="classgraphene_1_1chain_1_1limit__order__create__evaluator.html#ac4772e01c1ca2abf0e2efaed48ba1ae4">graphene::chain::limit_order_create_evaluator</a>
@@ -689,7 +707,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a11d658fe10e652b500028650ba63d661">graphene::net::detail::node_impl</a>
 </li>
 <li>_pending_messages
-: <a class="el" href="classfc_1_1http_1_1detail_1_1websocket__server__impl.html#ad73225fae351c5103d70f64fb2e84b07">fc::http::detail::websocket_server_impl</a>
+: <a class="el" href="classfc_1_1http_1_1detail_1_1generic__websocket__server__impl.html#ac44268b12c3bb2f2d55561aa178f73cc">fc::http::detail::generic_websocket_server_impl&lt; T &gt;</a>
 </li>
 <li>_pending_transactions
 : <a class="el" href="structgraphene_1_1chain_1_1detail_1_1pending__transactions__restorer.html#ab6195540c02447ec3da39322cbb62fa6">graphene::chain::detail::pending_transactions_restorer</a>
@@ -705,6 +723,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>_plugin_option
 : <a class="el" href="classgraphene_1_1template__plugin_1_1detail_1_1template__plugin__impl.html#a4b5967f000418f426f3de470d086cee1">graphene::template_plugin::detail::template_plugin_impl</a>
+</li>
+<li>_pool
+: <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__delete__evaluator.html#af672b73515df886e2f78d1c4e7e2fdb5">graphene::chain::liquidity_pool_delete_evaluator</a>
+, <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__deposit__evaluator.html#a8d1d904923a8f073fa62a8ee0110202a">graphene::chain::liquidity_pool_deposit_evaluator</a>
+, <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__exchange__evaluator.html#a52bbcdf1831ebedc1267e97ff77276b5">graphene::chain::liquidity_pool_exchange_evaluator</a>
+, <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__withdraw__evaluator.html#a7b4b33b8347f1094b9597f027d17f398">graphene::chain::liquidity_pool_withdraw_evaluator</a>
+</li>
+<li>_pool_pays
+: <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__exchange__evaluator.html#ab472bf25a3f1093e12390c8c0eb17293">graphene::chain::liquidity_pool_exchange_evaluator</a>
+</li>
+<li>_pool_pays_a
+: <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__withdraw__evaluator.html#aea6c969c8eb049e560077f2d6a1c20cf">graphene::chain::liquidity_pool_withdraw_evaluator</a>
+</li>
+<li>_pool_pays_asset
+: <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__exchange__evaluator.html#a4c15c8b893c2bae3cead30cf7f431c5b">graphene::chain::liquidity_pool_exchange_evaluator</a>
+</li>
+<li>_pool_pays_b
+: <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__withdraw__evaluator.html#a554541adc085de09ab24763419125694">graphene::chain::liquidity_pool_withdraw_evaluator</a>
+</li>
+<li>_pool_receives
+: <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__exchange__evaluator.html#a40a8f90f7a3f21e15b9ea885d46740d0">graphene::chain::liquidity_pool_exchange_evaluator</a>
+</li>
+<li>_pool_receives_a
+: <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__deposit__evaluator.html#a685a30b64d46a0c6123727437c04651a">graphene::chain::liquidity_pool_deposit_evaluator</a>
+</li>
+<li>_pool_receives_asset
+: <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__exchange__evaluator.html#ad9204dc2e6ff38dc9e873ffc0e27efff">graphene::chain::liquidity_pool_exchange_evaluator</a>
+</li>
+<li>_pool_receives_b
+: <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__deposit__evaluator.html#a2128c7eac36d9fb696857f6ef495b433">graphene::chain::liquidity_pool_deposit_evaluator</a>
 </li>
 <li>_popped_tx
 : <a class="el" href="classgraphene_1_1chain_1_1database.html#a6c5fdb41f8fff0fa1aecc3c7778bf28c">graphene::chain::database</a>
@@ -801,6 +849,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>_remote_debug
 : <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a1de9eb4bc4efc580999ac41df0ff038f">graphene::wallet::detail::wallet_api_impl</a>
 </li>
+<li>_remote_endpoint
+: <a class="el" href="classfc_1_1http_1_1websocket__connection.html#a4845d701c1610ca904c545efb11b6e39">fc::http::websocket_connection</a>
+</li>
 <li>_remote_hist
 : <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a35c9d37c9d2abdde7307e2b4f8a1deac">graphene::wallet::detail::wallet_api_impl</a>
 </li>
@@ -858,12 +909,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classgraphene_1_1chain_1_1limit__order__create__evaluator.html#acf5133f0507c89a24494cf8b12dd8249">graphene::chain::limit_order_create_evaluator</a>
 </li>
 <li>_server
-: <a class="el" href="classfc_1_1http_1_1detail_1_1websocket__server__impl.html#af796bd2ffbc2adee35f8f56209a0295c">fc::http::detail::websocket_server_impl</a>
-, <a class="el" href="classfc_1_1http_1_1detail_1_1websocket__tls__server__impl.html#ac690d7baf1279c4e0ff8b4c5bd7772e6">fc::http::detail::websocket_tls_server_impl</a>
+: <a class="el" href="classfc_1_1http_1_1detail_1_1generic__websocket__server__impl.html#aa41c5f5d62487732e7dd32c4c8cc8881">fc::http::detail::generic_websocket_server_impl&lt; T &gt;</a>
+</li>
+<li>_server_socket_closed
+: <a class="el" href="classfc_1_1http_1_1detail_1_1generic__websocket__server__impl.html#acdc34b5e5da116fb494fd69c4ef1795b">fc::http::detail::generic_websocket_server_impl&lt; T &gt;</a>
 </li>
 <li>_server_thread
-: <a class="el" href="classfc_1_1http_1_1detail_1_1websocket__server__impl.html#ae916e16d5d40e8d8e06ac9bdfb691497">fc::http::detail::websocket_server_impl</a>
-, <a class="el" href="classfc_1_1http_1_1detail_1_1websocket__tls__server__impl.html#a72298298a3ba0b817e94c2a6e0852669">fc::http::detail::websocket_tls_server_impl</a>
+: <a class="el" href="classfc_1_1http_1_1detail_1_1generic__websocket__server__impl.html#a1c5a07ecc690b8a04d706daf9b7525f7">fc::http::detail::generic_websocket_server_impl&lt; T &gt;</a>
+</li>
+<li>_share_asset
+: <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__create__evaluator.html#a250f62a177625dd7ff318119e7b4537a">graphene::chain::liquidity_pool_create_evaluator</a>
+, <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__delete__evaluator.html#a7c318adf2d8d5c0d32a3e2b967d2e338">graphene::chain::liquidity_pool_delete_evaluator</a>
+</li>
+<li>_share_asset_dyn_data
+: <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__deposit__evaluator.html#acb544e267366d7b4f892b2e7c07ae745">graphene::chain::liquidity_pool_deposit_evaluator</a>
+, <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__withdraw__evaluator.html#afbd3ae657673988bc56c8d489d425bea">graphene::chain::liquidity_pool_withdraw_evaluator</a>
 </li>
 <li>_shared_read_buffer
 : <a class="el" href="classfc_1_1detail_1_1buffered__istream__impl.html#a9ba5510d813e3206c1052ff069a1929a">fc::detail::buffered_istream_impl</a>
@@ -920,6 +980,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>_tag
 : <a class="el" href="classfc_1_1static__variant.html#af7bccf217a452e1673051f613c6f844a">fc::static_variant&lt; Types &gt;</a>
 </li>
+<li>_taker_market_fee
+: <a class="el" href="classgraphene_1_1chain_1_1liquidity__pool__exchange__evaluator.html#a204e63d9dee77f4800b2c7bf9288221e">graphene::chain::liquidity_pool_exchange_evaluator</a>
+</li>
 <li>_task_specific_data
 : <a class="el" href="classfc_1_1task__base.html#a55a8a9920ee4ba9b90818958fef9793c">fc::task_base</a>
 </li>
@@ -930,7 +993,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#ae578c14677ad89318d2319fdb7763b5c">graphene::net::detail::node_impl</a>
 </li>
 <li>_terminating_connections
-: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a2429530f9c62e46f88c5fb938e5c519a">graphene::net::detail::node_impl</a>
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a40b19046083164f45066458f19413ebb">graphene::net::detail::node_impl</a>
 </li>
 <li>_ticket
 : <a class="el" href="classgraphene_1_1chain_1_1ticket__update__evaluator.html#af73c8b1ec1bb8c33ba75fd2a154f7de0">graphene::chain::ticket_update_evaluator</a>
@@ -1018,7 +1081,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 30 2020 00:57:02 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 22 2020 19:51:23 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

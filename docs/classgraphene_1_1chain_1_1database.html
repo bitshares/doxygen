@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">4.0.0</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -192,9 +192,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a03253124ee8714af752c1d68b7cc206c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1c4e067598a0318e728b1d28df7a598"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#af1c4e067598a0318e728b1d28df7a598">clear_pending</a> ()</td></tr>
 <tr class="separator:af1c4e067598a0318e728b1d28df7a598"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fef3858781108d62da007cc155ccec7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a2fef3858781108d62da007cc155ccec7">push_applied_operation</a> (const <a class="el" href="group__operations.html#ga8cd21c685484b07a3342347581bcc2ab">operation</a> &amp;op)</td></tr>
+<tr class="memitem:a2fef3858781108d62da007cc155ccec7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a2fef3858781108d62da007cc155ccec7">push_applied_operation</a> (const <a class="el" href="group__operations.html#gadd00b6b45ba587b94dba2c8ec1d129a0">operation</a> &amp;op)</td></tr>
 <tr class="separator:a2fef3858781108d62da007cc155ccec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d85784b1e8dd37a7cecce893e248061"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a1d85784b1e8dd37a7cecce893e248061">set_applied_operation_result</a> (uint32_t op_id, const <a class="el" href="group__operations.html#ga89a307152d9c1f5b69f80e3ebaf65c49">operation_result</a> &amp;r)</td></tr>
+<tr class="memitem:a1d85784b1e8dd37a7cecce893e248061"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a1d85784b1e8dd37a7cecce893e248061">set_applied_operation_result</a> (uint32_t op_id, const <a class="el" href="group__operations.html#ga19d13288b7f22d2f236878f4882d8789">operation_result</a> &amp;r)</td></tr>
 <tr class="separator:a1d85784b1e8dd37a7cecce893e248061"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c39b01a3f67e4eb40b26c8f2dab9a59"><td class="memItemLeft" align="right" valign="top">const vector&lt; <a class="el" href="classfc_1_1optional.html">optional</a>&lt; <a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html">operation_history_object</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a5c39b01a3f67e4eb40b26c8f2dab9a59">get_applied_operations</a> () const </td></tr>
 <tr class="separator:a5c39b01a3f67e4eb40b26c8f2dab9a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -239,7 +239,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8ab5263dd27146477bfd40d5df35848b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a11d2aa7bfc6fbbc33f67f6a6174b10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1chain_1_1node__property__object.html">node_property_object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a5a11d2aa7bfc6fbbc33f67f6a6174b10">node_properties</a> ()</td></tr>
 <tr class="separator:a5a11d2aa7bfc6fbbc33f67f6a6174b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75c839f4b213448465dcebf0dbe08b5a"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1protocol_1_1authority.html">authority</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a75c839f4b213448465dcebf0dbe08b5a">get_viable_custom_authorities</a> (account_id_type account, const <a class="el" href="group__operations.html#ga8cd21c685484b07a3342347581bcc2ab">operation</a> &amp;op, <a class="el" href="namespacegraphene_1_1protocol.html#af8005c97798e625be4f50584c35fa824">rejected_predicate_map</a> *rejected_authorities=nullptr) const </td></tr>
+<tr class="memitem:a75c839f4b213448465dcebf0dbe08b5a"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1protocol_1_1authority.html">authority</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a75c839f4b213448465dcebf0dbe08b5a">get_viable_custom_authorities</a> (account_id_type account, const <a class="el" href="group__operations.html#gadd00b6b45ba587b94dba2c8ec1d129a0">operation</a> &amp;op, <a class="el" href="namespacegraphene_1_1protocol.html#af8005c97798e625be4f50584c35fa824">rejected_predicate_map</a> *rejected_authorities=nullptr) const </td></tr>
 <tr class="memdesc:a75c839f4b213448465dcebf0dbe08b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of custom authorities which can validate the provided operation for the provided account.  <a href="#a75c839f4b213448465dcebf0dbe08b5a">More...</a><br /></td></tr>
 <tr class="separator:a75c839f4b213448465dcebf0dbe08b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54a7e96c5565794a5faae866694e12a3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a54a7e96c5565794a5faae866694e12a3">last_non_undoable_block_num</a> () const </td></tr>
@@ -296,11 +296,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a63c09c05efe17bfbd639a9a7c9fffd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98391f198bc95d206c91da61dc55373d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a98391f198bc95d206c91da61dc55373d">pay_order</a> (const <a class="el" href="classgraphene_1_1chain_1_1account__object.html">account_object</a> &amp;receiver, const <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &amp;receives, const <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &amp;pays)</td></tr>
 <tr class="separator:a98391f198bc95d206c91da61dc55373d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a467912ad5272b708b6088316a9648d2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a467912ad5272b708b6088316a9648d2c">calculate_market_fee</a> (const <a class="el" href="classgraphene_1_1chain_1_1asset__object.html">asset_object</a> &amp;trade_asset, const <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &amp;trade_amount, const bool &amp;is_maker)</td></tr>
-<tr class="memdesc:a467912ad5272b708b6088316a9648d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the market fee that is to be taken.  <a href="#a467912ad5272b708b6088316a9648d2c">More...</a><br /></td></tr>
-<tr class="separator:a467912ad5272b708b6088316a9648d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2220eff7194058a9f9d97ae100814188"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a2220eff7194058a9f9d97ae100814188">pay_market_fees</a> (const <a class="el" href="classgraphene_1_1chain_1_1account__object.html">account_object</a> *seller, const <a class="el" href="classgraphene_1_1chain_1_1asset__object.html">asset_object</a> &amp;recv_asset, const <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &amp;receives, const bool &amp;is_maker)</td></tr>
-<tr class="separator:a2220eff7194058a9f9d97ae100814188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb0a35eccad8458442ecc4d1af1ca92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a0cb0a35eccad8458442ecc4d1af1ca92">calculate_market_fee</a> (const <a class="el" href="classgraphene_1_1chain_1_1asset__object.html">asset_object</a> &amp;trade_asset, const <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &amp;trade_amount, const bool &amp;is_maker) const </td></tr>
+<tr class="memdesc:a0cb0a35eccad8458442ecc4d1af1ca92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the market fee that is to be taken.  <a href="#a0cb0a35eccad8458442ecc4d1af1ca92">More...</a><br /></td></tr>
+<tr class="separator:a0cb0a35eccad8458442ecc4d1af1ca92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a889865bc9a3a2e7e7d79ec7d00b03902"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a889865bc9a3a2e7e7d79ec7d00b03902">pay_market_fees</a> (const <a class="el" href="classgraphene_1_1chain_1_1account__object.html">account_object</a> *seller, const <a class="el" href="classgraphene_1_1chain_1_1asset__object.html">asset_object</a> &amp;recv_asset, const <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &amp;receives, const bool &amp;is_maker, const optional&lt; <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &gt; &amp;calculated_market_fees={})</td></tr>
+<tr class="separator:a889865bc9a3a2e7e7d79ec7d00b03902"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d3b2fc4773d4e5227748403fdd5d925"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a7d3b2fc4773d4e5227748403fdd5d925">pay_force_settle_fees</a> (const <a class="el" href="classgraphene_1_1chain_1_1asset__object.html">asset_object</a> &amp;collecting_asset, const <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &amp;collat_receives)</td></tr>
 <tr class="separator:a7d3b2fc4773d4e5227748403fdd5d925"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbc9d3f6064163078b9a21c2c580f24b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#abbc9d3f6064163078b9a21c2c580f24b">enable_standby_votes_tracking</a> (bool enable)</td></tr>
@@ -314,7 +314,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af9556e43f26824c2036c8916d0bc460c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaadc49139eb020b3b1e91b60b128e49f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1protocol_1_1processed__transaction.html">processed_transaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#aaadc49139eb020b3b1e91b60b128e49f">apply_transaction</a> (const <a class="el" href="classgraphene_1_1protocol_1_1signed__transaction.html">signed_transaction</a> &amp;trx, uint32_t skip=<a class="el" href="classgraphene_1_1chain_1_1database.html#a6de6add85d012876641f2a50ad707726afbe701c12ae94e417ef9424306aabbdc">skip_nothing</a>)</td></tr>
 <tr class="separator:aaadc49139eb020b3b1e91b60b128e49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a930314aa34166b1dbfc06d0cd85d481d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__operations.html#ga89a307152d9c1f5b69f80e3ebaf65c49">operation_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a930314aa34166b1dbfc06d0cd85d481d">apply_operation</a> (<a class="el" href="classgraphene_1_1chain_1_1transaction__evaluation__state.html">transaction_evaluation_state</a> &amp;eval_state, const <a class="el" href="group__operations.html#ga8cd21c685484b07a3342347581bcc2ab">operation</a> &amp;op)</td></tr>
+<tr class="memitem:a930314aa34166b1dbfc06d0cd85d481d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__operations.html#ga19d13288b7f22d2f236878f4882d8789">operation_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a930314aa34166b1dbfc06d0cd85d481d">apply_operation</a> (<a class="el" href="classgraphene_1_1chain_1_1transaction__evaluation__state.html">transaction_evaluation_state</a> &amp;eval_state, const <a class="el" href="group__operations.html#gadd00b6b45ba587b94dba2c8ec1d129a0">operation</a> &amp;op)</td></tr>
 <tr class="separator:a930314aa34166b1dbfc06d0cd85d481d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:af9c87315935a2dc72806984f941866bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#af9c87315935a2dc72806984f941866bc">match</a> (const <a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html">limit_order_object</a> &amp;taker, const <a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html">limit_order_object</a> &amp;maker, const <a class="el" href="structgraphene_1_1protocol_1_1price.html">price</a> &amp;trade_price)</td></tr>
@@ -718,7 +718,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__operations.html#ga89a307152d9c1f5b69f80e3ebaf65c49">operation_result</a> graphene::chain::database::apply_operation </td>
+          <td class="memname"><a class="el" href="group__operations.html#ga19d13288b7f22d2f236878f4882d8789">operation_result</a> graphene::chain::database::apply_operation </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classgraphene_1_1chain_1_1transaction__evaluation__state.html">transaction_evaluation_state</a> &amp;&#160;</td>
           <td class="paramname"><em>eval_state</em>, </td>
@@ -726,7 +726,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__operations.html#ga8cd21c685484b07a3342347581bcc2ab">operation</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__operations.html#gadd00b6b45ba587b94dba2c8ec1d129a0">operation</a> &amp;&#160;</td>
           <td class="paramname"><em>op</em>&#160;</td>
         </tr>
         <tr>
@@ -852,7 +852,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a467912ad5272b708b6088316a9648d2c"></a>
+<a class="anchor" id="a0cb0a35eccad8458442ecc4d1af1ca92"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -877,7 +877,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1069,7 +1069,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db__management_8cpp_source.html#l00227">227</a> of file <a class="el" href="db__management_8cpp_source.html">db_management.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db__management_8cpp_source.html#l00230">230</a> of file <a class="el" href="db__management_8cpp_source.html">db_management.cpp</a>.</p>
 
 </div>
 </div>
@@ -1297,7 +1297,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Enable or disable tracking of votes of standby witnesses and committee members. </p>
 
-<p>Definition at line <a class="el" href="database_8hpp_source.html#l00518">518</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
+<p>Definition at line <a class="el" href="database_8hpp_source.html#l00519">519</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
 
 </div>
 </div>
@@ -2053,7 +2053,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__operations.html#ga8cd21c685484b07a3342347581bcc2ab">operation</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__operations.html#gadd00b6b45ba587b94dba2c8ec1d129a0">operation</a> &amp;&#160;</td>
           <td class="paramname"><em>op</em>, </td>
         </tr>
         <tr>
@@ -2213,7 +2213,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db__init_8cpp_source.html#l00242">242</a> of file <a class="el" href="db__init_8cpp_source.html">db_init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db__init_8cpp_source.html#l00187">187</a> of file <a class="el" href="db__init_8cpp_source.html">db_init.cpp</a>.</p>
 
 </div>
 </div>
@@ -2230,7 +2230,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db__init_8cpp_source.html#l00140">140</a> of file <a class="el" href="db__init_8cpp_source.html">db_init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db__init_8cpp_source.html#l00079">79</a> of file <a class="el" href="db__init_8cpp_source.html">db_init.cpp</a>.</p>
 
 </div>
 </div>
@@ -2249,7 +2249,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reset the object graph in-memory. </p>
 
-<p>Definition at line <a class="el" href="db__init_8cpp_source.html#l00197">197</a> of file <a class="el" href="db__init_8cpp_source.html">db_init.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db__init_8cpp_source.html#l00141">141</a> of file <a class="el" href="db__init_8cpp_source.html">db_init.cpp</a>.</p>
 
 </div>
 </div>
@@ -2550,7 +2550,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db__notify_8cpp_source.html#l00495">495</a> of file <a class="el" href="db__notify_8cpp_source.html">db_notify.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db__notify_8cpp_source.html#l00519">519</a> of file <a class="el" href="db__notify_8cpp_source.html">db_notify.cpp</a>.</p>
 
 </div>
 </div>
@@ -2575,7 +2575,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db__notify_8cpp_source.html#l00505">505</a> of file <a class="el" href="db__notify_8cpp_source.html">db_notify.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db__notify_8cpp_source.html#l00529">529</a> of file <a class="el" href="db__notify_8cpp_source.html">db_notify.cpp</a>.</p>
 
 </div>
 </div>
@@ -2601,7 +2601,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db__notify_8cpp_source.html#l00500">500</a> of file <a class="el" href="db__notify_8cpp_source.html">db_notify.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db__notify_8cpp_source.html#l00524">524</a> of file <a class="el" href="db__notify_8cpp_source.html">db_notify.cpp</a>.</p>
 
 </div>
 </div>
@@ -2647,7 +2647,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="db__management_8cpp_source.html#l00173">173</a> of file <a class="el" href="db__management_8cpp_source.html">db_management.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db__management_8cpp_source.html#l00176">176</a> of file <a class="el" href="db__management_8cpp_source.html">db_management.cpp</a>.</p>
 
 </div>
 </div>
@@ -2675,11 +2675,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db__market_8cpp_source.html#l01485">1485</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db__market_8cpp_source.html#l01487">1487</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2220eff7194058a9f9d97ae100814188"></a>
+<a class="anchor" id="a889865bc9a3a2e7e7d79ec7d00b03902"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2705,7 +2705,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const bool &amp;&#160;</td>
-          <td class="paramname"><em>is_maker</em>&#160;</td>
+          <td class="paramname"><em>is_maker</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const optional&lt; <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>calculated_market_fees</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2715,7 +2721,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="db__market_8cpp_source.html#l01376">1376</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db__market_8cpp_source.html#l01377">1377</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
 
 </div>
 </div>
@@ -2792,7 +2798,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database_8hpp_source.html#l00545">545</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
+<p>Definition at line <a class="el" href="database_8hpp_source.html#l00546">546</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
 
 </div>
 </div>
@@ -2883,7 +2889,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">uint32_t graphene::chain::database::push_applied_operation </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__operations.html#ga8cd21c685484b07a3342347581bcc2ab">operation</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__operations.html#gadd00b6b45ba587b94dba2c8ec1d129a0">operation</a> &amp;&#160;</td>
           <td class="paramname"><em>op</em></td><td>)</td>
           <td></td>
         </tr>
@@ -3059,7 +3065,7 @@ template&lt;typename EvaluatorType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__operations.html#ga89a307152d9c1f5b69f80e3ebaf65c49">operation_result</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__operations.html#ga19d13288b7f22d2f236878f4882d8789">operation_result</a> &amp;&#160;</td>
           <td class="paramname"><em>r</em>&#160;</td>
         </tr>
         <tr>
@@ -3162,7 +3168,7 @@ template&lt;typename EvaluatorType &gt; </div>
 </dl>
 <p>Will close the database before wiping. Database will be closed when this function returns. </p>
 
-<p>Definition at line <a class="el" href="db__management_8cpp_source.html#l00162">162</a> of file <a class="el" href="db__management_8cpp_source.html">db_management.cpp</a>.</p>
+<p>Definition at line <a class="el" href="db__management_8cpp_source.html#l00165">165</a> of file <a class="el" href="db__management_8cpp_source.html">db_management.cpp</a>.</p>
 
 </div>
 </div>
@@ -3196,7 +3202,7 @@ template&lt;typename EvaluatorType &gt; </div>
 </div><div class="memdoc">
 <p>when popping a block, the transactions that were removed get cached here so they can be reapplied at the proper time </p>
 
-<p>Definition at line <a class="el" href="database_8hpp_source.html#l00511">511</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
+<p>Definition at line <a class="el" href="database_8hpp_source.html#l00512">512</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
 
 </div>
 </div>
@@ -3293,7 +3299,7 @@ template&lt;typename EvaluatorType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 30 2020 00:56:56 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 22 2020 19:51:20 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

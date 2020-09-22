@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">4.0.0</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -108,6 +108,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="confidential_8hpp_source.html">graphene/protocol/confidential.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="custom__authority_8hpp_source.html">graphene/protocol/custom_authority.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="fba_8hpp_source.html">graphene/protocol/fba.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="liquidity__pool_8hpp_source.html">graphene/protocol/liquidity_pool.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="market_8hpp_source.html">graphene/protocol/market.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="proposal_8hpp_source.html">graphene/protocol/proposal.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ticket_8hpp_source.html">graphene/protocol/ticket.hpp</a>&gt;</code><br />
@@ -135,8 +136,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga8cd21c685484b07a3342347581bcc2ab"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classfc_1_1static__variant.html">fc::static_variant</a>&lt; transfer_operation, limit_order_create_operation, limit_order_cancel_operation, call_order_update_operation, fill_order_operation, account_create_operation, account_update_operation, account_whitelist_operation, account_upgrade_operation, account_transfer_operation, asset_create_operation, asset_update_operation, asset_update_bitasset_operation, asset_update_feed_producers_operation, asset_issue_operation, asset_reserve_operation, asset_fund_fee_pool_operation, asset_settle_operation, asset_global_settle_operation, asset_publish_feed_operation, witness_create_operation, witness_update_operation, proposal_create_operation, proposal_update_operation, proposal_delete_operation, withdraw_permission_create_operation, withdraw_permission_update_operation, withdraw_permission_claim_operation, withdraw_permission_delete_operation, committee_member_create_operation, committee_member_update_operation, committee_member_update_global_parameters_operation, vesting_balance_create_operation, vesting_balance_withdraw_operation, worker_create_operation, custom_operation, assert_operation, balance_claim_operation, override_transfer_operation, transfer_to_blind_operation, blind_transfer_operation, transfer_from_blind_operation, asset_settle_cancel_operation, asset_claim_fees_operation, fba_distribute_operation, bid_collateral_operation, execute_bid_operation, asset_claim_pool_operation, asset_update_issuer_operation, htlc_create_operation, htlc_redeem_operation, htlc_redeemed_operation, htlc_extend_operation, htlc_refund_operation, custom_authority_create_operation, custom_authority_update_operation, custom_authority_delete_operation, ticket_create_operation, ticket_update_operation &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__operations.html#ga8cd21c685484b07a3342347581bcc2ab">graphene::protocol::operation</a></td></tr>
-<tr class="separator:ga8cd21c685484b07a3342347581bcc2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd00b6b45ba587b94dba2c8ec1d129a0"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classfc_1_1static__variant.html">fc::static_variant</a>&lt; transfer_operation, limit_order_create_operation, limit_order_cancel_operation, call_order_update_operation, fill_order_operation, account_create_operation, account_update_operation, account_whitelist_operation, account_upgrade_operation, account_transfer_operation, asset_create_operation, asset_update_operation, asset_update_bitasset_operation, asset_update_feed_producers_operation, asset_issue_operation, asset_reserve_operation, asset_fund_fee_pool_operation, asset_settle_operation, asset_global_settle_operation, asset_publish_feed_operation, witness_create_operation, witness_update_operation, proposal_create_operation, proposal_update_operation, proposal_delete_operation, withdraw_permission_create_operation, withdraw_permission_update_operation, withdraw_permission_claim_operation, withdraw_permission_delete_operation, committee_member_create_operation, committee_member_update_operation, committee_member_update_global_parameters_operation, vesting_balance_create_operation, vesting_balance_withdraw_operation, worker_create_operation, custom_operation, assert_operation, balance_claim_operation, override_transfer_operation, transfer_to_blind_operation, blind_transfer_operation, transfer_from_blind_operation, asset_settle_cancel_operation, asset_claim_fees_operation, fba_distribute_operation, bid_collateral_operation, execute_bid_operation, asset_claim_pool_operation, asset_update_issuer_operation, htlc_create_operation, htlc_redeem_operation, htlc_redeemed_operation, htlc_extend_operation, htlc_refund_operation, custom_authority_create_operation, custom_authority_update_operation, custom_authority_delete_operation, ticket_create_operation, ticket_update_operation, liquidity_pool_create_operation, liquidity_pool_delete_operation, liquidity_pool_deposit_operation, liquidity_pool_withdraw_operation, liquidity_pool_exchange_operation &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__operations.html#gadd00b6b45ba587b94dba2c8ec1d129a0">graphene::protocol::operation</a></td></tr>
+<tr class="separator:gadd00b6b45ba587b94dba2c8ec1d129a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -148,7 +149,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 30 2020 00:56:51 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 22 2020 19:51:18 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

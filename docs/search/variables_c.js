@@ -19,6 +19,7 @@ var searchData=
   ['last_5freceived_5fremote_5fhead',['last_received_remote_head',['../structgraphene_1_1delayed__node_1_1detail_1_1delayed__node__plugin__impl.html#ab096d69526b64ce9d6c563e30aec8c15',1,'graphene::delayed_node::detail::delayed_node_plugin_impl']]],
   ['last_5fseen_5ftime',['last_seen_time',['../structgraphene_1_1net_1_1address__info.html#a26f9e28595f51f8ed5c3fa4cbf0d2df1',1,'graphene::net::address_info::last_seen_time()'],['../structgraphene_1_1net_1_1potential__peer__record.html#a63bb5d5a5225755fb291d08788f1a91f',1,'graphene::net::potential_peer_record::last_seen_time()']]],
   ['last_5fsync_5fitem_5freceived_5ftime',['last_sync_item_received_time',['../classgraphene_1_1net_1_1peer__connection.html#a5a21e7b0a686ea910bbd3865e6d5240a',1,'graphene::net::peer_connection']]],
+  ['last_5fvote_5ftally_5ftime',['last_vote_tally_time',['../classgraphene_1_1chain_1_1dynamic__global__property__object.html#a16542847255c6f7a90e3eb434280b283',1,'graphene::chain::dynamic_global_property_object']]],
   ['last_5fvote_5ftime',['last_vote_time',['../classgraphene_1_1chain_1_1account__statistics__object.html#acccc9ad8c3bbd69b889d53c3c8d5cfc7',1,'graphene::chain::account_statistics_object']]],
   ['last_5fvotes',['last_votes',['../structgraphene_1_1chain_1_1vote__counter.html#ae6819bf7130489f65ac6f995700bb8b2',1,'graphene::chain::vote_counter']]],
   ['latency',['latency',['../structgraphene_1_1net_1_1address__info.html#a6ab3b79c9af6ac0a00d89ce3e41b9cb2',1,'graphene::net::address_info']]],

@@ -5,7 +5,7 @@ var searchData=
   ['account_5findex',['account_index',['../namespacegraphene_1_1chain.html#ad4a4b0840d255da34979146e37fcc15c',1,'graphene::chain']]],
   ['account_5fmulti_5findex_5ftype',['account_multi_index_type',['../namespacegraphene_1_1chain.html#a2cb69664c48f3d41eb5ac8b6bc4847cc',1,'graphene::chain']]],
   ['account_5fstats_5findex',['account_stats_index',['../namespacegraphene_1_1chain.html#ae8cf3ea848fa664d785e848949646384',1,'graphene::chain']]],
-  ['account_5fstats_5fmulti_5findex_5ftype',['account_stats_multi_index_type',['../namespacegraphene_1_1chain.html#a2adcf107f3fa11fc26efa92d722ea292',1,'graphene::chain']]],
+  ['account_5fstats_5fmulti_5findex_5ftype',['account_stats_multi_index_type',['../namespacegraphene_1_1chain.html#a83b2bcbf4c5d9008a9241168d4d16c7b',1,'graphene::chain']]],
   ['account_5fstorage_5fid_5ftype',['account_storage_id_type',['../namespacegraphene_1_1custom__operations.html#a3341e56c1d60e2b0146d149400400f8c',1,'graphene::custom_operations']]],
   ['account_5fstorage_5findex',['account_storage_index',['../namespacegraphene_1_1custom__operations.html#a6a87f3830ba9c7885621b54e9af2c5be',1,'graphene::custom_operations']]],
   ['account_5fstorage_5fmulti_5findex_5ftype',['account_storage_multi_index_type',['../namespacegraphene_1_1custom__operations.html#a920c91f640d35f9924002cd330d50c8e',1,'graphene::custom_operations']]],

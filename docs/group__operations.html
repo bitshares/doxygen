@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">4.0.0</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -148,6 +148,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1generic__operation__result.html">graphene::protocol::generic_operation_result</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1generic__exchange__operation__result.html">graphene::protocol::generic_exchange_operation_result</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1base__operation.html">graphene::protocol::base_operation</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1committee__member__create__operation.html">graphene::protocol::committee_member_create_operation</a></td></tr>
@@ -170,6 +172,21 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1custom__authority__delete__operation.html">graphene::protocol::custom_authority_delete_operation</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a custom authority.  <a href="structgraphene_1_1protocol_1_1custom__authority__delete__operation.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__create__operation.html">graphene::protocol::liquidity_pool_create_operation</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new liquidity pool.  <a href="structgraphene_1_1protocol_1_1liquidity__pool__create__operation.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__delete__operation.html">graphene::protocol::liquidity_pool_delete_operation</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a liquidity pool.  <a href="structgraphene_1_1protocol_1_1liquidity__pool__delete__operation.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__deposit__operation.html">graphene::protocol::liquidity_pool_deposit_operation</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deposit to a liquidity pool.  <a href="structgraphene_1_1protocol_1_1liquidity__pool__deposit__operation.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__withdraw__operation.html">graphene::protocol::liquidity_pool_withdraw_operation</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Withdraw from a liquidity pool.  <a href="structgraphene_1_1protocol_1_1liquidity__pool__withdraw__operation.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__exchange__operation.html">graphene::protocol::liquidity_pool_exchange_operation</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exchange with a liquidity pool.  <a href="structgraphene_1_1protocol_1_1liquidity__pool__exchange__operation.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1limit__order__cancel__operation.html">graphene::protocol::limit_order_cancel_operation</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,14 +252,14 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga89a307152d9c1f5b69f80e3ebaf65c49"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classfc_1_1static__variant.html">fc::static_variant</a>&lt; void_result, object_id_type, asset, generic_operation_result &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__operations.html#ga89a307152d9c1f5b69f80e3ebaf65c49">graphene::protocol::operation_result</a></td></tr>
-<tr class="separator:ga89a307152d9c1f5b69f80e3ebaf65c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga19d13288b7f22d2f236878f4882d8789"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classfc_1_1static__variant.html">fc::static_variant</a>&lt; void_result, object_id_type, asset, generic_operation_result, generic_exchange_operation_result &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__operations.html#ga19d13288b7f22d2f236878f4882d8789">graphene::protocol::operation_result</a></td></tr>
+<tr class="separator:ga19d13288b7f22d2f236878f4882d8789"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabfc2020c2b5e0ab3fd331fae4d936043"><td class="memItemLeft" align="right" valign="top">typedef static_variant&lt; void_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__operations.html#gabfc2020c2b5e0ab3fd331fae4d936043">graphene::protocol::future_extensions</a></td></tr>
 <tr class="separator:gabfc2020c2b5e0ab3fd331fae4d936043"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabaddcaf5bde76414891b4c29031d9288"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__operations.html#gabaddcaf5bde76414891b4c29031d9288">graphene::protocol::extensions_type</a> = future_extensions::flat_set_type</td></tr>
 <tr class="separator:gabaddcaf5bde76414891b4c29031d9288"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8cd21c685484b07a3342347581bcc2ab"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classfc_1_1static__variant.html">fc::static_variant</a>&lt; transfer_operation, limit_order_create_operation, limit_order_cancel_operation, call_order_update_operation, fill_order_operation, account_create_operation, account_update_operation, account_whitelist_operation, account_upgrade_operation, account_transfer_operation, asset_create_operation, asset_update_operation, asset_update_bitasset_operation, asset_update_feed_producers_operation, asset_issue_operation, asset_reserve_operation, asset_fund_fee_pool_operation, asset_settle_operation, asset_global_settle_operation, asset_publish_feed_operation, witness_create_operation, witness_update_operation, proposal_create_operation, proposal_update_operation, proposal_delete_operation, withdraw_permission_create_operation, withdraw_permission_update_operation, withdraw_permission_claim_operation, withdraw_permission_delete_operation, committee_member_create_operation, committee_member_update_operation, committee_member_update_global_parameters_operation, vesting_balance_create_operation, vesting_balance_withdraw_operation, worker_create_operation, custom_operation, assert_operation, balance_claim_operation, override_transfer_operation, transfer_to_blind_operation, blind_transfer_operation, transfer_from_blind_operation, asset_settle_cancel_operation, asset_claim_fees_operation, fba_distribute_operation, bid_collateral_operation, execute_bid_operation, asset_claim_pool_operation, asset_update_issuer_operation, htlc_create_operation, htlc_redeem_operation, htlc_redeemed_operation, htlc_extend_operation, htlc_refund_operation, custom_authority_create_operation, custom_authority_update_operation, custom_authority_delete_operation, ticket_create_operation, ticket_update_operation &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__operations.html#ga8cd21c685484b07a3342347581bcc2ab">graphene::protocol::operation</a></td></tr>
-<tr class="separator:ga8cd21c685484b07a3342347581bcc2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd00b6b45ba587b94dba2c8ec1d129a0"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classfc_1_1static__variant.html">fc::static_variant</a>&lt; transfer_operation, limit_order_create_operation, limit_order_cancel_operation, call_order_update_operation, fill_order_operation, account_create_operation, account_update_operation, account_whitelist_operation, account_upgrade_operation, account_transfer_operation, asset_create_operation, asset_update_operation, asset_update_bitasset_operation, asset_update_feed_producers_operation, asset_issue_operation, asset_reserve_operation, asset_fund_fee_pool_operation, asset_settle_operation, asset_global_settle_operation, asset_publish_feed_operation, witness_create_operation, witness_update_operation, proposal_create_operation, proposal_update_operation, proposal_delete_operation, withdraw_permission_create_operation, withdraw_permission_update_operation, withdraw_permission_claim_operation, withdraw_permission_delete_operation, committee_member_create_operation, committee_member_update_operation, committee_member_update_global_parameters_operation, vesting_balance_create_operation, vesting_balance_withdraw_operation, worker_create_operation, custom_operation, assert_operation, balance_claim_operation, override_transfer_operation, transfer_to_blind_operation, blind_transfer_operation, transfer_from_blind_operation, asset_settle_cancel_operation, asset_claim_fees_operation, fba_distribute_operation, bid_collateral_operation, execute_bid_operation, asset_claim_pool_operation, asset_update_issuer_operation, htlc_create_operation, htlc_redeem_operation, htlc_redeemed_operation, htlc_extend_operation, htlc_refund_operation, custom_authority_create_operation, custom_authority_update_operation, custom_authority_delete_operation, ticket_create_operation, ticket_update_operation, liquidity_pool_create_operation, liquidity_pool_delete_operation, liquidity_pool_deposit_operation, liquidity_pool_withdraw_operation, liquidity_pool_exchange_operation &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__operations.html#gadd00b6b45ba587b94dba2c8ec1d129a0">graphene::protocol::operation</a></td></tr>
+<tr class="separator:gadd00b6b45ba587b94dba2c8ec1d129a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>A set of valid comands for mutating the globally shared state. </p>
@@ -277,7 +294,7 @@ Explicit Relevant Accounts</h2>
 <p>A flat_set is used to make sure that only one extension of each type is added and that they are added in order.</p>
 <dl class="section note"><dt>Note</dt><dd>static_variant compares only the type tag and not the content. </dd></dl>
 
-<p>Definition at line <a class="el" href="base_8hpp_source.html#l00128">128</a> of file <a class="el" href="base_8hpp_source.html">base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="base_8hpp_source.html#l00141">141</a> of file <a class="el" href="base_8hpp_source.html">base.hpp</a>.</p>
 
 </div>
 </div>
@@ -292,43 +309,43 @@ Explicit Relevant Accounts</h2>
 </div><div class="memdoc">
 <p>For future expansion many structus include a single member of type extensions_type that can be changed when updating a protocol. You can always add new types to a static_variant without breaking backward compatibility. </p>
 
-<p>Definition at line <a class="el" href="base_8hpp_source.html#l00119">119</a> of file <a class="el" href="base_8hpp_source.html">base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="base_8hpp_source.html#l00132">132</a> of file <a class="el" href="base_8hpp_source.html">base.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga8cd21c685484b07a3342347581bcc2ab"></a>
+<a class="anchor" id="gadd00b6b45ba587b94dba2c8ec1d129a0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classfc_1_1static__variant.html">fc::static_variant</a>&lt; transfer_operation, limit_order_create_operation, limit_order_cancel_operation, call_order_update_operation, fill_order_operation, account_create_operation, account_update_operation, account_whitelist_operation, account_upgrade_operation, account_transfer_operation, asset_create_operation, asset_update_operation, asset_update_bitasset_operation, asset_update_feed_producers_operation, asset_issue_operation, asset_reserve_operation, asset_fund_fee_pool_operation, asset_settle_operation, asset_global_settle_operation, asset_publish_feed_operation, witness_create_operation, witness_update_operation, proposal_create_operation, proposal_update_operation, proposal_delete_operation, withdraw_permission_create_operation, withdraw_permission_update_operation, withdraw_permission_claim_operation, withdraw_permission_delete_operation, committee_member_create_operation, committee_member_update_operation, committee_member_update_global_parameters_operation, vesting_balance_create_operation, vesting_balance_withdraw_operation, worker_create_operation, custom_operation, assert_operation, balance_claim_operation, override_transfer_operation, transfer_to_blind_operation, blind_transfer_operation, transfer_from_blind_operation, asset_settle_cancel_operation, asset_claim_fees_operation, fba_distribute_operation, bid_collateral_operation, execute_bid_operation, asset_claim_pool_operation, asset_update_issuer_operation, htlc_create_operation, htlc_redeem_operation, htlc_redeemed_operation, htlc_extend_operation, htlc_refund_operation, custom_authority_create_operation, custom_authority_update_operation, custom_authority_delete_operation, ticket_create_operation, ticket_update_operation &gt; <a class="el" href="group__operations.html#ga8cd21c685484b07a3342347581bcc2ab">graphene::protocol::operation</a></td>
+          <td class="memname">typedef <a class="el" href="classfc_1_1static__variant.html">fc::static_variant</a>&lt; transfer_operation, limit_order_create_operation, limit_order_cancel_operation, call_order_update_operation, fill_order_operation, account_create_operation, account_update_operation, account_whitelist_operation, account_upgrade_operation, account_transfer_operation, asset_create_operation, asset_update_operation, asset_update_bitasset_operation, asset_update_feed_producers_operation, asset_issue_operation, asset_reserve_operation, asset_fund_fee_pool_operation, asset_settle_operation, asset_global_settle_operation, asset_publish_feed_operation, witness_create_operation, witness_update_operation, proposal_create_operation, proposal_update_operation, proposal_delete_operation, withdraw_permission_create_operation, withdraw_permission_update_operation, withdraw_permission_claim_operation, withdraw_permission_delete_operation, committee_member_create_operation, committee_member_update_operation, committee_member_update_global_parameters_operation, vesting_balance_create_operation, vesting_balance_withdraw_operation, worker_create_operation, custom_operation, assert_operation, balance_claim_operation, override_transfer_operation, transfer_to_blind_operation, blind_transfer_operation, transfer_from_blind_operation, asset_settle_cancel_operation, asset_claim_fees_operation, fba_distribute_operation, bid_collateral_operation, execute_bid_operation, asset_claim_pool_operation, asset_update_issuer_operation, htlc_create_operation, htlc_redeem_operation, htlc_redeemed_operation, htlc_extend_operation, htlc_refund_operation, custom_authority_create_operation, custom_authority_update_operation, custom_authority_delete_operation, ticket_create_operation, ticket_update_operation, liquidity_pool_create_operation, liquidity_pool_delete_operation, liquidity_pool_deposit_operation, liquidity_pool_withdraw_operation, liquidity_pool_exchange_operation &gt; <a class="el" href="group__operations.html#gadd00b6b45ba587b94dba2c8ec1d129a0">graphene::protocol::operation</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Defines the set of valid operations as a discriminated union type. </p>
 
-<p>Definition at line <a class="el" href="operations_8hpp_source.html#l00112">112</a> of file <a class="el" href="operations_8hpp_source.html">operations.hpp</a>.</p>
+<p>Definition at line <a class="el" href="operations_8hpp_source.html#l00118">118</a> of file <a class="el" href="operations_8hpp_source.html">operations.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga89a307152d9c1f5b69f80e3ebaf65c49"></a>
+<a class="anchor" id="ga19d13288b7f22d2f236878f4882d8789"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classfc_1_1static__variant.html">fc::static_variant</a>&lt;void_result,object_id_type,asset,generic_operation_result&gt; <a class="el" href="group__operations.html#ga89a307152d9c1f5b69f80e3ebaf65c49">graphene::protocol::operation_result</a></td>
+          <td class="memname">typedef <a class="el" href="classfc_1_1static__variant.html">fc::static_variant</a>&lt; void_result, object_id_type, asset, generic_operation_result, generic_exchange_operation_result &gt; <a class="el" href="group__operations.html#ga19d13288b7f22d2f236878f4882d8789">graphene::protocol::operation_result</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="base_8hpp_source.html#l00095">95</a> of file <a class="el" href="base_8hpp_source.html">base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="base_8hpp_source.html#l00108">108</a> of file <a class="el" href="base_8hpp_source.html">base.hpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 30 2020 00:56:51 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 22 2020 19:51:18 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">4.0.0</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -183,7 +183,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="structgraphene_1_1chain_1_1price__feed__with__icr.html#a8739008b85bb58a3aeebbb5dab0fb6ab">graphene::chain::price_feed_with_icr</a>
 </li>
 <li>calculate_market_fee()
-: <a class="el" href="classgraphene_1_1chain_1_1database.html#a467912ad5272b708b6088316a9648d2c">graphene::chain::database</a>
+: <a class="el" href="classgraphene_1_1chain_1_1database.html#a0cb0a35eccad8458442ecc4d1af1ca92">graphene::chain::database</a>
 </li>
 <li>calculate_merkle_root()
 : <a class="el" href="classgraphene_1_1protocol_1_1signed__block.html#a01b457de9b5ccbf939a9d49cad1066f3">graphene::protocol::signed_block</a>
@@ -418,6 +418,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classfc_1_1bloom__filter.html#a4ec7826f181bf204946cec0ef2b27842">fc::bloom_filter</a>
 , <a class="el" href="classfc_1_1stringstream.html#a8723d4b7fe5111e7903224a713986860">fc::stringstream</a>
 , <a class="el" href="classfc_1_1variant.html#a201c1ea686618f06d5839e541da3d641">fc::variant</a>
+, <a class="el" href="classgraphene_1_1net_1_1detail_1_1concurrent__unordered__set.html#afa3ade3b60effcec2222e1ebbe0317e6">graphene::net::detail::concurrent_unordered_set&lt; Key, Hash, Pred &gt;</a>
 , <a class="el" href="classgraphene_1_1net_1_1detail_1_1peer__database__impl.html#a8abd5a750f404b78f9832eb307d241ed">graphene::net::detail::peer_database_impl</a>
 , <a class="el" href="classgraphene_1_1net_1_1peer__database.html#a1eb162c7285ff10b3a23b4a92d01447a">graphene::net::peer_database</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1authority.html#aa90e4efc8f6d9e89c03d8b57cefa7c39">graphene::protocol::authority</a>
@@ -474,6 +475,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classfc_1_1http_1_1websocket__client.html#aa4014b5f7e29f10fbf32593a09b19067">fc::http::websocket_client</a>
 , <a class="el" href="classfc_1_1http_1_1websocket__connection.html#a5b6f7172afd902f1a2673b94483c08f1">fc::http::websocket_connection</a>
 , <a class="el" href="classfc_1_1http_1_1websocket__server.html#a196f74fd9cfa8ff194da156c8386112f">fc::http::websocket_server</a>
+, <a class="el" href="classfc_1_1http_1_1websocket__tls__server.html#a007add9227f256c9f7e81631614e66af">fc::http::websocket_tls_server</a>
 , <a class="el" href="classfc_1_1ifstream.html#a12bad1b934f9cc99c10325edb7c3be64">fc::ifstream</a>
 , <a class="el" href="classfc_1_1ofstream.html#afee5e275c88ce4d16e761230114feb91">fc::ofstream</a>
 , <a class="el" href="classfc_1_1ostream.html#ab0055550951d519b5cf95c2f4d07379c">fc::ostream</a>
@@ -583,8 +585,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="structfc_1_1context.html#aa52042dc63f18f79b47e217ffc50fc7f">fc::context</a>
 </li>
 <li>completion_handler_impl()
-: <a class="el" href="classfc_1_1detail_1_1completion__handler__impl.html#a88af2a495dfc834391617e2b2e6f3b22">fc::detail::completion_handler_impl&lt; Functor, T &gt;</a>
-, <a class="el" href="classfc_1_1detail_1_1completion__handler__impl_3_01_functor_00_01void_01_4.html#a4179c9ae5432682dc7b4c901b1782e82">fc::detail::completion_handler_impl&lt; Functor, void &gt;</a>
+: <a class="el" href="classfc_1_1detail_1_1completion__handler__impl.html#ad0efc1629b8437661cd017c7cf5ad2ae">fc::detail::completion_handler_impl&lt; Functor, T &gt;</a>
+, <a class="el" href="classfc_1_1detail_1_1completion__handler__impl_3_01_functor_00_01void_01_4.html#a5248f02d373af210d55c1b5a276eb660">fc::detail::completion_handler_impl&lt; Functor, void &gt;</a>
 </li>
 <li>completion_promise
 : <a class="el" href="classfc_1_1detail_1_1rate__limited__operation.html#ac8b6e31c5908b626e58252fe8048f8b9">fc::detail::rate_limited_operation</a>
@@ -602,11 +604,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classfc_1_1bloom__parameters.html#a9326bb497296d12119fd1f55bd5273b3">fc::bloom_parameters</a>
 </li>
 <li>compute_shared_key()
-: <a class="el" href="structfc_1_1diffie__hellman.html#a3c855b77794dcac2a1322d623aa5a7ce">fc::diffie_hellman</a>
+: <a class="el" href="structfc_1_1diffie__hellman.html#a303a26a0c28e9d007cba7a217bad2aa8">fc::diffie_hellman</a>
 </li>
 <li>con_map
-: <a class="el" href="classfc_1_1http_1_1detail_1_1websocket__server__impl.html#ae9d748240a56b123a127056e98bb12c6">fc::http::detail::websocket_server_impl</a>
-, <a class="el" href="classfc_1_1http_1_1detail_1_1websocket__tls__server__impl.html#a96cc287da43a5d64eeaf5d7d70643f96">fc::http::detail::websocket_tls_server_impl</a>
+: <a class="el" href="classfc_1_1http_1_1detail_1_1generic__websocket__server__impl.html#ac56760a220273685b80c5297429be188">fc::http::detail::generic_websocket_server_impl&lt; T &gt;</a>
 </li>
 <li>con_msg_manager_type
 : <a class="el" href="structfc_1_1http_1_1detail_1_1asio__tls__stub__log.html#a7ccce377d280f7434b9036b84e776c77">fc::http::detail::asio_tls_stub_log</a>
@@ -647,8 +648,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="structgraphene_1_1wallet_1_1blind__confirmation_1_1output.html#a97e00fd1fc6fa2fde1a7ac075e14275b">graphene::wallet::blind_confirmation::output</a>
 </li>
 <li>connect()
-: <a class="el" href="classfc_1_1http_1_1websocket__client.html#a0513ce0b2f20577c363482c97fc9767d">fc::http::websocket_client</a>
-, <a class="el" href="classfc_1_1http_1_1websocket__tls__client.html#ad91dcdd5cd0428cb9494a23b4e540bfc">fc::http::websocket_tls_client</a>
+: <a class="el" href="classfc_1_1http_1_1detail_1_1generic__websocket__client__impl.html#aae332c0d1219c5755d1af658b9da274d">fc::http::detail::generic_websocket_client_impl&lt; T &gt;</a>
+, <a class="el" href="classfc_1_1http_1_1websocket__client.html#a0513ce0b2f20577c363482c97fc9767d">fc::http::websocket_client</a>
 , <a class="el" href="classfc_1_1udp__socket.html#a4b075eefe239086d4900d38aad6b631c">fc::udp_socket</a>
 , <a class="el" href="classgraphene_1_1delayed__node_1_1delayed__node__plugin.html#a2ffa01694f47d38110f6ea8d507065ea">graphene::delayed_node::delayed_node_plugin</a>
 </li>
@@ -706,20 +707,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classgraphene_1_1net_1_1peer__connection.html#a1fc3e7d2bae4008c4c67164995f8c560">graphene::net::peer_connection</a>
 </li>
 <li>connection_rejected_message()
-: <a class="el" href="structgraphene_1_1net_1_1connection__rejected__message.html#a5e746be5944040b052d6943a5f992305">graphene::net::connection_rejected_message</a>
+: <a class="el" href="structgraphene_1_1net_1_1connection__rejected__message.html#a4fba9e51a7fbfbbf00e946070d26291b">graphene::net::connection_rejected_message</a>
 </li>
 <li>connection_terminated_time
 : <a class="el" href="classgraphene_1_1net_1_1peer__connection.html#a5ca734dc0a0a7effb3973719986c66d8">graphene::net::peer_connection</a>
 </li>
 <li>console_appender()
-: <a class="el" href="classfc_1_1console__appender.html#a0a006a1985fca8fa9168d983d2be0030">fc::console_appender</a>
+: <a class="el" href="classfc_1_1console__appender.html#a2ce8c326496cfd455d390e50ceee6eef">fc::console_appender</a>
 </li>
 <li>console_default
 : <a class="el" href="structfc_1_1console__appender_1_1color.html#ae3f964a317f52c91550bd98bb4e4402da83d2b7a506e9f71773b9b8bc5f922843">fc::console_appender::color</a>
 </li>
 <li>const_iterator
 : <a class="el" href="classfc_1_1mutable__variant__object.html#aaf119e677f1969d7b12699591f9bce34">fc::mutable_variant_object</a>
-, <a class="el" href="classgraphene_1_1db_1_1simple__index_1_1const__iterator.html#ad8887bb52d95da40e56b5dac520c14d6">graphene::db::simple_index&lt; T &gt;::const_iterator</a>
+, <a class="el" href="classgraphene_1_1db_1_1simple__index_1_1const__iterator.html#acfb86d8785c3238dc7d7082e9cc8de7c">graphene::db::simple_index&lt; T &gt;::const_iterator</a>
 </li>
 <li>construct()
 : <a class="el" href="structfc_1_1static__variant_1_1import__helper.html#a9f56e4a9b31210b239e68bdeb276884e">fc::static_variant&lt; Types &gt;::import_helper&lt; T, typename &gt;</a>
@@ -736,7 +737,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classgraphene_1_1chain_1_1asset__claim__fees__evaluator.html#a3c8a4c8e628348c158df6dabcd3e4155">graphene::chain::asset_claim_fees_evaluator</a>
 </li>
 <li>contains()
-: <a class="el" href="classfc_1_1bloom__filter.html#acb5bd7241b8c3176ea24cdd762fdc66a">fc::bloom_filter</a>
+: <a class="el" href="classfc_1_1bloom__filter.html#afe286eaca8cece3a42bf52d4c155ab18">fc::bloom_filter</a>
 , <a class="el" href="classfc_1_1variant__object.html#afd55c650656a84b4edcb76e6bf349e93">fc::variant_object</a>
 , <a class="el" href="classgraphene_1_1chain_1_1block__database.html#a4140021d03baead2922c71c2e45c12bc">graphene::chain::block_database</a>
 </li>
@@ -808,8 +809,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classfc_1_1appender.html#a732132f519fa52070b43d1bda25baff0">fc::appender</a>
 , <a class="el" href="classfc_1_1appender__factory.html#ad16e56f8e6145ce1cb7280d05521f08e">fc::appender_factory</a>
 , <a class="el" href="classfc_1_1detail_1_1appender__factory__impl.html#a2c2697be7b6738ca12c8be83edb9d159">fc::detail::appender_factory_impl&lt; T &gt;</a>
-, <a class="el" href="classfc_1_1promise.html#aea1eedc4d2baf928b35a69eba569cdd2">fc::promise&lt; T &gt;</a>
-, <a class="el" href="classfc_1_1promise_3_01void_01_4.html#a398b075be8e23f588cf292acbea4f203">fc::promise&lt; void &gt;</a>
+, <a class="el" href="classfc_1_1promise.html#a45f8130cf579b72aa9236b728e6dbcb4">fc::promise&lt; T &gt;</a>
+, <a class="el" href="classfc_1_1promise_3_01void_01_4.html#a8a80df6e6f426be5d5f82fd5ef6cbf82">fc::promise&lt; void &gt;</a>
 , <a class="el" href="classfc_1_1task.html#a949bfc2763cb8de0e64894f2eede3000">fc::task&lt; R, FunctorSize &gt;</a>
 , <a class="el" href="classfc_1_1task_3_01void_00_01_functor_size_01_4.html#a6188813464c27cd20f22b75d5125fcb5">fc::task&lt; void, FunctorSize &gt;</a>
 , <a class="el" href="classgraphene_1_1db_1_1generic__index.html#a980c6c1e00630ff783bdd5d3e2ca11a1">graphene::db::generic_index&lt; ObjectType, MultiIndexType &gt;</a>
@@ -934,7 +935,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classfc_1_1thread.html#acbd5476f0efb729131430a23086ae985">fc::thread</a>
 </li>
 <li>current_time_reply_message()
-: <a class="el" href="structgraphene_1_1net_1_1current__time__reply__message.html#a7fc818bc888b08cd3709b17c2330f171">graphene::net::current_time_reply_message</a>
+: <a class="el" href="structgraphene_1_1net_1_1current__time__reply__message.html#a7c3f084e44815ef30c107b7f9cea48dd">graphene::net::current_time_reply_message</a>
 </li>
 <li>current_time_request_message()
 : <a class="el" href="structgraphene_1_1net_1_1current__time__request__message.html#ab7953b7de9b4c620a95ad0f471d9f439">graphene::net::current_time_request_message</a>
@@ -973,7 +974,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 30 2020 00:57:02 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 22 2020 19:51:23 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">4.0.0</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -98,6 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;mutex&gt;</code><br />
 <code>#include &lt;<a class="el" href="thread_8hpp_source.html">fc/thread/thread.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="logger_8hpp_source.html">fc/log/logger.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="tcp__socket_8hpp_source.html">fc/network/tcp_socket.hpp</a>&gt;</code><br />
@@ -111,6 +112,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1concurrent__unordered__set.html">graphene::net::detail::concurrent_unordered_set&lt; Key, Hash, Pred &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1net_1_1detail_1_1prioritized__item__id.html">graphene::net::detail::prioritized_item_id</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1statistics__gathering__node__delegate__wrapper.html">graphene::net::detail::statistics_gathering_node_delegate_wrapper</a></td></tr>
@@ -173,7 +176,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">mutable</span> call_stats_accumulator BOOST_PP_CAT(_, BOOST_PP_CAT(method_name, _execution_accumulator)); \</div><div class="line">      mutable call_stats_accumulator BOOST_PP_CAT(_, BOOST_PP_CAT(method_name, _delay_before_accumulator)); \</div><div class="line">      mutable call_stats_accumulator BOOST_PP_CAT(_, BOOST_PP_CAT(method_name, _delay_after_accumulator));</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00067">67</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00169">169</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -187,7 +190,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00175">175</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00277">277</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -201,7 +204,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(has_item) \</div><div class="line">                               (handle_message) \</div><div class="line">                               (handle_block) \</div><div class="line">                               (handle_transaction) \</div><div class="line">                               (get_block_ids) \</div><div class="line">                               (get_item) \</div><div class="line">                               (get_chain_id) \</div><div class="line">                               (get_blockchain_synopsis) \</div><div class="line">                               (sync_status) \</div><div class="line">                               (connection_count_changed) \</div><div class="line">                               (get_block_number) \</div><div class="line">                               (get_block_time) \</div><div class="line">                               (get_head_block_id) \</div><div class="line">                               (estimate_last_known_fork_from_git_revision_timestamp) \</div><div class="line">                               (error_encountered) \</div><div class="line">                               (get_current_block_interval_in_seconds)</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00048">48</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00150">150</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -215,14 +218,14 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00176">176</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00278">278</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 30 2020 00:56:51 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 22 2020 19:51:18 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

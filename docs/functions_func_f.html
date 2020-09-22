@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">4.0.0</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -174,6 +174,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="structgraphene_1_1protocol_1_1htlc__refund__operation.html#a18a46ad0df8d75220e2699c63b8cbbc4">graphene::protocol::htlc_refund_operation</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1limit__order__cancel__operation.html#a492ef27191d2f705c6f18ae96591707f">graphene::protocol::limit_order_cancel_operation</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1limit__order__create__operation.html#afe59319c9a0ec219645e6d7c0b1b0f89">graphene::protocol::limit_order_create_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__create__operation.html#a2be34821af468c63c342ad2cab1c202b">graphene::protocol::liquidity_pool_create_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__delete__operation.html#ac3c88bdc8b1ff0cf0be644fdc1aac143">graphene::protocol::liquidity_pool_delete_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__deposit__operation.html#ac8e07e5831e17849864685e394c8d9d1">graphene::protocol::liquidity_pool_deposit_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__exchange__operation.html#a1e242c29429090d4f2a5888719552f85">graphene::protocol::liquidity_pool_exchange_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1liquidity__pool__withdraw__operation.html#a269b5a3b180d489b01583c8e713a42ea">graphene::protocol::liquidity_pool_withdraw_operation</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1override__transfer__operation.html#a6e32a9c61f4d9d77dea572d9b067f760">graphene::protocol::override_transfer_operation</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1proposal__create__operation.html#a1b50961a1fb9d7d9f3c8db58362df692">graphene::protocol::proposal_create_operation</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1proposal__delete__operation.html#add447fb0c72a1109fcc2feb749a56e03">graphene::protocol::proposal_delete_operation</a>
@@ -261,7 +266,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classgraphene_1_1chain_1_1database.html#a88144a9795e65d5836711f69a1848bdb">graphene::chain::database</a>
 </li>
 <li>fill_order_operation()
-: <a class="el" href="structgraphene_1_1protocol_1_1fill__order__operation.html#a2c3a48c8e20fefe3218ce76ca430a75c">graphene::protocol::fill_order_operation</a>
+: <a class="el" href="structgraphene_1_1protocol_1_1fill__order__operation.html#a3309775f220b880cc33897bd7a5afa94">graphene::protocol::fill_order_operation</a>
 </li>
 <li>fill_settle_order()
 : <a class="el" href="classgraphene_1_1chain_1_1database.html#aa5036ea052f41fe75fa1a381234b23c7">graphene::chain::database</a>
@@ -272,9 +277,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classgraphene_1_1db_1_1direct__index.html#a22e94c8ac00f4bab7899d131a495df98">graphene::db::direct_index&lt; Object, chunkbits &gt;</a>
 , <a class="el" href="classgraphene_1_1db_1_1generic__index.html#a6f8e4f495a8b0555383ce4ba93892ce6">graphene::db::generic_index&lt; ObjectType, MultiIndexType &gt;</a>
 , <a class="el" href="classgraphene_1_1db_1_1index.html#a9649d19814aa188652d6a643bfe134b7">graphene::db::index</a>
-, <a class="el" href="classgraphene_1_1db_1_1object__database.html#aefc63988a96581c41718563bb64c1a21">graphene::db::object_database</a>
+, <a class="el" href="classgraphene_1_1db_1_1object__database.html#acab95b179924b9e067a4b5ad38fb6c3a">graphene::db::object_database</a>
 , <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a9905efcbf28d8288ddc35c7de26149c5">graphene::db::primary_index&lt; DerivedIndex, DirectBits &gt;</a>
 , <a class="el" href="classgraphene_1_1db_1_1simple__index.html#ad951abc2f20ca008951c5257ca5f2a92">graphene::db::simple_index&lt; T &gt;</a>
+, <a class="el" href="classgraphene_1_1net_1_1detail_1_1concurrent__unordered__set.html#a101ef4148815748060b51cdb5b5b4ae6">graphene::net::detail::concurrent_unordered_set&lt; Key, Hash, Pred &gt;</a>
 </li>
 <li>find_asset()
 : <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a3b534cf7bd913fd0301a94c0bd0b3308">graphene::wallet::detail::wallet_api_impl</a>
@@ -359,7 +365,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="structgraphene_1_1wallet_1_1impl_1_1from__which__visitor.html#a243ec4648a7c80a92796a98a138831db">graphene::wallet::impl::from_which_visitor&lt; StaticVariant &gt;</a>
 </li>
 <li>functor()
-: <a class="el" href="structfc_1_1identity__member__with__optionals.html#a28c72e51f720c203222bc0802e177bcb">fc::identity_member_with_optionals</a>
+: <a class="el" href="structfc_1_1identity__member__with__optionals.html#a737589ab405c4463fbf8e03d5d119d7d">fc::identity_member_with_optionals</a>
 </li>
 <li>fund_asset_fee_pool()
 : <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#af535f8b9766f950f81327bf75a481e41">graphene::wallet::detail::wallet_api_impl</a>
@@ -367,16 +373,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>future()
 : <a class="el" href="classfc_1_1future.html#a0240dba87fd1b298791a54a6d8e5c38d">fc::future&lt; T &gt;</a>
-, <a class="el" href="classfc_1_1future_3_01void_01_4.html#a554356edefb14a0fd33f5f773e548711">fc::future&lt; void &gt;</a>
+, <a class="el" href="classfc_1_1future_3_01void_01_4.html#add1c49e17150920848e858a6b418229a">fc::future&lt; void &gt;</a>
 </li>
 <li>fwd()
-: <a class="el" href="classfc_1_1fwd.html#a485a231bb037d6567c0aadc6f1261b6a">fc::fwd&lt; T, S, Align &gt;</a>
+: <a class="el" href="classfc_1_1fwd.html#a25e5227132296c3266b127f5357f975c">fc::fwd&lt; T, S, Align &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 30 2020 00:57:02 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 22 2020 19:51:23 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

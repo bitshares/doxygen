@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">4.0.0</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -105,7 +105,8 @@ Inheritance diagram for fc::http::detail::websocket_connection_impl&lt; T &gt;:<
  <div class="center">
   <img src="classfc_1_1http_1_1detail_1_1websocket__connection__impl.png" usemap="#fc::http::detail::websocket_5Fconnection_5Fimpl_3C_20T_20_3E_map" alt=""/>
   <map id="fc::http::detail::websocket_5Fconnection_5Fimpl_3C_20T_20_3E_map" name="fc::http::detail::websocket_connection_impl&lt; T &gt;_map">
-<area href="classfc_1_1http_1_1websocket__connection.html" alt="fc::http::websocket_connection" shape="rect" coords="0,0,279,24"/>
+<area href="classfc_1_1http_1_1websocket__connection.html" alt="fc::http::websocket_connection" shape="rect" coords="0,0,352,24"/>
+<area href="classfc_1_1http_1_1detail_1_1possibly__proxied__websocket__connection.html" alt="fc::http::detail::possibly_proxied_websocket_connection&lt; T &gt;" shape="rect" coords="0,112,352,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -136,6 +137,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a708dadc0a395fe8ca7fc6d2637fb0fdd inherit pub_methods_classfc_1_1http_1_1websocket__connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44c9e5968abebd69f0882271a37f4d4c inherit pub_methods_classfc_1_1http_1_1websocket__connection"><td class="memItemLeft" align="right" valign="top">boost::any &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfc_1_1http_1_1websocket__connection.html#a44c9e5968abebd69f0882271a37f4d4c">get_session_data</a> ()</td></tr>
 <tr class="separator:a44c9e5968abebd69f0882271a37f4d4c inherit pub_methods_classfc_1_1http_1_1websocket__connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a300253b7da8fcee2a8e1563595fd2c9c inherit pub_methods_classfc_1_1http_1_1websocket__connection"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfc_1_1http_1_1websocket__connection.html#a300253b7da8fcee2a8e1563595fd2c9c">get_remote_endpoint_string</a> () const </td></tr>
+<tr class="separator:a300253b7da8fcee2a8e1563595fd2c9c inherit pub_methods_classfc_1_1http_1_1websocket__connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -144,13 +147,19 @@ Public Attributes</h2></td></tr>
 <tr class="inherit_header pub_attribs_classfc_1_1http_1_1websocket__connection"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classfc_1_1http_1_1websocket__connection')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classfc_1_1http_1_1websocket__connection.html">fc::http::websocket_connection</a></td></tr>
 <tr class="memitem:af4959cf610382457a4f002d1f73137b3 inherit pub_attribs_classfc_1_1http_1_1websocket__connection"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefc.html#a6c2f257e2f2f1a64dbdfe8b7b5e0f411">fc::signal</a>&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfc_1_1http_1_1websocket__connection.html#af4959cf610382457a4f002d1f73137b3">closed</a></td></tr>
 <tr class="separator:af4959cf610382457a4f002d1f73137b3 inherit pub_attribs_classfc_1_1http_1_1websocket__connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_classfc_1_1http_1_1websocket__connection"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classfc_1_1http_1_1websocket__connection')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classfc_1_1http_1_1websocket__connection.html">fc::http::websocket_connection</a></td></tr>
+<tr class="memitem:a4845d701c1610ca904c545efb11b6e39 inherit pro_attribs_classfc_1_1http_1_1websocket__connection"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfc_1_1http_1_1websocket__connection.html#a4845d701c1610ca904c545efb11b6e39">_remote_endpoint</a></td></tr>
+<tr class="separator:a4845d701c1610ca904c545efb11b6e39 inherit pro_attribs_classfc_1_1http_1_1websocket__connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
 class fc::http::detail::websocket_connection_impl&lt; T &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00196">196</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00183">183</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a3739b67ae9b67d3e1acf400f90dc6dd6"></a>
 <div class="memitem">
@@ -176,7 +185,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00199">199</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00186">186</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
 
 </div>
 </div>
@@ -203,7 +212,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00203">203</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00191">191</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
 
 </div>
 </div>
@@ -244,7 +253,7 @@ template&lt;typename T &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classfc_1_1http_1_1websocket__connection.html#a5b6f7172afd902f1a2673b94483c08f1">fc::http::websocket_connection</a>.</p>
 
-<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00214">214</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00202">202</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
 
 </div>
 </div>
@@ -274,7 +283,7 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="classfc_1_1http_1_1websocket__connection.html#add7b0929a42e3288d476679ce6152355">fc::http::websocket_connection</a>.</p>
 
-<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00219">219</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00207">207</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
 
 </div>
 </div>
@@ -304,7 +313,7 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="classfc_1_1http_1_1websocket__connection.html#a384b2ebf034fa721a7f746b295f5b752">fc::http::websocket_connection</a>.</p>
 
-<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00207">207</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00195">195</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
 
 </div>
 </div>
@@ -321,7 +330,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00224">224</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8cpp_source.html#l00212">212</a> of file <a class="el" href="websocket_8cpp_source.html">websocket.cpp</a>.</p>
 
 </div>
 </div>
@@ -331,7 +340,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 30 2020 00:56:53 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 22 2020 19:51:19 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
