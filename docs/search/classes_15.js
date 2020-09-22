@@ -10,7 +10,6 @@ var searchData=
   ['websocket_5fconnection_5fimpl',['websocket_connection_impl',['../classfc_1_1http_1_1detail_1_1websocket__connection__impl.html',1,'fc::http::detail']]],
   ['websocket_5fserver',['websocket_server',['../classfc_1_1http_1_1websocket__server.html',1,'fc::http']]],
   ['websocket_5fserver_5fimpl',['websocket_server_impl',['../classfc_1_1http_1_1detail_1_1websocket__server__impl.html',1,'fc::http::detail']]],
-  ['websocket_5ftls_5fclient',['websocket_tls_client',['../classfc_1_1http_1_1websocket__tls__client.html',1,'fc::http']]],
   ['websocket_5ftls_5fclient_5fimpl',['websocket_tls_client_impl',['../classfc_1_1http_1_1detail_1_1websocket__tls__client__impl.html',1,'fc::http::detail']]],
   ['websocket_5ftls_5fserver',['websocket_tls_server',['../classfc_1_1http_1_1websocket__tls__server.html',1,'fc::http']]],
   ['websocket_5ftls_5fserver_5fimpl',['websocket_tls_server_impl',['../classfc_1_1http_1_1detail_1_1websocket__tls__server__impl.html',1,'fc::http::detail']]],

@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">4.0.0</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -94,6 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classfc_1_1http_1_1websocket__connection-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">fc::http::websocket_connection Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -107,7 +108,8 @@ Inheritance diagram for fc::http::websocket_connection:</div>
  <div class="center">
   <img src="classfc_1_1http_1_1websocket__connection.png" usemap="#fc::http::websocket_5Fconnection_map" alt=""/>
   <map id="fc::http::websocket_5Fconnection_map" name="fc::http::websocket_connection_map">
-<area href="classfc_1_1http_1_1detail_1_1websocket__connection__impl.html" alt="fc::http::detail::websocket_connection_impl&lt; T &gt;" shape="rect" coords="0,56,279,80"/>
+<area href="classfc_1_1http_1_1detail_1_1websocket__connection__impl.html" alt="fc::http::detail::websocket_connection_impl&lt; T &gt;" shape="rect" coords="0,56,352,80"/>
+<area href="classfc_1_1http_1_1detail_1_1possibly__proxied__websocket__connection.html" alt="fc::http::detail::possibly_proxied_websocket_connection&lt; T &gt;" shape="rect" coords="0,112,352,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -133,15 +135,22 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a44c9e5968abebd69f0882271a37f4d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add7b0929a42e3288d476679ce6152355"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfc_1_1http_1_1websocket__connection.html#add7b0929a42e3288d476679ce6152355">get_request_header</a> (const std::string &amp;key)=0</td></tr>
 <tr class="separator:add7b0929a42e3288d476679ce6152355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a300253b7da8fcee2a8e1563595fd2c9c"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfc_1_1http_1_1websocket__connection.html#a300253b7da8fcee2a8e1563595fd2c9c">get_remote_endpoint_string</a> () const </td></tr>
+<tr class="separator:a300253b7da8fcee2a8e1563595fd2c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:af4959cf610382457a4f002d1f73137b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefc.html#a6c2f257e2f2f1a64dbdfe8b7b5e0f411">fc::signal</a>&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfc_1_1http_1_1websocket__connection.html#af4959cf610382457a4f002d1f73137b3">closed</a></td></tr>
 <tr class="separator:af4959cf610382457a4f002d1f73137b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a4845d701c1610ca904c545efb11b6e39"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfc_1_1http_1_1websocket__connection.html#a4845d701c1610ca904c545efb11b6e39">_remote_endpoint</a></td></tr>
+<tr class="separator:a4845d701c1610ca904c545efb11b6e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="websocket_8hpp_source.html#l00018">18</a> of file <a class="el" href="websocket_8hpp_source.html">websocket.hpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8hpp_source.html#l00020">20</a> of file <a class="el" href="websocket_8hpp_source.html">websocket.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a49aa1fc54136fef5933540dd0823497f"></a>
 <div class="memitem">
@@ -164,7 +173,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="websocket_8hpp_source.html#l00021">21</a> of file <a class="el" href="websocket_8hpp_source.html">websocket.hpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8hpp_source.html#l00023">23</a> of file <a class="el" href="websocket_8hpp_source.html">websocket.hpp</a>.</p>
 
 </div>
 </div>
@@ -203,7 +212,32 @@ Public Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classfc_1_1http_1_1detail_1_1websocket__connection__impl.html#a4acaa8c78b8ad95b014620a62bf51227">fc::http::detail::websocket_connection_impl&lt; T &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="websocket_8hpp_source.html#l00023">23</a> of file <a class="el" href="websocket_8hpp_source.html">websocket.hpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8hpp_source.html#l00025">25</a> of file <a class="el" href="websocket_8hpp_source.html">websocket.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a300253b7da8fcee2a8e1563595fd2c9c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; fc::http::websocket_connection::get_remote_endpoint_string </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="websocket_8hpp_source.html#l00037">37</a> of file <a class="el" href="websocket_8hpp_source.html">websocket.hpp</a>.</p>
 
 </div>
 </div>
@@ -254,7 +288,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="websocket_8hpp_source.html#l00031">31</a> of file <a class="el" href="websocket_8hpp_source.html">websocket.hpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8hpp_source.html#l00033">33</a> of file <a class="el" href="websocket_8hpp_source.html">websocket.hpp</a>.</p>
 
 </div>
 </div>
@@ -280,7 +314,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="websocket_8hpp_source.html#l00025">25</a> of file <a class="el" href="websocket_8hpp_source.html">websocket.hpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8hpp_source.html#l00027">27</a> of file <a class="el" href="websocket_8hpp_source.html">websocket.hpp</a>.</p>
 
 </div>
 </div>
@@ -306,7 +340,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="websocket_8hpp_source.html#l00028">28</a> of file <a class="el" href="websocket_8hpp_source.html">websocket.hpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8hpp_source.html#l00030">30</a> of file <a class="el" href="websocket_8hpp_source.html">websocket.hpp</a>.</p>
 
 </div>
 </div>
@@ -332,7 +366,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="websocket_8hpp_source.html#l00024">24</a> of file <a class="el" href="websocket_8hpp_source.html">websocket.hpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8hpp_source.html#l00026">26</a> of file <a class="el" href="websocket_8hpp_source.html">websocket.hpp</a>.</p>
 
 </div>
 </div>
@@ -358,7 +392,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="websocket_8hpp_source.html#l00027">27</a> of file <a class="el" href="websocket_8hpp_source.html">websocket.hpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8hpp_source.html#l00029">29</a> of file <a class="el" href="websocket_8hpp_source.html">websocket.hpp</a>.</p>
 
 </div>
 </div>
@@ -410,11 +444,33 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="websocket_8hpp_source.html#l00030">30</a> of file <a class="el" href="websocket_8hpp_source.html">websocket.hpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8hpp_source.html#l00032">32</a> of file <a class="el" href="websocket_8hpp_source.html">websocket.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a4845d701c1610ca904c545efb11b6e39"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string fc::http::websocket_connection::_remote_endpoint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="websocket_8hpp_source.html#l00041">41</a> of file <a class="el" href="websocket_8hpp_source.html">websocket.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="af4959cf610382457a4f002d1f73137b3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -425,7 +481,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="websocket_8hpp_source.html#l00035">35</a> of file <a class="el" href="websocket_8hpp_source.html">websocket.hpp</a>.</p>
+<p>Definition at line <a class="el" href="websocket_8hpp_source.html#l00039">39</a> of file <a class="el" href="websocket_8hpp_source.html">websocket.hpp</a>.</p>
 
 </div>
 </div>
@@ -435,7 +491,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 30 2020 00:56:53 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 22 2020 19:51:19 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

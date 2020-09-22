@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">4.0.0</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -127,11 +127,19 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfc_1_1http_1_1detail_1_1asio__tls__with__stub__log_1_1transport__config.html">fc::http::detail::asio_tls_with_stub_log::transport_config</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfc_1_1http_1_1detail_1_1asio__tls__with__stub__log_1_1permessage__deflate__config.html">fc::http::detail::asio_tls_with_stub_log::permessage_deflate_config</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfc_1_1http_1_1detail_1_1asio__tls__stub__log.html">fc::http::detail::asio_tls_stub_log</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfc_1_1http_1_1detail_1_1asio__tls__stub__log_1_1transport__config.html">fc::http::detail::asio_tls_stub_log::transport_config</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfc_1_1http_1_1detail_1_1asio__tls__stub__log_1_1permessage__deflate__config.html">fc::http::detail::asio_tls_stub_log::permessage_deflate_config</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfc_1_1http_1_1detail_1_1websocket__connection__impl.html">fc::http::detail::websocket_connection_impl&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfc_1_1http_1_1detail_1_1possibly__proxied__websocket__connection.html">fc::http::detail::possibly_proxied_websocket_connection&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfc_1_1http_1_1detail_1_1generic__websocket__server__impl.html">fc::http::detail::generic_websocket_server_impl&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfc_1_1http_1_1detail_1_1websocket__server__impl.html">fc::http::detail::websocket_server_impl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,20 +168,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a2c68932f3037e38994a7fbe072c90083"><td class="memItemLeft" align="right" valign="top">typedef websocketpp::server&lt; asio_with_stub_log &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc_1_1http_1_1detail.html#a2c68932f3037e38994a7fbe072c90083">fc::http::detail::websocket_server_type</a></td></tr>
-<tr class="separator:a2c68932f3037e38994a7fbe072c90083"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89ada49b867fb545053172f079b19133"><td class="memItemLeft" align="right" valign="top">typedef websocketpp::server&lt; asio_tls_stub_log &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc_1_1http_1_1detail.html#a89ada49b867fb545053172f079b19133">fc::http::detail::websocket_tls_server_type</a></td></tr>
-<tr class="separator:a89ada49b867fb545053172f079b19133"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a254e3f6f90c4d21da1a0c19ded1f8cf4"><td class="memItemLeft" align="right" valign="top">typedef websocketpp::lib::shared_ptr&lt; boost::asio::ssl::context &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc_1_1http_1_1detail.html#a254e3f6f90c4d21da1a0c19ded1f8cf4">fc::http::detail::context_ptr</a></td></tr>
 <tr class="separator:a254e3f6f90c4d21da1a0c19ded1f8cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a46fd4d3eab6f01a84882bddf9dd351"><td class="memItemLeft" align="right" valign="top">typedef websocketpp::client&lt; asio_with_stub_log &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc_1_1http_1_1detail.html#a6a46fd4d3eab6f01a84882bddf9dd351">fc::http::detail::websocket_client_type</a></td></tr>
-<tr class="separator:a6a46fd4d3eab6f01a84882bddf9dd351"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0595340e63d9b64fb3522a89dbd8d8a"><td class="memItemLeft" align="right" valign="top">typedef websocketpp::client&lt; asio_tls_stub_log &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc_1_1http_1_1detail.html#ab0595340e63d9b64fb3522a89dbd8d8a">fc::http::detail::websocket_tls_client_type</a></td></tr>
-<tr class="separator:ab0595340e63d9b64fb3522a89dbd8d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbd493a6ba3a49f1e1ad9ba697af3ff2"><td class="memItemLeft" align="right" valign="top">typedef websocket_client_type::connection_ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc_1_1http_1_1detail.html#abbd493a6ba3a49f1e1ad9ba697af3ff2">fc::http::detail::websocket_client_connection_type</a></td></tr>
-<tr class="separator:abbd493a6ba3a49f1e1ad9ba697af3ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa003073d2b6aef2a309a8ecb713e5e57"><td class="memItemLeft" align="right" valign="top">typedef websocket_tls_client_type::connection_ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc_1_1http_1_1detail.html#aa003073d2b6aef2a309a8ecb713e5e57">fc::http::detail::websocket_tls_client_connection_type</a></td></tr>
-<tr class="separator:aa003073d2b6aef2a309a8ecb713e5e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a8c7a288fea519c7e895518f8dff4888f"></a>
@@ -193,7 +189,7 @@ Typedefs</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 30 2020 00:56:51 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 22 2020 19:51:18 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">4.0.0</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -115,7 +115,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html#a790b5ff3904f8ac712b1db24ed0813a6">apply_order_before_hardfork_625</a>(const limit_order_object &amp;new_order_object, bool allow_black_swan=true)</td><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html">graphene::chain::database</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html#aaadc49139eb020b3b1e91b60b128e49f">apply_transaction</a>(const signed_transaction &amp;trx, uint32_t skip=skip_nothing)</td><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html">graphene::chain::database</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html#ab9c5d321b83bd7e01e87e08b3d32027e">before_last_checkpoint</a>() const </td><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html">graphene::chain::database</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html#a467912ad5272b708b6088316a9648d2c">calculate_market_fee</a>(const asset_object &amp;trade_asset, const asset &amp;trade_amount, const bool &amp;is_maker)</td><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html">graphene::chain::database</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html#a0cb0a35eccad8458442ecc4d1af1ca92">calculate_market_fee</a>(const asset_object &amp;trade_asset, const asset &amp;trade_amount, const bool &amp;is_maker) const </td><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html">graphene::chain::database</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html#a21787ce006ee78b21cf2de47767fab5a">cancel_bid</a>(const collateral_bid_object &amp;bid, bool create_virtual_op=true)</td><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html">graphene::chain::database</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html#a245d31d0cbaec0e89b38659b19154c54">cancel_limit_order</a>(const limit_order_object &amp;order, bool create_virtual_op=true, bool skip_cancel_fee=false)</td><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html">graphene::chain::database</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html#aab77fa872b5bfcf96654059bcf8bdf94">cancel_settle_order</a>(const force_settlement_object &amp;order, bool create_virtual_op=true)</td><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html">graphene::chain::database</a></td><td class="entry"></td></tr>
@@ -208,7 +208,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html#a2d5356973d8d14d8267b7d49a2c6d939">open</a>(const fc::path &amp;data_dir, std::function&lt; genesis_state_type()&gt; genesis_loader, const std::string &amp;db_version)</td><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html">graphene::chain::database</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classgraphene_1_1db_1_1object__database.html#a0e179b70876f837430d1b3a1af683a03">graphene::db::object_database::open</a>(const fc::path &amp;data_dir)</td><td class="entry"><a class="el" href="classgraphene_1_1db_1_1object__database.html">graphene::db::object_database</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html#a7d3b2fc4773d4e5227748403fdd5d925">pay_force_settle_fees</a>(const asset_object &amp;collecting_asset, const asset &amp;collat_receives)</td><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html">graphene::chain::database</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html#a2220eff7194058a9f9d97ae100814188">pay_market_fees</a>(const account_object *seller, const asset_object &amp;recv_asset, const asset &amp;receives, const bool &amp;is_maker)</td><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html">graphene::chain::database</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html#a889865bc9a3a2e7e7d79ec7d00b03902">pay_market_fees</a>(const account_object *seller, const asset_object &amp;recv_asset, const asset &amp;receives, const bool &amp;is_maker, const optional&lt; asset &gt; &amp;calculated_market_fees={})</td><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html">graphene::chain::database</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html#a98391f198bc95d206c91da61dc55373d">pay_order</a>(const account_object &amp;receiver, const asset &amp;receives, const asset &amp;pays)</td><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html">graphene::chain::database</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html#a03253124ee8714af752c1d68b7cc206c">pop_block</a>()</td><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html">graphene::chain::database</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html#aea9d1ca437641003a9426718ebe05481">pop_undo</a>()</td><td class="entry"><a class="el" href="classgraphene_1_1chain_1_1database.html">graphene::chain::database</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
@@ -248,7 +248,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 30 2020 00:56:56 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 22 2020 19:51:20 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

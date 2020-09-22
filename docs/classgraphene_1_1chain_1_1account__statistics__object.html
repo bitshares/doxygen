@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">4.0.0</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -192,21 +192,33 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a6e24bf9caed87ca04ade5361a0b2b818"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bf6b14fa88cc2bfac01861c2d896db8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1protocol.html#a69b2104c1c11eed2d17bd29b86713347">share_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#a1bf6b14fa88cc2bfac01861c2d896db8">pending_vested_fees</a></td></tr>
 <tr class="separator:a1bf6b14fa88cc2bfac01861c2d896db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:aa0e5c0f0b079ff2a307a9d0fa87fc2ee"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#aa0e5c0f0b079ff2a307a9d0fa87fc2ee">vp_all</a> = 0</td></tr>
+<tr class="memdesc:aa0e5c0f0b079ff2a307a9d0fa87fc2ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">all voting power.  <a href="#aa0e5c0f0b079ff2a307a9d0fa87fc2ee">More...</a><br /></td></tr>
+<tr class="separator:aa0e5c0f0b079ff2a307a9d0fa87fc2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74b95db3df9125060131fe4210c17108"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#a74b95db3df9125060131fe4210c17108">vp_active</a> = 0</td></tr>
+<tr class="memdesc:a74b95db3df9125060131fe4210c17108"><td class="mdescLeft">&#160;</td><td class="mdescRight">active voting power, if there is no attenuation, it is equal to vp_all.  <a href="#a74b95db3df9125060131fe4210c17108">More...</a><br /></td></tr>
+<tr class="separator:a74b95db3df9125060131fe4210c17108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a996bd487b7c3f4a5b5bafafb5b576938"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#a996bd487b7c3f4a5b5bafafb5b576938">vp_committee</a> = 0</td></tr>
+<tr class="memdesc:a996bd487b7c3f4a5b5bafafb5b576938"><td class="mdescLeft">&#160;</td><td class="mdescRight">the final voting power for the committees.  <a href="#a996bd487b7c3f4a5b5bafafb5b576938">More...</a><br /></td></tr>
+<tr class="separator:a996bd487b7c3f4a5b5bafafb5b576938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af603a745f741eb68f37062892a30cb79"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#af603a745f741eb68f37062892a30cb79">vp_witness</a> = 0</td></tr>
+<tr class="memdesc:af603a745f741eb68f37062892a30cb79"><td class="mdescLeft">&#160;</td><td class="mdescRight">the final voting power for the witnesses.  <a href="#af603a745f741eb68f37062892a30cb79">More...</a><br /></td></tr>
+<tr class="separator:af603a745f741eb68f37062892a30cb79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9013c81c90730cc9c4378ab638440db3"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#a9013c81c90730cc9c4378ab638440db3">vp_worker</a> = 0</td></tr>
+<tr class="separator:a9013c81c90730cc9c4378ab638440db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac941c0ffc81ff687e18234b82b619c2c"><td class="memItemLeft" align="right" valign="top">time_point_sec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#ac941c0ffc81ff687e18234b82b619c2c">vote_tally_time</a></td></tr>
+<tr class="separator:ac941c0ffc81ff687e18234b82b619c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classgraphene_1_1db_1_1object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classgraphene_1_1db_1_1object')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classgraphene_1_1db_1_1object.html">graphene::db::object</a></td></tr>
 <tr class="memitem:a2ce812569d565a45dda1420cfbdf79ad inherit pub_attribs_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#a2ce812569d565a45dda1420cfbdf79ad">id</a></td></tr>
 <tr class="separator:a2ce812569d565a45dda1420cfbdf79ad inherit pub_attribs_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a7be7e9ec8e44e415dd2294f05d94674b"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#a7be7e9ec8e44e415dd2294f05d94674b">space_id</a> = implementation_ids</td></tr>
-<tr class="separator:a7be7e9ec8e44e415dd2294f05d94674b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dcb7ae9359925cb1408a174cf8b43e0"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#a6dcb7ae9359925cb1408a174cf8b43e0">type_id</a> = impl_account_statistics_object_type</td></tr>
-<tr class="separator:a6dcb7ae9359925cb1408a174cf8b43e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_attribs_classgraphene_1_1db_1_1object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classgraphene_1_1db_1_1object')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classgraphene_1_1db_1_1object.html">graphene::db::object</a></td></tr>
-<tr class="memitem:af4fa36c46acc14681746e93adbc812f8 inherit pub_static_attribs_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#af4fa36c46acc14681746e93adbc812f8">space_id</a> = 0</td></tr>
-<tr class="separator:af4fa36c46acc14681746e93adbc812f8 inherit pub_static_attribs_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4b608265ad59cb1acdff271b9aa2ac5 inherit pub_static_attribs_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#ac4b608265ad59cb1acdff271b9aa2ac5">type_id</a> = 0</td></tr>
-<tr class="separator:ac4b608265ad59cb1acdff271b9aa2ac5 inherit pub_static_attribs_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18757e1317f241d2019f54dd77b16ade"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#a18757e1317f241d2019f54dd77b16ade">space_id</a> = implementation_ids</td></tr>
+<tr class="separator:a18757e1317f241d2019f54dd77b16ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6733dcf0293dafb5702b95b0a06a4f0d"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#a6733dcf0293dafb5702b95b0a06a4f0d">type_id</a> = impl_account_statistics_object_type</td></tr>
+<tr class="separator:a6733dcf0293dafb5702b95b0a06a4f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This object contains regularly updated statistical data about an account. It is provided for the purpose of separating the account data that changes frequently from the account data that is mostly static, which will minimize the amount of data that must be backed up as part of the undo history everytime a transfer is made. </p>
@@ -236,7 +248,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Whether this account has pending fees, no matter vested or not. </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00125">125</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00137">137</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -263,7 +275,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Whether this account owns some CORE asset and is voting. </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00098">98</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00110">110</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -290,7 +302,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Whether need to process this account during the maintenance interval. </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00128">128</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00140">140</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -319,7 +331,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Core fees are paid into the <a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html">account_statistics_object</a> by this method </p>
 
-<p>Definition at line <a class="el" href="account__object_8cpp_source.html#l00107">107</a> of file <a class="el" href="account__object_8cpp_source.html">account_object.cpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8cpp_source.html#l00100">100</a> of file <a class="el" href="account__object_8cpp_source.html">account_object.cpp</a>.</p>
 
 </div>
 </div>
@@ -428,7 +440,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Tracks the total fees paid by this account for the purpose of calculating bulk discounts. </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00107">107</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00119">119</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -489,7 +501,7 @@ Static Public Attributes</h2></td></tr>
 <p>Tracks the fees paid by this account which have not been disseminated to the various parties that receive them yet (registrar, referrer, lifetime referrer, network, etc). This is used as an optimization to avoid doing massive amounts of uint128 arithmetic on each and every operation.</p>
 <p>These fees will be paid out as vesting cash-back, and this counter will reset during the maintenance interval. </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00117">117</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00129">129</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -504,7 +516,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Same as <a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#a6e24bf9caed87ca04ade5361a0b2b818">pending_fees</a>, except these fees will be paid out as pre-vested cash-back (immediately available for withdrawal) rather than requiring the normal vesting period. </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00122">122</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00134">134</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -523,7 +535,7 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7be7e9ec8e44e415dd2294f05d94674b"></a>
+<a class="anchor" id="a18757e1317f241d2019f54dd77b16ade"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -531,7 +543,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t graphene::chain::account_statistics_object::space_id = implementation_ids</td>
+          <td class="memname">constexpr uint8_t graphene::chain::account_statistics_object::space_id = implementation_ids</td>
         </tr>
       </table>
   </td>
@@ -655,7 +667,7 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6dcb7ae9359925cb1408a174cf8b43e0"></a>
+<a class="anchor" id="a6733dcf0293dafb5702b95b0a06a4f0d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -663,7 +675,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t graphene::chain::account_statistics_object::type_id = impl_account_statistics_object_type</td>
+          <td class="memname">constexpr uint8_t graphene::chain::account_statistics_object::type_id = impl_account_statistics_object_type</td>
         </tr>
       </table>
   </td>
@@ -677,6 +689,101 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ac941c0ffc81ff687e18234b82b619c2c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">time_point_sec graphene::chain::account_statistics_object::vote_tally_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>timestamp of the last count of votes. if there is no statistics, the date is less than <code>_db.get_dynamic_global_properties().last_vote_tally_time</code>. </p>
+
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00106">106</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a74b95db3df9125060131fe4210c17108"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t graphene::chain::account_statistics_object::vp_active = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>active voting power, if there is no attenuation, it is equal to vp_all. </p>
+
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00100">100</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0e5c0f0b079ff2a307a9d0fa87fc2ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t graphene::chain::account_statistics_object::vp_all = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>all voting power. </p>
+<p>Voting Power Stats </p>
+
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00099">99</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a996bd487b7c3f4a5b5bafafb5b576938"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t graphene::chain::account_statistics_object::vp_committee = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the final voting power for the committees. </p>
+
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00101">101</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af603a745f741eb68f37062892a30cb79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t graphene::chain::account_statistics_object::vp_witness = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the final voting power for the witnesses. </p>
+
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00102">102</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9013c81c90730cc9c4378ab638440db3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t graphene::chain::account_statistics_object::vp_worker = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>the final voting power for the workers. </p>
+
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00103">103</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>libraries/chain/include/graphene/chain/<a class="el" href="account__object_8hpp_source.html">account_object.hpp</a></li>
 <li>libraries/chain/<a class="el" href="account__object_8cpp_source.html">account_object.cpp</a></li>
@@ -684,7 +791,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 30 2020 00:56:55 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 22 2020 19:51:20 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

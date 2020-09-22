@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">4.0.0</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -138,15 +138,15 @@ Typedefs</h2></td></tr>
 <tr class="separator:a2cb69664c48f3d41eb5ac8b6bc4847cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4a4b0840d255da34979146e37fcc15c"><td class="memItemLeft" align="right" valign="top">typedef generic_index&lt; account_object, account_multi_index_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#ad4a4b0840d255da34979146e37fcc15c">graphene::chain::account_index</a></td></tr>
 <tr class="separator:ad4a4b0840d255da34979146e37fcc15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2adcf107f3fa11fc26efa92d722ea292"><td class="memItemLeft" align="right" valign="top">typedef multi_index_container&lt; account_statistics_object, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type,&amp;object::id &gt; &gt;, ordered_unique&lt; tag&lt; by_maintenance_seq &gt;, composite_key&lt; account_statistics_object, const_mem_fun&lt; account_statistics_object, bool,&amp;account_statistics_object::need_maintenance &gt;, member&lt; account_statistics_object, string,&amp;account_statistics_object::name &gt; &gt; &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a2adcf107f3fa11fc26efa92d722ea292">graphene::chain::account_stats_multi_index_type</a></td></tr>
-<tr class="separator:a2adcf107f3fa11fc26efa92d722ea292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b2bcbf4c5d9008a9241168d4d16c7b"><td class="memItemLeft" align="right" valign="top">typedef multi_index_container&lt; account_statistics_object, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type,&amp;object::id &gt; &gt;, ordered_unique&lt; tag&lt; by_maintenance_seq &gt;, composite_key&lt; account_statistics_object, const_mem_fun&lt; account_statistics_object, bool,&amp;account_statistics_object::need_maintenance &gt;, member&lt; account_statistics_object, string,&amp;account_statistics_object::name &gt; &gt; &gt;, ordered_non_unique&lt; tag&lt; by_voting_power_active &gt;, composite_key&lt; account_statistics_object, member&lt; account_statistics_object, time_point_sec,&amp;account_statistics_object::vote_tally_time &gt;, member&lt; account_statistics_object, uint64_t,&amp;account_statistics_object::vp_active &gt; &gt;, composite_key_compare&lt; std::greater&lt; time_point_sec &gt;, std::greater&lt; uint64_t &gt; &gt; &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a83b2bcbf4c5d9008a9241168d4d16c7b">graphene::chain::account_stats_multi_index_type</a></td></tr>
+<tr class="separator:a83b2bcbf4c5d9008a9241168d4d16c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8cf3ea848fa664d785e848949646384"><td class="memItemLeft" align="right" valign="top">typedef generic_index&lt; account_statistics_object, account_stats_multi_index_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#ae8cf3ea848fa664d785e848949646384">graphene::chain::account_stats_index</a></td></tr>
 <tr class="separator:ae8cf3ea848fa664d785e848949646384"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 30 2020 00:56:26 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 22 2020 19:51:18 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

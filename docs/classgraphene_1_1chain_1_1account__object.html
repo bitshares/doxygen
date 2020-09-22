@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">4.0.0</span>
+   &#160;<span id="projectnumber">5.0.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -92,7 +92,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
@@ -117,11 +116,6 @@ Inheritance diagram for graphene::chain::account_object:</div>
 </map>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:adefb42cc7a11b805b98f8af1d0f8fdb4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structgraphene_1_1protocol_1_1account__options.html">account_options</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__object.html#adefb42cc7a11b805b98f8af1d0f8fdb4">options_type</a></td></tr>
-<tr class="separator:adefb42cc7a11b805b98f8af1d0f8fdb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acef9bf5dc3e7e467c936a396f705de8d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__object.html#acef9bf5dc3e7e467c936a396f705de8d">has_special_authority</a> () const </td></tr>
@@ -215,41 +209,21 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a0f562851b5dc2a4a7c2c28cc77658a53"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__object.html#a0f562851b5dc2a4a7c2c28cc77658a53">space_id</a> = protocol_ids</td></tr>
-<tr class="separator:a0f562851b5dc2a4a7c2c28cc77658a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b8ccd0b502307f382a3fb42c8ca8b76"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__object.html#a3b8ccd0b502307f382a3fb42c8ca8b76">type_id</a> = account_object_type</td></tr>
-<tr class="separator:a3b8ccd0b502307f382a3fb42c8ca8b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a167145390ed1b08f2c4f969ce2876877"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__object.html#a167145390ed1b08f2c4f969ce2876877">space_id</a> = protocol_ids</td></tr>
+<tr class="separator:a167145390ed1b08f2c4f969ce2876877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cb6fac8e666272a4a665abaf6c714b7"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__object.html#a5cb6fac8e666272a4a665abaf6c714b7">type_id</a> = account_object_type</td></tr>
+<tr class="separator:a5cb6fac8e666272a4a665abaf6c714b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78c917dcdc4060163e7be0ae2348f301"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__object.html#a78c917dcdc4060163e7be0ae2348f301">top_n_control_owner</a> = 1</td></tr>
 <tr class="separator:a78c917dcdc4060163e7be0ae2348f301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c020b43bc5610c258f423c373f4528e"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1account__object.html#a2c020b43bc5610c258f423c373f4528e">top_n_control_active</a> = 2</td></tr>
 <tr class="separator:a2c020b43bc5610c258f423c373f4528e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_attribs_classgraphene_1_1db_1_1object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classgraphene_1_1db_1_1object')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classgraphene_1_1db_1_1object.html">graphene::db::object</a></td></tr>
-<tr class="memitem:af4fa36c46acc14681746e93adbc812f8 inherit pub_static_attribs_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#af4fa36c46acc14681746e93adbc812f8">space_id</a> = 0</td></tr>
-<tr class="separator:af4fa36c46acc14681746e93adbc812f8 inherit pub_static_attribs_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4b608265ad59cb1acdff271b9aa2ac5 inherit pub_static_attribs_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#ac4b608265ad59cb1acdff271b9aa2ac5">type_id</a> = 0</td></tr>
-<tr class="separator:ac4b608265ad59cb1acdff271b9aa2ac5 inherit pub_static_attribs_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class represents an account on the object graph</p>
 <p>Accounts are the primary unit of authority on the graphene system. Users must have an account in order to use assets, trade in the markets, vote for committee_members, etc. </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00170">170</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="adefb42cc7a11b805b98f8af1d0f8fdb4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="structgraphene_1_1protocol_1_1account__options.html">account_options</a> <a class="el" href="classgraphene_1_1chain_1_1account__object.html#adefb42cc7a11b805b98f8af1d0f8fdb4">graphene::chain::account_object::options_type</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00215">215</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00182">182</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="abe8ab78a9ca8c10164e762f09be33dd9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -274,7 +248,7 @@ template&lt;typename DB &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00286">286</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00297">297</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -299,7 +273,7 @@ template&lt;typename DB &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00314">314</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00325">325</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -324,7 +298,7 @@ template&lt;typename DB &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00279">279</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00290">290</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -352,7 +326,7 @@ template&lt;typename DB &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>true if the account is an unexpired annual member; false otherwise. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method will return false for lifetime members. </dd></dl>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00304">304</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00315">315</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -379,7 +353,7 @@ template&lt;typename DB &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true if this is a basic account; false otherwise. </dd></dl>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00298">298</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00309">309</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -405,7 +379,7 @@ template&lt;typename DB &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true if this is a lifetime member account; false otherwise. </dd></dl>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00293">293</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00304">304</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -432,7 +406,7 @@ template&lt;typename DB &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true if the account is an annual or lifetime member; false otherwise. </dd></dl>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00309">309</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00320">320</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -448,7 +422,7 @@ template&lt;typename DB &gt; </div>
 </div><div class="memdoc">
 <p>The owner authority contains the hot keys of the account. This authority has control over nearly all operations the account may perform. </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00213">213</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00225">225</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -462,7 +436,7 @@ template&lt;typename DB &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00262">262</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00273">273</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -477,7 +451,7 @@ template&lt;typename DB &gt; </div>
 </div><div class="memdoc">
 <p>This is a set of assets which the account is allowed to have. This is utilized to restrict buyback accounts to the assets that trade in their markets. In the future we may expand this to allow accounts to e.g. voluntarily restrict incoming transfers. </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00277">277</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00288">288</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -491,7 +465,7 @@ template&lt;typename DB &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00244">244</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00255">255</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -506,7 +480,7 @@ template&lt;typename DB &gt; </div>
 </div><div class="memdoc">
 <p>This is a set of all accounts which have 'blacklisted' this account. Blacklisting is only used in core validation for the purpose of forbidding accounts from holding and transacting in whitelisted assets. This account cannot update this set, and it will be preserved even if the account is transferred. Other accounts may add or remove their IDs from this set. </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00254">254</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00265">265</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -521,7 +495,7 @@ template&lt;typename DB &gt; </div>
 </div><div class="memdoc">
 <p>Vesting balance which receives cashback_reward deposits. </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00259">259</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00270">270</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -537,7 +511,7 @@ template&lt;typename DB &gt; </div>
 
 <p>The lifetime member at the top of the referral tree. Receives a percentage of referral rewards. </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00191">191</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00203">203</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -553,7 +527,7 @@ template&lt;typename DB &gt; </div>
 
 <p>Percentage of fee which should go to lifetime referrer. </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00196">196</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00208">208</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -569,7 +543,7 @@ template&lt;typename DB &gt; </div>
 <p>The time at which this account's membership expires. If set to any time in the past, the account is a basic account. If set to <a class="el" href="classfc_1_1time__point__sec.html#a45d3b7342e76cfb07ef1845d75b57a39">time_point_sec::maximum()</a>, the account is a lifetime member. If set to any time not in the past less than <a class="el" href="classfc_1_1time__point__sec.html#a45d3b7342e76cfb07ef1845d75b57a39">time_point_sec::maximum()</a>, the account is an annual member.</p>
 <p>See <a class="el" href="classgraphene_1_1chain_1_1account__object.html#a328fb79dcf289d6973692b63af5c7b75">is_lifetime_member</a>, <a class="el" href="classgraphene_1_1chain_1_1account__object.html#a6ac081dc1f9ae9f3183d0a40f6937630">is_basic_account</a>, <a class="el" href="classgraphene_1_1chain_1_1account__object.html#a76619f14f443b6365edab2dfb60a380e">is_annual_member</a>, and <a class="el" href="classgraphene_1_1chain_1_1account__object.html#a4edcb9d330e5cf1f240296bf954bf461">is_member</a> </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00184">184</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00196">196</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -585,7 +559,7 @@ template&lt;typename DB &gt; </div>
 
 <p>The account's name. This name must be unique among all account names on the graph. May not be empty. </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00202">202</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00214">214</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -601,7 +575,7 @@ template&lt;typename DB &gt; </div>
 
 <p>Percentage of fee which should go to network. </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00194">194</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00206">206</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -617,7 +591,7 @@ template&lt;typename DB &gt; </div>
 
 <p>Pre-calculated for better performance on chain maintenance. </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00219">219</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00230">230</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -631,7 +605,7 @@ template&lt;typename DB &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00216">216</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00227">227</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -646,7 +620,7 @@ template&lt;typename DB &gt; </div>
 </div><div class="memdoc">
 <p>The owner authority represents absolute control over the account. Usually the keys in this authority will be kept in cold storage, as they should not be needed very often and compromise of these keys constitutes complete and irrevocable loss of the account. Generally the only time the owner authority is required is to update the active authority. </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00210">210</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00222">222</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -660,7 +634,7 @@ template&lt;typename DB &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00261">261</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00272">272</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -676,7 +650,7 @@ template&lt;typename DB &gt; </div>
 
 <p>The account credited as referring this account. Receives a percentage of referral rewards. </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00189">189</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00201">201</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -691,7 +665,7 @@ template&lt;typename DB &gt; </div>
 </div><div class="memdoc">
 <p>Percentage of referral rewards (leftover fee after paying network and lifetime referrer) which should go to referrer. The remainder of referral rewards goes to the registrar. </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00199">199</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00211">211</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -707,11 +681,11 @@ template&lt;typename DB &gt; </div>
 
 <p>The account that paid the fee to register this account. Receives a percentage of referral rewards. </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00187">187</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00199">199</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0f562851b5dc2a4a7c2c28cc77658a53"></a>
+<a class="anchor" id="a167145390ed1b08f2c4f969ce2876877"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -719,7 +693,7 @@ template&lt;typename DB &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t graphene::chain::account_object::space_id = protocol_ids</td>
+          <td class="memname">constexpr uint8_t graphene::chain::account_object::space_id = protocol_ids</td>
         </tr>
       </table>
   </td>
@@ -729,7 +703,7 @@ template&lt;typename DB &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00173">173</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00185">185</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -744,7 +718,7 @@ template&lt;typename DB &gt; </div>
 </div><div class="memdoc">
 <p>The reference implementation records the account's statistics in a separate object. This field contains the ID of that object. </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00223">223</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00234">234</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -766,7 +740,7 @@ template&lt;typename DB &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00270">270</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00281">281</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -781,7 +755,7 @@ template&lt;typename DB &gt; </div>
 </div><div class="memdoc">
 <p>This flag is set when the top_n logic sets both authorities, and gets reset when authority or special_authority is set. </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00268">268</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00279">279</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -803,11 +777,11 @@ template&lt;typename DB &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00269">269</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00280">280</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a3b8ccd0b502307f382a3fb42c8ca8b76"></a>
+<a class="anchor" id="a5cb6fac8e666272a4a665abaf6c714b7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -815,7 +789,7 @@ template&lt;typename DB &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t graphene::chain::account_object::type_id = account_object_type</td>
+          <td class="memname">constexpr uint8_t graphene::chain::account_object::type_id = account_object_type</td>
         </tr>
       </table>
   </td>
@@ -825,7 +799,7 @@ template&lt;typename DB &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00174">174</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00186">186</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -841,7 +815,7 @@ template&lt;typename DB &gt; </div>
 <p>Optionally track all of the accounts this account has whitelisted or blacklisted, these should be made Immutable so that when the account object is cloned no deep copy is required. This state is tracked for GUI display purposes.</p>
 <p>TODO: move white list tracking to its own multi-index container rather than having 4 fields on an account. This will scale better because under the current design if you whitelist 2000 accounts, then every time someone fetches this account object they will get the full list of 2000 accounts. </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00243">243</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00254">254</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -856,18 +830,17 @@ template&lt;typename DB &gt; </div>
 </div><div class="memdoc">
 <p>This is a set of all accounts which have 'whitelisted' this account. Whitelisting is only used in core validation for the purpose of authorizing accounts to hold and transact in whitelisted assets. This account cannot update this set, except by transferring ownership of the account, which will clear it. Other accounts may add or remove their IDs from this set. </p>
 
-<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00231">231</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
+<p>Definition at line <a class="el" href="account__object_8hpp_source.html#l00242">242</a> of file <a class="el" href="account__object_8hpp_source.html">account_object.hpp</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>libraries/chain/include/graphene/chain/<a class="el" href="account__object_8hpp_source.html">account_object.hpp</a></li>
-<li>libraries/chain/<a class="el" href="db__init_8cpp_source.html">db_init.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 30 2020 00:56:55 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 22 2020 19:51:20 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
