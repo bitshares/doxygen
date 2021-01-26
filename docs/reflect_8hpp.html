@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.0.0</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -154,6 +154,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacefc"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html">fc</a></td></tr>
+<tr class="memdesc:namespacefc"><td class="mdescLeft">&#160;</td><td class="mdescRight">defines wrappers for boost::asio functions <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacefc_1_1member__names"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc_1_1member__names.html">fc::member_names</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,7 +167,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:a298a3fc1df3976f7e1e68de9f47ea726"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to transform reflected fields of a base class to a derived class and concatenate them to a type list.  <a href="#a298a3fc1df3976f7e1e68de9f47ea726">More...</a><br /></td></tr>
 <tr class="separator:a298a3fc1df3976f7e1e68de9f47ea726"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64d6f89c2afbb01c02c79c3960a64634"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reflect_8hpp.html#a64d6f89c2afbb01c02c79c3960a64634">FC_CONCAT_MEMBER_REFLECTION</a>(r,  container,  idx,  member)</td></tr>
-<tr class="memdesc:a64d6f89c2afbb01c02c79c3960a64634"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to concatenate a new field_reflection to a typelist.  <a href="#a64d6f89c2afbb01c02c79c3960a64634">More...</a><br /></td></tr>
+<tr class="memdesc:a64d6f89c2afbb01c02c79c3960a64634"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to concatenate a new <code>field_reflection</code> to a typelist.  <a href="#a64d6f89c2afbb01c02c79c3960a64634">More...</a><br /></td></tr>
 <tr class="separator:a64d6f89c2afbb01c02c79c3960a64634"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdb8959279503b8c2f12096ac7e8268b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reflect_8hpp.html#abdb8959279503b8c2f12096ac7e8268b">FC_REFLECT_MEMBER_NAME</a>(r,  container,  idx,  member)&#160;&#160;&#160;template&lt;&gt; struct member_name&lt;container, idx&gt; { constexpr static const char* value = BOOST_PP_STRINGIZE(member); };</td></tr>
 <tr class="separator:abdb8959279503b8c2f12096ac7e8268b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,12 +205,12 @@ Macros</h2></td></tr>
 <tr class="separator:ac649660d1bd3ca60197b339a1c25642e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb2f7c9e91537914d96e231ebc52d688"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reflect_8hpp.html#adb2f7c9e91537914d96e231ebc52d688">FC_REFLECT_DERIVED_NO_TYPENAME</a>(TYPE,  INHERITS,  MEMBERS)</td></tr>
 <tr class="separator:adb2f7c9e91537914d96e231ebc52d688"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ace850e636b1ca0b18fe3177e413d99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reflect_8hpp.html#a2ace850e636b1ca0b18fe3177e413d99">FC_REFLECT</a>(TYPE,  MEMBERS)&#160;&#160;&#160;<a class="el" href="api__objects_8hpp.html#a035f8f4576a06fc775ac82079ce84cb6">FC_REFLECT_DERIVED</a>( TYPE, BOOST_PP_SEQ_NIL, MEMBERS )</td></tr>
+<tr class="memitem:a2ace850e636b1ca0b18fe3177e413d99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reflect_8hpp.html#a2ace850e636b1ca0b18fe3177e413d99">FC_REFLECT</a>(TYPE,  MEMBERS)&#160;&#160;&#160;<a class="el" href="reflect_8hpp.html#abd9da6cfee7b98ef83fac107d13275c7">FC_REFLECT_DERIVED</a>( TYPE, BOOST_PP_SEQ_NIL, MEMBERS )</td></tr>
 <tr class="memdesc:a2ace850e636b1ca0b18fe3177e413d99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specializes <a class="el" href="structfc_1_1reflector.html" title="defines visit functions for T Unless this is specialized, visit() will not be defined for T...">fc::reflector</a> for TYPE.  <a href="#a2ace850e636b1ca0b18fe3177e413d99">More...</a><br /></td></tr>
 <tr class="separator:a2ace850e636b1ca0b18fe3177e413d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a174ab7b071f1b6db5666a266315fe1b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reflect_8hpp.html#a174ab7b071f1b6db5666a266315fe1b5">FC_REFLECT_TEMPLATE</a>(TEMPLATE_ARGS,  TYPE,  MEMBERS)&#160;&#160;&#160;<a class="el" href="reflect_8hpp.html#ac649660d1bd3ca60197b339a1c25642e">FC_REFLECT_DERIVED_TEMPLATE</a>( TEMPLATE_ARGS, TYPE, BOOST_PP_SEQ_NIL, MEMBERS )</td></tr>
 <tr class="separator:a174ab7b071f1b6db5666a266315fe1b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc5277135165e6bbca19931035ca313b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reflect_8hpp.html#afc5277135165e6bbca19931035ca313b">FC_REFLECT_EMPTY</a>(TYPE)&#160;&#160;&#160;<a class="el" href="api__objects_8hpp.html#a035f8f4576a06fc775ac82079ce84cb6">FC_REFLECT_DERIVED</a>( TYPE, BOOST_PP_SEQ_NIL, BOOST_PP_SEQ_NIL )</td></tr>
+<tr class="memitem:afc5277135165e6bbca19931035ca313b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reflect_8hpp.html#afc5277135165e6bbca19931035ca313b">FC_REFLECT_EMPTY</a>(TYPE)&#160;&#160;&#160;<a class="el" href="reflect_8hpp.html#abd9da6cfee7b98ef83fac107d13275c7">FC_REFLECT_DERIVED</a>( TYPE, BOOST_PP_SEQ_NIL, BOOST_PP_SEQ_NIL )</td></tr>
 <tr class="separator:afc5277135165e6bbca19931035ca313b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a215aebc2773910145178fc5e0292d01b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reflect_8hpp.html#a215aebc2773910145178fc5e0292d01b">FC_REFLECT_TYPENAME</a>(TYPE)</td></tr>
 <tr class="separator:a215aebc2773910145178fc5e0292d01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -298,7 +299,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">::add&lt;typename impl::Reflect_type&lt;container&gt;::template with_field_type&lt;decltype(container::member)&gt; \</div><div class="line">                                               ::template at_index&lt;idx&gt; \</div><div class="line">                                               ::template with_field_pointer&lt;&amp;container::member&gt;::type&gt;</div></div><!-- fragment -->
-<p>Macro to concatenate a new field_reflection to a typelist. </p>
+<p>Macro to concatenate a new <code>field_reflection</code> to a typelist. </p>
 
 <p>Definition at line <a class="el" href="reflect_8hpp_source.html#l00117">117</a> of file <a class="el" href="reflect_8hpp_source.html">reflect.hpp</a>.</p>
 
@@ -359,7 +360,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="api__objects_8hpp.html#a035f8f4576a06fc775ac82079ce84cb6">FC_REFLECT_DERIVED</a>( TYPE, BOOST_PP_SEQ_NIL, MEMBERS )</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="reflect_8hpp.html#abd9da6cfee7b98ef83fac107d13275c7">FC_REFLECT_DERIVED</a>( TYPE, BOOST_PP_SEQ_NIL, MEMBERS )</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -367,13 +368,14 @@ Functions</h2></td></tr>
 <p>Specializes <a class="el" href="structfc_1_1reflector.html" title="defines visit functions for T Unless this is specialized, visit() will not be defined for T...">fc::reflector</a> for TYPE. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">TYPE</td><td>- the type to reflect </td></tr>
     <tr><td class="paramname">MEMBERS</td><td>- a sequence of member names. (field1)(field2)(field3)</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="reflect_8hpp.html#abd9da6cfee7b98ef83fac107d13275c7" title="Specializes fc::reflector for TYPE where type inherits other reflected classes. ">FC_REFLECT_DERIVED</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="reflect_8hpp_source.html#l00386">386</a> of file <a class="el" href="reflect_8hpp_source.html">reflect.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reflect_8hpp_source.html#l00388">388</a> of file <a class="el" href="reflect_8hpp_source.html">reflect.hpp</a>.</p>
 
 </div>
 </div>
@@ -412,19 +414,20 @@ Functions</h2></td></tr>
 <div class="ttc" id="reflect_8hpp_html_abdb8959279503b8c2f12096ac7e8268b"><div class="ttname"><a href="reflect_8hpp.html#abdb8959279503b8c2f12096ac7e8268b">FC_REFLECT_MEMBER_NAME</a></div><div class="ttdeci">#define FC_REFLECT_MEMBER_NAME(r, container, idx, member)</div><div class="ttdef"><b>Definition:</b> <a href="reflect_8hpp_source.html#l00121">reflect.hpp:121</a></div></div>
 <div class="ttc" id="reflect_8hpp_html_a7abf30496581288f9dfd66b230d50c1b"><div class="ttname"><a href="reflect_8hpp.html#a7abf30496581288f9dfd66b230d50c1b">FC_CONCAT_TYPE</a></div><div class="ttdeci">#define FC_CONCAT_TYPE(r, x, TYPE)</div><div class="ttdoc">Macro to concatenate a new type to a typelist. </div><div class="ttdef"><b>Definition:</b> <a href="reflect_8hpp_source.html#l00127">reflect.hpp:127</a></div></div>
 <div class="ttc" id="reflect_8hpp_html_a64d6f89c2afbb01c02c79c3960a64634"><div class="ttname"><a href="reflect_8hpp.html#a64d6f89c2afbb01c02c79c3960a64634">FC_CONCAT_MEMBER_REFLECTION</a></div><div class="ttdeci">#define FC_CONCAT_MEMBER_REFLECTION(r, container, idx, member)</div><div class="ttdoc">Macro to concatenate a new field_reflection to a typelist. </div><div class="ttdef"><b>Definition:</b> <a href="reflect_8hpp_source.html#l00117">reflect.hpp:117</a></div></div>
-<div class="ttc" id="namespacefc_html"><div class="ttname"><a href="namespacefc.html">fc</a></div><div class="ttdef"><b>Definition:</b> <a href="fc_2include_2fc_2api_8hpp_source.html#l00015">api.hpp:15</a></div></div>
+<div class="ttc" id="namespacefc_html"><div class="ttname"><a href="namespacefc.html">fc</a></div><div class="ttdoc">defines wrappers for boost::asio functions </div><div class="ttdef"><b>Definition:</b> <a href="fc_2include_2fc_2api_8hpp_source.html#l00015">api.hpp:15</a></div></div>
 <div class="ttc" id="namespacefc_1_1typelist_html_ad6cff0cd8c45c506a34052f254f40d13"><div class="ttname"><a href="namespacefc_1_1typelist.html#ad6cff0cd8c45c506a34052f254f40d13">fc::typelist::concat</a></div><div class="ttdeci">typename impl::concat&lt; Lists... &gt;::type concat</div><div class="ttdoc">Concatenate two or more typelists together. </div><div class="ttdef"><b>Definition:</b> <a href="typelist_8hpp_source.html#l00150">typelist.hpp:150</a></div></div>
 </div><!-- fragment -->
 <p>Specializes <a class="el" href="structfc_1_1reflector.html" title="defines visit functions for T Unless this is specialized, visit() will not be defined for T...">fc::reflector</a> for TYPE where type inherits other reflected classes. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">TYPE</td><td>- the type to reflect </td></tr>
     <tr><td class="paramname">INHERITS</td><td>- a sequence of base class names (basea)(baseb)(basec) </td></tr>
     <tr><td class="paramname">MEMBERS</td><td>- a sequence of member names. (field1)(field2)(field3) </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="reflect_8hpp_source.html#l00304">304</a> of file <a class="el" href="reflect_8hpp_source.html">reflect.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reflect_8hpp_source.html#l00305">305</a> of file <a class="el" href="reflect_8hpp_source.html">reflect.hpp</a>.</p>
 
 </div>
 </div>
@@ -504,10 +507,10 @@ Functions</h2></td></tr>
 <div class="ttc" id="structfc_1_1reflector_html_ac22b0130328be101cc76c96592bc383a"><div class="ttname"><a href="structfc_1_1reflector.html#ac22b0130328be101cc76c96592bc383a">fc::reflector::is_defined</a></div><div class="ttdeci">std::false_type is_defined</div><div class="ttdef"><b>Definition:</b> <a href="reflect_8hpp_source.html#l00141">reflect.hpp:141</a></div></div>
 <div class="ttc" id="reflect_8hpp_html_a7abf30496581288f9dfd66b230d50c1b"><div class="ttname"><a href="reflect_8hpp.html#a7abf30496581288f9dfd66b230d50c1b">FC_CONCAT_TYPE</a></div><div class="ttdeci">#define FC_CONCAT_TYPE(r, x, TYPE)</div><div class="ttdoc">Macro to concatenate a new type to a typelist. </div><div class="ttdef"><b>Definition:</b> <a href="reflect_8hpp_source.html#l00127">reflect.hpp:127</a></div></div>
 <div class="ttc" id="reflect_8hpp_html_a64d6f89c2afbb01c02c79c3960a64634"><div class="ttname"><a href="reflect_8hpp.html#a64d6f89c2afbb01c02c79c3960a64634">FC_CONCAT_MEMBER_REFLECTION</a></div><div class="ttdeci">#define FC_CONCAT_MEMBER_REFLECTION(r, container, idx, member)</div><div class="ttdoc">Macro to concatenate a new field_reflection to a typelist. </div><div class="ttdef"><b>Definition:</b> <a href="reflect_8hpp_source.html#l00117">reflect.hpp:117</a></div></div>
-<div class="ttc" id="namespacefc_html"><div class="ttname"><a href="namespacefc.html">fc</a></div><div class="ttdef"><b>Definition:</b> <a href="fc_2include_2fc_2api_8hpp_source.html#l00015">api.hpp:15</a></div></div>
+<div class="ttc" id="namespacefc_html"><div class="ttname"><a href="namespacefc.html">fc</a></div><div class="ttdoc">defines wrappers for boost::asio functions </div><div class="ttdef"><b>Definition:</b> <a href="fc_2include_2fc_2api_8hpp_source.html#l00015">api.hpp:15</a></div></div>
 <div class="ttc" id="namespacefc_1_1typelist_html_ad6cff0cd8c45c506a34052f254f40d13"><div class="ttname"><a href="namespacefc_1_1typelist.html#ad6cff0cd8c45c506a34052f254f40d13">fc::typelist::concat</a></div><div class="ttdeci">typename impl::concat&lt; Lists... &gt;::type concat</div><div class="ttdoc">Concatenate two or more typelists together. </div><div class="ttdef"><b>Definition:</b> <a href="typelist_8hpp_source.html#l00150">typelist.hpp:150</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="reflect_8hpp_source.html#l00356">356</a> of file <a class="el" href="reflect_8hpp_source.html">reflect.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reflect_8hpp_source.html#l00357">357</a> of file <a class="el" href="reflect_8hpp_source.html">reflect.hpp</a>.</p>
 
 </div>
 </div>
@@ -551,11 +554,11 @@ Functions</h2></td></tr>
 <div class="ttc" id="reflect_8hpp_html_a298a3fc1df3976f7e1e68de9f47ea726"><div class="ttname"><a href="reflect_8hpp.html#a298a3fc1df3976f7e1e68de9f47ea726">FC_CONCAT_BASE_MEMBER_REFLECTIONS</a></div><div class="ttdeci">#define FC_CONCAT_BASE_MEMBER_REFLECTIONS(r, derived, base)</div><div class="ttdoc">Macro to transform reflected fields of a base class to a derived class and concatenate them to a type...</div><div class="ttdef"><b>Definition:</b> <a href="reflect_8hpp_source.html#l00114">reflect.hpp:114</a></div></div>
 <div class="ttc" id="reflect_8hpp_html_a7abf30496581288f9dfd66b230d50c1b"><div class="ttname"><a href="reflect_8hpp.html#a7abf30496581288f9dfd66b230d50c1b">FC_CONCAT_TYPE</a></div><div class="ttdeci">#define FC_CONCAT_TYPE(r, x, TYPE)</div><div class="ttdoc">Macro to concatenate a new type to a typelist. </div><div class="ttdef"><b>Definition:</b> <a href="reflect_8hpp_source.html#l00127">reflect.hpp:127</a></div></div>
 <div class="ttc" id="reflect_8hpp_html_a64d6f89c2afbb01c02c79c3960a64634"><div class="ttname"><a href="reflect_8hpp.html#a64d6f89c2afbb01c02c79c3960a64634">FC_CONCAT_MEMBER_REFLECTION</a></div><div class="ttdeci">#define FC_CONCAT_MEMBER_REFLECTION(r, container, idx, member)</div><div class="ttdoc">Macro to concatenate a new field_reflection to a typelist. </div><div class="ttdef"><b>Definition:</b> <a href="reflect_8hpp_source.html#l00117">reflect.hpp:117</a></div></div>
-<div class="ttc" id="namespacefc_html"><div class="ttname"><a href="namespacefc.html">fc</a></div><div class="ttdef"><b>Definition:</b> <a href="fc_2include_2fc_2api_8hpp_source.html#l00015">api.hpp:15</a></div></div>
+<div class="ttc" id="namespacefc_html"><div class="ttname"><a href="namespacefc.html">fc</a></div><div class="ttdoc">defines wrappers for boost::asio functions </div><div class="ttdef"><b>Definition:</b> <a href="fc_2include_2fc_2api_8hpp_source.html#l00015">api.hpp:15</a></div></div>
 <div class="ttc" id="namespacefc_1_1typelist_html_ad6cff0cd8c45c506a34052f254f40d13"><div class="ttname"><a href="namespacefc_1_1typelist.html#ad6cff0cd8c45c506a34052f254f40d13">fc::typelist::concat</a></div><div class="ttdeci">typename impl::concat&lt; Lists... &gt;::type concat</div><div class="ttdoc">Concatenate two or more typelists together. </div><div class="ttdef"><b>Definition:</b> <a href="typelist_8hpp_source.html#l00150">typelist.hpp:150</a></div></div>
 <div class="ttc" id="reflect_8hpp_html_ad5ebf7bdfa041951e474ae9c14119c57"><div class="ttname"><a href="reflect_8hpp.html#ad5ebf7bdfa041951e474ae9c14119c57">FC_REFLECT_TEMPLATE_MEMBER_NAME</a></div><div class="ttdeci">#define FC_REFLECT_TEMPLATE_MEMBER_NAME(r, data, idx, member)</div><div class="ttdef"><b>Definition:</b> <a href="reflect_8hpp_source.html#l00123">reflect.hpp:123</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="reflect_8hpp_source.html#l00329">329</a> of file <a class="el" href="reflect_8hpp_source.html">reflect.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reflect_8hpp_source.html#l00330">330</a> of file <a class="el" href="reflect_8hpp_source.html">reflect.hpp</a>.</p>
 
 </div>
 </div>
@@ -568,12 +571,12 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">TYPE</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="api__objects_8hpp.html#a035f8f4576a06fc775ac82079ce84cb6">FC_REFLECT_DERIVED</a>( TYPE, BOOST_PP_SEQ_NIL, BOOST_PP_SEQ_NIL )</td>
+          <td>&#160;&#160;&#160;<a class="el" href="reflect_8hpp.html#abd9da6cfee7b98ef83fac107d13275c7">FC_REFLECT_DERIVED</a>( TYPE, BOOST_PP_SEQ_NIL, BOOST_PP_SEQ_NIL )</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="reflect_8hpp_source.html#l00393">393</a> of file <a class="el" href="reflect_8hpp_source.html">reflect.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reflect_8hpp_source.html#l00395">395</a> of file <a class="el" href="reflect_8hpp_source.html">reflect.hpp</a>.</p>
 
 </div>
 </div>
@@ -811,7 +814,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="reflect_8hpp_source.html#l00390">390</a> of file <a class="el" href="reflect_8hpp_source.html">reflect.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reflect_8hpp_source.html#l00392">392</a> of file <a class="el" href="reflect_8hpp_source.html">reflect.hpp</a>.</p>
 
 </div>
 </div>
@@ -868,9 +871,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code" href="namespacefc.html">fc</a> { \</div><div class="line">  template&lt;&gt; <span class="keyword">struct </span>get_typename&lt;TYPE&gt;  { <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* name()  { <span class="keywordflow">return</span> BOOST_PP_STRINGIZE(TYPE);  } }; \</div><div class="line">}</div><div class="ttc" id="namespacefc_html"><div class="ttname"><a href="namespacefc.html">fc</a></div><div class="ttdef"><b>Definition:</b> <a href="fc_2include_2fc_2api_8hpp_source.html#l00015">api.hpp:15</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code" href="namespacefc.html">fc</a> { \</div><div class="line">  template&lt;&gt; <span class="keyword">struct </span>get_typename&lt;TYPE&gt;  { <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* name()  { <span class="keywordflow">return</span> BOOST_PP_STRINGIZE(TYPE);  } }; \</div><div class="line">}</div><div class="ttc" id="namespacefc_html"><div class="ttname"><a href="namespacefc.html">fc</a></div><div class="ttdoc">defines wrappers for boost::asio functions </div><div class="ttdef"><b>Definition:</b> <a href="fc_2include_2fc_2api_8hpp_source.html#l00015">api.hpp:15</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="reflect_8hpp_source.html#l00396">396</a> of file <a class="el" href="reflect_8hpp_source.html">reflect.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reflect_8hpp_source.html#l00398">398</a> of file <a class="el" href="reflect_8hpp_source.html">reflect.hpp</a>.</p>
 
 </div>
 </div>
@@ -1034,7 +1037,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 22 2020 19:51:18 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 10:20:59 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

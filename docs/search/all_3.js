@@ -406,7 +406,7 @@ var searchData=
   ['current_5fpriority',['current_priority',['../classfc_1_1thread.html#ab26fafaae6305ca4472439fcc84898a3',1,'fc::thread']]],
   ['current_5frecursion',['current_recursion',['../structgraphene_1_1app_1_1get__required__fees__helper.html#abd43b89fd52416214e6db3201cb6a21b',1,'graphene::app::get_required_fees_helper']]],
   ['current_5fshuffled_5fwitnesses',['current_shuffled_witnesses',['../classgraphene_1_1chain_1_1witness__schedule__object.html#a1195b91b00c56d558257b67ea65fe1c9',1,'graphene::chain::witness_schedule_object']]],
-  ['current_5fsupply',['current_supply',['../classgraphene_1_1chain_1_1asset__dynamic__data__object.html#a56c347be9fbeade55f503038014a75c7',1,'graphene::chain::asset_dynamic_data_object']]],
+  ['current_5fsupply',['current_supply',['../classgraphene_1_1chain_1_1asset__dynamic__data__object.html#a56c347be9fbeade55f503038014a75c7',1,'graphene::chain::asset_dynamic_data_object::current_supply()'],['../structgraphene_1_1chain_1_1budget__record.html#ad2b8fafae590ba7e65d8f8ba9f3399f8',1,'graphene::chain::budget_record::current_supply()']]],
   ['current_5ftask_5fdesc',['current_task_desc',['../classfc_1_1thread.html#acbd5476f0efb729131430a23086ae985',1,'fc::thread']]],
   ['current_5fthread',['current_thread',['../namespacefc.html#a576d6e68aa0a0f80f5381c1933d0633f',1,'fc']]],
   ['current_5ftime_5freply_5fmessage',['current_time_reply_message',['../structgraphene_1_1net_1_1current__time__reply__message.html',1,'graphene::net']]],

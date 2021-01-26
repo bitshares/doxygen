@@ -4,8 +4,6 @@ var searchData=
   ['safe_3c_20int64_5ft_20_3e',['safe&lt; int64_t &gt;',['../structfc_1_1safe.html',1,'fc']]],
   ['scoped_5flock',['scoped_lock',['../classfc_1_1scoped__lock.html',1,'fc']]],
   ['secondary_5findex',['secondary_index',['../classgraphene_1_1db_1_1secondary__index.html',1,'graphene::db']]],
-  ['seq',['seq',['../structgraphene_1_1chain_1_1detail_1_1seq.html',1,'graphene::chain::detail']]],
-  ['seq_3c_20is_2e_2e_2e_20_3e',['seq&lt; Is... &gt;',['../structgraphene_1_1chain_1_1detail_1_1seq.html',1,'graphene::chain::detail']]],
   ['serial_5fvalve',['serial_valve',['../classfc_1_1serial__valve.html',1,'fc']]],
   ['session',['session',['../classgraphene_1_1db_1_1undo__database_1_1session.html',1,'graphene::db::undo_database']]],
   ['set_5ffee_5fvisitor',['set_fee_visitor',['../structgraphene_1_1protocol_1_1set__fee__visitor.html',1,'graphene::protocol']]],

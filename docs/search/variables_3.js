@@ -99,7 +99,7 @@ var searchData=
   ['current_5fop',['current_op',['../structgraphene_1_1protocol_1_1calc__fee__visitor.html#aedc01fab7f743037a4485505d5dbdae0',1,'graphene::protocol::calc_fee_visitor']]],
   ['current_5frecursion',['current_recursion',['../structgraphene_1_1app_1_1get__required__fees__helper.html#abd43b89fd52416214e6db3201cb6a21b',1,'graphene::app::get_required_fees_helper']]],
   ['current_5fshuffled_5fwitnesses',['current_shuffled_witnesses',['../classgraphene_1_1chain_1_1witness__schedule__object.html#a1195b91b00c56d558257b67ea65fe1c9',1,'graphene::chain::witness_schedule_object']]],
-  ['current_5fsupply',['current_supply',['../classgraphene_1_1chain_1_1asset__dynamic__data__object.html#a56c347be9fbeade55f503038014a75c7',1,'graphene::chain::asset_dynamic_data_object']]],
+  ['current_5fsupply',['current_supply',['../classgraphene_1_1chain_1_1asset__dynamic__data__object.html#a56c347be9fbeade55f503038014a75c7',1,'graphene::chain::asset_dynamic_data_object::current_supply()'],['../structgraphene_1_1chain_1_1budget__record.html#ad2b8fafae590ba7e65d8f8ba9f3399f8',1,'graphene::chain::budget_record::current_supply()']]],
   ['current_5ftype',['current_type',['../classgraphene_1_1chain_1_1ticket__object.html#ac4a3e19f1e5279930888dcb396ea863f',1,'graphene::chain::ticket_object']]],
   ['current_5fwitness',['current_witness',['../classgraphene_1_1chain_1_1dynamic__global__property__object.html#a02575a5c7cf9d6ab3e3ae2c5d287ac28',1,'graphene::chain::dynamic_global_property_object']]],
   ['custom_5fauthority_5foptions',['custom_authority_options',['../structgraphene_1_1protocol_1_1chain__parameters_1_1ext.html#a99facfcc5748efb535995aea1ce4ed43',1,'graphene::protocol::chain_parameters::ext']]]

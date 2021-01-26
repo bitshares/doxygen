@@ -58,6 +58,7 @@ var searchData=
   ['optional_3c_20graphene_3a_3achain_3a_3avesting_5fbalance_5fobject_20_3e',['optional&lt; graphene::chain::vesting_balance_object &gt;',['../classfc_1_1optional.html',1,'fc']]],
   ['optional_3c_20graphene_3a_3adb_3a_3aundo_5fdatabase_3a_3asession_20_3e',['optional&lt; graphene::db::undo_database::session &gt;',['../classfc_1_1optional.html',1,'fc']]],
   ['optional_3c_20graphene_3a_3aelasticsearch_3a_3avisitor_5fstruct_20_3e',['optional&lt; graphene::elasticsearch::visitor_struct &gt;',['../classfc_1_1optional.html',1,'fc']]],
+  ['optional_3c_20graphene_3a_3amarket_5fhistory_3a_3aliquidity_5fpool_5fticker_5fobject_20_3e',['optional&lt; graphene::market_history::liquidity_pool_ticker_object &gt;',['../classfc_1_1optional.html',1,'fc']]],
   ['optional_3c_20graphene_3a_3aprotocol_3a_3aaccount_5foptions_20_3e',['optional&lt; graphene::protocol::account_options &gt;',['../classfc_1_1optional.html',1,'fc']]],
   ['optional_3c_20graphene_3a_3aprotocol_3a_3aasset_20_3e',['optional&lt; graphene::protocol::asset &gt;',['../classfc_1_1optional.html',1,'fc']]],
   ['optional_3c_20graphene_3a_3aprotocol_3a_3aauthority_20_3e',['optional&lt; graphene::protocol::authority &gt;',['../classfc_1_1optional.html',1,'fc']]],

@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.0.0</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -379,6 +379,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>op
 : <a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html#a7751d7608c13e3cdd16db096b8f1bee8">graphene::chain::operation_history_object</a>
 , <a class="el" href="structgraphene_1_1elasticsearch_1_1operation__history__struct.html#aaa954ac9bd7edb71b85b190eae83a7fc">graphene::elasticsearch::operation_history_struct</a>
+, <a class="el" href="structgraphene_1_1market__history_1_1liquidity__pool__history__object.html#abea60706c3777072c893dbe5672ccb68">graphene::market_history::liquidity_pool_history_object</a>
 , <a class="el" href="structgraphene_1_1market__history_1_1order__history__object.html#a4fda1e02baa145b89167146a96cd9ea0">graphene::market_history::order_history_object</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1op__wrapper.html#a8e89033bd97d2b8f5ec9fc4be7dbcb19">graphene::protocol::op_wrapper</a>
 , <a class="el" href="structgraphene_1_1wallet_1_1operation__detail.html#a5bbaf259cd35ab1093f01e4f4bd0396f">graphene::wallet::operation_detail</a>
@@ -396,6 +397,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>op_type
 : <a class="el" href="classgraphene_1_1elasticsearch_1_1detail_1_1elasticsearch__plugin__impl.html#ae37db1c4ac9f159c175d467422174313">graphene::elasticsearch::detail::elasticsearch_plugin_impl</a>
+, <a class="el" href="structgraphene_1_1market__history_1_1liquidity__pool__history__object.html#a4e34136875277907a63495890a2b4b84">graphene::market_history::liquidity_pool_history_object</a>
 </li>
 <li>op_wrapper()
 : <a class="el" href="structgraphene_1_1protocol_1_1op__wrapper.html#a594264dc203efb2c902eb14e49d6dd9c">graphene::protocol::op_wrapper</a>
@@ -717,6 +719,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="structgraphene_1_1custom__operations_1_1detail_1_1custom__op__visitor.html#ab39066bdfe01ead00ff09a7e2b250d39">graphene::custom_operations::detail::custom_op_visitor</a>
 , <a class="el" href="structgraphene_1_1db_1_1object__id.html#a0bea414b63c8fce930285cea4ebfff6f">graphene::db::object_id&lt; SpaceID, TypeID &gt;</a>
 , <a class="el" href="structgraphene_1_1elasticsearch_1_1operation__visitor.html#a2eea9e0a8a75322fa62af038075c63e1">graphene::elasticsearch::operation_visitor</a>
+, <a class="el" href="structgraphene_1_1market__history_1_1detail_1_1get__liquidity__pool__id__visitor.html#ab36e32d02f92605d40d8dcca36e0f962">graphene::market_history::detail::get_liquidity_pool_id_visitor</a>
 , <a class="el" href="structgraphene_1_1market__history_1_1detail_1_1operation__process__fill__order.html#a698e990c7c21c862ba4b62f4ec3091ae">graphene::market_history::detail::operation_process_fill_order</a>
 , <a class="el" href="structgraphene_1_1market__history_1_1order__history__object__key__base__extractor.html#abc81b7432e511a5501329e9e71999b09">graphene::market_history::order_history_object_key_base_extractor</a>
 , <a class="el" href="structgraphene_1_1market__history_1_1order__history__object__key__quote__extractor.html#a42eaf72cde1a100ffc41c5ed18e329ed">graphene::market_history::order_history_object_key_quote_extractor</a>
@@ -809,7 +812,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classfc_1_1bigint.html#aeeed63218ddee1945d2903ec8de127df">fc::bigint</a>
 , <a class="el" href="classfc_1_1detail_1_1_c_big_num.html#a42f967fdd2bf3ce9a23bffc399afd66f">fc::detail::CBigNum</a>
 , <a class="el" href="classfc_1_1directory__iterator.html#a4e372b3729bd88b0801f5c50bb0bb07a">fc::directory_iterator</a>
-, <a class="el" href="classfc_1_1recursive__directory__iterator.html#aee0d9246b8ea4c0a35afc3f1fc671e0c">fc::recursive_directory_iterator</a>
+, <a class="el" href="classfc_1_1recursive__directory__iterator.html#a2c0680d263d1861ebd364d4f131d5237">fc::recursive_directory_iterator</a>
 , <a class="el" href="structfc_1_1safe.html#af1c879152b3d86f7e30a706555268b2c">fc::safe&lt; T &gt;</a>
 , <a class="el" href="structgraphene_1_1db_1_1object__id__type.html#aacd1aebdb14da6e59efc3678f010b9db">graphene::db::object_id_type</a>
 , <a class="el" href="classgraphene_1_1db_1_1simple__index_1_1const__iterator.html#a73970ff2cfc8aace04d0e724fea3909d">graphene::db::simple_index&lt; T &gt;::const_iterator</a>
@@ -820,19 +823,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classfc_1_1microseconds.html#a7057e7821df5af6e99737bd765f60953">fc::microseconds</a>
 , <a class="el" href="structfc_1_1safe.html#a25e4c7a4c87c1186e0032541f223aeb4">fc::safe&lt; T &gt;</a>
 , <a class="el" href="classfc_1_1time__point.html#a5b18fb63d14039935fbf3a1c2fb43c92">fc::time_point</a>
-, <a class="el" href="classfc_1_1time__point__sec.html#a2d1a748a9204795fb65ddf505fb81338">fc::time_point_sec</a>
+, <a class="el" href="classfc_1_1time__point__sec.html#a3bfad5ac28831576796cb103a3554abe">fc::time_point_sec</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1asset.html#aaeb8509d5eb67653f62217e1da0c5837">graphene::protocol::asset</a>
 </li>
 <li>operator-()
 : <a class="el" href="classfc_1_1bigint.html#a001caa037fe55d8aa67eb69697aafa79">fc::bigint</a>
 , <a class="el" href="classfc_1_1microseconds.html#ada590d04fee1d36be15cdda38b581531">fc::microseconds</a>
-, <a class="el" href="structfc_1_1safe.html#a207f3bc22ef71357cec46322252fd35c">fc::safe&lt; T &gt;</a>
+, <a class="el" href="structfc_1_1safe.html#a98e591d25662455e0988f668e027436d">fc::safe&lt; T &gt;</a>
 , <a class="el" href="classfc_1_1time__point.html#aaaf82b3f4bdfed38e0d4f7e6571f78bc">fc::time_point</a>
 , <a class="el" href="classfc_1_1time__point__sec.html#aa94366724bb07350a8c5181ebf50520e">fc::time_point_sec</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1asset.html#a1b2a9d51d9b7f3a10663d7a76bd90f2e">graphene::protocol::asset</a>
 </li>
 <li>operator--()
-: <a class="el" href="classfc_1_1bigint.html#a14299996f33c1f7abb645a1d0b20f8fd">fc::bigint</a>
+: <a class="el" href="classfc_1_1bigint.html#a3832b6df4103eff5b58ba388a0b2c6b3">fc::bigint</a>
 , <a class="el" href="classfc_1_1detail_1_1_c_big_num.html#a19664fbf7c2e024f70da1815eaeae66a">fc::detail::CBigNum</a>
 , <a class="el" href="structfc_1_1safe.html#a05d910ac6feda1016cfa2f98edc0ee00">fc::safe&lt; T &gt;</a>
 </li>
@@ -842,7 +845,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classfc_1_1microseconds.html#a17b674779305e76b06ec25e456775fbf">fc::microseconds</a>
 , <a class="el" href="structfc_1_1safe.html#a1494539bb9d6fa9204d38b776a36fe07">fc::safe&lt; T &gt;</a>
 , <a class="el" href="classfc_1_1time__point.html#aae57570284a342e14814c4099a51c7b4">fc::time_point</a>
-, <a class="el" href="classfc_1_1time__point__sec.html#aedde881c34001b77d56113a122664a8c">fc::time_point_sec</a>
+, <a class="el" href="classfc_1_1time__point__sec.html#a91ec1c14f3ca1d6ff920f58aff9142ed">fc::time_point_sec</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1asset.html#aab0c149346cea2c3ae79d25dce1d91ab">graphene::protocol::asset</a>
 </li>
 <li>operator-&gt;()
@@ -869,7 +872,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>operator&lt;()
 : <a class="el" href="classfc_1_1bigint.html#a006bf1b47054ea24ff222b47c49a6085">fc::bigint</a>
 , <a class="el" href="classfc_1_1ecc_1_1private__key.html#a07832f781f3f9ce28ecba02777a9c6df">fc::ecc::private_key</a>
-, <a class="el" href="classfc_1_1enum__type.html#ae7262aa0bbe0f5c8491207b8d7932746">fc::enum_type&lt; IntType, EnumType &gt;</a>
+, <a class="el" href="classfc_1_1enum__type.html#a90bf3dabca0d72cebe3a1c9d8698a42c">fc::enum_type&lt; IntType, EnumType &gt;</a>
 , <a class="el" href="classfc_1_1hash160.html#afb9775e487ef9451f59519392796b65a">fc::hash160</a>
 , <a class="el" href="classfc_1_1ip_1_1endpoint.html#aa0defbdcb5d502ecbdfb035009e24f75">fc::ip::endpoint</a>
 , <a class="el" href="classfc_1_1microseconds.html#aa1877d2e6b18621502415bb755c51108">fc::microseconds</a>
@@ -877,14 +880,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classfc_1_1path.html#ad90b5a13641f4566ff587ee41dc964a8">fc::path</a>
 , <a class="el" href="classfc_1_1priority.html#a7fe5b50415c33ce29ed5ca888c932545">fc::priority</a>
 , <a class="el" href="classfc_1_1ripemd160.html#a3ef6c695d63dd7d636c8540e40f96d08">fc::ripemd160</a>
-, <a class="el" href="structfc_1_1safe.html#aa9804000cf7ba52e2de6a3ead10ac2bf">fc::safe&lt; T &gt;</a>
+, <a class="el" href="structfc_1_1safe.html#a4ba7542d3ea31c786a4899c03bfdfb44">fc::safe&lt; T &gt;</a>
 , <a class="el" href="classfc_1_1sha1.html#a6c29b9daf163c2bc1541ffdbcce454f5">fc::sha1</a>
 , <a class="el" href="classfc_1_1sha224.html#a3b446130a7ac6778ad07a6c3fd3c9e99">fc::sha224</a>
 , <a class="el" href="classfc_1_1sha256.html#af7015e3408496f37408ec75905f766b1">fc::sha256</a>
 , <a class="el" href="classfc_1_1sha512.html#a362bda52c15891f197a1c266eb2a71ee">fc::sha512</a>
 , <a class="el" href="classfc_1_1time__point.html#ad24ce5110500d9bdf178fbc620e8a4e0">fc::time_point</a>
 , <a class="el" href="classfc_1_1time__point__sec.html#adf55a60cc15afb538eb8d5bf3a838b35">fc::time_point_sec</a>
-, <a class="el" href="structfc_1_1unsigned__int.html#a9ee53ee5a6af74bf7bd9177c3eedb8fb">fc::unsigned_int</a>
+, <a class="el" href="structfc_1_1unsigned__int.html#a7b63fe05b7fa753e1cb2b92423bc759c">fc::unsigned_int</a>
 , <a class="el" href="structgraphene_1_1db_1_1object__id.html#a62b36919a827bb8fee7435c602eae0ae">graphene::db::object_id&lt; SpaceID, TypeID &gt;</a>
 , <a class="el" href="structgraphene_1_1db_1_1object__id__type.html#ad83c90526be4c6f100ea84d3e5ad9744">graphene::db::object_id_type</a>
 , <a class="el" href="structgraphene_1_1grouped__orders_1_1limit__order__group__key.html#ac110103fa1787f85381e631eb4a2f522">graphene::grouped_orders::limit_order_group_key</a>
@@ -894,9 +897,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="structgraphene_1_1protocol_1_1asset.html#a4c5d8977b23e534426a070f568524d02">graphene::protocol::asset</a>
 </li>
 <li>operator&lt;&lt;
-: <a class="el" href="classfc_1_1hash160.html#a583fda8db1b00080b934d5d77945bf4f">fc::hash160</a>
-, <a class="el" href="classfc_1_1ripemd160.html#a479f288a930a413335590b08ff8af0ec">fc::ripemd160</a>
-, <a class="el" href="classfc_1_1sha1.html#ac685065417ff085f1017dc4467388e40">fc::sha1</a>
+: <a class="el" href="classfc_1_1hash160.html#aa69f9f85d36a33fac582c1d639ced70b">fc::hash160</a>
+, <a class="el" href="classfc_1_1ripemd160.html#a7faa73e7ef78c12cbe81588836dc0079">fc::ripemd160</a>
+, <a class="el" href="classfc_1_1sha1.html#a8e87d2be9b06c7113b57a2b8455fdc22">fc::sha1</a>
 , <a class="el" href="classfc_1_1sha224.html#a3a78fb7b9fd8d025d00b7e9f402cc497">fc::sha224</a>
 , <a class="el" href="classfc_1_1sha256.html#a7307d901ab9d4c4c7f007dace95a786a">fc::sha256</a>
 , <a class="el" href="classfc_1_1sha512.html#a4b462b1c5818c74c3d5359e4ad989235">fc::sha512</a>
@@ -922,19 +925,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classfc_1_1detail_1_1_c_auto_b_n___c_t_x.html#af25a9cb008d8da61417eff6eb26e68a2">fc::detail::CAutoBN_CTX</a>
 , <a class="el" href="classfc_1_1detail_1_1_c_big_num.html#ac8f2224dfa92c5bf1750ca795943eb52">fc::detail::CBigNum</a>
 , <a class="el" href="classfc_1_1ecc_1_1detail_1_1private__key__impl.html#a9a114d32d88f0621d7d280d7b627542d">fc::ecc::detail::private_key_impl</a>
-, <a class="el" href="classfc_1_1ecc_1_1detail_1_1public__key__impl.html#a154d0531bb2217a04619047d7a302391">fc::ecc::detail::public_key_impl</a>
-, <a class="el" href="classfc_1_1ecc_1_1private__key.html#a35e700049a1b301202a45bb4e46e8240">fc::ecc::private_key</a>
-, <a class="el" href="classfc_1_1ecc_1_1public__key.html#a896c349b93b67c049c5f08c4cbb2b70f">fc::ecc::public_key</a>
+, <a class="el" href="classfc_1_1ecc_1_1detail_1_1public__key__impl.html#a46caebdeb132ce6a8d3d69adce124f25">fc::ecc::detail::public_key_impl</a>
+, <a class="el" href="classfc_1_1ecc_1_1private__key.html#a2cec7b462875dee7ccaa51d94185d9fa">fc::ecc::private_key</a>
+, <a class="el" href="classfc_1_1ecc_1_1public__key.html#a22e892436cb6e8d7e56b5125e32b9e9d">fc::ecc::public_key</a>
 , <a class="el" href="classfc_1_1enum__type.html#a10fec0ad3f736434b38d15cfd37ad10b">fc::enum_type&lt; IntType, EnumType &gt;</a>
 , <a class="el" href="classfc_1_1exception.html#afb0e1fac60179c7b2e171c87d295f690">fc::exception</a>
 , <a class="el" href="classfc_1_1future.html#acdd34f7904a663e8771bdc5edd4022d7">fc::future&lt; T &gt;</a>
 , <a class="el" href="classfc_1_1future_3_01void_01_4.html#adb010686a4a96468bd6cef9c2981cc2f">fc::future&lt; void &gt;</a>
-, <a class="el" href="classfc_1_1fwd.html#a0f1d678a573b3d69a6411f5acfa286ee">fc::fwd&lt; T, S, Align &gt;</a>
+, <a class="el" href="classfc_1_1fwd.html#a3c7d9ecc22d77ad7dbe66d4f4b5ff5ae">fc::fwd&lt; T, S, Align &gt;</a>
 , <a class="el" href="classfc_1_1ip_1_1address.html#a6d4bf277281f2a36130ac492a26b6939">fc::ip::address</a>
 , <a class="el" href="classfc_1_1logger.html#a393c825c3bde5d27ff565e08ce2035de">fc::logger</a>
-, <a class="el" href="classfc_1_1mutable__url.html#a7324a073ed4a43f636baec9504f6650e">fc::mutable_url</a>
+, <a class="el" href="classfc_1_1mutable__url.html#a431a4ea442db379419203773f2cb5585">fc::mutable_url</a>
 , <a class="el" href="classfc_1_1mutable__variant__object.html#a13c8383bf1636f5a8810cba585e571b9">fc::mutable_variant_object</a>
-, <a class="el" href="classfc_1_1optional.html#a15bcd4eed1211821573f8a7cc6af1b97">fc::optional&lt; T &gt;</a>
+, <a class="el" href="classfc_1_1optional.html#a859ec2e84e277ecca8a1353978b0df5b">fc::optional&lt; T &gt;</a>
 , <a class="el" href="classfc_1_1path.html#abd300298b33db4c752481d93245fcbf4">fc::path</a>
 , <a class="el" href="structfc_1_1ssl__wrapper.html#ac5cac2bbcbe01bfae7a23cec13812c5c">fc::ssl_wrapper&lt; ssl_type &gt;</a>
 , <a class="el" href="classfc_1_1static__variant.html#a32f2b7544df5c070ac8d4c935fe9036c">fc::static_variant&lt; Types &gt;</a>
@@ -944,12 +947,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classfc_1_1thread.html#ac1cda1aeac47261bc10fa47227b0db6b">fc::thread</a>
 , <a class="el" href="classfc_1_1time__point__sec.html#adf354265ae353527155c2cd9086f5d50">fc::time_point_sec</a>
 , <a class="el" href="structfc_1_1unsigned__int.html#a4608c48a5eb887cdc97739a2d30b966c">fc::unsigned_int</a>
-, <a class="el" href="classfc_1_1url.html#a89f7487aabb2bf5ca2e5cc60f44259a6">fc::url</a>
-, <a class="el" href="classfc_1_1variant.html#af0367a0aa45efe02b3db8e17ce94e43e">fc::variant</a>
-, <a class="el" href="classfc_1_1variant__object_1_1entry.html#a54669b8a1ba8a9dd3fa1d4fac4cec0bd">fc::variant_object::entry</a>
+, <a class="el" href="classfc_1_1url.html#ab13e459f6c60df51ca0af09f6194c6f2">fc::url</a>
+, <a class="el" href="classfc_1_1variant.html#a0dca5e5489ee3baac5bdab51417d9e02">fc::variant</a>
+, <a class="el" href="classfc_1_1variant__object_1_1entry.html#ad8e8da80a39391d7c4c71dbf439cc17a">fc::variant_object::entry</a>
 , <a class="el" href="classfc_1_1variant__object.html#a8b1e8f4915247c5a2bdcb73500d7f500">fc::variant_object</a>
 , <a class="el" href="classgraphene_1_1db_1_1undo__database_1_1session.html#a35b5ff1224a8461f63025fcf7c25f4f7">graphene::db::undo_database::session</a>
-, <a class="el" href="structgraphene_1_1protocol_1_1chain__parameters.html#ae0efebcae3889082d1334c3348ec1e8d">graphene::protocol::chain_parameters</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1chain__parameters.html#a9629be78295170cbebf2af63771dfe9d">graphene::protocol::chain_parameters</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html#acdbfea225ac32f18f07676d4a9acd57d">graphene::protocol::vote_id_type</a>
 </li>
 <li>operator==
@@ -959,18 +962,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classfc_1_1directory__iterator.html#a7c558731903d512fc41e9d6bf929926a">fc::directory_iterator</a>
 , <a class="el" href="classfc_1_1ecc_1_1private__key.html#af279e37c180aa326645bdb542b9be656">fc::ecc::private_key</a>
 , <a class="el" href="classfc_1_1ecc_1_1public__key.html#a4f2610bdec460bf2b0203684a9599da5">fc::ecc::public_key</a>
-, <a class="el" href="classfc_1_1enum__type.html#a1ffc7cb32cd9a60afb25a6e2f7d1034e">fc::enum_type&lt; IntType, EnumType &gt;</a>
+, <a class="el" href="classfc_1_1enum__type.html#a091a7d971ad168253c3ef16098064da1">fc::enum_type&lt; IntType, EnumType &gt;</a>
 , <a class="el" href="classfc_1_1hash160.html#a0be4d24d97043494b9f54061f196060e">fc::hash160</a>
 , <a class="el" href="classfc_1_1ip_1_1address.html#aa0feacee1993c1338d13ea41f236d660">fc::ip::address</a>
 , <a class="el" href="classfc_1_1ip_1_1endpoint.html#abbc398434e10da844dfb35060c472a25">fc::ip::endpoint</a>
 , <a class="el" href="classfc_1_1logger.html#ae72ebcd5df1295f3d8e4bf0c0f4bae05">fc::logger</a>
 , <a class="el" href="classfc_1_1microseconds.html#a4a09e6a785d8a07ce416a53af9fbe1cf">fc::microseconds</a>
-, <a class="el" href="classfc_1_1mutable__url.html#aa14dac81d0bd935af70d9bfdc473faaa">fc::mutable_url</a>
+, <a class="el" href="classfc_1_1mutable__url.html#a907eacf48d63d17d6b1d15ad33fbe72e">fc::mutable_url</a>
 , <a class="el" href="classfc_1_1optional.html#a608be2170eb1ffcef97954156c7ebbd8">fc::optional&lt; T &gt;</a>
 , <a class="el" href="classfc_1_1path.html#afd02e7ea89cb6a2b81d8bc4369e9636b">fc::path</a>
 , <a class="el" href="classfc_1_1recursive__directory__iterator.html#adc8bc6f1774aa444f00f4fd9db33966e">fc::recursive_directory_iterator</a>
 , <a class="el" href="classfc_1_1ripemd160.html#a9ea7160188d70a1495c72fa44e7f29e2">fc::ripemd160</a>
-, <a class="el" href="structfc_1_1safe.html#a7b18b4c7d028784540c51a35b996e710">fc::safe&lt; T &gt;</a>
+, <a class="el" href="structfc_1_1safe.html#a2c9bfcc98dc3983a839601190a4c9290">fc::safe&lt; T &gt;</a>
 , <a class="el" href="classfc_1_1sha1.html#a6fd867d656b30cba0f59d8add436aa1a">fc::sha1</a>
 , <a class="el" href="classfc_1_1sha224.html#a1a0b7b54c6e6862c90f0fc3f35c0b7ac">fc::sha224</a>
 , <a class="el" href="classfc_1_1sha256.html#ae738960f49248fd220cd37e46bb2bf48">fc::sha256</a>
@@ -980,7 +983,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classfc_1_1time__point__sec.html#ad97eba5244d2729349e69939e68fc939">fc::time_point_sec</a>
 , <a class="el" href="structfc_1_1unsigned__int.html#add87b4023be256deec5ac1afe4faf17c">fc::unsigned_int</a>
 , <a class="el" href="classfc_1_1url.html#af14d78143dd11005f2e32ba37070f0e8">fc::url</a>
-, <a class="el" href="structgraphene_1_1db_1_1object__id.html#a7e09aa7e3c6853b66d32f85b54ee7917">graphene::db::object_id&lt; SpaceID, TypeID &gt;</a>
+, <a class="el" href="structgraphene_1_1db_1_1object__id.html#a3078f680620f65221bcd99cb4c1f4d3c">graphene::db::object_id&lt; SpaceID, TypeID &gt;</a>
 , <a class="el" href="structgraphene_1_1db_1_1object__id__type.html#a699ef0c1ec922f544ff710e9497db777">graphene::db::object_id_type</a>
 , <a class="el" href="classgraphene_1_1db_1_1simple__index_1_1const__iterator.html#ab0ac7de651351823aece097eb3be1cfb">graphene::db::simple_index&lt; T &gt;::const_iterator</a>
 , <a class="el" href="structgraphene_1_1grouped__orders_1_1limit__order__group__key.html#acbc6af980a1dcd8bf823fbe03334104c">graphene::grouped_orders::limit_order_group_key</a>
@@ -993,18 +996,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>operator&gt;()
 : <a class="el" href="classfc_1_1bigint.html#ad295ca598ffdd22f61194be4e6ec0f18">fc::bigint</a>
-, <a class="el" href="classfc_1_1enum__type.html#a24394abb48c45af9a0006a307a147afa">fc::enum_type&lt; IntType, EnumType &gt;</a>
+, <a class="el" href="classfc_1_1enum__type.html#a2932f8a8204bfd924a0eb099d1141c1e">fc::enum_type&lt; IntType, EnumType &gt;</a>
 , <a class="el" href="classfc_1_1hash160.html#a2ef6bb75cb0567539064a1bf24b85af2">fc::hash160</a>
 , <a class="el" href="classfc_1_1microseconds.html#afce366cbc2e650931e2d1eb856c1339e">fc::microseconds</a>
 , <a class="el" href="classfc_1_1ripemd160.html#a25b1386a28903dfa8b3ffcf275feb2c1">fc::ripemd160</a>
-, <a class="el" href="structfc_1_1safe.html#a4dca5b6d2ee3378f122fd138bbbb3dce">fc::safe&lt; T &gt;</a>
+, <a class="el" href="structfc_1_1safe.html#a2513bbb42989b9f231585c66954d9c8d">fc::safe&lt; T &gt;</a>
 , <a class="el" href="classfc_1_1sha1.html#a678374e9b6c8bf5549fde635f45ca8da">fc::sha1</a>
 , <a class="el" href="classfc_1_1sha224.html#a0685326aba8fe1bd639a0ccda85e2fa3">fc::sha224</a>
 , <a class="el" href="classfc_1_1sha256.html#aebda3e73d07ef82c0e645483d7053a00">fc::sha256</a>
 , <a class="el" href="classfc_1_1sha512.html#adc02e323d02228115f0d428e0765d09e">fc::sha512</a>
 , <a class="el" href="classfc_1_1time__point.html#a27dbba10ab75d173db2c04a51022d06f">fc::time_point</a>
 , <a class="el" href="classfc_1_1time__point__sec.html#aaaeb236eab5e19e5657e60b73c92e6c1">fc::time_point_sec</a>
-, <a class="el" href="structfc_1_1unsigned__int.html#a794d7b8244347d53b1db0d482734d274">fc::unsigned_int</a>
+, <a class="el" href="structfc_1_1unsigned__int.html#a08c28196762fb64b0cb0ce924d817b3d">fc::unsigned_int</a>
 , <a class="el" href="structgraphene_1_1db_1_1object__id.html#adeaa6563b141bebb9045147876c68eb0">graphene::db::object_id&lt; SpaceID, TypeID &gt;</a>
 , <a class="el" href="structgraphene_1_1db_1_1object__id__type.html#a38ea22099d579327cf4ea9e8cd562bfb">graphene::db::object_id_type</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1asset.html#a88d1352c1cf2b7377292377449a4ced8">graphene::protocol::asset</a>
@@ -1040,7 +1043,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>operator[]()
 : <a class="el" href="structfc_1_1json__relaxed_1_1_char_value_table.html#a65ba52ecf359d76e450b6c25c4290947">fc::json_relaxed::CharValueTable</a>
 , <a class="el" href="classfc_1_1mutable__variant__object.html#a65a9a8761bc6f46738d8583b757072cf">fc::mutable_variant_object</a>
-, <a class="el" href="classfc_1_1variant.html#a83a16233c29cab1a64927c56c8ebc534">fc::variant</a>
+, <a class="el" href="classfc_1_1variant.html#acef7e19d3f8fc570857c8a51535bec8f">fc::variant</a>
 , <a class="el" href="classfc_1_1variant__object.html#ab2d0bcb9fd037879ad230599bed010e8">fc::variant_object</a>
 </li>
 <li>operator^
@@ -1173,7 +1176,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 22 2020 19:51:23 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 10:21:02 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

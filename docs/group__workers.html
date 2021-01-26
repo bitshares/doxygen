@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.0.0</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -105,7 +105,7 @@ Typedefs</h2></td></tr>
 <tr class="separator:gacad8e9996ced0a2fc8e66f65210701d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>BitShares blockchains allow the creation of special "workers" which are elected positions paid by the blockchain for services they provide. There may be several types of workers, and the semantics of how and when they are paid are defined by the worker_type_enum enumeration. All workers are elected by core stakeholder approval, by voting for or against them.</p>
+<p>BitShares blockchains allow the creation of special "workers" which are elected positions paid by the blockchain for services they provide. There may be several types of workers, and the semantics of how and when they are paid are defined by the <a class="el" href="namespacegraphene_1_1chain.html#aff2faab1253f21209aaad5771fdda38c">graphene::chain::worker_type</a> enumeration. All workers are elected by core stakeholder approval, by voting for or against them.</p>
 <p>Workers are paid from the blockchain's daily budget if their total approval (votes for - votes against) is positive, ordered from most positive approval to least, until the budget is exhausted. Payments are processed at the blockchain maintenance interval. If a worker does not have positive approval during payment processing, or if the chain's budget is exhausted before the worker is paid, that worker is simply not paid at that interval. Payment is not prorated based on percentage of the interval the worker was approved. If the chain attempts to pay a worker, but the budget is insufficient to cover its entire pay, the worker is paid the remaining budget funds, even though this does not fulfill his total pay. The worker will not receive extra pay to make up the difference later. Worker pay is placed in a vesting balance and vests over the number of days specified at the worker's creation.</p>
 <p>Once created, a worker is immutable and will be kept by the blockchain forever. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -119,14 +119,14 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="worker_8hpp_source.html#l00071">71</a> of file <a class="el" href="worker_8hpp_source.html">worker.hpp</a>.</p>
+<p>Definition at line <a class="el" href="worker_8hpp_source.html#l00072">72</a> of file <a class="el" href="worker_8hpp_source.html">worker.hpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 22 2020 19:51:18 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 10:20:59 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

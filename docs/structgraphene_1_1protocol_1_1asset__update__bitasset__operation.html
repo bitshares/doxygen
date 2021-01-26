@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.0.0</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -165,7 +165,7 @@ Additional Inherited Members</h2></td></tr>
 <p>BitAssets have some options which are not relevant to other asset types. This operation is used to update those options an an existing BitAsset. </p>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="structgraphene_1_1protocol_1_1asset__update__bitasset__operation.html#ac55909f3ec405a37a948ee4571f3962b">issuer</a> MUST be an existing account and MUST match asset_object::issuer on <a class="el" href="structgraphene_1_1protocol_1_1asset__update__bitasset__operation.html#a78acf5d03588158012c8e57f12a5b406">asset_to_update</a> </dd>
 <dd>
-<a class="el" href="structgraphene_1_1protocol_1_1asset__update__bitasset__operation.html#a78acf5d03588158012c8e57f12a5b406">asset_to_update</a> MUST be a BitAsset, i.e. asset_object::is_market_issued() returns true </dd>
+<a class="el" href="structgraphene_1_1protocol_1_1asset__update__bitasset__operation.html#a78acf5d03588158012c8e57f12a5b406">asset_to_update</a> MUST be a BitAsset, i.e. <a class="el" href="classgraphene_1_1chain_1_1asset__object.html#adebdf0e788fbe2e33510ac7e32aa804e">graphene::chain::asset_object::is_market_issued()</a> returns true </dd>
 <dd>
 <a class="el" href="structgraphene_1_1protocol_1_1asset__update__bitasset__operation.html#ab9f516bcb503d3d607780a3a121ed2a4">fee</a> MUST be nonnegative, and <a class="el" href="structgraphene_1_1protocol_1_1asset__update__bitasset__operation.html#ac55909f3ec405a37a948ee4571f3962b">issuer</a> MUST have a sufficient balance to pay it </dd>
 <dd>
@@ -294,7 +294,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 22 2020 19:51:22 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 10:21:01 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

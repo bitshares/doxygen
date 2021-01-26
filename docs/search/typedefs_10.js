@@ -4,7 +4,7 @@ var searchData=
   ['tag_5ftype',['tag_type',['../classfc_1_1static__variant.html#aba87b38cb3bcf33da8b38323211fdcb7',1,'fc::static_variant::tag_type()'],['../classfc_1_1static__variant_3_4.html#a4823c75d35c466bbd8b40dce23ae7f6b',1,'fc::static_variant&lt;&gt;::tag_type()']]],
   ['tcp_5fsocket_5fptr',['tcp_socket_ptr',['../namespacefc.html#a3d25a352f40fdcbb73a40449e872d42a',1,'fc']]],
   ['ticket_5findex',['ticket_index',['../namespacegraphene_1_1chain.html#a2bcc2b76618541b11260aed7dd1a92ff',1,'graphene::chain']]],
-  ['ticket_5fmulti_5findex_5ftype',['ticket_multi_index_type',['../namespacegraphene_1_1chain.html#a0935beae3db69e16b7faeb66e45d14be',1,'graphene::chain']]],
+  ['ticket_5fmulti_5findex_5ftype',['ticket_multi_index_type',['../namespacegraphene_1_1chain.html#a1e97d81997833870f822d3a16212d9c1',1,'graphene::chain']]],
   ['timestamped_5fitems_5fset_5ftype',['timestamped_items_set_type',['../classgraphene_1_1net_1_1peer__connection.html#a3c453ce025f0fcd97c4b4290d617f576',1,'graphene::net::peer_connection']]],
   ['transaction_5fhandle_5ftype',['transaction_handle_type',['../namespacegraphene_1_1wallet.html#a385c5434f1c4e271cf812627f9ee759a',1,'graphene::wallet']]],
   ['transaction_5fid_5ftype',['transaction_id_type',['../namespacegraphene_1_1protocol.html#a040f9f71bff896e89dc9ee3ff92bb076',1,'graphene::protocol']]],

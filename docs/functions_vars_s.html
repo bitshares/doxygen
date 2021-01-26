@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.0.0</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -181,6 +181,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="structgraphene_1_1app_1_1market__trade.html#ac23d321dac1e4bca5fa44207ea4d6533">graphene::app::market_trade</a>
 , <a class="el" href="classgraphene_1_1chain_1_1account__transaction__history__object.html#a6422cf06a084ed2abfaf710c56247ed3">graphene::chain::account_transaction_history_object</a>
 , <a class="el" href="structgraphene_1_1market__history_1_1history__key.html#aacaf5cd633303060aaeea4fc3235783e">graphene::market_history::history_key</a>
+, <a class="el" href="structgraphene_1_1market__history_1_1liquidity__pool__history__object.html#a802432b014bee79a55b0293266be666d">graphene::market_history::liquidity_pool_history_object</a>
 </li>
 <li>sequence_number
 : <a class="el" href="structgraphene_1_1net_1_1detail_1_1prioritized__item__id.html#a035a50386a9bc9dca34c63a022d37e59">graphene::net::detail::prioritized_item_id</a>
@@ -256,6 +257,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>skip_flags
 : <a class="el" href="classgraphene_1_1chain_1_1node__property__object.html#afa38644ba610ec9aa152f94c8dd3e37e">graphene::chain::node_property_object</a>
 </li>
+<li>skip_min_lp_his_id
+: <a class="el" href="structgraphene_1_1market__history_1_1liquidity__pool__ticker__meta__object.html#acce99f89829a5d457c95081b570cd7ec">graphene::market_history::liquidity_pool_ticker_meta_object</a>
+</li>
 <li>skip_min_order_his_id
 : <a class="el" href="structgraphene_1_1market__history_1_1market__ticker__meta__object.html#a16fd4cce58facab28c8af019d834b457">graphene::market_history::market_ticker_meta_object</a>
 </li>
@@ -310,6 +314,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a189a6d2eba45918f9532a162656659f7">graphene::custom_operations::account_storage_object</a>
 , <a class="el" href="structgraphene_1_1db_1_1object__id.html#af2acbad0bbf47bab71417ee49a774917">graphene::db::object_id&lt; SpaceID, TypeID &gt;</a>
 , <a class="el" href="structgraphene_1_1market__history_1_1bucket__object.html#a3f0c01971ca352912ab90b81906363d9">graphene::market_history::bucket_object</a>
+, <a class="el" href="structgraphene_1_1market__history_1_1liquidity__pool__history__object.html#a68cc89a1bdd090026125409bef7cd339">graphene::market_history::liquidity_pool_history_object</a>
+, <a class="el" href="structgraphene_1_1market__history_1_1liquidity__pool__ticker__meta__object.html#a93385ab5c12f8682ad50caba4322c424">graphene::market_history::liquidity_pool_ticker_meta_object</a>
+, <a class="el" href="structgraphene_1_1market__history_1_1liquidity__pool__ticker__object.html#ad3904ee004d55a5de7adc30eedbd8005">graphene::market_history::liquidity_pool_ticker_object</a>
 , <a class="el" href="structgraphene_1_1market__history_1_1market__ticker__meta__object.html#ad3653c4789798e1ca26db1ae8059a343">graphene::market_history::market_ticker_meta_object</a>
 , <a class="el" href="structgraphene_1_1market__history_1_1market__ticker__object.html#a3f941a66b099a2908579d17175a28f22">graphene::market_history::market_ticker_object</a>
 , <a class="el" href="structgraphene_1_1market__history_1_1order__history__object.html#ab0dddfdd93c54f160d8069061d13e113">graphene::market_history::order_history_object</a>
@@ -329,7 +336,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="structgraphene_1_1protocol_1_1cdd__vesting__policy__initializer.html#aacfc89ff34bafa9811da6ac33f41c32d">graphene::protocol::cdd_vesting_policy_initializer</a>
 </li>
 <li>statistics
-: <a class="el" href="structgraphene_1_1app_1_1full__account.html#a8316552fc0c7330957d1b1186c55c727">graphene::app::full_account</a>
+: <a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html#a79cc0a5d90bbb8affba23a324b62dd86">graphene::app::extended_liquidity_pool_object</a>
+, <a class="el" href="structgraphene_1_1app_1_1full__account.html#a8316552fc0c7330957d1b1186c55c727">graphene::app::full_account</a>
 , <a class="el" href="classgraphene_1_1chain_1_1account__object.html#a5b9bfe461d65d269fb054e7e1dbe8b48">graphene::chain::account_object</a>
 </li>
 <li>status
@@ -382,7 +390,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 22 2020 19:51:23 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 10:21:02 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

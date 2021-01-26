@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.0.0</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -108,14 +108,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5700459ed2913c05f10ef9e4eacf2b1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1custom__operations__api.html#a5700459ed2913c05f10ef9e4eacf2b1b">custom_operations_api</a> (<a class="el" href="classgraphene_1_1app_1_1application.html">application</a> &amp;app)</td></tr>
 <tr class="separator:a5700459ed2913c05f10ef9e4eacf2b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98756e33fabcab57bc2b4fa7298ed7ca"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1custom__operations__api.html#a98756e33fabcab57bc2b4fa7298ed7ca">get_storage_info</a> (std::string account_id_or_name, std::string catalog) const </td></tr>
-<tr class="memdesc:a98756e33fabcab57bc2b4fa7298ed7ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all stored objects of an account in a particular catalog.  <a href="#a98756e33fabcab57bc2b4fa7298ed7ca">More...</a><br /></td></tr>
-<tr class="separator:a98756e33fabcab57bc2b4fa7298ed7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad645335f0a55015839cec0808ef18bce"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1custom__operations__api.html#ad645335f0a55015839cec0808ef18bce">get_storage_info</a> (std::string account_name_or_id, std::string catalog) const </td></tr>
+<tr class="memdesc:ad645335f0a55015839cec0808ef18bce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all stored objects of an account in a particular catalog.  <a href="#ad645335f0a55015839cec0808ef18bce">More...</a><br /></td></tr>
+<tr class="separator:ad645335f0a55015839cec0808ef18bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classgraphene_1_1app_1_1custom__operations__api.html" title="The custom_operations_api class exposes access to standard custom objects parsed by the custom_operat...">custom_operations_api</a> class exposes access to standard custom objects parsed by the custom_operations_plugin. </p>
 
-<p>Definition at line <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html#l00528">528</a> of file <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html">api.hpp</a>.</p>
+<p>Definition at line <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html#l00587">587</a> of file <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html">api.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a5700459ed2913c05f10ef9e4eacf2b1b"></a>
 <div class="memitem">
@@ -139,12 +139,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html#l00531">531</a> of file <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html">api.hpp</a>.</p>
+<p>Definition at line <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html#l00590">590</a> of file <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html">api.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a98756e33fabcab57bc2b4fa7298ed7ca"></a>
+<a class="anchor" id="ad645335f0a55015839cec0808ef18bce"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -152,7 +152,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">vector&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a> &gt; graphene::app::custom_operations_api::get_storage_info </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>account_id_or_name</em>, </td>
+          <td class="paramname"><em>account_name_or_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -171,14 +171,14 @@ Public Member Functions</h2></td></tr>
 <p>Get all stored objects of an account in a particular catalog. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">account</td><td>The account ID or name to get info from </td></tr>
+    <tr><td class="paramname">account_name_or_id</td><td>The account name or ID to get info from </td></tr>
     <tr><td class="paramname">catalog</td><td>Category classification. Each account can store multiple catalogs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The vector of objects of the account or empty </dd></dl>
 
-<p>Definition at line <a class="el" href="api_8cpp_source.html#l00730">730</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="api_8cpp_source.html#l00851">851</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
 
 </div>
 </div>
@@ -189,7 +189,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 22 2020 19:51:20 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 10:21:00 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

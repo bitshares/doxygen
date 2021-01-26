@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.0.0</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -129,6 +129,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa5352fa37b3d87da07ce9c2687e6da84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93839de48da01b3e3105e13321a1e8e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a93839de48da01b3e3105e13321a1e8e9">set_api_limit</a> ()</td></tr>
 <tr class="separator:a93839de48da01b3e3105e13321a1e8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a613c7f4466765b723192f7490865e553"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a613c7f4466765b723192f7490865e553">initialize</a> ()</td></tr>
+<tr class="separator:a613c7f4466765b723192f7490865e553"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2367bb23a57aa6b4608e7176c63cd9f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a2367bb23a57aa6b4608e7176c63cd9f6">startup</a> ()</td></tr>
 <tr class="separator:a2367bb23a57aa6b4608e7176c63cd9f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7eea3d137996a3b8b29d45253378239b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1optional.html">fc::optional</a>&lt; <a class="el" href="structgraphene_1_1app_1_1api__access__info.html">api_access_info</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a7eea3d137996a3b8b29d45253378239b">get_api_access_info</a> (const string &amp;username) const </td></tr>
@@ -172,6 +174,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2a0e962fe925e8e987208e3dc6c21863"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a16866ca1ed46f734043f473fad7735"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a5a16866ca1ed46f734043f473fad7735">get_current_block_interval_in_seconds</a> () const override</td></tr>
 <tr class="separator:a5a16866ca1ed46f734043f473fad7735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76b5a2057870cc3431c3bca51fff783c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a76b5a2057870cc3431c3bca51fff783c">is_plugin_enabled</a> (const string &amp;name) const </td></tr>
+<tr class="memdesc:a76b5a2057870cc3431c3bca51fff783c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether a plugin is enabled.  <a href="#a76b5a2057870cc3431c3bca51fff783c">More...</a><br /></td></tr>
+<tr class="separator:a76b5a2057870cc3431c3bca51fff783c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classgraphene_1_1net_1_1node__delegate"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgraphene_1_1net_1_1node__delegate')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classgraphene_1_1net_1_1node__delegate.html">graphene::net::node_delegate</a></td></tr>
 <tr class="memitem:a49a17956290635b42fb40f1a9fcc6392 inherit pub_methods_classgraphene_1_1net_1_1node__delegate"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a49a17956290635b42fb40f1a9fcc6392">~node_delegate</a> ()</td></tr>
 <tr class="separator:a49a17956290635b42fb40f1a9fcc6392 inherit pub_methods_classgraphene_1_1net_1_1node__delegate"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -292,7 +297,7 @@ Public Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#aeb54b89d68318b06a155f5eff640f2df">graphene::net::node_delegate</a>.</p>
 
-<p>Definition at line <a class="el" href="application_8cpp_source.html#l00911">911</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Definition at line <a class="el" href="application_8cpp_source.html#l00930">930</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -330,7 +335,7 @@ Public Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a1e4d4a7ce301380c67d2908c4d8e8aeb">graphene::net::node_delegate</a>.</p>
 
-<p>Definition at line <a class="el" href="application_8cpp_source.html#l00942">942</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Definition at line <a class="el" href="application_8cpp_source.html#l00961">961</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -358,7 +363,7 @@ Public Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#ac9075e9cdef0eb9d3757ef375efcdff1">graphene::net::node_delegate</a>.</p>
 
-<p>Definition at line <a class="el" href="application_8cpp_source.html#l00937">937</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Definition at line <a class="el" href="application_8cpp_source.html#l00956">956</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -376,7 +381,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="application_8cpp_source.html#l00495">495</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Definition at line <a class="el" href="application_8cpp_source.html#l00509">509</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -420,7 +425,7 @@ Public Attributes</h2></td></tr>
 <p>Assuming all data elements are ordered in some way, this method should return up to limit ids that occur <em>after</em> the last ID in synopsis that we recognize.</p>
 <p>On return, remaining_item_count will be set to the number of items in our blockchain after the last item returned in the result, or 0 if the result contains the last item in the blockchain </p>
 
-<p>Definition at line <a class="el" href="application_8cpp_source.html#l00646">646</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Definition at line <a class="el" href="application_8cpp_source.html#l00665">665</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -448,7 +453,7 @@ Public Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a8620fff6f74e76e5583f4046f7ca3b46">graphene::net::node_delegate</a>.</p>
 
-<p>Definition at line <a class="el" href="application_8cpp_source.html#l00916">916</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Definition at line <a class="el" href="application_8cpp_source.html#l00935">935</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -477,7 +482,7 @@ Public Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a4795a26af1b8ac700479e7e0fd293bd0">graphene::net::node_delegate</a>.</p>
 
-<p>Definition at line <a class="el" href="application_8cpp_source.html#l00925">925</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Definition at line <a class="el" href="application_8cpp_source.html#l00944">944</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -525,7 +530,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 
 <p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a0f144d17fc3bd79ac59ef4f3372d406a">graphene::net::node_delegate</a>.</p>
 
-<p>Definition at line <a class="el" href="application_8cpp_source.html#l00776">776</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Definition at line <a class="el" href="application_8cpp_source.html#l00795">795</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -552,7 +557,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 
 <p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a6abb2ff8bf61ef04b31e1a3685dff950">graphene::net::node_delegate</a>.</p>
 
-<p>Definition at line <a class="el" href="application_8cpp_source.html#l00713">713</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Definition at line <a class="el" href="application_8cpp_source.html#l00732">732</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -579,7 +584,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 
 <p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a74351fae3daf10fcb9c5ae2505eeab19">graphene::net::node_delegate</a>.</p>
 
-<p>Definition at line <a class="el" href="application_8cpp_source.html#l00947">947</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Definition at line <a class="el" href="application_8cpp_source.html#l00966">966</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -606,7 +611,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 
 <p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#ae9da839865d1ac8902096b65c7e13502">graphene::net::node_delegate</a>.</p>
 
-<p>Definition at line <a class="el" href="application_8cpp_source.html#l00932">932</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Definition at line <a class="el" href="application_8cpp_source.html#l00951">951</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -635,7 +640,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 
 <p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#ad45df7b4d849fa221356a266f408b617">graphene::net::node_delegate</a>.</p>
 
-<p>Definition at line <a class="el" href="application_8cpp_source.html#l00697">697</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Definition at line <a class="el" href="application_8cpp_source.html#l00716">716</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -680,6 +685,21 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 <p>allows the application to validate an item prior to broadcasting to peers. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">blk_msg</td><td>the message which contains the block </td></tr>
+    <tr><td class="paramname">sync_mode</td><td>true if the message was fetched through the sync process, false during normal operation </td></tr>
+    <tr><td class="paramname">contained_transaction_message_ids</td><td>container for the transactions to write back into </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if this message caused the blockchain to switch forks, false if it did not</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">exception</td><td>if error validating the item, otherwise the item is safe to broadcast on.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramname">sync_mode</td><td>true if the message was fetched through the sync process, false during normal operation </td></tr>
   </table>
   </dd>
@@ -694,7 +714,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 
 <p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a45d5e096caa804db426c5ce092092b25">graphene::net::node_delegate</a>.</p>
 
-<p>Definition at line <a class="el" href="application_8cpp_source.html#l00536">536</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Definition at line <a class="el" href="application_8cpp_source.html#l00555">555</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -730,7 +750,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 
 <p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a738c6181f8e461b147934d7b79e710f8">graphene::net::node_delegate</a>.</p>
 
-<p>Definition at line <a class="el" href="application_8cpp_source.html#l00624">624</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Definition at line <a class="el" href="application_8cpp_source.html#l00643">643</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -766,7 +786,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 
 <p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a012e220463b248980525219ae44ee0a3">graphene::net::node_delegate</a>.</p>
 
-<p>Definition at line <a class="el" href="application_8cpp_source.html#l00608">608</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Definition at line <a class="el" href="application_8cpp_source.html#l00627">627</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -795,7 +815,24 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 
 <p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#ae73a8679f1f836d42e5ee06ae0951201">graphene::net::node_delegate</a>.</p>
 
-<p>Definition at line <a class="el" href="application_8cpp_source.html#l00516">516</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Definition at line <a class="el" href="application_8cpp_source.html#l00535">535</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a613c7f4466765b723192f7490865e553"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graphene::app::detail::application_impl::initialize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="application_8cpp_source.html#l00239">239</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -813,7 +850,27 @@ the next 2000 ids" because they may have switched forks themselves and they don'
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="application_8cpp_source.html#l00630">630</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Definition at line <a class="el" href="application_8cpp_source.html#l00649">649</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a76b5a2057870cc3431c3bca51fff783c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool graphene::app::detail::application_impl::is_plugin_enabled </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether a plugin is enabled. </p>
+
+<p>Definition at line <a class="el" href="application_8cpp_source.html#l00527">527</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -911,7 +968,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="application_8cpp_source.html#l00508">508</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Definition at line <a class="el" href="application_8cpp_source.html#l00522">522</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -928,7 +985,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="application_8cpp_source.html#l00241">241</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Definition at line <a class="el" href="application_8cpp_source.html#l00292">292</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -973,7 +1030,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="application_8cpp_source.html#l00334">334</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Definition at line <a class="el" href="application_8cpp_source.html#l00392">392</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -1019,7 +1076,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 
 <p>Implements <a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a0f6d68640e7fca4c2f7effbcddcdd9f1">graphene::net::node_delegate</a>.</p>
 
-<p>Definition at line <a class="el" href="application_8cpp_source.html#l00903">903</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
+<p>Definition at line <a class="el" href="application_8cpp_source.html#l00922">922</a> of file <a class="el" href="application_8cpp_source.html">application.cpp</a>.</p>
 
 </div>
 </div>
@@ -1034,7 +1091,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="application__impl_8hxx_source.html#l00194">194</a> of file <a class="el" href="application__impl_8hxx_source.html">application_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="application__impl_8hxx_source.html#l00200">200</a> of file <a class="el" href="application__impl_8hxx_source.html">application_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -1048,7 +1105,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="application__impl_8hxx_source.html#l00187">187</a> of file <a class="el" href="application__impl_8hxx_source.html">application_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="application__impl_8hxx_source.html#l00193">193</a> of file <a class="el" href="application__impl_8hxx_source.html">application_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -1076,7 +1133,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="application__impl_8hxx_source.html#l00195">195</a> of file <a class="el" href="application__impl_8hxx_source.html">application_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="application__impl_8hxx_source.html#l00201">201</a> of file <a class="el" href="application__impl_8hxx_source.html">application_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -1090,7 +1147,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="application__impl_8hxx_source.html#l00189">189</a> of file <a class="el" href="application__impl_8hxx_source.html">application_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="application__impl_8hxx_source.html#l00195">195</a> of file <a class="el" href="application__impl_8hxx_source.html">application_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -1104,7 +1161,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="application__impl_8hxx_source.html#l00185">185</a> of file <a class="el" href="application__impl_8hxx_source.html">application_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="application__impl_8hxx_source.html#l00191">191</a> of file <a class="el" href="application__impl_8hxx_source.html">application_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -1146,7 +1203,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="application__impl_8hxx_source.html#l00197">197</a> of file <a class="el" href="application__impl_8hxx_source.html">application_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="application__impl_8hxx_source.html#l00203">203</a> of file <a class="el" href="application__impl_8hxx_source.html">application_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -1174,7 +1231,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="application__impl_8hxx_source.html#l00186">186</a> of file <a class="el" href="application__impl_8hxx_source.html">application_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="application__impl_8hxx_source.html#l00192">192</a> of file <a class="el" href="application__impl_8hxx_source.html">application_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -1188,7 +1245,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="application__impl_8hxx_source.html#l00190">190</a> of file <a class="el" href="application__impl_8hxx_source.html">application_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="application__impl_8hxx_source.html#l00196">196</a> of file <a class="el" href="application__impl_8hxx_source.html">application_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -1202,7 +1259,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="application__impl_8hxx_source.html#l00183">183</a> of file <a class="el" href="application__impl_8hxx_source.html">application_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="application__impl_8hxx_source.html#l00189">189</a> of file <a class="el" href="application__impl_8hxx_source.html">application_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -1216,7 +1273,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="application__impl_8hxx_source.html#l00191">191</a> of file <a class="el" href="application__impl_8hxx_source.html">application_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="application__impl_8hxx_source.html#l00197">197</a> of file <a class="el" href="application__impl_8hxx_source.html">application_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -1230,7 +1287,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="application__impl_8hxx_source.html#l00192">192</a> of file <a class="el" href="application__impl_8hxx_source.html">application_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="application__impl_8hxx_source.html#l00198">198</a> of file <a class="el" href="application__impl_8hxx_source.html">application_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -1241,7 +1298,7 @@ the next 2000 ids" because they may have switched forks themselves and they don'
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 22 2020 19:51:20 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 10:21:00 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
