@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.0.0</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -146,7 +146,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:abdf02c3fa818cdae60e13c8bc9aa06d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1asset__global__settle__operation.html#abdf02c3fa818cdae60e13c8bc9aa06d0">fee</a></td></tr>
 <tr class="separator:abdf02c3fa818cdae60e13c8bc9aa06d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a493d747b58167f44b271be3722b0fb25"><td class="memItemLeft" align="right" valign="top">account_id_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1asset__global__settle__operation.html#a493d747b58167f44b271be3722b0fb25">issuer</a></td></tr>
-<tr class="memdesc:a493d747b58167f44b271be3722b0fb25"><td class="mdescLeft">&#160;</td><td class="mdescRight">must equal asset_to_settle-&gt;issuer  <a href="#a493d747b58167f44b271be3722b0fb25">More...</a><br /></td></tr>
+<tr class="memdesc:a493d747b58167f44b271be3722b0fb25"><td class="mdescLeft">&#160;</td><td class="mdescRight">must equal issuer of <a class="el" href="structgraphene_1_1protocol_1_1asset__global__settle__operation.html#aaa2d370cf8cf9c539f78c20b686380b6">asset_to_settle</a>  <a href="#a493d747b58167f44b271be3722b0fb25">More...</a><br /></td></tr>
 <tr class="separator:a493d747b58167f44b271be3722b0fb25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa2d370cf8cf9c539f78c20b686380b6"><td class="memItemLeft" align="right" valign="top">asset_id_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1asset__global__settle__operation.html#aaa2d370cf8cf9c539f78c20b686380b6">asset_to_settle</a></td></tr>
 <tr class="separator:aaa2d370cf8cf9c539f78c20b686380b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,7 +166,7 @@ Additional Inherited Members</h2></td></tr>
 <p>In order to use this operation, <a class="el" href="structgraphene_1_1protocol_1_1asset__global__settle__operation.html#aaa2d370cf8cf9c539f78c20b686380b6">asset_to_settle</a> must have the global_settle flag set</p>
 <p>When this operation is executed all balances are converted into the backing asset at the settle_price and all open margin positions are called at the settle price. If this asset is used as backing for other bitassets, those bitassets will be force settled at their current feed price. </p>
 
-<p>Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00199">199</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
+<p>Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00198">198</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a4f8393adedd8c3f44dd3e3bd5c4c5f28"></a>
 <div class="memitem">
@@ -189,7 +189,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00209">209</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
+<p>Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00208">208</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
 
 </div>
 </div>
@@ -221,7 +221,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00205">205</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
+<p>Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00204">204</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
 
 </div>
 </div>
@@ -235,7 +235,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00207">207</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
+<p>Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00206">206</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
 
 </div>
 </div>
@@ -249,7 +249,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00203">203</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
+<p>Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00202">202</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
 
 </div>
 </div>
@@ -263,9 +263,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>must equal asset_to_settle-&gt;issuer </p>
+<p>must equal issuer of <a class="el" href="structgraphene_1_1protocol_1_1asset__global__settle__operation.html#aaa2d370cf8cf9c539f78c20b686380b6">asset_to_settle</a> </p>
 
-<p>Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00204">204</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
+<p>Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00203">203</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
 
 </div>
 </div>
@@ -279,7 +279,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00206">206</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
+<p>Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00205">205</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
 
 </div>
 </div>
@@ -290,7 +290,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 22 2020 19:51:22 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 10:21:01 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.0.0</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -127,10 +127,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9629be78295170cbebf2af63771dfe9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1protocol_1_1chain__parameters.html">chain_parameters</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1chain__parameters.html#a9629be78295170cbebf2af63771dfe9d">operator=</a> (<a class="el" href="structgraphene_1_1protocol_1_1chain__parameters.html">chain_parameters</a> &amp;&amp;other)</td></tr>
 <tr class="separator:a9629be78295170cbebf2af63771dfe9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02979e2e16146e66655b3f697db3efca"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1chain__parameters.html#a02979e2e16146e66655b3f697db3efca">get_market_fee_network_percent</a> () const </td></tr>
-<tr class="memdesc:a02979e2e16146e66655b3f697db3efca"><td class="mdescLeft">&#160;</td><td class="mdescRight">If market_fee_network_percent is valid, return the value it contains, otherwise return 0.  <a href="#a02979e2e16146e66655b3f697db3efca">More...</a><br /></td></tr>
 <tr class="separator:a02979e2e16146e66655b3f697db3efca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a338ecbce08a0a90df0629c62bbaeef4e"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1chain__parameters.html#a338ecbce08a0a90df0629c62bbaeef4e">get_maker_fee_discount_percent</a> () const </td></tr>
-<tr class="memdesc:a338ecbce08a0a90df0629c62bbaeef4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">If maker_fee_discount_percent is valid, return the value it contains, otherwise return 0.  <a href="#a338ecbce08a0a90df0629c62bbaeef4e">More...</a><br /></td></tr>
 <tr class="separator:a338ecbce08a0a90df0629c62bbaeef4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -184,7 +182,7 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a4b990a7c4f3c67dfc134c31219116708"><td class="mdescLeft">&#160;</td><td class="mdescRight">percent of transaction fees paid to network  <a href="#a4b990a7c4f3c67dfc134c31219116708">More...</a><br /></td></tr>
 <tr class="separator:a4b990a7c4f3c67dfc134c31219116708"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a2f8f1a0e1556b12db1d5ea7eda8e00"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1chain__parameters.html#a1a2f8f1a0e1556b12db1d5ea7eda8e00">lifetime_referrer_percent_of_fee</a> = <a class="el" href="protocol_2include_2graphene_2protocol_2config_8hpp.html#ac37a7ad07139226b9854f03ddcf450c0">GRAPHENE_DEFAULT_LIFETIME_REFERRER_PERCENT_OF_FEE</a></td></tr>
-<tr class="memdesc:a1a2f8f1a0e1556b12db1d5ea7eda8e00"><td class="mdescLeft">&#160;</td><td class="mdescRight">percent of transaction fees paid to network  <a href="#a1a2f8f1a0e1556b12db1d5ea7eda8e00">More...</a><br /></td></tr>
+<tr class="memdesc:a1a2f8f1a0e1556b12db1d5ea7eda8e00"><td class="mdescLeft">&#160;</td><td class="mdescRight">percent of fee which should go to lifetime referrer  <a href="#a1a2f8f1a0e1556b12db1d5ea7eda8e00">More...</a><br /></td></tr>
 <tr class="separator:a1a2f8f1a0e1556b12db1d5ea7eda8e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbcafb18479c6e3c9b932ef7d435a5a8"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1chain__parameters.html#adbcafb18479c6e3c9b932ef7d435a5a8">cashback_vesting_period_seconds</a> = <a class="el" href="protocol_2include_2graphene_2protocol_2config_8hpp.html#a0e5f685881efa4457f657c8318a51a8c">GRAPHENE_DEFAULT_CASHBACK_VESTING_PERIOD_SEC</a></td></tr>
 <tr class="memdesc:adbcafb18479c6e3c9b932ef7d435a5a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">time after cashback rewards are accrued before they become liquid  <a href="#adbcafb18479c6e3c9b932ef7d435a5a8">More...</a><br /></td></tr>
@@ -319,8 +317,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>If maker_fee_discount_percent is valid, return the value it contains, otherwise return 0. </p>
+<p>If <code>maker_fee_discount_percent</code> in <a class="el" href="structgraphene_1_1protocol_1_1chain__parameters.html#abc19c5e14915700118ff4efe9e652f02">extensions</a> is valid, return the value it contains, otherwise return 0 </p>
 
 <p>Definition at line <a class="el" href="chain__parameters_8cpp_source.html#l00122">122</a> of file <a class="el" href="chain__parameters_8cpp_source.html">chain_parameters.cpp</a>.</p>
 
@@ -338,8 +335,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>If market_fee_network_percent is valid, return the value it contains, otherwise return 0. </p>
+<p>If <code>market_fee_network_percent</code> in <a class="el" href="structgraphene_1_1protocol_1_1chain__parameters.html#abc19c5e14915700118ff4efe9e652f02">extensions</a> is valid, return the value it contains, otherwise return 0 </p>
 
 <p>Definition at line <a class="el" href="chain__parameters_8cpp_source.html#l00116">116</a> of file <a class="el" href="chain__parameters_8cpp_source.html">chain_parameters.cpp</a>.</p>
 
@@ -609,7 +605,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>percent of transaction fees paid to network </p>
+<p>percent of fee which should go to lifetime referrer </p>
 
 <p>Definition at line <a class="el" href="chain__parameters_8hpp_source.html#l00068">68</a> of file <a class="el" href="chain__parameters_8hpp_source.html">chain_parameters.hpp</a>.</p>
 
@@ -908,7 +904,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 22 2020 19:51:22 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 10:21:01 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

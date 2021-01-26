@@ -1,8 +1,6 @@
 var searchData=
 [
   ['gelf_5fappender',['gelf_appender',['../classfc_1_1gelf__appender.html',1,'fc']]],
-  ['gen_5fseq',['gen_seq',['../structgraphene_1_1chain_1_1detail_1_1gen__seq.html',1,'graphene::chain::detail']]],
-  ['gen_5fseq_3c_200_2c_20is_2e_2e_2e_20_3e',['gen_seq&lt; 0, Is... &gt;',['../structgraphene_1_1chain_1_1detail_1_1gen__seq_3_010_00_01_is_8_8_8_01_4.html',1,'graphene::chain::detail']]],
   ['generic_5fapi',['generic_api',['../classfc_1_1generic__api.html',1,'fc']]],
   ['generic_5fevaluator',['generic_evaluator',['../classgraphene_1_1chain_1_1generic__evaluator.html',1,'graphene::chain']]],
   ['generic_5fexchange_5foperation_5fresult',['generic_exchange_operation_result',['../structgraphene_1_1protocol_1_1generic__exchange__operation__result.html',1,'graphene::protocol']]],
@@ -23,6 +21,7 @@ var searchData=
   ['get_5fcurrent_5fconnections_5freply_5fmessage',['get_current_connections_reply_message',['../structgraphene_1_1net_1_1get__current__connections__reply__message.html',1,'graphene::net']]],
   ['get_5fcurrent_5fconnections_5frequest_5fmessage',['get_current_connections_request_message',['../structgraphene_1_1net_1_1get__current__connections__request__message.html',1,'graphene::net']]],
   ['get_5fimpacted_5faccount_5fvisitor',['get_impacted_account_visitor',['../structgraphene_1_1chain_1_1detail_1_1get__impacted__account__visitor.html',1,'graphene::chain::detail']]],
+  ['get_5fliquidity_5fpool_5fid_5fvisitor',['get_liquidity_pool_id_visitor',['../structgraphene_1_1market__history_1_1detail_1_1get__liquidity__pool__id__visitor.html',1,'graphene::market_history::detail']]],
   ['get_5frequired_5ffees_5fhelper',['get_required_fees_helper',['../structgraphene_1_1app_1_1get__required__fees__helper.html',1,'graphene::app']]],
   ['get_5ftypename',['get_typename',['../structfc_1_1get__typename.html',1,'fc']]],
   ['get_5ftypename_3c_20bool_20_3e',['get_typename&lt; bool &gt;',['../structfc_1_1get__typename_3_01bool_01_4.html',1,'fc']]],

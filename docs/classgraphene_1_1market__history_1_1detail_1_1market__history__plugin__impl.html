@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.0.0</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -108,6 +108,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6f076545a5a584af9b73eb3a4ef72562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19951cb626e2b93196197919d53bfb6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1market__history_1_1detail_1_1market__history__plugin__impl.html#a19951cb626e2b93196197919d53bfb6d">update_market_histories</a> (const signed_block &amp;b)</td></tr>
 <tr class="separator:a19951cb626e2b93196197919d53bfb6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97ca2f477523f55695c91ced400dce83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1market__history_1_1detail_1_1market__history__plugin__impl.html#a97ca2f477523f55695c91ced400dce83">update_liquidity_pool_histories</a> (time_point_sec time, const <a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html">operation_history_object</a> &amp;oho, const <a class="el" href="structgraphene_1_1market__history_1_1liquidity__pool__ticker__meta__object.html">liquidity_pool_ticker_meta_object</a> *&amp;lp_meta)</td></tr>
+<tr class="memdesc:a97ca2f477523f55695c91ced400dce83"><td class="mdescLeft">&#160;</td><td class="mdescRight">process all operations related to liquidity pools  <a href="#a97ca2f477523f55695c91ced400dce83">More...</a><br /></td></tr>
+<tr class="separator:a97ca2f477523f55695c91ced400dce83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a266ff29be2eb0bae83abb88420ccdd6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1chain_1_1database.html">graphene::chain::database</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1market__history_1_1detail_1_1market__history__plugin__impl.html#a266ff29be2eb0bae83abb88420ccdd6d">database</a> ()</td></tr>
 <tr class="separator:a266ff29be2eb0bae83abb88420ccdd6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -175,7 +178,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="market__history__plugin_8cpp_source.html#l00293">293</a> of file <a class="el" href="market__history__plugin_8cpp_source.html">market_history_plugin.cpp</a>.</p>
+<p>Definition at line <a class="el" href="market__history__plugin_8cpp_source.html#l00297">297</a> of file <a class="el" href="market__history__plugin_8cpp_source.html">market_history_plugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -201,7 +204,43 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="market__history__plugin_8cpp_source.html#l00055">55</a> of file <a class="el" href="market__history__plugin_8cpp_source.html">market_history_plugin.cpp</a>.</p>
+<p>Definition at line <a class="el" href="market__history__plugin_8cpp_source.html#l00059">59</a> of file <a class="el" href="market__history__plugin_8cpp_source.html">market_history_plugin.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a97ca2f477523f55695c91ced400dce83"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graphene::market_history::detail::market_history_plugin_impl::update_liquidity_pool_histories </td>
+          <td>(</td>
+          <td class="paramtype">time_point_sec&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html">operation_history_object</a> &amp;&#160;</td>
+          <td class="paramname"><em>oho</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1market__history_1_1liquidity__pool__ticker__meta__object.html">liquidity_pool_ticker_meta_object</a> *&amp;&#160;</td>
+          <td class="paramname"><em>lp_meta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>process all operations related to liquidity pools </p>
+
+<p>Definition at line <a class="el" href="market__history__plugin_8cpp_source.html#l00536">536</a> of file <a class="el" href="market__history__plugin_8cpp_source.html">market_history_plugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -220,7 +259,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>this method is called as a callback after a block is applied and will process/index all operations that were applied in the block. </p>
 
-<p>Definition at line <a class="el" href="market__history__plugin_8cpp_source.html#l00296">296</a> of file <a class="el" href="market__history__plugin_8cpp_source.html">market_history_plugin.cpp</a>.</p>
+<p>Definition at line <a class="el" href="market__history__plugin_8cpp_source.html#l00300">300</a> of file <a class="el" href="market__history__plugin_8cpp_source.html">market_history_plugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -235,7 +274,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="market__history__plugin_8cpp_source.html#l00063">63</a> of file <a class="el" href="market__history__plugin_8cpp_source.html">market_history_plugin.cpp</a>.</p>
+<p>Definition at line <a class="el" href="market__history__plugin_8cpp_source.html#l00067">67</a> of file <a class="el" href="market__history__plugin_8cpp_source.html">market_history_plugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -249,7 +288,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="market__history__plugin_8cpp_source.html#l00064">64</a> of file <a class="el" href="market__history__plugin_8cpp_source.html">market_history_plugin.cpp</a>.</p>
+<p>Definition at line <a class="el" href="market__history__plugin_8cpp_source.html#l00068">68</a> of file <a class="el" href="market__history__plugin_8cpp_source.html">market_history_plugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -263,7 +302,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="market__history__plugin_8cpp_source.html#l00062">62</a> of file <a class="el" href="market__history__plugin_8cpp_source.html">market_history_plugin.cpp</a>.</p>
+<p>Definition at line <a class="el" href="market__history__plugin_8cpp_source.html#l00066">66</a> of file <a class="el" href="market__history__plugin_8cpp_source.html">market_history_plugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -277,7 +316,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="market__history__plugin_8cpp_source.html#l00060">60</a> of file <a class="el" href="market__history__plugin_8cpp_source.html">market_history_plugin.cpp</a>.</p>
+<p>Definition at line <a class="el" href="market__history__plugin_8cpp_source.html#l00064">64</a> of file <a class="el" href="market__history__plugin_8cpp_source.html">market_history_plugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -291,7 +330,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="market__history__plugin_8cpp_source.html#l00061">61</a> of file <a class="el" href="market__history__plugin_8cpp_source.html">market_history_plugin.cpp</a>.</p>
+<p>Definition at line <a class="el" href="market__history__plugin_8cpp_source.html#l00065">65</a> of file <a class="el" href="market__history__plugin_8cpp_source.html">market_history_plugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -301,7 +340,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 22 2020 19:51:21 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 10:21:01 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

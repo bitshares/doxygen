@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.0.0</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -423,7 +423,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a6ec111d856befc5bcec11d0d76eefd7f inherit pro_methods_classgraphene_1_1db_1_1object__database"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1db_1_1index.html">index</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object__database.html#a6ec111d856befc5bcec11d0d76eefd7f">get_mutable_index</a> (uint8_t space_id, uint8_t type_id)</td></tr>
 <tr class="separator:a6ec111d856befc5bcec11d0d76eefd7f inherit pro_methods_classgraphene_1_1db_1_1object__database"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a500db4fc078f64b18d99c19d45fe8b13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#a500db4fc078f64b18d99c19d45fe8b13">globally_settle_asset</a> (const <a class="el" href="classgraphene_1_1chain_1_1asset__object.html">asset_object</a> &amp;bitasset, const <a class="el" href="structgraphene_1_1protocol_1_1price.html">price</a> &amp;settle_price)</td></tr>
-<tr class="memdesc:a500db4fc078f64b18d99c19d45fe8b13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Market Helpers  <a href="#a500db4fc078f64b18d99c19d45fe8b13">More...</a><br /></td></tr>
 <tr class="separator:a500db4fc078f64b18d99c19d45fe8b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab77fa872b5bfcf96654059bcf8bdf94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1database.html#aab77fa872b5bfcf96654059bcf8bdf94">cancel_settle_order</a> (const <a class="el" href="classgraphene_1_1chain_1_1force__settlement__object.html">force_settlement_object</a> &amp;order, bool create_virtual_op=true)</td></tr>
 <tr class="separator:aab77fa872b5bfcf96654059bcf8bdf94"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -796,7 +795,8 @@ Additional Inherited Members</h2></td></tr>
 <p>Process a new limit order through the markets. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">order</td><td>The new order to process </td></tr>
+    <tr><td class="paramname">new_order_object</td><td>The new order to process </td></tr>
+    <tr><td class="paramname">allow_black_swan</td><td>whether to allow a black swan event </td></tr>
   </table>
   </dd>
 </dl>
@@ -1297,7 +1297,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Enable or disable tracking of votes of standby witnesses and committee members. </p>
 
-<p>Definition at line <a class="el" href="database_8hpp_source.html#l00519">519</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
+<p>Definition at line <a class="el" href="database_8hpp_source.html#l00523">523</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
 
 </div>
 </div>
@@ -1479,7 +1479,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database_8hpp_source.html#l00473">473</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
+<p>Definition at line <a class="el" href="database_8hpp_source.html#l00477">477</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
 
 </div>
 </div>
@@ -1829,7 +1829,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database_8hpp_source.html#l00148">148</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
+<p>Definition at line <a class="el" href="database_8hpp_source.html#l00150">150</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
 
 </div>
 </div>
@@ -1928,7 +1928,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Retrieve a particular account's market fee vesting balance in a given asset. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">owner</td><td>Account whose balance should be retrieved </td></tr>
+    <tr><td class="paramname">account_id</td><td>Account whose balance should be retrieved </td></tr>
     <tr><td class="paramname">asset_id</td><td>ID of the asset to get balance in </td></tr>
   </table>
   </dd>
@@ -2125,8 +2125,6 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Market Helpers </p>
 <p>All margin positions are force closed at the swan price Collateral received goes into a force-settlement fund No new margin positions can be created for this asset Force settlement happens without delay at the swan price, deducting from force-settlement fund No more asset updates may be issued. </p>
 
 <p>Definition at line <a class="el" href="db__market_8cpp_source.html#l00057">57</a> of file <a class="el" href="db__market_8cpp_source.html">db_market.cpp</a>.</p>
@@ -2459,7 +2457,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database_8hpp_source.html#l00430">430</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
+<p>Definition at line <a class="el" href="database_8hpp_source.html#l00434">434</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
 
 </div>
 </div>
@@ -2798,7 +2796,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database_8hpp_source.html#l00546">546</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
+<p>Definition at line <a class="el" href="database_8hpp_source.html#l00550">550</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
 
 </div>
 </div>
@@ -3009,7 +3007,7 @@ template&lt;typename EvaluatorType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="database_8hpp_source.html#l00305">305</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
+<p>Definition at line <a class="el" href="database_8hpp_source.html#l00307">307</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
 
 </div>
 </div>
@@ -3028,6 +3026,12 @@ template&lt;typename EvaluatorType &gt; </div>
 </div><div class="memdoc">
 
 <p>Rebuild object graph from block history and open detabase. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data_dir</td><td>the path to store the database</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>This method may be called after or instead of <a class="el" href="classgraphene_1_1chain_1_1database.html#a2d5356973d8d14d8267b7d49a2c6d939">database::open</a>, and will rebuild the object graph by replaying blockchain history. When this method exits successfully, the database will be open. </p>
 
 <p>Definition at line <a class="el" href="db__management_8cpp_source.html#l00055">55</a> of file <a class="el" href="db__management_8cpp_source.html">db_management.cpp</a>.</p>
@@ -3162,6 +3166,7 @@ template&lt;typename EvaluatorType &gt; </div>
 <p>wipe Delete database from disk, and potentially the raw chain as well. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">data_dir</td><td>the path to store the database </td></tr>
     <tr><td class="paramname">include_blocks</td><td>If true, delete the raw chain as well as the database.</td></tr>
   </table>
   </dd>
@@ -3202,7 +3207,7 @@ template&lt;typename EvaluatorType &gt; </div>
 </div><div class="memdoc">
 <p>when popping a block, the transactions that were removed get cached here so they can be reapplied at the proper time </p>
 
-<p>Definition at line <a class="el" href="database_8hpp_source.html#l00512">512</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
+<p>Definition at line <a class="el" href="database_8hpp_source.html#l00516">516</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
 
 </div>
 </div>
@@ -3218,7 +3223,7 @@ template&lt;typename EvaluatorType &gt; </div>
 <p>This signal is emitted after all operations and virtual operation for a block have been applied but before the <a class="el" href="classgraphene_1_1chain_1_1database.html#a5c39b01a3f67e4eb40b26c8f2dab9a59">get_applied_operations()</a> are cleared.</p>
 <p>You may not yield from this callback because the blockchain is holding the write lock and may be in an "inconstant state" until after it is released. </p>
 
-<p>Definition at line <a class="el" href="database_8hpp_source.html#l00197">197</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
+<p>Definition at line <a class="el" href="database_8hpp_source.html#l00199">199</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
 
 </div>
 </div>
@@ -3233,7 +3238,7 @@ template&lt;typename EvaluatorType &gt; </div>
 </div><div class="memdoc">
 <p>Emitted After a block has been applied and committed. The callback should not yield and should execute quickly. </p>
 
-<p>Definition at line <a class="el" href="database_8hpp_source.html#l00215">215</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
+<p>Definition at line <a class="el" href="database_8hpp_source.html#l00217">217</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
 
 </div>
 </div>
@@ -3248,7 +3253,7 @@ template&lt;typename EvaluatorType &gt; </div>
 </div><div class="memdoc">
 <p>Emitted After a block has been applied and committed. The callback should not yield and should execute quickly. </p>
 
-<p>Definition at line <a class="el" href="database_8hpp_source.html#l00209">209</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
+<p>Definition at line <a class="el" href="database_8hpp_source.html#l00211">211</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
 
 </div>
 </div>
@@ -3263,7 +3268,7 @@ template&lt;typename EvaluatorType &gt; </div>
 </div><div class="memdoc">
 <p>This signal is emitted any time a new transaction is added to the pending block state. </p>
 
-<p>Definition at line <a class="el" href="database_8hpp_source.html#l00203">203</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
+<p>Definition at line <a class="el" href="database_8hpp_source.html#l00205">205</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
 
 </div>
 </div>
@@ -3278,7 +3283,7 @@ template&lt;typename EvaluatorType &gt; </div>
 </div><div class="memdoc">
 <p>this signal is emitted any time an object is removed and contains a pointer to the last value of every object that was removed. </p>
 
-<p>Definition at line <a class="el" href="database_8hpp_source.html#l00220">220</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
+<p>Definition at line <a class="el" href="database_8hpp_source.html#l00222">222</a> of file <a class="el" href="database_8hpp_source.html">database.hpp</a>.</p>
 
 </div>
 </div>
@@ -3299,7 +3304,7 @@ template&lt;typename EvaluatorType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 22 2020 19:51:20 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 10:21:00 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

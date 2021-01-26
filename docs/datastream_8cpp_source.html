@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.0.0</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -95,12 +95,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <a href="datastream_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="datastream_8hpp.html">fc/io/datastream.hpp</a>&gt;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="exception_8hpp.html">fc/exception/exception.hpp</a>&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="namespacefc_1_1detail.html#a9bfc76faf8bba310d9b587ce07f5fb40">    4</a></span>&#160;[[noreturn]] <span class="keywordtype">void</span> <a class="code" href="namespacefc_1_1detail.html#a9bfc76faf8bba310d9b587ce07f5fb40">fc::detail::throw_datastream_range_error</a>(<span class="keywordtype">char</span> <span class="keyword">const</span>* method, <span class="keywordtype">size_t</span> len, int64_t over)</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  <a class="code" href="exception_8hpp.html#a7590ddac4f181b661c3eeaf5feccc6ac">FC_THROW_EXCEPTION</a>( out_of_range_exception, <span class="stringliteral">&quot;${method} datastream of length ${len} over by ${over}&quot;</span>, (<span class="stringliteral">&quot;method&quot;</span>,std::string(method))(<span class="stringliteral">&quot;len&quot;</span>,len)(<span class="stringliteral">&quot;over&quot;</span>,over) );</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div><div class="ttc" id="datastream_8hpp_html"><div class="ttname"><a href="datastream_8hpp.html">datastream.hpp</a></div></div>
 <div class="ttc" id="namespacefc_1_1detail_html_a9bfc76faf8bba310d9b587ce07f5fb40"><div class="ttname"><a href="namespacefc_1_1detail.html#a9bfc76faf8bba310d9b587ce07f5fb40">fc::detail::throw_datastream_range_error</a></div><div class="ttdeci">void throw_datastream_range_error(const char *file, size_t len, int64_t over)</div><div class="ttdef"><b>Definition:</b> <a href="datastream_8cpp_source.html#l00004">datastream.cpp:4</a></div></div>
-<div class="ttc" id="exception_8hpp_html_a7590ddac4f181b661c3eeaf5feccc6ac"><div class="ttname"><a href="exception_8hpp.html#a7590ddac4f181b661c3eeaf5feccc6ac">FC_THROW_EXCEPTION</a></div><div class="ttdeci">#define FC_THROW_EXCEPTION(EXCEPTION, FORMAT,...)</div><div class="ttdef"><b>Definition:</b> <a href="exception_8hpp_source.html#l00378">exception.hpp:378</a></div></div>
+<div class="ttc" id="exception_8hpp_html_a7590ddac4f181b661c3eeaf5feccc6ac"><div class="ttname"><a href="exception_8hpp.html#a7590ddac4f181b661c3eeaf5feccc6ac">FC_THROW_EXCEPTION</a></div><div class="ttdeci">#define FC_THROW_EXCEPTION(EXCEPTION, FORMAT,...)</div><div class="ttdef"><b>Definition:</b> <a href="exception_8hpp_source.html#l00379">exception.hpp:379</a></div></div>
 <div class="ttc" id="exception_8hpp_html"><div class="ttname"><a href="exception_8hpp.html">exception.hpp</a></div><div class="ttdoc">Defines exception&amp;#39;s used by fc. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 22 2020 19:51:16 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 10:20:57 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

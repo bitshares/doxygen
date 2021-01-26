@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.0.0</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -118,7 +118,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>the <a class="el" href="classgraphene_1_1app_1_1orders__api.html" title="the orders_api class exposes access to data processed with grouped orders plugin. ...">orders_api</a> class exposes access to data processed with grouped orders plugin. </p>
 
-<p>Definition at line <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html#l00490">490</a> of file <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html">api.hpp</a>.</p>
+<p>Definition at line <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html#l00549">549</a> of file <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html">api.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a1c1a0920781506af3b59128c6f8912aa"></a>
 <div class="memitem">
@@ -142,7 +142,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html#l00493">493</a> of file <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html">api.hpp</a>.</p>
+<p>Definition at line <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html#l00552">552</a> of file <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html">api.hpp</a>.</p>
 
 </div>
 </div>
@@ -192,8 +192,8 @@ Public Member Functions</h2></td></tr>
 <p>Get grouped limit orders in given market. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">base_asset</td><td>ID or symbol of asset being sold </td></tr>
-    <tr><td class="paramname">quote_asset</td><td>ID or symbol of asset being purchased </td></tr>
+    <tr><td class="paramname">base_asset</td><td>symbol or ID of asset being sold </td></tr>
+    <tr><td class="paramname">quote_asset</td><td>symbol or ID of asset being purchased </td></tr>
     <tr><td class="paramname">group</td><td>Maximum price diff within each order group, have to be one of configured values </td></tr>
     <tr><td class="paramname">start</td><td>Optional price to indicate the first order group to retrieve </td></tr>
     <tr><td class="paramname">limit</td><td>Maximum number of order groups to retrieve (must not exceed 101) </td></tr>
@@ -202,7 +202,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The grouped limit orders, ordered from best offered price to worst </dd></dl>
 
-<p>Definition at line <a class="el" href="api_8cpp_source.html#l00694">694</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="api_8cpp_source.html#l00815">815</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
 
 </div>
 </div>
@@ -222,7 +222,7 @@ Public Member Functions</h2></td></tr>
 <p>Get tracked groups configured by the server. </p>
 <dl class="section return"><dt>Returns</dt><dd>A list of numbers which indicate configured groups, of those, 1 means 0.01% diff on price. </dd></dl>
 
-<p>Definition at line <a class="el" href="api_8cpp_source.html#l00687">687</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="api_8cpp_source.html#l00808">808</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
 
 </div>
 </div>
@@ -233,7 +233,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 22 2020 19:51:20 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 10:21:00 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

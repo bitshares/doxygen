@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.0.0</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -102,13 +102,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="city_8hpp_source.html">fc/crypto/city.hpp</a>&gt;</code><br />
 <code>#include &lt;boost/endian/buffers.hpp&gt;</code><br />
-<code>#include &lt;byteswap.h&gt;</code><br />
 </div>
 <p><a href="city_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacefc"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html">fc</a></td></tr>
+<tr class="memdesc:namespacefc"><td class="mdescLeft">&#160;</td><td class="mdescRight">defines wrappers for boost::asio functions <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -163,7 +163,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="city_8cpp.html#a6b854d47c10d6bfe9674b07cc48660dc">PERMUTE3</a>(x, z, y);                          \</div><div class="line">    b += Fetch64(s);                            \</div><div class="line">    c += Fetch64(s + 8);                        \</div><div class="line">    d += Fetch64(s + 16);                       \</div><div class="line">    e += Fetch64(s + 24);                       \</div><div class="line">    f += Fetch64(s + 32);                       \</div><div class="line">    a += b;                                     \</div><div class="line">    h += f;                                     \</div><div class="line">    b += c;                                     \</div><div class="line">    f += d;                                     \</div><div class="line">    g += e;                                     \</div><div class="line">    e += z;                                     \</div><div class="line">    g += x;                                     \</div><div class="line">    z = <a class="code" href="city_8cpp.html#aa1f41584649362a8cc8fdaf5af39ee7d">_mm_crc32_u64_impl</a>(z, b + g);                \</div><div class="line">    y = <a class="code" href="city_8cpp.html#aa1f41584649362a8cc8fdaf5af39ee7d">_mm_crc32_u64_impl</a>(y, e + h);                \</div><div class="line">    x = <a class="code" href="city_8cpp.html#aa1f41584649362a8cc8fdaf5af39ee7d">_mm_crc32_u64_impl</a>(x, f + a);                \</div><div class="line">    e = Rotate(e, r);                           \</div><div class="line">    c += e;                                     \</div><div class="line">    s += 40</div><div class="ttc" id="city_8cpp_html_a6b854d47c10d6bfe9674b07cc48660dc"><div class="ttname"><a href="city_8cpp.html#a6b854d47c10d6bfe9674b07cc48660dc">PERMUTE3</a></div><div class="ttdeci">#define PERMUTE3(a, b, c)</div><div class="ttdef"><b>Definition:</b> <a href="city_8cpp_source.html#l00155">city.cpp:155</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="city_8cpp.html#a6b854d47c10d6bfe9674b07cc48660dc">PERMUTE3</a>(x, z, y);                          \</div><div class="line">    b += Fetch64(s);                            \</div><div class="line">    c += Fetch64(s + 8);                        \</div><div class="line">    d += Fetch64(s + 16);                       \</div><div class="line">    e += Fetch64(s + 24);                       \</div><div class="line">    f += Fetch64(s + 32);                       \</div><div class="line">    a += b;                                     \</div><div class="line">    h += f;                                     \</div><div class="line">    b += c;                                     \</div><div class="line">    f += d;                                     \</div><div class="line">    g += e;                                     \</div><div class="line">    e += z;                                     \</div><div class="line">    g += x;                                     \</div><div class="line">    z = <a class="code" href="city_8cpp.html#aa1f41584649362a8cc8fdaf5af39ee7d">_mm_crc32_u64_impl</a>(z, b + g);                \</div><div class="line">    y = <a class="code" href="city_8cpp.html#aa1f41584649362a8cc8fdaf5af39ee7d">_mm_crc32_u64_impl</a>(y, e + h);                \</div><div class="line">    x = <a class="code" href="city_8cpp.html#aa1f41584649362a8cc8fdaf5af39ee7d">_mm_crc32_u64_impl</a>(x, f + a);                \</div><div class="line">    e = Rotate(e, r);                           \</div><div class="line">    c += e;                                     \</div><div class="line">    s += 40</div><div class="ttc" id="city_8cpp_html_a6b854d47c10d6bfe9674b07cc48660dc"><div class="ttname"><a href="city_8cpp.html#a6b854d47c10d6bfe9674b07cc48660dc">PERMUTE3</a></div><div class="ttdeci">#define PERMUTE3(a, b, c)</div><div class="ttdef"><b>Definition:</b> <a href="city_8cpp_source.html#l00157">city.cpp:157</a></div></div>
 <div class="ttc" id="city_8cpp_html_aa1f41584649362a8cc8fdaf5af39ee7d"><div class="ttname"><a href="city_8cpp.html#aa1f41584649362a8cc8fdaf5af39ee7d">_mm_crc32_u64_impl</a></div><div class="ttdeci">uint64_t _mm_crc32_u64_impl(uint64_t a, uint64_t b)</div><div class="ttdef"><b>Definition:</b> <a href="crc_8cpp_source.html#l00607">crc.cpp:607</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -182,7 +182,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="city_8cpp_source.html#l00113">113</a> of file <a class="el" href="city_8cpp_source.html">city.cpp</a>.</p>
+<p>Definition at line <a class="el" href="city_8cpp_source.html#l00115">115</a> of file <a class="el" href="city_8cpp_source.html">city.cpp</a>.</p>
 
 </div>
 </div>
@@ -216,7 +216,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="city_8cpp_source.html#l00155">155</a> of file <a class="el" href="city_8cpp_source.html">city.cpp</a>.</p>
+<p>Definition at line <a class="el" href="city_8cpp_source.html#l00157">157</a> of file <a class="el" href="city_8cpp_source.html">city.cpp</a>.</p>
 
 </div>
 </div>
@@ -252,7 +252,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 22 2020 19:51:18 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 10:20:59 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

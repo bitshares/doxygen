@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.0.0</span>
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -158,6 +158,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacefc"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc.html">fc</a></td></tr>
+<tr class="memdesc:namespacefc"><td class="mdescLeft">&#160;</td><td class="mdescRight">defines wrappers for boost::asio functions <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacefc_1_1detail"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefc_1_1detail.html">fc::detail</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,7 +209,7 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code" href="namespacefc.html">fc</a> { \</div><div class="line">  template&lt;typename Transform&gt; \</div><div class="line">  struct vtable&lt;CLASS,Transform&gt; : <span class="keyword">public</span> std::enable_shared_from_this&lt;vtable&lt;CLASS,Transform&gt;&gt; { \</div><div class="line">      BOOST_PP_SEQ_FOR_EACH( <a class="code" href="fc_2include_2fc_2api_8hpp.html#a6c552d37d1537b71a94be8c5c09785b6">FC_API_VTABLE_DEFINE_MEMBER</a>, CLASS, METHODS ) \</div><div class="line">      template&lt;typename Visitor&gt; \</div><div class="line">      void visit_other( Visitor&amp;&amp; v ){ \</div><div class="line">        BOOST_PP_SEQ_FOR_EACH( <a class="code" href="fc_2include_2fc_2api_8hpp.html#a802f3c76beea2c07584d9725b6a150ae">FC_API_VTABLE_DEFINE_VISIT_OTHER</a>, CLASS, METHODS ) \</div><div class="line">      } \</div><div class="line">      template&lt;typename Visitor&gt; \</div><div class="line">      void visit( Visitor&amp;&amp; v ){ \</div><div class="line">        BOOST_PP_SEQ_FOR_EACH( <a class="code" href="fc_2include_2fc_2api_8hpp.html#a496866640ae62dfb29364c74994b1b97">FC_API_VTABLE_DEFINE_VISIT</a>, CLASS, METHODS ) \</div><div class="line">      } \</div><div class="line">  }; \</div><div class="line">}</div><div class="ttc" id="fc_2include_2fc_2api_8hpp_html_a802f3c76beea2c07584d9725b6a150ae"><div class="ttname"><a href="fc_2include_2fc_2api_8hpp.html#a802f3c76beea2c07584d9725b6a150ae">FC_API_VTABLE_DEFINE_VISIT_OTHER</a></div><div class="ttdeci">#define FC_API_VTABLE_DEFINE_VISIT_OTHER(r, data, elem)</div><div class="ttdef"><b>Definition:</b> <a href="fc_2include_2fc_2api_8hpp_source.html#l00191">api.hpp:191</a></div></div>
 <div class="ttc" id="fc_2include_2fc_2api_8hpp_html_a496866640ae62dfb29364c74994b1b97"><div class="ttname"><a href="fc_2include_2fc_2api_8hpp.html#a496866640ae62dfb29364c74994b1b97">FC_API_VTABLE_DEFINE_VISIT</a></div><div class="ttdeci">#define FC_API_VTABLE_DEFINE_VISIT(r, data, elem)</div><div class="ttdef"><b>Definition:</b> <a href="fc_2include_2fc_2api_8hpp_source.html#l00194">api.hpp:194</a></div></div>
-<div class="ttc" id="namespacefc_html"><div class="ttname"><a href="namespacefc.html">fc</a></div><div class="ttdef"><b>Definition:</b> <a href="fc_2include_2fc_2api_8hpp_source.html#l00015">api.hpp:15</a></div></div>
+<div class="ttc" id="namespacefc_html"><div class="ttname"><a href="namespacefc.html">fc</a></div><div class="ttdoc">defines wrappers for boost::asio functions </div><div class="ttdef"><b>Definition:</b> <a href="fc_2include_2fc_2api_8hpp_source.html#l00015">api.hpp:15</a></div></div>
 <div class="ttc" id="fc_2include_2fc_2api_8hpp_html_a6c552d37d1537b71a94be8c5c09785b6"><div class="ttname"><a href="fc_2include_2fc_2api_8hpp.html#a6c552d37d1537b71a94be8c5c09785b6">FC_API_VTABLE_DEFINE_MEMBER</a></div><div class="ttdeci">#define FC_API_VTABLE_DEFINE_MEMBER(r, data, elem)</div><div class="ttdef"><b>Definition:</b> <a href="fc_2include_2fc_2api_8hpp_source.html#l00189">api.hpp:189</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="fc_2include_2fc_2api_8hpp_source.html#l00197">197</a> of file <a class="el" href="fc_2include_2fc_2api_8hpp_source.html">api.hpp</a>.</p>
@@ -334,7 +335,7 @@ Typedefs</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 22 2020 19:51:18 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 10:20:58 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
