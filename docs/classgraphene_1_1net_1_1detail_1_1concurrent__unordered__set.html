@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -112,21 +112,31 @@ Inheritance diagram for graphene::net::detail::concurrent_unordered_set&lt; Key,
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a72d5d0fa13f7fd6f1ae49acd2e73a8d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1mutex.html">fc::mutex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1concurrent__unordered__set.html#a72d5d0fa13f7fd6f1ae49acd2e73a8d8">get_mutex</a> () const </td></tr>
+<tr class="memdesc:a72d5d0fa13f7fd6f1ae49acd2e73a8d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterations require a lock. This exposes the mutex. Use with care (i.e. lock_guard)  <a href="#a72d5d0fa13f7fd6f1ae49acd2e73a8d8">More...</a><br /></td></tr>
 <tr class="separator:a72d5d0fa13f7fd6f1ae49acd2e73a8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a101ef4148815748060b51cdb5b5b4ae6"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; Key, Hash, Pred &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1concurrent__unordered__set.html#a101ef4148815748060b51cdb5b5b4ae6">find</a> (Key key)</td></tr>
+<tr class="separator:a101ef4148815748060b51cdb5b5b4ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a764661936b80e24649862738c39c0de0"><td class="memItemLeft" align="right" valign="top">std::pair&lt; typename std::unordered_set&lt; Key, Hash, Pred &gt;::iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1concurrent__unordered__set.html#a764661936b80e24649862738c39c0de0">emplace</a> (Key key)</td></tr>
 <tr class="separator:a764661936b80e24649862738c39c0de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a505b387d3d14c9d759b26c5246fc5a00"><td class="memItemLeft" align="right" valign="top">std::pair&lt; typename std::unordered_set&lt; Key, Hash, Pred &gt;::iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1concurrent__unordered__set.html#a505b387d3d14c9d759b26c5246fc5a00">insert</a> (const Key &amp;val)</td></tr>
 <tr class="separator:a505b387d3d14c9d759b26c5246fc5a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a25b6b3b5d545344c45ac9b02a6b8b19f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1concurrent__unordered__set.html#a25b6b3b5d545344c45ac9b02a6b8b19f">size</a> () const </td></tr>
 <tr class="separator:a25b6b3b5d545344c45ac9b02a6b8b19f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1ca0b55b21d5994e184db6bea9a30a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1concurrent__unordered__set.html#ae1ca0b55b21d5994e184db6bea9a30a1">empty</a> () const noexcept</td></tr>
 <tr class="separator:ae1ca0b55b21d5994e184db6bea9a30a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:afa3ade3b60effcec2222e1ebbe0317e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1concurrent__unordered__set.html#afa3ade3b60effcec2222e1ebbe0317e6">clear</a> () noexcept</td></tr>
 <tr class="separator:afa3ade3b60effcec2222e1ebbe0317e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb6ef607525ea70e6fea08a131d01622"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; Key, Hash, Pred &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1concurrent__unordered__set.html#aeb6ef607525ea70e6fea08a131d01622">erase</a> (typename std::unordered_set&lt; Key, Hash, Pred &gt;::const_iterator itr)</td></tr>
 <tr class="separator:aeb6ef607525ea70e6fea08a131d01622"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51e53473fda3fb57acc7927c332fdfb9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1concurrent__unordered__set.html#a51e53473fda3fb57acc7927c332fdfb9">erase</a> (const Key &amp;key)</td></tr>
 <tr class="separator:a51e53473fda3fb57acc7927c332fdfb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:aba8aefe79e31c2c2a649ace60f0bcd93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1concurrent__unordered__set.html#aba8aefe79e31c2c2a649ace60f0bcd93">swap</a> (typename std::unordered_set&lt; Key, Hash, Pred &gt; &amp;other) noexcept</td></tr>
+<tr class="separator:aba8aefe79e31c2c2a649ace60f0bcd93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a1630ae81e3d1a6942544effb4c78fead"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; Key, Hash, Pred &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1concurrent__unordered__set.html#a1630ae81e3d1a6942544effb4c78fead">begin</a> () noexcept</td></tr>
 <tr class="separator:a1630ae81e3d1a6942544effb4c78fead"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa390cbb6e754286921189d0e6b799397"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; Key, Hash, Pred &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1concurrent__unordered__set.html#aa390cbb6e754286921189d0e6b799397">begin</a> () const noexcept</td></tr>
@@ -143,15 +153,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af4c5b1f54de3b8b65af5d6711ff8a143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab40cfa3a10cdb0b1668c7a5007300c64"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; Key, Hash, Pred &gt;::const_local_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1concurrent__unordered__set.html#ab40cfa3a10cdb0b1668c7a5007300c64">end</a> (size_t n) const </td></tr>
 <tr class="separator:ab40cfa3a10cdb0b1668c7a5007300c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a101ef4148815748060b51cdb5b5b4ae6"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; Key, Hash, Pred &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1concurrent__unordered__set.html#a101ef4148815748060b51cdb5b5b4ae6">find</a> (Key key)</td></tr>
-<tr class="separator:a101ef4148815748060b51cdb5b5b4ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class Key, class Hash = std::hash&lt;Key&gt;, class Pred = std::equal_to&lt;Key&gt;&gt;<br />
 class graphene::net::detail::concurrent_unordered_set&lt; Key, Hash, Pred &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00019">19</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00037">37</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a1630ae81e3d1a6942544effb4c78fead"></a>
 <div class="memitem">
@@ -175,8 +183,9 @@ template&lt;class Key, class Hash = std::hash&lt;Key&gt;, class Pred = std::equa
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Iteration </p>
 
-<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00068">68</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00101">101</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -203,7 +212,7 @@ template&lt;class Key, class Hash = std::hash&lt;Key&gt;, class Pred = std::equa
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00073">73</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00106">106</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -231,7 +240,7 @@ template&lt;class Key, class Hash = std::hash&lt;Key&gt;, class Pred = std::equa
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00078">78</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00111">111</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -259,7 +268,7 @@ template&lt;class Key, class Hash = std::hash&lt;Key&gt;, class Pred = std::equa
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00083">83</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00116">116</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -285,8 +294,9 @@ template&lt;class Key, class Hash = std::hash&lt;Key&gt;, class Pred = std::equa
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Removal </p>
 
-<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00051">51</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00074">74</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -313,8 +323,9 @@ template&lt;class Key, class Hash = std::hash&lt;Key&gt;, class Pred = std::equa
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Insertion </p>
 
-<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00029">29</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00048">48</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -341,7 +352,7 @@ template&lt;class Key, class Hash = std::hash&lt;Key&gt;, class Pred = std::equa
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00045">45</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00066">66</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -368,7 +379,7 @@ template&lt;class Key, class Hash = std::hash&lt;Key&gt;, class Pred = std::equa
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00088">88</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00121">121</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -395,7 +406,7 @@ template&lt;class Key, class Hash = std::hash&lt;Key&gt;, class Pred = std::equa
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00093">93</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00126">126</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -423,7 +434,7 @@ template&lt;class Key, class Hash = std::hash&lt;Key&gt;, class Pred = std::equa
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00098">98</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00131">131</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -451,7 +462,7 @@ template&lt;class Key, class Hash = std::hash&lt;Key&gt;, class Pred = std::equa
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00103">103</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00136">136</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -479,7 +490,7 @@ template&lt;class Key, class Hash = std::hash&lt;Key&gt;, class Pred = std::equa
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00056">56</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00079">79</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -507,7 +518,7 @@ template&lt;class Key, class Hash = std::hash&lt;Key&gt;, class Pred = std::equa
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00062">62</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00085">85</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -534,8 +545,9 @@ template&lt;class Key, class Hash = std::hash&lt;Key&gt;, class Pred = std::equa
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Search </p>
 
-<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00109">109</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00143">143</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -562,7 +574,9 @@ template&lt;class Key, class Hash = std::hash&lt;Key&gt;, class Pred = std::equa
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00026">26</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p>Iterations require a lock. This exposes the mutex. Use with care (i.e. lock_guard) </p>
+
+<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00044">44</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -590,7 +604,7 @@ template&lt;class Key, class Hash = std::hash&lt;Key&gt;, class Pred = std::equa
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00034">34</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00053">53</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -616,8 +630,38 @@ template&lt;class Key, class Hash = std::hash&lt;Key&gt;, class Pred = std::equa
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Size </p>
 
-<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00040">40</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00061">61</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aba8aefe79e31c2c2a649ace60f0bcd93"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Key, class Hash = std::hash&lt;Key&gt;, class Pred = std::equal_to&lt;Key&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classgraphene_1_1net_1_1detail_1_1concurrent__unordered__set.html">graphene::net::detail::concurrent_unordered_set</a>&lt; Key, Hash, Pred &gt;::swap </td>
+          <td>(</td>
+          <td class="paramtype">typename std::unordered_set&lt; Key, Hash, Pred &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Swap </p>
+
+<p>Definition at line <a class="el" href="node__impl_8hxx_source.html#l00093">93</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -627,7 +671,7 @@ template&lt;class Key, class Hash = std::hash&lt;Key&gt;, class Pred = std::equa
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 26 2021 10:21:01 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 28 2021 10:41:43 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

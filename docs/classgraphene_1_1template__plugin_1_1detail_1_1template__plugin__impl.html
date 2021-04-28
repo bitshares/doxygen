@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classgraphene_1_1template__plugin_1_1detail_1_1template__plugin__impl-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">graphene::template_plugin::detail::template_plugin_impl Class Reference</div>  </div>
@@ -106,17 +106,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3743f84cd200130112332012e75cb1c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74629ca10c596c7d6a14d93860e6c53a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1template__plugin_1_1detail_1_1template__plugin__impl.html#a74629ca10c596c7d6a14d93860e6c53a">~template_plugin_impl</a> ()</td></tr>
 <tr class="separator:a74629ca10c596c7d6a14d93860e6c53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9152805c67dea30176175e4f3ff290c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1template__plugin_1_1detail_1_1template__plugin__impl.html#aa9152805c67dea30176175e4f3ff290c">onBlock</a> (const signed_block &amp;b)</td></tr>
-<tr class="separator:aa9152805c67dea30176175e4f3ff290c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cec8b83158d96c8682203616af616ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1template__plugin_1_1detail_1_1template__plugin__impl.html#a7cec8b83158d96c8682203616af616ec">on_block</a> (const signed_block &amp;b)</td></tr>
+<tr class="separator:a7cec8b83158d96c8682203616af616ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9b1324616f9dcdbdff11acaf3df10b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1chain_1_1database.html">graphene::chain::database</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1template__plugin_1_1detail_1_1template__plugin__impl.html#af9b1324616f9dcdbdff11acaf3df10b6">database</a> ()</td></tr>
 <tr class="separator:af9b1324616f9dcdbdff11acaf3df10b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a21b6172ea2df26a0bc57e22cb9ba8a45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1template__plugin_1_1template__plugin.html">template_plugin</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1template__plugin_1_1detail_1_1template__plugin__impl.html#a21b6172ea2df26a0bc57e22cb9ba8a45">_self</a></td></tr>
-<tr class="separator:a21b6172ea2df26a0bc57e22cb9ba8a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b5967f000418f426f3de470d086cee1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1template__plugin_1_1detail_1_1template__plugin__impl.html#a4b5967f000418f426f3de470d086cee1">_plugin_option</a> = &quot;&quot;</td></tr>
-<tr class="separator:a4b5967f000418f426f3de470d086cee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a4b98acc13d66a55b9a11755a3f5a2b69"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1template__plugin_1_1detail_1_1template__plugin__impl.html#a4b98acc13d66a55b9a11755a3f5a2b69">graphene::template_plugin::template_plugin</a></td></tr>
+<tr class="separator:a4b98acc13d66a55b9a11755a3f5a2b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -139,12 +137,12 @@ Public Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="template__plugin_8cpp_source.html#l00035">35</a> of file <a class="el" href="template__plugin_8cpp_source.html">template_plugin.cpp</a>.</p>
+<p>Definition at line <a class="el" href="template__plugin_8cpp_source.html#l00059">59</a> of file <a class="el" href="template__plugin_8cpp_source.html">template_plugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -169,7 +167,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="template__plugin_8cpp_source.html#l00060">60</a> of file <a class="el" href="template__plugin_8cpp_source.html">template_plugin.cpp</a>.</p>
+<p>Definition at line <a class="el" href="template__plugin_8cpp_source.html#l00065">65</a> of file <a class="el" href="template__plugin_8cpp_source.html">template_plugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -195,16 +193,16 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="template__plugin_8cpp_source.html#l00042">42</a> of file <a class="el" href="template__plugin_8cpp_source.html">template_plugin.cpp</a>.</p>
+<p>Definition at line <a class="el" href="template__plugin_8cpp_source.html#l00040">40</a> of file <a class="el" href="template__plugin_8cpp_source.html">template_plugin.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa9152805c67dea30176175e4f3ff290c"></a>
+<a class="anchor" id="a7cec8b83158d96c8682203616af616ec"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void graphene::template_plugin::detail::template_plugin_impl::onBlock </td>
+          <td class="memname">void graphene::template_plugin::detail::template_plugin_impl::on_block </td>
           <td>(</td>
           <td class="paramtype">const signed_block &amp;&#160;</td>
           <td class="paramname"><em>b</em></td><td>)</td>
@@ -213,36 +211,30 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="template__plugin_8cpp_source.html#l00055">55</a> of file <a class="el" href="template__plugin_8cpp_source.html">template_plugin.cpp</a>.</p>
+<p>Definition at line <a class="el" href="template__plugin_8cpp_source.html#l00054">54</a> of file <a class="el" href="template__plugin_8cpp_source.html">template_plugin.cpp</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a4b5967f000418f426f3de470d086cee1"></a>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a class="anchor" id="a4b98acc13d66a55b9a11755a3f5a2b69"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string graphene::template_plugin::detail::template_plugin_impl::_plugin_option = &quot;&quot;</td>
+          <td class="memname">friend class <a class="el" href="classgraphene_1_1template__plugin_1_1template__plugin.html">graphene::template_plugin::template_plugin</a></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="template__plugin_8cpp_source.html#l00049">49</a> of file <a class="el" href="template__plugin_8cpp_source.html">template_plugin.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a21b6172ea2df26a0bc57e22cb9ba8a45"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classgraphene_1_1template__plugin_1_1template__plugin.html">template_plugin</a>&amp; graphene::template_plugin::detail::template_plugin_impl::_self</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="template__plugin_8cpp_source.html#l00047">47</a> of file <a class="el" href="template__plugin_8cpp_source.html">template_plugin.cpp</a>.</p>
+<p>Definition at line <a class="el" href="template__plugin_8cpp_source.html#l00045">45</a> of file <a class="el" href="template__plugin_8cpp_source.html">template_plugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -252,7 +244,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 26 2021 10:21:02 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 28 2021 10:41:44 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

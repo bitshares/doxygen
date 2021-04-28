@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -282,6 +282,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7247c81105c849b4f26b4e3de6945738"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api.html#a7247c81105c849b4f26b4e3de6945738">get_liquidity_pools_by_asset_b</a> (std::string asset_symbol_or_id, optional&lt; uint32_t &gt; limit=101, optional&lt; liquidity_pool_id_type &gt; start_id=optional&lt; liquidity_pool_id_type &gt;(), optional&lt; bool &gt; with_statistics=false) const </td></tr>
 <tr class="memdesc:a7247c81105c849b4f26b4e3de6945738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of liquidity pools by the symbol or ID of the second asset in the pool.  <a href="#a7247c81105c849b4f26b4e3de6945738">More...</a><br /></td></tr>
 <tr class="separator:a7247c81105c849b4f26b4e3de6945738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab884fa81f23e65ce74065d3075a8a342"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api.html#ab884fa81f23e65ce74065d3075a8a342">get_liquidity_pools_by_one_asset</a> (const std::string &amp;asset_symbol_or_id, const optional&lt; uint32_t &gt; &amp;limit=101, const optional&lt; liquidity_pool_id_type &gt; &amp;start_id=optional&lt; liquidity_pool_id_type &gt;(), const optional&lt; bool &gt; &amp;with_statistics=false) const </td></tr>
+<tr class="memdesc:ab884fa81f23e65ce74065d3075a8a342"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of liquidity pools by the symbol or ID of one asset in the pool.  <a href="#ab884fa81f23e65ce74065d3075a8a342">More...</a><br /></td></tr>
+<tr class="separator:ab884fa81f23e65ce74065d3075a8a342"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad02b8b7a5d583406a4904efa7f73c4b2"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api.html#ad02b8b7a5d583406a4904efa7f73c4b2">get_liquidity_pools_by_both_assets</a> (std::string asset_symbol_or_id_a, std::string asset_symbol_or_id_b, optional&lt; uint32_t &gt; limit=101, optional&lt; liquidity_pool_id_type &gt; start_id=optional&lt; liquidity_pool_id_type &gt;(), optional&lt; bool &gt; with_statistics=false) const </td></tr>
 <tr class="memdesc:ad02b8b7a5d583406a4904efa7f73c4b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of liquidity pools by the symbols or IDs of the two assets in the pool.  <a href="#ad02b8b7a5d583406a4904efa7f73c4b2">More...</a><br /></td></tr>
 <tr class="separator:ad02b8b7a5d583406a4904efa7f73c4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -333,9 +336,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abbfcf1fc1110f1ce3387bedffa07649e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api.html#abbfcf1fc1110f1ce3387bedffa07649e">get_transaction_hex</a> (const signed_transaction &amp;trx) const </td></tr>
 <tr class="memdesc:abbfcf1fc1110f1ce3387bedffa07649e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a hexdump of the serialized binary form of a transaction.  <a href="#abbfcf1fc1110f1ce3387bedffa07649e">More...</a><br /></td></tr>
 <tr class="separator:abbfcf1fc1110f1ce3387bedffa07649e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f6ed5491ad439302bb0c0f9c69dc458"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api.html#a3f6ed5491ad439302bb0c0f9c69dc458">get_transaction_hex_without_sig</a> (const signed_transaction &amp;trx) const </td></tr>
-<tr class="memdesc:a3f6ed5491ad439302bb0c0f9c69dc458"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a hexdump of the serialized binary form of a signatures-stripped transaction.  <a href="#a3f6ed5491ad439302bb0c0f9c69dc458">More...</a><br /></td></tr>
-<tr class="separator:a3f6ed5491ad439302bb0c0f9c69dc458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a492c84ef07e6a089682a326808f79810"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api.html#a492c84ef07e6a089682a326808f79810">get_transaction_hex_without_sig</a> (const transaction &amp;trx) const </td></tr>
+<tr class="memdesc:a492c84ef07e6a089682a326808f79810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a hexdump of the serialized binary form of a signatures-stripped transaction.  <a href="#a492c84ef07e6a089682a326808f79810">More...</a><br /></td></tr>
+<tr class="separator:a492c84ef07e6a089682a326808f79810"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38363e647a3c859f7647478807e451a2"><td class="memItemLeft" align="right" valign="top">set&lt; public_key_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api.html#a38363e647a3c859f7647478807e451a2">get_required_signatures</a> (const signed_transaction &amp;trx, const flat_set&lt; public_key_type &gt; &amp;available_keys) const </td></tr>
 <tr class="separator:a38363e647a3c859f7647478807e451a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad89f67e1257bfb6602acc4ddb3b5eb5b"><td class="memItemLeft" align="right" valign="top">set&lt; public_key_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api.html#ad89f67e1257bfb6602acc4ddb3b5eb5b">get_potential_signatures</a> (const signed_transaction &amp;trx) const </td></tr>
@@ -452,7 +455,7 @@ Public Member Functions</h2></td></tr>
 <p>Stop receiving any notifications. </p>
 <p>This unsubscribes from all subscribed markets and objects. </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00181">181</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00191">191</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -490,7 +493,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The market volume over the past 24 hours </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01395">1395</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01405">1405</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -528,7 +531,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Balances of the account </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00771">771</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00781">781</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -555,7 +558,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The account holding the provided name </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00669">669</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00679">679</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -574,7 +577,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Get the total number of accounts registered with the blockchain. </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00755">755</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00765">765</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -601,7 +604,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Account ID </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00429">429</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00439">439</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -672,7 +675,7 @@ Public Member Functions</h2></td></tr>
 </ol>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01058">1058</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01068">1068</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -699,7 +702,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>all accounts that refer to the specified account in their owner or active authorities </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00683">683</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00693">693</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -738,7 +741,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The accounts corresponding to the provided names or IDs</dd></dl>
 <p>This function has semantics identical to <a class="el" href="classgraphene_1_1app_1_1database__api.html#a38b3473a9d15f444d089301724fd722b">get_objects</a> </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00434">434</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00444">444</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -765,7 +768,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A list of worker objects </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02193">2193</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02255">2255</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -785,7 +788,7 @@ Public Member Functions</h2></td></tr>
 <p>Get assets count. </p>
 <dl class="section return"><dt>Returns</dt><dd>The assets count </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00942">942</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00952">952</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -812,7 +815,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>asset ID </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00883">883</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00893">893</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -851,7 +854,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The assets corresponding to the provided symbol names or IDs</dd></dl>
 <p>This function has semantics identical to <a class="el" href="classgraphene_1_1app_1_1database__api.html#a38b3473a9d15f444d089301724fd722b">get_objects</a> </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00888">888</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00898">898</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -896,7 +899,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The assets issued (owned) by the account </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00952">952</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00962">962</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -923,7 +926,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>all unclaimed balance objects for the addresses </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00809">809</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00819">819</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -950,7 +953,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the set of blinded balance objects by commitment ID </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02647">2647</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02709">2709</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -977,7 +980,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the referenced block, or null if no matching block was found </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00234">234</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00244">244</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1004,7 +1007,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>header of the referenced block, or null if no matching block was found </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00206">206</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00216">216</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1031,7 +1034,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array of headers of the referenced blocks, or null if no matching block was found </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00218">218</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00228">228</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1069,7 +1072,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The call orders, ordered from earliest to be called to latest </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01150">1150</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01160">1160</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1114,7 +1117,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The call orders of the account </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01178">1178</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01188">1188</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1133,7 +1136,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Get the chain ID. </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00302">302</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00312">312</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1152,7 +1155,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Retrieve the <a class="el" href="classgraphene_1_1chain_1_1chain__property__object.html">graphene::chain::chain_property_object</a> associated with the chain. </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00272">272</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00282">282</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1197,7 +1200,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The settle orders, ordered from earliest settlement date to latest </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01291">1291</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01301">1301</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1216,7 +1219,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Get the total number of committee registered with the blockchain. </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02176">2176</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02238">2238</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1243,7 +1246,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The committee_member object, or null if the account does not have a committee_member </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02124">2124</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02186">2186</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1271,7 +1274,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The committee_members corresponding to the provided IDs</dd></dl>
 <p>This function has semantics identical to <a class="el" href="classgraphene_1_1app_1_1database__api.html#a38b3473a9d15f444d089301724fd722b">get_objects</a>, but doesn't subscribe </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02105">2105</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02167">2167</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1290,7 +1293,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Retrieve compile-time constants. </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00292">292</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00302">302</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1309,7 +1312,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Retrieve the current <a class="el" href="classgraphene_1_1chain_1_1dynamic__global__property__object.html">graphene::chain::dynamic_global_property_object</a>. </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00312">312</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00322">322</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1348,7 +1351,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Map of string from <code>names_or_ids</code> to the corresponding account</dd></dl>
 <p>This function fetches all relevant objects for the given accounts, and subscribes to updates to the given accounts. If any of the strings in <code>names_or_ids</code> cannot be tied to an account, that input will be ignored. All other accounts will be retrieved and subscribed. </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00458">458</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00468">468</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1367,7 +1370,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Retrieve the current <a class="el" href="classgraphene_1_1chain_1_1global__property__object.html">graphene::chain::global_property_object</a>. </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00282">282</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00292">292</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1405,7 +1408,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>HTLC object for the id </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02747">2747</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02809">2809</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1450,7 +1453,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>HTLC objects for the account </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02762">2762</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02824">2824</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1495,7 +1498,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>HTLC objects for the account </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02792">2792</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02854">2854</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1522,7 +1525,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ID of all accounts that refer to the specified keys </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00328">328</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00338">338</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1567,7 +1570,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The limit orders, ordered from least price to greatest </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00998">998</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01008">1008</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1619,7 +1622,7 @@ Public Member Functions</h2></td></tr>
 </ol>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01018">1018</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01028">1028</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1665,7 +1668,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The liquidity pools</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>if an ID in the list can not be found, the corresponding data in the returned list is null. </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01873">1873</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01935">1935</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1724,7 +1727,7 @@ Public Member Functions</h2></td></tr>
 </ol>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01767">1767</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01777">1777</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1783,7 +1786,7 @@ Public Member Functions</h2></td></tr>
 </ol>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01793">1793</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01803">1803</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1849,7 +1852,66 @@ Public Member Functions</h2></td></tr>
 </ol>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01819">1819</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01881">1881</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab884fa81f23e65ce74065d3075a8a342"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; <a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a> &gt; graphene::app::database_api::get_liquidity_pools_by_one_asset </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>asset_symbol_or_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const optional&lt; uint32_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>limit</em> = <code>101</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const optional&lt; liquidity_pool_id_type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start_id</em> = <code>optional&lt;liquidity_pool_id_type&gt;()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const optional&lt; bool &gt; &amp;&#160;</td>
+          <td class="paramname"><em>with_statistics</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a list of liquidity pools by the symbol or ID of one asset in the pool. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">asset_symbol_or_id</td><td>symbol name or ID of the asset </td></tr>
+    <tr><td class="paramname">limit</td><td>The limitation of items each query can fetch, not greater than a configured value </td></tr>
+    <tr><td class="paramname">start_id</td><td>Start liquidity pool id, fetch pools whose IDs are greater than or equal to this ID </td></tr>
+    <tr><td class="paramname">with_statistics</td><td>Whether to return statistics </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The liquidity pools</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><ol type="1">
+<li>if <code>asset_symbol_or_id</code> cannot be tied to an asset, an error will be returned</li>
+<li><code>limit</code> can be omitted or be null, if so the default value 101 will be used</li>
+<li><code>start_id</code> can be omitted or be null, if so the api will return the "first page" of pools</li>
+<li>can only omit one or more arguments in the end of the list, but not one or more in the middle </li>
+</ol>
+</dd></dl>
+
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01829">1829</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1908,7 +1970,7 @@ Public Member Functions</h2></td></tr>
 </ol>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01964">1964</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02026">2026</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1954,7 +2016,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The liquidity pools that the assets are for</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>if an asset in the list can not be found or is not a share asset of any liquidity pool, the corresponding data in the returned list is null. </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01919">1919</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01981">1981</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1982,7 +2044,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>all open margin positions of the account</dd></dl>
 <p>Similar to <a class="el" href="classgraphene_1_1app_1_1database__api.html#a6b93baec9cf0a3c0692088d005d5f340">get_call_orders_by_account</a>, but without pagination. </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01267">1267</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01277">1277</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2012,7 +2074,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Semantically equivalent to <a class="el" href="classgraphene_1_1app_1_1database__api.html#a04a3a2b17b62f5d38978e72ef0f91868">get_account_balances</a>. </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00803">803</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00813">813</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2052,7 +2114,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>operation_history_object (1.11.x) and account_transaction_history_object (2.9.x) can not be subscribed.</dd></dl>
 <p>If any of the provided IDs does not map to an object, a null variant is returned in its position. </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00100">100</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00110">110</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2097,7 +2159,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Order book of the market </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01414">1414</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01424">1424</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2123,7 +2185,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a set of addresses that could possibly sign for the given transaction </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02388">2388</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02450">2450</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2149,7 +2211,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a set of public keys that could possibly sign for the given transaction </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02384">2384</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02446">2446</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2176,7 +2238,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a set of proposed transactions that the specified account can act on </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02612">2612</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02674">2674</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2202,7 +2264,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the corresponding transaction if found, or null if not found </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00249">249</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00259">259</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2240,7 +2302,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a list of objects which indicates required fees of each operation </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02521">2521</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02583">2583</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2277,7 +2339,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a subset of <code>available_keys</code> that could sign for the given transaction </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02362">2362</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02424">2424</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2315,7 +2377,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The settle orders, ordered from earliest settlement date to latest </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01206">1206</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01216">1216</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2360,7 +2422,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The settle orders of the account </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01234">1234</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01244">1244</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2398,7 +2460,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The market ticker for the past 24 hours. </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01361">1361</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01371">1371</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2450,7 +2512,7 @@ Public Member Functions</h2></td></tr>
 </ol>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02891">2891</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02953">2953</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2477,7 +2539,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Desc Sorted ticker vector </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01466">1466</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01476">1476</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2504,7 +2566,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Desc Sorted voting power vector </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00464">464</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00474">474</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2564,7 +2626,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Transactions in the market </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The time must be UTC, timezone offsets are not supported. The range is [stop, start]. In case when there are more than 100 transactions occurred in the same second, this API only returns the most recent 100 records, the rest records can be retrieved with the <a class="el" href="classgraphene_1_1app_1_1database__api.html#a1160ad6e9ce050fe8376dc1605be9cb9">get_trade_history_by_sequence</a> API. </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01499">1499</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01509">1509</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2624,7 +2686,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Transactions in the market </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The time must be UTC, timezone offsets are not supported. The range is [stop, start]. </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01600">1600</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01610">1610</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2662,7 +2724,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the transaction at the given position </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00244">244</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00254">254</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2689,18 +2751,18 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the hexdump of the transaction </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02340">2340</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02402">2402</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a3f6ed5491ad439302bb0c0f9c69dc458"></a>
+<a class="anchor" id="a492c84ef07e6a089682a326808f79810"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">std::string graphene::app::database_api::get_transaction_hex_without_sig </td>
           <td>(</td>
-          <td class="paramtype">const signed_transaction &amp;&#160;</td>
+          <td class="paramtype">const transaction &amp;&#160;</td>
           <td class="paramname"><em>trx</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -2716,7 +2778,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the hexdump of the transaction without the signatures </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02350">2350</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02412">2412</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2743,7 +2805,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a list indicating how much asset in each balance object is available to be claimed </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00837">837</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00847">847</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2770,7 +2832,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>all vesting balance objects owned by the account </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00855">855</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00865">865</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2815,7 +2877,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Withdraw permission objects for the account </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02674">2674</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02736">2736</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2860,7 +2922,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Withdraw permission objects for the account </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02708">2708</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02770">2770</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2887,7 +2949,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The witness object, or null if the account does not have a witness </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02039">2039</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02101">2101</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2906,7 +2968,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Get the total number of witnesses registered with the blockchain. </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02089">2089</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02151">2151</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2934,7 +2996,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The witnesses corresponding to the provided IDs</dd></dl>
 <p>This function has semantics identical to <a class="el" href="classgraphene_1_1app_1_1database__api.html#a38b3473a9d15f444d089301724fd722b">get_objects</a>, but doesn't subscribe </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02022">2022</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02084">2084</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2953,7 +3015,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Get the total number of workers registered with the blockchain. </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02245">2245</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02307">2307</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2980,7 +3042,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A list of worker objects owned by the account </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02226">2226</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02288">2288</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3005,7 +3067,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Whether a public key is known </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00389">389</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00399">399</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3043,7 +3105,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The assets found </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00914">914</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00924">924</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3081,7 +3143,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The htlc object list </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02822">2822</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02884">2884</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3132,7 +3194,7 @@ Public Member Functions</h2></td></tr>
 </ol>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01724">1724</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01734">1734</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3176,7 +3238,7 @@ Public Member Functions</h2></td></tr>
 </ol>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02852">2852</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02914">2914</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3204,7 +3266,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The accounts holding the provided names</dd></dl>
 <p>This function has semantics identical to <a class="el" href="classgraphene_1_1app_1_1database__api.html#a38b3473a9d15f444d089301724fd722b">get_objects</a>, but doesn't subscribe. </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00709">709</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00719">719</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3250,7 +3312,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Map of account names to corresponding IDs</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>In addition to the common auto-subscription rules, this API will subscribe to the returned account only if <code>limit</code> is 1. </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00719">719</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00729">729</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3278,7 +3340,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The assets corresponding to the provided symbols or IDs</dd></dl>
 <p>This function has semantics identical to <a class="el" href="classgraphene_1_1app_1_1database__api.html#a38b3473a9d15f444d089301724fd722b">get_objects</a>, but doesn't subscribe </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00980">980</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00990">990</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3316,7 +3378,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Map of committee_member names to corresponding IDs </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02141">2141</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02203">2203</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3345,7 +3407,7 @@ Public Member Functions</h2></td></tr>
 <p>This will be a mixture of committee_member_objects, witness_objects, and worker_objects</p>
 <p>The results will be in the same order as the votes. Null will be returned for any vote IDs that are not found. </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02263">2263</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02325">2325</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3383,7 +3445,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Map of witness names to corresponding IDs </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02054">2054</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02116">2116</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3421,7 +3483,7 @@ Public Member Functions</h2></td></tr>
 <p>Note: auto-subscription is enabled by default</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classgraphene_1_1app_1_1database__api.html#a66addb6dfc6b60d687bfb17b4401c36e">set_subscribe_callback</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00151">151</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00161">161</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3447,7 +3509,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00171">171</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00181">181</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3474,7 +3536,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <p>Note: a transaction can be pushed to database and be popped from database several times while processing, before and after included in a block. Everytime when a push is done, the client will be notified. </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00161">161</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00171">171</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3512,7 +3574,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <p>Note: auto-subscription is enabled by default and can be disabled with <a class="el" href="classgraphene_1_1app_1_1database__api.html#a7ef2faf3e3e402ea9572067554c2dd2c">set_auto_subscription</a> API. </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00132">132</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l00142">142</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3557,7 +3619,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <p>Callback will be passed a variant containing a vector&lt;pair&lt;operation, operation_result&gt;&gt;. The vector will contain, in order, the operations which changed the market, and their results. </p>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01329">1329</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01339">1339</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3594,7 +3656,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01346">1346</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l01356">1356</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3621,7 +3683,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a processed_transaction object if the transaction passes the validation, otherwise an exception will be thrown </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02511">2511</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02573">2573</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3659,7 +3721,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the passed in keys have enough authority to approve an operation for this account </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02479">2479</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02541">2541</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3684,7 +3746,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the <code>trx</code> has all of the required signatures, otherwise throws an exception </dd></dl>
 
-<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02461">2461</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="database__api_8cpp_source.html#l02523">2523</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3695,7 +3757,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 26 2021 10:21:00 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 28 2021 10:41:42 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

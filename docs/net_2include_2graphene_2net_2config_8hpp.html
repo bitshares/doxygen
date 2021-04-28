@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -90,12 +90,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">config.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
+</div>
 <p><a href="net_2include_2graphene_2net_2config_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -144,6 +146,13 @@ Macros</h2></td></tr>
 <tr class="separator:a11c31cf480df465153ec9ad5599a437f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5f5bebadf108c20d0053100856906ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_2include_2graphene_2net_2config_8hpp.html#ab5f5bebadf108c20d0053100856906ae">MAXIMUM_PEERDB_SIZE</a>&#160;&#160;&#160;1000</td></tr>
 <tr class="separator:ab5f5bebadf108c20d0053100856906ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ad6ee838682c64c9cf02a214487d46644"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_2include_2graphene_2net_2config_8hpp.html#ad6ee838682c64c9cf02a214487d46644">MAX_BLOCKS_TO_HANDLE_AT_ONCE</a> = 200</td></tr>
+<tr class="separator:ad6ee838682c64c9cf02a214487d46644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adab464a6116943f9e1f152d58b2d45bf"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_2include_2graphene_2net_2config_8hpp.html#adab464a6116943f9e1f152d58b2d45bf">MAX_SYNC_BLOCKS_TO_PREFETCH</a> = 10 * <a class="el" href="net_2include_2graphene_2net_2config_8hpp.html#ad6ee838682c64c9cf02a214487d46644">MAX_BLOCKS_TO_HANDLE_AT_ONCE</a></td></tr>
+<tr class="separator:adab464a6116943f9e1f152d58b2d45bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="aa63ee72721b328704cc4d3ca3ab67964"></a>
@@ -157,7 +166,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Define this to enable debugging code in the p2p network interface. This is code that would never be executed in normal operation, but is used for automated testing (creating artificial net splits, tracking where messages came from and when) </p>
 
-<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00034">34</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
+<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00036">36</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
 
 </div>
 </div>
@@ -171,7 +180,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00058">58</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
+<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00060">60</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
 
 </div>
 </div>
@@ -185,7 +194,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00059">59</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
+<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00061">61</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
 
 </div>
 </div>
@@ -199,7 +208,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00057">57</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
+<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00059">59</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
 
 </div>
 </div>
@@ -213,7 +222,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00040">40</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
+<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00042">42</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
 
 </div>
 </div>
@@ -228,7 +237,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>We prevent a peer from offering us a list of blocks which, if we fetched them all, would result in a blockchain that extended into the future. This parameter gives us some wiggle room, allowing a peer to give us blocks that would put our blockchain up to an hour in the future, just in case our clock is a bit off. </p>
 
-<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00081">81</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
+<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00083">83</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
 
 </div>
 </div>
@@ -242,7 +251,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00085">85</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
+<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00087">87</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
 
 </div>
 </div>
@@ -256,7 +265,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00083">83</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
+<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00085">85</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
 
 </div>
 </div>
@@ -272,7 +281,7 @@ Macros</h2></td></tr>
 <p>During normal operation, how many items will be fetched from each peer at a time. This will only come into play when the network is being flooded &ndash; typically transactions will be fetched as soon as we find out about them, so only one item will be requested at a time.</p>
 <p>No tests have been done to find the optimal value for this parameter, so consider increasing or decreasing it if performance during flooding is lacking. </p>
 
-<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00098">98</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
+<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00100">100</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
 
 </div>
 </div>
@@ -286,7 +295,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00110">110</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
+<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00112">112</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
 
 </div>
 </div>
@@ -300,7 +309,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00108">108</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
+<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00110">110</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
 
 </div>
 </div>
@@ -314,7 +323,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00061">61</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
+<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00063">63</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
 
 </div>
 </div>
@@ -330,7 +339,7 @@ Macros</h2></td></tr>
 <p>When we receive a message from the network, we advertise it to our peers and save a copy in a cache were we will find it if a peer requests it. We expire out old items out of the cache after this number of blocks go by.</p>
 <p>Recently lowered from 30 to match the default expiration time the web wallet imposes on transactions. </p>
 
-<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00072">72</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
+<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00074">74</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
 
 </div>
 </div>
@@ -345,7 +354,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Instead of fetching all item IDs from a peer, then fetching all blocks from a peer, we will interleave them. Fetch at least this many block IDs, then switch into block-fetching mode until the number of blocks we know about but haven't yet fetched drops below this </p>
 
-<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00106">106</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
+<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00108">108</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
 
 </div>
 </div>
@@ -359,7 +368,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00050">50</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
+<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00052">52</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
 
 </div>
 </div>
@@ -373,7 +382,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00048">48</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
+<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00050">50</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
 
 </div>
 </div>
@@ -387,7 +396,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00026">26</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
+<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00028">28</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
 
 </div>
 </div>
@@ -401,7 +410,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00056">56</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
+<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00058">58</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
 
 </div>
 </div>
@@ -415,7 +424,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00055">55</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
+<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00057">57</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
 
 </div>
 </div>
@@ -430,7 +439,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>AFter trying all peers, how long to wait before we check to see if there are peers we can try again. </p>
 
-<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00046">46</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
+<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00048">48</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
 
 </div>
 </div>
@@ -445,7 +454,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>2MiB </p>
 
-<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00039">39</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
+<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00041">41</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
 
 </div>
 </div>
@@ -459,14 +468,43 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00112">112</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
+<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00114">114</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="ad6ee838682c64c9cf02a214487d46644"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t MAX_BLOCKS_TO_HANDLE_AT_ONCE = 200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00116">116</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adab464a6116943f9e1f152d58b2d45bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t MAX_SYNC_BLOCKS_TO_PREFETCH = 10 * <a class="el" href="net_2include_2graphene_2net_2config_8hpp.html#ad6ee838682c64c9cf02a214487d46644">MAX_BLOCKS_TO_HANDLE_AT_ONCE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html#l00117">117</a> of file <a class="el" href="net_2include_2graphene_2net_2config_8hpp_source.html">config.hpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 26 2021 10:20:59 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 28 2021 10:41:41 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -110,7 +110,6 @@ Inheritance diagram for graphene::net::node:</div>
  <div class="center">
   <img src="classgraphene_1_1net_1_1node.png" usemap="#graphene::net::node_map" alt=""/>
   <map id="graphene::net::node_map" name="graphene::net::node_map">
-<area href="classgraphene_1_1net_1_1simulated__network.html" alt="graphene::net::simulated_network" shape="rect" coords="0,112,228,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -122,8 +121,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4123cfc1660d19fe6c48a468d8daced0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4c9d53582644a76d462f2b9dfbcc778"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#ac4c9d53582644a76d462f2b9dfbcc778">close</a> ()</td></tr>
 <tr class="separator:ac4c9d53582644a76d462f2b9dfbcc778"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a071fd9b43eb2b4adccca649edba6b311"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a071fd9b43eb2b4adccca649edba6b311">set_node_delegate</a> (<a class="el" href="classgraphene_1_1net_1_1node__delegate.html">node_delegate</a> *del)</td></tr>
-<tr class="separator:a071fd9b43eb2b4adccca649edba6b311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adee6d594de4f30a2c3c58ef59f73bb0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#adee6d594de4f30a2c3c58ef59f73bb0f">set_node_delegate</a> (std::shared_ptr&lt; <a class="el" href="classgraphene_1_1net_1_1node__delegate.html">node_delegate</a> &gt; del) const </td></tr>
+<tr class="separator:adee6d594de4f30a2c3c58ef59f73bb0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a682fe5c9d092497c926896589238d7f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a682fe5c9d092497c926896589238d7f4">load_configuration</a> (const <a class="el" href="classfc_1_1path.html">fc::path</a> &amp;configuration_directory)</td></tr>
 <tr class="separator:a682fe5c9d092497c926896589238d7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6822a9703c8258b2f7fe6d931c1bcead"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a6822a9703c8258b2f7fe6d931c1bcead">listen_to_p2p_network</a> ()</td></tr>
@@ -195,7 +194,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="textblock"><p>provides application independent P2P broadcast and data synchronization </p>
 <p>Unanswered questions: when does the node start establishing network connections and accepting peers? we don't have enough info to start synchronizing until <a class="el" href="classgraphene_1_1net_1_1node.html#a66366a86787aad2a1062b96da4e2555a">sync_from()</a> is called, would we have any reason to connect before that? </p>
 
-<p>Definition at line <a class="el" href="node_8hpp_source.html#l00194">194</a> of file <a class="el" href="node_8hpp_source.html">node.hpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8hpp_source.html#l00189">189</a> of file <a class="el" href="node_8hpp_source.html">node.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2c669ad34653238449e0dc0f33319281"></a>
 <div class="memitem">
@@ -211,7 +210,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l04888">4888</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04775">4775</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -236,7 +235,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l04893">4893</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04781">4781</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -256,7 +255,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Call with true to enable listening for incoming connections </p>
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l04933">4933</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04822">4822</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -275,7 +274,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Add endpoint to internal level_map database of potential nodes to attempt to connect to. This database is consulted any time the number connected peers falls below the target. </p>
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l04918">4918</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04807">4807</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -293,7 +292,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l05334">5334</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l05168">5168</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -311,7 +310,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l05321">5321</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l05155">5155</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -338,9 +337,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Add message to outgoing inventory list, notify peers that I have a message ready. </p>
 
-<p>Reimplemented in <a class="el" href="classgraphene_1_1net_1_1simulated__network.html#ae005a0f7423959e098c534c88c7c18c1">graphene::net::simulated_network</a>.</p>
-
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l04958">4958</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04847">4847</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -366,7 +363,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8hpp_source.html#l00285">285</a> of file <a class="el" href="node_8hpp_source.html">node.hpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8hpp_source.html#l00280">280</a> of file <a class="el" href="node_8hpp_source.html">node.hpp</a>.</p>
 
 </div>
 </div>
@@ -384,7 +381,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Instructs the node to forget everything in its peer database, mostly for debugging problems where nodes are failing to connect to the network </p>
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l05008">5008</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04897">4897</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -401,7 +398,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l05039">5039</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04928">4928</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -428,9 +425,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Attempt to connect to the specified endpoint immediately. </p>
 
-<p>Reimplemented in <a class="el" href="classgraphene_1_1net_1_1simulated__network.html#a9bab8cb8ba69b7c8c3e4f0d4423b6af9">graphene::net::simulated_network</a>.</p>
-
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l04923">4923</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04812">4812</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -455,9 +450,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classgraphene_1_1net_1_1simulated__network.html#a8cd109059d99e28c7a5d826d4ab7ba97">graphene::net::simulated_network</a>.</p>
-
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l04913">4913</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04802">4802</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -474,7 +467,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l05019">5019</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04908">4908</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -500,9 +493,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the endpoint the node is listening on. This is usually the same as the value previously passed in to listen_on_endpoint, unless we were unable to bind to that port. </p>
 
-<p>Reimplemented in <a class="el" href="classgraphene_1_1net_1_1simulated__network.html#aeba9b595f3ef9f6e346d3610cc99b204">graphene::net::simulated_network</a>.</p>
-
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l04943">4943</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04832">4832</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -519,7 +510,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l04983">4983</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04872">4872</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -537,7 +528,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l04993">4993</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04882">4882</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -554,7 +545,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l05024">5024</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04913">4913</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -572,7 +563,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>a list of peers that are currently connected. </dd></dl>
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l04948">4948</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04837">4837</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -598,9 +589,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>return the number of peers we're actively connected to </p>
 
-<p>Reimplemented in <a class="el" href="classgraphene_1_1net_1_1simulated__network.html#a8b612cc3a5d5fd840038f3f40b67774b">graphene::net::simulated_network</a>.</p>
-
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l04953">4953</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04842">4842</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -617,7 +606,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l04998">4998</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04887">4887</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -634,7 +623,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l04973">4973</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04862">4862</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -652,7 +641,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l04988">4988</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04877">4877</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -669,7 +658,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l04968">4968</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04857">4857</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -698,7 +687,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Specifies the network interface and port upon which incoming connections should be accepted. </p>
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l04928">4928</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04817">4817</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -733,7 +722,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l04938">4938</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04827">4827</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -758,9 +747,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classgraphene_1_1net_1_1simulated__network.html#abd49f968a85f546eb974329cb6639b5f">graphene::net::simulated_network</a>.</p>
-
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l04908">4908</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04797">4797</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -778,7 +765,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l04903">4903</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04792">4792</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -795,7 +782,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l05029">5029</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04918">4918</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -812,7 +799,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l05034">5034</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04923">4923</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -848,7 +835,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a vector of endpoints </dd></dl>
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l05292">5292</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l05126">5126</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -866,7 +853,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l04978">4978</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04867">4867</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -884,25 +871,25 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l05003">5003</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04892">4892</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a071fd9b43eb2b4adccca649edba6b311"></a>
+<a class="anchor" id="adee6d594de4f30a2c3c58ef59f73bb0f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void graphene::net::node::set_node_delegate </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classgraphene_1_1net_1_1node__delegate.html">node_delegate</a> *&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classgraphene_1_1net_1_1node__delegate.html">node_delegate</a> &gt;&#160;</td>
           <td class="paramname"><em>del</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l04897">4897</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04786">4786</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -930,7 +917,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l05013">5013</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04902">4902</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -967,9 +954,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Node starts the process of fetching all items after <a class="el" href="structgraphene_1_1net_1_1item__id.html">item_id</a> of the given item_type. During this process messages are not broadcast. </p>
 
-<p>Reimplemented in <a class="el" href="classgraphene_1_1net_1_1simulated__network.html#a4d29256dfb72cac5193da142f1592d16">graphene::net::simulated_network</a>.</p>
-
-<p>Definition at line <a class="el" href="node_8cpp_source.html#l04963">4963</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8cpp_source.html#l04852">4852</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -980,7 +965,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 26 2021 10:21:01 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 28 2021 10:41:43 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -105,10 +105,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a32cbf96c05f31b992cad1c27548b1312"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1net_1_1trx__message.html#a32cbf96c05f31b992cad1c27548b1312">trx_message</a> ()</td></tr>
-<tr class="separator:a32cbf96c05f31b992cad1c27548b1312"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70e00941d22af8ed25ec5c3abe814490"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1net_1_1trx__message.html#a70e00941d22af8ed25ec5c3abe814490">trx_message</a> (<a class="el" href="classgraphene_1_1protocol_1_1signed__transaction.html">graphene::protocol::signed_transaction</a> transaction)</td></tr>
-<tr class="separator:a70e00941d22af8ed25ec5c3abe814490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affb394e004f5274c9588ef5ee8788907"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1net_1_1trx__message.html#affb394e004f5274c9588ef5ee8788907">trx_message</a> ()=default</td></tr>
+<tr class="separator:affb394e004f5274c9588ef5ee8788907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7c424eebbfc3ef39f82b463b8a7e718"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1net_1_1trx__message.html#ab7c424eebbfc3ef39f82b463b8a7e718">trx_message</a> (const <a class="el" href="classgraphene_1_1protocol_1_1signed__transaction.html">graphene::protocol::signed_transaction</a> &amp;signed_trx)</td></tr>
+<tr class="separator:ab7c424eebbfc3ef39f82b463b8a7e718"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -124,7 +124,7 @@ Static Public Attributes</h2></td></tr>
 <div class="textblock">
 <p>Definition at line <a class="el" href="core__messages_8hpp_source.html#l00093">93</a> of file <a class="el" href="core__messages_8hpp_source.html">core_messages.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a32cbf96c05f31b992cad1c27548b1312"></a>
+<a class="anchor" id="affb394e004f5274c9588ef5ee8788907"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -140,16 +140,14 @@ Static Public Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="core__messages_8hpp_source.html#l00098">98</a> of file <a class="el" href="core__messages_8hpp_source.html">core_messages.hpp</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a70e00941d22af8ed25ec5c3abe814490"></a>
+<a class="anchor" id="ab7c424eebbfc3ef39f82b463b8a7e718"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -159,14 +157,14 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">graphene::net::trx_message::trx_message </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classgraphene_1_1protocol_1_1signed__transaction.html">graphene::protocol::signed_transaction</a>&#160;</td>
-          <td class="paramname"><em>transaction</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classgraphene_1_1protocol_1_1signed__transaction.html">graphene::protocol::signed_transaction</a> &amp;&#160;</td>
+          <td class="paramname"><em>signed_trx</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -219,7 +217,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 26 2021 10:21:01 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 28 2021 10:41:43 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

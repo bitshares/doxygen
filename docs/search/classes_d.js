@@ -9,7 +9,6 @@ var searchData=
   ['node_5fdelegate',['node_delegate',['../classgraphene_1_1net_1_1node__delegate.html',1,'graphene::net']]],
   ['node_5fimpl',['node_impl',['../classgraphene_1_1net_1_1detail_1_1node__impl.html',1,'graphene::net::detail']]],
   ['node_5fimpl_5fdeleter',['node_impl_deleter',['../structgraphene_1_1net_1_1detail_1_1node__impl__deleter.html',1,'graphene::net::detail']]],
-  ['node_5finfo',['node_info',['../structgraphene_1_1net_1_1simulated__network_1_1node__info.html',1,'graphene::net::simulated_network']]],
   ['node_5fproperty_5fobject',['node_property_object',['../classgraphene_1_1chain_1_1node__property__object.html',1,'graphene::chain']]],
   ['non_5fblocking',['non_blocking',['../structfc_1_1asio_1_1detail_1_1non__blocking.html',1,'fc::asio::detail']]],
   ['non_5fpreemptable_5fscope_5fcheck',['non_preemptable_scope_check',['../classfc_1_1non__preemptable__scope__check.html',1,'fc']]]
