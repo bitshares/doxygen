@@ -13,5 +13,6 @@ var searchData=
   ['key_5fnot_5ffound_5fexception_5fcode',['key_not_found_exception_code',['../namespacefc.html#ab52b42f18c442a260897c74c66c3d35ca727029291eee67ac62d1a0878e94070c',1,'fc']]],
   ['key_5fto_5fwif',['key_to_wif',['../namespacegraphene_1_1utilities.html#a33f09d0c0f741c8375082b6932bcdc58',1,'graphene::utilities::key_to_wif(const fc::sha256 &amp;private_secret)'],['../namespacegraphene_1_1utilities.html#a01120dd3238ef646221bba49465a8acc',1,'graphene::utilities::key_to_wif(const fc::ecc::private_key &amp;key)']]],
   ['key_5fvalues',['key_values',['../structgraphene_1_1custom__operations_1_1account__storage__map.html#afd57de6408b48825de3e39cae7da7c89',1,'graphene::custom_operations::account_storage_map']]],
-  ['keys',['keys',['../structgraphene_1_1wallet_1_1plain__keys.html#abc1a2d6e745cbfebd2e22b46e6538188',1,'graphene::wallet::plain_keys']]]
+  ['keys',['keys',['../structgraphene_1_1wallet_1_1plain__keys.html#abc1a2d6e745cbfebd2e22b46e6538188',1,'graphene::wallet::plain_keys']]],
+  ['kill_5finactive_5fconns_5floop',['kill_inactive_conns_loop',['../classgraphene_1_1net_1_1detail_1_1node__impl.html#ac13e0ae88719a2045a2fcb6e6318b89c',1,'graphene::net::detail::node_impl']]]
 ];

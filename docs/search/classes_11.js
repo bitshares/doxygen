@@ -20,7 +20,6 @@ var searchData=
   ['signed_5fmessage_5fmeta',['signed_message_meta',['../structgraphene_1_1wallet_1_1signed__message__meta.html',1,'graphene::wallet']]],
   ['signed_5ftransaction',['signed_transaction',['../classgraphene_1_1protocol_1_1signed__transaction.html',1,'graphene::protocol']]],
   ['simple_5findex',['simple_index',['../classgraphene_1_1db_1_1simple__index.html',1,'graphene::db']]],
-  ['simulated_5fnetwork',['simulated_network',['../classgraphene_1_1net_1_1simulated__network.html',1,'graphene::net']]],
   ['skip_5fflags_5frestorer',['skip_flags_restorer',['../structgraphene_1_1chain_1_1detail_1_1skip__flags__restorer.html',1,'graphene::chain::detail']]],
   ['sleep_5fpriority_5fless',['sleep_priority_less',['../structfc_1_1sleep__priority__less.html',1,'fc']]],
   ['slice',['slice',['../structfc_1_1typelist_1_1impl_1_1slice.html',1,'fc::typelist::impl']]],

@@ -120,5 +120,5 @@ var searchData=
   ['fwd_3c_20fc_3a_3asha512_3a_3aencoder_3a_3aimpl_2c_20216_20_3e',['fwd&lt; fc::sha512::encoder::impl, 216 &gt;',['../classfc_1_1fwd.html',1,'fc']]],
   ['fwd_3c_20fc_3a_3aspin_5flock_2c_208_20_3e',['fwd&lt; fc::spin_lock, 8 &gt;',['../classfc_1_1fwd.html',1,'fc']]],
   ['fwd_3c_20fc_3a_3astringstream_3a_3aimpl_2c_20392_20_3e',['fwd&lt; fc::stringstream::impl, 392 &gt;',['../classfc_1_1fwd.html',1,'fc']]],
-  ['fwd_3c_20fc_3a_3atcp_5fsocket_3a_3aimpl_2c_200x60_20_3e',['fwd&lt; fc::tcp_socket::impl, 0x60 &gt;',['../classfc_1_1fwd.html',1,'fc']]]
+  ['fwd_3c_20fc_3a_3atcp_5fsocket_3a_3aimpl_2c_20sizeof_28void_20_2a_29_2bsizeof_28fc_3a_3afc_3a_3afuture_3c_20size_5ft_20_3e_29_2bsizeof_28fc_3a_3afc_3a_3afuture_3c_20size_5ft_20_3e_29_2bsizeof_28boost_3a_3aasio_3a_3aip_3a_3atcp_3a_3asocket_29_2bsizeof_28fc_3a_3atcp_5fsocket_5fio_5fhooks_20_2a_29_20_3e',['fwd&lt; fc::tcp_socket::impl, sizeof(void *)+sizeof(fc::fc::future&lt; size_t &gt;)+sizeof(fc::fc::future&lt; size_t &gt;)+sizeof(boost::asio::ip::tcp::socket)+sizeof(fc::tcp_socket_io_hooks *) &gt;',['../classfc_1_1fwd.html',1,'fc']]]
 ];

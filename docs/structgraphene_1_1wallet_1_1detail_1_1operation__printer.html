@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -106,6 +106,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a27a02e6f0013618f1a7e0b818f8249f2"><td class="memItemLeft" align="right" valign="top">typedef std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#a27a02e6f0013618f1a7e0b818f8249f2">result_type</a></td></tr>
+<tr class="memdesc:a27a02e6f0013618f1a7e0b818f8249f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the decrypted memo if a memo exists, otherwise return an empty string.  <a href="#a27a02e6f0013618f1a7e0b818f8249f2">More...</a><br /></td></tr>
 <tr class="separator:a27a02e6f0013618f1a7e0b818f8249f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -117,6 +118,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3e880cd0b15944e7f384806662652adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9481a3f347bf50560a1ca6f5e3ee1e71"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#a9481a3f347bf50560a1ca6f5e3ee1e71">operator()</a> (const <a class="el" href="structgraphene_1_1protocol_1_1transfer__operation.html">graphene::protocol::transfer_operation</a> &amp;op) const </td></tr>
 <tr class="separator:a9481a3f347bf50560a1ca6f5e3ee1e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a263660a171fc1a297d8b6102532a7465"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#a263660a171fc1a297d8b6102532a7465">operator()</a> (const <a class="el" href="structgraphene_1_1protocol_1_1override__transfer__operation.html">graphene::protocol::override_transfer_operation</a> &amp;op) const </td></tr>
+<tr class="separator:a263660a171fc1a297d8b6102532a7465"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ec0fa67e644fd894ffeb20834c023c9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#a2ec0fa67e644fd894ffeb20834c023c9">operator()</a> (const <a class="el" href="structgraphene_1_1protocol_1_1transfer__from__blind__operation.html">graphene::protocol::transfer_from_blind_operation</a> &amp;op) const </td></tr>
 <tr class="separator:a2ec0fa67e644fd894ffeb20834c023c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1787307e012cce0dd7adb8a2654c1fc6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#a1787307e012cce0dd7adb8a2654c1fc6">operator()</a> (const <a class="el" href="structgraphene_1_1protocol_1_1transfer__to__blind__operation.html">graphene::protocol::transfer_to_blind_operation</a> &amp;op) const </td></tr>
@@ -127,6 +130,34 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a287479df9a683bfa8321dd0a759237a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35a9ed158ceb7896628f8463e0525845"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#a35a9ed158ceb7896628f8463e0525845">operator()</a> (const <a class="el" href="structgraphene_1_1protocol_1_1asset__create__operation.html">graphene::protocol::asset_create_operation</a> &amp;op) const </td></tr>
 <tr class="separator:a35a9ed158ceb7896628f8463e0525845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa268951a0c8623f0c91f91925874403"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#aaa268951a0c8623f0c91f91925874403">operator()</a> (const <a class="el" href="structgraphene_1_1protocol_1_1asset__update__operation.html">graphene::protocol::asset_update_operation</a> &amp;op) const </td></tr>
+<tr class="separator:aaa268951a0c8623f0c91f91925874403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada94202ce2100009c4eabc9c916ad4ba"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#ada94202ce2100009c4eabc9c916ad4ba">operator()</a> (const <a class="el" href="structgraphene_1_1protocol_1_1asset__update__bitasset__operation.html">graphene::protocol::asset_update_bitasset_operation</a> &amp;op) const </td></tr>
+<tr class="separator:ada94202ce2100009c4eabc9c916ad4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace1174d8a4e8ba4c0e9f1ef49d54e77c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#ace1174d8a4e8ba4c0e9f1ef49d54e77c">operator()</a> (const <a class="el" href="structgraphene_1_1protocol_1_1asset__update__feed__producers__operation.html">graphene::protocol::asset_update_feed_producers_operation</a> &amp;op) const </td></tr>
+<tr class="separator:ace1174d8a4e8ba4c0e9f1ef49d54e77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afea3e5fa4cd2708dc59cbe5f3683447e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#afea3e5fa4cd2708dc59cbe5f3683447e">operator()</a> (const <a class="el" href="structgraphene_1_1protocol_1_1asset__publish__feed__operation.html">graphene::protocol::asset_publish_feed_operation</a> &amp;op) const </td></tr>
+<tr class="separator:afea3e5fa4cd2708dc59cbe5f3683447e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a483981c3055925dc783d539159e5fe09"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#a483981c3055925dc783d539159e5fe09">operator()</a> (const <a class="el" href="structgraphene_1_1protocol_1_1asset__fund__fee__pool__operation.html">graphene::protocol::asset_fund_fee_pool_operation</a> &amp;op) const </td></tr>
+<tr class="separator:a483981c3055925dc783d539159e5fe09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6ececfce5244609d2d88e088c8c470c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#af6ececfce5244609d2d88e088c8c470c">operator()</a> (const <a class="el" href="structgraphene_1_1protocol_1_1asset__claim__pool__operation.html">graphene::protocol::asset_claim_pool_operation</a> &amp;op) const </td></tr>
+<tr class="separator:af6ececfce5244609d2d88e088c8c470c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a850f7f0e5d61d554d4d7926fe05beced"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#a850f7f0e5d61d554d4d7926fe05beced">operator()</a> (const <a class="el" href="structgraphene_1_1protocol_1_1asset__issue__operation.html">graphene::protocol::asset_issue_operation</a> &amp;op) const </td></tr>
+<tr class="separator:a850f7f0e5d61d554d4d7926fe05beced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad987ab256082ab98c43d6019ae955e91"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#ad987ab256082ab98c43d6019ae955e91">operator()</a> (const <a class="el" href="structgraphene_1_1protocol_1_1asset__reserve__operation.html">graphene::protocol::asset_reserve_operation</a> &amp;op) const </td></tr>
+<tr class="separator:ad987ab256082ab98c43d6019ae955e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa747bde619102a37f47c07ee84f2696d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#aa747bde619102a37f47c07ee84f2696d">operator()</a> (const <a class="el" href="structgraphene_1_1protocol_1_1asset__settle__operation.html">graphene::protocol::asset_settle_operation</a> &amp;op) const </td></tr>
+<tr class="separator:aa747bde619102a37f47c07ee84f2696d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f50746673dd4eb0c0870d6a712f20b4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#a7f50746673dd4eb0c0870d6a712f20b4">operator()</a> (const <a class="el" href="structgraphene_1_1protocol_1_1call__order__update__operation.html">graphene::protocol::call_order_update_operation</a> &amp;op) const </td></tr>
+<tr class="separator:a7f50746673dd4eb0c0870d6a712f20b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f197f1aa6987d6a046082787e483488"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#a0f197f1aa6987d6a046082787e483488">operator()</a> (const <a class="el" href="structgraphene_1_1protocol_1_1limit__order__create__operation.html">graphene::protocol::limit_order_create_operation</a> &amp;op) const </td></tr>
+<tr class="separator:a0f197f1aa6987d6a046082787e483488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5c03dab7d25237cb828af498c2d9f2f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#ad5c03dab7d25237cb828af498c2d9f2f">operator()</a> (const <a class="el" href="structgraphene_1_1protocol_1_1limit__order__cancel__operation.html">graphene::protocol::limit_order_cancel_operation</a> &amp;op) const </td></tr>
+<tr class="separator:ad5c03dab7d25237cb828af498c2d9f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a082a4cb2bec17dc84a9d4c39d3c1b137"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#a082a4cb2bec17dc84a9d4c39d3c1b137">operator()</a> (const <a class="el" href="structgraphene_1_1protocol_1_1fill__order__operation.html">graphene::protocol::fill_order_operation</a> &amp;op) const </td></tr>
+<tr class="separator:a082a4cb2bec17dc84a9d4c39d3c1b137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4cacd8e15697a649a2ee4b99cb23bae"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#ac4cacd8e15697a649a2ee4b99cb23bae">operator()</a> (const <a class="el" href="structgraphene_1_1protocol_1_1proposal__update__operation.html">graphene::protocol::proposal_update_operation</a> &amp;op) const </td></tr>
+<tr class="separator:ac4cacd8e15697a649a2ee4b99cb23bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82cc91dcdef3f47c81e5cd20925e44c7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#a82cc91dcdef3f47c81e5cd20925e44c7">operator()</a> (const <a class="el" href="structgraphene_1_1protocol_1_1htlc__create__operation.html">graphene::protocol::htlc_create_operation</a> &amp;op) const </td></tr>
 <tr class="separator:a82cc91dcdef3f47c81e5cd20925e44c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd0c8fb0735c972ba9294f7337229515"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#abd0c8fb0735c972ba9294f7337229515">operator()</a> (const <a class="el" href="structgraphene_1_1protocol_1_1htlc__redeem__operation.html">graphene::protocol::htlc_redeem_operation</a> &amp;op) const </td></tr>
@@ -140,8 +171,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:aa408edc9dd04602e4bff0a6968f5ba3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5597633526418477a727577baf04fb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#aa5597633526418477a727577baf04fb4">print_preimage</a> (const std::vector&lt; char &gt; &amp;preimage) const </td></tr>
 <tr class="separator:aa5597633526418477a727577baf04fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9066719241b83bcae7a8fe01cd9793a8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#a9066719241b83bcae7a8fe01cd9793a8">print_redeem</a> (const graphene::protocol::htlc_id_type &amp;id, const std::string &amp;redeemer, const std::vector&lt; char &gt; &amp;preimage, const <a class="el" href="structgraphene_1_1protocol_1_1asset.html">graphene::protocol::asset</a> &amp;op_fee) const </td></tr>
-<tr class="separator:a9066719241b83bcae7a8fe01cd9793a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb6e558e9e736169503f4d37e19d721c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#aeb6e558e9e736169503f4d37e19d721c">print_redeem</a> (const graphene::protocol::htlc_id_type &amp;id, const std::string &amp;redeemer, const std::vector&lt; char &gt; &amp;preimage, const <a class="el" href="structgraphene_1_1protocol_1_1asset.html">graphene::protocol::asset</a> &amp;op_fee) const </td></tr>
+<tr class="separator:aeb6e558e9e736169503f4d37e19d721c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82973dc8a27bd2bcf4e6aaccc808e9a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1wallet_1_1detail_1_1operation__printer.html#a82973dc8a27bd2bcf4e6aaccc808e9a8">print_result</a> () const </td></tr>
+<tr class="separator:a82973dc8a27bd2bcf4e6aaccc808e9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -157,7 +190,9 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="operation__printer_8hpp_source.html#l00073">73</a> of file <a class="el" href="operation__printer_8hpp_source.html">operation_printer.hpp</a>.</p>
+<p>Return the decrypted memo if a memo exists, otherwise return an empty string. </p>
+
+<p>Definition at line <a class="el" href="operation__printer_8hpp_source.html#l00076">76</a> of file <a class="el" href="operation__printer_8hpp_source.html">operation_printer.hpp</a>.</p>
 
 </div>
 </div>
@@ -200,7 +235,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="operation__printer_8hpp_source.html#l00066">66</a> of file <a class="el" href="operation__printer_8hpp_source.html">operation_printer.hpp</a>.</p>
+<p>Definition at line <a class="el" href="operation__printer_8hpp_source.html#l00067">67</a> of file <a class="el" href="operation__printer_8hpp_source.html">operation_printer.hpp</a>.</p>
 
 </div>
 </div>
@@ -229,7 +264,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="operation__printer_8hpp_source.html#l00076">76</a> of file <a class="el" href="operation__printer_8hpp_source.html">operation_printer.hpp</a>.</p>
+<p>Definition at line <a class="el" href="operation__printer_8hpp_source.html#l00079">79</a> of file <a class="el" href="operation__printer_8hpp_source.html">operation_printer.hpp</a>.</p>
 
 </div>
 </div>
@@ -247,7 +282,25 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00141">141</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00153">153</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a263660a171fc1a297d8b6102532a7465"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string graphene::wallet::detail::operation_printer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1override__transfer__operation.html">graphene::protocol::override_transfer_operation</a> &amp;&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00162">162</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
 
 </div>
 </div>
@@ -265,7 +318,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00119">119</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00134">134</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
 
 </div>
 </div>
@@ -283,7 +336,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00128">128</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00142">142</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
 
 </div>
 </div>
@@ -301,7 +354,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00150">150</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00172">172</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
 
 </div>
 </div>
@@ -319,7 +372,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00156">156</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00182">182</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
 
 </div>
 </div>
@@ -337,7 +390,259 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00162">162</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00189">189</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaa268951a0c8623f0c91f91925874403"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string graphene::wallet::detail::operation_printer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1asset__update__operation.html">graphene::protocol::asset_update_operation</a> &amp;&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00202">202</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ada94202ce2100009c4eabc9c916ad4ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string graphene::wallet::detail::operation_printer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1asset__update__bitasset__operation.html">graphene::protocol::asset_update_bitasset_operation</a> &amp;&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00209">209</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ace1174d8a4e8ba4c0e9f1ef49d54e77c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string graphene::wallet::detail::operation_printer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1asset__update__feed__producers__operation.html">graphene::protocol::asset_update_feed_producers_operation</a> &amp;&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00259">259</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afea3e5fa4cd2708dc59cbe5f3683447e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string graphene::wallet::detail::operation_printer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1asset__publish__feed__operation.html">graphene::protocol::asset_publish_feed_operation</a> &amp;&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00275">275</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a483981c3055925dc783d539159e5fe09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string graphene::wallet::detail::operation_printer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1asset__fund__fee__pool__operation.html">graphene::protocol::asset_fund_fee_pool_operation</a> &amp;&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00241">241</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af6ececfce5244609d2d88e088c8c470c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string graphene::wallet::detail::operation_printer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1asset__claim__pool__operation.html">graphene::protocol::asset_claim_pool_operation</a> &amp;&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00250">250</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a850f7f0e5d61d554d4d7926fe05beced"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string graphene::wallet::detail::operation_printer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1asset__issue__operation.html">graphene::protocol::asset_issue_operation</a> &amp;&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00216">216</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad987ab256082ab98c43d6019ae955e91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string graphene::wallet::detail::operation_printer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1asset__reserve__operation.html">graphene::protocol::asset_reserve_operation</a> &amp;&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00226">226</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa747bde619102a37f47c07ee84f2696d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string graphene::wallet::detail::operation_printer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1asset__settle__operation.html">graphene::protocol::asset_settle_operation</a> &amp;&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00233">233</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7f50746673dd4eb0c0870d6a712f20b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string graphene::wallet::detail::operation_printer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1call__order__update__operation.html">graphene::protocol::call_order_update_operation</a> &amp;&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00285">285</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f197f1aa6987d6a046082787e483488"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string graphene::wallet::detail::operation_printer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1limit__order__create__operation.html">graphene::protocol::limit_order_create_operation</a> &amp;&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00294">294</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad5c03dab7d25237cb828af498c2d9f2f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string graphene::wallet::detail::operation_printer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1limit__order__cancel__operation.html">graphene::protocol::limit_order_cancel_operation</a> &amp;&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00303">303</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a082a4cb2bec17dc84a9d4c39d3c1b137"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string graphene::wallet::detail::operation_printer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1fill__order__operation.html">graphene::protocol::fill_order_operation</a> &amp;&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00311">311</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac4cacd8e15697a649a2ee4b99cb23bae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string graphene::wallet::detail::operation_printer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1proposal__update__operation.html">graphene::protocol::proposal_update_operation</a> &amp;&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00321">321</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
 
 </div>
 </div>
@@ -355,7 +660,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00183">183</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00340">340</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
 
 </div>
 </div>
@@ -373,7 +678,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00173">173</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00328">328</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
 
 </div>
 </div>
@@ -391,7 +696,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00178">178</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00334">334</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
 
 </div>
 </div>
@@ -417,7 +722,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00061">61</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00076">76</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
 
 </div>
 </div>
@@ -443,11 +748,11 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00093">93</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00108">108</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9066719241b83bcae7a8fe01cd9793a8"></a>
+<a class="anchor" id="aeb6e558e9e736169503f4d37e19d721c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -455,7 +760,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string graphene::wallet::detail::operation_printer::print_redeem </td>
+          <td class="memname">void graphene::wallet::detail::operation_printer::print_redeem </td>
           <td>(</td>
           <td class="paramtype">const graphene::protocol::htlc_id_type &amp;&#160;</td>
           <td class="paramname"><em>id</em>, </td>
@@ -491,7 +796,32 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00109">109</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00124">124</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a82973dc8a27bd2bcf4e6aaccc808e9a8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graphene::wallet::detail::operation_printer::print_result </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="operation__printer_8cpp_source.html#l00066">66</a> of file <a class="el" href="operation__printer_8cpp_source.html">operation_printer.cpp</a>.</p>
 
 </div>
 </div>
@@ -502,7 +832,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 26 2021 10:21:02 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 28 2021 10:41:44 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

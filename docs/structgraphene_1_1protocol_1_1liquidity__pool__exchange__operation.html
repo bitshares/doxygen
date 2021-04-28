@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -170,8 +170,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Exchange with a liquidity pool. </p>
+<dl class="section note"><dt>Note</dt><dd>The result of this operation is a <a class="el" href="structgraphene_1_1protocol_1_1generic__exchange__operation__result.html">generic_exchange_operation_result</a>. There are 3 fees in the result, stored in this order:<ul>
+<li>maker market fee</li>
+<li>taker market fee</li>
+<li>liquidity pool taker fee </li>
+</ul>
+</dd></dl>
 
-<p>Definition at line <a class="el" href="liquidity__pool_8hpp_source.html#l00113">113</a> of file <a class="el" href="liquidity__pool_8hpp_source.html">liquidity_pool.hpp</a>.</p>
+<p>Definition at line <a class="el" href="liquidity__pool_8hpp_source.html#l00118">118</a> of file <a class="el" href="liquidity__pool_8hpp_source.html">liquidity_pool.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a1e242c29429090d4f2a5888719552f85"></a>
 <div class="memitem">
@@ -194,7 +200,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="liquidity__pool_8hpp_source.html#l00125">125</a> of file <a class="el" href="liquidity__pool_8hpp_source.html">liquidity_pool.hpp</a>.</p>
+<p>Definition at line <a class="el" href="liquidity__pool_8hpp_source.html#l00130">130</a> of file <a class="el" href="liquidity__pool_8hpp_source.html">liquidity_pool.hpp</a>.</p>
 
 </div>
 </div>
@@ -228,7 +234,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The account who exchanges with the liquidity pool. </p>
 
-<p>Definition at line <a class="el" href="liquidity__pool_8hpp_source.html#l00118">118</a> of file <a class="el" href="liquidity__pool_8hpp_source.html">liquidity_pool.hpp</a>.</p>
+<p>Definition at line <a class="el" href="liquidity__pool_8hpp_source.html#l00123">123</a> of file <a class="el" href="liquidity__pool_8hpp_source.html">liquidity_pool.hpp</a>.</p>
 
 </div>
 </div>
@@ -244,7 +250,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The amount of one asset type to sell. </p>
 
-<p>Definition at line <a class="el" href="liquidity__pool_8hpp_source.html#l00120">120</a> of file <a class="el" href="liquidity__pool_8hpp_source.html">liquidity_pool.hpp</a>.</p>
+<p>Definition at line <a class="el" href="liquidity__pool_8hpp_source.html#l00125">125</a> of file <a class="el" href="liquidity__pool_8hpp_source.html">liquidity_pool.hpp</a>.</p>
 
 </div>
 </div>
@@ -260,7 +266,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Unused. Reserved for future use. </p>
 
-<p>Definition at line <a class="el" href="liquidity__pool_8hpp_source.html#l00123">123</a> of file <a class="el" href="liquidity__pool_8hpp_source.html">liquidity_pool.hpp</a>.</p>
+<p>Definition at line <a class="el" href="liquidity__pool_8hpp_source.html#l00128">128</a> of file <a class="el" href="liquidity__pool_8hpp_source.html">liquidity_pool.hpp</a>.</p>
 
 </div>
 </div>
@@ -276,7 +282,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Operation fee. </p>
 
-<p>Definition at line <a class="el" href="liquidity__pool_8hpp_source.html#l00117">117</a> of file <a class="el" href="liquidity__pool_8hpp_source.html">liquidity_pool.hpp</a>.</p>
+<p>Definition at line <a class="el" href="liquidity__pool_8hpp_source.html#l00122">122</a> of file <a class="el" href="liquidity__pool_8hpp_source.html">liquidity_pool.hpp</a>.</p>
 
 </div>
 </div>
@@ -292,7 +298,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The minimum amount of the other asset type to receive. </p>
 
-<p>Definition at line <a class="el" href="liquidity__pool_8hpp_source.html#l00121">121</a> of file <a class="el" href="liquidity__pool_8hpp_source.html">liquidity_pool.hpp</a>.</p>
+<p>Definition at line <a class="el" href="liquidity__pool_8hpp_source.html#l00126">126</a> of file <a class="el" href="liquidity__pool_8hpp_source.html">liquidity_pool.hpp</a>.</p>
 
 </div>
 </div>
@@ -308,7 +314,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>ID of the liquidity pool. </p>
 
-<p>Definition at line <a class="el" href="liquidity__pool_8hpp_source.html#l00119">119</a> of file <a class="el" href="liquidity__pool_8hpp_source.html">liquidity_pool.hpp</a>.</p>
+<p>Definition at line <a class="el" href="liquidity__pool_8hpp_source.html#l00124">124</a> of file <a class="el" href="liquidity__pool_8hpp_source.html">liquidity_pool.hpp</a>.</p>
 
 </div>
 </div>
@@ -319,7 +325,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 26 2021 10:21:01 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 28 2021 10:41:44 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

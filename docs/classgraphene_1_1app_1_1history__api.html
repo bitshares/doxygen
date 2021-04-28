@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -108,18 +108,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad034d3e3420e431ad72159b9f3bd807a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1history__api.html#ad034d3e3420e431ad72159b9f3bd807a">history_api</a> (<a class="el" href="classgraphene_1_1app_1_1application.html">application</a> &amp;app)</td></tr>
 <tr class="separator:ad034d3e3420e431ad72159b9f3bd807a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f8d7ab9b1bc5e5c9bf461bb75e9f1d9"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html">operation_history_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1history__api.html#a4f8d7ab9b1bc5e5c9bf461bb75e9f1d9">get_account_history</a> (const std::string account_name_or_id, operation_history_id_type stop=operation_history_id_type(), unsigned limit=100, operation_history_id_type start=operation_history_id_type()) const </td></tr>
-<tr class="memdesc:a4f8d7ab9b1bc5e5c9bf461bb75e9f1d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get operations relevant to the specificed account.  <a href="#a4f8d7ab9b1bc5e5c9bf461bb75e9f1d9">More...</a><br /></td></tr>
-<tr class="separator:a4f8d7ab9b1bc5e5c9bf461bb75e9f1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25433bf9403a85cbdbde7451e8713410"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1app_1_1history__operation__detail.html">history_operation_detail</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1history__api.html#a25433bf9403a85cbdbde7451e8713410">get_account_history_by_operations</a> (const std::string account_name_or_id, flat_set&lt; uint16_t &gt; operation_types, uint32_t start, unsigned limit) const </td></tr>
-<tr class="memdesc:a25433bf9403a85cbdbde7451e8713410"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get operations relevant to the specified account filtering by operation type.  <a href="#a25433bf9403a85cbdbde7451e8713410">More...</a><br /></td></tr>
-<tr class="separator:a25433bf9403a85cbdbde7451e8713410"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf6cb8f416e909339e12e89ceaf4e0ce"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html">operation_history_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1history__api.html#aaf6cb8f416e909339e12e89ceaf4e0ce">get_account_history_operations</a> (const std::string account_name_or_id, int operation_type, operation_history_id_type start=operation_history_id_type(), operation_history_id_type stop=operation_history_id_type(), unsigned limit=100) const </td></tr>
-<tr class="memdesc:aaf6cb8f416e909339e12e89ceaf4e0ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get only asked operations relevant to the specified account.  <a href="#aaf6cb8f416e909339e12e89ceaf4e0ce">More...</a><br /></td></tr>
-<tr class="separator:aaf6cb8f416e909339e12e89ceaf4e0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97e3717e6d21312bbb355ba947fa9b1b"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html">operation_history_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1history__api.html#a97e3717e6d21312bbb355ba947fa9b1b">get_relative_account_history</a> (const std::string account_name_or_id, uint64_t stop=0, unsigned limit=100, uint64_t start=0) const </td></tr>
-<tr class="memdesc:a97e3717e6d21312bbb355ba947fa9b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get operations relevant to the specified account referenced by an event numbering specific to the account. The current number of operations for the account can be found in the account statistics (or use 0 for start).  <a href="#a97e3717e6d21312bbb355ba947fa9b1b">More...</a><br /></td></tr>
-<tr class="separator:a97e3717e6d21312bbb355ba947fa9b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cfc1238d402093c0b3aa6bf19380cd7"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html">operation_history_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1history__api.html#a7cfc1238d402093c0b3aa6bf19380cd7">get_account_history</a> (const std::string account_name_or_id, operation_history_id_type stop=operation_history_id_type(), uint32_t limit=100, operation_history_id_type start=operation_history_id_type()) const </td></tr>
+<tr class="memdesc:a7cfc1238d402093c0b3aa6bf19380cd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get operations relevant to the specificed account.  <a href="#a7cfc1238d402093c0b3aa6bf19380cd7">More...</a><br /></td></tr>
+<tr class="separator:a7cfc1238d402093c0b3aa6bf19380cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77c641a288368eae9ae3d40b71622ee1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1app_1_1history__operation__detail.html">history_operation_detail</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1history__api.html#a77c641a288368eae9ae3d40b71622ee1">get_account_history_by_operations</a> (const std::string account_name_or_id, flat_set&lt; uint16_t &gt; operation_types, uint32_t start, uint32_t limit) const </td></tr>
+<tr class="memdesc:a77c641a288368eae9ae3d40b71622ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get operations relevant to the specified account filtering by operation type.  <a href="#a77c641a288368eae9ae3d40b71622ee1">More...</a><br /></td></tr>
+<tr class="separator:a77c641a288368eae9ae3d40b71622ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a639f4d92630cd699f2d9d79600bf7862"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html">operation_history_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1history__api.html#a639f4d92630cd699f2d9d79600bf7862">get_account_history_operations</a> (const std::string account_name_or_id, int64_t operation_type, operation_history_id_type start=operation_history_id_type(), operation_history_id_type stop=operation_history_id_type(), uint32_t limit=100) const </td></tr>
+<tr class="memdesc:a639f4d92630cd699f2d9d79600bf7862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get only asked operations relevant to the specified account.  <a href="#a639f4d92630cd699f2d9d79600bf7862">More...</a><br /></td></tr>
+<tr class="separator:a639f4d92630cd699f2d9d79600bf7862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f99706045eed2649068119cd141892"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html">operation_history_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1history__api.html#ac6f99706045eed2649068119cd141892">get_relative_account_history</a> (const std::string account_name_or_id, uint64_t stop=0, uint32_t limit=100, uint64_t start=0) const </td></tr>
+<tr class="memdesc:ac6f99706045eed2649068119cd141892"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get operations relevant to the specified account referenced by an event numbering specific to the account. The current number of operations for the account can be found in the account statistics (or use 0 for start).  <a href="#ac6f99706045eed2649068119cd141892">More...</a><br /></td></tr>
+<tr class="separator:ac6f99706045eed2649068119cd141892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bc0fb814fec76314f98d10ede6301a1"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1market__history_1_1order__history__object.html">order_history_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1history__api.html#a5bc0fb814fec76314f98d10ede6301a1">get_fill_order_history</a> (std::string a, std::string b, uint32_t limit) const </td></tr>
 <tr class="memdesc:a5bc0fb814fec76314f98d10ede6301a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get details of order executions occurred most recently in a trading pair.  <a href="#a5bc0fb814fec76314f98d10ede6301a1">More...</a><br /></td></tr>
 <tr class="separator:a5bc0fb814fec76314f98d10ede6301a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,7 +169,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a4f8d7ab9b1bc5e5c9bf461bb75e9f1d9"></a>
+<a class="anchor" id="a7cfc1238d402093c0b3aa6bf19380cd7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -188,7 +188,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>limit</em> = <code>100</code>, </td>
         </tr>
         <tr>
@@ -217,11 +217,11 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A list of operations performed by account, ordered from most recent to oldest. </dd></dl>
 
-<p>Definition at line <a class="el" href="api_8cpp_source.html#l00341">341</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="api_8cpp_source.html#l00349">349</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a25433bf9403a85cbdbde7451e8713410"></a>
+<a class="anchor" id="a77c641a288368eae9ae3d40b71622ee1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -246,7 +246,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>limit</em>&#160;</td>
         </tr>
         <tr>
@@ -269,11 +269,11 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="structgraphene_1_1app_1_1history__operation__detail.html">history_operation_detail</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="api_8cpp_source.html#l00487">487</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="api_8cpp_source.html#l00495">495</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aaf6cb8f416e909339e12e89ceaf4e0ce"></a>
+<a class="anchor" id="a639f4d92630cd699f2d9d79600bf7862"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -286,7 +286,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">int64_t&#160;</td>
           <td class="paramname"><em>operation_type</em>, </td>
         </tr>
         <tr>
@@ -304,7 +304,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>limit</em> = <code>100</code>&#160;</td>
         </tr>
         <tr>
@@ -328,7 +328,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A list of operations performed by account, ordered from most recent to oldest. </dd></dl>
 
-<p>Definition at line <a class="el" href="api_8cpp_source.html#l00393">393</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="api_8cpp_source.html#l00401">401</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
 
 </div>
 </div>
@@ -373,7 +373,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a list of order_history objects, in "most recent first" order </dd></dl>
 
-<p>Definition at line <a class="el" href="api_8cpp_source.html#l00311">311</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="api_8cpp_source.html#l00319">319</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
 
 </div>
 </div>
@@ -439,7 +439,7 @@ Public Member Functions</h2></td></tr>
 </ol>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="api_8cpp_source.html#l00549">549</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="api_8cpp_source.html#l00557">557</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
 
 </div>
 </div>
@@ -505,7 +505,7 @@ Public Member Functions</h2></td></tr>
 </ol>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="api_8cpp_source.html#l00607">607</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="api_8cpp_source.html#l00615">615</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
 
 </div>
 </div>
@@ -564,7 +564,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A list of OHLCV data, in "least recent first" order. If there are more than 200 records in the specified time range, the first 200 records will be returned. </dd></dl>
 
-<p>Definition at line <a class="el" href="api_8cpp_source.html#l00516">516</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="api_8cpp_source.html#l00524">524</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
 
 </div>
 </div>
@@ -584,11 +584,11 @@ Public Member Functions</h2></td></tr>
 <p>Get OHLCV time bucket lengths supported (configured) by this API server. </p>
 <dl class="section return"><dt>Returns</dt><dd>A list of time bucket lengths in seconds. E.G. if the result contains a number "300", it means this API server supports OHLCV data aggregated in 5-minute buckets. </dd></dl>
 
-<p>Definition at line <a class="el" href="api_8cpp_source.html#l00480">480</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="api_8cpp_source.html#l00488">488</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a97e3717e6d21312bbb355ba947fa9b1b"></a>
+<a class="anchor" id="ac6f99706045eed2649068119cd141892"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -607,7 +607,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>limit</em> = <code>100</code>, </td>
         </tr>
         <tr>
@@ -636,7 +636,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A list of operations performed by account, ordered from most recent to oldest. </dd></dl>
 
-<p>Definition at line <a class="el" href="api_8cpp_source.html#l00438">438</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
+<p>Definition at line <a class="el" href="api_8cpp_source.html#l00446">446</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
 
 </div>
 </div>
@@ -647,7 +647,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 26 2021 10:21:00 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 28 2021 10:41:42 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

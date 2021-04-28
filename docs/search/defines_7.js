@@ -11,7 +11,6 @@ var searchData=
   ['graphene_5fcommittee_5faccount',['GRAPHENE_COMMITTEE_ACCOUNT',['../protocol_2include_2graphene_2protocol_2config_8hpp.html#aca6f533de48d647416e9ea98a642c34a',1,'config.hpp']]],
   ['graphene_5fcore_5fasset_5fcycle_5frate',['GRAPHENE_CORE_ASSET_CYCLE_RATE',['../protocol_2include_2graphene_2protocol_2config_8hpp.html#ac6d3a4f85e91602bbd24cba75ee29fc0',1,'config.hpp']]],
   ['graphene_5fcore_5fasset_5fcycle_5frate_5fbits',['GRAPHENE_CORE_ASSET_CYCLE_RATE_BITS',['../protocol_2include_2graphene_2protocol_2config_8hpp.html#a1e58900cc22f1e4c344e51e86abbef92',1,'config.hpp']]],
-  ['graphene_5fcurrent_5fdb_5fversion',['GRAPHENE_CURRENT_DB_VERSION',['../chain_2include_2graphene_2chain_2config_8hpp.html#a682504a298ffb5a1c352c7505d05bbda',1,'config.hpp']]],
   ['graphene_5fdb_5fmax_5finstance_5fid',['GRAPHENE_DB_MAX_INSTANCE_ID',['../object__id_8hpp.html#a9c0db8449cccb10b529dc8009bbbe9cd',1,'object_id.hpp']]],
   ['graphene_5fdeclare_5fexternal_5fserialization',['GRAPHENE_DECLARE_EXTERNAL_SERIALIZATION',['../protocol_2include_2graphene_2protocol_2types_8hpp.html#ad30d51b00fb27f2cc9a1678ffd04a622',1,'types.hpp']]],
   ['graphene_5fdeclare_5fid',['GRAPHENE_DECLARE_ID',['../protocol_2include_2graphene_2protocol_2types_8hpp.html#abf0261b5b04826cc2bfcd0c0a814c442',1,'types.hpp']]],

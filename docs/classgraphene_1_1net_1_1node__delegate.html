@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -116,13 +116,13 @@ Inheritance diagram for graphene::net::node_delegate:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a49a17956290635b42fb40f1a9fcc6392"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a49a17956290635b42fb40f1a9fcc6392">~node_delegate</a> ()</td></tr>
-<tr class="separator:a49a17956290635b42fb40f1a9fcc6392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c17b7796f2f106c161e2cf0c9c6b66b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a9c17b7796f2f106c161e2cf0c9c6b66b">~node_delegate</a> ()=default</td></tr>
+<tr class="separator:a9c17b7796f2f106c161e2cf0c9c6b66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae73a8679f1f836d42e5ee06ae0951201"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node__delegate.html#ae73a8679f1f836d42e5ee06ae0951201">has_item</a> (const <a class="el" href="structgraphene_1_1net_1_1item__id.html">net::item_id</a> &amp;id)=0</td></tr>
 <tr class="separator:ae73a8679f1f836d42e5ee06ae0951201"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45d5e096caa804db426c5ce092092b25"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a45d5e096caa804db426c5ce092092b25">handle_block</a> (const <a class="el" href="structgraphene_1_1net_1_1block__message.html">graphene::net::block_message</a> &amp;blk_msg, bool sync_mode, std::vector&lt; <a class="el" href="namespacefc.html#a5d143859f1f34b560f2f2f13d9d078d4">fc::uint160_t</a> &gt; &amp;contained_transaction_message_ids)=0</td></tr>
-<tr class="memdesc:a45d5e096caa804db426c5ce092092b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a new block comes in from the network.  <a href="#a45d5e096caa804db426c5ce092092b25">More...</a><br /></td></tr>
-<tr class="separator:a45d5e096caa804db426c5ce092092b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8813881e942d58cb1fa424bbf331a983"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a8813881e942d58cb1fa424bbf331a983">handle_block</a> (const <a class="el" href="structgraphene_1_1net_1_1block__message.html">graphene::net::block_message</a> &amp;blk_msg, bool sync_mode, std::vector&lt; <a class="el" href="namespacegraphene_1_1net.html#a117e4c633fce23eaae7824c20c947fd4">message_hash_type</a> &gt; &amp;contained_transaction_msg_ids)=0</td></tr>
+<tr class="memdesc:a8813881e942d58cb1fa424bbf331a983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a new block comes in from the network.  <a href="#a8813881e942d58cb1fa424bbf331a983">More...</a><br /></td></tr>
+<tr class="separator:a8813881e942d58cb1fa424bbf331a983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a012e220463b248980525219ae44ee0a3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node__delegate.html#a012e220463b248980525219ae44ee0a3">handle_transaction</a> (const <a class="el" href="structgraphene_1_1net_1_1trx__message.html">graphene::net::trx_message</a> &amp;trx_msg)=0</td></tr>
 <tr class="memdesc:a012e220463b248980525219ae44ee0a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a new transaction comes in from the network.  <a href="#a012e220463b248980525219ae44ee0a3">More...</a><br /></td></tr>
 <tr class="separator:a012e220463b248980525219ae44ee0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,9 +157,9 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>used by node reports status to client or fetch data from client </p>
 
-<p>Definition at line <a class="el" href="node_8hpp_source.html#l00061">61</a> of file <a class="el" href="node_8hpp_source.html">node.hpp</a>.</p>
+<p>Definition at line <a class="el" href="node_8hpp_source.html#l00056">56</a> of file <a class="el" href="node_8hpp_source.html">node.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a49a17956290635b42fb40f1a9fcc6392"></a>
+<a class="anchor" id="a9c17b7796f2f106c161e2cf0c9c6b66b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -175,12 +175,10 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="node_8hpp_source.html#l00064">64</a> of file <a class="el" href="node_8hpp_source.html">node.hpp</a>.</p>
 
 </div>
 </div>
@@ -510,7 +508,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a45d5e096caa804db426c5ce092092b25"></a>
+<a class="anchor" id="a8813881e942d58cb1fa424bbf331a983"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -532,8 +530,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="namespacefc.html#a5d143859f1f34b560f2f2f13d9d078d4">fc::uint160_t</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>contained_transaction_message_ids</em>&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacegraphene_1_1net.html#a117e4c633fce23eaae7824c20c947fd4">message_hash_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>contained_transaction_msg_ids</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -553,7 +551,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">blk_msg</td><td>the message which contains the block </td></tr>
     <tr><td class="paramname">sync_mode</td><td>true if the message was fetched through the sync process, false during normal operation </td></tr>
-    <tr><td class="paramname">contained_transaction_message_ids</td><td>container for the transactions to write back into </td></tr>
+    <tr><td class="paramname">contained_transaction_msg_ids</td><td>container for the transactions to write back into </td></tr>
   </table>
   </dd>
 </dl>
@@ -565,7 +563,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classgraphene_1_1net_1_1detail_1_1statistics__gathering__node__delegate__wrapper.html#aead47c9778299b782c4052ecd33dbff7">graphene::net::detail::statistics_gathering_node_delegate_wrapper</a>, and <a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#a273e2fecedd3bab5130df1d8c84cbc92">graphene::app::detail::application_impl</a>.</p>
+<p>Implemented in <a class="el" href="classgraphene_1_1net_1_1detail_1_1statistics__gathering__node__delegate__wrapper.html#ab7f843bf1cc02857465130dd34999580">graphene::net::detail::statistics_gathering_node_delegate_wrapper</a>.</p>
 
 </div>
 </div>
@@ -714,7 +712,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 26 2021 10:21:01 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 28 2021 10:41:43 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

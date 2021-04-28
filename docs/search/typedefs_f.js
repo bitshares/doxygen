@@ -5,7 +5,6 @@ var searchData=
   ['signal',['signal',['../namespacefc.html#a6c2f257e2f2f1a64dbdfe8b7b5e0f411',1,'fc']]],
   ['signature',['signature',['../namespacefc_1_1ecc.html#a09638182cfab5ac0345326f71d75d45a',1,'fc::ecc']]],
   ['signature_5ftype',['signature_type',['../namespacegraphene_1_1protocol.html#ade0535fb9b29fcc7de372c0f1ff5d218',1,'graphene::protocol']]],
-  ['simulated_5fnetwork_5fptr',['simulated_network_ptr',['../namespacegraphene_1_1net.html#a889ad94dfc15dff048ba0746c8147906',1,'graphene::net']]],
   ['slice',['slice',['../namespacefc_1_1typelist.html#ad47d889257405c1c3ba4e3c7256b3ed7',1,'fc::typelist']]],
   ['socket_5ftype',['socket_type',['../structfc_1_1http_1_1detail_1_1asio__with__stub__log_1_1transport__config.html#a0a8f4f1fa6acd33291ef557113ee6806',1,'fc::http::detail::asio_with_stub_log::transport_config::socket_type()'],['../structfc_1_1http_1_1detail_1_1asio__tls__with__stub__log_1_1transport__config.html#aa949cbea45c52b0a0db014b2fc551355',1,'fc::http::detail::asio_tls_with_stub_log::transport_config::socket_type()'],['../structfc_1_1http_1_1detail_1_1asio__tls__stub__log_1_1transport__config.html#a03da1dc53ca36fddc5bf880b07d16b75',1,'fc::http::detail::asio_tls_stub_log::transport_config::socket_type()']]],
   ['special_5fauthority',['special_authority',['../namespacegraphene_1_1protocol.html#a0e74afece7dbfa1a51f7b183624850d4',1,'graphene::protocol']]],

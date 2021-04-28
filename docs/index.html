@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -85,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><p>BitShares Core is the BitShares blockchain implementation and command-line interface. The web browser based wallet is <a href="https://github.com/bitshares/bitshares-ui">BitShares UI</a>.</p>
 <p>Visit <a href="https://bitshares.org/">BitShares.org</a> to learn about BitShares and join the community at <a href="https://bitsharestalk.org/">BitSharesTalk.org</a>.</p>
-<p>Information for developers can be found in the <a href="https://dev.bitshares.works/">BitShares Developer Portal</a>. Users interested in how BitShares works can go to the <a href="https://how.bitshares.works/">BitShares Documentation</a> site.</p>
+<p>Information for developers can be found in the <a href="https://github.com/bitshares/bitshares-core/wiki">Wiki</a> and the <a href="https://dev.bitshares.works/">BitShares Developer Portal</a>. Users interested in how BitShares works can go to the <a href="https://how.bitshares.works/">BitShares Documentation</a> site.</p>
 <p>Visit <a href="https://github.com/bitshares/awesome-bitshares">Awesome BitShares</a> to find more resources and links.</p>
 <ul>
 <li><a href="#getting-started">Getting Started</a></li>
@@ -97,8 +97,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </ul>
 <h2>Getting Started </h2>
 <p>Build instructions and additional documentation are available in the <a href="https://github.com/bitshares/bitshares-core/wiki">Wiki</a>.</p>
+<p>Prebuilt binaries can be found in the <a href="https://github.com/bitshares/bitshares-core/releases">releases page</a> for download.</p>
 <h3>Build</h3>
-<p>We recommend building on Ubuntu 16.04 LTS (64-bit)</p>
+<p>We recommend building on Ubuntu 20.04 LTS (64-bit)</p>
 <p><b>Build Dependencies:</b> </p><pre class="fragment">sudo apt-get update
 sudo apt-get install autoconf cmake make automake libtool git libboost-all-dev libssl-dev g++ libcurl4-openssl-dev doxygen
 </pre><p><b>Build Script:</b> </p><pre class="fragment">git clone https://github.com/bitshares/bitshares-core.git
@@ -119,13 +120,13 @@ git submodule update --init --recursive
 </pre><p><b>NOTE:</b></p>
 <ul>
 <li>BitShares requires a 64-bit operating system to build, and will not build on a 32-bit OS. Tested operating systems:<ul>
-<li>Linux (heavily tested with Ubuntu 18.04 LTS and Ubuntu 16.04 LTS)</li>
+<li>Linux (heavily tested with Ubuntu LTS releases)</li>
 <li>macOS (various versions)</li>
 <li>Windows (various versions, Visual Studio and MinGW)</li>
 <li>OpenBSD (various versions)</li>
 </ul>
 </li>
-<li><p class="startli">BitShares requires <a href="https://www.boost.org/">Boost</a> libraries to build, supports version <code>1.58</code> to <code>1.69</code>. Newer versions may work, but have not been tested. If your system came pre-installed with a version of Boost libraries that you do not wish to use, you may manually build your preferred version and use it with BitShares by specifying it on the CMake command line.</p>
+<li><p class="startli">BitShares requires <a href="https://www.boost.org/">Boost</a> libraries to build, supports version <code>1.58</code> to <code>1.74</code>. Newer versions may work, but have not been tested. If your system came pre-installed with a version of Boost libraries that you do not wish to use, you may manually build your preferred version and use it with BitShares by specifying it on the CMake command line.</p>
 <p class="startli">Example: <code>cmake -DBOOST_ROOT=/path/to/boost ..</code></p>
 </li>
 <li><p class="startli">BitShares requires <a href="https://www.openssl.org/">OpenSSL</a> libraries to build, supports version <code>1.0.2</code> to <code>1.1.1</code>. If your system came pre-installed with a version of OpenSSL libraries that you do not wish to use, you may manually build your preferred version and use it with BitShares by specifying it on the CMake command line.</p>
@@ -272,7 +273,7 @@ $ curl --data '{"jsonrpc": "2.0", "method": "get_account", "params": ["1.2.0"], 
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 26 2021 10:21:02 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 28 2021 10:41:44 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

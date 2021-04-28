@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">5.1.0</span>
+   &#160;<span id="projectnumber">5.2.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -102,14 +102,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="message_8hpp_source.html">graphene/net/message.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="peer__database_8hpp_source.html">graphene/net/peer_database.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html">graphene/protocol/types.hpp</a>&gt;</code><br />
-<code>#include &lt;list&gt;</code><br />
 </div>
 <p><a href="node_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1net_1_1detail_1_1node__impl__deleter.html">graphene::net::detail::node_impl_deleter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1net_1_1message__propagation__data.html">graphene::net::message_propagation_data</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node__delegate.html">graphene::net::node_delegate</a></td></tr>
@@ -119,8 +116,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html">graphene::net::node</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">provides application independent P2P broadcast and data synchronization  <a href="classgraphene_1_1net_1_1node.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1simulated__network.html">graphene::net::simulated_network</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -134,10 +129,10 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ad97d72f1316982932a07e4b2df43aac5"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; node &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1net.html#ad97d72f1316982932a07e4b2df43aac5">graphene::net::node_ptr</a></td></tr>
-<tr class="separator:ad97d72f1316982932a07e4b2df43aac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a889ad94dfc15dff048ba0746c8147906"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; simulated_network &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1net.html#a889ad94dfc15dff048ba0746c8147906">graphene::net::simulated_network_ptr</a></td></tr>
-<tr class="separator:a889ad94dfc15dff048ba0746c8147906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b290bc6b0c3a9980345c3782507fbe5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1net.html#a7b290bc6b0c3a9980345c3782507fbe5">graphene::net::node_impl_ptr</a> = std::shared_ptr&lt; detail::node_impl &gt;</td></tr>
+<tr class="separator:a7b290bc6b0c3a9980345c3782507fbe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad094a2c7d7a7af4de90686134b89df03"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1net.html#ad094a2c7d7a7af4de90686134b89df03">graphene::net::node_ptr</a> = std::shared_ptr&lt; node &gt;</td></tr>
+<tr class="separator:ad094a2c7d7a7af4de90686134b89df03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -202,7 +197,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 26 2021 10:20:59 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 28 2021 10:41:41 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -35,7 +35,7 @@ var searchData=
   ['default_5fio_5fservice',['default_io_service',['../namespacefc_1_1asio.html#a25f142c1704b75ed97e1106a9c29f4b5',1,'fc::asio']]],
   ['default_5fio_5fservice_5fscope',['default_io_service_scope',['../classfc_1_1asio_1_1default__io__service__scope.html#acb180fa44caa26dcef1e211c4d1ab3e4',1,'fc::asio::default_io_service_scope']]],
   ['dejsonify',['dejsonify',['../namespacegraphene_1_1app.html#a0d7b9dd9560bcbbbfe65c4562a17ceb8',1,'graphene::app::dejsonify()'],['../namespacegraphene_1_1app_1_1impl.html#a81b697f0bd8fe96cf490227ace48d79e',1,'graphene::app::impl::dejsonify()']]],
-  ['delayed_5fnode_5fplugin',['delayed_node_plugin',['../classgraphene_1_1delayed__node_1_1delayed__node__plugin.html#afe8c9d14070d7e61e69275110fb5c5de',1,'graphene::delayed_node::delayed_node_plugin']]],
+  ['delayed_5fnode_5fplugin',['delayed_node_plugin',['../classgraphene_1_1delayed__node_1_1delayed__node__plugin.html#a99f9b42ab0ceb0aa28117bb3f05e80c1',1,'graphene::delayed_node::delayed_node_plugin']]],
   ['delayed_5fpeer_5fdeletion_5ftask',['delayed_peer_deletion_task',['../classgraphene_1_1net_1_1detail_1_1node__impl.html#abf44a212fc6cea37e70265c682bb5f3d',1,'graphene::net::detail::node_impl']]],
   ['delegator',['delegator',['../structgraphene_1_1chain_1_1detail_1_1vote__recalc__options.html#a876b7102c23dc33443a32109e22dffa8',1,'graphene::chain::detail::vote_recalc_options']]],
   ['delete_5fexpired_5fcustom_5fauthorities',['delete_expired_custom_authorities',['../namespacegraphene_1_1chain.html#a2283a9e80c557fd899f758791112692b',1,'graphene::chain']]],
