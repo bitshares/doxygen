@@ -1,8 +1,7 @@
 var searchData=
 [
   ['variant_2ecpp',['variant.cpp',['../variant_8cpp.html',1,'']]],
-  ['variant_2ehpp',['variant.hpp',['../reflect_2variant_8hpp.html',1,'']]],
-  ['variant_2ehpp',['variant.hpp',['../variant_8hpp.html',1,'']]],
+  ['variant_2ehpp',['variant.hpp',['../reflect_2variant_8hpp.html',1,'(Global Namespace)'],['../variant_8hpp.html',1,'(Global Namespace)']]],
   ['variant_5fobject_2ecpp',['variant_object.cpp',['../variant__object_8cpp.html',1,'']]],
   ['variant_5fobject_2ehpp',['variant_object.hpp',['../variant__object_8hpp.html',1,'']]],
   ['varint_2ecpp',['varint.cpp',['../varint_8cpp.html',1,'']]],

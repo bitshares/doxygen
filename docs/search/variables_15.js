@@ -1,9 +1,10 @@
 var searchData=
 [
   ['u',['u',['../structfc_1_1detail_1_1extract__op.html#aa9e824191b7b590d7a1fb6c92794d4eb',1,'fc::detail::extract_op']]],
+  ['unpaid_5famount',['unpaid_amount',['../classgraphene_1_1chain_1_1samet__fund__object.html#a5b0147614c04d14b421683d53ac82ab4',1,'graphene::chain::samet_fund_object::unpaid_amount()'],['../structgraphene_1_1protocol_1_1credit__deal__expired__operation.html#ac9a6d30004e2ad19f0e7e4d12676f5ac',1,'graphene::protocol::credit_deal_expired_operation::unpaid_amount()']]],
   ['updatable_5fhtlc_5foptions',['updatable_htlc_options',['../structgraphene_1_1protocol_1_1chain__parameters_1_1ext.html#a56957015dafc805f6106e8d8f879caff',1,'graphene::protocol::chain_parameters::ext']]],
   ['update_5fissuer',['update_issuer',['../structgraphene_1_1protocol_1_1htlc__extend__operation.html#a340e865f40cf2588a6dea3e1ccaee40b',1,'graphene::protocol::htlc_extend_operation']]],
-  ['updated_5fobjects',['updated_objects',['../structgraphene_1_1protocol_1_1generic__operation__result.html#aef1623b113c248b90ddef0045722bdfe',1,'graphene::protocol::generic_operation_result']]],
+  ['updated_5fobjects',['updated_objects',['../structgraphene_1_1protocol_1_1generic__operation__result.html#aef1623b113c248b90ddef0045722bdfe',1,'graphene::protocol::generic_operation_result::updated_objects()'],['../structgraphene_1_1protocol_1_1extendable__operation__result__dtl.html#a3f4596d842cfefaef3be1cb004cb62fd',1,'graphene::protocol::extendable_operation_result_dtl::updated_objects()']]],
   ['upgrade_5fto_5flifetime_5fmember',['upgrade_to_lifetime_member',['../structgraphene_1_1protocol_1_1account__upgrade__operation.html#a8d90dc4eb2f134cdef0346d496d15ca4',1,'graphene::protocol::account_upgrade_operation']]],
   ['upload_5frate_5ffifteen_5fminutes',['upload_rate_fifteen_minutes',['../structgraphene_1_1net_1_1get__current__connections__reply__message.html#a8d1f2ddef518123d15c0d2cb79b94c60',1,'graphene::net::get_current_connections_reply_message']]],
   ['upload_5frate_5fone_5fhour',['upload_rate_one_hour',['../structgraphene_1_1net_1_1get__current__connections__reply__message.html#a93e445b21f8b6737a12d900ef832a129',1,'graphene::net::get_current_connections_reply_message']]],

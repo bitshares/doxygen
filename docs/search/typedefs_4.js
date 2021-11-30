@@ -7,6 +7,7 @@ var searchData=
   ['equal',['equal',['../structgraphene_1_1protocol_1_1predicate__ne.html#a38bfdfae640d99283cf73367738d2a71',1,'graphene::protocol::predicate_ne']]],
   ['equality_5ftypes_5flist',['equality_types_list',['../namespacegraphene_1_1protocol.html#a0493c0127f1b120d66443f1ff1241538',1,'graphene::protocol']]],
   ['exception_5fptr',['exception_ptr',['../namespacefc.html#a15170d1be1e682691dfe6ae09790edce',1,'fc']]],
+  ['extendable_5foperation_5fresult',['extendable_operation_result',['../group__operations.html#ga8d0cc3fd7fdc83761fcf4420cc828631',1,'graphene::protocol']]],
   ['extended_5fkey_5fdata',['extended_key_data',['../namespacefc_1_1ecc.html#a0ade047116801918646abc8a1062a3cd',1,'fc::ecc']]],
   ['extensions_5ftype',['extensions_type',['../structgraphene_1_1protocol_1_1call__order__update__operation.html#aa01d6fd58f9fa49f701615aac8ec8048',1,'graphene::protocol::call_order_update_operation::extensions_type()'],['../group__operations.html#gabaddcaf5bde76414891b4c29031d9288',1,'graphene::protocol::extensions_type()']]]
 ];
