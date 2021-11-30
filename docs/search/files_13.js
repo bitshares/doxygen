@@ -33,6 +33,5 @@ var searchData=
   ['typelist_2ehpp',['typelist.hpp',['../typelist_8hpp.html',1,'']]],
   ['typename_2ehpp',['typename.hpp',['../typename_8hpp.html',1,'']]],
   ['types_2ecpp',['types.cpp',['../types_8cpp.html',1,'']]],
-  ['types_2ehpp',['types.hpp',['../chain_2include_2graphene_2chain_2types_8hpp.html',1,'']]],
-  ['types_2ehpp',['types.hpp',['../protocol_2include_2graphene_2protocol_2types_8hpp.html',1,'']]]
+  ['types_2ehpp',['types.hpp',['../chain_2include_2graphene_2chain_2types_8hpp.html',1,'(Global Namespace)'],['../protocol_2include_2graphene_2protocol_2types_8hpp.html',1,'(Global Namespace)']]]
 ];

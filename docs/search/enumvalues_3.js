@@ -2,6 +2,8 @@ var searchData=
 [
   ['debug',['debug',['../classfc_1_1log__level.html#a5a5e31c4c1f38d9115ecbe44927fb2e4a30d2de77e71beb8d09d530cac04efa25',1,'fc::log_level']]],
   ['different_5fchain',['different_chain',['../namespacegraphene_1_1net.html#a8c4d381eac08e1738e41e3c06e0a4d8daa4edcf1f9fbd0047926429d1ea280281',1,'graphene::net']]],
+  ['disable_5fbsrm_5fupdate',['disable_bsrm_update',['../namespacegraphene_1_1protocol.html#a31f22f43ceabd14325d69281eda006d7a549e875509c1f788fd14e8570dad07d1',1,'graphene::protocol']]],
+  ['disable_5fcollateral_5fbidding',['disable_collateral_bidding',['../namespacegraphene_1_1protocol.html#a31f22f43ceabd14325d69281eda006d7a91387a1c4b272a590ac37cf88b8ba491',1,'graphene::protocol']]],
   ['disable_5fconfidential',['disable_confidential',['../namespacegraphene_1_1protocol.html#a31f22f43ceabd14325d69281eda006d7a5a96fe025ec33ffe4b103458846d08b3',1,'graphene::protocol']]],
   ['disable_5fforce_5fsettle',['disable_force_settle',['../namespacegraphene_1_1protocol.html#a31f22f43ceabd14325d69281eda006d7aedc04b6ab421f7f2363f3dc9d113b73d',1,'graphene::protocol']]],
   ['disable_5ficr_5fupdate',['disable_icr_update',['../namespacegraphene_1_1protocol.html#a31f22f43ceabd14325d69281eda006d7aff93381986b4c574d1b2365120274364',1,'graphene::protocol']]],

@@ -11,7 +11,9 @@ var searchData=
   ['blocked',['blocked',['../namespacegraphene_1_1net.html#a8c4d381eac08e1738e41e3c06e0a4d8da61326117ed4a9ddf3f754e71e119e5b3',1,'graphene::net']]],
   ['blue',['blue',['../structfc_1_1console__appender_1_1color.html#ae3f964a317f52c91550bd98bb4e4402dafce63670b6f724afdc0f1c569180076a',1,'fc::console_appender::color']]],
   ['bool_5ftype',['bool_type',['../classfc_1_1variant.html#a8e472a4f69eccec5336dde2646c69c5fafd4bc66170646a108792cdb339b23872',1,'fc::variant']]],
+  ['both_5ffilled',['both_filled',['../classgraphene_1_1chain_1_1database.html#aaa234ff3fda171f0cf673fe338632599a28b9b9f52f9ca19e928b72f6951fce99',1,'graphene::chain::database']]],
   ['broken_5fnul_5fparser',['broken_nul_parser',['../classfc_1_1json.html#a8554b1c7b658a170d4bc81d4bac798b1ad13ac383403a7c2890dde8dc042e95c6',1,'fc::json']]],
   ['brown',['brown',['../structfc_1_1console__appender_1_1color.html#ae3f964a317f52c91550bd98bb4e4402da87a1bab8807775aeddb7402f648532ba',1,'fc::console_appender::color']]],
+  ['bsrm_5ftype_5fcount',['BSRM_TYPE_COUNT',['../structgraphene_1_1protocol_1_1bitasset__options.html#a86d8df815d5ff26c11c9894fefe202bea81f47efb94a2515969c2a6e7ed313799',1,'graphene::protocol::bitasset_options']]],
   ['bucket_5fobject_5ftype',['bucket_object_type',['../namespacegraphene_1_1market__history.html#a62f3297bcfdbb5c9e46ef300d342a9d5acf7a66dad7ba2cfae0784e7251c63efb',1,'graphene::market_history']]]
 ];

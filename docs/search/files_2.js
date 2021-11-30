@@ -21,7 +21,6 @@ var searchData=
   ['buffered_5fiostream_2ecpp',['buffered_iostream.cpp',['../buffered__iostream_8cpp.html',1,'']]],
   ['buffered_5fiostream_2ehpp',['buffered_iostream.hpp',['../buffered__iostream_8hpp.html',1,'']]],
   ['buyback_2ecpp',['buyback.cpp',['../buyback_8cpp.html',1,'']]],
-  ['buyback_2ehpp',['buyback.hpp',['../chain_2include_2graphene_2chain_2buyback_8hpp.html',1,'']]],
-  ['buyback_2ehpp',['buyback.hpp',['../protocol_2include_2graphene_2protocol_2buyback_8hpp.html',1,'']]],
+  ['buyback_2ehpp',['buyback.hpp',['../chain_2include_2graphene_2chain_2buyback_8hpp.html',1,'(Global Namespace)'],['../protocol_2include_2graphene_2protocol_2buyback_8hpp.html',1,'(Global Namespace)']]],
   ['buyback_5fobject_2ehpp',['buyback_object.hpp',['../buyback__object_8hpp.html',1,'']]]
 ];
