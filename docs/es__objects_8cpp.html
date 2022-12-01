@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -72,13 +72,14 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="es__objects_8hpp_source.html">graphene/es_objects/es_objects.hpp</a>&gt;</code><br />
-<code>#include &lt;curl/curl.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="proposal__object_8hpp_source.html">graphene/chain/proposal_object.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="balance__object_8hpp_source.html">graphene/chain/balance_object.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="market__object_8hpp_source.html">graphene/chain/market_object.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__object_8hpp_source.html">graphene/chain/asset_object.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="account__object_8hpp_source.html">graphene/chain/account_object.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="budget__record__object_8hpp_source.html">graphene/chain/budget_record_object.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="elasticsearch_8hpp_source.html">graphene/utilities/elasticsearch.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="boost__program__options_8hpp_source.html">graphene/utilities/boost_program_options.hpp</a>&gt;</code><br />
 </div>
 <p><a href="es__objects_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -86,10 +87,16 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1es__objects_1_1detail_1_1es__objects__plugin__impl.html">graphene::es_objects::detail::es_objects_plugin_impl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1es__objects_1_1detail_1_1es__objects__plugin__impl_1_1plugin__options_1_1object__options.html">graphene::es_objects::detail::es_objects_plugin_impl::plugin_options::object_options</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1es__objects_1_1detail_1_1data__loader.html">graphene::es_objects::detail::data_loader</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacegraphene"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene.html">graphene</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacegraphene_1_1db"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1db.html">graphene::db</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacegraphene_1_1es__objects"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1es__objects.html">graphene::es_objects</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,7 +106,7 @@ Namespaces</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:55 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:45 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

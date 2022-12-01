@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['validation_5fsteps',['validation_steps',['../classgraphene_1_1chain_1_1database.html#a6de6add85d012876641f2a50ad707726',1,'graphene::chain::database']]],
-  ['values',['values',['../classfc_1_1log__level.html#a5a5e31c4c1f38d9115ecbe44927fb2e4',1,'fc::log_level']]],
-  ['vesting_5fbalance_5ftype',['vesting_balance_type',['../namespacegraphene_1_1chain.html#a4efc4a0f6c3e0ba09fc0091955ed8bc7',1,'graphene::chain']]],
-  ['vote_5ftype',['vote_type',['../structgraphene_1_1protocol_1_1vote__id__type.html#af485364161ef1e41d0b78282db87f9c6',1,'graphene::protocol::vote_id_type']]]
+  ['their_5fconnection_5fstate',['their_connection_state',['../classgraphene_1_1net_1_1peer__connection.html#af1fa5c4e1ef1bcad5f3e0c1743786eff',1,'graphene::net::peer_connection']]],
+  ['ticket_5fstatus',['ticket_status',['../namespacegraphene_1_1chain.html#ae480e93033db8120c349376499139095',1,'graphene::chain']]],
+  ['ticket_5ftype',['ticket_type',['../namespacegraphene_1_1protocol.html#af90f1034c9ac27d8290e0fa8120c8269',1,'graphene::protocol']]],
+  ['ticket_5fversion',['ticket_version',['../namespacegraphene_1_1chain.html#ac49190472e16bef0beceb9b63d326c96',1,'graphene::chain']]],
+  ['type',['type',['../structfc_1_1console__appender_1_1color.html#ae3f964a317f52c91550bd98bb4e4402d',1,'fc::console_appender::color::type()'],['../structfc_1_1console__appender_1_1stream.html#aaf2f066b1d3019c7858383edc440cbf8',1,'fc::console_appender::stream::type()']]],
+  ['type_5fid',['type_id',['../classfc_1_1variant.html#a8e472a4f69eccec5336dde2646c69c5f',1,'fc::variant']]]
 ];

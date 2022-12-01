@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -93,15 +93,15 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a30912eb7ae8ddcbc58e6b62c5be237d0"><td class="memItemLeft" align="right" valign="top">typedef multi_index_container&lt; withdraw_permission_object, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt;, ordered_unique&lt; tag&lt; by_from &gt;, composite_key&lt; withdraw_permission_object, member&lt; withdraw_permission_object, account_id_type, &amp;withdraw_permission_object::withdraw_from_account &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt;, ordered_unique&lt; tag&lt; by_authorized &gt;, composite_key&lt; withdraw_permission_object, member&lt; withdraw_permission_object, account_id_type, &amp;withdraw_permission_object::authorized_account &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt;, ordered_unique&lt; tag&lt; by_expiration &gt;, composite_key&lt; withdraw_permission_object, member&lt; withdraw_permission_object, time_point_sec, &amp;withdraw_permission_object::expiration &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a30912eb7ae8ddcbc58e6b62c5be237d0">graphene::chain::withdraw_permission_object_multi_index_type</a></td></tr>
-<tr class="separator:a30912eb7ae8ddcbc58e6b62c5be237d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a448e9811f840d88cab8b0dbb7057a4a4"><td class="memItemLeft" align="right" valign="top">typedef generic_index&lt; withdraw_permission_object, withdraw_permission_object_multi_index_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#a448e9811f840d88cab8b0dbb7057a4a4">graphene::chain::withdraw_permission_index</a></td></tr>
-<tr class="separator:a448e9811f840d88cab8b0dbb7057a4a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac053f95a577ba7d63eb5aa30355108d9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#ac053f95a577ba7d63eb5aa30355108d9">graphene::chain::withdraw_permission_obj_mlt_idx</a> = multi_index_container&lt; withdraw_permission_object, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt;, ordered_unique&lt; tag&lt; by_from &gt;, composite_key&lt; withdraw_permission_object, member&lt; withdraw_permission_object, account_id_type, &amp;withdraw_permission_object::withdraw_from_account &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt;, ordered_unique&lt; tag&lt; by_authorized &gt;, composite_key&lt; withdraw_permission_object, member&lt; withdraw_permission_object, account_id_type, &amp;withdraw_permission_object::authorized_account &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt;, ordered_unique&lt; tag&lt; by_expiration &gt;, composite_key&lt; withdraw_permission_object, member&lt; withdraw_permission_object, time_point_sec, &amp;withdraw_permission_object::expiration &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt; &gt; &gt;</td></tr>
+<tr class="separator:ac053f95a577ba7d63eb5aa30355108d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb708aa2b253d5a6185f76d0b8919090"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1chain.html#aeb708aa2b253d5a6185f76d0b8919090">graphene::chain::withdraw_permission_index</a> = generic_index&lt; withdraw_permission_object, withdraw_permission_obj_mlt_idx &gt;</td></tr>
+<tr class="separator:aeb708aa2b253d5a6185f76d0b8919090"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:55 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:45 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -69,7 +69,7 @@ var searchData=
   ['credit_5foffer_5fupdate_5fevaluator',['credit_offer_update_evaluator',['../classgraphene_1_1chain_1_1credit__offer__update__evaluator.html',1,'graphene::chain']]],
   ['credit_5foffer_5fupdate_5foperation',['credit_offer_update_operation',['../structgraphene_1_1protocol_1_1credit__offer__update__operation.html',1,'graphene::protocol']]],
   ['crypto_5fapi',['crypto_api',['../classgraphene_1_1app_1_1crypto__api.html',1,'graphene::app']]],
-  ['curlrequest',['CurlRequest',['../classgraphene_1_1utilities_1_1_curl_request.html',1,'graphene::utilities']]],
+  ['curl_5fwrapper',['curl_wrapper',['../classgraphene_1_1utilities_1_1curl__wrapper.html',1,'graphene::utilities']]],
   ['current_5fconnection_5fdata',['current_connection_data',['../structgraphene_1_1net_1_1current__connection__data.html',1,'graphene::net']]],
   ['current_5ftime_5freply_5fmessage',['current_time_reply_message',['../structgraphene_1_1net_1_1current__time__reply__message.html',1,'graphene::net']]],
   ['current_5ftime_5frequest_5fmessage',['current_time_request_message',['../structgraphene_1_1net_1_1current__time__request__message.html',1,'graphene::net']]],

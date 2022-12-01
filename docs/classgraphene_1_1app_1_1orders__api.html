@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -65,6 +65,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classgraphene_1_1app_1_1orders__api-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -77,6 +78,12 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html">api.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1orders__api_1_1limit__order__group.html">limit_order_group</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">summary data of a group of limit orders  <a href="structgraphene_1_1app_1_1orders__api_1_1limit__order__group.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1c1a0920781506af3b59128c6f8912aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1orders__api.html#a1c1a0920781506af3b59128c6f8912aa">orders_api</a> (<a class="el" href="classgraphene_1_1app_1_1application.html">application</a> &amp;app)</td></tr>
@@ -84,14 +91,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac03c7b822ceec55577ff9470b6a4ce3c"><td class="memItemLeft" align="right" valign="top">flat_set&lt; uint16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1orders__api.html#ac03c7b822ceec55577ff9470b6a4ce3c">get_tracked_groups</a> () const</td></tr>
 <tr class="memdesc:ac03c7b822ceec55577ff9470b6a4ce3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get tracked groups configured by the server.  <a href="#ac03c7b822ceec55577ff9470b6a4ce3c">More...</a><br /></td></tr>
 <tr class="separator:ac03c7b822ceec55577ff9470b6a4ce3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a1a90a159a7e7dd1b697c88eb3417b9"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1app_1_1limit__order__group.html">limit_order_group</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1orders__api.html#a4a1a90a159a7e7dd1b697c88eb3417b9">get_grouped_limit_orders</a> (std::string base_asset, std::string quote_asset, uint16_t group, optional&lt; price &gt; start, uint32_t limit) const</td></tr>
-<tr class="memdesc:a4a1a90a159a7e7dd1b697c88eb3417b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get grouped limit orders in given market.  <a href="#a4a1a90a159a7e7dd1b697c88eb3417b9">More...</a><br /></td></tr>
-<tr class="separator:a4a1a90a159a7e7dd1b697c88eb3417b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14e9779eb1f492cd20e506b0e9e19004"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1app_1_1orders__api_1_1limit__order__group.html">limit_order_group</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1orders__api.html#a14e9779eb1f492cd20e506b0e9e19004">get_grouped_limit_orders</a> (const std::string &amp;base_asset, const std::string &amp;quote_asset, uint16_t group, const optional&lt; price &gt; &amp;start, uint32_t limit) const</td></tr>
+<tr class="memdesc:a14e9779eb1f492cd20e506b0e9e19004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get grouped limit orders in given market.  <a href="#a14e9779eb1f492cd20e506b0e9e19004">More...</a><br /></td></tr>
+<tr class="separator:a14e9779eb1f492cd20e506b0e9e19004"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>the <a class="el" href="classgraphene_1_1app_1_1orders__api.html" title="the orders_api class exposes access to data processed with grouped orders plugin. ...">orders_api</a> class exposes access to data processed with grouped orders plugin. </p>
 
-<p class="definition">Definition at line <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html#l00549">549</a> of file <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html">api.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html#l00597">597</a> of file <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html">api.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1c1a0920781506af3b59128c6f8912aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1c1a0920781506af3b59128c6f8912aa">&#9670;&nbsp;</a></span>orders_api()</h2>
@@ -112,32 +119,32 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html#l00552">552</a> of file <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html">api.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="api_8cpp_source.html#l00970">970</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4a1a90a159a7e7dd1b697c88eb3417b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a1a90a159a7e7dd1b697c88eb3417b9">&#9670;&nbsp;</a></span>get_grouped_limit_orders()</h2>
+<a id="a14e9779eb1f492cd20e506b0e9e19004"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14e9779eb1f492cd20e506b0e9e19004">&#9670;&nbsp;</a></span>get_grouped_limit_orders()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt; <a class="el" href="structgraphene_1_1app_1_1limit__order__group.html">limit_order_group</a> &gt; graphene::app::orders_api::get_grouped_limit_orders </td>
+          <td class="memname">vector&lt; <a class="el" href="structgraphene_1_1app_1_1orders__api_1_1limit__order__group.html">orders_api::limit_order_group</a> &gt; graphene::app::orders_api::get_grouped_limit_orders </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>base_asset</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>quote_asset</em>, </td>
         </tr>
         <tr>
@@ -149,7 +156,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">optional&lt; price &gt;&#160;</td>
+          <td class="paramtype">const optional&lt; price &gt; &amp;&#160;</td>
           <td class="paramname"><em>start</em>, </td>
         </tr>
         <tr>
@@ -173,13 +180,13 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">quote_asset</td><td>symbol or ID of asset being purchased </td></tr>
     <tr><td class="paramname">group</td><td>Maximum price diff within each order group, have to be one of configured values </td></tr>
     <tr><td class="paramname">start</td><td>Optional price to indicate the first order group to retrieve </td></tr>
-    <tr><td class="paramname">limit</td><td>Maximum number of order groups to retrieve (must not exceed 101) </td></tr>
+    <tr><td class="paramname">limit</td><td>Maximum number of order groups to retrieve, must not exceed the configured value of <em>api_limit_get_grouped_limit_orders</em> </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The grouped limit orders, ordered from best offered price to worst </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="api_8cpp_source.html#l00831">831</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="api_8cpp_source.html#l00982">982</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
 
 </div>
 </div>
@@ -201,7 +208,7 @@ Public Member Functions</h2></td></tr>
 <p>Get tracked groups configured by the server. </p>
 <dl class="section return"><dt>Returns</dt><dd>A list of numbers which indicate configured groups, of those, 1 means 0.01% diff on price. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="api_8cpp_source.html#l00824">824</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="api_8cpp_source.html#l00975">975</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
 
 </div>
 </div>
@@ -212,7 +219,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:57 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:46 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

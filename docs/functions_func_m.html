@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -76,7 +76,7 @@ $(function() {
 : <a class="el" href="classgraphene_1_1net_1_1peer__connection.html#ad790314e7c5d51a572132fd9eb399f15">graphene::net::peer_connection</a>
 </li>
 <li>make_tuple_if_multiple()
-: <a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a02a06197131bcc759de96fcb75fc33d9">graphene::app::database_api_impl</a>
+: <a class="el" href="classgraphene_1_1app_1_1database__api__helper.html#ad90d7425bba21f237fc228b3351d6270">graphene::app::database_api_helper</a>
 </li>
 <li>mapped_region()
 : <a class="el" href="classfc_1_1mapped__region.html#ad43d7360fca04ea8b119fead81d3affc">fc::mapped_region</a>
@@ -105,6 +105,7 @@ $(function() {
 <li>max()
 : <a class="el" href="classfc_1_1priority.html#a1070bf41df1d36fea246dc7b6be61432">fc::priority</a>
 , <a class="el" href="structfc_1_1safe.html#a85ed8df0fb161bec11e6c374bc1cb702">fc::safe&lt; T &gt;</a>
+, <a class="el" href="structgraphene_1_1db_1_1object__id.html#a2b09603f9488e40895e72c270623069b">graphene::db::object_id&lt; SpaceID, TypeID &gt;</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1price.html#a3f7ada477aad1255a7c1c084cc2a7b59">graphene::protocol::price</a>
 </li>
 <li>max_force_settlement_volume()
@@ -135,6 +136,9 @@ $(function() {
 </li>
 <li>maybe_read_next_which()
 : <a class="el" href="structgraphene_1_1protocol_1_1graphene__extension__unpack__visitor.html#aa65022e20cf07ad4e625fca8cc513285">graphene::protocol::graphene_extension_unpack_visitor&lt; Stream, T &gt;</a>
+</li>
+<li>maybe_signed_block_header()
+: <a class="el" href="structgraphene_1_1app_1_1maybe__signed__block__header.html#adc62dd85f0313b7495f25393ea5f5b72">graphene::app::maybe_signed_block_header</a>
 </li>
 <li>memo_message()
 : <a class="el" href="structgraphene_1_1protocol_1_1memo__message.html#a51dd3865d5deccf1537d85b097628cf9">graphene::protocol::memo_message</a>
@@ -174,14 +178,14 @@ $(function() {
 : <a class="el" href="classgraphene_1_1protocol_1_1signed__transaction.html#a70d7d5de93386618b443ee9f57370a63">graphene::protocol::signed_transaction</a>
 </li>
 <li>modify()
-: <a class="el" href="classgraphene_1_1db_1_1generic__index.html#ab9a4fceebfed811e16d58c48f5827ae4">graphene::db::generic_index&lt; ObjectType, MultiIndexType &gt;</a>
+: <a class="el" href="classgraphene_1_1db_1_1generic__index.html#aa388bede6e7ae0e58df5bed7fdb3abaa">graphene::db::generic_index&lt; ObjectType, MultiIndexType &gt;</a>
 , <a class="el" href="classgraphene_1_1db_1_1index.html#a72af3b03d9e5f04f1e5ccfd519071d50">graphene::db::index</a>
 , <a class="el" href="classgraphene_1_1db_1_1object__database.html#a88949a42022fae3668dabba8b1cccd40">graphene::db::object_database</a>
-, <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a3cb107388bbe893f692aea4817ad263b">graphene::db::primary_index&lt; DerivedIndex, DirectBits &gt;</a>
+, <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a4ad117c48ee64123d103d5c2d88a4ccd">graphene::db::primary_index&lt; DerivedIndex, DirectBits &gt;</a>
 , <a class="el" href="classgraphene_1_1db_1_1simple__index.html#af405a3f7b15ae28345edcc0a860acc6a">graphene::db::simple_index&lt; T &gt;</a>
 </li>
 <li>move_from()
-: <a class="el" href="classgraphene_1_1db_1_1abstract__object.html#ad7329292e8fa9035cf2596d72c4868b5">graphene::db::abstract_object&lt; DerivedClass &gt;</a>
+: <a class="el" href="classgraphene_1_1db_1_1base__abstract__object.html#ae411f8719b1a5d32781c71a06c2b9386">graphene::db::base_abstract_object&lt; DerivedClass &gt;</a>
 , <a class="el" href="classgraphene_1_1db_1_1object.html#ac315191fdd4044fcda7133b33a2e1e8c">graphene::db::object</a>
 </li>
 <li>move_newly_scheduled_tasks_to_task_pqueue()
@@ -200,10 +204,10 @@ $(function() {
 : <a class="el" href="structgraphene_1_1protocol_1_1asset.html#a9a383b36e2b18050fdf330c0f0173e24">graphene::protocol::asset</a>
 </li>
 <li>mutable_url()
-: <a class="el" href="classfc_1_1mutable__url.html#a0cae45785d9cdef7dcd71de637789482">fc::mutable_url</a>
+: <a class="el" href="classfc_1_1mutable__url.html#ab45a36a27d081fc7d8830a7415280761">fc::mutable_url</a>
 </li>
 <li>mutable_variant_object()
-: <a class="el" href="classfc_1_1mutable__variant__object.html#a092bf4693b06cbe867239410ea780818">fc::mutable_variant_object</a>
+: <a class="el" href="classfc_1_1mutable__variant__object.html#adc24cccf7326c637e3f3e5c294744ba5">fc::mutable_variant_object</a>
 </li>
 <li>mutex()
 : <a class="el" href="classfc_1_1mutex.html#ac22379059fe8687ec5beb098ca606060">fc::mutex</a>
@@ -215,7 +219,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:59 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:48 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

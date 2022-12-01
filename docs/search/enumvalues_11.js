@@ -12,6 +12,7 @@ var searchData=
   ['skip_5fwitness_5fschedule_5fcheck',['skip_witness_schedule_check',['../classgraphene_1_1chain_1_1database.html#a6de6add85d012876641f2a50ad707726a5658faff01cd4c139d313f6888bc7da0',1,'graphene::chain::database']]],
   ['skip_5fwitness_5fsignature',['skip_witness_signature',['../classgraphene_1_1chain_1_1database.html#a6de6add85d012876641f2a50ad707726a7cd765f84f450cfdd68e3adcf87c02d2',1,'graphene::chain::database']]],
   ['stable',['stable',['../namespacegraphene_1_1chain.html#ae480e93033db8120c349376499139095a6be0a1e1c016f0ee529e88ee4cbe7899',1,'graphene::chain']]],
+  ['static_5fvariant_5ftype',['static_variant_type',['../structgraphene_1_1utilities_1_1es__data__adaptor.html#a0c2ec1d57ee9e6a3ac12fd6c623ecb0cac98d625a99221b6d3fbd8de122a5826d',1,'graphene::utilities::es_data_adaptor']]],
   ['std_5ferror',['std_error',['../structfc_1_1console__appender_1_1stream.html#aaf2f066b1d3019c7858383edc440cbf8a5f2c746830a2d1349805a92dc7cb656d',1,'fc::console_appender::stream']]],
   ['std_5fexception_5fcode',['std_exception_code',['../namespacefc.html#ab52b42f18c442a260897c74c66c3d35ca969f910e4a1ec90bac8bf8eca1a8cec0',1,'fc']]],
   ['std_5fout',['std_out',['../structfc_1_1console__appender_1_1stream.html#aaf2f066b1d3019c7858383edc440cbf8a56183016743ae254a1a804d72656a57e',1,'fc::console_appender::stream']]],

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -80,8 +80,6 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1elasticsearch_1_1adaptor__struct.html">adaptor_struct</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1elasticsearch_1_1block__struct.html">block_struct</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1elasticsearch_1_1bulk__struct.html">bulk_struct</a></td></tr>
@@ -94,8 +92,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1elasticsearch_1_1operation__history__struct.html">operation_history_struct</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1elasticsearch_1_1operation__visitor.html">operation_visitor</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1elasticsearch_1_1transfer__struct.html">transfer_struct</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1elasticsearch_1_1visitor__struct.html">visitor_struct</a></td></tr>
@@ -103,9 +99,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:adf21cd61908e3405c92b74a61281dd83"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1elasticsearch.html#adf21cd61908e3405c92b74a61281dd83">mode</a> { <a class="el" href="namespacegraphene_1_1elasticsearch.html#adf21cd61908e3405c92b74a61281dd83aaa6fe1a755a9a8de64093367fddf334b">only_save</a> = 0, 
-<a class="el" href="namespacegraphene_1_1elasticsearch.html#adf21cd61908e3405c92b74a61281dd83a3cf5a572c6e4b354d785cb4be0375833">only_query</a> = 1, 
-<a class="el" href="namespacegraphene_1_1elasticsearch.html#adf21cd61908e3405c92b74a61281dd83ad7c2229bbed0788c5a4985530c94a49b">all</a> = 2
+<tr class="memitem:adf21cd61908e3405c92b74a61281dd83"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1elasticsearch.html#adf21cd61908e3405c92b74a61281dd83">mode</a> { <a class="el" href="namespacegraphene_1_1elasticsearch.html#adf21cd61908e3405c92b74a61281dd83a108aefab652d2222e8d634830659d1b0">mode::only_save</a> = 0, 
+<a class="el" href="namespacegraphene_1_1elasticsearch.html#adf21cd61908e3405c92b74a61281dd83a7be4a757010e8c49c8324870efb65be6">mode::only_query</a> = 1, 
+<a class="el" href="namespacegraphene_1_1elasticsearch.html#adf21cd61908e3405c92b74a61281dd83aa181a603769c1f98ad927e7367c7aa51">mode::all</a> = 2
  }</td></tr>
 <tr class="separator:adf21cd61908e3405c92b74a61281dd83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -115,16 +111,24 @@ Enumerations</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">enum <a class="el" href="namespacegraphene_1_1elasticsearch.html#adf21cd61908e3405c92b74a61281dd83">graphene::elasticsearch::mode</a></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adf21cd61908e3405c92b74a61281dd83aaa6fe1a755a9a8de64093367fddf334b"></a>only_save&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="adf21cd61908e3405c92b74a61281dd83a3cf5a572c6e4b354d785cb4be0375833"></a>only_query&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="adf21cd61908e3405c92b74a61281dd83ad7c2229bbed0788c5a4985530c94a49b"></a>all&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adf21cd61908e3405c92b74a61281dd83a108aefab652d2222e8d634830659d1b0"></a>only_save&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adf21cd61908e3405c92b74a61281dd83a7be4a757010e8c49c8324870efb65be6"></a>only_query&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adf21cd61908e3405c92b74a61281dd83aa181a603769c1f98ad927e7367c7aa51"></a>all&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8hpp_source.html#l00053">53</a> of file <a class="el" href="elasticsearch__plugin_8hpp_source.html">elasticsearch_plugin.hpp</a>.</p>
@@ -134,7 +138,7 @@ Enumerations</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:58 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:47 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

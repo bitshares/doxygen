@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -66,8 +66,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="classgraphene_1_1elasticsearch_1_1elasticsearch__plugin-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">graphene::elasticsearch::elasticsearch_plugin Class Reference</div>  </div>
@@ -107,12 +105,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a543635cce5e3397493116db6e8717c0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1elasticsearch_1_1elasticsearch__plugin.html#a543635cce5e3397493116db6e8717c0d">plugin_startup</a> () override</td></tr>
 <tr class="memdesc:a543635cce5e3397493116db6e8717c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin normal runtime operations.  <a href="#a543635cce5e3397493116db6e8717c0d">More...</a><br /></td></tr>
 <tr class="separator:a543635cce5e3397493116db6e8717c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d27b871cdc2254bb94ba938404ab2e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html">operation_history_object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1elasticsearch_1_1elasticsearch__plugin.html#a7d27b871cdc2254bb94ba938404ab2e3">get_operation_by_id</a> (operation_history_id_type id)</td></tr>
-<tr class="separator:a7d27b871cdc2254bb94ba938404ab2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52c34657e6ac76d8b274c1e3c79e9183"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html">operation_history_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1elasticsearch_1_1elasticsearch__plugin.html#a52c34657e6ac76d8b274c1e3c79e9183">get_account_history</a> (const account_id_type account_id, operation_history_id_type stop, unsigned limit, operation_history_id_type start)</td></tr>
-<tr class="separator:a52c34657e6ac76d8b274c1e3c79e9183"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b4c9347021382b5db62d1247db7f272"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1elasticsearch.html#adf21cd61908e3405c92b74a61281dd83">mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1elasticsearch_1_1elasticsearch__plugin.html#a4b4c9347021382b5db62d1247db7f272">get_running_mode</a> ()</td></tr>
-<tr class="separator:a4b4c9347021382b5db62d1247db7f272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f3f3ac3369abf2b7046f46e56361c2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html">operation_history_object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1elasticsearch_1_1elasticsearch__plugin.html#a9f3f3ac3369abf2b7046f46e56361c2b">get_operation_by_id</a> (const operation_history_id_type &amp;id) const</td></tr>
+<tr class="separator:a9f3f3ac3369abf2b7046f46e56361c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc6a9a7f7713042b8c9d49c0895e70a8"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html">operation_history_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1elasticsearch_1_1elasticsearch__plugin.html#afc6a9a7f7713042b8c9d49c0895e70a8">get_account_history</a> (const account_id_type &amp;account_id, const operation_history_id_type &amp;stop=operation_history_id_type(), uint64_t limit=100, const operation_history_id_type &amp;start=operation_history_id_type()) const</td></tr>
+<tr class="separator:afc6a9a7f7713042b8c9d49c0895e70a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80bda8d69fb773ed85f1b742f40b23cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1elasticsearch.html#adf21cd61908e3405c92b74a61281dd83">mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1elasticsearch_1_1elasticsearch__plugin.html#a80bda8d69fb773ed85f1b742f40b23cb">get_running_mode</a> () const</td></tr>
+<tr class="separator:a80bda8d69fb773ed85f1b742f40b23cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classgraphene_1_1app_1_1plugin"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgraphene_1_1app_1_1plugin')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classgraphene_1_1app_1_1plugin.html">graphene::app::plugin</a></td></tr>
 <tr class="memitem:abe7030a505bb7fef8fc3d37f5b33e015 inherit pub_methods_classgraphene_1_1app_1_1plugin"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1plugin.html#abe7030a505bb7fef8fc3d37f5b33e015">plugin_shutdown</a> () override</td></tr>
 <tr class="memdesc:abe7030a505bb7fef8fc3d37f5b33e015 inherit pub_methods_classgraphene_1_1app_1_1plugin"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleanly shut down the plugin.  <a href="classgraphene_1_1app_1_1plugin.html#abe7030a505bb7fef8fc3d37f5b33e015">More...</a><br /></td></tr>
@@ -127,16 +125,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af51087b05377f24da7be8379f426589f inherit pub_methods_classgraphene_1_1app_1_1abstract__plugin"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1app_1_1application.html">application</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1abstract__plugin.html#af51087b05377f24da7be8379f426589f">app</a> () const</td></tr>
 <tr class="memdesc:af51087b05377f24da7be8379f426589f inherit pub_methods_classgraphene_1_1app_1_1abstract__plugin"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a reference of the application bound to the plugin.  <a href="classgraphene_1_1app_1_1abstract__plugin.html#af51087b05377f24da7be8379f426589f">More...</a><br /></td></tr>
 <tr class="separator:af51087b05377f24da7be8379f426589f inherit pub_methods_classgraphene_1_1app_1_1abstract__plugin"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:ad2de2132ac2c0f62c9024f9abb00c1ef"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classgraphene_1_1elasticsearch_1_1detail_1_1elasticsearch__plugin__impl.html">detail::elasticsearch_plugin_impl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1elasticsearch_1_1elasticsearch__plugin.html#ad2de2132ac2c0f62c9024f9abb00c1ef">my</a></td></tr>
-<tr class="separator:ad2de2132ac2c0f62c9024f9abb00c1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:a7b9c8659d13bbe4bb18ccd6b7fee617c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1elasticsearch_1_1elasticsearch__plugin.html#a7b9c8659d13bbe4bb18ccd6b7fee617c">detail::elasticsearch_plugin_impl</a></td></tr>
-<tr class="separator:a7b9c8659d13bbe4bb18ccd6b7fee617c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -175,7 +163,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8cpp_source.html#l00449">449</a> of file <a class="el" href="elasticsearch__plugin_8cpp_source.html">elasticsearch_plugin.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8cpp_source.html#l00483">483</a> of file <a class="el" href="elasticsearch__plugin_8cpp_source.html">elasticsearch_plugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -205,50 +193,50 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a52c34657e6ac76d8b274c1e3c79e9183"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52c34657e6ac76d8b274c1e3c79e9183">&#9670;&nbsp;</a></span>get_account_history()</h2>
+<a id="afc6a9a7f7713042b8c9d49c0895e70a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc6a9a7f7713042b8c9d49c0895e70a8">&#9670;&nbsp;</a></span>get_account_history()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html">operation_history_object</a> &gt; elasticsearch_plugin::get_account_history </td>
+          <td class="memname">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html">operation_history_object</a> &gt; graphene::elasticsearch::elasticsearch_plugin::get_account_history </td>
           <td>(</td>
-          <td class="paramtype">const account_id_type&#160;</td>
+          <td class="paramtype">const account_id_type &amp;&#160;</td>
           <td class="paramname"><em>account_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">operation_history_id_type&#160;</td>
+          <td class="paramtype">const operation_history_id_type &amp;&#160;</td>
           <td class="paramname"><em>stop</em> = <code>operation_history_id_type()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramtype">uint64_t&#160;</td>
           <td class="paramname"><em>limit</em> = <code>100</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">operation_history_id_type&#160;</td>
+          <td class="paramtype">const operation_history_id_type &amp;&#160;</td>
           <td class="paramname"><em>start</em> = <code>operation_history_id_type()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8cpp_source.html#l00583">583</a> of file <a class="el" href="elasticsearch__plugin_8cpp_source.html">elasticsearch_plugin.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8cpp_source.html#l00639">639</a> of file <a class="el" href="elasticsearch__plugin_8cpp_source.html">elasticsearch_plugin.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a7d27b871cdc2254bb94ba938404ab2e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d27b871cdc2254bb94ba938404ab2e3">&#9670;&nbsp;</a></span>get_operation_by_id()</h2>
+<a id="a9f3f3ac3369abf2b7046f46e56361c2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f3f3ac3369abf2b7046f46e56361c2b">&#9670;&nbsp;</a></span>get_operation_by_id()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -256,33 +244,33 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classgraphene_1_1chain_1_1operation__history__object.html">operation_history_object</a> graphene::elasticsearch::elasticsearch_plugin::get_operation_by_id </td>
           <td>(</td>
-          <td class="paramtype">operation_history_id_type&#160;</td>
+          <td class="paramtype">const operation_history_id_type &amp;&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8cpp_source.html#l00561">561</a> of file <a class="el" href="elasticsearch__plugin_8cpp_source.html">elasticsearch_plugin.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8cpp_source.html#l00618">618</a> of file <a class="el" href="elasticsearch__plugin_8cpp_source.html">elasticsearch_plugin.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a4b4c9347021382b5db62d1247db7f272"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b4c9347021382b5db62d1247db7f272">&#9670;&nbsp;</a></span>get_running_mode()</h2>
+<a id="a80bda8d69fb773ed85f1b742f40b23cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80bda8d69fb773ed85f1b742f40b23cb">&#9670;&nbsp;</a></span>get_running_mode()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacegraphene_1_1elasticsearch.html#adf21cd61908e3405c92b74a61281dd83">mode</a> elasticsearch_plugin::get_running_mode </td>
+          <td class="memname"><a class="el" href="namespacegraphene_1_1elasticsearch.html#adf21cd61908e3405c92b74a61281dd83">mode</a> graphene::elasticsearch::elasticsearch_plugin::get_running_mode </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8cpp_source.html#l00681">681</a> of file <a class="el" href="elasticsearch__plugin_8cpp_source.html">elasticsearch_plugin.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8cpp_source.html#l00701">701</a> of file <a class="el" href="elasticsearch__plugin_8cpp_source.html">elasticsearch_plugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -313,7 +301,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classgraphene_1_1app_1_1plugin.html#acab8aae448b09ec9b904a4e2c6fcfc12">graphene::app::plugin</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8cpp_source.html#l00462">462</a> of file <a class="el" href="elasticsearch__plugin_8cpp_source.html">elasticsearch_plugin.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8cpp_source.html#l00496">496</a> of file <a class="el" href="elasticsearch__plugin_8cpp_source.html">elasticsearch_plugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -353,7 +341,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classgraphene_1_1app_1_1plugin.html#a55f3edacaa70b31121533c946c80f756">graphene::app::plugin</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8cpp_source.html#l00497">497</a> of file <a class="el" href="elasticsearch__plugin_8cpp_source.html">elasticsearch_plugin.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8cpp_source.html#l00576">576</a> of file <a class="el" href="elasticsearch__plugin_8cpp_source.html">elasticsearch_plugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -384,7 +372,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classgraphene_1_1app_1_1plugin.html#a5712513a3211adf382a161f49e4a7327">graphene::app::plugin</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8cpp_source.html#l00458">458</a> of file <a class="el" href="elasticsearch__plugin_8cpp_source.html">elasticsearch_plugin.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8cpp_source.html#l00492">492</a> of file <a class="el" href="elasticsearch__plugin_8cpp_source.html">elasticsearch_plugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -434,7 +422,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classgraphene_1_1app_1_1plugin.html#a99ffee727e0f7bd6e88e8201fc84f93f">graphene::app::plugin</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8cpp_source.html#l00467">467</a> of file <a class="el" href="elasticsearch__plugin_8cpp_source.html">elasticsearch_plugin.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8cpp_source.html#l00501">501</a> of file <a class="el" href="elasticsearch__plugin_8cpp_source.html">elasticsearch_plugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -466,49 +454,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classgraphene_1_1app_1_1plugin.html#a6dc55708298e55234f7e2e8e5781854f">graphene::app::plugin</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8cpp_source.html#l00549">549</a> of file <a class="el" href="elasticsearch__plugin_8cpp_source.html">elasticsearch_plugin.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a7b9c8659d13bbe4bb18ccd6b7fee617c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b9c8659d13bbe4bb18ccd6b7fee617c">&#9670;&nbsp;</a></span>detail::elasticsearch_plugin_impl</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="classgraphene_1_1elasticsearch_1_1detail_1_1elasticsearch__plugin__impl.html">detail::elasticsearch_plugin_impl</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8hpp_source.html#l00074">74</a> of file <a class="el" href="elasticsearch__plugin_8hpp_source.html">elasticsearch_plugin.hpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ad2de2132ac2c0f62c9024f9abb00c1ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2de2132ac2c0f62c9024f9abb00c1ef">&#9670;&nbsp;</a></span>my</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classgraphene_1_1elasticsearch_1_1detail_1_1elasticsearch__plugin__impl.html">detail::elasticsearch_plugin_impl</a>&gt; graphene::elasticsearch::elasticsearch_plugin::my</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8hpp_source.html#l00075">75</a> of file <a class="el" href="elasticsearch__plugin_8hpp_source.html">elasticsearch_plugin.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8cpp_source.html#l00592">592</a> of file <a class="el" href="elasticsearch__plugin_8cpp_source.html">elasticsearch_plugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -519,7 +465,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:58 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:47 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

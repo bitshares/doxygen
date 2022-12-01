@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -65,6 +65,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structgraphene_1_1app_1_1order__book-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -74,6 +75,13 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="api__objects_8hpp_source.html">api_objects.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a3c70e76daf8593fba2d4b22749c58853"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1order__book.html#a3c70e76daf8593fba2d4b22749c58853">order_book</a> ()=default</td></tr>
+<tr class="separator:a3c70e76daf8593fba2d4b22749c58853"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7c34bcb47b12ffdf1e015047635f17a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1order__book.html#ad7c34bcb47b12ffdf1e015047635f17a">order_book</a> (const string &amp;_base, const string &amp;_quote)</td></tr>
+<tr class="separator:ad7c34bcb47b12ffdf1e015047635f17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aea65f25559e299589207051d27f6dc35"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1order__book.html#aea65f25559e299589207051d27f6dc35">base</a></td></tr>
@@ -87,8 +95,64 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="api__objects_8hpp_source.html#l00089">89</a> of file <a class="el" href="api__objects_8hpp_source.html">api_objects.hpp</a>.</p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="api__objects_8hpp_source.html#l00102">102</a> of file <a class="el" href="api__objects_8hpp_source.html">api_objects.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a3c70e76daf8593fba2d4b22749c58853"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c70e76daf8593fba2d4b22749c58853">&#9670;&nbsp;</a></span>order_book() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">graphene::app::order_book::order_book </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad7c34bcb47b12ffdf1e015047635f17a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7c34bcb47b12ffdf1e015047635f17a">&#9670;&nbsp;</a></span>order_book() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">graphene::app::order_book::order_book </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>_base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>_quote</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="api__objects_8cpp_source.html#l00048">48</a> of file <a class="el" href="api__objects_8cpp_source.html">api_objects.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="a693612939e9aba2ce06b8739c816a191"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a693612939e9aba2ce06b8739c816a191">&#9670;&nbsp;</a></span>asks</h2>
 
@@ -101,7 +165,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="api__objects_8hpp_source.html#l00094">94</a> of file <a class="el" href="api__objects_8hpp_source.html">api_objects.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="api__objects_8hpp_source.html#l00107">107</a> of file <a class="el" href="api__objects_8hpp_source.html">api_objects.hpp</a>.</p>
 
 </div>
 </div>
@@ -117,7 +181,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="api__objects_8hpp_source.html#l00091">91</a> of file <a class="el" href="api__objects_8hpp_source.html">api_objects.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="api__objects_8hpp_source.html#l00104">104</a> of file <a class="el" href="api__objects_8hpp_source.html">api_objects.hpp</a>.</p>
 
 </div>
 </div>
@@ -133,7 +197,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="api__objects_8hpp_source.html#l00093">93</a> of file <a class="el" href="api__objects_8hpp_source.html">api_objects.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="api__objects_8hpp_source.html#l00106">106</a> of file <a class="el" href="api__objects_8hpp_source.html">api_objects.hpp</a>.</p>
 
 </div>
 </div>
@@ -149,17 +213,18 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="api__objects_8hpp_source.html#l00092">92</a> of file <a class="el" href="api__objects_8hpp_source.html">api_objects.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="api__objects_8hpp_source.html#l00105">105</a> of file <a class="el" href="api__objects_8hpp_source.html">api_objects.hpp</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li>libraries/app/include/graphene/app/<a class="el" href="api__objects_8hpp_source.html">api_objects.hpp</a></li>
+<li>libraries/app/<a class="el" href="api__objects_8cpp_source.html">api_objects.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:57 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:46 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

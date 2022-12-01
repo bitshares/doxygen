@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -89,50 +89,52 @@ Inheritance diagram for graphene::db::primary_index&lt; DerivedIndex, DirectBits
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a8e76d2ee5d97bc11740d5e53c0ac0b0e"><td class="memItemLeft" align="right" valign="top">typedef DerivedIndex::object_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a8e76d2ee5d97bc11740d5e53c0ac0b0e">object_type</a></td></tr>
-<tr class="separator:a8e76d2ee5d97bc11740d5e53c0ac0b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c4e697423afc424922c06ffdaea9203"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a0c4e697423afc424922c06ffdaea9203">object_type</a> = typename DerivedIndex::object_type</td></tr>
+<tr class="separator:a0c4e697423afc424922c06ffdaea9203"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2641422c459497726d962dd9e2270f99"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a2641422c459497726d962dd9e2270f99">primary_index</a> (<a class="el" href="classgraphene_1_1db_1_1object__database.html">object_database</a> &amp;db)</td></tr>
 <tr class="separator:a2641422c459497726d962dd9e2270f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d878f7becdbb7b6d09ca5ca5fabf178"><td class="memItemLeft" align="right" valign="top">virtual uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a5d878f7becdbb7b6d09ca5ca5fabf178">object_space_id</a> () const override</td></tr>
-<tr class="separator:a5d878f7becdbb7b6d09ca5ca5fabf178"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa6b9266cab104eb60f6491a92f70c12"><td class="memItemLeft" align="right" valign="top">virtual uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#afa6b9266cab104eb60f6491a92f70c12">object_type_id</a> () const override</td></tr>
-<tr class="separator:afa6b9266cab104eb60f6491a92f70c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a513ac58b6767c204e34d41d5dbbe2c2a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a513ac58b6767c204e34d41d5dbbe2c2a">get_next_id</a> () const override</td></tr>
-<tr class="separator:a513ac58b6767c204e34d41d5dbbe2c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec0a52baa71b8de23292c608f50dd49b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#aec0a52baa71b8de23292c608f50dd49b">use_next_id</a> () override</td></tr>
-<tr class="separator:aec0a52baa71b8de23292c608f50dd49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb07aa08548cc15be065e1bf1328a00e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#aeb07aa08548cc15be065e1bf1328a00e">set_next_id</a> (<a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a> id) override</td></tr>
-<tr class="separator:aeb07aa08548cc15be065e1bf1328a00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9905efcbf28d8288ddc35c7de26149c5"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a9905efcbf28d8288ddc35c7de26149c5">find</a> (<a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a> id) const override</td></tr>
-<tr class="separator:a9905efcbf28d8288ddc35c7de26149c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa0003d68ffb2a58ea0b1153c30e2d65"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#afa0003d68ffb2a58ea0b1153c30e2d65">object_space_id</a> () const override</td></tr>
+<tr class="separator:afa0003d68ffb2a58ea0b1153c30e2d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d03e65840708433cbd7751afe3c7ef4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a3d03e65840708433cbd7751afe3c7ef4">object_type_id</a> () const override</td></tr>
+<tr class="separator:a3d03e65840708433cbd7751afe3c7ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b2c7f10b6dcdbd9fd33580a60b57360"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a0b2c7f10b6dcdbd9fd33580a60b57360">get_next_id</a> () const override</td></tr>
+<tr class="separator:a0b2c7f10b6dcdbd9fd33580a60b57360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30c874160c1c270314698511f8e43b00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a30c874160c1c270314698511f8e43b00">use_next_id</a> () override</td></tr>
+<tr class="separator:a30c874160c1c270314698511f8e43b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29243d94e76990b648fd397756af9def"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a29243d94e76990b648fd397756af9def">set_next_id</a> (<a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a> id) override</td></tr>
+<tr class="separator:a29243d94e76990b648fd397756af9def"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bf0dc211d6f130bd6a6c1232a0e5c33"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a2bf0dc211d6f130bd6a6c1232a0e5c33">find</a> (<a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a> id) const override</td></tr>
+<tr class="separator:a2bf0dc211d6f130bd6a6c1232a0e5c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bc442b3d04e890fd96ad1a05d9490c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1sha256.html">fc::sha256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a9bc442b3d04e890fd96ad1a05d9490c1">get_object_version</a> () const</td></tr>
 <tr class="separator:a9bc442b3d04e890fd96ad1a05d9490c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a964b3f951cb36b7ae5507014e285d474"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a964b3f951cb36b7ae5507014e285d474">open</a> (const <a class="el" href="classfc_1_1path.html">path</a> &amp;db) override</td></tr>
-<tr class="separator:a964b3f951cb36b7ae5507014e285d474"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66d305b9da07698740dc3f4f7f97154b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a66d305b9da07698740dc3f4f7f97154b">save</a> (const <a class="el" href="classfc_1_1path.html">path</a> &amp;db) override</td></tr>
-<tr class="separator:a66d305b9da07698740dc3f4f7f97154b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2e27f92e7a2c77e8e67f323bebe21ba"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#af2e27f92e7a2c77e8e67f323bebe21ba">load</a> (const std::vector&lt; char &gt; &amp;data) override</td></tr>
-<tr class="separator:af2e27f92e7a2c77e8e67f323bebe21ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a92435bc15bd2c4e160e5a56a321caf"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a2a92435bc15bd2c4e160e5a56a321caf">create</a> (const std::function&lt; void(<a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;)&gt; &amp;constructor) override</td></tr>
-<tr class="separator:a2a92435bc15bd2c4e160e5a56a321caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b9efacf15249bbe5650a179a14de3fc"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a6b9efacf15249bbe5650a179a14de3fc">insert</a> (<a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;&amp;obj) override</td></tr>
-<tr class="separator:a6b9efacf15249bbe5650a179a14de3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42390d3be1f04919991aa5051c337d93"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a42390d3be1f04919991aa5051c337d93">remove</a> (const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj) override</td></tr>
-<tr class="separator:a42390d3be1f04919991aa5051c337d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cb107388bbe893f692aea4817ad263b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a3cb107388bbe893f692aea4817ad263b">modify</a> (const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj, const std::function&lt; void(<a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;)&gt; &amp;m) override</td></tr>
-<tr class="separator:a3cb107388bbe893f692aea4817ad263b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a058b74247f1067580f95995bdbad911e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a058b74247f1067580f95995bdbad911e">add_observer</a> (const shared_ptr&lt; <a class="el" href="classgraphene_1_1db_1_1index__observer.html">index_observer</a> &gt; &amp;o) override</td></tr>
-<tr class="separator:a058b74247f1067580f95995bdbad911e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90f0474bc0996a94faa7f40213158a39"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a90f0474bc0996a94faa7f40213158a39">object_from_variant</a> (const <a class="el" href="classfc_1_1variant.html">fc::variant</a> &amp;var, <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj, uint32_t max_depth) const override</td></tr>
-<tr class="separator:a90f0474bc0996a94faa7f40213158a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a444a7f0d30a921eec2bfc62959c3001a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a444a7f0d30a921eec2bfc62959c3001a">object_default</a> (<a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj) const override</td></tr>
-<tr class="separator:a444a7f0d30a921eec2bfc62959c3001a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa653c8f0a181d3a2460070a57e012c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#aaa653c8f0a181d3a2460070a57e012c9">open</a> (const <a class="el" href="classfc_1_1path.html">fc::path</a> &amp;db) override</td></tr>
+<tr class="separator:aaa653c8f0a181d3a2460070a57e012c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a890c1cb344e01ecbc1dac733ad0e4158"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a890c1cb344e01ecbc1dac733ad0e4158">save</a> (const <a class="el" href="classfc_1_1path.html">fc::path</a> &amp;db) override</td></tr>
+<tr class="separator:a890c1cb344e01ecbc1dac733ad0e4158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6983d2f531290bc98f321b0ddd5c3e99"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a6983d2f531290bc98f321b0ddd5c3e99">load</a> (const std::vector&lt; char &gt; &amp;data) override</td></tr>
+<tr class="separator:a6983d2f531290bc98f321b0ddd5c3e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79d8e7f65089a24bdd7cf0cbd364dd45"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a79d8e7f65089a24bdd7cf0cbd364dd45">create</a> (const std::function&lt; void(<a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;)&gt; &amp;constructor) override</td></tr>
+<tr class="separator:a79d8e7f65089a24bdd7cf0cbd364dd45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af935f5d79721abc5886441caac1620d5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#af935f5d79721abc5886441caac1620d5">insert</a> (<a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;&amp;obj) override</td></tr>
+<tr class="separator:af935f5d79721abc5886441caac1620d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec897aa9453788a7dfd2590a9a105dd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#aec897aa9453788a7dfd2590a9a105dd9">remove</a> (const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj) override</td></tr>
+<tr class="separator:aec897aa9453788a7dfd2590a9a105dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad117c48ee64123d103d5c2d88a4ccd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a4ad117c48ee64123d103d5c2d88a4ccd">modify</a> (const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj, const std::function&lt; void(<a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;)&gt; &amp;m) override</td></tr>
+<tr class="separator:a4ad117c48ee64123d103d5c2d88a4ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3fcc4934cd9676f2122c303b2463b85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#ab3fcc4934cd9676f2122c303b2463b85">add_observer</a> (const std::shared_ptr&lt; <a class="el" href="classgraphene_1_1db_1_1index__observer.html">index_observer</a> &gt; &amp;o) override</td></tr>
+<tr class="separator:ab3fcc4934cd9676f2122c303b2463b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24297ecb6100f75c56512e1b2632a701"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a24297ecb6100f75c56512e1b2632a701">object_from_variant</a> (const <a class="el" href="classfc_1_1variant.html">fc::variant</a> &amp;var, <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj, uint32_t max_depth) const override</td></tr>
+<tr class="separator:a24297ecb6100f75c56512e1b2632a701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac0abd3ee7b67c91acb6470d90a36db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1primary__index.html#a7ac0abd3ee7b67c91acb6470d90a36db">object_default</a> (<a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj) const override</td></tr>
+<tr class="separator:a7ac0abd3ee7b67c91acb6470d90a36db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classgraphene_1_1db_1_1base__primary__index"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgraphene_1_1db_1_1base__primary__index')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classgraphene_1_1db_1_1base__primary__index.html">graphene::db::base_primary_index</a></td></tr>
 <tr class="memitem:aae4d25e40d3538e9a7d40054f9ed05e8 inherit pub_methods_classgraphene_1_1db_1_1base__primary__index"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__primary__index.html#aae4d25e40d3538e9a7d40054f9ed05e8">base_primary_index</a> (<a class="el" href="classgraphene_1_1db_1_1object__database.html">object_database</a> &amp;db)</td></tr>
 <tr class="separator:aae4d25e40d3538e9a7d40054f9ed05e8 inherit pub_methods_classgraphene_1_1db_1_1base__primary__index"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad76d89ffbbd1a67c3026824569795a76 inherit pub_methods_classgraphene_1_1db_1_1base__primary__index"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__primary__index.html#ad76d89ffbbd1a67c3026824569795a76">~base_primary_index</a> ()=default</td></tr>
+<tr class="separator:ad76d89ffbbd1a67c3026824569795a76 inherit pub_methods_classgraphene_1_1db_1_1base__primary__index"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecddf87652998f5a4a156dce5d4aa1fa inherit pub_methods_classgraphene_1_1db_1_1base__primary__index"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__primary__index.html#aecddf87652998f5a4a156dce5d4aa1fa">save_undo</a> (const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj)</td></tr>
 <tr class="separator:aecddf87652998f5a4a156dce5d4aa1fa inherit pub_methods_classgraphene_1_1db_1_1base__primary__index"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66192343c484ac5d4365a3b562bc99c2 inherit pub_methods_classgraphene_1_1db_1_1base__primary__index"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__primary__index.html#a66192343c484ac5d4365a3b562bc99c2">on_add</a> (const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj)</td></tr>
@@ -151,10 +153,10 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classgraphene_1_1db_1_1base__primary__index"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classgraphene_1_1db_1_1base__primary__index')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classgraphene_1_1db_1_1base__primary__index.html">graphene::db::base_primary_index</a></td></tr>
-<tr class="memitem:aaa78a01c75b0213473c3e07acbacc3a1 inherit pro_attribs_classgraphene_1_1db_1_1base__primary__index"><td class="memItemLeft" align="right" valign="top">vector&lt; shared_ptr&lt; <a class="el" href="classgraphene_1_1db_1_1index__observer.html">index_observer</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__primary__index.html#aaa78a01c75b0213473c3e07acbacc3a1">_observers</a></td></tr>
-<tr class="separator:aaa78a01c75b0213473c3e07acbacc3a1 inherit pro_attribs_classgraphene_1_1db_1_1base__primary__index"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a594e4a2b214e2d17e7593069411988cb inherit pro_attribs_classgraphene_1_1db_1_1base__primary__index"><td class="memItemLeft" align="right" valign="top">vector&lt; unique_ptr&lt; <a class="el" href="classgraphene_1_1db_1_1secondary__index.html">secondary_index</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__primary__index.html#a594e4a2b214e2d17e7593069411988cb">_sindex</a></td></tr>
-<tr class="separator:a594e4a2b214e2d17e7593069411988cb inherit pro_attribs_classgraphene_1_1db_1_1base__primary__index"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3c723d9268e6f9fcaad7094beb1ce1 inherit pro_attribs_classgraphene_1_1db_1_1base__primary__index"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgraphene_1_1db_1_1index__observer.html">index_observer</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__primary__index.html#a0c3c723d9268e6f9fcaad7094beb1ce1">_observers</a></td></tr>
+<tr class="separator:a0c3c723d9268e6f9fcaad7094beb1ce1 inherit pro_attribs_classgraphene_1_1db_1_1base__primary__index"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2795c19b379f6c6f412b6b3a4ac962d inherit pro_attribs_classgraphene_1_1db_1_1base__primary__index"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classgraphene_1_1db_1_1secondary__index.html">secondary_index</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__primary__index.html#aa2795c19b379f6c6f412b6b3a4ac962d">_sindex</a></td></tr>
+<tr class="separator:aa2795c19b379f6c6f412b6b3a4ac962d inherit pro_attribs_classgraphene_1_1db_1_1base__primary__index"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt;<br />
@@ -163,10 +165,10 @@ class graphene::db::primary_index&lt; DerivedIndex, DirectBits &gt;</h3>
 <p>Wraps a derived index to intercept calls to create, modify, and remove so that callbacks may be fired and undo state saved. </p>
 <dl class="section see"><dt>See also</dt><dd><a href="http://en.wikipedia.org/wiki/Curiously_recurring_template_pattern">http://en.wikipedia.org/wiki/Curiously_recurring_template_pattern</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00309">309</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00312">312</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a8e76d2ee5d97bc11740d5e53c0ac0b0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e76d2ee5d97bc11740d5e53c0ac0b0e">&#9670;&nbsp;</a></span>object_type</h2>
+<a id="a0c4e697423afc424922c06ffdaea9203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c4e697423afc424922c06ffdaea9203">&#9670;&nbsp;</a></span>object_type</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,12 +176,12 @@ class graphene::db::primary_index&lt; DerivedIndex, DirectBits &gt;</h3>
 template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef DerivedIndex::object_type <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::<a class="el" href="classgraphene_1_1db_1_1primary__index.html#a8e76d2ee5d97bc11740d5e53c0ac0b0e">object_type</a></td>
+          <td class="memname">using <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::<a class="el" href="classgraphene_1_1db_1_1primary__index.html#a0c4e697423afc424922c06ffdaea9203">object_type</a> =  typename DerivedIndex::object_type</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00312">312</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00315">315</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
 </div>
 </div>
@@ -205,18 +207,18 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00314">314</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00317">317</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a058b74247f1067580f95995bdbad911e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a058b74247f1067580f95995bdbad911e">&#9670;&nbsp;</a></span>add_observer()</h2>
+<a id="ab3fcc4934cd9676f2122c303b2463b85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3fcc4934cd9676f2122c303b2463b85">&#9670;&nbsp;</a></span>add_observer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,26 +229,26 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::add_observer </td>
+          <td class="memname">void <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::add_observer </td>
           <td>(</td>
-          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classgraphene_1_1db_1_1index__observer.html">index_observer</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classgraphene_1_1db_1_1index__observer.html">index_observer</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>o</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00425">425</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00429">429</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a2a92435bc15bd2c4e160e5a56a321caf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a92435bc15bd2c4e160e5a56a321caf">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a79d8e7f65089a24bdd7cf0cbd364dd45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79d8e7f65089a24bdd7cf0cbd364dd45">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -257,7 +259,7 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>&amp; <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::create </td>
+          <td class="memname">const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>&amp; <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::create </td>
           <td>(</td>
           <td class="paramtype">const std::function&lt; void(<a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;)&gt; &amp;&#160;</td>
           <td class="paramname"><em>constructor</em></td><td>)</td>
@@ -266,17 +268,17 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00388">388</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00392">392</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a9905efcbf28d8288ddc35c7de26149c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9905efcbf28d8288ddc35c7de26149c5">&#9670;&nbsp;</a></span>find()</h2>
+<a id="a2bf0dc211d6f130bd6a6c1232a0e5c33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bf0dc211d6f130bd6a6c1232a0e5c33">&#9670;&nbsp;</a></span>find()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -287,7 +289,7 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>* <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::find </td>
+          <td class="memname">const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>* <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::find </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -296,18 +298,18 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the object with id or nullptr if not found </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00332">332</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00335">335</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a513ac58b6767c204e34d41d5dbbe2c2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a513ac58b6767c204e34d41d5dbbe2c2a">&#9670;&nbsp;</a></span>get_next_id()</h2>
+<a id="a0b2c7f10b6dcdbd9fd33580a60b57360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b2c7f10b6dcdbd9fd33580a60b57360">&#9670;&nbsp;</a></span>get_next_id()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -318,7 +320,7 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a> <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::get_next_id </td>
+          <td class="memname"><a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a> <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::get_next_id </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -326,12 +328,12 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00327">327</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00330">330</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
 </div>
 </div>
@@ -360,12 +362,12 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00339">339</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00342">342</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a6b9efacf15249bbe5650a179a14de3fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b9efacf15249bbe5650a179a14de3fc">&#9670;&nbsp;</a></span>insert()</h2>
+<a id="af935f5d79721abc5886441caac1620d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af935f5d79721abc5886441caac1620d5">&#9670;&nbsp;</a></span>insert()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -376,7 +378,7 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>&amp; <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::insert </td>
+          <td class="memname">const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>&amp; <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::insert </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>obj</em></td><td>)</td>
@@ -385,17 +387,17 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00397">397</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00401">401</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
 </div>
 </div>
-<a id="af2e27f92e7a2c77e8e67f323bebe21ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2e27f92e7a2c77e8e67f323bebe21ba">&#9670;&nbsp;</a></span>load()</h2>
+<a id="a6983d2f531290bc98f321b0ddd5c3e99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6983d2f531290bc98f321b0ddd5c3e99">&#9670;&nbsp;</a></span>load()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -406,7 +408,7 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>&amp; <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::load </td>
+          <td class="memname">const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>&amp; <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::load </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; char &gt; &amp;&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
@@ -415,17 +417,17 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00379">379</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00383">383</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a3cb107388bbe893f692aea4817ad263b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3cb107388bbe893f692aea4817ad263b">&#9670;&nbsp;</a></span>modify()</h2>
+<a id="a4ad117c48ee64123d103d5c2d88a4ccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ad117c48ee64123d103d5c2d88a4ccd">&#9670;&nbsp;</a></span>modify()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -436,7 +438,7 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::modify </td>
+          <td class="memname">void <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::modify </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;&#160;</td>
           <td class="paramname"><em>obj</em>, </td>
@@ -455,17 +457,17 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00414">414</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00418">418</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a444a7f0d30a921eec2bfc62959c3001a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a444a7f0d30a921eec2bfc62959c3001a">&#9670;&nbsp;</a></span>object_default()</h2>
+<a id="a7ac0abd3ee7b67c91acb6470d90a36db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ac0abd3ee7b67c91acb6470d90a36db">&#9670;&nbsp;</a></span>object_default()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -476,7 +478,7 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::object_default </td>
+          <td class="memname">void <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::object_default </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;&#160;</td>
           <td class="paramname"><em>obj</em></td><td>)</td>
@@ -485,17 +487,17 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00439">439</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00443">443</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a90f0474bc0996a94faa7f40213158a39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90f0474bc0996a94faa7f40213158a39">&#9670;&nbsp;</a></span>object_from_variant()</h2>
+<a id="a24297ecb6100f75c56512e1b2632a701"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24297ecb6100f75c56512e1b2632a701">&#9670;&nbsp;</a></span>object_from_variant()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -506,7 +508,7 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::object_from_variant </td>
+          <td class="memname">void <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::object_from_variant </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classfc_1_1variant.html">fc::variant</a> &amp;&#160;</td>
           <td class="paramname"><em>var</em>, </td>
@@ -531,17 +533,17 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00430">430</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00434">434</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a5d878f7becdbb7b6d09ca5ca5fabf178"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d878f7becdbb7b6d09ca5ca5fabf178">&#9670;&nbsp;</a></span>object_space_id()</h2>
+<a id="afa0003d68ffb2a58ea0b1153c30e2d65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa0003d68ffb2a58ea0b1153c30e2d65">&#9670;&nbsp;</a></span>object_space_id()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -552,7 +554,7 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual uint8_t <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::object_space_id </td>
+          <td class="memname">uint8_t <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::object_space_id </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -560,36 +562,7 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00321">321</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
-
-</div>
-</div>
-<a id="afa6b9266cab104eb60f6491a92f70c12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa6b9266cab104eb60f6491a92f70c12">&#9670;&nbsp;</a></span>object_type_id()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual uint8_t <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::object_type_id </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -598,8 +571,8 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
 
 </div>
 </div>
-<a id="a964b3f951cb36b7ae5507014e285d474"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a964b3f951cb36b7ae5507014e285d474">&#9670;&nbsp;</a></span>open()</h2>
+<a id="a3d03e65840708433cbd7751afe3c7ef4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d03e65840708433cbd7751afe3c7ef4">&#9670;&nbsp;</a></span>object_type_id()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -610,26 +583,55 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::open </td>
+          <td class="memname">uint8_t <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::object_type_id </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classfc_1_1path.html">path</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00327">327</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aaa653c8f0a181d3a2460070a57e012c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa653c8f0a181d3a2460070a57e012c9">&#9670;&nbsp;</a></span>open()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::open </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1path.html">fc::path</a> &amp;&#160;</td>
           <td class="paramname"><em>db</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00345">345</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00348">348</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a42390d3be1f04919991aa5051c337d93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42390d3be1f04919991aa5051c337d93">&#9670;&nbsp;</a></span>remove()</h2>
+<a id="aec897aa9453788a7dfd2590a9a105dd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec897aa9453788a7dfd2590a9a105dd9">&#9670;&nbsp;</a></span>remove()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -640,7 +642,7 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::remove </td>
+          <td class="memname">void <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::remove </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;&#160;</td>
           <td class="paramname"><em>obj</em></td><td>)</td>
@@ -649,17 +651,17 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00406">406</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00410">410</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a66d305b9da07698740dc3f4f7f97154b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66d305b9da07698740dc3f4f7f97154b">&#9670;&nbsp;</a></span>save()</h2>
+<a id="a890c1cb344e01ecbc1dac733ad0e4158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a890c1cb344e01ecbc1dac733ad0e4158">&#9670;&nbsp;</a></span>save()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -670,26 +672,26 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::save </td>
+          <td class="memname">void <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::save </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classfc_1_1path.html">path</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1path.html">fc::path</a> &amp;&#160;</td>
           <td class="paramname"><em>db</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00364">364</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00368">368</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
 </div>
 </div>
-<a id="aeb07aa08548cc15be065e1bf1328a00e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb07aa08548cc15be065e1bf1328a00e">&#9670;&nbsp;</a></span>set_next_id()</h2>
+<a id="a29243d94e76990b648fd397756af9def"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29243d94e76990b648fd397756af9def">&#9670;&nbsp;</a></span>set_next_id()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -700,7 +702,7 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::set_next_id </td>
+          <td class="memname">void <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::set_next_id </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -709,17 +711,17 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00329">329</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00332">332</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
 </div>
 </div>
-<a id="aec0a52baa71b8de23292c608f50dd49b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec0a52baa71b8de23292c608f50dd49b">&#9670;&nbsp;</a></span>use_next_id()</h2>
+<a id="a30c874160c1c270314698511f8e43b00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30c874160c1c270314698511f8e43b00">&#9670;&nbsp;</a></span>use_next_id()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -730,7 +732,7 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::use_next_id </td>
+          <td class="memname">void <a class="el" href="classgraphene_1_1db_1_1primary__index.html">graphene::db::primary_index</a>&lt; DerivedIndex, DirectBits &gt;::use_next_id </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -738,12 +740,12 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00328">328</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00331">331</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
 </div>
 </div>
@@ -753,7 +755,7 @@ template&lt;typename DerivedIndex, uint8_t DirectBits = 0&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:58 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:47 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

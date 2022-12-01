@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -77,7 +77,7 @@ $(function() {
 , <a class="el" href="structgraphene_1_1protocol_1_1account__update__operation.html#a413d3201d098c0e2508d7aea3486cce9">graphene::protocol::account_update_operation</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1account__upgrade__operation.html#a186d29061cbc0ee39cde760e8e5c14dd">graphene::protocol::account_upgrade_operation</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1assert__operation.html#a0a65cd50b8ef2a67159f8d523728cc5b">graphene::protocol::assert_operation</a>
-, <a class="el" href="structgraphene_1_1protocol_1_1asset__create__operation.html#af3a57493bc7b1b2520a79053a0138e74">graphene::protocol::asset_create_operation</a>
+, <a class="el" href="structgraphene_1_1protocol_1_1asset__create__operation.html#a267565d94047d003758e6270956baede">graphene::protocol::asset_create_operation</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1asset__issue__operation.html#a973cd3500e554c65df0c494a92b149ef">graphene::protocol::asset_issue_operation</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1asset__settle__cancel__operation.html#a9b63f51250449da9565223d957088c9b">graphene::protocol::asset_settle_cancel_operation</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1asset__update__operation.html#a26b1654d4b9c2ec807791b10d1406f7f">graphene::protocol::asset_update_operation</a>
@@ -123,7 +123,7 @@ $(function() {
 : <a class="el" href="classfc_1_1generic__api.html#acca08c171f127e0f4a0455ba301ae764">fc::generic_api</a>
 </li>
 <li>call_end_or_upper_bound()
-: <a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ace15a9171081f2e071f0969bd985baa0">graphene::app::database_api_impl</a>
+: <a class="el" href="classgraphene_1_1app_1_1database__api__helper.html#aa743b08bb41009aa39c51daf505cffe4">graphene::app::database_api_helper</a>
 </li>
 <li>call_function()
 : <a class="el" href="structfc_1_1detail_1_1optionals__callable.html#abaaab69e269421ac4edde50c43f49bc2">fc::detail::optionals_callable&lt; R, Parameters &gt;</a>
@@ -192,8 +192,8 @@ $(function() {
 : <a class="el" href="classgraphene_1_1chain_1_1database.html#a245d31d0cbaec0e89b38659b19154c54">graphene::chain::database</a>
 </li>
 <li>cancel_order()
-: <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a9ce03ca82812161e3f2d7e652e784b2c">graphene::wallet::detail::wallet_api_impl</a>
-, <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#ab525bedb82547d7eafb77106fd26e251">graphene::wallet::wallet_api</a>
+: <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a2fd9d442d40beb793d585e3779c593ef">graphene::wallet::detail::wallet_api_impl</a>
+, <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#ab803bb5e93b6ebcdcf1097b790ea941e">graphene::wallet::wallet_api</a>
 </li>
 <li>cancel_settle_order()
 : <a class="el" href="classgraphene_1_1chain_1_1database.html#a056dfc88cbdc1c05ea14e1fe9e80716f">graphene::chain::database</a>
@@ -254,6 +254,12 @@ $(function() {
 <li>check_for_timeouts()
 : <a class="el" href="classfc_1_1thread__d.html#a7b1e555a2c3a837db9b101f4c9e74abb">fc::thread_d</a>
 </li>
+<li>check_status()
+: <a class="el" href="classgraphene_1_1utilities_1_1es__client.html#ab6af53222b1d537f4032c9ea03a3d53f">graphene::utilities::es_client</a>
+</li>
+<li>check_version_7_or_above()
+: <a class="el" href="classgraphene_1_1utilities_1_1es__client.html#a92d192b91a265128dd07a2e1e490aa08">graphene::utilities::es_client</a>
+</li>
 <li>child()
 : <a class="el" href="classfc_1_1ecc_1_1private__key.html#a40b27d62eab21bdff688d45b4ef2b6a1">fc::ecc::private_key</a>
 , <a class="el" href="classfc_1_1ecc_1_1public__key.html#a18b332ed5ccee4bea959fb85120b2837">fc::ecc::public_key</a>
@@ -263,7 +269,7 @@ $(function() {
 </li>
 <li>claim_asset_fee_pool()
 : <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#adc513fec250400f164683f673c6e2043">graphene::wallet::detail::wallet_api_impl</a>
-, <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#a66ce4cd981d358af520b8f37e5b68a5c">graphene::wallet::wallet_api</a>
+, <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#a6a47abb24f8ce2bfbc2c71176e49c18a">graphene::wallet::wallet_api</a>
 </li>
 <li>clean()
 : <a class="el" href="classfc_1_1static__variant.html#a53f125b737e8ea2c32e11b9614baebc5">fc::static_variant&lt; Types &gt;</a>
@@ -302,7 +308,7 @@ $(function() {
 </li>
 <li>clear_peer_database()
 : <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a039c41617cdee0e42043232178681b7e">graphene::net::detail::node_impl</a>
-, <a class="el" href="classgraphene_1_1net_1_1node.html#a7e4b8fdf179a0bfc9a3046765e1faa4b">graphene::net::node</a>
+, <a class="el" href="classgraphene_1_1net_1_1node.html#a9722af2ddfd9b22d21bf2922cf28701d">graphene::net::node</a>
 </li>
 <li>clear_pending()
 : <a class="el" href="classgraphene_1_1chain_1_1database.html#af1c4e067598a0318e728b1d28df7a598">graphene::chain::database</a>
@@ -317,8 +323,8 @@ $(function() {
 : <a class="el" href="classfc_1_1rpc_1_1cli.html#a778fed83d5fcb81dd454e075e84c4649">fc::rpc::cli</a>
 </li>
 <li>clone()
-: <a class="el" href="classgraphene_1_1db_1_1abstract__object.html#a189144fd7eef0317898bc83b30b143c6">graphene::db::abstract_object&lt; DerivedClass &gt;</a>
-, <a class="el" href="classgraphene_1_1db_1_1object.html#a9bb81d095c87d1512465b5e5262c14ce">graphene::db::object</a>
+: <a class="el" href="classgraphene_1_1db_1_1base__abstract__object.html#af3a4c0e78138f72a0e5fd120f4105488">graphene::db::base_abstract_object&lt; DerivedClass &gt;</a>
+, <a class="el" href="classgraphene_1_1db_1_1object.html#a338c362d7ad8dec65847ed1621b0364a">graphene::db::object</a>
 </li>
 <li>close()
 : <a class="el" href="classfc_1_1asio_1_1ostream.html#a452ac1d8b8be67a81ebc9d9f79f12bf1">fc::asio::ostream&lt; AsyncWriteStream &gt;</a>
@@ -343,7 +349,7 @@ $(function() {
 , <a class="el" href="classgraphene_1_1db_1_1object__database.html#a076e75fbe95c3cbd0bf637c258973533">graphene::db::object_database</a>
 , <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#afb067749224cc7c562a3f66d58aa6ab9">graphene::net::detail::node_impl</a>
 , <a class="el" href="classgraphene_1_1net_1_1detail_1_1peer__database__impl.html#a09b794724d0b175f15e92ad51f8ec163">graphene::net::detail::peer_database_impl</a>
-, <a class="el" href="classgraphene_1_1net_1_1node.html#ac4c9d53582644a76d462f2b9dfbcc778">graphene::net::node</a>
+, <a class="el" href="classgraphene_1_1net_1_1node.html#a418707491103c7198854fc7bf5794e0a">graphene::net::node</a>
 , <a class="el" href="classgraphene_1_1net_1_1peer__database.html#ad8223c9113c2678e86fd3324a3973bb6">graphene::net::peer_database</a>
 , <a class="el" href="classgraphene_1_1net_1_1stcp__socket.html#a6acc99736fd33793e614ea47604602dd">graphene::net::stcp_socket</a>
 </li>
@@ -413,16 +419,16 @@ $(function() {
 , <a class="el" href="classfc_1_1tcp__socket.html#a949e343c2577fda54cc0a28dd9c4510f">fc::tcp_socket</a>
 , <a class="el" href="classgraphene_1_1net_1_1detail_1_1message__oriented__connection__impl.html#ae7532ded1cb8155cc2129bd1b6ac41cc">graphene::net::detail::message_oriented_connection_impl</a>
 , <a class="el" href="classgraphene_1_1net_1_1message__oriented__connection.html#aad4156d7add370d037d08d8a9c87f044">graphene::net::message_oriented_connection</a>
-, <a class="el" href="classgraphene_1_1net_1_1peer__connection.html#a4b8f6e10e54cfcc48c6acd7718435d08">graphene::net::peer_connection</a>
+, <a class="el" href="classgraphene_1_1net_1_1peer__connection.html#aec736bf3b2eca62ac3525397a85ad5d0">graphene::net::peer_connection</a>
 , <a class="el" href="classgraphene_1_1net_1_1stcp__socket.html#ab01ab9f977a617146c10f9e66848aa4a">graphene::net::stcp_socket</a>
 </li>
 <li>connect_to_endpoint()
 : <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a755019f341d8eeaff540d4140f6dea2a">graphene::net::detail::node_impl</a>
-, <a class="el" href="classgraphene_1_1net_1_1node.html#ab641ac0582547b4298468240d83835b5">graphene::net::node</a>
+, <a class="el" href="classgraphene_1_1net_1_1node.html#a0990bd2f15136931d2b6f0e728dca723">graphene::net::node</a>
 </li>
 <li>connect_to_p2p_network()
 : <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#ad205a6a0dbad9504fdf2356bb3777c33">graphene::net::detail::node_impl</a>
-, <a class="el" href="classgraphene_1_1net_1_1node.html#a9d0cfd3d3e9df5eb378f669c2637fc22">graphene::net::node</a>
+, <a class="el" href="classgraphene_1_1net_1_1node.html#a9af7cf0a283b9e043ed64cad5afa8936">graphene::net::node</a>
 </li>
 <li>connect_to_task()
 : <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a33ffea48a4c2a5dda0882b07ee911e58">graphene::net::detail::node_impl</a>
@@ -448,14 +454,14 @@ $(function() {
 : <a class="el" href="classfc_1_1console__appender.html#a8f9dddd4a61b22543229631f43ace3d2">fc::console_appender</a>
 </li>
 <li>const_iterator()
-: <a class="el" href="classgraphene_1_1db_1_1simple__index_1_1const__iterator.html#ad8887bb52d95da40e56b5dac520c14d6">graphene::db::simple_index&lt; T &gt;::const_iterator</a>
+: <a class="el" href="classgraphene_1_1db_1_1simple__index_1_1const__iterator.html#a7c47681a95d9d193e81e1c1714141a9c">graphene::db::simple_index&lt; T &gt;::const_iterator</a>
 </li>
 <li>construct()
 : <a class="el" href="structfc_1_1static__variant_1_1import__helper.html#a9f56e4a9b31210b239e68bdeb276884e">fc::static_variant&lt; Types &gt;::import_helper&lt; T, typename &gt;</a>
 , <a class="el" href="structfc_1_1static__variant_1_1import__helper_3_01_t_00_01type__in__typelist_3_01_t_01_4_01_4.html#a5ef1ae9af8589fc997aaf73864980680">fc::static_variant&lt; Types &gt;::import_helper&lt; T, type_in_typelist&lt; T &gt; &gt;</a>
 </li>
 <li>contains()
-: <a class="el" href="classfc_1_1bloom__filter.html#a804653831725e9cf0fa9d6e7172c92e0">fc::bloom_filter</a>
+: <a class="el" href="classfc_1_1bloom__filter.html#a8d8fa605fe3266a8381b3d89bd39dbf0">fc::bloom_filter</a>
 , <a class="el" href="classfc_1_1variant__object.html#ae4ed31b7cb6bc6e1d2873f9121049589">fc::variant_object</a>
 , <a class="el" href="classgraphene_1_1chain_1_1block__database.html#a9f0b40e642eb9acd7513bd52e6df79bf">graphene::chain::block_database</a>
 </li>
@@ -474,7 +480,7 @@ $(function() {
 </li>
 <li>copy_wallet_file()
 : <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#ae0964b39f0b10a9a34408c1fd026fa09">graphene::wallet::detail::wallet_api_impl</a>
-, <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#a3b0edcbb6c620a617dbd0368eaba258a">graphene::wallet::wallet_api</a>
+, <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#a8085cb0f09314659fda0378a7c2d18fb">graphene::wallet::wallet_api</a>
 </li>
 <li>count()
 : <a class="el" href="classfc_1_1microseconds.html#ad510f79ef3c9b3d54fb16ef2d2c457b5">fc::microseconds</a>
@@ -484,14 +490,14 @@ $(function() {
 : <a class="el" href="classfc_1_1appender.html#a732132f519fa52070b43d1bda25baff0">fc::appender</a>
 , <a class="el" href="classfc_1_1appender__factory.html#ad16e56f8e6145ce1cb7280d05521f08e">fc::appender_factory</a>
 , <a class="el" href="classfc_1_1detail_1_1appender__factory__impl.html#a2c2697be7b6738ca12c8be83edb9d159">fc::detail::appender_factory_impl&lt; T &gt;</a>
-, <a class="el" href="classfc_1_1promise.html#aea1eedc4d2baf928b35a69eba569cdd2">fc::promise&lt; T &gt;</a>
-, <a class="el" href="classfc_1_1promise_3_01void_01_4.html#a398b075be8e23f588cf292acbea4f203">fc::promise&lt; void &gt;</a>
+, <a class="el" href="classfc_1_1promise.html#a312c47f89eaaabe5737b89efd5ee87e2">fc::promise&lt; T &gt;</a>
+, <a class="el" href="classfc_1_1promise_3_01void_01_4.html#a8a80df6e6f426be5d5f82fd5ef6cbf82">fc::promise&lt; void &gt;</a>
 , <a class="el" href="classfc_1_1task.html#a949bfc2763cb8de0e64894f2eede3000">fc::task&lt; R, FunctorSize &gt;</a>
 , <a class="el" href="classfc_1_1task_3_01void_00_01_functor_size_01_4.html#a6188813464c27cd20f22b75d5125fcb5">fc::task&lt; void, FunctorSize &gt;</a>
-, <a class="el" href="classgraphene_1_1db_1_1generic__index.html#a980c6c1e00630ff783bdd5d3e2ca11a1">graphene::db::generic_index&lt; ObjectType, MultiIndexType &gt;</a>
+, <a class="el" href="classgraphene_1_1db_1_1generic__index.html#ac98e457427a6cdf8f0451cb70efbb092">graphene::db::generic_index&lt; ObjectType, MultiIndexType &gt;</a>
 , <a class="el" href="classgraphene_1_1db_1_1index.html#a5498269afc8b822043d4d1e0b7b5a75e">graphene::db::index</a>
 , <a class="el" href="classgraphene_1_1db_1_1object__database.html#a8ab509742fb251702ee056ee234d94fa">graphene::db::object_database</a>
-, <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a2a92435bc15bd2c4e160e5a56a321caf">graphene::db::primary_index&lt; DerivedIndex, DirectBits &gt;</a>
+, <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a79d8e7f65089a24bdd7cf0cbd364dd45">graphene::db::primary_index&lt; DerivedIndex, DirectBits &gt;</a>
 , <a class="el" href="classgraphene_1_1db_1_1simple__index.html#aa25decba8c3502467dfe170fcbe9a590">graphene::db::simple_index&lt; T &gt;</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1attribute__assertion.html#a931a952615fa7a64c3ce6ec5b3fd8a12">graphene::protocol::attribute_assertion&lt; Field &gt;</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1attribute__assertion_3_01extension_3_01_extension_01_4_01_4.html#a1dd6c04902188b0faed27756bed571bd">graphene::protocol::attribute_assertion&lt; extension&lt; Extension &gt; &gt;</a>
@@ -502,41 +508,44 @@ $(function() {
 </li>
 <li>create_account_with_brain_key()
 : <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a70387f10574b627ff6bdfc904d1a86e8">graphene::wallet::detail::wallet_api_impl</a>
-, <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#ac27928f7ca6db74e0ec4aee3ff0c545e">graphene::wallet::wallet_api</a>
+, <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#ab6bc50cf69d60b973b9a4495bb477098">graphene::wallet::wallet_api</a>
 </li>
 <li>create_account_with_private_key()
 : <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#af8778b031938d2bc69423188b7e85763">graphene::wallet::detail::wallet_api_impl</a>
 </li>
 <li>create_asset()
 : <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#af19c2b3a8a8a5d6b054cef895625281b">graphene::wallet::detail::wallet_api_impl</a>
-, <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#ae3028048916580695639fee8e9d815be">graphene::wallet::wallet_api</a>
+, <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#aedb1296570ee323d26882a05de65627f">graphene::wallet::wallet_api</a>
 </li>
 <li>create_blind_account()
-: <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#a85d711119140bbe2ff73599baee48866">graphene::wallet::wallet_api</a>
+: <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#ac5d212d6f005b5d677de4264b5d44c27">graphene::wallet::wallet_api</a>
 </li>
 <li>create_blockchain_synopsis_for_peer()
 : <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#ad1a727ecd0ade790a08abcf17a7b026e">graphene::net::detail::node_impl</a>
 </li>
 <li>create_committee_member()
 : <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a665798eb5f5a588e966ff4315aa6785a">graphene::wallet::detail::wallet_api_impl</a>
-, <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#ad0c4d2890ab300fc2388bbe26bf15559">graphene::wallet::wallet_api</a>
+, <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#a8e9295dcce0fdfd7332aef45a889233d">graphene::wallet::wallet_api</a>
+</li>
+<li>create_default_address_builder()
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl_1_1address__builder.html#a6841489a03f21223a7423efd033ee96c">graphene::net::detail::node_impl::address_builder</a>
 </li>
 <li>create_witness()
 : <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#aa6c205d2b1cebdb0ce2b2a50341b0861">graphene::wallet::detail::wallet_api_impl</a>
-, <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#a73d443a0961938c685d29277a0e4830f">graphene::wallet::wallet_api</a>
+, <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#aec3cf685f603bb13a296c13e5bec1ad8">graphene::wallet::wallet_api</a>
 </li>
 <li>create_worker()
 : <a class="el" href="classgraphene_1_1wallet_1_1detail_1_1wallet__api__impl.html#a794e23ef7f8e4777e317a4c6b5aa1dc8">graphene::wallet::detail::wallet_api_impl</a>
-, <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#a85d25eaf8c6f749420e93fad46bc79cb">graphene::wallet::wallet_api</a>
+, <a class="el" href="classgraphene_1_1wallet_1_1wallet__api.html#ae42f043a481a8541a356ccc7b8a0c89d">graphene::wallet::wallet_api</a>
 </li>
 <li>credit_deal_expired_operation()
-: <a class="el" href="structgraphene_1_1protocol_1_1credit__deal__expired__operation.html#afbf3488301204dbd79f23bae1420aaa5">graphene::protocol::credit_deal_expired_operation</a>
+: <a class="el" href="structgraphene_1_1protocol_1_1credit__deal__expired__operation.html#ad9f2745a788b43af0a006fad61f36d1a">graphene::protocol::credit_deal_expired_operation</a>
 </li>
 <li>crypto()
-: <a class="el" href="classgraphene_1_1app_1_1login__api.html#ac43bf9cb81b730453750306b5ff954e8">graphene::app::login_api</a>
+: <a class="el" href="classgraphene_1_1app_1_1login__api.html#a328720ccef391ade312d9cc369d74f87">graphene::app::login_api</a>
 </li>
-<li>crypto_api()
-: <a class="el" href="classgraphene_1_1app_1_1crypto__api.html#adcb829f4fc90959164d92b4b285e8085">graphene::app::crypto_api</a>
+<li>curl_wrapper()
+: <a class="el" href="classgraphene_1_1utilities_1_1curl__wrapper.html#a05eba178af9e6f1860020a2a2e0828c0">graphene::utilities::curl_wrapper</a>
 </li>
 <li>current()
 : <a class="el" href="classfc_1_1thread.html#a21e963c53c2219f519bcf378f4def1a4">fc::thread</a>
@@ -551,10 +560,10 @@ $(function() {
 : <a class="el" href="classfc_1_1thread.html#a69b2d5329243ae2085cb45caf16708de">fc::thread</a>
 </li>
 <li>current_time_reply_message()
-: <a class="el" href="structgraphene_1_1net_1_1current__time__reply__message.html#a7c3f084e44815ef30c107b7f9cea48dd">graphene::net::current_time_reply_message</a>
+: <a class="el" href="structgraphene_1_1net_1_1current__time__reply__message.html#a7fc818bc888b08cd3709b17c2330f171">graphene::net::current_time_reply_message</a>
 </li>
 <li>current_time_request_message()
-: <a class="el" href="structgraphene_1_1net_1_1current__time__request__message.html#ab7953b7de9b4c620a95ad0f471d9f439">graphene::net::current_time_request_message</a>
+: <a class="el" href="structgraphene_1_1net_1_1current__time__request__message.html#ae17acdb0f038fb89c10975162a900155">graphene::net::current_time_request_message</a>
 </li>
 <li>custom_generic_evaluator()
 : <a class="el" href="classgraphene_1_1custom__operations_1_1custom__generic__evaluator.html#af2821f5f5cd4fd70f11ee11559140418">graphene::custom_operations::custom_generic_evaluator</a>
@@ -563,7 +572,7 @@ $(function() {
 : <a class="el" href="structgraphene_1_1custom__operations_1_1detail_1_1custom__op__visitor.html#a95c70c24a3a9178f31c2d36ab4cbfc8b">graphene::custom_operations::detail::custom_op_visitor</a>
 </li>
 <li>custom_operations()
-: <a class="el" href="classgraphene_1_1app_1_1login__api.html#a8cdbf6d273e383ef3a66ce8762db3b9b">graphene::app::login_api</a>
+: <a class="el" href="classgraphene_1_1app_1_1login__api.html#a2d18cf34f9378d64a93d8d24c1579125">graphene::app::login_api</a>
 </li>
 <li>custom_operations_api()
 : <a class="el" href="classgraphene_1_1app_1_1custom__operations__api.html#a5700459ed2913c05f10ef9e4eacf2b1b">graphene::app::custom_operations_api</a>
@@ -578,7 +587,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:59 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:48 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

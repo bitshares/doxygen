@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -72,16 +72,17 @@ $(function() {
 <p>This is the complete list of members for <a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#ad323ac65b6257cad103596166dd63af0">addr</a></td><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#a93aaa5f9a4a259ad11c0ff7ba27990eb">is_valid</a>() const</td><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#a22b4dd27236e91cbe66235da9b3f0060">operator std::string</a>() const</td><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#aafbe1214a62ca7f4cf809f488a615dbe">pts_address</a>()</td><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#aaa69ebbe5787581654312a783019e8ab">pts_address</a>(const std::string &amp;base58str)</td><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#a29b305970f0b7bfc23b28fb5b405e9ae">pts_address</a>(const fc::ecc::public_key &amp;pub, bool compressed=true, uint8_t version=56)</td><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#a29cac6ed797ea38d966d4c07d7170832">version</a>() const</td><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#a6d7cfaac2d02783882ceb721857e290f">default_version</a></td><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#a93aaa5f9a4a259ad11c0ff7ba27990eb">is_valid</a>() const</td><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#a22b4dd27236e91cbe66235da9b3f0060">operator std::string</a>() const</td><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#aafbe1214a62ca7f4cf809f488a615dbe">pts_address</a>()</td><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#aaa69ebbe5787581654312a783019e8ab">pts_address</a>(const std::string &amp;base58str)</td><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#a73de69fb20543a78bfe2bc0fa6fe777d">pts_address</a>(const fc::ecc::public_key &amp;pub, bool compressed=true, uint8_t version=default_version)</td><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#a29cac6ed797ea38d966d4c07d7170832">version</a>() const</td><td class="entry"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:58 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:48 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

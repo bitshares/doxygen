@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -77,10 +77,6 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac494085c49bbcf47d52912c072c44dc7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1account__history_1_1detail_1_1account__history__plugin__impl.html#ac494085c49bbcf47d52912c072c44dc7">account_history_plugin_impl</a> (<a class="el" href="classgraphene_1_1account__history_1_1account__history__plugin.html">account_history_plugin</a> &amp;_plugin)</td></tr>
 <tr class="separator:ac494085c49bbcf47d52912c072c44dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9cbcd5fbfe7d6802a33ba9c641d0ce8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1account__history_1_1detail_1_1account__history__plugin__impl.html#ae9cbcd5fbfe7d6802a33ba9c641d0ce8">update_account_histories</a> (const signed_block &amp;b)</td></tr>
-<tr class="separator:ae9cbcd5fbfe7d6802a33ba9c641d0ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d358c78ecad47aad90267189c16b645"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1chain_1_1database.html">graphene::chain::database</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1account__history_1_1detail_1_1account__history__plugin__impl.html#a0d358c78ecad47aad90267189c16b645">database</a> ()</td></tr>
-<tr class="separator:a0d358c78ecad47aad90267189c16b645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -89,7 +85,7 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="account__history__plugin_8cpp_source.html#l00046">46</a> of file <a class="el" href="account__history__plugin_8cpp_source.html">account_history_plugin.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="account__history__plugin_8cpp_source.html#l00048">48</a> of file <a class="el" href="account__history__plugin_8cpp_source.html">account_history_plugin.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac494085c49bbcf47d52912c072c44dc7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac494085c49bbcf47d52912c072c44dc7">&#9670;&nbsp;</a></span>account_history_plugin_impl()</h2>
@@ -115,56 +111,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="account__history__plugin_8cpp_source.html#l00049">49</a> of file <a class="el" href="account__history__plugin_8cpp_source.html">account_history_plugin.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0d358c78ecad47aad90267189c16b645"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d358c78ecad47aad90267189c16b645">&#9670;&nbsp;</a></span>database()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classgraphene_1_1chain_1_1database.html">graphene::chain::database</a>&amp; graphene::account_history::detail::account_history_plugin_impl::database </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="account__history__plugin_8cpp_source.html#l00058">58</a> of file <a class="el" href="account__history__plugin_8cpp_source.html">account_history_plugin.cpp</a>.</p>
-
-</div>
-</div>
-<a id="ae9cbcd5fbfe7d6802a33ba9c641d0ce8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9cbcd5fbfe7d6802a33ba9c641d0ce8">&#9670;&nbsp;</a></span>update_account_histories()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void graphene::account_history::detail::account_history_plugin_impl::update_account_histories </td>
-          <td>(</td>
-          <td class="paramtype">const signed_block &amp;&#160;</td>
-          <td class="paramname"><em>b</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>this method is called as a callback after a block is applied and will process/index all operations that were applied in the block. </p>
-
-<p class="definition">Definition at line <a class="el" href="account__history__plugin_8cpp_source.html#l00080">80</a> of file <a class="el" href="account__history__plugin_8cpp_source.html">account_history_plugin.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="account__history__plugin_8cpp_source.html#l00051">51</a> of file <a class="el" href="account__history__plugin_8cpp_source.html">account_history_plugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -189,7 +136,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="account__history__plugin_8cpp_source.html#l00063">63</a> of file <a class="el" href="account__history__plugin_8cpp_source.html">account_history_plugin.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="account__history__plugin_8cpp_source.html#l00066">66</a> of file <a class="el" href="account__history__plugin_8cpp_source.html">account_history_plugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -199,7 +146,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:56 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:46 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -12,6 +12,7 @@ var searchData=
   ['market_5fticker_5fobject',['market_ticker_object',['../structgraphene_1_1market__history_1_1market__ticker__object.html',1,'graphene::market_history']]],
   ['market_5ftrade',['market_trade',['../structgraphene_1_1app_1_1market__trade.html',1,'graphene::app']]],
   ['market_5fvolume',['market_volume',['../structgraphene_1_1app_1_1market__volume.html',1,'graphene::app']]],
+  ['maybe_5fsigned_5fblock_5fheader',['maybe_signed_block_header',['../structgraphene_1_1app_1_1maybe__signed__block__header.html',1,'graphene::app']]],
   ['member_5fname',['member_name',['../structfc_1_1member__names_1_1member__name.html',1,'fc::member_names']]],
   ['member_5fname_3c_20graphene_3a_3adb_3a_3aobject_5fid_3c_20s_2c_20t_20_3e_2c_200_20_3e',['member_name&lt; graphene::db::object_id&lt; S, T &gt;, 0 &gt;',['../structfc_1_1member__names_1_1member__name_3_01graphene_1_1db_1_1object__id_3_01_s_00_01_t_01_4_00_010_01_4.html',1,'fc::member_names']]],
   ['memo_5fdata',['memo_data',['../structgraphene_1_1protocol_1_1memo__data.html',1,'graphene::protocol::memo_data'],['../structgraphene_1_1protocol_1_1stealth__confirmation_1_1memo__data.html',1,'graphene::protocol::stealth_confirmation::memo_data']]],

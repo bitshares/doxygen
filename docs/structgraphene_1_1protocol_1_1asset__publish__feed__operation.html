@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -102,6 +102,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad9a56625142d8670f2e0febc8a42cb64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1asset__publish__feed__operation.html#ad9a56625142d8670f2e0febc8a42cb64">validate</a> () const</td></tr>
 <tr class="separator:ad9a56625142d8670f2e0febc8a42cb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structgraphene_1_1protocol_1_1base__operation"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structgraphene_1_1protocol_1_1base__operation')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structgraphene_1_1protocol_1_1base__operation.html">graphene::protocol::base_operation</a></td></tr>
+<tr class="memitem:a04ac6688e2df1d511514e4fc1983b828 inherit pub_methods_structgraphene_1_1protocol_1_1base__operation"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1base__operation.html#a04ac6688e2df1d511514e4fc1983b828">~base_operation</a> ()=default</td></tr>
+<tr class="separator:a04ac6688e2df1d511514e4fc1983b828 inherit pub_methods_structgraphene_1_1protocol_1_1base__operation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0be44badcee9a648413eb906dac1d3b3 inherit pub_methods_structgraphene_1_1protocol_1_1base__operation"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a0be44badcee9a648413eb906dac1d3b3 inherit pub_methods_structgraphene_1_1protocol_1_1base__operation"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1protocol.html#a69b2104c1c11eed2d17bd29b86713347">share_type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1base__operation.html#a0be44badcee9a648413eb906dac1d3b3">calculate_fee</a> (const T &amp;params) const</td></tr>
 <tr class="separator:a0be44badcee9a648413eb906dac1d3b3 inherit pub_methods_structgraphene_1_1protocol_1_1base__operation"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,7 +142,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Price feed providers use this operation to publish their price feeds for market-issued assets. A price feed is used to tune the market for a particular market-issued asset. For each value in the feed, the median across all committee_member feeds for that asset is calculated and the market for the asset is configured with the median of that value. </p>
 <p>The feed in the operation contains three prices: a call price limit, a short price limit, and a settlement price. The call limit price is structured as (collateral asset) / (debt asset) and the short limit price is structured as (asset for sale) / (collateral asset). Note that the asset IDs are opposite to eachother, so if we're publishing a feed for USD, the call limit price will be CORE/USD and the short limit price will be USD/CORE. The settlement price may be flipped either direction, as long as it is a ratio between the market-issued asset and its collateral. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00457">457</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00462">462</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aad4cbde23089106e3d6d11dade15cbb7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aad4cbde23089106e3d6d11dade15cbb7">&#9670;&nbsp;</a></span>fee_payer()</h2>
@@ -165,7 +167,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00473">473</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00478">478</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
 
 </div>
 </div>
@@ -213,7 +215,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>asset for which the feed is published </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00469">469</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00474">474</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
 
 </div>
 </div>
@@ -229,7 +231,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00471">471</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00476">476</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
 
 </div>
 </div>
@@ -247,7 +249,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>paid for by publisher </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00467">467</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00472">472</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
 
 </div>
 </div>
@@ -263,7 +265,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00470">470</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00475">475</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
 
 </div>
 </div>
@@ -279,7 +281,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00468">468</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__ops_8hpp_source.html#l00473">473</a> of file <a class="el" href="asset__ops_8hpp_source.html">asset_ops.hpp</a>.</p>
 
 </div>
 </div>
@@ -290,7 +292,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:58 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:48 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -85,8 +85,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html">graphene::db::object</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">base for all database objects  <a href="classgraphene_1_1db_1_1object.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html">graphene::db::abstract_object&lt; DerivedClass &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the Curiously Recurring Template Pattern to automatically add the ability to clone, serialize, and move objects polymorphically.  <a href="classgraphene_1_1db_1_1abstract__object.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__abstract__object.html">graphene::db::base_abstract_object&lt; DerivedClass &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the Curiously Recurring Template Pattern to automatically add the ability to clone, serialize, and move objects polymorphically.  <a href="classgraphene_1_1db_1_1base__abstract__object.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html">graphene::db::abstract_object&lt; DerivedClass, SpaceID, TypeID &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1annotated__object.html">graphene::db::annotated_object&lt; DerivedClass &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An object that is easily extended by providing pointers to other objects, one for each space.  <a href="classgraphene_1_1db_1_1annotated__object.html#details">More...</a><br /></td></tr>
@@ -106,8 +108,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a79ca14ce939452c7bdbad36c069fa317"><td class="memItemLeft" align="right" valign="top">typedef flat_map&lt; uint8_t, object_id_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1db.html#a79ca14ce939452c7bdbad36c069fa317">graphene::db::annotation_map</a></td></tr>
-<tr class="separator:a79ca14ce939452c7bdbad36c069fa317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3bf9f711511db0410d053ecb87a1003"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1db.html#af3bf9f711511db0410d053ecb87a1003">graphene::db::annotation_map</a> = fc::flat_map&lt; uint8_t, object_id_type &gt;</td></tr>
+<tr class="separator:af3bf9f711511db0410d053ecb87a1003"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a975fbcb7495d702b27dbbdb9fb149fa1"></a>
@@ -129,7 +131,7 @@ Typedefs</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:55 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:45 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

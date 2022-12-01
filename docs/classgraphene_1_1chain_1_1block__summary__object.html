@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -66,7 +66,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classgraphene_1_1chain_1_1block__summary__object-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">graphene::chain::block_summary_object Class Reference</div>  </div>
@@ -83,8 +82,9 @@ Inheritance diagram for graphene::chain::block_summary_object:</div>
  <div class="center">
   <img src="classgraphene_1_1chain_1_1block__summary__object.png" usemap="#graphene::chain::block_5Fsummary_5Fobject_map" alt=""/>
   <map id="graphene::chain::block_5Fsummary_5Fobject_map" name="graphene::chain::block_5Fsummary_5Fobject_map">
-<area href="classgraphene_1_1db_1_1abstract__object.html" alt="graphene::db::abstract_object&lt; block_summary_object &gt;" shape="rect" coords="0,56,330,80"/>
-<area href="classgraphene_1_1db_1_1object.html" title="base for all database objects " alt="graphene::db::object" shape="rect" coords="0,0,330,24"/>
+<area href="classgraphene_1_1db_1_1abstract__object.html" alt="graphene::db::abstract_object&lt; block_summary_object, implementation_ids, impl_block_summary_object_type &gt;" shape="rect" coords="0,112,641,136"/>
+<area href="classgraphene_1_1db_1_1base__abstract__object.html" alt="graphene::db::base_abstract_object&lt; block_summary_object &gt;" shape="rect" coords="0,56,641,80"/>
+<area href="classgraphene_1_1db_1_1object.html" title="base for all database objects " alt="graphene::db::object" shape="rect" coords="0,0,641,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -96,30 +96,34 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a2ce812569d565a45dda1420cfbdf79ad inherit pub_attribs_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#a2ce812569d565a45dda1420cfbdf79ad">id</a></td></tr>
 <tr class="separator:a2ce812569d565a45dda1420cfbdf79ad inherit pub_attribs_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a34b160d908fb508356ddc337880008e9"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1block__summary__object.html#a34b160d908fb508356ddc337880008e9">space_id</a> = implementation_ids</td></tr>
-<tr class="separator:a34b160d908fb508356ddc337880008e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ce0eaf4eeb8950e4eb5ab3b319d01fe"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1block__summary__object.html#a1ce0eaf4eeb8950e4eb5ab3b319d01fe">type_id</a> = impl_block_summary_object_type</td></tr>
-<tr class="separator:a1ce0eaf4eeb8950e4eb5ab3b319d01fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_methods_classgraphene_1_1db_1_1abstract__object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgraphene_1_1db_1_1abstract__object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classgraphene_1_1db_1_1abstract__object.html">graphene::db::abstract_object&lt; block_summary_object &gt;</a></td></tr>
-<tr class="memitem:a189144fd7eef0317898bc83b30b143c6 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memItemLeft" align="right" valign="top">virtual unique_ptr&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html#a189144fd7eef0317898bc83b30b143c6">clone</a> () const</td></tr>
-<tr class="memdesc:a189144fd7eef0317898bc83b30b143c6 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">these methods are implemented for derived classes by inheriting abstract_object&lt;DerivedClass&gt;  <a href="classgraphene_1_1db_1_1abstract__object.html#a189144fd7eef0317898bc83b30b143c6">More...</a><br /></td></tr>
-<tr class="separator:a189144fd7eef0317898bc83b30b143c6 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7329292e8fa9035cf2596d72c4868b5 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html#ad7329292e8fa9035cf2596d72c4868b5">move_from</a> (<a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj)</td></tr>
-<tr class="separator:ad7329292e8fa9035cf2596d72c4868b5 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f0f2e9eb0399057ff3334bf328b5007 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfc_1_1variant.html">variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html#a6f0f2e9eb0399057ff3334bf328b5007">to_variant</a> () const</td></tr>
-<tr class="separator:a6f0f2e9eb0399057ff3334bf328b5007 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a792a9c05cfe1cf7628cb6f8c4a65b0f7 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memItemLeft" align="right" valign="top">virtual vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html#a792a9c05cfe1cf7628cb6f8c4a65b0f7">pack</a> () const</td></tr>
-<tr class="separator:a792a9c05cfe1cf7628cb6f8c4a65b0f7 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classgraphene_1_1db_1_1abstract__object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgraphene_1_1db_1_1abstract__object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classgraphene_1_1db_1_1abstract__object.html">graphene::db::abstract_object&lt; block_summary_object, implementation_ids, impl_block_summary_object_type &gt;</a></td></tr>
+<tr class="memitem:a62b6a9a9290a38dc05763d920186872c inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html#a62b6a9a9290a38dc05763d920186872c">abstract_object</a> ()</td></tr>
+<tr class="separator:a62b6a9a9290a38dc05763d920186872c inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdd95dc811d3bf7dbdc9aa0251129f81 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1db_1_1object__id.html">object_id</a>&lt; SpaceID, TypeID &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html#abdd95dc811d3bf7dbdc9aa0251129f81">get_id</a> () const</td></tr>
+<tr class="separator:abdd95dc811d3bf7dbdc9aa0251129f81 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classgraphene_1_1db_1_1base__abstract__object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgraphene_1_1db_1_1base__abstract__object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classgraphene_1_1db_1_1base__abstract__object.html">graphene::db::base_abstract_object&lt; block_summary_object &gt;</a></td></tr>
+<tr class="memitem:af3a4c0e78138f72a0e5fd120f4105488 inherit pub_methods_classgraphene_1_1db_1_1base__abstract__object"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__abstract__object.html#af3a4c0e78138f72a0e5fd120f4105488">clone</a> () const override</td></tr>
+<tr class="separator:af3a4c0e78138f72a0e5fd120f4105488 inherit pub_methods_classgraphene_1_1db_1_1base__abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae411f8719b1a5d32781c71a06c2b9386 inherit pub_methods_classgraphene_1_1db_1_1base__abstract__object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__abstract__object.html#ae411f8719b1a5d32781c71a06c2b9386">move_from</a> (<a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj) override</td></tr>
+<tr class="separator:ae411f8719b1a5d32781c71a06c2b9386 inherit pub_methods_classgraphene_1_1db_1_1base__abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd7f3ea796b0f3ec9b4899b3e33e4b2 inherit pub_methods_classgraphene_1_1db_1_1base__abstract__object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1variant.html">fc::variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__abstract__object.html#a7dd7f3ea796b0f3ec9b4899b3e33e4b2">to_variant</a> () const override</td></tr>
+<tr class="separator:a7dd7f3ea796b0f3ec9b4899b3e33e4b2 inherit pub_methods_classgraphene_1_1db_1_1base__abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba1e81bf5d130ad4f61cc95c8c9861f inherit pub_methods_classgraphene_1_1db_1_1base__abstract__object"><td class="memItemLeft" align="right" valign="top">std::vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__abstract__object.html#a9ba1e81bf5d130ad4f61cc95c8c9861f">pack</a> () const override</td></tr>
+<tr class="separator:a9ba1e81bf5d130ad4f61cc95c8c9861f inherit pub_methods_classgraphene_1_1db_1_1base__abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classgraphene_1_1db_1_1object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgraphene_1_1db_1_1object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classgraphene_1_1db_1_1object.html">graphene::db::object</a></td></tr>
-<tr class="memitem:a64864992a46d9d52836afe1a52a2e394 inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#a64864992a46d9d52836afe1a52a2e394">object</a> ()</td></tr>
-<tr class="separator:a64864992a46d9d52836afe1a52a2e394 inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac457a859418c22014c07a3bcdc67ed04 inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#ac457a859418c22014c07a3bcdc67ed04">~object</a> ()</td></tr>
-<tr class="separator:ac457a859418c22014c07a3bcdc67ed04 inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57a6f64a9444b2f0fa0c937be480f54 inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#ae57a6f64a9444b2f0fa0c937be480f54">object</a> ()=default</td></tr>
+<tr class="separator:ae57a6f64a9444b2f0fa0c937be480f54 inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6d16d10de6c2e780d62918a458276f inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#abc6d16d10de6c2e780d62918a458276f">object</a> (uint8_t space_id, uint8_t type_id)</td></tr>
+<tr class="separator:abc6d16d10de6c2e780d62918a458276f inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f3fa315d81c80cd93cf5ea2853e65f inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#ae8f3fa315d81c80cd93cf5ea2853e65f">~object</a> ()=default</td></tr>
+<tr class="separator:ae8f3fa315d81c80cd93cf5ea2853e65f inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classgraphene_1_1db_1_1abstract__object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classgraphene_1_1db_1_1abstract__object')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classgraphene_1_1db_1_1abstract__object.html">graphene::db::abstract_object&lt; block_summary_object, implementation_ids, impl_block_summary_object_type &gt;</a></td></tr>
+<tr class="memitem:afb1fe30941a4e9e6d3ca3f4a55c9e59b inherit pub_static_attribs_classgraphene_1_1db_1_1abstract__object"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html#afb1fe30941a4e9e6d3ca3f4a55c9e59b">space_id</a></td></tr>
+<tr class="separator:afb1fe30941a4e9e6d3ca3f4a55c9e59b inherit pub_static_attribs_classgraphene_1_1db_1_1abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3d8c613dd39c1b04abfb7ac758246e6 inherit pub_static_attribs_classgraphene_1_1db_1_1abstract__object"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html#ab3d8c613dd39c1b04abfb7ac758246e6">type_id</a></td></tr>
+<tr class="separator:ab3d8c613dd39c1b04abfb7ac758246e6 inherit pub_static_attribs_classgraphene_1_1db_1_1abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>tracks minimal information about past blocks to implement TaPOS</p>
@@ -139,54 +143,6 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="block__summary__object_8hpp_source.html#l00046">46</a> of file <a class="el" href="block__summary__object_8hpp_source.html">block_summary_object.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a34b160d908fb508356ddc337880008e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34b160d908fb508356ddc337880008e9">&#9670;&nbsp;</a></span>space_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr uint8_t graphene::chain::block_summary_object::space_id = implementation_ids</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="block__summary__object_8hpp_source.html#l00043">43</a> of file <a class="el" href="block__summary__object_8hpp_source.html">block_summary_object.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a1ce0eaf4eeb8950e4eb5ab3b319d01fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ce0eaf4eeb8950e4eb5ab3b319d01fe">&#9670;&nbsp;</a></span>type_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr uint8_t graphene::chain::block_summary_object::type_id = impl_block_summary_object_type</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
 <p class="definition">Definition at line <a class="el" href="block__summary__object_8hpp_source.html#l00044">44</a> of file <a class="el" href="block__summary__object_8hpp_source.html">block_summary_object.hpp</a>.</p>
 
 </div>
@@ -197,7 +153,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:57 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:46 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

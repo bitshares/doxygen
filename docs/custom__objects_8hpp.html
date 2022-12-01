@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -67,9 +67,9 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">custom_objects.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -91,65 +91,32 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacegraphene_1_1custom__operations"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1custom__operations.html">graphene::custom_operations</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:af56e456d349b56f4699b16fe49225b1a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="custom__objects_8hpp.html#af56e456d349b56f4699b16fe49225b1a">CUSTOM_OPERATIONS_SPACE_ID</a>&#160;&#160;&#160;7</td></tr>
-<tr class="separator:af56e456d349b56f4699b16fe49225b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ee17fbc741d2950ae16fce291fc1b5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="custom__objects_8hpp.html#a6ee17fbc741d2950ae16fce291fc1b5a">CUSTOM_OPERATIONS_MAX_KEY_SIZE</a>&#160;&#160;&#160;(200)</td></tr>
-<tr class="separator:a6ee17fbc741d2950ae16fce291fc1b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a920c91f640d35f9924002cd330d50c8e"><td class="memItemLeft" align="right" valign="top">typedef multi_index_container&lt; account_storage_object, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt;, ordered_unique&lt; tag&lt; by_account_catalog_key &gt;, composite_key&lt; account_storage_object, member&lt; account_storage_object, account_id_type, &amp;account_storage_object::account &gt;, member&lt; account_storage_object, string, &amp;account_storage_object::catalog &gt;, member&lt; account_storage_object, string, &amp;account_storage_object::key &gt; &gt; &gt; &gt;&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1custom__operations.html#a920c91f640d35f9924002cd330d50c8e">graphene::custom_operations::account_storage_multi_index_type</a></td></tr>
-<tr class="separator:a920c91f640d35f9924002cd330d50c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a87f3830ba9c7885621b54e9af2c5be"><td class="memItemLeft" align="right" valign="top">typedef generic_index&lt; account_storage_object, account_storage_multi_index_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1custom__operations.html#a6a87f3830ba9c7885621b54e9af2c5be">graphene::custom_operations::account_storage_index</a></td></tr>
-<tr class="separator:a6a87f3830ba9c7885621b54e9af2c5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3341e56c1d60e2b0146d149400400f8c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1custom__operations.html#a3341e56c1d60e2b0146d149400400f8c">graphene::custom_operations::account_storage_id_type</a> = object_id&lt; <a class="el" href="custom__objects_8hpp.html#af56e456d349b56f4699b16fe49225b1a">CUSTOM_OPERATIONS_SPACE_ID</a>, account_map &gt;</td></tr>
-<tr class="separator:a3341e56c1d60e2b0146d149400400f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a639ae05bfff17329c510a477617b05b2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1custom__operations.html#a639ae05bfff17329c510a477617b05b2">graphene::custom_operations::account_storage_multi_idx_type</a> = multi_index_container&lt; account_storage_object, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt;, ordered_unique&lt; tag&lt; by_account_catalog_key &gt;, composite_key&lt; account_storage_object, member&lt; account_storage_object, account_id_type, &amp;account_storage_object::account &gt;, member&lt; account_storage_object, string, &amp;account_storage_object::catalog &gt;, member&lt; account_storage_object, string, &amp;account_storage_object::key &gt; &gt; &gt;, ordered_unique&lt; tag&lt; by_account_catalog &gt;, composite_key&lt; account_storage_object, member&lt; account_storage_object, account_id_type, &amp;account_storage_object::account &gt;, member&lt; account_storage_object, string, &amp;account_storage_object::catalog &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt;, ordered_unique&lt; tag&lt; by_account &gt;, composite_key&lt; account_storage_object, member&lt; account_storage_object, account_id_type, &amp;account_storage_object::account &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt;, ordered_unique&lt; tag&lt; by_catalog_key &gt;, composite_key&lt; account_storage_object, member&lt; account_storage_object, string, &amp;account_storage_object::catalog &gt;, member&lt; account_storage_object, string, &amp;account_storage_object::key &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt;, ordered_unique&lt; tag&lt; by_catalog &gt;, composite_key&lt; account_storage_object, member&lt; account_storage_object, string, &amp;account_storage_object::catalog &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt; &gt; &gt;</td></tr>
+<tr class="separator:a639ae05bfff17329c510a477617b05b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa663695e061b4c429faa1467d94a8a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1custom__operations.html#a7fa663695e061b4c429faa1467d94a8a">graphene::custom_operations::account_storage_index</a> = generic_index&lt; account_storage_object, account_storage_multi_idx_type &gt;</td></tr>
+<tr class="separator:a7fa663695e061b4c429faa1467d94a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5f07713b15ad24ba9defe67dd8f3b3e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1custom__operations.html#ae5f07713b15ad24ba9defe67dd8f3b3e">graphene::custom_operations::account_storage_id_type</a> = object_id&lt; account_storage_object::space_id, account_storage_object::type_id &gt;</td></tr>
+<tr class="separator:ae5f07713b15ad24ba9defe67dd8f3b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a9b2a9d63d6233be273c34417c52238f3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1custom__operations.html#a9b2a9d63d6233be273c34417c52238f3">graphene::custom_operations::types</a> { <a class="el" href="namespacegraphene_1_1custom__operations.html#a9b2a9d63d6233be273c34417c52238f3abd8fc2eb4001ae2a81c61b8dea12f102">graphene::custom_operations::account_map</a> = 0
+<tr class="memitem:ab15543ada193df05267afeba9688fe4c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1custom__operations.html#ab15543ada193df05267afeba9688fe4c">graphene::custom_operations::custom_operations_object_types</a> { <a class="el" href="namespacegraphene_1_1custom__operations.html#ab15543ada193df05267afeba9688fe4ca5c68783c08cf845d2bffae57ab658a1f">graphene::custom_operations::custom_operations_object_types::account_map</a> = 0
  }</td></tr>
-<tr class="separator:a9b2a9d63d6233be273c34417c52238f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ab15543ada193df05267afeba9688fe4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a38a2bbc9707f81894e6208d620dfc8fe"><td class="memItemLeft" align="right" valign="top">constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1custom__operations.html#a38a2bbc9707f81894e6208d620dfc8fe">graphene::custom_operations::CUSTOM_OPERATIONS_SPACE_ID</a> = 7</td></tr>
+<tr class="separator:a38a2bbc9707f81894e6208d620dfc8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a5677e1b195d8bf2798be1820c89f0d"><td class="memItemLeft" align="right" valign="top">constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1custom__operations.html#a8a5677e1b195d8bf2798be1820c89f0d">graphene::custom_operations::CUSTOM_OPERATIONS_MAX_KEY_SIZE</a> = 200</td></tr>
+<tr class="separator:a8a5677e1b195d8bf2798be1820c89f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a6ee17fbc741d2950ae16fce291fc1b5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ee17fbc741d2950ae16fce291fc1b5a">&#9670;&nbsp;</a></span>CUSTOM_OPERATIONS_MAX_KEY_SIZE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CUSTOM_OPERATIONS_MAX_KEY_SIZE&#160;&#160;&#160;(200)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="custom__objects_8hpp_source.html#l00037">37</a> of file <a class="el" href="custom__objects_8hpp_source.html">custom_objects.hpp</a>.</p>
-
-</div>
-</div>
-<a id="af56e456d349b56f4699b16fe49225b1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af56e456d349b56f4699b16fe49225b1a">&#9670;&nbsp;</a></span>CUSTOM_OPERATIONS_SPACE_ID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CUSTOM_OPERATIONS_SPACE_ID&#160;&#160;&#160;7</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="custom__objects_8hpp_source.html#l00034">34</a> of file <a class="el" href="custom__objects_8hpp_source.html">custom_objects.hpp</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:55 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:45 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

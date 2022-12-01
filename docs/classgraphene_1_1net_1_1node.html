@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -66,7 +66,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classgraphene_1_1net_1_1node-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">graphene::net::node Class Reference</div>  </div>
@@ -92,88 +92,92 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2c669ad34653238449e0dc0f33319281"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4123cfc1660d19fe6c48a468d8daced0"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a4123cfc1660d19fe6c48a468d8daced0">~node</a> ()</td></tr>
 <tr class="separator:a4123cfc1660d19fe6c48a468d8daced0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4c9d53582644a76d462f2b9dfbcc778"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#ac4c9d53582644a76d462f2b9dfbcc778">close</a> ()</td></tr>
-<tr class="separator:ac4c9d53582644a76d462f2b9dfbcc778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a418707491103c7198854fc7bf5794e0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a418707491103c7198854fc7bf5794e0a">close</a> () const</td></tr>
+<tr class="separator:a418707491103c7198854fc7bf5794e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a318f4bac4372181fea67aebfc5e85eae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a318f4bac4372181fea67aebfc5e85eae">set_node_delegate</a> (std::shared_ptr&lt; <a class="el" href="classgraphene_1_1net_1_1node__delegate.html">node_delegate</a> &gt; del) const</td></tr>
 <tr class="separator:a318f4bac4372181fea67aebfc5e85eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a682fe5c9d092497c926896589238d7f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a682fe5c9d092497c926896589238d7f4">load_configuration</a> (const <a class="el" href="classfc_1_1path.html">fc::path</a> &amp;configuration_directory)</td></tr>
-<tr class="separator:a682fe5c9d092497c926896589238d7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6822a9703c8258b2f7fe6d931c1bcead"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a6822a9703c8258b2f7fe6d931c1bcead">listen_to_p2p_network</a> ()</td></tr>
-<tr class="separator:a6822a9703c8258b2f7fe6d931c1bcead"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d0cfd3d3e9df5eb378f669c2637fc22"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a9d0cfd3d3e9df5eb378f669c2637fc22">connect_to_p2p_network</a> ()</td></tr>
-<tr class="separator:a9d0cfd3d3e9df5eb378f669c2637fc22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c9efd12182200c318357c0e4b169cb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a1c9efd12182200c318357c0e4b169cb9">add_node</a> (const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;ep)</td></tr>
-<tr class="separator:a1c9efd12182200c318357c0e4b169cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86172b9ef82a87c798737aa8ca0eaea3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a86172b9ef82a87c798737aa8ca0eaea3">add_seed_nodes</a> (std::vector&lt; std::string &gt; seeds)</td></tr>
-<tr class="separator:a86172b9ef82a87c798737aa8ca0eaea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05a64465adb288eb86ae1807ec7bd121"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a05a64465adb288eb86ae1807ec7bd121">add_seed_node</a> (const std::string &amp;in)</td></tr>
-<tr class="separator:a05a64465adb288eb86ae1807ec7bd121"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab641ac0582547b4298468240d83835b5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#ab641ac0582547b4298468240d83835b5">connect_to_endpoint</a> (const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;ep)</td></tr>
-<tr class="separator:ab641ac0582547b4298468240d83835b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a991b591d1102f031ed697e6097881e4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a991b591d1102f031ed697e6097881e4b">listen_on_endpoint</a> (const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;ep, bool wait_if_not_available)</td></tr>
-<tr class="separator:a991b591d1102f031ed697e6097881e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae99e0aa1005c9191147def9f7b1ceaa7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#ae99e0aa1005c9191147def9f7b1ceaa7">accept_incoming_connections</a> (bool accept)</td></tr>
-<tr class="separator:ae99e0aa1005c9191147def9f7b1ceaa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6b28ef513b383b9f7138667b02184f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#aa6b28ef513b383b9f7138667b02184f1">listen_on_port</a> (uint16_t port, bool wait_if_not_available)</td></tr>
-<tr class="separator:aa6b28ef513b383b9f7138667b02184f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e5d06dfb3e60cde6dffdae26e88ee8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a8e5d06dfb3e60cde6dffdae26e88ee8b">load_configuration</a> (const <a class="el" href="classfc_1_1path.html">fc::path</a> &amp;configuration_directory) const</td></tr>
+<tr class="separator:a8e5d06dfb3e60cde6dffdae26e88ee8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57153507060ee2f6d2a84455d3bb67de"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a57153507060ee2f6d2a84455d3bb67de">listen_to_p2p_network</a> () const</td></tr>
+<tr class="separator:a57153507060ee2f6d2a84455d3bb67de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9af7cf0a283b9e043ed64cad5afa8936"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a9af7cf0a283b9e043ed64cad5afa8936">connect_to_p2p_network</a> () const</td></tr>
+<tr class="separator:a9af7cf0a283b9e043ed64cad5afa8936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ded2b0e5a1a0fa896665e5786479cc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a4ded2b0e5a1a0fa896665e5786479cc1">add_node</a> (const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;ep) const</td></tr>
+<tr class="separator:a4ded2b0e5a1a0fa896665e5786479cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0faae1eee35ad141e77cb60cc04515c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#ae0faae1eee35ad141e77cb60cc04515c">add_seed_nodes</a> (const std::vector&lt; std::string &gt; &amp;seeds) const</td></tr>
+<tr class="separator:ae0faae1eee35ad141e77cb60cc04515c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9b21bbbc17423862eae33ecf636db4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#aa9b21bbbc17423862eae33ecf636db4a">add_seed_node</a> (const std::string &amp;in) const</td></tr>
+<tr class="separator:aa9b21bbbc17423862eae33ecf636db4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0990bd2f15136931d2b6f0e728dca723"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a0990bd2f15136931d2b6f0e728dca723">connect_to_endpoint</a> (const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;ep) const</td></tr>
+<tr class="separator:a0990bd2f15136931d2b6f0e728dca723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dae3a7f2e2201711c71d658e415a147"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a3dae3a7f2e2201711c71d658e415a147">set_listen_endpoint</a> (const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;ep, bool wait_if_not_available) const</td></tr>
+<tr class="separator:a3dae3a7f2e2201711c71d658e415a147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ce06e5a644755a996e4b204770dfb61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a6ce06e5a644755a996e4b204770dfb61">set_inbound_endpoint</a> (const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;ep) const</td></tr>
+<tr class="separator:a6ce06e5a644755a996e4b204770dfb61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac92b5b6e09941518381014cd8d72e3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#aac92b5b6e09941518381014cd8d72e3b">set_accept_incoming_connections</a> (bool accept) const</td></tr>
+<tr class="separator:aac92b5b6e09941518381014cd8d72e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67087014c8c39c711aa93dd878c0eaf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a67087014c8c39c711aa93dd878c0eaf4">set_connect_to_new_peers</a> (bool connect) const</td></tr>
+<tr class="separator:a67087014c8c39c711aa93dd878c0eaf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fef22cd953664b4056cd1f71b6e6d61"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a9fef22cd953664b4056cd1f71b6e6d61">get_actual_listening_endpoint</a> () const</td></tr>
 <tr class="separator:a9fef22cd953664b4056cd1f71b6e6d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf36284d44306b9fdc63b2ff90b83cc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#aaf36284d44306b9fdc63b2ff90b83cc6">set_advertise_algorithm</a> (const std::string &amp;algo, const std::vector&lt; std::string &gt; &amp;advertise_or_exclude_list=std::vector&lt; std::string &gt;()) const</td></tr>
+<tr class="separator:aaf36284d44306b9fdc63b2ff90b83cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab072cf9c0ca8c36b6b6daaa511f9a5c6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structgraphene_1_1net_1_1peer__status.html">peer_status</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#ab072cf9c0ca8c36b6b6daaa511f9a5c6">get_connected_peers</a> () const</td></tr>
 <tr class="separator:ab072cf9c0ca8c36b6b6daaa511f9a5c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1f05e77435c78faf711695e50c54480"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#ad1f05e77435c78faf711695e50c54480">get_connection_count</a> () const</td></tr>
 <tr class="separator:ad1f05e77435c78faf711695e50c54480"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6d4b416eeaf02adb40f698a60649935"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#aa6d4b416eeaf02adb40f698a60649935">broadcast</a> (const <a class="el" href="structgraphene_1_1net_1_1message.html">message</a> &amp;item_to_broadcast)</td></tr>
-<tr class="separator:aa6d4b416eeaf02adb40f698a60649935"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7db82bafe2fee73c4c81ebc2253f792d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a7db82bafe2fee73c4c81ebc2253f792d">broadcast_transaction</a> (const <a class="el" href="classgraphene_1_1protocol_1_1signed__transaction.html">signed_transaction</a> &amp;trx)</td></tr>
-<tr class="separator:a7db82bafe2fee73c4c81ebc2253f792d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66366a86787aad2a1062b96da4e2555a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a66366a86787aad2a1062b96da4e2555a">sync_from</a> (const <a class="el" href="structgraphene_1_1net_1_1item__id.html">item_id</a> &amp;current_head_block, const std::vector&lt; uint32_t &gt; &amp;hard_fork_block_numbers)</td></tr>
-<tr class="separator:a66366a86787aad2a1062b96da4e2555a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932698be6c2b2744b4437694e9382c8f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a932698be6c2b2744b4437694e9382c8f">broadcast</a> (const <a class="el" href="structgraphene_1_1net_1_1message.html">message</a> &amp;item_to_broadcast) const</td></tr>
+<tr class="separator:a932698be6c2b2744b4437694e9382c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55f8e00890eed3cb6714a13ab00f7c5a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a55f8e00890eed3cb6714a13ab00f7c5a">broadcast_transaction</a> (const <a class="el" href="classgraphene_1_1protocol_1_1signed__transaction.html">signed_transaction</a> &amp;trx) const</td></tr>
+<tr class="separator:a55f8e00890eed3cb6714a13ab00f7c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c95309d3a64468a5547289eafe054d0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a0c95309d3a64468a5547289eafe054d0">sync_from</a> (const <a class="el" href="structgraphene_1_1net_1_1item__id.html">item_id</a> &amp;current_head_block, const std::vector&lt; uint32_t &gt; &amp;hard_fork_block_numbers) const</td></tr>
+<tr class="separator:a0c95309d3a64468a5547289eafe054d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46a987337a98edfa76dc3b2a4ad88dbf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a46a987337a98edfa76dc3b2a4ad88dbf">is_connected</a> () const</td></tr>
 <tr class="separator:a46a987337a98edfa76dc3b2a4ad88dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefc421924f961065944cac2217e7934e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#aefc421924f961065944cac2217e7934e">set_advanced_node_parameters</a> (const <a class="el" href="classfc_1_1variant__object.html">fc::variant_object</a> &amp;params)</td></tr>
-<tr class="separator:aefc421924f961065944cac2217e7934e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18405cc828426c5f8d5055dd9fa5fee8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1variant__object.html">fc::variant_object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a18405cc828426c5f8d5055dd9fa5fee8">get_advanced_node_parameters</a> ()</td></tr>
-<tr class="separator:a18405cc828426c5f8d5055dd9fa5fee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23db84dfcabfef26f118224ee5b197bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1net_1_1message__propagation__data.html">message_propagation_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a23db84dfcabfef26f118224ee5b197bc">get_transaction_propagation_data</a> (const <a class="el" href="namespacegraphene_1_1protocol.html#a040f9f71bff896e89dc9ee3ff92bb076">graphene::protocol::transaction_id_type</a> &amp;transaction_id)</td></tr>
-<tr class="separator:a23db84dfcabfef26f118224ee5b197bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbd7f4c3a06ff7f8e3ddd94ca8ffcaaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1net_1_1message__propagation__data.html">message_propagation_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#acbd7f4c3a06ff7f8e3ddd94ca8ffcaaf">get_block_propagation_data</a> (const <a class="el" href="namespacegraphene_1_1protocol.html#a32e784a8edceba5506db2c130ed9cb9c">graphene::protocol::block_id_type</a> &amp;block_id)</td></tr>
-<tr class="separator:acbd7f4c3a06ff7f8e3ddd94ca8ffcaaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa997cb387c5768074c0fbd6a1b8a44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#affa997cb387c5768074c0fbd6a1b8a44">set_advanced_node_parameters</a> (const <a class="el" href="classfc_1_1variant__object.html">fc::variant_object</a> &amp;params) const</td></tr>
+<tr class="separator:affa997cb387c5768074c0fbd6a1b8a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95762ec255543304d178e3408e7cc5fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1variant__object.html">fc::variant_object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a95762ec255543304d178e3408e7cc5fe">get_advanced_node_parameters</a> () const</td></tr>
+<tr class="separator:a95762ec255543304d178e3408e7cc5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a280c060181b30f309c02d7e08fe01208"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1net_1_1message__propagation__data.html">message_propagation_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a280c060181b30f309c02d7e08fe01208">get_tx_propagation_data</a> (const <a class="el" href="namespacegraphene_1_1protocol.html#a040f9f71bff896e89dc9ee3ff92bb076">graphene::protocol::transaction_id_type</a> &amp;transaction_id) const</td></tr>
+<tr class="separator:a280c060181b30f309c02d7e08fe01208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f8f9522584d25cd2d317180a6f263a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1net_1_1message__propagation__data.html">message_propagation_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a54f8f9522584d25cd2d317180a6f263a">get_block_propagation_data</a> (const <a class="el" href="namespacegraphene_1_1protocol.html#a32e784a8edceba5506db2c130ed9cb9c">graphene::protocol::block_id_type</a> &amp;block_id) const</td></tr>
+<tr class="separator:a54f8f9522584d25cd2d317180a6f263a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a066ce24a4560d5ec31baf11c1abdcf16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1net.html#a557da170930e273d5a42e3541bd768e0">node_id_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a066ce24a4560d5ec31baf11c1abdcf16">get_node_id</a> () const</td></tr>
 <tr class="separator:a066ce24a4560d5ec31baf11c1abdcf16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e1af7fa5454cd1e0d8b44535780c4d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a8e1af7fa5454cd1e0d8b44535780c4d4">set_allowed_peers</a> (const std::vector&lt; <a class="el" href="namespacegraphene_1_1net.html#a557da170930e273d5a42e3541bd768e0">node_id_t</a> &gt; &amp;allowed_peers)</td></tr>
-<tr class="separator:a8e1af7fa5454cd1e0d8b44535780c4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e4b8fdf179a0bfc9a3046765e1faa4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a7e4b8fdf179a0bfc9a3046765e1faa4b">clear_peer_database</a> ()</td></tr>
-<tr class="separator:a7e4b8fdf179a0bfc9a3046765e1faa4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e89f58289f44789f8e8bb6157a6f98b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a9e89f58289f44789f8e8bb6157a6f98b">set_total_bandwidth_limit</a> (uint32_t upload_bytes_per_second, uint32_t download_bytes_per_second)</td></tr>
-<tr class="separator:a9e89f58289f44789f8e8bb6157a6f98b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25802795dc4273965239bb1c28de0df1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a25802795dc4273965239bb1c28de0df1">set_allowed_peers</a> (const std::vector&lt; <a class="el" href="namespacegraphene_1_1net.html#a557da170930e273d5a42e3541bd768e0">node_id_t</a> &gt; &amp;allowed_peers) const</td></tr>
+<tr class="separator:a25802795dc4273965239bb1c28de0df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9722af2ddfd9b22d21bf2922cf28701d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a9722af2ddfd9b22d21bf2922cf28701d">clear_peer_database</a> () const</td></tr>
+<tr class="separator:a9722af2ddfd9b22d21bf2922cf28701d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7f3c4d6f83095d892e0f2f308d89d37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#ab7f3c4d6f83095d892e0f2f308d89d37">set_total_bandwidth_limit</a> (uint32_t upload_bytes_per_second, uint32_t download_bytes_per_second) const</td></tr>
+<tr class="separator:ab7f3c4d6f83095d892e0f2f308d89d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a747c1dd9ddd21e12d19ba85eb1f2099c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1variant__object.html">fc::variant_object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a747c1dd9ddd21e12d19ba85eb1f2099c">network_get_info</a> () const</td></tr>
 <tr class="separator:a747c1dd9ddd21e12d19ba85eb1f2099c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38dfa87ec1909786a9d25d4a8fee9065"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1variant__object.html">fc::variant_object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a38dfa87ec1909786a9d25d4a8fee9065">network_get_usage_stats</a> () const</td></tr>
 <tr class="separator:a38dfa87ec1909786a9d25d4a8fee9065"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9701b6bae930a30e3b1a7c2c34211062"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structgraphene_1_1net_1_1potential__peer__record.html">potential_peer_record</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a9701b6bae930a30e3b1a7c2c34211062">get_potential_peers</a> () const</td></tr>
 <tr class="separator:a9701b6bae930a30e3b1a7c2c34211062"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25635e6a2b617401cb97dd9e036f9a6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a25635e6a2b617401cb97dd9e036f9a6d">disable_peer_advertising</a> ()</td></tr>
-<tr class="separator:a25635e6a2b617401cb97dd9e036f9a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f3de66f56468d3f446b91ad65b4de94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1variant__object.html">fc::variant_object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#a2f3de66f56468d3f446b91ad65b4de94">get_call_statistics</a> () const</td></tr>
 <tr class="separator:a2f3de66f56468d3f446b91ad65b4de94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:af09472fa1a74d277a959ae21548a7de4"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#af09472fa1a74d277a959ae21548a7de4">resolve_string_to_ip_endpoints</a> (const std::string &amp;in)</td></tr>
-<tr class="memdesc:af09472fa1a74d277a959ae21548a7de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to convert a string to a collection of endpoints.  <a href="#af09472fa1a74d277a959ae21548a7de4">More...</a><br /></td></tr>
-<tr class="separator:af09472fa1a74d277a959ae21548a7de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ad3a44f1cc1137524d1614a679556dc4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1net.html#a7b290bc6b0c3a9980345c3782507fbe5">node_impl_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1node.html#ad3a44f1cc1137524d1614a679556dc4b">my</a></td></tr>
+<tr class="separator:ad3a44f1cc1137524d1614a679556dc4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>provides application independent P2P broadcast and data synchronization </p>
-<p>Unanswered questions: when does the node start establishing network connections and accepting peers? we don't have enough info to start synchronizing until <a class="el" href="classgraphene_1_1net_1_1node.html#a66366a86787aad2a1062b96da4e2555a">sync_from()</a> is called, would we have any reason to connect before that? </p>
+<p>Unanswered questions: when does the node start establishing network connections and accepting peers? we don't have enough info to start synchronizing until <a class="el" href="classgraphene_1_1net_1_1node.html#a0c95309d3a64468a5547289eafe054d0">sync_from()</a> is called, would we have any reason to connect before that? </p>
 
-<p class="definition">Definition at line <a class="el" href="node_8hpp_source.html#l00189">189</a> of file <a class="el" href="node_8hpp_source.html">node.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8hpp_source.html#l00190">190</a> of file <a class="el" href="node_8hpp_source.html">node.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2c669ad34653238449e0dc0f33319281"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c669ad34653238449e0dc0f33319281">&#9670;&nbsp;</a></span>node()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">graphene::net::node::node </td>
@@ -183,9 +187,14 @@ Static Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04781">4781</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05068">5068</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -212,34 +221,13 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04787">4787</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05074">5074</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae99e0aa1005c9191147def9f7b1ceaa7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae99e0aa1005c9191147def9f7b1ceaa7">&#9670;&nbsp;</a></span>accept_incoming_connections()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void graphene::net::node::accept_incoming_connections </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>accept</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Call with true to enable listening for incoming connections </p>
-
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04828">4828</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a1c9efd12182200c318357c0e4b169cb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c9efd12182200c318357c0e4b169cb9">&#9670;&nbsp;</a></span>add_node()</h2>
+<a id="a4ded2b0e5a1a0fa896665e5786479cc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ded2b0e5a1a0fa896665e5786479cc1">&#9670;&nbsp;</a></span>add_node()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -249,18 +237,18 @@ Static Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;&#160;</td>
           <td class="paramname"><em>ep</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Add endpoint to internal level_map database of potential nodes to attempt to connect to. This database is consulted any time the number connected peers falls below the target. </p>
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04813">4813</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05100">5100</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a05a64465adb288eb86ae1807ec7bd121"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05a64465adb288eb86ae1807ec7bd121">&#9670;&nbsp;</a></span>add_seed_node()</h2>
+<a id="aa9b21bbbc17423862eae33ecf636db4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9b21bbbc17423862eae33ecf636db4a">&#9670;&nbsp;</a></span>add_seed_node()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -270,17 +258,17 @@ Static Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>in</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05174">5174</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05432">5432</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a86172b9ef82a87c798737aa8ca0eaea3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86172b9ef82a87c798737aa8ca0eaea3">&#9670;&nbsp;</a></span>add_seed_nodes()</h2>
+<a id="ae0faae1eee35ad141e77cb60cc04515c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0faae1eee35ad141e77cb60cc04515c">&#9670;&nbsp;</a></span>add_seed_nodes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -288,19 +276,19 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void graphene::net::node::add_seed_nodes </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
           <td class="paramname"><em>seeds</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05161">5161</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05419">5419</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="aa6d4b416eeaf02adb40f698a60649935"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6d4b416eeaf02adb40f698a60649935">&#9670;&nbsp;</a></span>broadcast()</h2>
+<a id="a932698be6c2b2744b4437694e9382c8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a932698be6c2b2744b4437694e9382c8f">&#9670;&nbsp;</a></span>broadcast()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -313,7 +301,7 @@ Static Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structgraphene_1_1net_1_1message.html">message</a> &amp;&#160;</td>
           <td class="paramname"><em>item_to_broadcast</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -324,12 +312,12 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Add message to outgoing inventory list, notify peers that I have a message ready. </p>
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04853">4853</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05145">5145</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a7db82bafe2fee73c4c81ebc2253f792d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7db82bafe2fee73c4c81ebc2253f792d">&#9670;&nbsp;</a></span>broadcast_transaction()</h2>
+<a id="a55f8e00890eed3cb6714a13ab00f7c5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55f8e00890eed3cb6714a13ab00f7c5a">&#9670;&nbsp;</a></span>broadcast_transaction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -342,7 +330,7 @@ Static Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classgraphene_1_1protocol_1_1signed__transaction.html">signed_transaction</a> &amp;&#160;</td>
           <td class="paramname"><em>trx</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -352,12 +340,12 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8hpp_source.html#l00280">280</a> of file <a class="el" href="node_8hpp_source.html">node.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8hpp_source.html#l00285">285</a> of file <a class="el" href="node_8hpp_source.html">node.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a7e4b8fdf179a0bfc9a3046765e1faa4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e4b8fdf179a0bfc9a3046765e1faa4b">&#9670;&nbsp;</a></span>clear_peer_database()</h2>
+<a id="a9722af2ddfd9b22d21bf2922cf28701d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9722af2ddfd9b22d21bf2922cf28701d">&#9670;&nbsp;</a></span>clear_peer_database()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -366,18 +354,18 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">void graphene::net::node::clear_peer_database </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Instructs the node to forget everything in its peer database, mostly for debugging problems where nodes are failing to connect to the network </p>
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04903">4903</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05196">5196</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ac4c9d53582644a76d462f2b9dfbcc778"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4c9d53582644a76d462f2b9dfbcc778">&#9670;&nbsp;</a></span>close()</h2>
+<a id="a418707491103c7198854fc7bf5794e0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a418707491103c7198854fc7bf5794e0a">&#9670;&nbsp;</a></span>close()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -386,17 +374,17 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">void graphene::net::node::close </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04934">4934</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05222">5222</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ab641ac0582547b4298468240d83835b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab641ac0582547b4298468240d83835b5">&#9670;&nbsp;</a></span>connect_to_endpoint()</h2>
+<a id="a0990bd2f15136931d2b6f0e728dca723"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0990bd2f15136931d2b6f0e728dca723">&#9670;&nbsp;</a></span>connect_to_endpoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -409,7 +397,7 @@ Static Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;&#160;</td>
           <td class="paramname"><em>ep</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -420,12 +408,12 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Attempt to connect to the specified endpoint immediately. </p>
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04818">4818</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05105">5105</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a9d0cfd3d3e9df5eb378f669c2637fc22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d0cfd3d3e9df5eb378f669c2637fc22">&#9670;&nbsp;</a></span>connect_to_p2p_network()</h2>
+<a id="a9af7cf0a283b9e043ed64cad5afa8936"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9af7cf0a283b9e043ed64cad5afa8936">&#9670;&nbsp;</a></span>connect_to_p2p_network()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -437,7 +425,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">void graphene::net::node::connect_to_p2p_network </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -447,26 +435,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04808">4808</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a25635e6a2b617401cb97dd9e036f9a6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25635e6a2b617401cb97dd9e036f9a6d">&#9670;&nbsp;</a></span>disable_peer_advertising()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void graphene::net::node::disable_peer_advertising </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04914">4914</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05095">5095</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -492,14 +461,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the endpoint the node is listening on. This is usually the same as the value previously passed in to listen_on_endpoint, unless we were unable to bind to that port. </p>
+<p>Returns the endpoint the node is listening on. This is usually the same as the value previously passed in to set_listen_endpoint, unless we were unable to bind to that port. </p>
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04838">4838</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05130">5130</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a18405cc828426c5f8d5055dd9fa5fee8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18405cc828426c5f8d5055dd9fa5fee8">&#9670;&nbsp;</a></span>get_advanced_node_parameters()</h2>
+<a id="a95762ec255543304d178e3408e7cc5fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95762ec255543304d178e3408e7cc5fe">&#9670;&nbsp;</a></span>get_advanced_node_parameters()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -508,17 +477,17 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname"><a class="el" href="classfc_1_1variant__object.html">fc::variant_object</a> graphene::net::node::get_advanced_node_parameters </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04878">4878</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05170">5170</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="acbd7f4c3a06ff7f8e3ddd94ca8ffcaaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbd7f4c3a06ff7f8e3ddd94ca8ffcaaf">&#9670;&nbsp;</a></span>get_block_propagation_data()</h2>
+<a id="a54f8f9522584d25cd2d317180a6f263a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54f8f9522584d25cd2d317180a6f263a">&#9670;&nbsp;</a></span>get_block_propagation_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -528,12 +497,12 @@ Static Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacegraphene_1_1protocol.html#a32e784a8edceba5506db2c130ed9cb9c">graphene::protocol::block_id_type</a> &amp;&#160;</td>
           <td class="paramname"><em>block_id</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04888">4888</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05181">5181</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -552,7 +521,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04919">4919</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05207">5207</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -572,7 +541,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>a list of peers that are currently connected. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04843">4843</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05135">5135</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -600,7 +569,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>return the number of peers we're actively connected to </p>
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04848">4848</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05140">5140</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -619,7 +588,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04893">4893</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05186">5186</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -638,27 +607,27 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04868">4868</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05160">5160</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a23db84dfcabfef26f118224ee5b197bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23db84dfcabfef26f118224ee5b197bc">&#9670;&nbsp;</a></span>get_transaction_propagation_data()</h2>
+<a id="a280c060181b30f309c02d7e08fe01208"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a280c060181b30f309c02d7e08fe01208">&#9670;&nbsp;</a></span>get_tx_propagation_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structgraphene_1_1net_1_1message__propagation__data.html">message_propagation_data</a> graphene::net::node::get_transaction_propagation_data </td>
+          <td class="memname"><a class="el" href="structgraphene_1_1net_1_1message__propagation__data.html">message_propagation_data</a> graphene::net::node::get_tx_propagation_data </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacegraphene_1_1protocol.html#a040f9f71bff896e89dc9ee3ff92bb076">graphene::protocol::transaction_id_type</a> &amp;&#160;</td>
           <td class="paramname"><em>transaction_id</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04883">4883</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05175">5175</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -677,80 +646,12 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04863">4863</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05155">5155</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a991b591d1102f031ed697e6097881e4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a991b591d1102f031ed697e6097881e4b">&#9670;&nbsp;</a></span>listen_on_endpoint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void graphene::net::node::listen_on_endpoint </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>ep</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>wait_if_not_available</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Specifies the network interface and port upon which incoming connections should be accepted. </p>
-
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04823">4823</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
-
-</div>
-</div>
-<a id="aa6b28ef513b383b9f7138667b02184f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6b28ef513b383b9f7138667b02184f1">&#9670;&nbsp;</a></span>listen_on_port()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void graphene::net::node::listen_on_port </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>wait_if_not_available</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Specifies the port upon which incoming connections should be accepted. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">port</td><td>the port to listen on </td></tr>
-    <tr><td class="paramname">wait_if_not_available</td><td>if true and the port is not available, enter a sleep and retry loop to wait for it to become available. If false and the port is not available, just choose a random available port </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04833">4833</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a6822a9703c8258b2f7fe6d931c1bcead"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6822a9703c8258b2f7fe6d931c1bcead">&#9670;&nbsp;</a></span>listen_to_p2p_network()</h2>
+<a id="a57153507060ee2f6d2a84455d3bb67de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57153507060ee2f6d2a84455d3bb67de">&#9670;&nbsp;</a></span>listen_to_p2p_network()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -762,7 +663,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">void graphene::net::node::listen_to_p2p_network </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -772,12 +673,12 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04803">4803</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05090">5090</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a682fe5c9d092497c926896589238d7f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a682fe5c9d092497c926896589238d7f4">&#9670;&nbsp;</a></span>load_configuration()</h2>
+<a id="a8e5d06dfb3e60cde6dffdae26e88ee8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e5d06dfb3e60cde6dffdae26e88ee8b">&#9670;&nbsp;</a></span>load_configuration()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -787,12 +688,12 @@ Static Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classfc_1_1path.html">fc::path</a> &amp;&#160;</td>
           <td class="paramname"><em>configuration_directory</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04798">4798</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05085">5085</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -811,7 +712,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04924">4924</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05212">5212</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -830,50 +731,38 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04929">4929</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05217">5217</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="af09472fa1a74d277a959ae21548a7de4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af09472fa1a74d277a959ae21548a7de4">&#9670;&nbsp;</a></span>resolve_string_to_ip_endpoints()</h2>
+<a id="aac92b5b6e09941518381014cd8d72e3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac92b5b6e09941518381014cd8d72e3b">&#9670;&nbsp;</a></span>set_accept_incoming_connections()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &gt; graphene::net::node::resolve_string_to_ip_endpoints </td>
+          <td class="memname">void graphene::net::node::set_accept_incoming_connections </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>in</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>accept</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-
-<p>Helper to convert a string to a collection of endpoints. </p>
-<p>This converts a string (i.e. "bitshares.eu:665535" to a collection of endpoints. NOTE: Throws an exception if not in correct format or was unable to resolve URL.</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Enable or disable listening for incoming connections </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">in</td><td>the incoming string </td></tr>
+    <tr><td class="paramname">accept</td><td>set to true to listen for incoming connections, false otherwise </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a vector of endpoints </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05132">5132</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05120">5120</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="aefc421924f961065944cac2217e7934e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefc421924f961065944cac2217e7934e">&#9670;&nbsp;</a></span>set_advanced_node_parameters()</h2>
+<a id="affa997cb387c5768074c0fbd6a1b8a44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affa997cb387c5768074c0fbd6a1b8a44">&#9670;&nbsp;</a></span>set_advanced_node_parameters()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -883,17 +772,47 @@ Static Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classfc_1_1variant__object.html">fc::variant_object</a> &amp;&#160;</td>
           <td class="paramname"><em>params</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04873">4873</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05165">5165</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a8e1af7fa5454cd1e0d8b44535780c4d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e1af7fa5454cd1e0d8b44535780c4d4">&#9670;&nbsp;</a></span>set_allowed_peers()</h2>
+<a id="aaf36284d44306b9fdc63b2ff90b83cc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf36284d44306b9fdc63b2ff90b83cc6">&#9670;&nbsp;</a></span>set_advertise_algorithm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graphene::net::node::set_advertise_algorithm </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>algo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>advertise_or_exclude_list</em> = <code>std::vector&lt;std::string&gt;()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05437">5437</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a25802795dc4273965239bb1c28de0df1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25802795dc4273965239bb1c28de0df1">&#9670;&nbsp;</a></span>set_allowed_peers()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -903,12 +822,97 @@ Static Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; <a class="el" href="namespacegraphene_1_1net.html#a557da170930e273d5a42e3541bd768e0">node_id_t</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>allowed_peers</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04898">4898</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05191">5191</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a67087014c8c39c711aa93dd878c0eaf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67087014c8c39c711aa93dd878c0eaf4">&#9670;&nbsp;</a></span>set_connect_to_new_peers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graphene::net::node::set_connect_to_new_peers </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>connect</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05125">5125</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6ce06e5a644755a996e4b204770dfb61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ce06e5a644755a996e4b204770dfb61">&#9670;&nbsp;</a></span>set_inbound_endpoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graphene::net::node::set_inbound_endpoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>ep</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Specifies the IP address and port on the "external network" which other peers should connect to. </p><dl class="section note"><dt>Note</dt><dd>If the address is unknown (E.G. dynamically allocated), specify 0.0.0.0 as the address. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ep</td><td>the endpoint (IP address and port) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05115">5115</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3dae3a7f2e2201711c71d658e415a147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dae3a7f2e2201711c71d658e415a147">&#9670;&nbsp;</a></span>set_listen_endpoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graphene::net::node::set_listen_endpoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>ep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>wait_if_not_available</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Specifies the IP address and port on the "local machine" that should accept incoming connections. </p><dl class="section note"><dt>Note</dt><dd>To listen on all IPv4 addresses on the local machine, specify 0.0.0.0 as the address. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ep</td><td>the endpoint (IP address and port) </td></tr>
+    <tr><td class="paramname">wait_if_not_available</td><td>keep retrying if port is not available </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05110">5110</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -928,12 +932,12 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04792">4792</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05079">5079</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a9e89f58289f44789f8e8bb6157a6f98b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e89f58289f44789f8e8bb6157a6f98b">&#9670;&nbsp;</a></span>set_total_bandwidth_limit()</h2>
+<a id="ab7f3c4d6f83095d892e0f2f308d89d37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7f3c4d6f83095d892e0f2f308d89d37">&#9670;&nbsp;</a></span>set_total_bandwidth_limit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -953,17 +957,17 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04908">4908</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05201">5201</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a66366a86787aad2a1062b96da4e2555a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66366a86787aad2a1062b96da4e2555a">&#9670;&nbsp;</a></span>sync_from()</h2>
+<a id="a0c95309d3a64468a5547289eafe054d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c95309d3a64468a5547289eafe054d0">&#9670;&nbsp;</a></span>sync_from()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -986,7 +990,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -997,7 +1001,32 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Node starts the process of fetching all items after <a class="el" href="structgraphene_1_1net_1_1item__id.html">item_id</a> of the given item_type. During this process messages are not broadcast. </p>
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04858">4858</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05150">5150</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad3a44f1cc1137524d1614a679556dc4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3a44f1cc1137524d1614a679556dc4b">&#9670;&nbsp;</a></span>my</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacegraphene_1_1net.html#a7b290bc6b0c3a9980345c3782507fbe5">node_impl_ptr</a> graphene::net::node::my</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="node_8hpp_source.html#l00323">323</a> of file <a class="el" href="node_8hpp_source.html">node.hpp</a>.</p>
 
 </div>
 </div>
@@ -1008,7 +1037,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:58 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:47 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

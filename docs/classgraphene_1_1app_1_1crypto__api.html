@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -65,6 +65,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classgraphene_1_1app_1_1crypto__api-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -77,65 +78,50 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html">api.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1crypto__api_1_1verify__range__proof__rewind__result.html">verify_range_proof_rewind_result</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1crypto__api_1_1verify__range__result.html">verify_range_result</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adcb829f4fc90959164d92b4b285e8085"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#adcb829f4fc90959164d92b4b285e8085">crypto_api</a> ()</td></tr>
-<tr class="separator:adcb829f4fc90959164d92b4b285e8085"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a819517c27c9b5436cea4bd7114d68759"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefc_1_1ecc.html#a582249fe15693cc9c040286a8ef296f8">fc::ecc::commitment_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#a819517c27c9b5436cea4bd7114d68759">blind</a> (const <a class="el" href="namespacefc_1_1ecc.html#a3e4c1ecf3ceb1fb0d3aefa24532d0766">fc::ecc::blind_factor_type</a> &amp;blind, uint64_t value)</td></tr>
-<tr class="memdesc:a819517c27c9b5436cea4bd7114d68759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a pedersen commitment: *commit = blind * G + value * G2. The commitment is 33 bytes, the blinding factor is 32 bytes. For more information about pederson commitment check url <a href="https://en.wikipedia.org/wiki/Commitment_scheme">https://en.wikipedia.org/wiki/Commitment_scheme</a>.  <a href="#a819517c27c9b5436cea4bd7114d68759">More...</a><br /></td></tr>
-<tr class="separator:a819517c27c9b5436cea4bd7114d68759"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1a6caa5122568ca0ae4f5379a2d1943"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefc_1_1ecc.html#a3e4c1ecf3ceb1fb0d3aefa24532d0766">fc::ecc::blind_factor_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#aa1a6caa5122568ca0ae4f5379a2d1943">blind_sum</a> (const std::vector&lt; <a class="el" href="namespacefc_1_1ecc.html#a3e4c1ecf3ceb1fb0d3aefa24532d0766">blind_factor_type</a> &gt; &amp;blinds_in, uint32_t non_neg)</td></tr>
-<tr class="memdesc:aa1a6caa5122568ca0ae4f5379a2d1943"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sha-256 blind factor type.  <a href="#aa1a6caa5122568ca0ae4f5379a2d1943">More...</a><br /></td></tr>
-<tr class="separator:aa1a6caa5122568ca0ae4f5379a2d1943"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9c6f9589828b10f4cc8bfe4a6a359d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#ad9c6f9589828b10f4cc8bfe4a6a359d3">verify_sum</a> (const std::vector&lt; <a class="el" href="namespacefc_1_1ecc.html#a582249fe15693cc9c040286a8ef296f8">commitment_type</a> &gt; &amp;commits_in, const std::vector&lt; <a class="el" href="namespacefc_1_1ecc.html#a582249fe15693cc9c040286a8ef296f8">commitment_type</a> &gt; &amp;neg_commits_in, int64_t excess)</td></tr>
-<tr class="memdesc:ad9c6f9589828b10f4cc8bfe4a6a359d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies that commits + neg_commits + excess == 0.  <a href="#ad9c6f9589828b10f4cc8bfe4a6a359d3">More...</a><br /></td></tr>
-<tr class="separator:ad9c6f9589828b10f4cc8bfe4a6a359d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5310e5955a16937db91c99a8fea0ffe6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1app_1_1verify__range__result.html">verify_range_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#a5310e5955a16937db91c99a8fea0ffe6">verify_range</a> (const <a class="el" href="namespacefc_1_1ecc.html#a582249fe15693cc9c040286a8ef296f8">fc::ecc::commitment_type</a> &amp;commit, const std::vector&lt; char &gt; &amp;proof)</td></tr>
-<tr class="memdesc:a5310e5955a16937db91c99a8fea0ffe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies range proof for 33-byte pedersen commitment.  <a href="#a5310e5955a16937db91c99a8fea0ffe6">More...</a><br /></td></tr>
-<tr class="separator:a5310e5955a16937db91c99a8fea0ffe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1923d73235200a4f3da0a4d021a865d2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#a1923d73235200a4f3da0a4d021a865d2">range_proof_sign</a> (uint64_t min_value, const <a class="el" href="namespacefc_1_1ecc.html#a582249fe15693cc9c040286a8ef296f8">commitment_type</a> &amp;commit, const <a class="el" href="namespacefc_1_1ecc.html#a3e4c1ecf3ceb1fb0d3aefa24532d0766">blind_factor_type</a> &amp;commit_blind, const <a class="el" href="namespacefc_1_1ecc.html#a3e4c1ecf3ceb1fb0d3aefa24532d0766">blind_factor_type</a> &amp;nonce, int8_t base10_exp, uint8_t min_bits, uint64_t actual_value)</td></tr>
-<tr class="memdesc:a1923d73235200a4f3da0a4d021a865d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Proves with respect to min_value the range for pedersen commitment which has the provided blinding factor and value.  <a href="#a1923d73235200a4f3da0a4d021a865d2">More...</a><br /></td></tr>
-<tr class="separator:a1923d73235200a4f3da0a4d021a865d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af49d58d9538c6908ea320887af07d9f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1app_1_1verify__range__proof__rewind__result.html">verify_range_proof_rewind_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#af49d58d9538c6908ea320887af07d9f3">verify_range_proof_rewind</a> (const <a class="el" href="namespacefc_1_1ecc.html#a3e4c1ecf3ceb1fb0d3aefa24532d0766">blind_factor_type</a> &amp;nonce, const <a class="el" href="namespacefc_1_1ecc.html#a582249fe15693cc9c040286a8ef296f8">fc::ecc::commitment_type</a> &amp;commit, const std::vector&lt; char &gt; &amp;proof)</td></tr>
-<tr class="memdesc:af49d58d9538c6908ea320887af07d9f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies range proof rewind for 33-byte pedersen commitment.  <a href="#af49d58d9538c6908ea320887af07d9f3">More...</a><br /></td></tr>
-<tr class="separator:af49d58d9538c6908ea320887af07d9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6765af523fc6dd5e75872782b4ee12b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfc_1_1ecc_1_1range__proof__info.html">range_proof_info</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#a6765af523fc6dd5e75872782b4ee12b2">range_get_info</a> (const std::vector&lt; char &gt; &amp;proof)</td></tr>
-<tr class="memdesc:a6765af523fc6dd5e75872782b4ee12b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets "range proof" info. The cli_wallet includes functionality for sending blind transfers in which the values of the input and outputs amounts are “blinded.” In the case where a transaction produces two or more outputs, (e.g. an amount to the intended recipient plus “change” back to the sender), a "range proof" must be supplied to prove that none of the outputs commit to a negative value.  <a href="#a6765af523fc6dd5e75872782b4ee12b2">More...</a><br /></td></tr>
-<tr class="separator:a6765af523fc6dd5e75872782b4ee12b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e64e452c062ee942237af9910183709"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefc_1_1ecc.html#a582249fe15693cc9c040286a8ef296f8">fc::ecc::commitment_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#a6e64e452c062ee942237af9910183709">blind</a> (const <a class="el" href="namespacefc_1_1ecc.html#a3e4c1ecf3ceb1fb0d3aefa24532d0766">fc::ecc::blind_factor_type</a> &amp;blind, uint64_t value) const</td></tr>
+<tr class="memdesc:a6e64e452c062ee942237af9910183709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a pedersen commitment: *commit = blind * G + value * G2. The commitment is 33 bytes, the blinding factor is 32 bytes. For more information about pederson commitment check url <a href="https://en.wikipedia.org/wiki/Commitment_scheme">https://en.wikipedia.org/wiki/Commitment_scheme</a>.  <a href="#a6e64e452c062ee942237af9910183709">More...</a><br /></td></tr>
+<tr class="separator:a6e64e452c062ee942237af9910183709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff6b31fc94ea3b174a911cdcc1aa470a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefc_1_1ecc.html#a3e4c1ecf3ceb1fb0d3aefa24532d0766">fc::ecc::blind_factor_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#aff6b31fc94ea3b174a911cdcc1aa470a">blind_sum</a> (const std::vector&lt; blind_factor_type &gt; &amp;blinds_in, uint32_t non_neg) const</td></tr>
+<tr class="memdesc:aff6b31fc94ea3b174a911cdcc1aa470a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sha-256 blind factor type.  <a href="#aff6b31fc94ea3b174a911cdcc1aa470a">More...</a><br /></td></tr>
+<tr class="separator:aff6b31fc94ea3b174a911cdcc1aa470a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9b57a4284d35fc3811f3d76994a9e6b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#af9b57a4284d35fc3811f3d76994a9e6b">verify_sum</a> (const std::vector&lt; commitment_type &gt; &amp;commits_in, const std::vector&lt; commitment_type &gt; &amp;neg_commits_in, int64_t excess) const</td></tr>
+<tr class="memdesc:af9b57a4284d35fc3811f3d76994a9e6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies that commits + neg_commits + excess == 0.  <a href="#af9b57a4284d35fc3811f3d76994a9e6b">More...</a><br /></td></tr>
+<tr class="separator:af9b57a4284d35fc3811f3d76994a9e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54002c662a92a35f926907e9a2985acf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1app_1_1crypto__api_1_1verify__range__result.html">verify_range_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#a54002c662a92a35f926907e9a2985acf">verify_range</a> (const <a class="el" href="namespacefc_1_1ecc.html#a582249fe15693cc9c040286a8ef296f8">fc::ecc::commitment_type</a> &amp;commit, const std::vector&lt; char &gt; &amp;proof) const</td></tr>
+<tr class="memdesc:a54002c662a92a35f926907e9a2985acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies range proof for 33-byte pedersen commitment.  <a href="#a54002c662a92a35f926907e9a2985acf">More...</a><br /></td></tr>
+<tr class="separator:a54002c662a92a35f926907e9a2985acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f718cd40432903de6821284efda0ca"><td class="memItemLeft" align="right" valign="top">std::vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#a54f718cd40432903de6821284efda0ca">range_proof_sign</a> (uint64_t min_value, const commitment_type &amp;commit, const blind_factor_type &amp;commit_blind, const blind_factor_type &amp;nonce, int8_t base10_exp, uint8_t min_bits, uint64_t actual_value) const</td></tr>
+<tr class="memdesc:a54f718cd40432903de6821284efda0ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Proves with respect to min_value the range for pedersen commitment which has the provided blinding factor and value.  <a href="#a54f718cd40432903de6821284efda0ca">More...</a><br /></td></tr>
+<tr class="separator:a54f718cd40432903de6821284efda0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1abdb9bc01dd37a28a10441cdc0d30cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1app_1_1crypto__api_1_1verify__range__proof__rewind__result.html">verify_range_proof_rewind_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#a1abdb9bc01dd37a28a10441cdc0d30cb">verify_range_proof_rewind</a> (const blind_factor_type &amp;nonce, const <a class="el" href="namespacefc_1_1ecc.html#a582249fe15693cc9c040286a8ef296f8">fc::ecc::commitment_type</a> &amp;commit, const std::vector&lt; char &gt; &amp;proof) const</td></tr>
+<tr class="memdesc:a1abdb9bc01dd37a28a10441cdc0d30cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies range proof rewind for 33-byte pedersen commitment.  <a href="#a1abdb9bc01dd37a28a10441cdc0d30cb">More...</a><br /></td></tr>
+<tr class="separator:a1abdb9bc01dd37a28a10441cdc0d30cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a189ed35efdd7c4a0d94c0c9a8eaeda9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfc_1_1ecc_1_1range__proof__info.html">fc::ecc::range_proof_info</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#a189ed35efdd7c4a0d94c0c9a8eaeda9f">range_get_info</a> (const std::vector&lt; char &gt; &amp;proof) const</td></tr>
+<tr class="memdesc:a189ed35efdd7c4a0d94c0c9a8eaeda9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets "range proof" info. The cli_wallet includes functionality for sending blind transfers in which the values of the input and outputs amounts are “blinded.” In the case where a transaction produces two or more outputs, (e.g. an amount to the intended recipient plus “change” back to the sender), a "range proof" must be supplied to prove that none of the outputs commit to a negative value.  <a href="#a189ed35efdd7c4a0d94c0c9a8eaeda9f">More...</a><br /></td></tr>
+<tr class="separator:a189ed35efdd7c4a0d94c0c9a8eaeda9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classgraphene_1_1app_1_1crypto__api.html" title="The crypto_api class allows computations related to blinded transfers. ">crypto_api</a> class allows computations related to blinded transfers. </p>
 
-<p class="definition">Definition at line <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html#l00421">421</a> of file <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html">api.hpp</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="adcb829f4fc90959164d92b4b285e8085"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcb829f4fc90959164d92b4b285e8085">&#9670;&nbsp;</a></span>crypto_api()</h2>
+<p class="definition">Definition at line <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html#l00439">439</a> of file <a class="el" href="app_2include_2graphene_2app_2api_8hpp_source.html">api.hpp</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6e64e452c062ee942237af9910183709"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e64e452c062ee942237af9910183709">&#9670;&nbsp;</a></span>blind()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">graphene::app::crypto_api::crypto_api </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="api_8cpp_source.html#l00686">686</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a819517c27c9b5436cea4bd7114d68759"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a819517c27c9b5436cea4bd7114d68759">&#9670;&nbsp;</a></span>blind()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacefc_1_1ecc.html#a582249fe15693cc9c040286a8ef296f8">commitment_type</a> graphene::app::crypto_api::blind </td>
+          <td class="memname"><a class="el" href="namespacefc_1_1ecc.html#a582249fe15693cc9c040286a8ef296f8">fc::ecc::commitment_type</a> graphene::app::crypto_api::blind </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacefc_1_1ecc.html#a3e4c1ecf3ceb1fb0d3aefa24532d0766">fc::ecc::blind_factor_type</a> &amp;&#160;</td>
           <td class="paramname"><em>blind</em>, </td>
@@ -149,7 +135,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -164,20 +150,20 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A 33-byte pedersen commitment: *commit = blind * G + value * G2 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="api_8cpp_source.html#l00688">688</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="api_8cpp_source.html#l00827">827</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
 
 </div>
 </div>
-<a id="aa1a6caa5122568ca0ae4f5379a2d1943"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1a6caa5122568ca0ae4f5379a2d1943">&#9670;&nbsp;</a></span>blind_sum()</h2>
+<a id="aff6b31fc94ea3b174a911cdcc1aa470a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff6b31fc94ea3b174a911cdcc1aa470a">&#9670;&nbsp;</a></span>blind_sum()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacefc_1_1ecc.html#a3e4c1ecf3ceb1fb0d3aefa24532d0766">blind_factor_type</a> graphene::app::crypto_api::blind_sum </td>
+          <td class="memname"><a class="el" href="namespacefc_1_1ecc.html#a3e4c1ecf3ceb1fb0d3aefa24532d0766">fc::ecc::blind_factor_type</a> graphene::app::crypto_api::blind_sum </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacefc_1_1ecc.html#a3e4c1ecf3ceb1fb0d3aefa24532d0766">blind_factor_type</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; blind_factor_type &gt; &amp;&#160;</td>
           <td class="paramname"><em>blinds_in</em>, </td>
         </tr>
         <tr>
@@ -189,7 +175,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -204,22 +190,22 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A blind factor type </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="api_8cpp_source.html#l00693">693</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="api_8cpp_source.html#l00832">832</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a6765af523fc6dd5e75872782b4ee12b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6765af523fc6dd5e75872782b4ee12b2">&#9670;&nbsp;</a></span>range_get_info()</h2>
+<a id="a189ed35efdd7c4a0d94c0c9a8eaeda9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a189ed35efdd7c4a0d94c0c9a8eaeda9f">&#9670;&nbsp;</a></span>range_get_info()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structfc_1_1ecc_1_1range__proof__info.html">range_proof_info</a> graphene::app::crypto_api::range_get_info </td>
+          <td class="memname"><a class="el" href="structfc_1_1ecc_1_1range__proof__info.html">fc::ecc::range_proof_info</a> graphene::app::crypto_api::range_get_info </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; char &gt; &amp;&#160;</td>
           <td class="paramname"><em>proof</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -233,12 +219,12 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A range proof info structure with exponent, mantissa, min and max values </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="api_8cpp_source.html#l00737">737</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="api_8cpp_source.html#l00881">881</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a1923d73235200a4f3da0a4d021a865d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1923d73235200a4f3da0a4d021a865d2">&#9670;&nbsp;</a></span>range_proof_sign()</h2>
+<a id="a54f718cd40432903de6821284efda0ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54f718cd40432903de6821284efda0ca">&#9670;&nbsp;</a></span>range_proof_sign()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,19 +238,19 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacefc_1_1ecc.html#a582249fe15693cc9c040286a8ef296f8">commitment_type</a> &amp;&#160;</td>
+          <td class="paramtype">const commitment_type &amp;&#160;</td>
           <td class="paramname"><em>commit</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacefc_1_1ecc.html#a3e4c1ecf3ceb1fb0d3aefa24532d0766">blind_factor_type</a> &amp;&#160;</td>
+          <td class="paramtype">const blind_factor_type &amp;&#160;</td>
           <td class="paramname"><em>commit_blind</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacefc_1_1ecc.html#a3e4c1ecf3ceb1fb0d3aefa24532d0766">blind_factor_type</a> &amp;&#160;</td>
+          <td class="paramtype">const blind_factor_type &amp;&#160;</td>
           <td class="paramname"><em>nonce</em>, </td>
         </tr>
         <tr>
@@ -288,7 +274,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -308,18 +294,18 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A list of characters as proof in proof </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="api_8cpp_source.html#l00710">710</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="api_8cpp_source.html#l00853">853</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a5310e5955a16937db91c99a8fea0ffe6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5310e5955a16937db91c99a8fea0ffe6">&#9670;&nbsp;</a></span>verify_range()</h2>
+<a id="a54002c662a92a35f926907e9a2985acf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54002c662a92a35f926907e9a2985acf">&#9670;&nbsp;</a></span>verify_range()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structgraphene_1_1app_1_1verify__range__result.html">verify_range_result</a> graphene::app::crypto_api::verify_range </td>
+          <td class="memname"><a class="el" href="structgraphene_1_1app_1_1crypto__api_1_1verify__range__result.html">crypto_api::verify_range_result</a> graphene::app::crypto_api::verify_range </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacefc_1_1ecc.html#a582249fe15693cc9c040286a8ef296f8">fc::ecc::commitment_type</a> &amp;&#160;</td>
           <td class="paramname"><em>commit</em>, </td>
@@ -333,7 +319,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -348,20 +334,20 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A structure with success, min and max values </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="api_8cpp_source.html#l00703">703</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="api_8cpp_source.html#l00845">845</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
 
 </div>
 </div>
-<a id="af49d58d9538c6908ea320887af07d9f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af49d58d9538c6908ea320887af07d9f3">&#9670;&nbsp;</a></span>verify_range_proof_rewind()</h2>
+<a id="a1abdb9bc01dd37a28a10441cdc0d30cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1abdb9bc01dd37a28a10441cdc0d30cb">&#9670;&nbsp;</a></span>verify_range_proof_rewind()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structgraphene_1_1app_1_1verify__range__proof__rewind__result.html">verify_range_proof_rewind_result</a> graphene::app::crypto_api::verify_range_proof_rewind </td>
+          <td class="memname"><a class="el" href="structgraphene_1_1app_1_1crypto__api_1_1verify__range__proof__rewind__result.html">crypto_api::verify_range_proof_rewind_result</a> graphene::app::crypto_api::verify_range_proof_rewind </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacefc_1_1ecc.html#a3e4c1ecf3ceb1fb0d3aefa24532d0766">blind_factor_type</a> &amp;&#160;</td>
+          <td class="paramtype">const blind_factor_type &amp;&#160;</td>
           <td class="paramname"><em>nonce</em>, </td>
         </tr>
         <tr>
@@ -379,7 +365,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -395,12 +381,12 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A structure with success, min, max, value_out, blind_out and message_out values </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="api_8cpp_source.html#l00721">721</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="api_8cpp_source.html#l00864">864</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ad9c6f9589828b10f4cc8bfe4a6a359d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9c6f9589828b10f4cc8bfe4a6a359d3">&#9670;&nbsp;</a></span>verify_sum()</h2>
+<a id="af9b57a4284d35fc3811f3d76994a9e6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9b57a4284d35fc3811f3d76994a9e6b">&#9670;&nbsp;</a></span>verify_sum()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -408,13 +394,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool graphene::app::crypto_api::verify_sum </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacefc_1_1ecc.html#a582249fe15693cc9c040286a8ef296f8">commitment_type</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; commitment_type &gt; &amp;&#160;</td>
           <td class="paramname"><em>commits_in</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacefc_1_1ecc.html#a582249fe15693cc9c040286a8ef296f8">commitment_type</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; commitment_type &gt; &amp;&#160;</td>
           <td class="paramname"><em>neg_commits_in</em>, </td>
         </tr>
         <tr>
@@ -426,7 +412,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -442,7 +428,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Boolean - true in event of commits + neg_commits + excess == 0, otherwise false </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="api_8cpp_source.html#l00698">698</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="api_8cpp_source.html#l00838">838</a> of file <a class="el" href="api_8cpp_source.html">api.cpp</a>.</p>
 
 </div>
 </div>
@@ -453,7 +439,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:56 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:46 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -96,10 +96,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a78e6fca3f97c21e1e43862e5748a92fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac4ced3eaae8d87d1a93dd40cbacc4ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1peer__database.html#aac4ced3eaae8d87d1a93dd40cbacc4ac">update_entry</a> (const <a class="el" href="structgraphene_1_1net_1_1potential__peer__record.html">potential_peer_record</a> &amp;updatedRecord)</td></tr>
 <tr class="separator:aac4ced3eaae8d87d1a93dd40cbacc4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac277a2bd9e2a11f80c5ccd81911984e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1net_1_1potential__peer__record.html">potential_peer_record</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1peer__database.html#aac277a2bd9e2a11f80c5ccd81911984e">lookup_or_create_entry_for_endpoint</a> (const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;endpointToLookup)</td></tr>
-<tr class="separator:aac277a2bd9e2a11f80c5ccd81911984e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48d703c0997c18a87deeeed39b4dd64e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1optional.html">fc::optional</a>&lt; <a class="el" href="structgraphene_1_1net_1_1potential__peer__record.html">potential_peer_record</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1peer__database.html#a48d703c0997c18a87deeeed39b4dd64e">lookup_entry_for_endpoint</a> (const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;endpointToLookup)</td></tr>
-<tr class="separator:a48d703c0997c18a87deeeed39b4dd64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0421e0efbf62c58b761d9e52bc37f5d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1net_1_1potential__peer__record.html">potential_peer_record</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1peer__database.html#a0421e0efbf62c58b761d9e52bc37f5d4">lookup_or_create_entry_for_ep</a> (const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;endpointToLookup) const</td></tr>
+<tr class="separator:a0421e0efbf62c58b761d9e52bc37f5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6082cc34218232f29f4152c035fe286"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1optional.html">fc::optional</a>&lt; <a class="el" href="structgraphene_1_1net_1_1potential__peer__record.html">potential_peer_record</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1peer__database.html#af6082cc34218232f29f4152c035fe286">lookup_entry_for_endpoint</a> (const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;endpointToLookup) const</td></tr>
+<tr class="separator:af6082cc34218232f29f4152c035fe286"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87053971a6a4d137631a1533610bb398"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1net_1_1peer__database.html#ad21b8f485342a226c59accca6b410b42">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1peer__database.html#a87053971a6a4d137631a1533610bb398">begin</a> () const</td></tr>
 <tr class="separator:a87053971a6a4d137631a1533610bb398"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75ef6f905dbe1c2c5a30b888662c97c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1net_1_1peer__database.html#ad21b8f485342a226c59accca6b410b42">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1peer__database.html#a75ef6f905dbe1c2c5a30b888662c97c8">end</a> () const</td></tr>
@@ -109,7 +109,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="peer__database_8hpp_source.html#l00096">96</a> of file <a class="el" href="peer__database_8hpp_source.html">peer_database.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="peer__database_8hpp_source.html#l00095">95</a> of file <a class="el" href="peer__database_8hpp_source.html">peer_database.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ad21b8f485342a226c59accca6b410b42"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad21b8f485342a226c59accca6b410b42">&#9670;&nbsp;</a></span>iterator</h2>
@@ -123,7 +123,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="peer__database_8hpp_source.html#l00112">112</a> of file <a class="el" href="peer__database_8hpp_source.html">peer_database.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="peer__database_8hpp_source.html#l00111">111</a> of file <a class="el" href="peer__database_8hpp_source.html">peer_database.hpp</a>.</p>
 
 </div>
 </div>
@@ -143,7 +143,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="peer__database_8cpp_source.html#l00221">221</a> of file <a class="el" href="peer__database_8cpp_source.html">peer_database.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="peer__database_8cpp_source.html#l00224">224</a> of file <a class="el" href="peer__database_8cpp_source.html">peer_database.cpp</a>.</p>
 
 </div>
 </div>
@@ -170,7 +170,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="peer__database_8cpp_source.html#l00226">226</a> of file <a class="el" href="peer__database_8cpp_source.html">peer_database.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="peer__database_8cpp_source.html#l00229">229</a> of file <a class="el" href="peer__database_8cpp_source.html">peer_database.cpp</a>.</p>
 
 </div>
 </div>
@@ -190,7 +190,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="peer__database_8cpp_source.html#l00264">264</a> of file <a class="el" href="peer__database_8cpp_source.html">peer_database.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="peer__database_8cpp_source.html#l00269">269</a> of file <a class="el" href="peer__database_8cpp_source.html">peer_database.cpp</a>.</p>
 
 </div>
 </div>
@@ -209,7 +209,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="peer__database_8cpp_source.html#l00239">239</a> of file <a class="el" href="peer__database_8cpp_source.html">peer_database.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="peer__database_8cpp_source.html#l00242">242</a> of file <a class="el" href="peer__database_8cpp_source.html">peer_database.cpp</a>.</p>
 
 </div>
 </div>
@@ -228,7 +228,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="peer__database_8cpp_source.html#l00234">234</a> of file <a class="el" href="peer__database_8cpp_source.html">peer_database.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="peer__database_8cpp_source.html#l00237">237</a> of file <a class="el" href="peer__database_8cpp_source.html">peer_database.cpp</a>.</p>
 
 </div>
 </div>
@@ -247,7 +247,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="peer__database_8cpp_source.html#l00269">269</a> of file <a class="el" href="peer__database_8cpp_source.html">peer_database.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="peer__database_8cpp_source.html#l00274">274</a> of file <a class="el" href="peer__database_8cpp_source.html">peer_database.cpp</a>.</p>
 
 </div>
 </div>
@@ -267,12 +267,12 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="peer__database_8cpp_source.html#l00244">244</a> of file <a class="el" href="peer__database_8cpp_source.html">peer_database.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="peer__database_8cpp_source.html#l00247">247</a> of file <a class="el" href="peer__database_8cpp_source.html">peer_database.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a48d703c0997c18a87deeeed39b4dd64e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48d703c0997c18a87deeeed39b4dd64e">&#9670;&nbsp;</a></span>lookup_entry_for_endpoint()</h2>
+<a id="af6082cc34218232f29f4152c035fe286"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6082cc34218232f29f4152c035fe286">&#9670;&nbsp;</a></span>lookup_entry_for_endpoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -282,32 +282,32 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;&#160;</td>
           <td class="paramname"><em>endpointToLookup</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="peer__database_8cpp_source.html#l00259">259</a> of file <a class="el" href="peer__database_8cpp_source.html">peer_database.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="peer__database_8cpp_source.html#l00263">263</a> of file <a class="el" href="peer__database_8cpp_source.html">peer_database.cpp</a>.</p>
 
 </div>
 </div>
-<a id="aac277a2bd9e2a11f80c5ccd81911984e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac277a2bd9e2a11f80c5ccd81911984e">&#9670;&nbsp;</a></span>lookup_or_create_entry_for_endpoint()</h2>
+<a id="a0421e0efbf62c58b761d9e52bc37f5d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0421e0efbf62c58b761d9e52bc37f5d4">&#9670;&nbsp;</a></span>lookup_or_create_entry_for_ep()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structgraphene_1_1net_1_1potential__peer__record.html">potential_peer_record</a> graphene::net::peer_database::lookup_or_create_entry_for_endpoint </td>
+          <td class="memname"><a class="el" href="structgraphene_1_1net_1_1potential__peer__record.html">potential_peer_record</a> graphene::net::peer_database::lookup_or_create_entry_for_ep </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;&#160;</td>
           <td class="paramname"><em>endpointToLookup</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="peer__database_8cpp_source.html#l00254">254</a> of file <a class="el" href="peer__database_8cpp_source.html">peer_database.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="peer__database_8cpp_source.html#l00257">257</a> of file <a class="el" href="peer__database_8cpp_source.html">peer_database.cpp</a>.</p>
 
 </div>
 </div>
@@ -327,7 +327,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="peer__database_8cpp_source.html#l00229">229</a> of file <a class="el" href="peer__database_8cpp_source.html">peer_database.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="peer__database_8cpp_source.html#l00232">232</a> of file <a class="el" href="peer__database_8cpp_source.html">peer_database.cpp</a>.</p>
 
 </div>
 </div>
@@ -346,7 +346,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="peer__database_8cpp_source.html#l00274">274</a> of file <a class="el" href="peer__database_8cpp_source.html">peer_database.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="peer__database_8cpp_source.html#l00279">279</a> of file <a class="el" href="peer__database_8cpp_source.html">peer_database.cpp</a>.</p>
 
 </div>
 </div>
@@ -366,7 +366,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="peer__database_8cpp_source.html#l00249">249</a> of file <a class="el" href="peer__database_8cpp_source.html">peer_database.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="peer__database_8cpp_source.html#l00252">252</a> of file <a class="el" href="peer__database_8cpp_source.html">peer_database.cpp</a>.</p>
 
 </div>
 </div>
@@ -377,7 +377,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:58 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:47 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

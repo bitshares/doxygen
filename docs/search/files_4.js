@@ -4,6 +4,7 @@ var searchData=
   ['database_2ehpp',['database.hpp',['../database_8hpp.html',1,'']]],
   ['database_5fapi_2ecpp',['database_api.cpp',['../database__api_8cpp.html',1,'']]],
   ['database_5fapi_2ehpp',['database_api.hpp',['../database__api_8hpp.html',1,'']]],
+  ['database_5fapi_5fhelper_2ehxx',['database_api_helper.hxx',['../database__api__helper_8hxx.html',1,'']]],
   ['database_5fapi_5fimpl_2ehxx',['database_api_impl.hxx',['../database__api__impl_8hxx.html',1,'']]],
   ['datastream_2ecpp',['datastream.cpp',['../datastream_8cpp.html',1,'']]],
   ['datastream_2ehpp',['datastream.hpp',['../datastream_8hpp.html',1,'']]],

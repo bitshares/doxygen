@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -72,6 +72,9 @@ $(function() {
 <li>~actual_execution_measurement_helper()
 : <a class="el" href="classgraphene_1_1net_1_1detail_1_1statistics__gathering__node__delegate__wrapper_1_1call__statis6be3796c15242cc84e6fe8a308e74466.html#a0027e9ff5c56cedec1acc706a8e68396">graphene::net::detail::statistics_gathering_node_delegate_wrapper::call_statistics_collector::actual_execution_measurement_helper</a>
 </li>
+<li>~address_builder()
+: <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl_1_1address__builder.html#ae71ba98b238b5f378a7db63ccb319fd9">graphene::net::detail::node_impl::address_builder</a>
+</li>
 <li>~aes_decoder()
 : <a class="el" href="classfc_1_1aes__decoder.html#a70d70088a10bdd8a14b29ad101d3a816">fc::aes_decoder</a>
 </li>
@@ -102,14 +105,17 @@ $(function() {
 <li>~application_impl()
 : <a class="el" href="classgraphene_1_1app_1_1detail_1_1application__impl.html#ab43ddaba8adc18948f6282c76cc2bb05">graphene::app::detail::application_impl</a>
 </li>
-<li>~asset_api()
-: <a class="el" href="classgraphene_1_1app_1_1asset__api.html#a715c6f7a5640aa5d045c43ef3e6728e2">graphene::app::asset_api</a>
+<li>~base_operation()
+: <a class="el" href="structgraphene_1_1protocol_1_1base__operation.html#a04ac6688e2df1d511514e4fc1983b828">graphene::protocol::base_operation</a>
+</li>
+<li>~base_primary_index()
+: <a class="el" href="classgraphene_1_1db_1_1base__primary__index.html#ad76d89ffbbd1a67c3026824569795a76">graphene::db::base_primary_index</a>
 </li>
 <li>~bigint()
 : <a class="el" href="classfc_1_1bigint.html#a87f2030b5a9b9813c757d57a5880c9c5">fc::bigint</a>
 </li>
-<li>~block_api()
-: <a class="el" href="classgraphene_1_1app_1_1block__api.html#ab0d6515ecbc18ac7ee651d283ceaeedc">graphene::app::block_api</a>
+<li>~block_header()
+: <a class="el" href="classgraphene_1_1protocol_1_1block__header.html#a434c734b33ebc82e15c340e998a05336">graphene::protocol::block_header</a>
 </li>
 <li>~bloom_filter()
 : <a class="el" href="classfc_1_1bloom__filter.html#ad2dae7aae11aad2bc1d7399eaa4692fd">fc::bloom_filter</a>
@@ -151,7 +157,7 @@ $(function() {
 : <a class="el" href="classgraphene_1_1custom__operations_1_1custom__operations__plugin.html#a500e6737f0036dd0902b0cbc9cb1dc1b">graphene::custom_operations::custom_operations_plugin</a>
 </li>
 <li>~database()
-: <a class="el" href="classgraphene_1_1chain_1_1database.html#a1733f5bf8a8ea84dcd8f962eb61debe1">graphene::chain::database</a>
+: <a class="el" href="classgraphene_1_1chain_1_1database.html#a483796147553d8d1fca562d6303c8d93">graphene::chain::database</a>
 </li>
 <li>~database_api()
 : <a class="el" href="classgraphene_1_1app_1_1database__api.html#a3510335e90925e050398d74bc9d22dd4">graphene::app::database_api</a>
@@ -168,9 +174,6 @@ $(function() {
 <li>~delayed_node_plugin()
 : <a class="el" href="classgraphene_1_1delayed__node_1_1delayed__node__plugin.html#a5ae1f3001b02da418a7ba12955bff199">graphene::delayed_node::delayed_node_plugin</a>
 </li>
-<li>~direct_index()
-: <a class="el" href="classgraphene_1_1db_1_1direct__index.html#aac2220e59f920fbbe9be94acbb7f18c2">graphene::db::direct_index&lt; Object, chunkbits &gt;</a>
-</li>
 <li>~directory_iterator()
 : <a class="el" href="classfc_1_1directory__iterator.html#a63eb76aeb7ec24226b924eba45e58ec6">fc::directory_iterator</a>
 </li>
@@ -179,9 +182,6 @@ $(function() {
 </li>
 <li>~elasticsearch_plugin()
 : <a class="el" href="classgraphene_1_1elasticsearch_1_1elasticsearch__plugin.html#a2751599dbd44856a7e28f12aee2000da">graphene::elasticsearch::elasticsearch_plugin</a>
-</li>
-<li>~elasticsearch_plugin_impl()
-: <a class="el" href="classgraphene_1_1elasticsearch_1_1detail_1_1elasticsearch__plugin__impl.html#a323da528486a2ee6e68d0094c6cf78ae">graphene::elasticsearch::detail::elasticsearch_plugin_impl</a>
 </li>
 <li>~encoder()
 : <a class="el" href="classfc_1_1hash160_1_1encoder.html#ad510a4820013ffb2e8316815a5d051e5">fc::hash160::encoder</a>
@@ -193,9 +193,6 @@ $(function() {
 </li>
 <li>~es_objects_plugin()
 : <a class="el" href="classgraphene_1_1es__objects_1_1es__objects__plugin.html#a4198e77edf2dbd85f2d8b030d9c4783c">graphene::es_objects::es_objects_plugin</a>
-</li>
-<li>~es_objects_plugin_impl()
-: <a class="el" href="classgraphene_1_1es__objects_1_1detail_1_1es__objects__plugin__impl.html#aee5cc0bed2990715e1e592c0365c88da">graphene::es_objects::detail::es_objects_plugin_impl</a>
 </li>
 <li>~exception()
 : <a class="el" href="classfc_1_1exception.html#a72f637422588d6f2e59ce35d53882522">fc::exception</a>
@@ -241,10 +238,10 @@ $(function() {
 , <a class="el" href="classfc_1_1udp__socket_1_1impl.html#a116b7e65ca5600cd5ea573f0d226d14e">fc::udp_socket::impl</a>
 </li>
 <li>~index()
-: <a class="el" href="classgraphene_1_1db_1_1index.html#a0f198d6faca558c749b833ede04116b3">graphene::db::index</a>
+: <a class="el" href="classgraphene_1_1db_1_1index.html#af4ee3fd06ff2ebdaf0137f67c8820015">graphene::db::index</a>
 </li>
 <li>~index_observer()
-: <a class="el" href="classgraphene_1_1db_1_1index__observer.html#a2db7717f92c1e145c593bd696c6f81e3">graphene::db::index_observer</a>
+: <a class="el" href="classgraphene_1_1db_1_1index__observer.html#a22f258c40d5cbe9322403123111685f3">graphene::db::index_observer</a>
 </li>
 <li>~istream()
 : <a class="el" href="classfc_1_1istream.html#a3d6f017f2fbcead4c7213618b5a21d36">fc::istream</a>
@@ -260,9 +257,6 @@ $(function() {
 </li>
 <li>~logger()
 : <a class="el" href="classfc_1_1logger.html#afb7a34b2276c8b909cef0b372aa26661">fc::logger</a>
-</li>
-<li>~login_api()
-: <a class="el" href="classgraphene_1_1app_1_1login__api.html#a131c27b7bdeaa79ee9a96325b42984b2">graphene::app::login_api</a>
 </li>
 <li>~mapped_region()
 : <a class="el" href="classfc_1_1mapped__region.html#a279003a5dda2cec5510342756bfba272">fc::mapped_region</a>
@@ -301,10 +295,10 @@ $(function() {
 : <a class="el" href="classfc_1_1non__preemptable__scope__check.html#a1462a842c75e5dc0d2e836cb39c23fab">fc::non_preemptable_scope_check</a>
 </li>
 <li>~object()
-: <a class="el" href="classgraphene_1_1db_1_1object.html#ac457a859418c22014c07a3bcdc67ed04">graphene::db::object</a>
+: <a class="el" href="classgraphene_1_1db_1_1object.html#ae8f3fa315d81c80cd93cf5ea2853e65f">graphene::db::object</a>
 </li>
 <li>~object_database()
-: <a class="el" href="classgraphene_1_1db_1_1object__database.html#ad11a7de3f9e5220858a997648a98b6a6">graphene::db::object_database</a>
+: <a class="el" href="classgraphene_1_1db_1_1object__database.html#a5e8b60949b1ec0c513414c13833fc172">graphene::db::object_database</a>
 </li>
 <li>~ofstream()
 : <a class="el" href="classfc_1_1ofstream.html#a6fe2d629cda354d67dfb28c9220b8294">fc::ofstream</a>
@@ -389,7 +383,7 @@ $(function() {
 : <a class="el" href="classfc_1_1scoped__lock.html#aa8cf88cbc4d659b7cf6a4804929b57cd">fc::scoped_lock&lt; T &gt;</a>
 </li>
 <li>~secondary_index()
-: <a class="el" href="classgraphene_1_1db_1_1secondary__index.html#a99e9c2411aab4366a325560013137e62">graphene::db::secondary_index</a>
+: <a class="el" href="classgraphene_1_1db_1_1secondary__index.html#a36f99cc527570ba65ba6856e66edef2c">graphene::db::secondary_index</a>
 </li>
 <li>~serial_valve()
 : <a class="el" href="classfc_1_1serial__valve.html#a29c777e129d94852a4f2ca7f9f2ea797">fc::serial_valve</a>
@@ -513,7 +507,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:59 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:48 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -66,9 +66,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">elasticsearch_plugin.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -77,13 +75,18 @@ $(function() {
 <code>#include &lt;<a class="el" href="impacted_8hpp_source.html">graphene/chain/impacted.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="account__evaluator_8hpp_source.html">graphene/chain/account_evaluator.hpp</a>&gt;</code><br />
 <code>#include &lt;graphene/chain/hardfork.hpp&gt;</code><br />
-<code>#include &lt;curl/curl.h&gt;</code><br />
+<code>#include &lt;boost/algorithm/string.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="boost__program__options_8hpp_source.html">graphene/utilities/boost_program_options.hpp</a>&gt;</code><br />
 </div>
 <p><a href="elasticsearch__plugin_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1elasticsearch_1_1detail_1_1elasticsearch__plugin__impl.html">graphene::elasticsearch::detail::elasticsearch_plugin_impl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1elasticsearch_1_1detail_1_1get__fee__payer__visitor.html">graphene::elasticsearch::detail::get_fee_payer_visitor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1elasticsearch_1_1detail_1_1operation__visitor.html">graphene::elasticsearch::detail::operation_visitor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -94,111 +97,11 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacegraphene_1_1elasticsearch_1_1detail"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1elasticsearch_1_1detail.html">graphene::elasticsearch::detail</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a1338fb152d90405094bce40337c7e969"><td class="memItemLeft" align="right" valign="top">return&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elasticsearch__plugin_8cpp.html#a1338fb152d90405094bce40337c7e969">fromEStoOperation</a> (<a class="el" href="elasticsearch__plugin_8cpp.html#a5745593ea217a2c8c9b8fb92148d4899">source</a>)</td></tr>
-<tr class="separator:a1338fb152d90405094bce40337c7e969"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a4f73904522f0f0d1285c448c56552cdf"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elasticsearch__plugin_8cpp.html#a4f73904522f0f0d1285c448c56552cdf">es</a> = prepareHistoryQuery(query)</td></tr>
-<tr class="separator:a4f73904522f0f0d1285c448c56552cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94e56764b51fc45f5ff625a6cb26cf63"><td class="memItemLeft" align="right" valign="top">const auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elasticsearch__plugin_8cpp.html#a94e56764b51fc45f5ff625a6cb26cf63">response</a> = <a class="el" href="namespacegraphene_1_1utilities.html#ab52d6a4cd60cbe22dc55148f28941ae9">graphene::utilities::simpleQuery</a>(<a class="el" href="elasticsearch__plugin_8cpp.html#a4f73904522f0f0d1285c448c56552cdf">es</a>)</td></tr>
-<tr class="separator:a94e56764b51fc45f5ff625a6cb26cf63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a7dbd279bf6bdfc9b9d726bcb00f275"><td class="memItemLeft" align="right" valign="top">variant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elasticsearch__plugin_8cpp.html#a2a7dbd279bf6bdfc9b9d726bcb00f275">variant_response</a> = <a class="el" href="classfc_1_1json.html#a2a9ee7bbc147d202bbb8ae96c4886403">fc::json::from_string</a>(<a class="el" href="elasticsearch__plugin_8cpp.html#a94e56764b51fc45f5ff625a6cb26cf63">response</a>)</td></tr>
-<tr class="separator:a2a7dbd279bf6bdfc9b9d726bcb00f275"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5745593ea217a2c8c9b8fb92148d4899"><td class="memItemLeft" align="right" valign="top">const auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elasticsearch__plugin_8cpp.html#a5745593ea217a2c8c9b8fb92148d4899">source</a> = <a class="el" href="elasticsearch__plugin_8cpp.html#a2a7dbd279bf6bdfc9b9d726bcb00f275">variant_response</a>[&quot;hits&quot;][&quot;hits&quot;][size_t(0)][&quot;_source&quot;]</td></tr>
-<tr class="separator:a5745593ea217a2c8c9b8fb92148d4899"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a1338fb152d90405094bce40337c7e969"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1338fb152d90405094bce40337c7e969">&#9670;&nbsp;</a></span>fromEStoOperation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">return fromEStoOperation </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="elasticsearch__plugin_8cpp.html#a5745593ea217a2c8c9b8fb92148d4899">source</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a4f73904522f0f0d1285c448c56552cdf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f73904522f0f0d1285c448c56552cdf">&#9670;&nbsp;</a></span>es</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto es = prepareHistoryQuery(query)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8cpp_source.html#l00576">576</a> of file <a class="el" href="elasticsearch__plugin_8cpp_source.html">elasticsearch_plugin.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a94e56764b51fc45f5ff625a6cb26cf63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94e56764b51fc45f5ff625a6cb26cf63">&#9670;&nbsp;</a></span>response</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const auto response = <a class="el" href="namespacegraphene_1_1utilities.html#ab52d6a4cd60cbe22dc55148f28941ae9">graphene::utilities::simpleQuery</a>(<a class="el" href="elasticsearch__plugin_8cpp.html#a4f73904522f0f0d1285c448c56552cdf">es</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8cpp_source.html#l00577">577</a> of file <a class="el" href="elasticsearch__plugin_8cpp_source.html">elasticsearch_plugin.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a5745593ea217a2c8c9b8fb92148d4899"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5745593ea217a2c8c9b8fb92148d4899">&#9670;&nbsp;</a></span>source</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const auto source = <a class="el" href="elasticsearch__plugin_8cpp.html#a2a7dbd279bf6bdfc9b9d726bcb00f275">variant_response</a>[&quot;hits&quot;][&quot;hits&quot;][size_t(0)][&quot;_source&quot;]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8cpp_source.html#l00579">579</a> of file <a class="el" href="elasticsearch__plugin_8cpp_source.html">elasticsearch_plugin.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a2a7dbd279bf6bdfc9b9d726bcb00f275"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a7dbd279bf6bdfc9b9d726bcb00f275">&#9670;&nbsp;</a></span>variant_response</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">variant variant_response = <a class="el" href="classfc_1_1json.html#a2a9ee7bbc147d202bbb8ae96c4886403">fc::json::from_string</a>(<a class="el" href="elasticsearch__plugin_8cpp.html#a94e56764b51fc45f5ff625a6cb26cf63">response</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="elasticsearch__plugin_8cpp_source.html#l00578">578</a> of file <a class="el" href="elasticsearch__plugin_8cpp_source.html">elasticsearch_plugin.cpp</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:55 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:45 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

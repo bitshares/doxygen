@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -68,20 +68,22 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">account_history_plugin.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="plugin_8hpp_source.html">graphene/app/plugin.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="database_8hpp_source.html">graphene/chain/database.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="operation__history__object_8hpp_source.html">graphene/chain/operation_history_object.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="future_8hpp_source.html">fc/thread/future.hpp</a>&gt;</code><br />
+<code>#include &lt;boost/multi_index/composite_key.hpp&gt;</code><br />
 </div>
 <p><a href="account__history__plugin_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1account__history_1_1exceeded__account__object.html">graphene::account_history::exceeded_account_object</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct tracks accounts that have exceeded the max-ops-per-account limit.  <a href="structgraphene_1_1account__history_1_1exceeded__account__object.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1account__history_1_1account__history__plugin.html">graphene::account_history::account_history_plugin</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -99,9 +101,16 @@ Macros</h2></td></tr>
 <tr class="memitem:abd4fa77dd4aaf15e05dca3bac09b398e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="account__history__plugin_8hpp.html#abd4fa77dd4aaf15e05dca3bac09b398e">ACCOUNT_HISTORY_SPACE_ID</a>&#160;&#160;&#160;4</td></tr>
 <tr class="separator:abd4fa77dd4aaf15e05dca3bac09b398e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a66443d6a8577d0e88d26747685ced0c6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1account__history.html#a66443d6a8577d0e88d26747685ced0c6">graphene::account_history::exceeded_account_multi_idx_type</a> = multi_index_container&lt; exceeded_account_object, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt;, ordered_unique&lt; tag&lt; by_account &gt;, member&lt; exceeded_account_object, account_id_type, &amp;exceeded_account_object::account_id &gt; &gt;, ordered_unique&lt; tag&lt; by_block_num &gt;, composite_key&lt; exceeded_account_object, member&lt; exceeded_account_object, uint32_t, &amp;exceeded_account_object::block_num &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt; &gt; &gt;</td></tr>
+<tr class="separator:a66443d6a8577d0e88d26747685ced0c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab32a180f815483b59766add468028a13"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1account__history.html#ab32a180f815483b59766add468028a13">graphene::account_history::exceeded_account_index</a> = generic_index&lt; exceeded_account_object, exceeded_account_multi_idx_type &gt;</td></tr>
+<tr class="separator:ab32a180f815483b59766add468028a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ab45e882d887d1f28eb4a10c8a48c9fa7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1account__history.html#ab45e882d887d1f28eb4a10c8a48c9fa7">graphene::account_history::account_history_object_type</a> { <a class="el" href="namespacegraphene_1_1account__history.html#ab45e882d887d1f28eb4a10c8a48c9fa7aaf748086896e114bc7c428b1a6ce2aca">graphene::account_history::key_account_object_type</a> = 0
+<tr class="memitem:ab45e882d887d1f28eb4a10c8a48c9fa7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1account__history.html#ab45e882d887d1f28eb4a10c8a48c9fa7">graphene::account_history::account_history_object_type</a> { <a class="el" href="namespacegraphene_1_1account__history.html#ab45e882d887d1f28eb4a10c8a48c9fa7acc4f714d1a1d1de96e8a6b49ae4603f9">graphene::account_history::exceeded_account_object_type</a> = 0
  }</td></tr>
 <tr class="separator:ab45e882d887d1f28eb4a10c8a48c9fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -118,14 +127,14 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="account__history__plugin_8hpp_source.html#l00050">50</a> of file <a class="el" href="account__history__plugin_8hpp_source.html">account_history_plugin.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="account__history__plugin_8hpp_source.html#l00044">44</a> of file <a class="el" href="account__history__plugin_8hpp_source.html">account_history_plugin.hpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:55 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:45 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

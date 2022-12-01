@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -73,7 +73,6 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="database__api_8hpp_source.html">graphene/app/database_api.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="protocol_2include_2graphene_2protocol_2types_8hpp_source.html">graphene/protocol/types.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="confidential_8hpp_source.html">graphene/protocol/confidential.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="market__history__plugin_8hpp_source.html">graphene/market_history/market_history_plugin.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="grouped__orders__plugin_8hpp_source.html">graphene/grouped_orders/grouped_orders_plugin.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="custom__operations__plugin_8hpp_source.html">graphene/custom_operations/custom_operations_plugin.hpp</a>&gt;</code><br />
@@ -94,21 +93,10 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1verify__range__result.html">graphene::app::verify_range_result</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1verify__range__proof__rewind__result.html">graphene::app::verify_range_proof_rewind_result</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1account__asset__balance.html">graphene::app::account_asset_balance</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1asset__holders.html">graphene::app::asset_holders</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1history__operation__detail.html">graphene::app::history_operation_detail</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1limit__order__group.html">graphene::app::limit_order_group</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">summary data of a group of limit orders  <a href="structgraphene_1_1app_1_1limit__order__group.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1history__api.html">graphene::app::history_api</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classgraphene_1_1app_1_1history__api.html" title="The history_api class implements the RPC API for account history. ">history_api</a> class implements the RPC API for account history.  <a href="classgraphene_1_1app_1_1history__api.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1history__api_1_1history__operation__detail.html">graphene::app::history_api::history_operation_detail</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1block__api.html">graphene::app::block_api</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block api.  <a href="classgraphene_1_1app_1_1block__api.html#details">More...</a><br /></td></tr>
@@ -124,14 +112,28 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html">graphene::app::crypto_api</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classgraphene_1_1app_1_1crypto__api.html" title="The crypto_api class allows computations related to blinded transfers. ">crypto_api</a> class allows computations related to blinded transfers.  <a href="classgraphene_1_1app_1_1crypto__api.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1crypto__api_1_1verify__range__result.html">graphene::app::crypto_api::verify_range_result</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1crypto__api_1_1verify__range__proof__rewind__result.html">graphene::app::crypto_api::verify_range_proof_rewind_result</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1asset__api.html">graphene::app::asset_api</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classgraphene_1_1app_1_1asset__api.html" title="The asset_api class allows query of info about asset holders. ">asset_api</a> class allows query of info about asset holders.  <a href="classgraphene_1_1app_1_1asset__api.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1asset__api_1_1account__asset__balance.html">graphene::app::asset_api::account_asset_balance</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1asset__api_1_1asset__holders.html">graphene::app::asset_api::asset_holders</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1orders__api.html">graphene::app::orders_api</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">the <a class="el" href="classgraphene_1_1app_1_1orders__api.html" title="the orders_api class exposes access to data processed with grouped orders plugin. ...">orders_api</a> class exposes access to data processed with grouped orders plugin.  <a href="classgraphene_1_1app_1_1orders__api.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1orders__api_1_1limit__order__group.html">graphene::app::orders_api::limit_order_group</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">summary data of a group of limit orders  <a href="structgraphene_1_1app_1_1orders__api_1_1limit__order__group.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1custom__operations__api.html">graphene::app::custom_operations_api</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classgraphene_1_1app_1_1custom__operations__api.html" title="The custom_operations_api class exposes access to standard custom objects parsed by the custom_operat...">custom_operations_api</a> class exposes access to standard custom objects parsed by the custom_operations_plugin.  <a href="classgraphene_1_1app_1_1custom__operations__api.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1app_1_1dummy__api.html">graphene::app::dummy_api</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A dummy API class that does nothing, used when access to <a class="el" href="classgraphene_1_1app_1_1database__api.html" title="The database_api class implements the RPC API for the chain database. ">database_api</a> is not allowed.  <a href="structgraphene_1_1app_1_1dummy__api.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1login__api.html">graphene::app::login_api</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classgraphene_1_1app_1_1login__api.html" title="The login_api class implements the bottom layer of the RPC API. ">login_api</a> class implements the bottom layer of the RPC API.  <a href="classgraphene_1_1app_1_1login__api.html#details">More...</a><br /></td></tr>
@@ -147,7 +149,7 @@ Namespaces</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:55 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:45 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

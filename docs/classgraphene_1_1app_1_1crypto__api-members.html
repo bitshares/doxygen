@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -71,18 +71,17 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classgraphene_1_1app_1_1crypto__api.html">graphene::app::crypto_api</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#a819517c27c9b5436cea4bd7114d68759">blind</a>(const fc::ecc::blind_factor_type &amp;blind, uint64_t value)</td><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html">graphene::app::crypto_api</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#aa1a6caa5122568ca0ae4f5379a2d1943">blind_sum</a>(const std::vector&lt; blind_factor_type &gt; &amp;blinds_in, uint32_t non_neg)</td><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html">graphene::app::crypto_api</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#adcb829f4fc90959164d92b4b285e8085">crypto_api</a>()</td><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html">graphene::app::crypto_api</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#a6765af523fc6dd5e75872782b4ee12b2">range_get_info</a>(const std::vector&lt; char &gt; &amp;proof)</td><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html">graphene::app::crypto_api</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#a1923d73235200a4f3da0a4d021a865d2">range_proof_sign</a>(uint64_t min_value, const commitment_type &amp;commit, const blind_factor_type &amp;commit_blind, const blind_factor_type &amp;nonce, int8_t base10_exp, uint8_t min_bits, uint64_t actual_value)</td><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html">graphene::app::crypto_api</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#a5310e5955a16937db91c99a8fea0ffe6">verify_range</a>(const fc::ecc::commitment_type &amp;commit, const std::vector&lt; char &gt; &amp;proof)</td><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html">graphene::app::crypto_api</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#af49d58d9538c6908ea320887af07d9f3">verify_range_proof_rewind</a>(const blind_factor_type &amp;nonce, const fc::ecc::commitment_type &amp;commit, const std::vector&lt; char &gt; &amp;proof)</td><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html">graphene::app::crypto_api</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#ad9c6f9589828b10f4cc8bfe4a6a359d3">verify_sum</a>(const std::vector&lt; commitment_type &gt; &amp;commits_in, const std::vector&lt; commitment_type &gt; &amp;neg_commits_in, int64_t excess)</td><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html">graphene::app::crypto_api</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#a6e64e452c062ee942237af9910183709">blind</a>(const fc::ecc::blind_factor_type &amp;blind, uint64_t value) const</td><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html">graphene::app::crypto_api</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#aff6b31fc94ea3b174a911cdcc1aa470a">blind_sum</a>(const std::vector&lt; blind_factor_type &gt; &amp;blinds_in, uint32_t non_neg) const</td><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html">graphene::app::crypto_api</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#a189ed35efdd7c4a0d94c0c9a8eaeda9f">range_get_info</a>(const std::vector&lt; char &gt; &amp;proof) const</td><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html">graphene::app::crypto_api</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#a54f718cd40432903de6821284efda0ca">range_proof_sign</a>(uint64_t min_value, const commitment_type &amp;commit, const blind_factor_type &amp;commit_blind, const blind_factor_type &amp;nonce, int8_t base10_exp, uint8_t min_bits, uint64_t actual_value) const</td><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html">graphene::app::crypto_api</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#a54002c662a92a35f926907e9a2985acf">verify_range</a>(const fc::ecc::commitment_type &amp;commit, const std::vector&lt; char &gt; &amp;proof) const</td><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html">graphene::app::crypto_api</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#a1abdb9bc01dd37a28a10441cdc0d30cb">verify_range_proof_rewind</a>(const blind_factor_type &amp;nonce, const fc::ecc::commitment_type &amp;commit, const std::vector&lt; char &gt; &amp;proof) const</td><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html">graphene::app::crypto_api</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html#af9b57a4284d35fc3811f3d76994a9e6b">verify_sum</a>(const std::vector&lt; commitment_type &gt; &amp;commits_in, const std::vector&lt; commitment_type &gt; &amp;neg_commits_in, int64_t excess) const</td><td class="entry"><a class="el" href="classgraphene_1_1app_1_1crypto__api.html">graphene::app::crypto_api</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:56 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:46 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

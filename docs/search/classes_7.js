@@ -19,7 +19,7 @@ var searchData=
   ['help_5fvisitor',['help_visitor',['../structgraphene_1_1wallet_1_1detail_1_1help__visitor.html',1,'graphene::wallet::detail']]],
   ['history_5fapi',['history_api',['../classgraphene_1_1app_1_1history__api.html',1,'graphene::app']]],
   ['history_5fkey',['history_key',['../structgraphene_1_1market__history_1_1history__key.html',1,'graphene::market_history']]],
-  ['history_5foperation_5fdetail',['history_operation_detail',['../structgraphene_1_1app_1_1history__operation__detail.html',1,'graphene::app']]],
+  ['history_5foperation_5fdetail',['history_operation_detail',['../structgraphene_1_1app_1_1history__api_1_1history__operation__detail.html',1,'graphene::app::history_api']]],
   ['hmac',['hmac',['../classfc_1_1hmac.html',1,'fc']]],
   ['htlc_5fcreate_5fevaluator',['htlc_create_evaluator',['../classgraphene_1_1chain_1_1htlc__create__evaluator.html',1,'graphene::chain']]],
   ['htlc_5fcreate_5foperation',['htlc_create_operation',['../structgraphene_1_1protocol_1_1htlc__create__operation.html',1,'graphene::protocol']]],
@@ -32,5 +32,7 @@ var searchData=
   ['htlc_5fredeem_5foperation',['htlc_redeem_operation',['../structgraphene_1_1protocol_1_1htlc__redeem__operation.html',1,'graphene::protocol']]],
   ['htlc_5fredeem_5fvisitor',['htlc_redeem_visitor',['../classgraphene_1_1chain_1_1htlc__redeem__visitor.html',1,'graphene::chain']]],
   ['htlc_5fredeemed_5foperation',['htlc_redeemed_operation',['../structgraphene_1_1protocol_1_1htlc__redeemed__operation.html',1,'graphene::protocol']]],
-  ['htlc_5frefund_5foperation',['htlc_refund_operation',['../structgraphene_1_1protocol_1_1htlc__refund__operation.html',1,'graphene::protocol']]]
+  ['htlc_5frefund_5foperation',['htlc_refund_operation',['../structgraphene_1_1protocol_1_1htlc__refund__operation.html',1,'graphene::protocol']]],
+  ['http_5fresponse',['http_response',['../structgraphene_1_1utilities_1_1curl__wrapper_1_1http__response.html',1,'graphene::utilities::curl_wrapper']]],
+  ['http_5fresponse_5fcode',['http_response_code',['../structgraphene_1_1utilities_1_1curl__wrapper_1_1http__response__code.html',1,'graphene::utilities::curl_wrapper']]]
 ];
