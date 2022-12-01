@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -75,10 +75,12 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html">abstract_object</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the Curiously Recurring Template Pattern to automatically add the ability to clone, serialize, and move objects polymorphically.  <a href="classgraphene_1_1db_1_1abstract__object.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1annotated__object.html">annotated_object</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An object that is easily extended by providing pointers to other objects, one for each space.  <a href="classgraphene_1_1db_1_1annotated__object.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__abstract__object.html">base_abstract_object</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the Curiously Recurring Template Pattern to automatically add the ability to clone, serialize, and move objects polymorphically.  <a href="classgraphene_1_1db_1_1base__abstract__object.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__primary__index.html">base_primary_index</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,26 +127,26 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a79ca14ce939452c7bdbad36c069fa317"><td class="memItemLeft" align="right" valign="top">typedef flat_map&lt; uint8_t, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1db.html#a79ca14ce939452c7bdbad36c069fa317">annotation_map</a></td></tr>
-<tr class="separator:a79ca14ce939452c7bdbad36c069fa317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3bf9f711511db0410d053ecb87a1003"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1db.html#af3bf9f711511db0410d053ecb87a1003">annotation_map</a> = fc::flat_map&lt; uint8_t, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a> &gt;</td></tr>
+<tr class="separator:af3bf9f711511db0410d053ecb87a1003"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb11826d88001d85931beeca2eff73f9"><td class="memTemplParams" colspan="2">template&lt;typename ObjectID &gt; </td></tr>
 <tr class="memitem:abb11826d88001d85931beeca2eff73f9"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1db.html#abb11826d88001d85931beeca2eff73f9">object_downcast_t</a> = typename <a class="el" href="structgraphene_1_1db_1_1object__downcast.html">object_downcast</a>&lt; ObjectID &gt;::type</td></tr>
 <tr class="separator:abb11826d88001d85931beeca2eff73f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a79ca14ce939452c7bdbad36c069fa317"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79ca14ce939452c7bdbad36c069fa317">&#9670;&nbsp;</a></span>annotation_map</h2>
+<a id="af3bf9f711511db0410d053ecb87a1003"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3bf9f711511db0410d053ecb87a1003">&#9670;&nbsp;</a></span>annotation_map</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef flat_map&lt;uint8_t, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>&gt; <a class="el" href="namespacegraphene_1_1db.html#a79ca14ce939452c7bdbad36c069fa317">graphene::db::annotation_map</a></td>
+          <td class="memname">using <a class="el" href="namespacegraphene_1_1db.html#af3bf9f711511db0410d053ecb87a1003">graphene::db::annotation_map</a> = typedef fc::flat_map&lt;uint8_t, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="object_8hpp_source.html#l00102">102</a> of file <a class="el" href="object_8hpp_source.html">object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="object_8hpp_source.html#l00116">116</a> of file <a class="el" href="object_8hpp_source.html">object.hpp</a>.</p>
 
 </div>
 </div>
@@ -162,14 +164,14 @@ template&lt;typename ObjectID &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="object__id_8hpp_source.html#l00105">105</a> of file <a class="el" href="object__id_8hpp_source.html">object_id.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="object__id_8hpp_source.html#l00100">100</a> of file <a class="el" href="object__id_8hpp_source.html">object_id.hpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:58 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:47 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

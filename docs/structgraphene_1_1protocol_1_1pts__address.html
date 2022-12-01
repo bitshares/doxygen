@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -67,6 +67,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structgraphene_1_1protocol_1_1pts__address-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">graphene::protocol::pts_address Struct Reference</div>  </div>
@@ -81,11 +82,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aafbe1214a62ca7f4cf809f488a615dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructs empty / null address  <a href="#aafbe1214a62ca7f4cf809f488a615dbe">More...</a><br /></td></tr>
 <tr class="separator:aafbe1214a62ca7f4cf809f488a615dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa69ebbe5787581654312a783019e8ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#aaa69ebbe5787581654312a783019e8ab">pts_address</a> (const std::string &amp;base58str)</td></tr>
-<tr class="memdesc:aaa69ebbe5787581654312a783019e8ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">converts to binary, validates checksum  <a href="#aaa69ebbe5787581654312a783019e8ab">More...</a><br /></td></tr>
 <tr class="separator:aaa69ebbe5787581654312a783019e8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29b305970f0b7bfc23b28fb5b405e9ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#a29b305970f0b7bfc23b28fb5b405e9ae">pts_address</a> (const <a class="el" href="classfc_1_1ecc_1_1public__key.html">fc::ecc::public_key</a> &amp;pub, bool compressed=true, uint8_t <a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#a29cac6ed797ea38d966d4c07d7170832">version</a>=56)</td></tr>
-<tr class="memdesc:a29b305970f0b7bfc23b28fb5b405e9ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">converts to binary  <a href="#a29b305970f0b7bfc23b28fb5b405e9ae">More...</a><br /></td></tr>
-<tr class="separator:a29b305970f0b7bfc23b28fb5b405e9ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73de69fb20543a78bfe2bc0fa6fe777d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#a73de69fb20543a78bfe2bc0fa6fe777d">pts_address</a> (const <a class="el" href="classfc_1_1ecc_1_1public__key.html">fc::ecc::public_key</a> &amp;pub, bool compressed=true, uint8_t <a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#a29cac6ed797ea38d966d4c07d7170832">version</a>=<a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#a6d7cfaac2d02783882ceb721857e290f">default_version</a>)</td></tr>
+<tr class="memdesc:a73de69fb20543a78bfe2bc0fa6fe777d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs from a public key.  <a href="#a73de69fb20543a78bfe2bc0fa6fe777d">More...</a><br /></td></tr>
+<tr class="separator:a73de69fb20543a78bfe2bc0fa6fe777d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29cac6ed797ea38d966d4c07d7170832"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#a29cac6ed797ea38d966d4c07d7170832">version</a> () const</td></tr>
 <tr class="separator:a29cac6ed797ea38d966d4c07d7170832"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93aaa5f9a4a259ad11c0ff7ba27990eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#a93aaa5f9a4a259ad11c0ff7ba27990eb">is_valid</a> () const</td></tr>
@@ -99,6 +99,11 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ad323ac65b6257cad103596166dd63af0"><td class="memItemLeft" align="right" valign="top">std::array&lt; char, 25 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#ad323ac65b6257cad103596166dd63af0">addr</a> {}</td></tr>
 <tr class="memdesc:ad323ac65b6257cad103596166dd63af0"><td class="mdescLeft">&#160;</td><td class="mdescRight">binary representation of address, 0-initialized  <a href="#ad323ac65b6257cad103596166dd63af0">More...</a><br /></td></tr>
 <tr class="separator:ad323ac65b6257cad103596166dd63af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a6d7cfaac2d02783882ceb721857e290f"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#a6d7cfaac2d02783882ceb721857e290f">default_version</a> = 56</td></tr>
+<tr class="separator:a6d7cfaac2d02783882ceb721857e290f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implements address stringification and validation from PTS </p>
@@ -131,6 +136,9 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">graphene::protocol::pts_address::pts_address </td>
@@ -140,19 +148,26 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-
 <p>converts to binary, validates checksum </p>
 
 <p class="definition">Definition at line <a class="el" href="pts__address_8cpp_source.html#l00039">39</a> of file <a class="el" href="pts__address_8cpp_source.html">pts_address.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a29b305970f0b7bfc23b28fb5b405e9ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29b305970f0b7bfc23b28fb5b405e9ae">&#9670;&nbsp;</a></span>pts_address() <span class="overload">[3/3]</span></h2>
+<a id="a73de69fb20543a78bfe2bc0fa6fe777d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73de69fb20543a78bfe2bc0fa6fe777d">&#9670;&nbsp;</a></span>pts_address() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">graphene::protocol::pts_address::pts_address </td>
@@ -170,7 +185,7 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>version</em> = <code>56</code>&#160;</td>
+          <td class="paramname"><em>version</em> = <code><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html#a6d7cfaac2d02783882ceb721857e290f">default_version</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -178,9 +193,14 @@ Public Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>converts to binary </p>
+<p>Constructs from a public key. </p>
 
 <p class="definition">Definition at line <a class="el" href="pts__address_8cpp_source.html#l00048">48</a> of file <a class="el" href="pts__address_8cpp_source.html">pts_address.cpp</a>.</p>
 
@@ -212,6 +232,9 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">graphene::protocol::pts_address::operator std::string </td>
@@ -220,6 +243,11 @@ Public Attributes</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>converts to base58 + checksum </p>
@@ -251,7 +279,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pts__address_8hpp_source.html#l00047">47</a> of file <a class="el" href="pts__address_8hpp_source.html">pts_address.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pts__address_8hpp_source.html#l00052">52</a> of file <a class="el" href="pts__address_8hpp_source.html">pts_address.hpp</a>.</p>
 
 </div>
 </div>
@@ -270,7 +298,31 @@ Public Attributes</h2></td></tr>
 
 <p>binary representation of address, 0-initialized </p>
 
-<p class="definition">Definition at line <a class="el" href="pts__address_8hpp_source.html#l00052">52</a> of file <a class="el" href="pts__address_8hpp_source.html">pts_address.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pts__address_8hpp_source.html#l00057">57</a> of file <a class="el" href="pts__address_8hpp_source.html">pts_address.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a6d7cfaac2d02783882ceb721857e290f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d7cfaac2d02783882ceb721857e290f">&#9670;&nbsp;</a></span>default_version</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t graphene::protocol::pts_address::default_version = 56</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="pts__address_8hpp_source.html#l00043">43</a> of file <a class="el" href="pts__address_8hpp_source.html">pts_address.hpp</a>.</p>
 
 </div>
 </div>
@@ -281,7 +333,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:58 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:48 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

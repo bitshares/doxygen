@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -66,9 +66,6 @@ $(function() {
 <li>elasticsearch_thread
 : <a class="el" href="classgraphene_1_1app_1_1application.html#a668e7fd37142a4612699270e4fec37bc">graphene::app::application</a>
 </li>
-<li>elasticsearch_url
-: <a class="el" href="classgraphene_1_1utilities_1_1_e_s.html#aebc18e3eacb82ef18ca8fb1fcde7fc18">graphene::utilities::ES</a>
-</li>
 <li>enable_subscribe_to_all
 : <a class="el" href="classgraphene_1_1app_1_1application__options.html#a6d0f973fa33e5e4fb7544b2437681f63">graphene::app::application_options</a>
 </li>
@@ -77,6 +74,7 @@ $(function() {
 , <a class="el" href="structfc_1_1logger__config.html#a1279327c0d6062c6d863da1e8b1b0dca">fc::logger_config</a>
 , <a class="el" href="classgraphene_1_1chain_1_1credit__offer__object.html#ab57a924e4943d834a8191de39b3a4292">graphene::chain::credit_offer_object</a>
 , <a class="el" href="classgraphene_1_1chain_1_1custom__authority__object.html#a7a21d1c75f9eb4298178278cd26ca349">graphene::chain::custom_authority_object</a>
+, <a class="el" href="structgraphene_1_1es__objects_1_1detail_1_1es__objects__plugin__impl_1_1plugin__options_1_1object__options.html#ac02ef90f7d08292425623ed34d528e89">graphene::es_objects::detail::es_objects_plugin_impl::plugin_options::object_options</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1credit__offer__create__operation.html#ace5f98217bcb5a01083ee1df34a6bff1">graphene::protocol::credit_offer_create_operation</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1credit__offer__update__operation.html#a6702f11ec21d0daa21bee702403a2f5f">graphene::protocol::credit_offer_update_operation</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1custom__authority__create__operation.html#abc8ff85a39fc7b8d19cbd01317bb3b0a">graphene::protocol::custom_authority_create_operation</a>
@@ -90,16 +88,12 @@ $(function() {
 <li>endpoint
 : <a class="el" href="structfc_1_1gelf__appender_1_1config.html#a05092e63c79b6a42d6afe28be8f8b494">fc::gelf_appender::config</a>
 , <a class="el" href="structgraphene_1_1net_1_1potential__peer__record.html#a0a28087c2b741b243ef6d2fb9490d71c">graphene::net::potential_peer_record</a>
-, <a class="el" href="classgraphene_1_1utilities_1_1_e_s.html#aff943380f375b3160b10e2668602e458">graphene::utilities::ES</a>
 </li>
 <li>endpoint_checked
 : <a class="el" href="structgraphene_1_1net_1_1check__firewall__reply__message.html#a021de92959a067a1fc60ddbfa3bcbd56">graphene::net::check_firewall_reply_message</a>
 </li>
 <li>endpoint_to_check
 : <a class="el" href="structgraphene_1_1net_1_1check__firewall__message.html#a839745487836dcec292ced42fed610a7">graphene::net::check_firewall_message</a>
-</li>
-<li>endpoint_to_test
-: <a class="el" href="structgraphene_1_1net_1_1firewall__check__state__data.html#a753322c387754533ce6a54064913b008">graphene::net::firewall_check_state_data</a>
 </li>
 <li>eof
 : <a class="el" href="structfc_1_1cin__buffer.html#a48d157ed4737e06537fefafecd473a59">fc::cin_buffer</a>
@@ -111,17 +105,15 @@ $(function() {
 : <a class="el" href="structfc_1_1rpc_1_1response.html#aadcca62b4d833ae87f1e5bb66ebb6cae">fc::rpc::response</a>
 , <a class="el" href="structgraphene_1_1net_1_1closing__connection__message.html#a43759271ff59db28a2980eb24245de15">graphene::net::closing_connection_message</a>
 </li>
-<li>es
-: <a class="el" href="classgraphene_1_1elasticsearch_1_1detail_1_1elasticsearch__plugin__impl.html#a79366aebec8feecc71655ec108faa1c9">graphene::elasticsearch::detail::elasticsearch_plugin_impl</a>
-</li>
 <li>exp
 : <a class="el" href="structfc_1_1ecc_1_1range__proof__info.html#aabb08c8c85dbd8e0d3da6b80ea2c1ffe">fc::ecc::range_proof_info</a>
 </li>
-<li>expected_node_id
-: <a class="el" href="structgraphene_1_1net_1_1firewall__check__state__data.html#a93b54e9c6a978ca08644f0043a6c6701">graphene::net::firewall_check_state_data</a>
+<li>expecting_address_message
+: <a class="el" href="classgraphene_1_1net_1_1peer__connection.html#ab7d95484ba77a0bac177f743da0eaba5">graphene::net::peer_connection</a>
 </li>
 <li>expiration
-: <a class="el" href="structgraphene_1_1chain_1_1htlc__object_1_1condition__info_1_1time__lock__info.html#aa04ec47ce1bd2e9d056117b470738859">graphene::chain::htlc_object::condition_info::time_lock_info</a>
+: <a class="el" href="structgraphene_1_1app_1_1order.html#a91bf247ab5c3cffce0904c74f68e51b4">graphene::app::order</a>
+, <a class="el" href="structgraphene_1_1chain_1_1htlc__object_1_1condition__info_1_1time__lock__info.html#aa04ec47ce1bd2e9d056117b470738859">graphene::chain::htlc_object::condition_info::time_lock_info</a>
 , <a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html#a5ba529f677c8917605db7f28dac8a05d">graphene::chain::limit_order_object</a>
 , <a class="el" href="classgraphene_1_1chain_1_1withdraw__permission__object.html#aee496512e5274d67e09bb0071c001a82">graphene::chain::withdraw_permission_object</a>
 , <a class="el" href="structgraphene_1_1protocol_1_1limit__order__create__operation.html#a3c7a09bfaeebeb0fab8e56664dccb73d">graphene::protocol::limit_order_create_operation</a>
@@ -198,7 +190,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:59 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:48 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

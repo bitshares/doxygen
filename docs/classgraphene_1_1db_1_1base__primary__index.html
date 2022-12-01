@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -89,6 +89,8 @@ Inheritance diagram for graphene::db::base_primary_index:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aae4d25e40d3538e9a7d40054f9ed05e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__primary__index.html#aae4d25e40d3538e9a7d40054f9ed05e8">base_primary_index</a> (<a class="el" href="classgraphene_1_1db_1_1object__database.html">object_database</a> &amp;db)</td></tr>
 <tr class="separator:aae4d25e40d3538e9a7d40054f9ed05e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad76d89ffbbd1a67c3026824569795a76"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__primary__index.html#ad76d89ffbbd1a67c3026824569795a76">~base_primary_index</a> ()=default</td></tr>
+<tr class="separator:ad76d89ffbbd1a67c3026824569795a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecddf87652998f5a4a156dce5d4aa1fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__primary__index.html#aecddf87652998f5a4a156dce5d4aa1fa">save_undo</a> (const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj)</td></tr>
 <tr class="separator:aecddf87652998f5a4a156dce5d4aa1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66192343c484ac5d4365a3b562bc99c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__primary__index.html#a66192343c484ac5d4365a3b562bc99c2">on_add</a> (const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj)</td></tr>
@@ -106,10 +108,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aaa78a01c75b0213473c3e07acbacc3a1"><td class="memItemLeft" align="right" valign="top">vector&lt; shared_ptr&lt; <a class="el" href="classgraphene_1_1db_1_1index__observer.html">index_observer</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__primary__index.html#aaa78a01c75b0213473c3e07acbacc3a1">_observers</a></td></tr>
-<tr class="separator:aaa78a01c75b0213473c3e07acbacc3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a594e4a2b214e2d17e7593069411988cb"><td class="memItemLeft" align="right" valign="top">vector&lt; unique_ptr&lt; <a class="el" href="classgraphene_1_1db_1_1secondary__index.html">secondary_index</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__primary__index.html#a594e4a2b214e2d17e7593069411988cb">_sindex</a></td></tr>
-<tr class="separator:a594e4a2b214e2d17e7593069411988cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3c723d9268e6f9fcaad7094beb1ce1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classgraphene_1_1db_1_1index__observer.html">index_observer</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__primary__index.html#a0c3c723d9268e6f9fcaad7094beb1ce1">_observers</a></td></tr>
+<tr class="separator:a0c3c723d9268e6f9fcaad7094beb1ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2795c19b379f6c6f412b6b3a4ac962d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classgraphene_1_1db_1_1secondary__index.html">secondary_index</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__primary__index.html#aa2795c19b379f6c6f412b6b3a4ac962d">_sindex</a></td></tr>
+<tr class="separator:aa2795c19b379f6c6f412b6b3a4ac962d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines the common implementation </p>
@@ -135,12 +137,37 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00155">155</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad76d89ffbbd1a67c3026824569795a76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad76d89ffbbd1a67c3026824569795a76">&#9670;&nbsp;</a></span>~base_primary_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual graphene::db::base_primary_index::~base_primary_index </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -171,7 +198,7 @@ template&lt;typename T , typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00170">170</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00172">172</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
 </div>
 </div>
@@ -200,7 +227,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00177">177</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00179">179</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
 </div>
 </div>
@@ -289,8 +316,8 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="aaa78a01c75b0213473c3e07acbacc3a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa78a01c75b0213473c3e07acbacc3a1">&#9670;&nbsp;</a></span>_observers</h2>
+<a id="a0c3c723d9268e6f9fcaad7094beb1ce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c3c723d9268e6f9fcaad7094beb1ce1">&#9670;&nbsp;</a></span>_observers</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -299,7 +326,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt; shared_ptr&lt;<a class="el" href="classgraphene_1_1db_1_1index__observer.html">index_observer</a>&gt; &gt; graphene::db::base_primary_index::_observers</td>
+          <td class="memname">std::vector&lt; std::shared_ptr&lt;<a class="el" href="classgraphene_1_1db_1_1index__observer.html">index_observer</a>&gt; &gt; graphene::db::base_primary_index::_observers</td>
         </tr>
       </table>
   </td>
@@ -309,12 +336,12 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00188">188</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00190">190</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a594e4a2b214e2d17e7593069411988cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a594e4a2b214e2d17e7593069411988cb">&#9670;&nbsp;</a></span>_sindex</h2>
+<a id="aa2795c19b379f6c6f412b6b3a4ac962d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2795c19b379f6c6f412b6b3a4ac962d">&#9670;&nbsp;</a></span>_sindex</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -323,7 +350,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt; unique_ptr&lt;<a class="el" href="classgraphene_1_1db_1_1secondary__index.html">secondary_index</a>&gt; &gt; graphene::db::base_primary_index::_sindex</td>
+          <td class="memname">std::vector&lt; std::unique_ptr&lt;<a class="el" href="classgraphene_1_1db_1_1secondary__index.html">secondary_index</a>&gt; &gt; graphene::db::base_primary_index::_sindex</td>
         </tr>
       </table>
   </td>
@@ -333,7 +360,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00189">189</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00191">191</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
 </div>
 </div>
@@ -344,7 +371,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:58 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:47 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

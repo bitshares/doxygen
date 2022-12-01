@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['rejection_5freason',['rejection_reason',['../structgraphene_1_1protocol_1_1predicate__result.html#a8846e55ae46f35a16a81c0cf0850f19c',1,'graphene::protocol::predicate_result']]],
-  ['rejection_5freason_5fcode',['rejection_reason_code',['../namespacegraphene_1_1net.html#a8c4d381eac08e1738e41e3c06e0a4d8d',1,'graphene::net']]],
-  ['reserved_5fspaces',['reserved_spaces',['../namespacegraphene_1_1protocol.html#a7fe50b12d88be67656c1550cbfd52d68',1,'graphene::protocol']]]
+  ['parse_5ftype',['parse_type',['../classfc_1_1json.html#a8554b1c7b658a170d4bc81d4bac798b1',1,'fc::json']]],
+  ['peer_5fconnection_5fdirection',['peer_connection_direction',['../namespacegraphene_1_1net.html#ad0fa02c07eb80a168befc6c5931d6ccc',1,'graphene::net']]],
+  ['potential_5fpeer_5flast_5fconnection_5fdisposition',['potential_peer_last_connection_disposition',['../namespacegraphene_1_1net.html#a326e5972da827a0702860241baefa8e8',1,'graphene::net']]]
 ];

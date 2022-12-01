@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -78,9 +78,13 @@ $(function() {
 Public Attributes</h2></td></tr>
 <tr class="memitem:a449677799f680e5acb42c1da3441d75e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1net_1_1detail_1_1node__configuration.html#a449677799f680e5acb42c1da3441d75e">listen_endpoint</a></td></tr>
 <tr class="separator:a449677799f680e5acb42c1da3441d75e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af701a647829816c6e4bd5e85161b98f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1optional.html">fc::optional</a>&lt; <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1net_1_1detail_1_1node__configuration.html#af701a647829816c6e4bd5e85161b98f7">inbound_endpoint</a></td></tr>
+<tr class="separator:af701a647829816c6e4bd5e85161b98f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0ec9b2a79b7e8ff0f50c028eacf89f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1net_1_1detail_1_1node__configuration.html#ae0ec9b2a79b7e8ff0f50c028eacf89f0">accept_incoming_connections</a> = true</td></tr>
 <tr class="separator:ae0ec9b2a79b7e8ff0f50c028eacf89f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a908d2ed64d9b68ba7ea76224f32ad7be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1net_1_1detail_1_1node__configuration.html#a908d2ed64d9b68ba7ea76224f32ad7be">wait_if_endpoint_is_busy</a> = true</td></tr>
+<tr class="memitem:a864fc9f040da35f65b0db69762d3bd2c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1net_1_1detail_1_1node__configuration.html#a864fc9f040da35f65b0db69762d3bd2c">connect_to_new_peers</a> = true</td></tr>
+<tr class="separator:a864fc9f040da35f65b0db69762d3bd2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a908d2ed64d9b68ba7ea76224f32ad7be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1net_1_1detail_1_1node__configuration.html#a908d2ed64d9b68ba7ea76224f32ad7be">wait_if_endpoint_is_busy</a> = false</td></tr>
 <tr class="separator:a908d2ed64d9b68ba7ea76224f32ad7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfb549f1df4eebd5b7b6d174313ed2a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1ecc_1_1private__key.html">fc::ecc::private_key</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1net_1_1detail_1_1node__configuration.html#adfb549f1df4eebd5b7b6d174313ed2a2">private_key</a></td></tr>
 <tr class="separator:adfb549f1df4eebd5b7b6d174313ed2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -88,7 +92,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This specifies configuration info for the local node. It's stored as JSON in the configuration directory (application data directory) </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00366">366</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00394">394</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="ae0ec9b2a79b7e8ff0f50c028eacf89f0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae0ec9b2a79b7e8ff0f50c028eacf89f0">&#9670;&nbsp;</a></span>accept_incoming_connections</h2>
@@ -102,7 +106,39 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00369">369</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00398">398</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+
+</div>
+</div>
+<a id="a864fc9f040da35f65b0db69762d3bd2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a864fc9f040da35f65b0db69762d3bd2c">&#9670;&nbsp;</a></span>connect_to_new_peers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool graphene::net::detail::node_configuration::connect_to_new_peers = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00399">399</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+
+</div>
+</div>
+<a id="af701a647829816c6e4bd5e85161b98f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af701a647829816c6e4bd5e85161b98f7">&#9670;&nbsp;</a></span>inbound_endpoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfc_1_1optional.html">fc::optional</a>&lt;<a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a>&gt; graphene::net::detail::node_configuration::inbound_endpoint</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00397">397</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -118,7 +154,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00368">368</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00396">396</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -135,7 +171,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Originally, our p2p code just had a 'node-id' that was a random number identifying this node on the network. This is now a private key/public key pair, where the public key is used in place of the old random node-id. The private part is unused, but might be used in the future to support some notion of trusted peers. </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00377">377</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00407">407</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -146,12 +182,12 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool graphene::net::detail::node_configuration::wait_if_endpoint_is_busy = true</td>
+          <td class="memname">bool graphene::net::detail::node_configuration::wait_if_endpoint_is_busy = false</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00370">370</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00400">400</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -161,7 +197,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:58 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:47 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

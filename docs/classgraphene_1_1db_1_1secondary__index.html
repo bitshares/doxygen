@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -83,18 +83,19 @@ Inheritance diagram for graphene::db::secondary_index:</div>
 <area href="classgraphene_1_1db_1_1direct__index.html" alt="graphene::db::direct_index&lt; object_type, DirectBits &gt;" shape="rect" coords="367,112,724,136"/>
 <area href="classgraphene_1_1api__helper__indexes_1_1amount__in__collateral__index.html" title="This secondary index tracks how much of each asset is locked up as collateral for MPAs..." alt="graphene::api_helper_indexes::amount_in_collateral_index" shape="rect" coords="367,168,724,192"/>
 <area href="classgraphene_1_1api__helper__indexes_1_1asset__in__liquidity__pools__index.html" title="This secondary index maintains a map to make it easier to find liquidity pools by any asset in the po..." alt="graphene::api_helper_indexes::asset_in_liquidity_pools_index" shape="rect" coords="367,224,724,248"/>
-<area href="classgraphene_1_1chain_1_1account__member__index.html" title="This secondary index will allow a reverse lookup of all accounts that a particular key or account is ..." alt="graphene::chain::account_member_index" shape="rect" coords="367,280,724,304"/>
-<area href="classgraphene_1_1chain_1_1balances__by__account__index.html" title="This secondary index will allow fast access to the balance objects that belonging to an account..." alt="graphene::chain::balances_by_account_index" shape="rect" coords="367,336,724,360"/>
-<area href="classgraphene_1_1chain_1_1required__approval__index.html" title="tracks all of the proposal objects that requrie approval of an individual account. " alt="graphene::chain::required_approval_index" shape="rect" coords="367,392,724,416"/>
-<area href="classgraphene_1_1db_1_1direct__index.html" title="A secondary index that tracks objects in vectors indexed by object id. It is meant for fully (or almo..." alt="graphene::db::direct_index&lt; Object, chunkbits &gt;" shape="rect" coords="367,448,724,472"/>
-<area href="classgraphene_1_1grouped__orders_1_1detail_1_1limit__order__group__index.html" title="This secondary index is used to track changes on limit order objects. " alt="graphene::grouped_orders::detail::limit_order_group_index" shape="rect" coords="367,504,724,528"/>
+<area href="classgraphene_1_1api__helper__indexes_1_1next__object__ids__index.html" title="This secondary index tracks the next ID of all object types. " alt="graphene::api_helper_indexes::next_object_ids_index" shape="rect" coords="367,280,724,304"/>
+<area href="classgraphene_1_1chain_1_1account__member__index.html" title="This secondary index will allow a reverse lookup of all accounts that a particular key or account is ..." alt="graphene::chain::account_member_index" shape="rect" coords="367,336,724,360"/>
+<area href="classgraphene_1_1chain_1_1balances__by__account__index.html" title="This secondary index will allow fast access to the balance objects that belonging to an account..." alt="graphene::chain::balances_by_account_index" shape="rect" coords="367,392,724,416"/>
+<area href="classgraphene_1_1chain_1_1required__approval__index.html" title="tracks all of the proposal objects that requrie approval of an individual account. " alt="graphene::chain::required_approval_index" shape="rect" coords="367,448,724,472"/>
+<area href="classgraphene_1_1db_1_1direct__index.html" title="A secondary index that tracks objects in vectors indexed by object id. It is meant for fully (or almo..." alt="graphene::db::direct_index&lt; Object, chunkbits &gt;" shape="rect" coords="367,504,724,528"/>
+<area href="classgraphene_1_1grouped__orders_1_1detail_1_1limit__order__group__index.html" title="This secondary index is used to track changes on limit order objects. " alt="graphene::grouped_orders::detail::limit_order_group_index" shape="rect" coords="367,560,724,584"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a99e9c2411aab4366a325560013137e62"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1secondary__index.html#a99e9c2411aab4366a325560013137e62">~secondary_index</a> ()</td></tr>
-<tr class="separator:a99e9c2411aab4366a325560013137e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f99cc527570ba65ba6856e66edef2c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1secondary__index.html#a36f99cc527570ba65ba6856e66edef2c">~secondary_index</a> ()=default</td></tr>
+<tr class="separator:a36f99cc527570ba65ba6856e66edef2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1547c2ff1f51b54cc58fa35c458f0b88"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1secondary__index.html#a1547c2ff1f51b54cc58fa35c458f0b88">object_inserted</a> (const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj)</td></tr>
 <tr class="separator:a1547c2ff1f51b54cc58fa35c458f0b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0fb2b00a61cf3c56525bc4c11307493"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1secondary__index.html#ab0fb2b00a61cf3c56525bc4c11307493">object_removed</a> (const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj)</td></tr>
@@ -108,8 +109,8 @@ Public Member Functions</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00139">139</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a99e9c2411aab4366a325560013137e62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99e9c2411aab4366a325560013137e62">&#9670;&nbsp;</a></span>~secondary_index()</h2>
+<a id="a36f99cc527570ba65ba6856e66edef2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36f99cc527570ba65ba6856e66edef2c">&#9670;&nbsp;</a></span>~secondary_index()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -126,12 +127,10 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00142">142</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
 </div>
 </div>
@@ -160,7 +159,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classgraphene_1_1chain_1_1balances__by__account__index.html#ae8d313e9878995bd04ae05fc89e5297a">graphene::chain::balances_by_account_index</a>, <a class="el" href="classgraphene_1_1chain_1_1account__member__index.html#ace7d6747f95ae350e5a07fb1324ddfa3">graphene::chain::account_member_index</a>, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#a9a73d4035ac2ffd2e0c334817037aa7f">graphene::db::direct_index&lt; Object, chunkbits &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#a9a73d4035ac2ffd2e0c334817037aa7f">graphene::db::direct_index&lt; object_type, DirectBits &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#a9a73d4035ac2ffd2e0c334817037aa7f">graphene::db::direct_index&lt; object_type, 0 &gt;</a>, and <a class="el" href="classgraphene_1_1chain_1_1required__approval__index.html#ac34bdc32c68f7b36a3ab90bc4b743fe7">graphene::chain::required_approval_index</a>.</p>
+<p>Reimplemented in <a class="el" href="classgraphene_1_1chain_1_1balances__by__account__index.html#ae8d313e9878995bd04ae05fc89e5297a">graphene::chain::balances_by_account_index</a>, <a class="el" href="classgraphene_1_1chain_1_1account__member__index.html#ace7d6747f95ae350e5a07fb1324ddfa3">graphene::chain::account_member_index</a>, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#a161584634658231069f2c501b43674ca">graphene::db::direct_index&lt; Object, chunkbits &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#a161584634658231069f2c501b43674ca">graphene::db::direct_index&lt; object_type, DirectBits &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#a161584634658231069f2c501b43674ca">graphene::db::direct_index&lt; object_type, 0 &gt;</a>, and <a class="el" href="classgraphene_1_1chain_1_1required__approval__index.html#ac34bdc32c68f7b36a3ab90bc4b743fe7">graphene::chain::required_approval_index</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00145">145</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
@@ -190,7 +189,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classgraphene_1_1chain_1_1balances__by__account__index.html#aa08b58598300b14cd728fbfd0288a5f1">graphene::chain::balances_by_account_index</a>, <a class="el" href="classgraphene_1_1chain_1_1account__member__index.html#a1fc6394bcaee29e672305a4b9cdcee57">graphene::chain::account_member_index</a>, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#ac466ffad3b02fa27c56f77ffbff3ca06">graphene::db::direct_index&lt; Object, chunkbits &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#ac466ffad3b02fa27c56f77ffbff3ca06">graphene::db::direct_index&lt; object_type, DirectBits &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#ac466ffad3b02fa27c56f77ffbff3ca06">graphene::db::direct_index&lt; object_type, 0 &gt;</a>, and <a class="el" href="classgraphene_1_1chain_1_1required__approval__index.html#a279d0b55a651894574a62e49db0ac260">graphene::chain::required_approval_index</a>.</p>
+<p>Reimplemented in <a class="el" href="classgraphene_1_1chain_1_1balances__by__account__index.html#aa08b58598300b14cd728fbfd0288a5f1">graphene::chain::balances_by_account_index</a>, <a class="el" href="classgraphene_1_1chain_1_1account__member__index.html#a1fc6394bcaee29e672305a4b9cdcee57">graphene::chain::account_member_index</a>, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#a3600dd2be6add8bdc66da2288cda4e58">graphene::db::direct_index&lt; Object, chunkbits &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#a3600dd2be6add8bdc66da2288cda4e58">graphene::db::direct_index&lt; object_type, DirectBits &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#a3600dd2be6add8bdc66da2288cda4e58">graphene::db::direct_index&lt; object_type, 0 &gt;</a>, and <a class="el" href="classgraphene_1_1chain_1_1required__approval__index.html#a279d0b55a651894574a62e49db0ac260">graphene::chain::required_approval_index</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00143">143</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
@@ -220,7 +219,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classgraphene_1_1chain_1_1balances__by__account__index.html#ad1dc2668025ed93dac936a944c89d50d">graphene::chain::balances_by_account_index</a>, <a class="el" href="classgraphene_1_1chain_1_1account__member__index.html#aa469fb8cc93d67ec3e8a25b814d54418">graphene::chain::account_member_index</a>, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#a9525b515b23070ac0658a323e0935874">graphene::db::direct_index&lt; Object, chunkbits &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#a9525b515b23070ac0658a323e0935874">graphene::db::direct_index&lt; object_type, DirectBits &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#a9525b515b23070ac0658a323e0935874">graphene::db::direct_index&lt; object_type, 0 &gt;</a>, and <a class="el" href="classgraphene_1_1chain_1_1required__approval__index.html#a9c17955bbff402db635689184caa222a">graphene::chain::required_approval_index</a>.</p>
+<p>Reimplemented in <a class="el" href="classgraphene_1_1chain_1_1balances__by__account__index.html#ad1dc2668025ed93dac936a944c89d50d">graphene::chain::balances_by_account_index</a>, <a class="el" href="classgraphene_1_1chain_1_1account__member__index.html#aa469fb8cc93d67ec3e8a25b814d54418">graphene::chain::account_member_index</a>, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#a8203c94692cb76b7d844a86868b8476d">graphene::db::direct_index&lt; Object, chunkbits &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#a8203c94692cb76b7d844a86868b8476d">graphene::db::direct_index&lt; object_type, DirectBits &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#a8203c94692cb76b7d844a86868b8476d">graphene::db::direct_index&lt; object_type, 0 &gt;</a>, and <a class="el" href="classgraphene_1_1chain_1_1required__approval__index.html#a9c17955bbff402db635689184caa222a">graphene::chain::required_approval_index</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00146">146</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
@@ -250,7 +249,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classgraphene_1_1chain_1_1balances__by__account__index.html#a11bea578dbc56c2dca72a6cafedbe366">graphene::chain::balances_by_account_index</a>, <a class="el" href="classgraphene_1_1chain_1_1account__member__index.html#a289cbc24df1a0c582079c491cb6d795f">graphene::chain::account_member_index</a>, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#a5d7f0a45d16f84e67cf47426e088b614">graphene::db::direct_index&lt; Object, chunkbits &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#a5d7f0a45d16f84e67cf47426e088b614">graphene::db::direct_index&lt; object_type, DirectBits &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#a5d7f0a45d16f84e67cf47426e088b614">graphene::db::direct_index&lt; object_type, 0 &gt;</a>, and <a class="el" href="classgraphene_1_1chain_1_1required__approval__index.html#aedceac62ad3a5954c03e057ee25598e5">graphene::chain::required_approval_index</a>.</p>
+<p>Reimplemented in <a class="el" href="classgraphene_1_1chain_1_1balances__by__account__index.html#a11bea578dbc56c2dca72a6cafedbe366">graphene::chain::balances_by_account_index</a>, <a class="el" href="classgraphene_1_1chain_1_1account__member__index.html#a289cbc24df1a0c582079c491cb6d795f">graphene::chain::account_member_index</a>, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#aa144b0e1a1924235af9ec258fa658578">graphene::db::direct_index&lt; Object, chunkbits &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#aa144b0e1a1924235af9ec258fa658578">graphene::db::direct_index&lt; object_type, DirectBits &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1direct__index.html#aa144b0e1a1924235af9ec258fa658578">graphene::db::direct_index&lt; object_type, 0 &gt;</a>, and <a class="el" href="classgraphene_1_1chain_1_1required__approval__index.html#aedceac62ad3a5954c03e057ee25598e5">graphene::chain::required_approval_index</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00144">144</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
@@ -262,7 +261,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:58 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:47 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

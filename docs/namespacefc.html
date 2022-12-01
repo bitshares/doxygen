@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -235,6 +235,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfc_1_1get__typename_3_01std_1_1deque_3_01_t_01_4_01_4.html">get_typename&lt; std::deque&lt; T &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfc_1_1get__typename_3_01std_1_1map_3_01_k_00_01_v_01_4_01_4.html">get_typename&lt; std::map&lt; K, V &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfc_1_1get__typename_3_01std_1_1map_3_01_k_00_01_v_00_01std_1_1less_3_4_01_4_01_4.html">get_typename&lt; std::map&lt; K, V, std::less&lt;&gt; &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfc_1_1get__typename_3_01std_1_1pair_3_01_a_00_01_b_01_4_01_4.html">get_typename&lt; std::pair&lt; A, B &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1103,12 +1105,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a328af1d8726abe7079daa4392a0851e1"><td class="memTemplParams" colspan="2">template&lt;typename K , typename T &gt; </td></tr>
 <tr class="memitem:a328af1d8726abe7079daa4392a0851e1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefc.html#a328af1d8726abe7079daa4392a0851e1">from_variant</a> (const <a class="el" href="classfc_1_1variant.html">variant</a> &amp;var, std::unordered_map&lt; K, T &gt; &amp;vo, uint32_t max_depth)</td></tr>
 <tr class="separator:a328af1d8726abe7079daa4392a0851e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cd68138ee48d4a33f54ed826d4f7c39"><td class="memTemplParams" colspan="2">template&lt;typename K , typename T &gt; </td></tr>
-<tr class="memitem:a8cd68138ee48d4a33f54ed826d4f7c39"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefc.html#a8cd68138ee48d4a33f54ed826d4f7c39">to_variant</a> (const std::map&lt; K, T &gt; &amp;var, <a class="el" href="classfc_1_1variant.html">variant</a> &amp;vo, uint32_t max_depth)</td></tr>
-<tr class="separator:a8cd68138ee48d4a33f54ed826d4f7c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cef1ca0f7d7923505e8d4d4454e24c8"><td class="memTemplParams" colspan="2">template&lt;typename K , typename T &gt; </td></tr>
-<tr class="memitem:a7cef1ca0f7d7923505e8d4d4454e24c8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefc.html#a7cef1ca0f7d7923505e8d4d4454e24c8">from_variant</a> (const <a class="el" href="classfc_1_1variant.html">variant</a> &amp;var, std::map&lt; K, T &gt; &amp;vo, uint32_t max_depth)</td></tr>
-<tr class="separator:a7cef1ca0f7d7923505e8d4d4454e24c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c21f79427477240a7fc4e87203217f5"><td class="memTemplParams" colspan="2">template&lt;typename K , typename... T&gt; </td></tr>
+<tr class="memitem:a4c21f79427477240a7fc4e87203217f5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefc.html#a4c21f79427477240a7fc4e87203217f5">to_variant</a> (const std::map&lt; K, T... &gt; &amp;var, <a class="el" href="classfc_1_1variant.html">variant</a> &amp;vo, uint32_t max_depth)</td></tr>
+<tr class="separator:a4c21f79427477240a7fc4e87203217f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75f21c6fcf213e31ec0dd1ff15e88bd8"><td class="memTemplParams" colspan="2">template&lt;typename K , typename T , typename... A&gt; </td></tr>
+<tr class="memitem:a75f21c6fcf213e31ec0dd1ff15e88bd8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefc.html#a75f21c6fcf213e31ec0dd1ff15e88bd8">from_variant</a> (const <a class="el" href="classfc_1_1variant.html">variant</a> &amp;var, std::map&lt; K, T, A... &gt; &amp;vo, uint32_t max_depth)</td></tr>
+<tr class="separator:a75f21c6fcf213e31ec0dd1ff15e88bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a331caf03f3025d4c0b32cd20879ffc"><td class="memTemplParams" colspan="2">template&lt;typename K , typename T &gt; </td></tr>
 <tr class="memitem:a6a331caf03f3025d4c0b32cd20879ffc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefc.html#a6a331caf03f3025d4c0b32cd20879ffc">to_variant</a> (const std::multimap&lt; K, T &gt; &amp;var, <a class="el" href="classfc_1_1variant.html">variant</a> &amp;vo, uint32_t max_depth)</td></tr>
 <tr class="separator:a6a331caf03f3025d4c0b32cd20879ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4403,7 +4405,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01962">1962</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01969">1969</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -4812,44 +4814,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="abdb577ea13437722067a272cc325d8dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdb577ea13437722067a272cc325d8dc">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[14/72]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fc::from_variant </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classfc_1_1variant.html">variant</a> &amp;&#160;</td>
-          <td class="paramname"><em>var</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classfc_1_1ip_1_1endpoint.html">ip::endpoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>vo</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>_max_depth</em> = <code>2</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ip_8cpp_source.html#l00144">144</a> of file <a class="el" href="ip_8cpp_source.html">ip.cpp</a>.</p>
-
-</div>
-</div>
 <a id="aab20c2edd052ce872dc99e76c82ea8c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab20c2edd052ce872dc99e76c82ea8c4">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[15/72]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aab20c2edd052ce872dc99e76c82ea8c4">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[14/72]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4885,7 +4851,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="ac493d09a44cc28da7db6d504fd3bfde2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac493d09a44cc28da7db6d504fd3bfde2">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[16/72]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac493d09a44cc28da7db6d504fd3bfde2">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[15/72]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4920,44 +4886,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="afb7ce5bbe889b17afed4b1dccc923a9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb7ce5bbe889b17afed4b1dccc923a9b">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[17/72]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fc::from_variant </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classfc_1_1variant.html">variant</a> &amp;&#160;</td>
-          <td class="paramname"><em>var</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classfc_1_1ip_1_1address.html">ip::address</a> &amp;&#160;</td>
-          <td class="paramname"><em>vo</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>_max_depth</em> = <code>1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ip_8cpp_source.html#l00153">153</a> of file <a class="el" href="ip_8cpp_source.html">ip.cpp</a>.</p>
-
-</div>
-</div>
 <a id="ad6f209272348d3b20b9eac26cd5f2bd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6f209272348d3b20b9eac26cd5f2bd4">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[18/72]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6f209272348d3b20b9eac26cd5f2bd4">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[16/72]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4992,44 +4922,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a0bbfe89b8857f333f3689d81f3f15b13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bbfe89b8857f333f3689d81f3f15b13">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[19/72]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fc::from_variant </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classfc_1_1variant.html">fc::variant</a> &amp;&#160;</td>
-          <td class="paramname"><em>var</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a> &amp;&#160;</td>
-          <td class="paramname"><em>vo</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>max_depth</em> = <code>1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="pts__address_8cpp_source.html#l00093">93</a> of file <a class="el" href="pts__address_8cpp_source.html">pts_address.cpp</a>.</p>
-
-</div>
-</div>
 <a id="aa3b4fc324c6d408ccb8ee92ff2412465"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3b4fc324c6d408ccb8ee92ff2412465">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[20/72]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3b4fc324c6d408ccb8ee92ff2412465">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[17/72]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5065,7 +4959,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="ae5fb701132d0b0d7465ff83fcd094bb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5fb701132d0b0d7465ff83fcd094bb7">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[21/72]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5fb701132d0b0d7465ff83fcd094bb7">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[18/72]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5101,7 +4995,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a11e5362c57eb81ff073ab1f15bcff1c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11e5362c57eb81ff073ab1f15bcff1c7">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[22/72]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a11e5362c57eb81ff073ab1f15bcff1c7">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[19/72]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5137,7 +5031,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a1132f763f5045d1afbb4824577ba87cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1132f763f5045d1afbb4824577ba87cb">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[23/72]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1132f763f5045d1afbb4824577ba87cb">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[20/72]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5172,8 +5066,44 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a0bbfe89b8857f333f3689d81f3f15b13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bbfe89b8857f333f3689d81f3f15b13">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[21/72]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fc::from_variant </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1variant.html">fc::variant</a> &amp;&#160;</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a> &amp;&#160;</td>
+          <td class="paramname"><em>vo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>max_depth</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="pts__address_8cpp_source.html#l00093">93</a> of file <a class="el" href="pts__address_8cpp_source.html">pts_address.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a0fdbfd60bae275d6737fb540b1ac96ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fdbfd60bae275d6737fb540b1ac96ca">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[24/72]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fdbfd60bae275d6737fb540b1ac96ca">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[22/72]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5209,7 +5139,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a5bc0a20b634ab359a2edf74ba0695def"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5bc0a20b634ab359a2edf74ba0695def">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[25/72]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bc0a20b634ab359a2edf74ba0695def">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[23/72]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5245,7 +5175,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a7f6fd72a93ef8c1ac1565ad99537db01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f6fd72a93ef8c1ac1565ad99537db01">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[26/72]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f6fd72a93ef8c1ac1565ad99537db01">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[24/72]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5281,7 +5211,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="aaa668d663547eb0a1abc6a5bf3176b11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa668d663547eb0a1abc6a5bf3176b11">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[27/72]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa668d663547eb0a1abc6a5bf3176b11">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[25/72]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5317,7 +5247,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a5b8bc3210132b0c118a4e89193bd108e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b8bc3210132b0c118a4e89193bd108e">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[28/72]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b8bc3210132b0c118a4e89193bd108e">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[26/72]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5353,7 +5283,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a02e13d6f0940f07e8a08eeb36324e9c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02e13d6f0940f07e8a08eeb36324e9c6">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[29/72]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a02e13d6f0940f07e8a08eeb36324e9c6">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[27/72]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5388,8 +5318,44 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="abdb577ea13437722067a272cc325d8dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdb577ea13437722067a272cc325d8dc">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[28/72]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fc::from_variant </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1variant.html">variant</a> &amp;&#160;</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfc_1_1ip_1_1endpoint.html">ip::endpoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>vo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>_max_depth</em> = <code>2</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ip_8cpp_source.html#l00161">161</a> of file <a class="el" href="ip_8cpp_source.html">ip.cpp</a>.</p>
+
+</div>
+</div>
 <a id="aa6f0d5eb38add31e4714f605b3f77d83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6f0d5eb38add31e4714f605b3f77d83">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[30/72]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6f0d5eb38add31e4714f605b3f77d83">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[29/72]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5421,6 +5387,42 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="variant__object_8cpp_source.html#l00405">405</a> of file <a class="el" href="variant__object_8cpp_source.html">variant_object.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afb7ce5bbe889b17afed4b1dccc923a9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb7ce5bbe889b17afed4b1dccc923a9b">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[30/72]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fc::from_variant </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1variant.html">variant</a> &amp;&#160;</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfc_1_1ip_1_1address.html">ip::address</a> &amp;&#160;</td>
+          <td class="paramname"><em>vo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>_max_depth</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ip_8cpp_source.html#l00170">170</a> of file <a class="el" href="ip_8cpp_source.html">ip.cpp</a>.</p>
 
 </div>
 </div>
@@ -5608,13 +5610,13 @@ template&lt;typename T , typename... A&gt; </div>
 
 </div>
 </div>
-<a id="a7cef1ca0f7d7923505e8d4d4454e24c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cef1ca0f7d7923505e8d4d4454e24c8">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[36/72]</span></h2>
+<a id="a75f21c6fcf213e31ec0dd1ff15e88bd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75f21c6fcf213e31ec0dd1ff15e88bd8">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[36/72]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename K , typename T &gt; </div>
+template&lt;typename K , typename T , typename... A&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void fc::from_variant </td>
@@ -5625,7 +5627,7 @@ template&lt;typename K , typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; K, T &gt; &amp;&#160;</td>
+          <td class="paramtype">std::map&lt; K, T, A... &gt; &amp;&#160;</td>
           <td class="paramname"><em>vo</em>, </td>
         </tr>
         <tr>
@@ -6280,50 +6282,12 @@ template&lt;boost::endian::order O, class T , std::size_t N, boost::endian::alig
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="object__id_8hpp_source.html#l00198">198</a> of file <a class="el" href="object__id_8hpp_source.html">object_id.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a1179cd3b9e7f1abe536d66aebfd124c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1179cd3b9e7f1abe536d66aebfd124c8">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[54/72]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uint8_t SpaceID, uint8_t TypeID&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void fc::from_variant </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classfc_1_1variant.html">fc::variant</a> &amp;&#160;</td>
-          <td class="paramname"><em>var</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structgraphene_1_1db_1_1object__id.html">graphene::db::object_id</a>&lt; SpaceID, TypeID &gt; &amp;&#160;</td>
-          <td class="paramname"><em>vo</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>max_depth</em> = <code>1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="object__id_8hpp_source.html#l00220">220</a> of file <a class="el" href="object__id_8hpp_source.html">object_id.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="object__id_8hpp_source.html#l00228">228</a> of file <a class="el" href="object__id_8hpp_source.html">object_id.hpp</a>.</p>
 
 </div>
 </div>
 <a id="a91d579d01d148400106ab4694a8a120e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91d579d01d148400106ab4694a8a120e">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[55/72]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a91d579d01d148400106ab4694a8a120e">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[54/72]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6359,7 +6323,7 @@ template&lt;uint8_t SpaceID, uint8_t TypeID&gt; </div>
 </div>
 </div>
 <a id="a7e8de69142fec2450e5b442831b97f16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e8de69142fec2450e5b442831b97f16">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[56/72]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e8de69142fec2450e5b442831b97f16">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[55/72]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6391,6 +6355,44 @@ template&lt;uint8_t SpaceID, uint8_t TypeID&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="elliptic__common_8cpp_source.html#l00398">398</a> of file <a class="el" href="elliptic__common_8cpp_source.html">elliptic_common.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1179cd3b9e7f1abe536d66aebfd124c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1179cd3b9e7f1abe536d66aebfd124c8">&#9670;&nbsp;</a></span>from_variant() <span class="overload">[56/72]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint8_t SpaceID, uint8_t TypeID&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void fc::from_variant </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1variant.html">fc::variant</a> &amp;&#160;</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgraphene_1_1db_1_1object__id.html">graphene::db::object_id</a>&lt; SpaceID, TypeID &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>max_depth</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="object__id_8hpp_source.html#l00250">250</a> of file <a class="el" href="object__id_8hpp_source.html">object_id.hpp</a>.</p>
 
 </div>
 </div>
@@ -6426,7 +6428,7 @@ template&lt;uint8_t SpaceID, uint8_t TypeID&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8cpp_source.html#l00101">101</a> of file <a class="el" href="types_8cpp_source.html">types.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8cpp_source.html#l00106">106</a> of file <a class="el" href="types_8cpp_source.html">types.cpp</a>.</p>
 
 </div>
 </div>
@@ -6462,7 +6464,7 @@ template&lt;uint8_t SpaceID, uint8_t TypeID&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8cpp_source.html#l00106">106</a> of file <a class="el" href="types_8cpp_source.html">types.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8cpp_source.html#l00111">111</a> of file <a class="el" href="types_8cpp_source.html">types.cpp</a>.</p>
 
 </div>
 </div>
@@ -6500,7 +6502,7 @@ template&lt;typename... T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="static__variant_8hpp_source.html#l00360">360</a> of file <a class="el" href="static__variant_8hpp_source.html">static_variant.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="static__variant_8hpp_source.html#l00376">376</a> of file <a class="el" href="static__variant_8hpp_source.html">static_variant.hpp</a>.</p>
 
 </div>
 </div>
@@ -11997,7 +11999,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01957">1957</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="wallet_8cpp_source.html#l01964">1964</a> of file <a class="el" href="wallet_8cpp_source.html">wallet.cpp</a>.</p>
 
 </div>
 </div>
@@ -12406,44 +12408,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ad94888140f80dbd0456deaa36667db8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad94888140f80dbd0456deaa36667db8c">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[14/67]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fc::to_variant </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classfc_1_1ip_1_1endpoint.html">ip::endpoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>var</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classfc_1_1variant.html">variant</a> &amp;&#160;</td>
-          <td class="paramname"><em>vo</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>_max_depth</em> = <code>2</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ip_8cpp_source.html#l00140">140</a> of file <a class="el" href="ip_8cpp_source.html">ip.cpp</a>.</p>
-
-</div>
-</div>
 <a id="a0e2f424311954cb1f5fab2bfff726ce5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e2f424311954cb1f5fab2bfff726ce5">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[15/67]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e2f424311954cb1f5fab2bfff726ce5">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[14/67]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12479,7 +12445,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a703f231216ea29a0257da1b0e1b64a60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a703f231216ea29a0257da1b0e1b64a60">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[16/67]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a703f231216ea29a0257da1b0e1b64a60">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[15/67]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12514,44 +12480,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a2bbf51cd4cae9ee4ff90c49e8a330434"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bbf51cd4cae9ee4ff90c49e8a330434">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[17/67]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fc::to_variant </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classfc_1_1ip_1_1address.html">ip::address</a> &amp;&#160;</td>
-          <td class="paramname"><em>var</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classfc_1_1variant.html">variant</a> &amp;&#160;</td>
-          <td class="paramname"><em>vo</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>_max_depth</em> = <code>1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ip_8cpp_source.html#l00149">149</a> of file <a class="el" href="ip_8cpp_source.html">ip.cpp</a>.</p>
-
-</div>
-</div>
 <a id="a3e8712b01d6e1552da3e150edd660a4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e8712b01d6e1552da3e150edd660a4e">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[18/67]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e8712b01d6e1552da3e150edd660a4e">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[16/67]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12586,44 +12516,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a23903bea53c6f62acbbb28cb43b11333"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23903bea53c6f62acbbb28cb43b11333">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[19/67]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fc::to_variant </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a> &amp;&#160;</td>
-          <td class="paramname"><em>var</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classfc_1_1variant.html">fc::variant</a> &amp;&#160;</td>
-          <td class="paramname"><em>vo</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>max_depth</em> = <code>1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="pts__address_8cpp_source.html#l00089">89</a> of file <a class="el" href="pts__address_8cpp_source.html">pts_address.cpp</a>.</p>
-
-</div>
-</div>
 <a id="a8b34dc8ccc8da433895f97ac559844ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b34dc8ccc8da433895f97ac559844ff">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[20/67]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b34dc8ccc8da433895f97ac559844ff">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[17/67]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12658,44 +12552,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ae80a95d93b7ff6153a0f5e6f2d61d75a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae80a95d93b7ff6153a0f5e6f2d61d75a">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[21/67]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fc::to_variant </td>
-          <td>(</td>
-          <td class="paramtype">const uint32_t &amp;&#160;</td>
-          <td class="paramname"><em>var</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classfc_1_1variant.html">variant</a> &amp;&#160;</td>
-          <td class="paramname"><em>vo</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>max_depth</em> = <code>1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="variant_8cpp_source.html#l00613">613</a> of file <a class="el" href="variant_8cpp_source.html">variant.cpp</a>.</p>
-
-</div>
-</div>
 <a id="a5b8890b9a616b07413e95068b201f126"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b8890b9a616b07413e95068b201f126">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[22/67]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b8890b9a616b07413e95068b201f126">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[18/67]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12730,8 +12588,80 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="ae80a95d93b7ff6153a0f5e6f2d61d75a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae80a95d93b7ff6153a0f5e6f2d61d75a">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[19/67]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fc::to_variant </td>
+          <td>(</td>
+          <td class="paramtype">const uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfc_1_1variant.html">variant</a> &amp;&#160;</td>
+          <td class="paramname"><em>vo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>max_depth</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="variant_8cpp_source.html#l00613">613</a> of file <a class="el" href="variant_8cpp_source.html">variant.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a23903bea53c6f62acbbb28cb43b11333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23903bea53c6f62acbbb28cb43b11333">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[20/67]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fc::to_variant </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a> &amp;&#160;</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfc_1_1variant.html">fc::variant</a> &amp;&#160;</td>
+          <td class="paramname"><em>vo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>max_depth</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="pts__address_8cpp_source.html#l00089">89</a> of file <a class="el" href="pts__address_8cpp_source.html">pts_address.cpp</a>.</p>
+
+</div>
+</div>
 <a id="ab968c98e3fe24d09022eda886a369598"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab968c98e3fe24d09022eda886a369598">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[23/67]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab968c98e3fe24d09022eda886a369598">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[21/67]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12767,7 +12697,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a67d6fb32d51eb0949c2f184a039a548e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67d6fb32d51eb0949c2f184a039a548e">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[24/67]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a67d6fb32d51eb0949c2f184a039a548e">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[22/67]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12803,7 +12733,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a6b40563781b4086ab9094af8360bfded"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b40563781b4086ab9094af8360bfded">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[25/67]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b40563781b4086ab9094af8360bfded">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[23/67]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12839,7 +12769,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a1c1ef600c6f1a823670e37840c3bc067"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c1ef600c6f1a823670e37840c3bc067">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[26/67]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c1ef600c6f1a823670e37840c3bc067">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[24/67]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12875,7 +12805,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="ade422cff1252ddc714c086022a9a72a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade422cff1252ddc714c086022a9a72a7">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[27/67]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ade422cff1252ddc714c086022a9a72a7">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[25/67]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12911,7 +12841,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="aec54815326dd9615f291b20849bc732f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec54815326dd9615f291b20849bc732f">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[28/67]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aec54815326dd9615f291b20849bc732f">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[26/67]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12947,7 +12877,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="afd199947b84d558dc4634acbcb5121ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd199947b84d558dc4634acbcb5121ff">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[29/67]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afd199947b84d558dc4634acbcb5121ff">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[27/67]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12983,7 +12913,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a6c741b3d3a74979b376b375711f206f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c741b3d3a74979b376b375711f206f2">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[30/67]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c741b3d3a74979b376b375711f206f2">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[28/67]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -13019,7 +12949,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a169044fff369eda77ffae8e6b68d6c56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a169044fff369eda77ffae8e6b68d6c56">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[31/67]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a169044fff369eda77ffae8e6b68d6c56">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[29/67]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -13055,7 +12985,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a0c1c5031dc6ec0087dd8e4daf6fb2fa2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c1c5031dc6ec0087dd8e4daf6fb2fa2">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[32/67]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c1c5031dc6ec0087dd8e4daf6fb2fa2">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[30/67]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -13090,8 +13020,44 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="ad94888140f80dbd0456deaa36667db8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad94888140f80dbd0456deaa36667db8c">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[31/67]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fc::to_variant </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1ip_1_1endpoint.html">ip::endpoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfc_1_1variant.html">variant</a> &amp;&#160;</td>
+          <td class="paramname"><em>vo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>_max_depth</em> = <code>2</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ip_8cpp_source.html#l00157">157</a> of file <a class="el" href="ip_8cpp_source.html">ip.cpp</a>.</p>
+
+</div>
+</div>
 <a id="aa425cd4631b37bdf496a4c05c4d517e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa425cd4631b37bdf496a4c05c4d517e0">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[33/67]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa425cd4631b37bdf496a4c05c4d517e0">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[32/67]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -13123,6 +13089,42 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="variant__object_8cpp_source.html#l00400">400</a> of file <a class="el" href="variant__object_8cpp_source.html">variant_object.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2bbf51cd4cae9ee4ff90c49e8a330434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bbf51cd4cae9ee4ff90c49e8a330434">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[33/67]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fc::to_variant </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1ip_1_1address.html">ip::address</a> &amp;&#160;</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfc_1_1variant.html">variant</a> &amp;&#160;</td>
+          <td class="paramname"><em>vo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>_max_depth</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ip_8cpp_source.html#l00166">166</a> of file <a class="el" href="ip_8cpp_source.html">ip.cpp</a>.</p>
 
 </div>
 </div>
@@ -13310,18 +13312,18 @@ template&lt;typename T , typename... A&gt; </div>
 
 </div>
 </div>
-<a id="a8cd68138ee48d4a33f54ed826d4f7c39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cd68138ee48d4a33f54ed826d4f7c39">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[39/67]</span></h2>
+<a id="a4c21f79427477240a7fc4e87203217f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c21f79427477240a7fc4e87203217f5">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[39/67]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename K , typename T &gt; </div>
+template&lt;typename K , typename... T&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void fc::to_variant </td>
           <td>(</td>
-          <td class="paramtype">const std::map&lt; K, T &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::map&lt; K, T... &gt; &amp;&#160;</td>
           <td class="paramname"><em>var</em>, </td>
         </tr>
         <tr>
@@ -14012,8 +14014,46 @@ template&lt;boost::endian::order O, class T , std::size_t N, boost::endian::alig
 
 </div>
 </div>
+<a id="a9fc6d56d26b6f04c9b9ed80784e1fa43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fc6d56d26b6f04c9b9ed80784e1fa43">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[58/67]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void fc::to_variant </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1extension.html">graphene::protocol::extension</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfc_1_1variant.html">fc::variant</a> &amp;&#160;</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>max_depth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ext_8hpp_source.html#l00199">199</a> of file <a class="el" href="ext_8hpp_source.html">ext.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a5b6019f9cfab7d54d9700103d953841d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b6019f9cfab7d54d9700103d953841d">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[58/67]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b6019f9cfab7d54d9700103d953841d">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[59/67]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -14052,88 +14092,12 @@ template&lt;boost::endian::order O, class T , std::size_t N, boost::endian::alig
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="object__id_8hpp_source.html#l00193">193</a> of file <a class="el" href="object__id_8hpp_source.html">object_id.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a9fc6d56d26b6f04c9b9ed80784e1fa43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fc6d56d26b6f04c9b9ed80784e1fa43">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[59/67]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void fc::to_variant </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1extension.html">graphene::protocol::extension</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classfc_1_1variant.html">fc::variant</a> &amp;&#160;</td>
-          <td class="paramname"><em>var</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>max_depth</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ext_8hpp_source.html#l00199">199</a> of file <a class="el" href="ext_8hpp_source.html">ext.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a49dd4766f5ea1d4f5e30c9353f5ea813"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49dd4766f5ea1d4f5e30c9353f5ea813">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[60/67]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uint8_t SpaceID, uint8_t TypeID&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void fc::to_variant </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structgraphene_1_1db_1_1object__id.html">graphene::db::object_id</a>&lt; SpaceID, TypeID &gt; &amp;&#160;</td>
-          <td class="paramname"><em>var</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classfc_1_1variant.html">fc::variant</a> &amp;&#160;</td>
-          <td class="paramname"><em>vo</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>max_depth</em> = <code>1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="object__id_8hpp_source.html#l00215">215</a> of file <a class="el" href="object__id_8hpp_source.html">object_id.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="object__id_8hpp_source.html#l00223">223</a> of file <a class="el" href="object__id_8hpp_source.html">object_id.hpp</a>.</p>
 
 </div>
 </div>
 <a id="ad8839e8d1e1c7edfd7b2cd7ee4c4404a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8839e8d1e1c7edfd7b2cd7ee4c4404a">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[61/67]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8839e8d1e1c7edfd7b2cd7ee4c4404a">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[60/67]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -14169,7 +14133,7 @@ template&lt;uint8_t SpaceID, uint8_t TypeID&gt; </div>
 </div>
 </div>
 <a id="ac6d9983f5ca617aa09d74df0a3eba4f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6d9983f5ca617aa09d74df0a3eba4f8">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[62/67]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6d9983f5ca617aa09d74df0a3eba4f8">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[61/67]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -14201,6 +14165,44 @@ template&lt;uint8_t SpaceID, uint8_t TypeID&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="elliptic__common_8cpp_source.html#l00393">393</a> of file <a class="el" href="elliptic__common_8cpp_source.html">elliptic_common.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a49dd4766f5ea1d4f5e30c9353f5ea813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49dd4766f5ea1d4f5e30c9353f5ea813">&#9670;&nbsp;</a></span>to_variant() <span class="overload">[62/67]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint8_t SpaceID, uint8_t TypeID&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void fc::to_variant </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1db_1_1object__id.html">graphene::db::object_id</a>&lt; SpaceID, TypeID &gt; &amp;&#160;</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfc_1_1variant.html">fc::variant</a> &amp;&#160;</td>
+          <td class="paramname"><em>vo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>max_depth</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="object__id_8hpp_source.html#l00245">245</a> of file <a class="el" href="object__id_8hpp_source.html">object_id.hpp</a>.</p>
 
 </div>
 </div>
@@ -14236,7 +14238,7 @@ template&lt;uint8_t SpaceID, uint8_t TypeID&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="types_8cpp_source.html#l00096">96</a> of file <a class="el" href="types_8cpp_source.html">types.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="types_8cpp_source.html#l00101">101</a> of file <a class="el" href="types_8cpp_source.html">types.cpp</a>.</p>
 
 </div>
 </div>
@@ -14274,7 +14276,7 @@ template&lt;typename... T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="static__variant_8hpp_source.html#l00352">352</a> of file <a class="el" href="static__variant_8hpp_source.html">static_variant.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="static__variant_8hpp_source.html#l00368">368</a> of file <a class="el" href="static__variant_8hpp_source.html">static_variant.hpp</a>.</p>
 
 </div>
 </div>
@@ -15034,7 +15036,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:55 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:45 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

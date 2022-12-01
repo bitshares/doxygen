@@ -9,7 +9,7 @@ var searchData=
   ['limit_5forder_5fcancel_5foperation',['limit_order_cancel_operation',['../structgraphene_1_1protocol_1_1limit__order__cancel__operation.html',1,'graphene::protocol']]],
   ['limit_5forder_5fcreate_5fevaluator',['limit_order_create_evaluator',['../classgraphene_1_1chain_1_1limit__order__create__evaluator.html',1,'graphene::chain']]],
   ['limit_5forder_5fcreate_5foperation',['limit_order_create_operation',['../structgraphene_1_1protocol_1_1limit__order__create__operation.html',1,'graphene::protocol']]],
-  ['limit_5forder_5fgroup',['limit_order_group',['../structgraphene_1_1app_1_1limit__order__group.html',1,'graphene::app']]],
+  ['limit_5forder_5fgroup',['limit_order_group',['../structgraphene_1_1app_1_1orders__api_1_1limit__order__group.html',1,'graphene::app::orders_api']]],
   ['limit_5forder_5fgroup_5fdata',['limit_order_group_data',['../structgraphene_1_1grouped__orders_1_1limit__order__group__data.html',1,'graphene::grouped_orders']]],
   ['limit_5forder_5fgroup_5findex',['limit_order_group_index',['../classgraphene_1_1grouped__orders_1_1detail_1_1limit__order__group__index.html',1,'graphene::grouped_orders::detail']]],
   ['limit_5forder_5fgroup_5fkey',['limit_order_group_key',['../structgraphene_1_1grouped__orders_1_1limit__order__group__key.html',1,'graphene::grouped_orders']]],
@@ -27,11 +27,11 @@ var searchData=
   ['liquidity_5fpool_5fexchange_5foperation',['liquidity_pool_exchange_operation',['../structgraphene_1_1protocol_1_1liquidity__pool__exchange__operation.html',1,'graphene::protocol']]],
   ['liquidity_5fpool_5fhistory_5fobject',['liquidity_pool_history_object',['../structgraphene_1_1market__history_1_1liquidity__pool__history__object.html',1,'graphene::market_history']]],
   ['liquidity_5fpool_5fobject',['liquidity_pool_object',['../classgraphene_1_1chain_1_1liquidity__pool__object.html',1,'graphene::chain']]],
-  ['liquidity_5fpool_5fticker_5fmeta_5fobject',['liquidity_pool_ticker_meta_object',['../structgraphene_1_1market__history_1_1liquidity__pool__ticker__meta__object.html',1,'graphene::market_history']]],
   ['liquidity_5fpool_5fticker_5fobject',['liquidity_pool_ticker_object',['../structgraphene_1_1market__history_1_1liquidity__pool__ticker__object.html',1,'graphene::market_history']]],
   ['liquidity_5fpool_5fwithdraw_5fevaluator',['liquidity_pool_withdraw_evaluator',['../classgraphene_1_1chain_1_1liquidity__pool__withdraw__evaluator.html',1,'graphene::chain']]],
   ['liquidity_5fpool_5fwithdraw_5foperation',['liquidity_pool_withdraw_operation',['../structgraphene_1_1protocol_1_1liquidity__pool__withdraw__operation.html',1,'graphene::protocol']]],
   ['list',['list',['../structfc_1_1typelist_1_1list.html',1,'fc::typelist']]],
+  ['list_5faddress_5fbuilder',['list_address_builder',['../classgraphene_1_1net_1_1detail_1_1list__address__builder.html',1,'graphene::net::detail']]],
   ['local_5fapi_5fconnection',['local_api_connection',['../classfc_1_1local__api__connection.html',1,'fc']]],
   ['log_5fcontext',['log_context',['../classfc_1_1log__context.html',1,'fc']]],
   ['log_5fcontext_5fimpl',['log_context_impl',['../classfc_1_1detail_1_1log__context__impl.html',1,'fc::detail']]],
@@ -41,5 +41,6 @@ var searchData=
   ['logger',['logger',['../classfc_1_1logger.html',1,'fc']]],
   ['logger_5fconfig',['logger_config',['../structfc_1_1logger__config.html',1,'fc']]],
   ['logging_5fconfig',['logging_config',['../structfc_1_1logging__config.html',1,'fc']]],
-  ['login_5fapi',['login_api',['../classgraphene_1_1app_1_1login__api.html',1,'graphene::app']]]
+  ['login_5fapi',['login_api',['../classgraphene_1_1app_1_1login__api.html',1,'graphene::app']]],
+  ['lp_5fticker_5fmeta_5fobject',['lp_ticker_meta_object',['../structgraphene_1_1market__history_1_1lp__ticker__meta__object.html',1,'graphene::market_history']]]
 ];

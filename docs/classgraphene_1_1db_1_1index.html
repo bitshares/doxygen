@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -92,8 +92,8 @@ Inheritance diagram for graphene::db::index:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0f198d6faca558c749b833ede04116b3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1index.html#a0f198d6faca558c749b833ede04116b3">~index</a> ()</td></tr>
-<tr class="separator:a0f198d6faca558c749b833ede04116b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ee3fd06ff2ebdaf0137f67c8820015"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1index.html#af4ee3fd06ff2ebdaf0137f67c8820015">~index</a> ()=default</td></tr>
+<tr class="separator:af4ee3fd06ff2ebdaf0137f67c8820015"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94bbe39fc8bba240fb1b6687036aa64a"><td class="memItemLeft" align="right" valign="top">virtual uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1index.html#a94bbe39fc8bba240fb1b6687036aa64a">object_space_id</a> () const =0</td></tr>
 <tr class="separator:a94bbe39fc8bba240fb1b6687036aa64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f4f84338efa7f8eac43c8df3c456634"><td class="memItemLeft" align="right" valign="top">virtual uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1index.html#a8f4f84338efa7f8eac43c8df3c456634">object_type_id</a> () const =0</td></tr>
@@ -127,8 +127,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a72af3b03d9e5f04f1e5ccfd519071d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d3d4f6b5fbc219f20ba40da9ad1e70c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1index.html#a0d3d4f6b5fbc219f20ba40da9ad1e70c">inspect_all_objects</a> (std::function&lt; void(const <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;)&gt; inspector) const =0</td></tr>
 <tr class="separator:a0d3d4f6b5fbc219f20ba40da9ad1e70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11118a11ceeb9853975f3e254038daa5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1index.html#a11118a11ceeb9853975f3e254038daa5">add_observer</a> (const shared_ptr&lt; <a class="el" href="classgraphene_1_1db_1_1index__observer.html">index_observer</a> &gt; &amp;)=0</td></tr>
-<tr class="separator:a11118a11ceeb9853975f3e254038daa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc4131ce3902af88a5c53cf0ab3d2cab"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1index.html#afc4131ce3902af88a5c53cf0ab3d2cab">add_observer</a> (const std::shared_ptr&lt; <a class="el" href="classgraphene_1_1db_1_1index__observer.html">index_observer</a> &gt; &amp;)=0</td></tr>
+<tr class="separator:afc4131ce3902af88a5c53cf0ab3d2cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaebd5c0ba3eb4e6ca9d0a82061e61793"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1index.html#aaebd5c0ba3eb4e6ca9d0a82061e61793">object_from_variant</a> (const <a class="el" href="classfc_1_1variant.html">fc::variant</a> &amp;var, <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj, uint32_t max_depth) const =0</td></tr>
 <tr class="separator:aaebd5c0ba3eb4e6ca9d0a82061e61793"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefb954473263f0736d5ba394f5437ec1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1index.html#aefb954473263f0736d5ba394f5437ec1">object_default</a> (<a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj) const =0</td></tr>
@@ -140,10 +140,10 @@ Public Member Functions</h2></td></tr>
 <p>Items in an index can only be modified via a call to modify and all references to objects outside of that callback are const references.</p>
 <p>Most implementations will probably be some form of boost::multi_index_container which means that they can covnert a reference to an object to an iterator. When at all possible save a pointer/reference to your objects rather than constantly looking them up by ID. </p>
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00071">71</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00070">70</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0f198d6faca558c749b833ede04116b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f198d6faca558c749b833ede04116b3">&#9670;&nbsp;</a></span>~index()</h2>
+<a id="af4ee3fd06ff2ebdaf0137f67c8820015"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4ee3fd06ff2ebdaf0137f67c8820015">&#9670;&nbsp;</a></span>~index()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -160,18 +160,16 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00074">74</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a11118a11ceeb9853975f3e254038daa5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11118a11ceeb9853975f3e254038daa5">&#9670;&nbsp;</a></span>add_observer()</h2>
+<a id="afc4131ce3902af88a5c53cf0ab3d2cab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc4131ce3902af88a5c53cf0ab3d2cab">&#9670;&nbsp;</a></span>add_observer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -182,7 +180,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void graphene::db::index::add_observer </td>
           <td>(</td>
-          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classgraphene_1_1db_1_1index__observer.html">index_observer</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classgraphene_1_1db_1_1index__observer.html">index_observer</a> &gt; &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -194,7 +192,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a058b74247f1067580f95995bdbad911e">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#ab3fcc4934cd9676f2122c303b2463b85">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>.</p>
 
 </div>
 </div>
@@ -223,7 +221,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Builds a new object and assigns it the next available ID and then initializes it with constructor and lastly inserts it into the index. </p>
 
-<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a2a92435bc15bd2c4e160e5a56a321caf">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1generic__index.html#a980c6c1e00630ff783bdd5d3e2ca11a1">graphene::db::generic_index&lt; ObjectType, MultiIndexType &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1generic__index.html#a980c6c1e00630ff783bdd5d3e2ca11a1">graphene::db::generic_index&lt; T, boost::multi_index_container&lt; T, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt; &gt; &gt;</a>, and <a class="el" href="classgraphene_1_1db_1_1simple__index.html#aa25decba8c3502467dfe170fcbe9a590">graphene::db::simple_index&lt; T &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a79d8e7f65089a24bdd7cf0cbd364dd45">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1generic__index.html#ac98e457427a6cdf8f0451cb70efbb092">graphene::db::generic_index&lt; ObjectType, MultiIndexType &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1generic__index.html#ac98e457427a6cdf8f0451cb70efbb092">graphene::db::generic_index&lt; T, boost::multi_index_container&lt; T, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt; &gt; &gt;</a>, and <a class="el" href="classgraphene_1_1db_1_1simple__index.html#aa25decba8c3502467dfe170fcbe9a590">graphene::db::simple_index&lt; T &gt;</a>.</p>
 
 </div>
 </div>
@@ -252,7 +250,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the object with id or nullptr if not found </dd></dl>
 
-<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a9905efcbf28d8288ddc35c7de26149c5">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1generic__index.html#a6f8e4f495a8b0555383ce4ba93892ce6">graphene::db::generic_index&lt; ObjectType, MultiIndexType &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1generic__index.html#a6f8e4f495a8b0555383ce4ba93892ce6">graphene::db::generic_index&lt; T, boost::multi_index_container&lt; T, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt; &gt; &gt;</a>, and <a class="el" href="classgraphene_1_1db_1_1simple__index.html#ad951abc2f20ca008951c5257ca5f2a92">graphene::db::simple_index&lt; T &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a2bf0dc211d6f130bd6a6c1232a0e5c33">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1generic__index.html#aa6dcbfd6bdc30012c7da0b04a75ebfb1">graphene::db::generic_index&lt; ObjectType, MultiIndexType &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1generic__index.html#aa6dcbfd6bdc30012c7da0b04a75ebfb1">graphene::db::generic_index&lt; T, boost::multi_index_container&lt; T, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt; &gt; &gt;</a>, and <a class="el" href="classgraphene_1_1db_1_1simple__index.html#ad951abc2f20ca008951c5257ca5f2a92">graphene::db::simple_index&lt; T &gt;</a>.</p>
 
 </div>
 </div>
@@ -281,7 +279,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>This version will automatically check for nullptr and throw an exception if the object ID could not be found. </p>
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00111">111</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00110">110</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
 </div>
 </div>
@@ -308,7 +306,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a513ac58b6767c204e34d41d5dbbe2c2a">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a0b2c7f10b6dcdbd9fd33580a60b57360">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>.</p>
 
 </div>
 </div>
@@ -337,7 +335,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Polymorphically insert by moving an object into the index. this should throw if the object is already in the database. </p>
 
-<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a6b9efacf15249bbe5650a179a14de3fc">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1simple__index.html#a02070d4bbe7e4c8a0480ef2db23a2bdf">graphene::db::simple_index&lt; T &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1generic__index.html#ad41c7adc007eb1064065c4ee56017c5d">graphene::db::generic_index&lt; ObjectType, MultiIndexType &gt;</a>, and <a class="el" href="classgraphene_1_1db_1_1generic__index.html#ad41c7adc007eb1064065c4ee56017c5d">graphene::db::generic_index&lt; T, boost::multi_index_container&lt; T, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt; &gt; &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#af935f5d79721abc5886441caac1620d5">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1simple__index.html#a02070d4bbe7e4c8a0480ef2db23a2bdf">graphene::db::simple_index&lt; T &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1generic__index.html#ac0f4c4e40066b8775d82aa57fbf92b7f">graphene::db::generic_index&lt; ObjectType, MultiIndexType &gt;</a>, and <a class="el" href="classgraphene_1_1db_1_1generic__index.html#ac0f4c4e40066b8775d82aa57fbf92b7f">graphene::db::generic_index&lt; T, boost::multi_index_container&lt; T, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt; &gt; &gt;</a>.</p>
 
 </div>
 </div>
@@ -365,7 +363,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1generic__index.html#a0f264abe12a00a53e174447244f7a22b">graphene::db::generic_index&lt; ObjectType, MultiIndexType &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1generic__index.html#a0f264abe12a00a53e174447244f7a22b">graphene::db::generic_index&lt; T, boost::multi_index_container&lt; T, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt; &gt; &gt;</a>, and <a class="el" href="classgraphene_1_1db_1_1simple__index.html#a8d3a5fb4f7729874e2ee9218bca8ed7a">graphene::db::simple_index&lt; T &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1generic__index.html#a09aa775528de7f866cea8bfe90f1adaa">graphene::db::generic_index&lt; ObjectType, MultiIndexType &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1generic__index.html#a09aa775528de7f866cea8bfe90f1adaa">graphene::db::generic_index&lt; T, boost::multi_index_container&lt; T, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt; &gt; &gt;</a>, and <a class="el" href="classgraphene_1_1db_1_1simple__index.html#a8d3a5fb4f7729874e2ee9218bca8ed7a">graphene::db::simple_index&lt; T &gt;</a>.</p>
 
 </div>
 </div>
@@ -393,7 +391,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#af2e27f92e7a2c77e8e67f323bebe21ba">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a6983d2f531290bc98f321b0ddd5c3e99">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>.</p>
 
 </div>
 </div>
@@ -431,7 +429,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a3cb107388bbe893f692aea4817ad263b">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1generic__index.html#ab9a4fceebfed811e16d58c48f5827ae4">graphene::db::generic_index&lt; ObjectType, MultiIndexType &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1generic__index.html#ab9a4fceebfed811e16d58c48f5827ae4">graphene::db::generic_index&lt; T, boost::multi_index_container&lt; T, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt; &gt; &gt;</a>, and <a class="el" href="classgraphene_1_1db_1_1simple__index.html#af405a3f7b15ae28345edcc0a860acc6a">graphene::db::simple_index&lt; T &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a4ad117c48ee64123d103d5c2d88a4ccd">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1generic__index.html#aa388bede6e7ae0e58df5bed7fdb3abaa">graphene::db::generic_index&lt; ObjectType, MultiIndexType &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1generic__index.html#aa388bede6e7ae0e58df5bed7fdb3abaa">graphene::db::generic_index&lt; T, boost::multi_index_container&lt; T, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt; &gt; &gt;</a>, and <a class="el" href="classgraphene_1_1db_1_1simple__index.html#af405a3f7b15ae28345edcc0a860acc6a">graphene::db::simple_index&lt; T &gt;</a>.</p>
 
 </div>
 </div>
@@ -472,7 +470,7 @@ template&lt;typename Object , typename Lambda &gt; </div>
 </div><div class="memdoc">
 <p>When forming your lambda to modify obj, it is natural to have Object&amp; be the signature, but that is not compatible with the type erasue required by the virtual method. This method provides a helper to wrap the lambda in a form compatible with the virtual modify call. </p><dl class="section note"><dt>Note</dt><dd>Lambda should have the signature: void(Object&amp;) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00128">128</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="index_8hpp_source.html#l00127">127</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 
 </div>
 </div>
@@ -500,7 +498,7 @@ template&lt;typename Object , typename Lambda &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a444a7f0d30a921eec2bfc62959c3001a">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a7ac0abd3ee7b67c91acb6470d90a36db">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>.</p>
 
 </div>
 </div>
@@ -544,7 +542,7 @@ template&lt;typename Object , typename Lambda &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a90f0474bc0996a94faa7f40213158a39">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a24297ecb6100f75c56512e1b2632a701">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>.</p>
 
 </div>
 </div>
@@ -571,7 +569,7 @@ template&lt;typename Object , typename Lambda &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a5d878f7becdbb7b6d09ca5ca5fabf178">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#afa0003d68ffb2a58ea0b1153c30e2d65">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>.</p>
 
 </div>
 </div>
@@ -598,7 +596,7 @@ template&lt;typename Object , typename Lambda &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#afa6b9266cab104eb60f6491a92f70c12">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a3d03e65840708433cbd7751afe3c7ef4">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>.</p>
 
 </div>
 </div>
@@ -627,7 +625,7 @@ template&lt;typename Object , typename Lambda &gt; </div>
 </div><div class="memdoc">
 <p>Opens the index loading objects from a file </p>
 
-<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a964b3f951cb36b7ae5507014e285d474">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#aaa653c8f0a181d3a2460070a57e012c9">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>.</p>
 
 </div>
 </div>
@@ -655,7 +653,7 @@ template&lt;typename Object , typename Lambda &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a42390d3be1f04919991aa5051c337d93">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1generic__index.html#a20c1b60d4e22bac082a385574802d8c4">graphene::db::generic_index&lt; ObjectType, MultiIndexType &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1generic__index.html#a20c1b60d4e22bac082a385574802d8c4">graphene::db::generic_index&lt; T, boost::multi_index_container&lt; T, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt; &gt; &gt;</a>, and <a class="el" href="classgraphene_1_1db_1_1simple__index.html#a36d967926e4273ff93a59dd3f4160e3d">graphene::db::simple_index&lt; T &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#aec897aa9453788a7dfd2590a9a105dd9">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1generic__index.html#a8124dccf3481a119a28e793119ae11d6">graphene::db::generic_index&lt; ObjectType, MultiIndexType &gt;</a>, <a class="el" href="classgraphene_1_1db_1_1generic__index.html#a8124dccf3481a119a28e793119ae11d6">graphene::db::generic_index&lt; T, boost::multi_index_container&lt; T, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; object, object_id_type, &amp;object::id &gt; &gt; &gt; &gt; &gt;</a>, and <a class="el" href="classgraphene_1_1db_1_1simple__index.html#a36d967926e4273ff93a59dd3f4160e3d">graphene::db::simple_index&lt; T &gt;</a>.</p>
 
 </div>
 </div>
@@ -683,7 +681,7 @@ template&lt;typename Object , typename Lambda &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a66d305b9da07698740dc3f4f7f97154b">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a890c1cb344e01ecbc1dac733ad0e4158">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>.</p>
 
 </div>
 </div>
@@ -711,7 +709,7 @@ template&lt;typename Object , typename Lambda &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#aeb07aa08548cc15be065e1bf1328a00e">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a29243d94e76990b648fd397756af9def">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>.</p>
 
 </div>
 </div>
@@ -738,7 +736,7 @@ template&lt;typename Object , typename Lambda &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#aec0a52baa71b8de23292c608f50dd49b">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classgraphene_1_1db_1_1primary__index.html#a30c874160c1c270314698511f8e43b00">graphene::db::primary_index&lt; graphene::db::generic_index &gt;</a>.</p>
 
 </div>
 </div>
@@ -748,7 +746,7 @@ template&lt;typename Object , typename Lambda &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:58 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:47 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

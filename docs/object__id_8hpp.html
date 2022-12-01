@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -76,7 +76,6 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="exception_8hpp_source.html">fc/exception/exception.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="varint_8hpp_source.html">fc/io/varint.hpp</a>&gt;</code><br />
-<code>#include &lt;memory&gt;</code><br />
 </div>
 <p><a href="object__id_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -113,8 +112,6 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a9c0db8449cccb10b529dc8009bbbe9cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="object__id_8hpp.html#a9c0db8449cccb10b529dc8009bbbe9cd">GRAPHENE_DB_MAX_INSTANCE_ID</a>&#160;&#160;&#160;(uint64_t(-1)&gt;&gt;16)</td></tr>
-<tr class="separator:a9c0db8449cccb10b529dc8009bbbe9cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85908db87b108cb6244178c510cebd31"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="object__id_8hpp.html#a85908db87b108cb6244178c510cebd31">MAP_OBJECT_ID_TO_TYPE</a>(OBJECT)</td></tr>
 <tr class="separator:a85908db87b108cb6244178c510cebd31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -138,22 +135,6 @@ Functions</h2></td></tr>
 <tr class="separator:a1179cd3b9e7f1abe536d66aebfd124c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a9c0db8449cccb10b529dc8009bbbe9cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c0db8449cccb10b529dc8009bbbe9cd">&#9670;&nbsp;</a></span>GRAPHENE_DB_MAX_INSTANCE_ID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GRAPHENE_DB_MAX_INSTANCE_ID&#160;&#160;&#160;(uint64_t(-1)&gt;&gt;16)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="object__id_8hpp_source.html#l00028">28</a> of file <a class="el" href="object__id_8hpp_source.html">object_id.hpp</a>.</p>
-
-</div>
-</div>
 <a id="a85908db87b108cb6244178c510cebd31"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85908db87b108cb6244178c510cebd31">&#9670;&nbsp;</a></span>MAP_OBJECT_ID_TO_TYPE</h2>
 
@@ -169,17 +150,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code" href="namespacegraphene.html">graphene</a> { <span class="keyword">namespace </span>db { \</div><div class="line">   template&lt;&gt; \</div><div class="line">   struct object_downcast&lt;<a class="code" href="structgraphene_1_1db_1_1object__id.html">graphene::db::object_id</a>&lt;OBJECT::space_id, \</div><div class="line">                                                  OBJECT::type_id&gt;&gt; { <span class="keyword">using</span> type = OBJECT; }; \</div><div class="line">   } }</div><div class="ttc" id="structgraphene_1_1db_1_1object__id_html"><div class="ttname"><a href="structgraphene_1_1db_1_1object__id.html">graphene::db::object_id</a></div><div class="ttdef"><b>Definition:</b> <a href="object__id_8hpp_source.html#l00108">object_id.hpp:108</a></div></div>
-<div class="ttc" id="namespacegraphene_html"><div class="ttname"><a href="namespacegraphene.html">graphene</a></div><div class="ttdef"><b>Definition:</b> <a href="api_8cpp_source.html#l00056">api.cpp:56</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code" href="namespacegraphene.html">graphene</a> { <span class="keyword">namespace </span>db { \</div><div class="line">   template&lt;&gt; \</div><div class="line">   struct object_downcast&lt;<span class="keyword">const</span> <a class="code" href="structgraphene_1_1db_1_1object__id.html">graphene::db::object_id</a>&lt;OBJECT::space_id, \</div><div class="line">                                                        OBJECT::type_id&gt;&amp;&gt; { <span class="keyword">using</span> type = OBJECT; }; \</div><div class="line">   } }</div><div class="ttc" id="structgraphene_1_1db_1_1object__id_html"><div class="ttname"><a href="structgraphene_1_1db_1_1object__id.html">graphene::db::object_id</a></div><div class="ttdef"><b>Definition:</b> <a href="object__id_8hpp_source.html#l00103">object_id.hpp:103</a></div></div>
+<div class="ttc" id="namespacegraphene_html"><div class="ttname"><a href="namespacegraphene.html">graphene</a></div><div class="ttdef"><b>Definition:</b> <a href="api_8cpp_source.html#l00048">api.cpp:48</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="object__id_8hpp_source.html#l00098">98</a> of file <a class="el" href="object__id_8hpp_source.html">object_id.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="object__id_8hpp_source.html#l00093">93</a> of file <a class="el" href="object__id_8hpp_source.html">object_id.hpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:55 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:45 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

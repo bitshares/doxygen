@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -67,7 +67,7 @@ $(function() {
 : <a class="el" href="structfc_1_1appender__config.html#ab6e6005660d615d49db98177f04f4f7a">fc::appender_config</a>
 , <a class="el" href="structfc_1_1logger__config.html#a2300ca629d573fdfcb81f9031fb1b09d">fc::logger_config</a>
 , <a class="el" href="classfc_1_1thread__d.html#adb3d948e58f1d5fc857b36ebae00ab72">fc::thread_d</a>
-, <a class="el" href="structgraphene_1_1app_1_1account__asset__balance.html#a9d4b070a1262ac8384cbc46fa2bc0f50">graphene::app::account_asset_balance</a>
+, <a class="el" href="structgraphene_1_1app_1_1asset__api_1_1account__asset__balance.html#aff6503ca29bceac42548c3aade7bb21e">graphene::app::asset_api::account_asset_balance</a>
 , <a class="el" href="classgraphene_1_1chain_1_1account__object.html#a9eeeba87995190284d93bd3d7fabc639">graphene::chain::account_object</a>
 , <a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html#a8e180be3ea821af00a9da7729ed105dd">graphene::chain::account_statistics_object</a>
 , <a class="el" href="structgraphene_1_1chain_1_1genesis__state__type_1_1initial__account__type.html#a26fec8f6f577cf2e9abce188155df25c">graphene::chain::genesis_state_type::initial_account_type</a>
@@ -150,7 +150,7 @@ $(function() {
 </li>
 <li>next
 : <a class="el" href="structfc_1_1context.html#a2d38d8ebd0679f31892475dfd2ff5c3b">fc::context</a>
-, <a class="el" href="classgraphene_1_1chain_1_1account__transaction__history__object.html#a4ca3ae08adf59a1a2c99eed82cbc7a49">graphene::chain::account_transaction_history_object</a>
+, <a class="el" href="classgraphene_1_1chain_1_1account__history__object.html#af9ec7be010cdb47c130be70ea1b467e1">graphene::chain::account_history_object</a>
 </li>
 <li>next_auto_update_time
 : <a class="el" href="classgraphene_1_1chain_1_1ticket__object.html#a2f5e76a3a11a8524c6974d4f9c93c3a5">graphene::chain::ticket_object</a>
@@ -174,6 +174,9 @@ $(function() {
 : <a class="el" href="classgraphene_1_1chain_1_1dynamic__global__property__object.html#a2e907ac0340cc99a629d957bdc729faa">graphene::chain::dynamic_global_property_object</a>
 , <a class="el" href="structgraphene_1_1chain_1_1proposal__operation__hardfork__visitor.html#a60e8c44ebd54d5aa07097f0321d48756">graphene::chain::proposal_operation_hardfork_visitor</a>
 </li>
+<li>next_object_ids_index
+: <a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a5540b0ca8c0efc0b013a292d73befce2">graphene::app::database_api_impl</a>
+</li>
 <li>next_posted_num
 : <a class="el" href="classfc_1_1thread__d.html#ad2710a66c1833df0e8004f79749cd507">fc::thread_d</a>
 </li>
@@ -186,6 +189,9 @@ $(function() {
 <li>next_which
 : <a class="el" href="structgraphene_1_1protocol_1_1graphene__extension__unpack__visitor.html#aa779d09858b092eb31965b5f9efb9856">graphene::protocol::graphene_extension_unpack_visitor&lt; Stream, T &gt;</a>
 </li>
+<li>no_delete
+: <a class="el" href="structgraphene_1_1es__objects_1_1detail_1_1es__objects__plugin__impl_1_1plugin__options_1_1object__options.html#af3a43ab05c5f63bca3b296c1134dd8a0">graphene::es_objects::detail::es_objects_plugin_impl::plugin_options::object_options</a>
+</li>
 <li>node_id
 : <a class="el" href="structgraphene_1_1net_1_1address__info.html#a1c43d3874d09c447ada086c7c9db0a2d">graphene::net::address_info</a>
 , <a class="el" href="structgraphene_1_1net_1_1check__firewall__message.html#a4f54e2c2473df0edc95ded90b2692deb">graphene::net::check_firewall_message</a>
@@ -196,9 +202,6 @@ $(function() {
 <li>node_public_key
 : <a class="el" href="structgraphene_1_1net_1_1hello__message.html#a13f68743d511f0b0c0bcf688a6574676">graphene::net::hello_message</a>
 , <a class="el" href="classgraphene_1_1net_1_1peer__connection.html#a170d09091433c2c32c601f15fc6a448a">graphene::net::peer_connection</a>
-</li>
-<li>nodes_already_tested
-: <a class="el" href="structgraphene_1_1net_1_1firewall__check__state__data.html#adbb84d89b79373d784cf9e6cc2045aaf">graphene::net::firewall_check_state_data</a>
 </li>
 <li>non_preemptable_scope_count
 : <a class="el" href="classfc_1_1thread__d.html#a1af49f0b7ac6cdbfd8b487173138a3a9">fc::thread_d</a>
@@ -264,7 +267,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:59 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:48 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

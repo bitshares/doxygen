@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -68,7 +68,8 @@ $(function() {
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">graphene::custom_operations Namespace Reference</div>  </div>
 </div><!--header-->
@@ -92,67 +93,74 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a920c91f640d35f9924002cd330d50c8e"><td class="memItemLeft" align="right" valign="top">typedef multi_index_container&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>, &amp;<a class="el" href="classgraphene_1_1db_1_1object.html#a2ce812569d565a45dda1420cfbdf79ad">object::id</a> &gt; &gt;, ordered_unique&lt; tag&lt; by_account_catalog_key &gt;, composite_key&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, member&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, account_id_type, &amp;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a32e728f392e9021fb65e5b795df525d9">account_storage_object::account</a> &gt;, member&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, string, &amp;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a7ea20aadf67848b1c8c3eced7b5dd277">account_storage_object::catalog</a> &gt;, member&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, string, &amp;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a49ae6c4600805968cf29b1eb991eb50d">account_storage_object::key</a> &gt; &gt; &gt; &gt;&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1custom__operations.html#a920c91f640d35f9924002cd330d50c8e">account_storage_multi_index_type</a></td></tr>
-<tr class="separator:a920c91f640d35f9924002cd330d50c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a87f3830ba9c7885621b54e9af2c5be"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classgraphene_1_1db_1_1generic__index.html">generic_index</a>&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, <a class="el" href="namespacegraphene_1_1custom__operations.html#a920c91f640d35f9924002cd330d50c8e">account_storage_multi_index_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1custom__operations.html#a6a87f3830ba9c7885621b54e9af2c5be">account_storage_index</a></td></tr>
-<tr class="separator:a6a87f3830ba9c7885621b54e9af2c5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3341e56c1d60e2b0146d149400400f8c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1custom__operations.html#a3341e56c1d60e2b0146d149400400f8c">account_storage_id_type</a> = <a class="el" href="structgraphene_1_1db_1_1object__id.html">object_id</a>&lt; <a class="el" href="custom__objects_8hpp.html#af56e456d349b56f4699b16fe49225b1a">CUSTOM_OPERATIONS_SPACE_ID</a>, <a class="el" href="namespacegraphene_1_1custom__operations.html#a9b2a9d63d6233be273c34417c52238f3abd8fc2eb4001ae2a81c61b8dea12f102">account_map</a> &gt;</td></tr>
-<tr class="separator:a3341e56c1d60e2b0146d149400400f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a639ae05bfff17329c510a477617b05b2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1custom__operations.html#a639ae05bfff17329c510a477617b05b2">account_storage_multi_idx_type</a> = multi_index_container&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>, &amp;<a class="el" href="classgraphene_1_1db_1_1object.html#a2ce812569d565a45dda1420cfbdf79ad">object::id</a> &gt; &gt;, ordered_unique&lt; tag&lt; by_account_catalog_key &gt;, composite_key&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, member&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, account_id_type, &amp;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a32e728f392e9021fb65e5b795df525d9">account_storage_object::account</a> &gt;, member&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, string, &amp;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a7ea20aadf67848b1c8c3eced7b5dd277">account_storage_object::catalog</a> &gt;, member&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, string, &amp;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a49ae6c4600805968cf29b1eb991eb50d">account_storage_object::key</a> &gt; &gt; &gt;, ordered_unique&lt; tag&lt; by_account_catalog &gt;, composite_key&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, member&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, account_id_type, &amp;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a32e728f392e9021fb65e5b795df525d9">account_storage_object::account</a> &gt;, member&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, string, &amp;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a7ea20aadf67848b1c8c3eced7b5dd277">account_storage_object::catalog</a> &gt;, member&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>, &amp;<a class="el" href="classgraphene_1_1db_1_1object.html#a2ce812569d565a45dda1420cfbdf79ad">object::id</a> &gt; &gt; &gt;, ordered_unique&lt; tag&lt; by_account &gt;, composite_key&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, member&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, account_id_type, &amp;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a32e728f392e9021fb65e5b795df525d9">account_storage_object::account</a> &gt;, member&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>, &amp;<a class="el" href="classgraphene_1_1db_1_1object.html#a2ce812569d565a45dda1420cfbdf79ad">object::id</a> &gt; &gt; &gt;, ordered_unique&lt; tag&lt; by_catalog_key &gt;, composite_key&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, member&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, string, &amp;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a7ea20aadf67848b1c8c3eced7b5dd277">account_storage_object::catalog</a> &gt;, member&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, string, &amp;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a49ae6c4600805968cf29b1eb991eb50d">account_storage_object::key</a> &gt;, member&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>, &amp;<a class="el" href="classgraphene_1_1db_1_1object.html#a2ce812569d565a45dda1420cfbdf79ad">object::id</a> &gt; &gt; &gt;, ordered_unique&lt; tag&lt; by_catalog &gt;, composite_key&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, member&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, string, &amp;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a7ea20aadf67848b1c8c3eced7b5dd277">account_storage_object::catalog</a> &gt;, member&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>, &amp;<a class="el" href="classgraphene_1_1db_1_1object.html#a2ce812569d565a45dda1420cfbdf79ad">object::id</a> &gt; &gt; &gt; &gt; &gt;</td></tr>
+<tr class="separator:a639ae05bfff17329c510a477617b05b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa663695e061b4c429faa1467d94a8a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1custom__operations.html#a7fa663695e061b4c429faa1467d94a8a">account_storage_index</a> = <a class="el" href="classgraphene_1_1db_1_1generic__index.html">generic_index</a>&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, <a class="el" href="namespacegraphene_1_1custom__operations.html#a639ae05bfff17329c510a477617b05b2">account_storage_multi_idx_type</a> &gt;</td></tr>
+<tr class="separator:a7fa663695e061b4c429faa1467d94a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5f07713b15ad24ba9defe67dd8f3b3e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1custom__operations.html#ae5f07713b15ad24ba9defe67dd8f3b3e">account_storage_id_type</a> = <a class="el" href="structgraphene_1_1db_1_1object__id.html">object_id</a>&lt; <a class="el" href="classgraphene_1_1db_1_1abstract__object.html#afb1fe30941a4e9e6d3ca3f4a55c9e59b">account_storage_object::space_id</a>, <a class="el" href="classgraphene_1_1db_1_1abstract__object.html#ab3d8c613dd39c1b04abfb7ac758246e6">account_storage_object::type_id</a> &gt;</td></tr>
+<tr class="separator:ae5f07713b15ad24ba9defe67dd8f3b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f9389809f0f23a0cb409ad5139de78b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classfc_1_1static__variant.html">fc::static_variant</a>&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__map.html">account_storage_map</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1custom__operations.html#a4f9389809f0f23a0cb409ad5139de78b">custom_plugin_operation</a></td></tr>
 <tr class="separator:a4f9389809f0f23a0cb409ad5139de78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a9b2a9d63d6233be273c34417c52238f3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1custom__operations.html#a9b2a9d63d6233be273c34417c52238f3">types</a> { <a class="el" href="namespacegraphene_1_1custom__operations.html#a9b2a9d63d6233be273c34417c52238f3abd8fc2eb4001ae2a81c61b8dea12f102">account_map</a> = 0
+<tr class="memitem:ab15543ada193df05267afeba9688fe4c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1custom__operations.html#ab15543ada193df05267afeba9688fe4c">custom_operations_object_types</a> { <a class="el" href="namespacegraphene_1_1custom__operations.html#ab15543ada193df05267afeba9688fe4ca5c68783c08cf845d2bffae57ab658a1f">custom_operations_object_types::account_map</a> = 0
  }</td></tr>
-<tr class="separator:a9b2a9d63d6233be273c34417c52238f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ab15543ada193df05267afeba9688fe4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a38a2bbc9707f81894e6208d620dfc8fe"><td class="memItemLeft" align="right" valign="top">constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1custom__operations.html#a38a2bbc9707f81894e6208d620dfc8fe">CUSTOM_OPERATIONS_SPACE_ID</a> = 7</td></tr>
+<tr class="separator:a38a2bbc9707f81894e6208d620dfc8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a5677e1b195d8bf2798be1820c89f0d"><td class="memItemLeft" align="right" valign="top">constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1custom__operations.html#a8a5677e1b195d8bf2798be1820c89f0d">CUSTOM_OPERATIONS_MAX_KEY_SIZE</a> = 200</td></tr>
+<tr class="separator:a8a5677e1b195d8bf2798be1820c89f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a3341e56c1d60e2b0146d149400400f8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3341e56c1d60e2b0146d149400400f8c">&#9670;&nbsp;</a></span>account_storage_id_type</h2>
+<a id="ae5f07713b15ad24ba9defe67dd8f3b3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5f07713b15ad24ba9defe67dd8f3b3e">&#9670;&nbsp;</a></span>account_storage_id_type</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacegraphene_1_1custom__operations.html#a3341e56c1d60e2b0146d149400400f8c">graphene::custom_operations::account_storage_id_type</a> = typedef <a class="el" href="structgraphene_1_1db_1_1object__id.html">object_id</a>&lt;<a class="el" href="custom__objects_8hpp.html#af56e456d349b56f4699b16fe49225b1a">CUSTOM_OPERATIONS_SPACE_ID</a>, <a class="el" href="namespacegraphene_1_1custom__operations.html#a9b2a9d63d6233be273c34417c52238f3abd8fc2eb4001ae2a81c61b8dea12f102">account_map</a>&gt;</td>
+          <td class="memname">using <a class="el" href="namespacegraphene_1_1custom__operations.html#ae5f07713b15ad24ba9defe67dd8f3b3e">graphene::custom_operations::account_storage_id_type</a> = typedef <a class="el" href="structgraphene_1_1db_1_1object__id.html">object_id</a>&lt;<a class="el" href="classgraphene_1_1db_1_1abstract__object.html#afb1fe30941a4e9e6d3ca3f4a55c9e59b">account_storage_object::space_id</a>, <a class="el" href="classgraphene_1_1db_1_1abstract__object.html#ab3d8c613dd39c1b04abfb7ac758246e6">account_storage_object::type_id</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="custom__objects_8hpp_source.html#l00072">72</a> of file <a class="el" href="custom__objects_8hpp_source.html">custom_objects.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="custom__objects_8hpp_source.html#l00098">98</a> of file <a class="el" href="custom__objects_8hpp_source.html">custom_objects.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a6a87f3830ba9c7885621b54e9af2c5be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a87f3830ba9c7885621b54e9af2c5be">&#9670;&nbsp;</a></span>account_storage_index</h2>
+<a id="a7fa663695e061b4c429faa1467d94a8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fa663695e061b4c429faa1467d94a8a">&#9670;&nbsp;</a></span>account_storage_index</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classgraphene_1_1db_1_1generic__index.html">generic_index</a>&lt;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, <a class="el" href="namespacegraphene_1_1custom__operations.html#a920c91f640d35f9924002cd330d50c8e">account_storage_multi_index_type</a>&gt; <a class="el" href="namespacegraphene_1_1custom__operations.html#a6a87f3830ba9c7885621b54e9af2c5be">graphene::custom_operations::account_storage_index</a></td>
+          <td class="memname">using <a class="el" href="namespacegraphene_1_1custom__operations.html#a7fa663695e061b4c429faa1467d94a8a">graphene::custom_operations::account_storage_index</a> = typedef <a class="el" href="classgraphene_1_1db_1_1generic__index.html">generic_index</a>&lt;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, <a class="el" href="namespacegraphene_1_1custom__operations.html#a639ae05bfff17329c510a477617b05b2">account_storage_multi_idx_type</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="custom__objects_8hpp_source.html#l00070">70</a> of file <a class="el" href="custom__objects_8hpp_source.html">custom_objects.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="custom__objects_8hpp_source.html#l00096">96</a> of file <a class="el" href="custom__objects_8hpp_source.html">custom_objects.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a920c91f640d35f9924002cd330d50c8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a920c91f640d35f9924002cd330d50c8e">&#9670;&nbsp;</a></span>account_storage_multi_index_type</h2>
+<a id="a639ae05bfff17329c510a477617b05b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a639ae05bfff17329c510a477617b05b2">&#9670;&nbsp;</a></span>account_storage_multi_idx_type</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef multi_index_container&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, indexed_by&lt; ordered_unique&lt; tag&lt;by_id&gt;, member&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>, &amp;<a class="el" href="classgraphene_1_1db_1_1object.html#a2ce812569d565a45dda1420cfbdf79ad">object::id</a> &gt; &gt;, ordered_unique&lt; tag&lt;by_account_catalog_key&gt;, composite_key&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, member&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, account_id_type, &amp;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a32e728f392e9021fb65e5b795df525d9">account_storage_object::account</a> &gt;, member&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, string, &amp;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a7ea20aadf67848b1c8c3eced7b5dd277">account_storage_object::catalog</a> &gt;, member&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, string, &amp;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a49ae6c4600805968cf29b1eb991eb50d">account_storage_object::key</a> &gt; &gt; &gt; &gt;&gt; <a class="el" href="namespacegraphene_1_1custom__operations.html#a920c91f640d35f9924002cd330d50c8e">graphene::custom_operations::account_storage_multi_index_type</a></td>
+          <td class="memname">using <a class="el" href="namespacegraphene_1_1custom__operations.html#a639ae05bfff17329c510a477617b05b2">graphene::custom_operations::account_storage_multi_idx_type</a> = typedef multi_index_container&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, indexed_by&lt; ordered_unique&lt; tag&lt;by_id&gt;, member&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>, &amp;<a class="el" href="classgraphene_1_1db_1_1object.html#a2ce812569d565a45dda1420cfbdf79ad">object::id</a> &gt; &gt;, ordered_unique&lt; tag&lt;by_account_catalog_key&gt;, composite_key&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, member&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, account_id_type, &amp;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a32e728f392e9021fb65e5b795df525d9">account_storage_object::account</a> &gt;, member&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, string, &amp;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a7ea20aadf67848b1c8c3eced7b5dd277">account_storage_object::catalog</a> &gt;, member&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, string, &amp;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a49ae6c4600805968cf29b1eb991eb50d">account_storage_object::key</a> &gt; &gt; &gt;, ordered_unique&lt; tag&lt;by_account_catalog&gt;, composite_key&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, member&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, account_id_type, &amp;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a32e728f392e9021fb65e5b795df525d9">account_storage_object::account</a> &gt;, member&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, string, &amp;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a7ea20aadf67848b1c8c3eced7b5dd277">account_storage_object::catalog</a> &gt;, member&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>, &amp;<a class="el" href="classgraphene_1_1db_1_1object.html#a2ce812569d565a45dda1420cfbdf79ad">object::id</a> &gt; &gt; &gt;, ordered_unique&lt; tag&lt;by_account&gt;, composite_key&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, member&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, account_id_type, &amp;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a32e728f392e9021fb65e5b795df525d9">account_storage_object::account</a> &gt;, member&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>, &amp;<a class="el" href="classgraphene_1_1db_1_1object.html#a2ce812569d565a45dda1420cfbdf79ad">object::id</a> &gt; &gt; &gt;, ordered_unique&lt; tag&lt;by_catalog_key&gt;, composite_key&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, member&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, string, &amp;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a7ea20aadf67848b1c8c3eced7b5dd277">account_storage_object::catalog</a> &gt;, member&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, string, &amp;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a49ae6c4600805968cf29b1eb991eb50d">account_storage_object::key</a> &gt;, member&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>, &amp;<a class="el" href="classgraphene_1_1db_1_1object.html#a2ce812569d565a45dda1420cfbdf79ad">object::id</a> &gt; &gt; &gt;, ordered_unique&lt; tag&lt;by_catalog&gt;, composite_key&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, member&lt; <a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html">account_storage_object</a>, string, &amp;<a class="el" href="structgraphene_1_1custom__operations_1_1account__storage__object.html#a7ea20aadf67848b1c8c3eced7b5dd277">account_storage_object::catalog</a> &gt;, member&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>, &amp;<a class="el" href="classgraphene_1_1db_1_1object.html#a2ce812569d565a45dda1420cfbdf79ad">object::id</a> &gt; &gt; &gt; &gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="custom__objects_8hpp_source.html#l00054">54</a> of file <a class="el" href="custom__objects_8hpp_source.html">custom_objects.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="custom__objects_8hpp_source.html#l00094">94</a> of file <a class="el" href="custom__objects_8hpp_source.html">custom_objects.hpp</a>.</p>
 
 </div>
 </div>
@@ -173,29 +181,70 @@ Enumerations</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a9b2a9d63d6233be273c34417c52238f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b2a9d63d6233be273c34417c52238f3">&#9670;&nbsp;</a></span>types</h2>
+<a id="ab15543ada193df05267afeba9688fe4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab15543ada193df05267afeba9688fe4c">&#9670;&nbsp;</a></span>custom_operations_object_types</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacegraphene_1_1custom__operations.html#ab15543ada193df05267afeba9688fe4c">graphene::custom_operations::custom_operations_object_types</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab15543ada193df05267afeba9688fe4ca5c68783c08cf845d2bffae57ab658a1f"></a>account_map&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="custom__objects_8hpp_source.html#l00037">37</a> of file <a class="el" href="custom__objects_8hpp_source.html">custom_objects.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a8a5677e1b195d8bf2798be1820c89f0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a5677e1b195d8bf2798be1820c89f0d">&#9670;&nbsp;</a></span>CUSTOM_OPERATIONS_MAX_KEY_SIZE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespacegraphene_1_1custom__operations.html#a9b2a9d63d6233be273c34417c52238f3">graphene::custom_operations::types</a></td>
+          <td class="memname">constexpr uint16_t graphene::custom_operations::CUSTOM_OPERATIONS_MAX_KEY_SIZE = 200</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9b2a9d63d6233be273c34417c52238f3abd8fc2eb4001ae2a81c61b8dea12f102"></a>account_map&#160;</td><td class="fielddoc"></td></tr>
-</table>
 
-<p class="definition">Definition at line <a class="el" href="custom__objects_8hpp_source.html#l00039">39</a> of file <a class="el" href="custom__objects_8hpp_source.html">custom_objects.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="custom__objects_8hpp_source.html#l00035">35</a> of file <a class="el" href="custom__objects_8hpp_source.html">custom_objects.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a38a2bbc9707f81894e6208d620dfc8fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38a2bbc9707f81894e6208d620dfc8fe">&#9670;&nbsp;</a></span>CUSTOM_OPERATIONS_SPACE_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t graphene::custom_operations::CUSTOM_OPERATIONS_SPACE_ID = 7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="custom__objects_8hpp_source.html#l00033">33</a> of file <a class="el" href="custom__objects_8hpp_source.html">custom_objects.hpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:58 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:47 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -67,6 +67,7 @@ $(function() {
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">graphene::account_history Namespace Reference</div>  </div>
@@ -82,13 +83,56 @@ Namespaces</h2></td></tr>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1account__history_1_1account__history__plugin.html">account_history_plugin</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1account__history_1_1exceeded__account__object.html">exceeded_account_object</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct tracks accounts that have exceeded the max-ops-per-account limit.  <a href="structgraphene_1_1account__history_1_1exceeded__account__object.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a66443d6a8577d0e88d26747685ced0c6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1account__history.html#a66443d6a8577d0e88d26747685ced0c6">exceeded_account_multi_idx_type</a> = multi_index_container&lt; <a class="el" href="structgraphene_1_1account__history_1_1exceeded__account__object.html">exceeded_account_object</a>, indexed_by&lt; ordered_unique&lt; tag&lt; by_id &gt;, member&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>, &amp;<a class="el" href="classgraphene_1_1db_1_1object.html#a2ce812569d565a45dda1420cfbdf79ad">object::id</a> &gt; &gt;, ordered_unique&lt; tag&lt; by_account &gt;, member&lt; <a class="el" href="structgraphene_1_1account__history_1_1exceeded__account__object.html">exceeded_account_object</a>, account_id_type, &amp;<a class="el" href="structgraphene_1_1account__history_1_1exceeded__account__object.html#ad3bc59a9baab65db4902d084473209e3">exceeded_account_object::account_id</a> &gt; &gt;, ordered_unique&lt; tag&lt; by_block_num &gt;, composite_key&lt; <a class="el" href="structgraphene_1_1account__history_1_1exceeded__account__object.html">exceeded_account_object</a>, member&lt; <a class="el" href="structgraphene_1_1account__history_1_1exceeded__account__object.html">exceeded_account_object</a>, uint32_t, &amp;<a class="el" href="structgraphene_1_1account__history_1_1exceeded__account__object.html#ab51a8626b37365069670e4fd460987c9">exceeded_account_object::block_num</a> &gt;, member&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>, &amp;<a class="el" href="classgraphene_1_1db_1_1object.html#a2ce812569d565a45dda1420cfbdf79ad">object::id</a> &gt; &gt; &gt; &gt; &gt;</td></tr>
+<tr class="separator:a66443d6a8577d0e88d26747685ced0c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab32a180f815483b59766add468028a13"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1account__history.html#ab32a180f815483b59766add468028a13">exceeded_account_index</a> = <a class="el" href="classgraphene_1_1db_1_1generic__index.html">generic_index</a>&lt; <a class="el" href="structgraphene_1_1account__history_1_1exceeded__account__object.html">exceeded_account_object</a>, <a class="el" href="namespacegraphene_1_1account__history.html#a66443d6a8577d0e88d26747685ced0c6">exceeded_account_multi_idx_type</a> &gt;</td></tr>
+<tr class="separator:ab32a180f815483b59766add468028a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ab45e882d887d1f28eb4a10c8a48c9fa7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1account__history.html#ab45e882d887d1f28eb4a10c8a48c9fa7">account_history_object_type</a> { <a class="el" href="namespacegraphene_1_1account__history.html#ab45e882d887d1f28eb4a10c8a48c9fa7aaf748086896e114bc7c428b1a6ce2aca">key_account_object_type</a> = 0
+<tr class="memitem:ab45e882d887d1f28eb4a10c8a48c9fa7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1account__history.html#ab45e882d887d1f28eb4a10c8a48c9fa7">account_history_object_type</a> { <a class="el" href="namespacegraphene_1_1account__history.html#ab45e882d887d1f28eb4a10c8a48c9fa7acc4f714d1a1d1de96e8a6b49ae4603f9">exceeded_account_object_type</a> = 0
  }</td></tr>
 <tr class="separator:ab45e882d887d1f28eb4a10c8a48c9fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ab32a180f815483b59766add468028a13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab32a180f815483b59766add468028a13">&#9670;&nbsp;</a></span>exceeded_account_index</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacegraphene_1_1account__history.html#ab32a180f815483b59766add468028a13">graphene::account_history::exceeded_account_index</a> = typedef <a class="el" href="classgraphene_1_1db_1_1generic__index.html">generic_index</a>&lt; <a class="el" href="structgraphene_1_1account__history_1_1exceeded__account__object.html">exceeded_account_object</a>, <a class="el" href="namespacegraphene_1_1account__history.html#a66443d6a8577d0e88d26747685ced0c6">exceeded_account_multi_idx_type</a> &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="account__history__plugin_8hpp_source.html#l00080">80</a> of file <a class="el" href="account__history__plugin_8hpp_source.html">account_history_plugin.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a66443d6a8577d0e88d26747685ced0c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66443d6a8577d0e88d26747685ced0c6">&#9670;&nbsp;</a></span>exceeded_account_multi_idx_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacegraphene_1_1account__history.html#a66443d6a8577d0e88d26747685ced0c6">graphene::account_history::exceeded_account_multi_idx_type</a> = typedef multi_index_container&lt; <a class="el" href="structgraphene_1_1account__history_1_1exceeded__account__object.html">exceeded_account_object</a>, indexed_by&lt; ordered_unique&lt; tag&lt;by_id&gt;, member&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>, &amp;<a class="el" href="classgraphene_1_1db_1_1object.html#a2ce812569d565a45dda1420cfbdf79ad">object::id</a> &gt; &gt;, ordered_unique&lt; tag&lt;by_account&gt;, member&lt; <a class="el" href="structgraphene_1_1account__history_1_1exceeded__account__object.html">exceeded_account_object</a>, account_id_type, &amp;<a class="el" href="structgraphene_1_1account__history_1_1exceeded__account__object.html#ad3bc59a9baab65db4902d084473209e3">exceeded_account_object::account_id</a> &gt; &gt;, ordered_unique&lt; tag&lt;by_block_num&gt;, composite_key&lt; <a class="el" href="structgraphene_1_1account__history_1_1exceeded__account__object.html">exceeded_account_object</a>, member&lt; <a class="el" href="structgraphene_1_1account__history_1_1exceeded__account__object.html">exceeded_account_object</a>, uint32_t, &amp;<a class="el" href="structgraphene_1_1account__history_1_1exceeded__account__object.html#ab51a8626b37365069670e4fd460987c9">exceeded_account_object::block_num</a> &gt;, member&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a>, <a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>, &amp;<a class="el" href="classgraphene_1_1db_1_1object.html#a2ce812569d565a45dda1420cfbdf79ad">object::id</a> &gt; &gt; &gt; &gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="account__history__plugin_8hpp_source.html#l00078">78</a> of file <a class="el" href="account__history__plugin_8hpp_source.html">account_history_plugin.hpp</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ab45e882d887d1f28eb4a10c8a48c9fa7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab45e882d887d1f28eb4a10c8a48c9fa7">&#9670;&nbsp;</a></span>account_history_object_type</h2>
@@ -102,17 +146,17 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab45e882d887d1f28eb4a10c8a48c9fa7aaf748086896e114bc7c428b1a6ce2aca"></a>key_account_object_type&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab45e882d887d1f28eb4a10c8a48c9fa7acc4f714d1a1d1de96e8a6b49ae4603f9"></a>exceeded_account_object_type&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="account__history__plugin_8hpp_source.html#l00053">53</a> of file <a class="el" href="account__history__plugin_8hpp_source.html">account_history_plugin.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="account__history__plugin_8hpp_source.html#l00047">47</a> of file <a class="el" href="account__history__plugin_8hpp_source.html">account_history_plugin.hpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:56 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:46 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

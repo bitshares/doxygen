@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -87,11 +87,15 @@ Inheritance diagram for graphene::net::detail::node_impl:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl_1_1address__builder.html">address_builder</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1net_1_1detail_1_1node__impl_1_1item__id__index.html">item_id_index</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a58838c214d10b8bee6673baef1664421"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classfc_1_1thread.html">fc::thread</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a58838c214d10b8bee6673baef1664421">get_thread</a> () const</td></tr>
+<tr class="separator:a58838c214d10b8bee6673baef1664421"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68dddde5aeba5b61e35278744060dcde"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a68dddde5aeba5b61e35278744060dcde">node_impl</a> (const std::string &amp;user_agent)</td></tr>
 <tr class="separator:a68dddde5aeba5b61e35278744060dcde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60aab40765e324b787435e0743e97b67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a60aab40765e324b787435e0743e97b67">~node_impl</a> () override</td></tr>
@@ -138,10 +142,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a54227d4af466c367d6988a2492654cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bc0355291ce6b8aecd2b4f7f4791125"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a1bc0355291ce6b8aecd2b4f7f4791125">get_number_of_connections</a> ()</td></tr>
 <tr class="separator:a1bc0355291ce6b8aecd2b4f7f4791125"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa34e939a2e3bbae733451a9937546235"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1net.html#a7c2063384e09cb0fc4191590fa004b89">peer_connection_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#aa34e939a2e3bbae733451a9937546235">get_peer_by_node_id</a> (const <a class="el" href="namespacegraphene_1_1net.html#a557da170930e273d5a42e3541bd768e0">node_id_t</a> &amp;id)</td></tr>
-<tr class="separator:aa34e939a2e3bbae733451a9937546235"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a684e96a4fc5b6858bd2e2e765c2c8d12"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a684e96a4fc5b6858bd2e2e765c2c8d12">is_already_connected_to_id</a> (const <a class="el" href="namespacegraphene_1_1net.html#a557da170930e273d5a42e3541bd768e0">node_id_t</a> &amp;node_id)</td></tr>
-<tr class="separator:a684e96a4fc5b6858bd2e2e765c2c8d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37a8aad5469e11db473511c8c6a5f4a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1net.html#a7c2063384e09cb0fc4191590fa004b89">peer_connection_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a37a8aad5469e11db473511c8c6a5f4a1">get_peer_by_node_id</a> (const <a class="el" href="namespacegraphene_1_1net.html#a557da170930e273d5a42e3541bd768e0">node_id_t</a> &amp;id) const</td></tr>
+<tr class="separator:a37a8aad5469e11db473511c8c6a5f4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adef64c9e51b2c5e98decc7a69d6512c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#adef64c9e51b2c5e98decc7a69d6512c3">merge_address_info_with_potential_peer_database</a> (const std::vector&lt; <a class="el" href="structgraphene_1_1net_1_1address__info.html">address_info</a> &gt; addresses)</td></tr>
 <tr class="separator:adef64c9e51b2c5e98decc7a69d6512c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f923259168d30786da31f289c0ab172"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a8f923259168d30786da31f289c0ab172">display_current_connections</a> ()</td></tr>
@@ -160,8 +162,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af36524135d300ed3222ebbf3751d300f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff36d66edd2ec2aec2a4369dcaee9e12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#aff36d66edd2ec2aec2a4369dcaee9e12">on_hello_message</a> (<a class="el" href="classgraphene_1_1net_1_1peer__connection.html">peer_connection</a> *originating_peer, const <a class="el" href="structgraphene_1_1net_1_1hello__message.html">hello_message</a> &amp;hello_message_received)</td></tr>
 <tr class="separator:aff36d66edd2ec2aec2a4369dcaee9e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afff4895cdf55715943f8aa05ac4450e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#afff4895cdf55715943f8aa05ac4450e8">on_connection_accepted_message</a> (<a class="el" href="classgraphene_1_1net_1_1peer__connection.html">peer_connection</a> *originating_peer, const <a class="el" href="structgraphene_1_1net_1_1connection__accepted__message.html">connection_accepted_message</a> &amp;)</td></tr>
-<tr class="separator:afff4895cdf55715943f8aa05ac4450e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cd18827934e8f3b5e17b1bace929131"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a0cd18827934e8f3b5e17b1bace929131">on_connection_accepted_message</a> (<a class="el" href="classgraphene_1_1net_1_1peer__connection.html">peer_connection</a> *originating_peer, const <a class="el" href="structgraphene_1_1net_1_1connection__accepted__message.html">connection_accepted_message</a> &amp;) const</td></tr>
+<tr class="separator:a0cd18827934e8f3b5e17b1bace929131"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79e65bc0bc4e058c05cd6c76ab2fe142"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a79e65bc0bc4e058c05cd6c76ab2fe142">on_connection_rejected_message</a> (<a class="el" href="classgraphene_1_1net_1_1peer__connection.html">peer_connection</a> *originating_peer, const <a class="el" href="structgraphene_1_1net_1_1connection__rejected__message.html">connection_rejected_message</a> &amp;connection_rejected_message_received)</td></tr>
 <tr class="separator:a79e65bc0bc4e058c05cd6c76ab2fe142"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30ee420970dce4966a9821f253189ab4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a30ee420970dce4966a9821f253189ab4">on_address_request_message</a> (<a class="el" href="classgraphene_1_1net_1_1peer__connection.html">peer_connection</a> *originating_peer, const <a class="el" href="structgraphene_1_1net_1_1address__request__message.html">address_request_message</a> &amp;)</td></tr>
@@ -172,8 +174,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa27add1a01bbb87626386fec496ff60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a160de3da1e512097a629ff159758eec9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a160de3da1e512097a629ff159758eec9">on_blockchain_item_ids_inventory_message</a> (<a class="el" href="classgraphene_1_1net_1_1peer__connection.html">peer_connection</a> *originating_peer, const <a class="el" href="structgraphene_1_1net_1_1blockchain__item__ids__inventory__message.html">blockchain_item_ids_inventory_message</a> &amp;blockchain_item_ids_inventory_message_received)</td></tr>
 <tr class="separator:a160de3da1e512097a629ff159758eec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93435fc800b0f0e57651a09b97c0cb04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a93435fc800b0f0e57651a09b97c0cb04">on_fetch_items_message</a> (<a class="el" href="classgraphene_1_1net_1_1peer__connection.html">peer_connection</a> *originating_peer, const <a class="el" href="structgraphene_1_1net_1_1fetch__items__message.html">fetch_items_message</a> &amp;fetch_items_message_received) const</td></tr>
-<tr class="separator:a93435fc800b0f0e57651a09b97c0cb04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac60f3771b9c021dc1f6e3051af7cb50e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#ac60f3771b9c021dc1f6e3051af7cb50e">on_fetch_items_message</a> (<a class="el" href="classgraphene_1_1net_1_1peer__connection.html">peer_connection</a> *originating_peer, const <a class="el" href="structgraphene_1_1net_1_1fetch__items__message.html">fetch_items_message</a> &amp;fetch_items_message_received)</td></tr>
+<tr class="separator:ac60f3771b9c021dc1f6e3051af7cb50e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacef8c55523e25690cab0900c5b217bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#aacef8c55523e25690cab0900c5b217bf">on_item_not_available_message</a> (<a class="el" href="classgraphene_1_1net_1_1peer__connection.html">peer_connection</a> *originating_peer, const <a class="el" href="structgraphene_1_1net_1_1item__not__available__message.html">item_not_available_message</a> &amp;item_not_available_message_received)</td></tr>
 <tr class="separator:aacef8c55523e25690cab0900c5b217bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad65a90e2fa88dbe04511bf8760f8d922"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#ad65a90e2fa88dbe04511bf8760f8d922">on_item_ids_inventory_message</a> (<a class="el" href="classgraphene_1_1net_1_1peer__connection.html">peer_connection</a> *originating_peer, const <a class="el" href="structgraphene_1_1net_1_1item__ids__inventory__message.html">item_ids_inventory_message</a> &amp;item_ids_inventory_message_received)</td></tr>
@@ -184,12 +186,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a70acfdec32ffb018126a2622a930a74d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9884c88c47903bf7ca1d53900bd09ca2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a9884c88c47903bf7ca1d53900bd09ca2">on_current_time_reply_message</a> (<a class="el" href="classgraphene_1_1net_1_1peer__connection.html">peer_connection</a> *originating_peer, const <a class="el" href="structgraphene_1_1net_1_1current__time__reply__message.html">current_time_reply_message</a> &amp;current_time_reply_message_received)</td></tr>
 <tr class="separator:a9884c88c47903bf7ca1d53900bd09ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cb38b8b7fcce113a66756e260ada3e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a8cb38b8b7fcce113a66756e260ada3e3">forward_firewall_check_to_next_available_peer</a> (<a class="el" href="structgraphene_1_1net_1_1firewall__check__state__data.html">firewall_check_state_data</a> *firewall_check_state)</td></tr>
-<tr class="separator:a8cb38b8b7fcce113a66756e260ada3e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23ae9120c257e32cd87b559be4325b25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a23ae9120c257e32cd87b559be4325b25">on_check_firewall_message</a> (<a class="el" href="classgraphene_1_1net_1_1peer__connection.html">peer_connection</a> *originating_peer, const <a class="el" href="structgraphene_1_1net_1_1check__firewall__message.html">check_firewall_message</a> &amp;check_firewall_message_received)</td></tr>
-<tr class="separator:a23ae9120c257e32cd87b559be4325b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f184ad53ccd6848475c4da38103adb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a0f184ad53ccd6848475c4da38103adb5">on_check_firewall_reply_message</a> (<a class="el" href="classgraphene_1_1net_1_1peer__connection.html">peer_connection</a> *originating_peer, const <a class="el" href="structgraphene_1_1net_1_1check__firewall__reply__message.html">check_firewall_reply_message</a> &amp;check_firewall_reply_message_received)</td></tr>
-<tr class="separator:a0f184ad53ccd6848475c4da38103adb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4b92bf370f9b6eb35d5ac2b1b7509f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#aa4b92bf370f9b6eb35d5ac2b1b7509f7">on_connection_closed</a> (<a class="el" href="classgraphene_1_1net_1_1peer__connection.html">peer_connection</a> *originating_peer) override</td></tr>
 <tr class="separator:aa4b92bf370f9b6eb35d5ac2b1b7509f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fdf2597351186b6658ca88eed34b464"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a2fdf2597351186b6658ca88eed34b464">send_sync_block_to_node_delegate</a> (const <a class="el" href="structgraphene_1_1net_1_1block__message.html">graphene::net::block_message</a> &amp;block_message_to_send)</td></tr>
@@ -223,16 +219,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7935f875342c14bd0cf08c003a5f2d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33ffea48a4c2a5dda0882b07ee911e58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a33ffea48a4c2a5dda0882b07ee911e58">connect_to_task</a> (<a class="el" href="namespacegraphene_1_1net.html#a7c2063384e09cb0fc4191590fa004b89">peer_connection_ptr</a> new_peer, const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;remote_endpoint)</td></tr>
 <tr class="separator:a33ffea48a4c2a5dda0882b07ee911e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a498d50cb5d9dd36dc8c14de39b6eeed8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a498d50cb5d9dd36dc8c14de39b6eeed8">is_connection_to_endpoint_in_progress</a> (const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;remote_endpoint)</td></tr>
-<tr class="separator:a498d50cb5d9dd36dc8c14de39b6eeed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a420ac386d304a5b8869a22721480e59a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a420ac386d304a5b8869a22721480e59a">is_connected_to_endpoint</a> (const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;remote_endpoint) const</td></tr>
+<tr class="separator:a420ac386d304a5b8869a22721480e59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79d87e24390857ca464a04666fc83c6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a79d87e24390857ca464a04666fc83c6c">move_peer_to_active_list</a> (const <a class="el" href="namespacegraphene_1_1net.html#a7c2063384e09cb0fc4191590fa004b89">peer_connection_ptr</a> &amp;peer)</td></tr>
 <tr class="separator:a79d87e24390857ca464a04666fc83c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a050f187b95f8fc586ec30744fcc15229"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a050f187b95f8fc586ec30744fcc15229">move_peer_to_closing_list</a> (const <a class="el" href="namespacegraphene_1_1net.html#a7c2063384e09cb0fc4191590fa004b89">peer_connection_ptr</a> &amp;peer)</td></tr>
 <tr class="separator:a050f187b95f8fc586ec30744fcc15229"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77b752dffd3f09f74bd19801ac64c07f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a77b752dffd3f09f74bd19801ac64c07f">move_peer_to_terminating_list</a> (const <a class="el" href="namespacegraphene_1_1net.html#a7c2063384e09cb0fc4191590fa004b89">peer_connection_ptr</a> &amp;peer)</td></tr>
 <tr class="separator:a77b752dffd3f09f74bd19801ac64c07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea72960d3044c2d2d8e4ed2883ce2734"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1net.html#a7c2063384e09cb0fc4191590fa004b89">peer_connection_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#aea72960d3044c2d2d8e4ed2883ce2734">get_connection_to_endpoint</a> (const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;remote_endpoint)</td></tr>
-<tr class="separator:aea72960d3044c2d2d8e4ed2883ce2734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cb64f4ff5a6638fca2e530a8670dd2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1net.html#a7c2063384e09cb0fc4191590fa004b89">peer_connection_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a1cb64f4ff5a6638fca2e530a8670dd2c">get_active_conn_for_endpoint</a> (const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;remote_endpoint) const</td></tr>
+<tr class="separator:a1cb64f4ff5a6638fca2e530a8670dd2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16bd57477c874a66062d5ccb9c3ebb70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1net.html#a7c2063384e09cb0fc4191590fa004b89">peer_connection_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a16bd57477c874a66062d5ccb9c3ebb70">get_connection_for_endpoint</a> (const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;remote_endpoint) const</td></tr>
+<tr class="separator:a16bd57477c874a66062d5ccb9c3ebb70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a849e1fc04d0e9b477c2f6e1142729126"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a849e1fc04d0e9b477c2f6e1142729126">dump_node_status</a> ()</td></tr>
 <tr class="separator:a849e1fc04d0e9b477c2f6e1142729126"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf44a212fc6cea37e70265c682bb5f3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#abf44a212fc6cea37e70265c682bb5f3d">delayed_peer_deletion_task</a> ()</td></tr>
@@ -251,6 +249,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad205a6a0dbad9504fdf2356bb3777c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08fdc2f28e30407cc3676b8479f8195b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a08fdc2f28e30407cc3676b8479f8195b">add_node</a> (const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;ep)</td></tr>
 <tr class="separator:a08fdc2f28e30407cc3676b8479f8195b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb493cb698bcd9f4044565b31cdef8ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#acb493cb698bcd9f4044565b31cdef8ab">set_advertise_algorithm</a> (const std::string &amp;algo, const std::vector&lt; std::string &gt; &amp;advertise_or_exclude_list)</td></tr>
+<tr class="separator:acb493cb698bcd9f4044565b31cdef8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71fc89b7e0267664735ed06efcabac67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a71fc89b7e0267664735ed06efcabac67">add_seed_node</a> (const std::string &amp;seed_string)</td></tr>
 <tr class="separator:a71fc89b7e0267664735ed06efcabac67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4259ad558d7422376b6c603bc25c1f9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a4259ad558d7422376b6c603bc25c1f9c">resolve_seed_node_and_add</a> (const std::string &amp;seed_string)</td></tr>
@@ -259,12 +259,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a51ebd01a4198ce012aeedf783f4dd44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a755019f341d8eeaff540d4140f6dea2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a755019f341d8eeaff540d4140f6dea2a">connect_to_endpoint</a> (const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;ep)</td></tr>
 <tr class="separator:a755019f341d8eeaff540d4140f6dea2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a305e8e91cfac595ae49dd30ca031c872"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a305e8e91cfac595ae49dd30ca031c872">listen_on_endpoint</a> (const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;ep, bool wait_if_not_available)</td></tr>
-<tr class="separator:a305e8e91cfac595ae49dd30ca031c872"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04354f733ed567d27170824c07ab66d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a04354f733ed567d27170824c07ab66d5">accept_incoming_connections</a> (bool accept)</td></tr>
-<tr class="separator:a04354f733ed567d27170824c07ab66d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71fc44d63b5fdfed160eed90a135f4cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a71fc44d63b5fdfed160eed90a135f4cf">listen_on_port</a> (uint16_t port, bool wait_if_not_available)</td></tr>
-<tr class="separator:a71fc44d63b5fdfed160eed90a135f4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d8a24b5d08d0fe3e5774f3002ecabed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a5d8a24b5d08d0fe3e5774f3002ecabed">set_listen_endpoint</a> (const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;ep, bool wait_if_not_available)</td></tr>
+<tr class="separator:a5d8a24b5d08d0fe3e5774f3002ecabed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a965d0e37052ff3cb1a44b062dcf82f80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a965d0e37052ff3cb1a44b062dcf82f80">set_inbound_endpoint</a> (const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;ep)</td></tr>
+<tr class="separator:a965d0e37052ff3cb1a44b062dcf82f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c644869b38831bddb8bad4e874ce42d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a3c644869b38831bddb8bad4e874ce42d">set_accept_incoming_connections</a> (bool accept)</td></tr>
+<tr class="separator:a3c644869b38831bddb8bad4e874ce42d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a537e6e2c60c7f4b1da5f67e320816029"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a537e6e2c60c7f4b1da5f67e320816029">set_connect_to_new_peers</a> (bool connect)</td></tr>
+<tr class="separator:a537e6e2c60c7f4b1da5f67e320816029"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a345bcb4255a7691114c0459352a209be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a345bcb4255a7691114c0459352a209be">get_actual_listening_endpoint</a> () const</td></tr>
 <tr class="separator:a345bcb4255a7691114c0459352a209be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4c751e4aa1d4b7888ae476b4546e715"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structgraphene_1_1net_1_1peer__status.html">peer_status</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#ab4c751e4aa1d4b7888ae476b4546e715">get_connected_peers</a> () const</td></tr>
@@ -285,10 +287,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad73e30a01a5d5271d83ee45d01b1d7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6de5a882c60b3fad99c0cd393fff68be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1variant__object.html">fc::variant_object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a6de5a882c60b3fad99c0cd393fff68be">get_advanced_node_parameters</a> ()</td></tr>
 <tr class="separator:a6de5a882c60b3fad99c0cd393fff68be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8476dd54525c5b50ecf0e99000002911"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1net_1_1message__propagation__data.html">message_propagation_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a8476dd54525c5b50ecf0e99000002911">get_transaction_propagation_data</a> (const graphene::net::transaction_id_type &amp;transaction_id)</td></tr>
-<tr class="separator:a8476dd54525c5b50ecf0e99000002911"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25abb90d5cb4a17c830e8d4ba83ce789"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1net_1_1message__propagation__data.html">message_propagation_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a25abb90d5cb4a17c830e8d4ba83ce789">get_block_propagation_data</a> (const graphene::net::block_id_type &amp;block_id)</td></tr>
-<tr class="separator:a25abb90d5cb4a17c830e8d4ba83ce789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a315e454cef0dcb7a22466c808b87719c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1net_1_1message__propagation__data.html">message_propagation_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a315e454cef0dcb7a22466c808b87719c">get_tx_propagation_data</a> (const graphene::net::transaction_id_type &amp;transaction_id) const</td></tr>
+<tr class="separator:a315e454cef0dcb7a22466c808b87719c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1da250f102584e9db464a3a624f9cb4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1net_1_1message__propagation__data.html">message_propagation_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a1da250f102584e9db464a3a624f9cb4f">get_block_propagation_data</a> (const graphene::net::block_id_type &amp;block_id) const</td></tr>
+<tr class="separator:a1da250f102584e9db464a3a624f9cb4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea59aa4f1ee95b852f66932acdedfb21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1net.html#a557da170930e273d5a42e3541bd768e0">node_id_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#aea59aa4f1ee95b852f66932acdedfb21">get_node_id</a> () const</td></tr>
 <tr class="separator:aea59aa4f1ee95b852f66932acdedfb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf20c4560e6546e492dafed57b3e4d36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#acf20c4560e6546e492dafed57b3e4d36">set_allowed_peers</a> (const std::vector&lt; <a class="el" href="namespacegraphene_1_1net.html#a557da170930e273d5a42e3541bd768e0">node_id_t</a> &gt; &amp;allowed_peers)</td></tr>
@@ -297,12 +299,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a039c41617cdee0e42043232178681b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77e70b8873030f95022dd99642235a40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a77e70b8873030f95022dd99642235a40">set_total_bandwidth_limit</a> (uint32_t upload_bytes_per_second, uint32_t download_bytes_per_second)</td></tr>
 <tr class="separator:a77e70b8873030f95022dd99642235a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fd33806af1e01fc04b4ca30e237c27c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a1fd33806af1e01fc04b4ca30e237c27c">disable_peer_advertising</a> ()</td></tr>
-<tr class="separator:a1fd33806af1e01fc04b4ca30e237c27c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa91bea6216835f63b22b32ed1ef9f00a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1variant__object.html">fc::variant_object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#aa91bea6216835f63b22b32ed1ef9f00a">get_call_statistics</a> () const</td></tr>
 <tr class="separator:aa91bea6216835f63b22b32ed1ef9f00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ae3c989053de2b2c8714f804a1b88c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1net_1_1message.html">message</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a7ae3c989053de2b2c8714f804a1b88c4">get_message_for_item</a> (const <a class="el" href="structgraphene_1_1net_1_1item__id.html">item_id</a> &amp;item) override</td></tr>
-<tr class="separator:a7ae3c989053de2b2c8714f804a1b88c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a772ee570d804d7cc376815678f09835d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1net_1_1message.html">graphene::net::message</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a772ee570d804d7cc376815678f09835d">get_message_for_item</a> (const <a class="el" href="structgraphene_1_1net_1_1item__id.html">item_id</a> &amp;item) override</td></tr>
+<tr class="separator:a772ee570d804d7cc376815678f09835d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af05bcfe58a09781a0bd2cad7faa3a6ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1variant__object.html">fc::variant_object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#af05bcfe58a09781a0bd2cad7faa3a6ea">network_get_info</a> () const</td></tr>
 <tr class="separator:af05bcfe58a09781a0bd2cad7faa3a6ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed886a8b1cd639ead05921b17a33bc6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1variant__object.html">fc::variant_object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#aed886a8b1cd639ead05921b17a33bc6c">network_get_usage_stats</a> () const</td></tr>
@@ -329,13 +329,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ae64f7b5034a5ae908231270e5a0d2956"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa08bf13496add1306a07b9a6ceb83990"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#aa08bf13496add1306a07b9a6ceb83990">_actual_listening_endpoint</a></td></tr>
 <tr class="separator:aa08bf13496add1306a07b9a6ceb83990"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bd282fb9ef9604e952c69f6c0dcc62c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraphene_1_1net.html#a9a91847dec341192d7a7ae1104cb4aa2">firewalled_state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a0bd282fb9ef9604e952c69f6c0dcc62c">_is_firewalled</a> = <a class="el" href="namespacegraphene_1_1net.html#ad0fa02c07eb80a168befc6c5931d6cccaad921d60486366258809553a3db49a4a">firewalled_state::unknown</a></td></tr>
-<tr class="memdesc:a0bd282fb9ef9604e952c69f6c0dcc62c"><td class="mdescLeft">&#160;</td><td class="mdescRight">We determine whether we're firewalled by asking other nodes. Store the result here.  <a href="#a0bd282fb9ef9604e952c69f6c0dcc62c">More...</a><br /></td></tr>
-<tr class="separator:a0bd282fb9ef9604e952c69f6c0dcc62c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12dc94723faea441ac512c2f89a4dd84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1optional.html">fc::optional</a>&lt; <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a12dc94723faea441ac512c2f89a4dd84">_publicly_visible_listening_endpoint</a></td></tr>
-<tr class="separator:a12dc94723faea441ac512c2f89a4dd84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1de278ce9de8691527f18e8e4cfe5438"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1time__point.html">fc::time_point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a1de278ce9de8691527f18e8e4cfe5438">_last_firewall_check_message_sent</a></td></tr>
-<tr class="separator:a1de278ce9de8691527f18e8e4cfe5438"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d6393b83975ab365b42786f0b7e876c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1future.html">fc::future</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a5d6393b83975ab365b42786f0b7e876c">_process_backlog_of_sync_blocks_done</a></td></tr>
 <tr class="separator:a5d6393b83975ab365b42786f0b7e876c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f16ff1dca2f349049b1095d63abb348"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a1f16ff1dca2f349049b1095d63abb348">_suspend_fetching_sync_blocks</a> = false</td></tr>
@@ -374,7 +367,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a4fff1320239ff1c975178420bca2230f"><td class="memItemLeft" align="right" valign="top">boost::circular_buffer&lt; <a class="el" href="namespacegraphene_1_1net.html#ae6a74bd458bbef0d6d21dd35c74c6235">item_hash_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a4fff1320239ff1c975178420bca2230f">_most_recent_blocks_accepted</a> { <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#ab2fa964881abb331ef5356d5c1c19253">_maximum_number_of_connections</a> }</td></tr>
 <tr class="memdesc:a4fff1320239ff1c975178420bca2230f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The /n/ most recent blocks we've accepted (currently tuned to the max number of connections)  <a href="#a4fff1320239ff1c975178420bca2230f">More...</a><br /></td></tr>
 <tr class="separator:a4fff1320239ff1c975178420bca2230f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a105452882f9d161214d1f3289c298cca"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a105452882f9d161214d1f3289c298cca">_sync_item_type</a></td></tr>
+<tr class="memitem:a105452882f9d161214d1f3289c298cca"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a105452882f9d161214d1f3289c298cca">_sync_item_type</a> = 0</td></tr>
 <tr class="separator:a105452882f9d161214d1f3289c298cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa40d0c9eab74c3e12ca3bd9453801df4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#aa40d0c9eab74c3e12ca3bd9453801df4">_total_num_of_unfetched_items</a> = 0</td></tr>
 <tr class="memdesc:aa40d0c9eab74c3e12ca3bd9453801df4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of items we still need to fetch while syncing.  <a href="#aa40d0c9eab74c3e12ca3bd9453801df4">More...</a><br /></td></tr>
@@ -390,8 +383,8 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a6c6016b06ebe49b1415c566ec07bc1ab"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a6c6016b06ebe49b1415c566ec07bc1ab">_last_reported_number_of_conns</a> = 0</td></tr>
 <tr class="memdesc:a6c6016b06ebe49b1415c566ec07bc1ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of connections last reported to the client (to avoid sending duplicate messages)  <a href="#a6c6016b06ebe49b1415c566ec07bc1ab">More...</a><br /></td></tr>
 <tr class="separator:a6c6016b06ebe49b1415c566ec07bc1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3fe5d16212f1a9c4e2c9aefe34637d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#ac3fe5d16212f1a9c4e2c9aefe34637d2">_peer_advertising_disabled</a> = false</td></tr>
-<tr class="separator:ac3fe5d16212f1a9c4e2c9aefe34637d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7d0f5e9b3267e6a4e61bd1cb1f04f53"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl_1_1address__builder.html">address_builder</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#aa7d0f5e9b3267e6a4e61bd1cb1f04f53">_address_builder</a> = <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl_1_1address__builder.html#a6841489a03f21223a7423efd033ee96c">address_builder::create_default_address_builder</a>()</td></tr>
+<tr class="separator:aa7d0f5e9b3267e6a4e61bd1cb1f04f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0defb3da9cac53cca601813aba6aeafa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1future.html">fc::future</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a0defb3da9cac53cca601813aba6aeafa">_fetch_updated_peer_lists_loop_done</a></td></tr>
 <tr class="separator:a0defb3da9cac53cca601813aba6aeafa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0bfc977849349637f713fb5713eae0a"><td class="memItemLeft" align="right" valign="top">boost::circular_buffer&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#ab0bfc977849349637f713fb5713eae0a">_avg_net_read_speed_seconds</a> { 60 }</td></tr>
@@ -426,6 +419,9 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a125eef5969fb21f2f6c8b2d247a9d0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89d3db1eafa447e9dcfb04a699d2c166"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a89d3db1eafa447e9dcfb04a699d2c166">_node_is_shutting_down</a> = false</td></tr>
 <tr class="separator:a89d3db1eafa447e9dcfb04a699d2c166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ffb4ae32bbf9904b60da3818f6aeac5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a0ffb4ae32bbf9904b60da3818f6aeac5">_max_addrs_to_handle_at_once</a> = <a class="el" href="net_2include_2graphene_2net_2config_8hpp.html#a80668264c50947edb95c00702fa25076">MAX_ADDRESSES_TO_HANDLE_AT_ONCE</a></td></tr>
+<tr class="memdesc:a0ffb4ae32bbf9904b60da3818f6aeac5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of addresses to handle at one time.  <a href="#a0ffb4ae32bbf9904b60da3818f6aeac5">More...</a><br /></td></tr>
+<tr class="separator:a0ffb4ae32bbf9904b60da3818f6aeac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71fd2b3bada7cef2f76d361f49b01d93"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a71fd2b3bada7cef2f76d361f49b01d93">_max_blocks_to_handle_at_once</a> = <a class="el" href="net_2include_2graphene_2net_2config_8hpp.html#ad6ee838682c64c9cf02a214487d46644">MAX_BLOCKS_TO_HANDLE_AT_ONCE</a></td></tr>
 <tr class="memdesc:a71fd2b3bada7cef2f76d361f49b01d93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of blocks to handle at one time.  <a href="#a71fd2b3bada7cef2f76d361f49b01d93">More...</a><br /></td></tr>
 <tr class="separator:a71fd2b3bada7cef2f76d361f49b01d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -491,7 +487,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a4352626fa1fb641c37930315e2419104"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#afb490eae8b2d5c08e089f4ef803d1671">items_to_fetch_set_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a4352626fa1fb641c37930315e2419104">_items_to_fetch</a></td></tr>
 <tr class="memdesc:a4352626fa1fb641c37930315e2419104"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of items we know another peer has and we want.  <a href="#a4352626fa1fb641c37930315e2419104">More...</a><br /></td></tr>
 <tr class="separator:a4352626fa1fb641c37930315e2419104"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48507b4391a98bbe42edf9a1402465e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1net_1_1peer__connection.html#a3c453ce025f0fcd97c4b4290d617f576">peer_connection::timestamped_items_set_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a48507b4391a98bbe42edf9a1402465e9">_recently_failed_items</a></td></tr>
+<tr class="memitem:a48507b4391a98bbe42edf9a1402465e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1net_1_1peer__connection.html#adfbfaaccd42ac5fb5e713acbeb34724b">peer_connection::timestamped_items_set_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#a48507b4391a98bbe42edf9a1402465e9">_recently_failed_items</a></td></tr>
 <tr class="memdesc:a48507b4391a98bbe42edf9a1402465e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of transactions we've recently pushed and had rejected by the delegate.  <a href="#a48507b4391a98bbe42edf9a1402465e9">More...</a><br /></td></tr>
 <tr class="separator:a48507b4391a98bbe42edf9a1402465e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe91354984598ce79b0a0b3559563a5e"><td class="memItemLeft" align="right" valign="top">boost::container::flat_set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl.html#afe91354984598ce79b0a0b3559563a5e">_seed_nodes</a></td></tr>
@@ -505,7 +501,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00380">380</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00410">410</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a95cf3699ddb09456c2f97341fabd3f3b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95cf3699ddb09456c2f97341fabd3f3b">&#9670;&nbsp;</a></span>active_sync_requests_map</h2>
@@ -519,7 +515,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00423">423</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00458">458</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -535,7 +531,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00453">453</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00488">488</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -545,6 +541,9 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">graphene::net::detail::node_impl::node_impl </td>
@@ -554,9 +553,14 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00164">164</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00302">302</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -583,7 +587,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00171">171</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00310">310</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -604,27 +608,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03810">3810</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a04354f733ed567d27170824c07ab66d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04354f733ed567d27170824c07ab66d5">&#9670;&nbsp;</a></span>accept_incoming_connections()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void graphene::net::detail::node_impl::accept_incoming_connections </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>accept</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04461">4461</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04013">4013</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -643,7 +627,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03817">3817</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04020">4020</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -663,7 +647,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04218">4218</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04411">4411</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -683,7 +667,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04234">4234</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04435">4435</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -702,7 +686,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00634">634</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00767">767</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -721,7 +705,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01030">1030</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01165">1165</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -751,7 +735,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04561">4561</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04850">4850</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -771,7 +755,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04584">4584</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04873">4873</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -790,7 +774,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01859">1859</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02230">2230</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -809,7 +793,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04689">4689</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04983">4983</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -828,7 +812,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03493">3493</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03696">3696</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -848,7 +832,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04282">4282</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04521">4521</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -868,7 +852,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04185">4185</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04378">4378</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -898,7 +882,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03894">3894</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04109">4109</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -918,7 +902,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01878">1878</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02249">2249</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -937,26 +921,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01064">1064</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a1fd33806af1e01fc04b4ca30e237c27c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fd33806af1e01fc04b4ca30e237c27c">&#9670;&nbsp;</a></span>disable_peer_advertising()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void graphene::net::detail::node_impl::disable_peer_advertising </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04702">4702</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01199">1199</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -998,7 +963,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04401">4401</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04677">4677</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1017,7 +982,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01221">1221</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01338">1338</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1036,7 +1001,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04352">4352</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04617">4617</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1055,7 +1020,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01054">1054</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01189">1189</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1074,7 +1039,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00497">497</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00630">630</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1104,7 +1069,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01929">1929</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02300">2300</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1123,7 +1088,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00408">408</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00541">541</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1142,27 +1107,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00960">960</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a8cb38b8b7fcce113a66756e260ada3e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cb38b8b7fcce113a66756e260ada3e3">&#9670;&nbsp;</a></span>forward_firewall_check_to_next_available_peer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void graphene::net::detail::node_impl::forward_firewall_check_to_next_available_peer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structgraphene_1_1net_1_1firewall__check__state__data.html">firewall_check_state_data</a> *&#160;</td>
-          <td class="paramname"><em>firewall_check_state</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03203">3203</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01095">1095</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1181,7 +1126,27 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01328">1328</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01454">1454</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1cb64f4ff5a6638fca2e530a8670dd2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cb64f4ff5a6638fca2e530a8670dd2c">&#9670;&nbsp;</a></span>get_active_conn_for_endpoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacegraphene_1_1net.html#a7c2063384e09cb0fc4191590fa004b89">peer_connection_ptr</a> graphene::net::detail::node_impl::get_active_conn_for_endpoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>remote_endpoint</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04534">4534</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1200,7 +1165,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04476">4476</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04765">4765</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1219,12 +1184,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04641">4641</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04932">4932</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a25abb90d5cb4a17c830e8d4ba83ce789"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25abb90d5cb4a17c830e8d4ba83ce789">&#9670;&nbsp;</a></span>get_block_propagation_data()</h2>
+<a id="a1da250f102584e9db464a3a624f9cb4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1da250f102584e9db464a3a624f9cb4f">&#9670;&nbsp;</a></span>get_block_propagation_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1234,12 +1199,12 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const graphene::net::block_id_type &amp;&#160;</td>
           <td class="paramname"><em>block_id</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04660">4660</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04953">4953</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1258,7 +1223,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04708">4708</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04996">4996</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1277,7 +1242,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04482">4482</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04771">4771</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1296,32 +1261,32 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04555">4555</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04844">4844</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="aea72960d3044c2d2d8e4ed2883ce2734"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea72960d3044c2d2d8e4ed2883ce2734">&#9670;&nbsp;</a></span>get_connection_to_endpoint()</h2>
+<a id="a16bd57477c874a66062d5ccb9c3ebb70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16bd57477c874a66062d5ccb9c3ebb70">&#9670;&nbsp;</a></span>get_connection_for_endpoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacegraphene_1_1net.html#a7c2063384e09cb0fc4191590fa004b89">peer_connection_ptr</a> graphene::net::detail::node_impl::get_connection_to_endpoint </td>
+          <td class="memname"><a class="el" href="namespacegraphene_1_1net.html#a7c2063384e09cb0fc4191590fa004b89">peer_connection_ptr</a> graphene::net::detail::node_impl::get_connection_for_endpoint </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;&#160;</td>
           <td class="paramname"><em>remote_endpoint</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04295">4295</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04560">4560</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a7ae3c989053de2b2c8714f804a1b88c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ae3c989053de2b2c8714f804a1b88c4">&#9670;&nbsp;</a></span>get_message_for_item()</h2>
+<a id="a772ee570d804d7cc376815678f09835d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a772ee570d804d7cc376815678f09835d">&#9670;&nbsp;</a></span>get_message_for_item()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1330,7 +1295,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structgraphene_1_1net_1_1message.html">message</a> graphene::net::detail::node_impl::get_message_for_item </td>
+          <td class="memname"><a class="el" href="structgraphene_1_1net_1_1message.html">graphene::net::message</a> graphene::net::detail::node_impl::get_message_for_item </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structgraphene_1_1net_1_1item__id.html">item_id</a> &amp;&#160;</td>
           <td class="paramname"><em>item</em></td><td>)</td>
@@ -1346,7 +1311,7 @@ Public Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classgraphene_1_1net_1_1peer__connection__delegate.html#af7fd99643f7f6f4861280c051a91adc7">graphene::net::peer_connection_delegate</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02258">2258</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02630">2630</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1366,7 +1331,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04759">4759</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05046">5046</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1385,7 +1350,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04666">4666</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04960">4960</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1404,12 +1369,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01148">1148</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01283">1283</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="aa34e939a2e3bbae733451a9937546235"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa34e939a2e3bbae733451a9937546235">&#9670;&nbsp;</a></span>get_peer_by_node_id()</h2>
+<a id="a37a8aad5469e11db473511c8c6a5f4a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37a8aad5469e11db473511c8c6a5f4a1">&#9670;&nbsp;</a></span>get_peer_by_node_id()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1419,12 +1384,12 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacegraphene_1_1net.html#a557da170930e273d5a42e3541bd768e0">node_id_t</a> &amp;&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01154">1154</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01289">1289</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1443,27 +1408,54 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04607">4607</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04896">4896</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a8476dd54525c5b50ecf0e99000002911"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8476dd54525c5b50ecf0e99000002911">&#9670;&nbsp;</a></span>get_transaction_propagation_data()</h2>
+<a id="a58838c214d10b8bee6673baef1664421"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58838c214d10b8bee6673baef1664421">&#9670;&nbsp;</a></span>get_thread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classfc_1_1thread.html">fc::thread</a>&gt; graphene::net::detail::node_impl::get_thread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00424">424</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+
+</div>
+</div>
+<a id="a315e454cef0dcb7a22466c808b87719c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a315e454cef0dcb7a22466c808b87719c">&#9670;&nbsp;</a></span>get_tx_propagation_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structgraphene_1_1net_1_1message__propagation__data.html">message_propagation_data</a> graphene::net::detail::node_impl::get_transaction_propagation_data </td>
+          <td class="memname"><a class="el" href="structgraphene_1_1net_1_1message__propagation__data.html">message_propagation_data</a> graphene::net::detail::node_impl::get_tx_propagation_data </td>
           <td>(</td>
           <td class="paramtype">const graphene::net::transaction_id_type &amp;&#160;</td>
           <td class="paramname"><em>transaction_id</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04654">4654</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04946">4946</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1483,7 +1475,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00374">374</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00507">507</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1503,7 +1495,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04261">4261</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04500">4500</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1522,27 +1514,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01134">1134</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a684e96a4fc5b6858bd2e2e765c2c8d12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a684e96a4fc5b6858bd2e2e765c2c8d12">&#9670;&nbsp;</a></span>is_already_connected_to_id()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool graphene::net::detail::node_impl::is_already_connected_to_id </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacegraphene_1_1net.html#a557da170930e273d5a42e3541bd768e0">node_id_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>node_id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01171">1171</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01269">1269</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1561,27 +1533,27 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04601">4601</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04890">4890</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a498d50cb5d9dd36dc8c14de39b6eeed8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a498d50cb5d9dd36dc8c14de39b6eeed8">&#9670;&nbsp;</a></span>is_connection_to_endpoint_in_progress()</h2>
+<a id="a420ac386d304a5b8869a22721480e59a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a420ac386d304a5b8869a22721480e59a">&#9670;&nbsp;</a></span>is_connected_to_endpoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool graphene::net::detail::node_impl::is_connection_to_endpoint_in_progress </td>
+          <td class="memname">bool graphene::net::detail::node_impl::is_connected_to_endpoint </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;&#160;</td>
           <td class="paramname"><em>remote_endpoint</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04319">4319</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04584">4584</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1601,7 +1573,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04755">4755</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05042">5042</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1621,7 +1593,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00486">486</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00619">619</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1640,7 +1612,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01141">1141</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01276">1276</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1660,67 +1632,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00723">723</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a305e8e91cfac595ae49dd30ca031c872"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a305e8e91cfac595ae49dd30ca031c872">&#9670;&nbsp;</a></span>listen_on_endpoint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void graphene::net::detail::node_impl::listen_on_endpoint </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>ep</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>wait_if_not_available</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04453">4453</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a71fc44d63b5fdfed160eed90a135f4cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71fc44d63b5fdfed160eed90a135f4cf">&#9670;&nbsp;</a></span>listen_on_port()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void graphene::net::detail::node_impl::listen_on_port </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>wait_if_not_available</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04468">4468</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00858">858</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1739,7 +1651,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04090">4090</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04278">4278</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1759,7 +1671,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04017">4017</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04200">4200</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1779,7 +1691,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01203">1203</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01308">1308</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1799,7 +1711,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04325">4325</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04590">4590</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1819,7 +1731,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04334">4334</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04599">4599</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1839,7 +1751,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04343">4343</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04608">4608</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1858,7 +1770,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04714">4714</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05002">5002</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1877,7 +1789,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04724">4724</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l05011">5011</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1899,7 +1811,7 @@ Public Attributes</h2></td></tr>
 
 <p>Called after a peer finishes handshaking, kicks off syncing. </p>
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03480">3480</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03677">3677</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1929,7 +1841,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01693">1693</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02021">2021</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1959,7 +1871,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01663">1663</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01972">1972</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1989,67 +1901,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01960">1960</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a23ae9120c257e32cd87b559be4325b25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23ae9120c257e32cd87b559be4325b25">&#9670;&nbsp;</a></span>on_check_firewall_message()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void graphene::net::detail::node_impl::on_check_firewall_message </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classgraphene_1_1net_1_1peer__connection.html">peer_connection</a> *&#160;</td>
-          <td class="paramname"><em>originating_peer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structgraphene_1_1net_1_1check__firewall__message.html">check_firewall_message</a> &amp;&#160;</td>
-          <td class="paramname"><em>check_firewall_message_received</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03242">3242</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a0f184ad53ccd6848475c4da38103adb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f184ad53ccd6848475c4da38103adb5">&#9670;&nbsp;</a></span>on_check_firewall_reply_message()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void graphene::net::detail::node_impl::on_check_firewall_reply_message </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classgraphene_1_1net_1_1peer__connection.html">peer_connection</a> *&#160;</td>
-          <td class="paramname"><em>originating_peer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structgraphene_1_1net_1_1check__firewall__reply__message.html">check_firewall_reply_message</a> &amp;&#160;</td>
-          <td class="paramname"><em>check_firewall_reply_message_received</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03296">3296</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02331">2331</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2079,12 +1931,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02456">2456</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02849">2849</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="afff4895cdf55715943f8aa05ac4450e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afff4895cdf55715943f8aa05ac4450e8">&#9670;&nbsp;</a></span>on_connection_accepted_message()</h2>
+<a id="a0cd18827934e8f3b5e17b1bace929131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cd18827934e8f3b5e17b1bace929131">&#9670;&nbsp;</a></span>on_connection_accepted_message()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2104,12 +1956,12 @@ Public Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01603">1603</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01884">1884</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2139,7 +1991,7 @@ Public Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classgraphene_1_1net_1_1peer__connection__delegate.html#a6d47e4587eff65009547eae6fe5c8c0b">graphene::net::peer_connection_delegate</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02490">2490</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02883">2883</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2169,7 +2021,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01627">1627</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01906">1906</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2199,7 +2051,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03187">3187</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03555">3555</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2229,7 +2081,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03177">3177</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03545">3545</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2259,12 +2111,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01742">1742</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02104">2104</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a93435fc800b0f0e57651a09b97c0cb04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93435fc800b0f0e57651a09b97c0cb04">&#9670;&nbsp;</a></span>on_fetch_items_message()</h2>
+<a id="ac60f3771b9c021dc1f6e3051af7cb50e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac60f3771b9c021dc1f6e3051af7cb50e">&#9670;&nbsp;</a></span>on_fetch_items_message()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2284,12 +2136,12 @@ Public Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02275">2275</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02647">2647</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2319,7 +2171,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01387">1387</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01513">1513</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2349,7 +2201,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02382">2382</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02767">2767</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2379,7 +2231,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02343">2343</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02724">2724</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2419,7 +2271,7 @@ Public Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classgraphene_1_1net_1_1peer__connection__delegate.html#a9075116c55b168c7b49a84e79960cf09">graphene::net::peer_connection_delegate</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01252">1252</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01369">1369</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2438,7 +2290,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00229">229</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00359">359</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2468,7 +2320,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01363">1363</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01489">1489</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2487,7 +2339,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02768">2768</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03136">3136</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2523,7 +2375,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02921">2921</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03289">3289</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2559,7 +2411,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03096">3096</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03464">3464</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2595,7 +2447,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02934">2934</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03302">3302</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2631,7 +2483,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03380">3380</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03576">3576</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2661,7 +2513,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00383">383</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00516">516</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2691,7 +2543,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00394">394</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00527">527</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2711,7 +2563,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04241">4241</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04480">4480</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2730,7 +2582,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00207">207</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00336">336</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2749,7 +2601,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00359">359</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00490">490</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2769,7 +2621,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01084">1084</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01219">1219</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2789,7 +2641,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03849">3849</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04052">4052</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2809,7 +2661,27 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02583">2583</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02951">2951</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3c644869b38831bddb8bad4e874ce42d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c644869b38831bddb8bad4e874ce42d">&#9670;&nbsp;</a></span>set_accept_incoming_connections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graphene::net::detail::node_impl::set_accept_incoming_connections </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>accept</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04751">4751</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2829,7 +2701,37 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04617">4617</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04906">4906</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acb493cb698bcd9f4044565b31cdef8ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb493cb698bcd9f4044565b31cdef8ab">&#9670;&nbsp;</a></span>set_advertise_algorithm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graphene::net::detail::node_impl::set_advertise_algorithm </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>algo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>advertise_or_exclude_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02001">2001</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2849,7 +2751,77 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04671">4671</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04965">4965</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a537e6e2c60c7f4b1da5f67e320816029"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a537e6e2c60c7f4b1da5f67e320816029">&#9670;&nbsp;</a></span>set_connect_to_new_peers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graphene::net::detail::node_impl::set_connect_to_new_peers </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>connect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04758">4758</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a965d0e37052ff3cb1a44b062dcf82f80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a965d0e37052ff3cb1a44b062dcf82f80">&#9670;&nbsp;</a></span>set_inbound_endpoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graphene::net::detail::node_impl::set_inbound_endpoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>ep</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04744">4744</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5d8a24b5d08d0fe3e5774f3002ecabed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d8a24b5d08d0fe3e5774f3002ecabed">&#9670;&nbsp;</a></span>set_listen_endpoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graphene::net::detail::node_impl::set_listen_endpoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>ep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>wait_if_not_available</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04736">4736</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2879,7 +2851,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04007">4007</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04190">4190</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2909,7 +2881,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04695">4695</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04989">4989</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2928,7 +2900,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03473">3473</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03670">3670</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2948,7 +2920,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03461">3461</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03658">3658</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2978,7 +2950,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04592">4592</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l04881">4881</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2997,7 +2969,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00716">716</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00851">851</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -3016,7 +2988,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00626">626</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00759">759</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -3035,7 +3007,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00477">477</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00610">610</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -3054,7 +3026,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00327">327</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00458">458</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -3073,7 +3045,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l02913">2913</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l03281">3281</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -3103,7 +3075,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01000">1000</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l01135">1135</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -3122,7 +3094,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00336">336</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node_8cpp_source.html#l00467">467</a> of file <a class="el" href="node_8cpp_source.html">node.cpp</a>.</p>
 
 </div>
 </div>
@@ -3139,7 +3111,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00501">501</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00536">536</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3156,7 +3128,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Stores fully established connections we're either syncing with or in normal operation with </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00507">507</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00542">542</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3174,7 +3146,7 @@ Public Attributes</h2></td></tr>
 
 <p>List of sync blocks we've asked for from peers but have not yet received. </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00426">426</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00461">461</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3189,9 +3161,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Stores the endpoint we're listening on. This will be the same as _node_configuration.listen_endpoint, unless that endpoint was already in use. </p>
+<p>Stores the endpoint we're listening on. This will be the same as _node_configuration.listen_endpoint, unless that endpoint was already in use. This will be 0.0.0.0:0 if the node is configured to not listen. </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00397">397</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00439">439</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3209,7 +3181,23 @@ Public Attributes</h2></td></tr>
 <p>Used by the task that manages connecting to peers</p>
 <p>List of peers we want to connect to as soon as possible </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00409">409</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00444">444</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+
+</div>
+</div>
+<a id="aa7d0f5e9b3267e6a4e61bd1cb1f04f53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7d0f5e9b3267e6a4e61bd1cb1f04f53">&#9670;&nbsp;</a></span>_address_builder</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl_1_1address__builder.html">address_builder</a>&gt; graphene::net::detail::node_impl::_address_builder = <a class="el" href="classgraphene_1_1net_1_1detail_1_1node__impl_1_1address__builder.html#a6841489a03f21223a7423efd033ee96c">address_builder::create_default_address_builder</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00567">567</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3225,7 +3213,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00465">465</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00500">500</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3243,7 +3231,7 @@ Public Attributes</h2></td></tr>
 
 <p>Average network read speed in the past hours. </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00545">545</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00580">580</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3261,7 +3249,7 @@ Public Attributes</h2></td></tr>
 
 <p>Average network read speed in the past minutes. </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00541">541</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00576">576</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3279,7 +3267,7 @@ Public Attributes</h2></td></tr>
 
 <p>Average network read speed in the past seconds. </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00537">537</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00572">572</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3297,7 +3285,7 @@ Public Attributes</h2></td></tr>
 
 <p>Average network usage minute counter. </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00551">551</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00586">586</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3315,7 +3303,7 @@ Public Attributes</h2></td></tr>
 
 <p>Average network usage second counter. </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00549">549</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00584">584</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3333,7 +3321,7 @@ Public Attributes</h2></td></tr>
 
 <p>Average network write speed in the past hours. </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00547">547</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00582">582</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3351,7 +3339,7 @@ Public Attributes</h2></td></tr>
 
 <p>Average network write speed in the past minutes. </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00543">543</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00578">578</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3369,7 +3357,7 @@ Public Attributes</h2></td></tr>
 
 <p>Average network write speed in the past seconds. </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00539">539</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00574">574</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3385,7 +3373,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00553">553</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00588">588</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3401,7 +3389,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00554">554</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00589">589</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3417,7 +3405,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00387">387</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00427">427</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3434,7 +3422,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Stores connections we've closed (sent closing message, not actually closed), but are still waiting for the remote end to close before we delete them </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00510">510</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00545">545</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3450,7 +3438,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00573">573</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00608">608</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3466,7 +3454,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00386">386</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00426">426</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3483,7 +3471,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>If we have less than <code>_desired_number_of_connections</code>, we will try to connect with more nodes </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00492">492</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00527">527</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3499,7 +3487,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00556">556</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00591">591</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3515,7 +3503,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00441">441</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00476">476</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3531,7 +3519,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00421">421</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00456">456</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3547,7 +3535,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00534">534</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00569">569</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3563,7 +3551,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00591">591</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00628">628</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3580,7 +3568,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Stores all connections which have not yet finished key exchange or are still sending initial handshaking messages back and forth (not yet ready to initiate syncing) </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00505">505</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00540">540</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3598,25 +3586,7 @@ Public Attributes</h2></td></tr>
 
 <p>List of all block numbers where there are hard forks. </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00522">522</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
-
-</div>
-</div>
-<a id="a0bd282fb9ef9604e952c69f6c0dcc62c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bd282fb9ef9604e952c69f6c0dcc62c">&#9670;&nbsp;</a></span>_is_firewalled</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacegraphene_1_1net.html#a9a91847dec341192d7a7ae1104cb4aa2">firewalled_state</a> graphene::net::detail::node_impl::_is_firewalled = <a class="el" href="namespacegraphene_1_1net.html#ad0fa02c07eb80a168befc6c5931d6cccaad921d60486366258809553a3db49a4a">firewalled_state::unknown</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>We determine whether we're firewalled by asking other nodes. Store the result here. </p>
-
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00400">400</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00557">557</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3634,7 +3604,7 @@ Public Attributes</h2></td></tr>
 
 <p>List of items we know another peer has and we want. </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00457">457</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00492">492</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3652,7 +3622,7 @@ Public Attributes</h2></td></tr>
 
 <p>Items to fetch sequence counter. </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00455">455</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00490">490</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3668,7 +3638,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00440">440</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00475">475</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3684,23 +3654,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00470">470</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
-
-</div>
-</div>
-<a id="a1de278ce9de8691527f18e8e4cfe5438"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1de278ce9de8691527f18e8e4cfe5438">&#9670;&nbsp;</a></span>_last_firewall_check_message_sent</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classfc_1_1time__point.html">fc::time_point</a> graphene::net::detail::node_impl::_last_firewall_check_message_sent</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00404">404</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00505">505</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3718,7 +3672,25 @@ Public Attributes</h2></td></tr>
 
 <p>Number of connections last reported to the client (to avoid sending duplicate messages) </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00530">530</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00565">565</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+
+</div>
+</div>
+<a id="a0ffb4ae32bbf9904b60da3818f6aeac5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ffb4ae32bbf9904b60da3818f6aeac5">&#9670;&nbsp;</a></span>_max_addrs_to_handle_at_once</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t graphene::net::detail::node_impl::_max_addrs_to_handle_at_once = <a class="el" href="net_2include_2graphene_2net_2config_8hpp.html#a80668264c50947edb95c00702fa25076">MAX_ADDRESSES_TO_HANDLE_AT_ONCE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum number of addresses to handle at one time. </p>
+
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00620">620</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3736,7 +3708,7 @@ Public Attributes</h2></td></tr>
 
 <p>Maximum number of blocks to handle at one time. </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00585">585</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00622">622</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3754,7 +3726,7 @@ Public Attributes</h2></td></tr>
 
 <p>Maximum number of blocks per peer during syncing. </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00589">589</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00626">626</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3772,7 +3744,7 @@ Public Attributes</h2></td></tr>
 
 <p>Maximum number of sync blocks to prefetch. </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00587">587</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00624">624</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3789,7 +3761,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>If we have _maximum_number_of_connections or more, we will refuse any inbound connections </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00494">494</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00529">529</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3807,7 +3779,7 @@ Public Attributes</h2></td></tr>
 
 <p>Cache message we have received and might be required to provide to other peers via inventory requests. </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00525">525</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00560">560</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3825,7 +3797,7 @@ Public Attributes</h2></td></tr>
 
 <p>The /n/ most recent blocks we've accepted (currently tuned to the max number of connections) </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00516">516</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00551">551</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3843,7 +3815,7 @@ Public Attributes</h2></td></tr>
 
 <p>List of items we have received but not yet advertised to our peers. </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00467">467</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00502">502</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3861,7 +3833,7 @@ Public Attributes</h2></td></tr>
 
 <p>List of sync blocks we've just received but haven't yet tried to process. </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00428">428</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00463">463</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3877,7 +3849,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00392">392</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00432">432</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3893,7 +3865,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00391">391</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00431">431</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3910,7 +3882,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>A random number generated each time the client is launched, used to prevent us from connecting to the same client multiple times (sent in hello messages). Since this was introduced after the <a class="el" href="structgraphene_1_1net_1_1hello__message.html">hello_message</a> was finalized, this is sent in the user_data field. While this shares the same underlying type as a public key, it is really just a random number. </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00489">489</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00524">524</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3927,7 +3899,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Set to true when we begin our destructor, used to prevent us from starting new tasks while we're shutting down </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00582">582</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00617">617</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3944,7 +3916,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>A key automatically generated when the client is first run, stored in node_config.json. It doesn't really have much of a purpose yet, there was just some thought that we might someday have a use for nodes having a private key (sent in hello messages) </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00480">480</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00515">515</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3960,23 +3932,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00414">414</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
-
-</div>
-</div>
-<a id="ac3fe5d16212f1a9c4e2c9aefe34637d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3fe5d16212f1a9c4e2c9aefe34637d2">&#9670;&nbsp;</a></span>_peer_advertising_disabled</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool graphene::net::detail::node_impl::_peer_advertising_disabled = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00532">532</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00449">449</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3993,7 +3949,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Retry connections to peers that have failed or rejected us this often, in seconds </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00496">496</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00531">531</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4010,7 +3966,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>How many seconds of inactivity are permitted before disconnecting a peer </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00498">498</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00533">533</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4027,7 +3983,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>We have two alternate paths through the schedule_peer_for_deletion code &ndash; one that uses a mutex to prevent one fiber from adding items to the queue while another is deleting items from it, and one that doesn't. The one that doesn't is simpler and more efficient code, but we're keeping around the version that uses the mutex because it crashes, and this crash probably indicates a bug in our underlying threading code that needs fixing. To produce the bug, define USE_PEERS_TO_DELETE_MUTEX and then connect up to the network and set your desired/max connection counts high </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00572">572</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00607">607</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4043,7 +3999,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00411">411</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00446">446</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4059,7 +4015,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00413">413</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00448">448</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4075,24 +4031,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00434">434</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
-
-</div>
-</div>
-<a id="a12dc94723faea441ac512c2f89a4dd84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12dc94723faea441ac512c2f89a4dd84">&#9670;&nbsp;</a></span>_publicly_visible_listening_endpoint</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classfc_1_1optional.html">fc::optional</a>&lt;<a class="el" href="classfc_1_1ip_1_1endpoint.html">fc::ip::endpoint</a>&gt; graphene::net::detail::node_impl::_publicly_visible_listening_endpoint</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>If we're behind NAT, our listening endpoint address will appear different to the rest of the world. Store it here. </p>
-
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00403">403</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00469">469</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4108,7 +4047,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00527">527</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00562">562</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4125,7 +4064,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>List of sync blocks we've received, but can't yet process because we are still missing blocks that come earlier in the chain </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00431">431</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00466">466</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4143,7 +4082,7 @@ Public Attributes</h2></td></tr>
 
 <p>A cached copy of the block interval, to avoid a thread hop to the blockchain to get the current value. </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00472">472</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00507">507</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4154,14 +4093,14 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classgraphene_1_1net_1_1peer__connection.html#a3c453ce025f0fcd97c4b4290d617f576">peer_connection::timestamped_items_set_type</a> graphene::net::detail::node_impl::_recently_failed_items</td>
+          <td class="memname"><a class="el" href="classgraphene_1_1net_1_1peer__connection.html#adfbfaaccd42ac5fb5e713acbeb34724b">peer_connection::timestamped_items_set_type</a> graphene::net::detail::node_impl::_recently_failed_items</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>List of transactions we've recently pushed and had rejected by the delegate. </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00459">459</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00494">494</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4178,7 +4117,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Used by the task that advertises inventory during normal operation </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00464">464</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00499">499</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4194,7 +4133,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00412">412</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00447">447</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4211,7 +4150,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Used by the task that fetches items during normal operation </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00439">439</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00474">474</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4228,7 +4167,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Used by the task that fetches sync items during synchronization </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00419">419</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00454">454</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4245,7 +4184,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Used by the task that checks whether addresses of seed nodes have been updated </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00595">595</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00632">632</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4261,7 +4200,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00435">435</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00470">470</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4272,12 +4211,12 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t graphene::net::detail::node_impl::_sync_item_type</td>
+          <td class="memname">uint32_t graphene::net::detail::node_impl::_sync_item_type = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00518">518</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00553">553</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4293,7 +4232,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00420">420</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00455">455</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4309,7 +4248,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00500">500</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00535">535</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4326,7 +4265,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Stores connections we've closed, but are still waiting for the OS to notify us that the socket is really closed </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00513">513</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00548">548</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4342,7 +4281,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00384">384</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00423">423</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4360,7 +4299,7 @@ Public Attributes</h2></td></tr>
 
 <p>The number of items we still need to fetch while syncing. </p>
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00520">520</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00555">555</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4376,7 +4315,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00596">596</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00633">633</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4392,7 +4331,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00474">474</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="node__impl_8hxx_source.html#l00509">509</a> of file <a class="el" href="node__impl_8hxx_source.html">node_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4403,7 +4342,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:58 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:47 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

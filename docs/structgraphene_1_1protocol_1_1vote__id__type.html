@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -91,9 +91,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a24c95dbe8177c72eec0b746d93b29133"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html#a24c95dbe8177c72eec0b746d93b29133">vote_id_type</a> ()</td></tr>
-<tr class="memdesc:a24c95dbe8177c72eec0b746d93b29133"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. Sets type and instance to 0.  <a href="#a24c95dbe8177c72eec0b746d93b29133">More...</a><br /></td></tr>
-<tr class="separator:a24c95dbe8177c72eec0b746d93b29133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff5853ba8f35fb71f85addfc3c7d0f6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html#aff5853ba8f35fb71f85addfc3c7d0f6f">vote_id_type</a> ()=default</td></tr>
+<tr class="separator:aff5853ba8f35fb71f85addfc3c7d0f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ca7dca3c0ce250db29b64f64c6788f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html#a0ca7dca3c0ce250db29b64f64c6788f6">vote_id_type</a> (<a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html#af485364161ef1e41d0b78282db87f9c6">vote_type</a> <a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html#a6ee61747037aa10bdee9c7d0650149ad">type</a>, uint32_t <a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html#abc8ac5373abe2aea74f360766fb9869c">instance</a>=0)</td></tr>
 <tr class="memdesc:a0ca7dca3c0ce250db29b64f64c6788f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct this <a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html" title="An ID for some votable object. ">vote_id_type</a> with provided type and instance.  <a href="#a0ca7dca3c0ce250db29b64f64c6788f6">More...</a><br /></td></tr>
 <tr class="separator:a0ca7dca3c0ce250db29b64f64c6788f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,8 +125,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a9087578e68937f343b6e2338f8297999"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html#a9087578e68937f343b6e2338f8297999">content</a></td></tr>
-<tr class="memdesc:a9087578e68937f343b6e2338f8297999"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lower 8 bits are type; upper 24 bits are instance.  <a href="#a9087578e68937f343b6e2338f8297999">More...</a><br /></td></tr>
+<tr class="memitem:a9087578e68937f343b6e2338f8297999"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html#a9087578e68937f343b6e2338f8297999">content</a> = 0</td></tr>
 <tr class="separator:a9087578e68937f343b6e2338f8297999"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -163,13 +161,13 @@ Friends</h2></td></tr>
 <tr><td class="fieldname"><a id="af485364161ef1e41d0b78282db87f9c6aa8146dc7e44ecc0d962624aeb2a22aa8"></a>VOTE_TYPE_COUNT&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="vote_8hpp_source.html#l00057">57</a> of file <a class="el" href="vote_8hpp_source.html">vote.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vote_8hpp_source.html#l00058">58</a> of file <a class="el" href="vote_8hpp_source.html">vote.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a24c95dbe8177c72eec0b746d93b29133"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24c95dbe8177c72eec0b746d93b29133">&#9670;&nbsp;</a></span>vote_id_type() <span class="overload">[1/3]</span></h2>
+<a id="aff5853ba8f35fb71f85addfc3c7d0f6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff5853ba8f35fb71f85addfc3c7d0f6f">&#9670;&nbsp;</a></span>vote_id_type() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -186,14 +184,10 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Default constructor. Sets type and instance to 0. </p>
-
-<p class="definition">Definition at line <a class="el" href="vote_8hpp_source.html#l00066">66</a> of file <a class="el" href="vote_8hpp_source.html">vote.hpp</a>.</p>
 
 </div>
 </div>
@@ -226,7 +220,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -293,7 +287,7 @@ Friends</h2></td></tr>
 
 <p>Get the instance of this <a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html" title="An ID for some votable object. ">vote_id_type</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="vote_8hpp_source.html#l00099">99</a> of file <a class="el" href="vote_8hpp_source.html">vote.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vote_8hpp_source.html#l00100">100</a> of file <a class="el" href="vote_8hpp_source.html">vote.hpp</a>.</p>
 
 </div>
 </div>
@@ -322,7 +316,7 @@ Friends</h2></td></tr>
 
 <p>Convert this <a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html" title="An ID for some votable object. ">vote_id_type</a> to a serial string in the form "type:instance". </p>
 
-<p class="definition">Definition at line <a class="el" href="vote_8hpp_source.html#l00122">122</a> of file <a class="el" href="vote_8hpp_source.html">vote.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vote_8hpp_source.html#l00123">123</a> of file <a class="el" href="vote_8hpp_source.html">vote.hpp</a>.</p>
 
 </div>
 </div>
@@ -351,7 +345,7 @@ Friends</h2></td></tr>
 
 <p>Get the instance of this <a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html" title="An ID for some votable object. ">vote_id_type</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="vote_8hpp_source.html#l00116">116</a> of file <a class="el" href="vote_8hpp_source.html">vote.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vote_8hpp_source.html#l00117">117</a> of file <a class="el" href="vote_8hpp_source.html">vote.hpp</a>.</p>
 
 </div>
 </div>
@@ -379,7 +373,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vote_8hpp_source.html#l00104">104</a> of file <a class="el" href="vote_8hpp_source.html">vote.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vote_8hpp_source.html#l00105">105</a> of file <a class="el" href="vote_8hpp_source.html">vote.hpp</a>.</p>
 
 </div>
 </div>
@@ -409,7 +403,7 @@ Friends</h2></td></tr>
 
 <p>Set the instance of this <a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html" title="An ID for some votable object. ">vote_id_type</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="vote_8hpp_source.html#l00110">110</a> of file <a class="el" href="vote_8hpp_source.html">vote.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vote_8hpp_source.html#l00111">111</a> of file <a class="el" href="vote_8hpp_source.html">vote.hpp</a>.</p>
 
 </div>
 </div>
@@ -439,7 +433,7 @@ Friends</h2></td></tr>
 
 <p>Set the instance of this <a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html" title="An ID for some votable object. ">vote_id_type</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="vote_8hpp_source.html#l00092">92</a> of file <a class="el" href="vote_8hpp_source.html">vote.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vote_8hpp_source.html#l00093">93</a> of file <a class="el" href="vote_8hpp_source.html">vote.hpp</a>.</p>
 
 </div>
 </div>
@@ -469,7 +463,7 @@ Friends</h2></td></tr>
 
 <p>Set the type of this <a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html" title="An ID for some votable object. ">vote_id_type</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="vote_8hpp_source.html#l00080">80</a> of file <a class="el" href="vote_8hpp_source.html">vote.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vote_8hpp_source.html#l00081">81</a> of file <a class="el" href="vote_8hpp_source.html">vote.hpp</a>.</p>
 
 </div>
 </div>
@@ -498,7 +492,7 @@ Friends</h2></td></tr>
 
 <p>Get the type of this <a class="el" href="structgraphene_1_1protocol_1_1vote__id__type.html" title="An ID for some votable object. ">vote_id_type</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="vote_8hpp_source.html#l00086">86</a> of file <a class="el" href="vote_8hpp_source.html">vote.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vote_8hpp_source.html#l00087">87</a> of file <a class="el" href="vote_8hpp_source.html">vote.hpp</a>.</p>
 
 </div>
 </div>
@@ -527,7 +521,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vote_8hpp_source.html#l00056">56</a> of file <a class="el" href="vote_8hpp_source.html">vote.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vote_8hpp_source.html#l00057">57</a> of file <a class="el" href="vote_8hpp_source.html">vote.hpp</a>.</p>
 
 </div>
 </div>
@@ -539,14 +533,13 @@ Friends</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t graphene::protocol::vote_id_type::content</td>
+          <td class="memname">uint32_t graphene::protocol::vote_id_type::content = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Lower 8 bits are type; upper 24 bits are instance. By default type and instance are both set to 0. </p>
 
-<p>Lower 8 bits are type; upper 24 bits are instance. </p>
-
-<p class="definition">Definition at line <a class="el" href="vote_8hpp_source.html#l00054">54</a> of file <a class="el" href="vote_8hpp_source.html">vote.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vote_8hpp_source.html#l00055">55</a> of file <a class="el" href="vote_8hpp_source.html">vote.hpp</a>.</p>
 
 </div>
 </div>
@@ -556,7 +549,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:58 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:48 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

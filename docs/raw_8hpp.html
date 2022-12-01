@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -275,12 +275,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a8165f8eb42b1580f185736960c177e95"><td class="memTemplParams" colspan="2">template&lt;typename Stream , typename K , typename V &gt; </td></tr>
 <tr class="memitem:a8165f8eb42b1580f185736960c177e95"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefc_1_1raw.html#a8165f8eb42b1580f185736960c177e95">fc::raw::unpack</a> (Stream &amp;s, std::unordered_map&lt; K, V &gt; &amp;value, uint32_t _max_depth)</td></tr>
 <tr class="separator:a8165f8eb42b1580f185736960c177e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f30b066a7e409bc6ea31463cbb4d054"><td class="memTemplParams" colspan="2">template&lt;typename Stream , typename K , typename V &gt; </td></tr>
-<tr class="memitem:a5f30b066a7e409bc6ea31463cbb4d054"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefc_1_1raw.html#a5f30b066a7e409bc6ea31463cbb4d054">fc::raw::pack</a> (Stream &amp;s, const std::map&lt; K, V &gt; &amp;value, uint32_t _max_depth)</td></tr>
-<tr class="separator:a5f30b066a7e409bc6ea31463cbb4d054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af29932d666e605884fc27bbcc6db2179"><td class="memTemplParams" colspan="2">template&lt;typename Stream , typename K , typename V &gt; </td></tr>
-<tr class="memitem:af29932d666e605884fc27bbcc6db2179"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefc_1_1raw.html#af29932d666e605884fc27bbcc6db2179">fc::raw::unpack</a> (Stream &amp;s, std::map&lt; K, V &gt; &amp;value, uint32_t _max_depth)</td></tr>
-<tr class="separator:af29932d666e605884fc27bbcc6db2179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a550b9114292ae7c5d4cf55d95a6a2b4b"><td class="memTemplParams" colspan="2">template&lt;typename Stream , typename K , typename... V&gt; </td></tr>
+<tr class="memitem:a550b9114292ae7c5d4cf55d95a6a2b4b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefc_1_1raw.html#a550b9114292ae7c5d4cf55d95a6a2b4b">fc::raw::pack</a> (Stream &amp;s, const std::map&lt; K, V... &gt; &amp;value, uint32_t _max_depth)</td></tr>
+<tr class="separator:a550b9114292ae7c5d4cf55d95a6a2b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e357581e56cc8b3e826ad54e1c0747"><td class="memTemplParams" colspan="2">template&lt;typename Stream , typename K , typename V , typename... A&gt; </td></tr>
+<tr class="memitem:af5e357581e56cc8b3e826ad54e1c0747"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefc_1_1raw.html#af5e357581e56cc8b3e826ad54e1c0747">fc::raw::unpack</a> (Stream &amp;s, std::map&lt; K, V, A... &gt; &amp;value, uint32_t _max_depth)</td></tr>
+<tr class="separator:af5e357581e56cc8b3e826ad54e1c0747"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6d02cd6440cf89f7cf55cd1185daacb"><td class="memTemplParams" colspan="2">template&lt;typename Stream , typename T &gt; </td></tr>
 <tr class="memitem:ad6d02cd6440cf89f7cf55cd1185daacb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefc_1_1raw.html#ad6d02cd6440cf89f7cf55cd1185daacb">fc::raw::pack</a> (Stream &amp;s, const std::deque&lt; T &gt; &amp;value, uint32_t _max_depth)</td></tr>
 <tr class="separator:ad6d02cd6440cf89f7cf55cd1185daacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -345,7 +345,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:55 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:45 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

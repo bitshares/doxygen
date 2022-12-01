@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -302,12 +302,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a8165f8eb42b1580f185736960c177e95"><td class="memTemplParams" colspan="2">template&lt;typename Stream , typename K , typename V &gt; </td></tr>
 <tr class="memitem:a8165f8eb42b1580f185736960c177e95"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefc_1_1raw.html#a8165f8eb42b1580f185736960c177e95">unpack</a> (Stream &amp;s, std::unordered_map&lt; K, V &gt; &amp;value, uint32_t _max_depth)</td></tr>
 <tr class="separator:a8165f8eb42b1580f185736960c177e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f30b066a7e409bc6ea31463cbb4d054"><td class="memTemplParams" colspan="2">template&lt;typename Stream , typename K , typename V &gt; </td></tr>
-<tr class="memitem:a5f30b066a7e409bc6ea31463cbb4d054"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefc_1_1raw.html#a5f30b066a7e409bc6ea31463cbb4d054">pack</a> (Stream &amp;s, const std::map&lt; K, V &gt; &amp;value, uint32_t _max_depth)</td></tr>
-<tr class="separator:a5f30b066a7e409bc6ea31463cbb4d054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af29932d666e605884fc27bbcc6db2179"><td class="memTemplParams" colspan="2">template&lt;typename Stream , typename K , typename V &gt; </td></tr>
-<tr class="memitem:af29932d666e605884fc27bbcc6db2179"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefc_1_1raw.html#af29932d666e605884fc27bbcc6db2179">unpack</a> (Stream &amp;s, std::map&lt; K, V &gt; &amp;value, uint32_t _max_depth)</td></tr>
-<tr class="separator:af29932d666e605884fc27bbcc6db2179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a550b9114292ae7c5d4cf55d95a6a2b4b"><td class="memTemplParams" colspan="2">template&lt;typename Stream , typename K , typename... V&gt; </td></tr>
+<tr class="memitem:a550b9114292ae7c5d4cf55d95a6a2b4b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefc_1_1raw.html#a550b9114292ae7c5d4cf55d95a6a2b4b">pack</a> (Stream &amp;s, const std::map&lt; K, V... &gt; &amp;value, uint32_t _max_depth)</td></tr>
+<tr class="separator:a550b9114292ae7c5d4cf55d95a6a2b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e357581e56cc8b3e826ad54e1c0747"><td class="memTemplParams" colspan="2">template&lt;typename Stream , typename K , typename V , typename... A&gt; </td></tr>
+<tr class="memitem:af5e357581e56cc8b3e826ad54e1c0747"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefc_1_1raw.html#af5e357581e56cc8b3e826ad54e1c0747">unpack</a> (Stream &amp;s, std::map&lt; K, V, A... &gt; &amp;value, uint32_t _max_depth)</td></tr>
+<tr class="separator:af5e357581e56cc8b3e826ad54e1c0747"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6d02cd6440cf89f7cf55cd1185daacb"><td class="memTemplParams" colspan="2">template&lt;typename Stream , typename T &gt; </td></tr>
 <tr class="memitem:ad6d02cd6440cf89f7cf55cd1185daacb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefc_1_1raw.html#ad6d02cd6440cf89f7cf55cd1185daacb">pack</a> (Stream &amp;s, const std::deque&lt; T &gt; &amp;value, uint32_t _max_depth)</td></tr>
 <tr class="separator:ad6d02cd6440cf89f7cf55cd1185daacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1178,80 +1178,8 @@ template&lt;typename Stream &gt; </div>
 
 </div>
 </div>
-<a id="afdb032ab483fcaa81ca270cc7e84a37b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdb032ab483fcaa81ca270cc7e84a37b">&#9670;&nbsp;</a></span>pack() <span class="overload">[17/60]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Stream &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void fc::raw::pack </td>
-          <td>(</td>
-          <td class="paramtype">Stream &amp;&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classfc_1_1ip_1_1address.html">ip::address</a> &amp;&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>_max_depth</em> = <code><a class="el" href="fc_2include_2fc_2config_8hpp.html#afbd29dd00d5136a6ec9cc7cfdcadc9d0">FC_PACK_MAX_DEPTH</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ip_8hpp_source.html#l00085">85</a> of file <a class="el" href="ip_8hpp_source.html">ip.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a32a199697045525fbca469dfeeb161c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32a199697045525fbca469dfeeb161c1">&#9670;&nbsp;</a></span>pack() <span class="overload">[18/60]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">template void fc::raw::pack </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classfc_1_1datastream.html">datastream</a>&lt; size_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a> &amp;&#160;</td>
-          <td class="paramname"><em>tx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>_max_depth</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a07a39af9291f6f33724025118ce226fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07a39af9291f6f33724025118ce226fd">&#9670;&nbsp;</a></span>pack() <span class="overload">[19/60]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a07a39af9291f6f33724025118ce226fd">&#9670;&nbsp;</a></span>pack() <span class="overload">[17/60]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1292,46 +1220,12 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ip_8hpp_source.html#l00100">100</a> of file <a class="el" href="ip_8hpp_source.html">ip.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a0661099108a86db1bbbbe87d3b4fcf23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0661099108a86db1bbbbe87d3b4fcf23">&#9670;&nbsp;</a></span>pack() <span class="overload">[20/60]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">template void fc::raw::pack </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classfc_1_1datastream.html">datastream</a>&lt; char *&gt; &amp;&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a> &amp;&#160;</td>
-          <td class="paramname"><em>tx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>_max_depth</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p class="definition">Definition at line <a class="el" href="ip_8hpp_source.html#l00123">123</a> of file <a class="el" href="ip_8hpp_source.html">ip.hpp</a>.</p>
 
 </div>
 </div>
 <a id="a04464e50ab346281743c434d9288b390"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04464e50ab346281743c434d9288b390">&#9670;&nbsp;</a></span>pack() <span class="overload">[21/60]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a04464e50ab346281743c434d9288b390">&#9670;&nbsp;</a></span>pack() <span class="overload">[18/60]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1376,8 +1270,76 @@ template&lt;typename Stream &gt; </div>
 
 </div>
 </div>
+<a id="a32a199697045525fbca469dfeeb161c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32a199697045525fbca469dfeeb161c1">&#9670;&nbsp;</a></span>pack() <span class="overload">[19/60]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template void fc::raw::pack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfc_1_1datastream.html">datastream</a>&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a> &amp;&#160;</td>
+          <td class="paramname"><em>tx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>_max_depth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0661099108a86db1bbbbe87d3b4fcf23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0661099108a86db1bbbbe87d3b4fcf23">&#9670;&nbsp;</a></span>pack() <span class="overload">[20/60]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template void fc::raw::pack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfc_1_1datastream.html">datastream</a>&lt; char *&gt; &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1pts__address.html">graphene::protocol::pts_address</a> &amp;&#160;</td>
+          <td class="paramname"><em>tx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>_max_depth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1ee2ac0fb1c66ea055c16378e4992141"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ee2ac0fb1c66ea055c16378e4992141">&#9670;&nbsp;</a></span>pack() <span class="overload">[22/60]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ee2ac0fb1c66ea055c16378e4992141">&#9670;&nbsp;</a></span>pack() <span class="overload">[21/60]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1423,7 +1385,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="aed4b4dfdda18e3425175e7ce3de608a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed4b4dfdda18e3425175e7ce3de608a2">&#9670;&nbsp;</a></span>pack() <span class="overload">[23/60]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aed4b4dfdda18e3425175e7ce3de608a2">&#9670;&nbsp;</a></span>pack() <span class="overload">[22/60]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1465,6 +1427,44 @@ template&lt;typename Stream &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="raw_8hpp_source.html#l00105">105</a> of file <a class="el" href="raw_8hpp_source.html">raw.hpp</a>.</p>
+
+</div>
+</div>
+<a id="afdb032ab483fcaa81ca270cc7e84a37b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdb032ab483fcaa81ca270cc7e84a37b">&#9670;&nbsp;</a></span>pack() <span class="overload">[23/60]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Stream &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void fc::raw::pack </td>
+          <td>(</td>
+          <td class="paramtype">Stream &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfc_1_1ip_1_1address.html">ip::address</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>_max_depth</em> = <code><a class="el" href="fc_2include_2fc_2config_8hpp.html#afbd29dd00d5136a6ec9cc7cfdcadc9d0">FC_PACK_MAX_DEPTH</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ip_8hpp_source.html#l00108">108</a> of file <a class="el" href="ip_8hpp_source.html">ip.hpp</a>.</p>
 
 </div>
 </div>
@@ -1644,76 +1644,8 @@ template&lt;typename Stream &gt; </div>
 
 </div>
 </div>
-<a id="abc75bf53849c3eca153e7b43f7ef7e29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc75bf53849c3eca153e7b43f7ef7e29">&#9670;&nbsp;</a></span>pack() <span class="overload">[28/60]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">template void fc::raw::pack </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classfc_1_1datastream.html">datastream</a>&lt; size_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">graphene::protocol::public_key_type</a> &amp;&#160;</td>
-          <td class="paramname"><em>tx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>_max_depth</em> = <code><a class="el" href="fc_2include_2fc_2config_8hpp.html#afbd29dd00d5136a6ec9cc7cfdcadc9d0">FC_PACK_MAX_DEPTH</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a026c54b0882f93c9f9b6e3a8e0e69fe4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a026c54b0882f93c9f9b6e3a8e0e69fe4">&#9670;&nbsp;</a></span>pack() <span class="overload">[29/60]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">template void fc::raw::pack </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classfc_1_1datastream.html">datastream</a>&lt; char *&gt; &amp;&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">graphene::protocol::public_key_type</a> &amp;&#160;</td>
-          <td class="paramname"><em>tx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>_max_depth</em> = <code><a class="el" href="fc_2include_2fc_2config_8hpp.html#afbd29dd00d5136a6ec9cc7cfdcadc9d0">FC_PACK_MAX_DEPTH</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a7d21073241788b7ce2c53f5c083c414e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d21073241788b7ce2c53f5c083c414e">&#9670;&nbsp;</a></span>pack() <span class="overload">[30/60]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d21073241788b7ce2c53f5c083c414e">&#9670;&nbsp;</a></span>pack() <span class="overload">[28/60]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1755,6 +1687,74 @@ template&lt;typename Stream &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="raw_8hpp_source.html#l00119">119</a> of file <a class="el" href="raw_8hpp_source.html">raw.hpp</a>.</p>
+
+</div>
+</div>
+<a id="abc75bf53849c3eca153e7b43f7ef7e29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc75bf53849c3eca153e7b43f7ef7e29">&#9670;&nbsp;</a></span>pack() <span class="overload">[29/60]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template void fc::raw::pack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfc_1_1datastream.html">datastream</a>&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">graphene::protocol::public_key_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>tx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>_max_depth</em> = <code><a class="el" href="fc_2include_2fc_2config_8hpp.html#afbd29dd00d5136a6ec9cc7cfdcadc9d0">FC_PACK_MAX_DEPTH</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a026c54b0882f93c9f9b6e3a8e0e69fe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a026c54b0882f93c9f9b6e3a8e0e69fe4">&#9670;&nbsp;</a></span>pack() <span class="overload">[30/60]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template void fc::raw::pack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfc_1_1datastream.html">datastream</a>&lt; char *&gt; &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">graphene::protocol::public_key_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>tx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>_max_depth</em> = <code><a class="el" href="fc_2include_2fc_2config_8hpp.html#afbd29dd00d5136a6ec9cc7cfdcadc9d0">FC_PACK_MAX_DEPTH</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -2628,13 +2628,13 @@ template&lt;typename Stream , typename K , typename V &gt; </div>
 
 </div>
 </div>
-<a id="a5f30b066a7e409bc6ea31463cbb4d054"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f30b066a7e409bc6ea31463cbb4d054">&#9670;&nbsp;</a></span>pack() <span class="overload">[51/60]</span></h2>
+<a id="a550b9114292ae7c5d4cf55d95a6a2b4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a550b9114292ae7c5d4cf55d95a6a2b4b">&#9670;&nbsp;</a></span>pack() <span class="overload">[51/60]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Stream , typename K , typename V &gt; </div>
+template&lt;typename Stream , typename K , typename... V&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -2648,7 +2648,7 @@ template&lt;typename Stream , typename K , typename V &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::map&lt; K, V &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::map&lt; K, V... &gt; &amp;&#160;</td>
           <td class="paramname"><em>value</em>, </td>
         </tr>
         <tr>
@@ -3562,54 +3562,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="aa86bff1a762f0cfbf0b793f264d7d68f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa86bff1a762f0cfbf0b793f264d7d68f">&#9670;&nbsp;</a></span>unpack() <span class="overload">[11/58]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Stream &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fc::raw::unpack </td>
-          <td>(</td>
-          <td class="paramtype">Stream &amp;&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classfc_1_1variant__object.html">variant_object</a> &amp;&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>_max_depth</em> = <code><a class="el" href="fc_2include_2fc_2config_8hpp.html#afbd29dd00d5136a6ec9cc7cfdcadc9d0">FC_PACK_MAX_DEPTH</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="raw__variant_8hpp_source.html#l00138">138</a> of file <a class="el" href="raw__variant_8hpp_source.html">raw_variant.hpp</a>.</p>
-
-</div>
-</div>
 <a id="ac8407dd7e8ed69eacc3c2bad4307b4e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8407dd7e8ed69eacc3c2bad4307b4e6">&#9670;&nbsp;</a></span>unpack() <span class="overload">[12/58]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8407dd7e8ed69eacc3c2bad4307b4e6">&#9670;&nbsp;</a></span>unpack() <span class="overload">[11/58]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3655,7 +3609,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a1c1e83f56b73437f7985a75eba1a3bab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c1e83f56b73437f7985a75eba1a3bab">&#9670;&nbsp;</a></span>unpack() <span class="overload">[13/58]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c1e83f56b73437f7985a75eba1a3bab">&#9670;&nbsp;</a></span>unpack() <span class="overload">[12/58]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3697,6 +3651,52 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="sha256_8hpp_source.html#l00082">82</a> of file <a class="el" href="sha256_8hpp_source.html">sha256.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aa86bff1a762f0cfbf0b793f264d7d68f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa86bff1a762f0cfbf0b793f264d7d68f">&#9670;&nbsp;</a></span>unpack() <span class="overload">[13/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Stream &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fc::raw::unpack </td>
+          <td>(</td>
+          <td class="paramtype">Stream &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfc_1_1variant__object.html">variant_object</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>_max_depth</em> = <code><a class="el" href="fc_2include_2fc_2config_8hpp.html#afbd29dd00d5136a6ec9cc7cfdcadc9d0">FC_PACK_MAX_DEPTH</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="raw__variant_8hpp_source.html#l00138">138</a> of file <a class="el" href="raw__variant_8hpp_source.html">raw_variant.hpp</a>.</p>
 
 </div>
 </div>
@@ -3826,7 +3826,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ip_8hpp_source.html#l00108">108</a> of file <a class="el" href="ip_8hpp_source.html">ip.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ip_8hpp_source.html#l00131">131</a> of file <a class="el" href="ip_8hpp_source.html">ip.hpp</a>.</p>
 
 </div>
 </div>
@@ -3864,46 +3864,8 @@ template&lt;typename Stream &gt; </div>
 
 </div>
 </div>
-<a id="ac6c30889642a67c6f39e5eb9afc260bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6c30889642a67c6f39e5eb9afc260bc">&#9670;&nbsp;</a></span>unpack() <span class="overload">[18/58]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Stream &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void fc::raw::unpack </td>
-          <td>(</td>
-          <td class="paramtype">Stream &amp;&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classfc_1_1ip_1_1address.html">ip::address</a> &amp;&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>_max_depth</em> = <code><a class="el" href="fc_2include_2fc_2config_8hpp.html#afbd29dd00d5136a6ec9cc7cfdcadc9d0">FC_PACK_MAX_DEPTH</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ip_8hpp_source.html#l00091">91</a> of file <a class="el" href="ip_8hpp_source.html">ip.hpp</a>.</p>
-
-</div>
-</div>
 <a id="a718e84e4076299a516833eb2f9d0e7ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a718e84e4076299a516833eb2f9d0e7ac">&#9670;&nbsp;</a></span>unpack() <span class="overload">[19/58]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a718e84e4076299a516833eb2f9d0e7ac">&#9670;&nbsp;</a></span>unpack() <span class="overload">[18/58]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3949,7 +3911,7 @@ template&lt;typename Stream &gt; </div>
 </div>
 </div>
 <a id="ac396fcd50877c08a15b240136eac2a7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac396fcd50877c08a15b240136eac2a7b">&#9670;&nbsp;</a></span>unpack() <span class="overload">[20/58]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac396fcd50877c08a15b240136eac2a7b">&#9670;&nbsp;</a></span>unpack() <span class="overload">[19/58]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3995,7 +3957,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a00281c36d307bff0376d5a0475705769"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00281c36d307bff0376d5a0475705769">&#9670;&nbsp;</a></span>unpack() <span class="overload">[21/58]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a00281c36d307bff0376d5a0475705769">&#9670;&nbsp;</a></span>unpack() <span class="overload">[20/58]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4035,6 +3997,52 @@ template&lt;typename Stream &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88a6af6e1d1f60282fd6de9d775fb2c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88a6af6e1d1f60282fd6de9d775fb2c5">&#9670;&nbsp;</a></span>unpack() <span class="overload">[21/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Stream &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fc::raw::unpack </td>
+          <td>(</td>
+          <td class="paramtype">Stream &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfc_1_1time__point__sec.html">fc::time_point_sec</a> &amp;&#160;</td>
+          <td class="paramname"><em>tp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>_max_depth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="raw_8hpp_source.html#l00111">111</a> of file <a class="el" href="raw_8hpp_source.html">raw.hpp</a>.</p>
 
 </div>
 </div>
@@ -4082,54 +4090,8 @@ template&lt;typename Stream &gt; </div>
 
 </div>
 </div>
-<a id="a88a6af6e1d1f60282fd6de9d775fb2c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88a6af6e1d1f60282fd6de9d775fb2c5">&#9670;&nbsp;</a></span>unpack() <span class="overload">[23/58]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Stream &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fc::raw::unpack </td>
-          <td>(</td>
-          <td class="paramtype">Stream &amp;&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classfc_1_1time__point__sec.html">fc::time_point_sec</a> &amp;&#160;</td>
-          <td class="paramname"><em>tp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>_max_depth</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="raw_8hpp_source.html#l00111">111</a> of file <a class="el" href="raw_8hpp_source.html">raw.hpp</a>.</p>
-
-</div>
-</div>
 <a id="a31d1dabb40806af348efd7014aa4ef86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31d1dabb40806af348efd7014aa4ef86">&#9670;&nbsp;</a></span>unpack() <span class="overload">[24/58]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a31d1dabb40806af348efd7014aa4ef86">&#9670;&nbsp;</a></span>unpack() <span class="overload">[23/58]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4169,6 +4131,44 @@ template&lt;typename Stream &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6c30889642a67c6f39e5eb9afc260bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6c30889642a67c6f39e5eb9afc260bc">&#9670;&nbsp;</a></span>unpack() <span class="overload">[24/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Stream &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void fc::raw::unpack </td>
+          <td>(</td>
+          <td class="paramtype">Stream &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfc_1_1ip_1_1address.html">ip::address</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>_max_depth</em> = <code><a class="el" href="fc_2include_2fc_2config_8hpp.html#afbd29dd00d5136a6ec9cc7cfdcadc9d0">FC_PACK_MAX_DEPTH</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ip_8hpp_source.html#l00114">114</a> of file <a class="el" href="ip_8hpp_source.html">ip.hpp</a>.</p>
 
 </div>
 </div>
@@ -5166,13 +5166,13 @@ template&lt;typename Stream , typename K , typename V &gt; </div>
 
 </div>
 </div>
-<a id="af29932d666e605884fc27bbcc6db2179"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af29932d666e605884fc27bbcc6db2179">&#9670;&nbsp;</a></span>unpack() <span class="overload">[48/58]</span></h2>
+<a id="af5e357581e56cc8b3e826ad54e1c0747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5e357581e56cc8b3e826ad54e1c0747">&#9670;&nbsp;</a></span>unpack() <span class="overload">[48/58]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Stream , typename K , typename V &gt; </div>
+template&lt;typename Stream , typename K , typename V , typename... A&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -5186,7 +5186,7 @@ template&lt;typename Stream , typename K , typename V &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; K, V &gt; &amp;&#160;</td>
+          <td class="paramtype">std::map&lt; K, V, A... &gt; &amp;&#160;</td>
           <td class="paramname"><em>value</em>, </td>
         </tr>
         <tr>
@@ -5659,7 +5659,7 @@ template&lt;typename Stream , typename... T&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:56 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:46 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

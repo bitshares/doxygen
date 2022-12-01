@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -131,9 +131,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a385c5434f1c4e271cf812627f9ee759a"><td class="memItemLeft" align="right" valign="top">typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1wallet.html#a385c5434f1c4e271cf812627f9ee759a">graphene::wallet::transaction_handle_type</a></td></tr>
-<tr class="separator:a385c5434f1c4e271cf812627f9ee759a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9716b5e512a47a21832967fc0ced842"><td class="memItemLeft" align="right" valign="top">typedef multi_index_container&lt; blind_receipt, indexed_by&lt; ordered_unique&lt; tag&lt; by_commitment &gt;, const_mem_fun&lt; blind_receipt, const <a class="el" href="namespacefc_1_1ecc.html#a582249fe15693cc9c040286a8ef296f8">commitment_type</a> &amp;, &amp;blind_receipt::commitment &gt; &gt;, ordered_unique&lt; tag&lt; by_to &gt;, const_mem_fun&lt; blind_receipt, std::pair&lt; <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">public_key_type</a>, <a class="el" href="classfc_1_1time__point.html">fc::time_point</a> &gt;, &amp;blind_receipt::to_date &gt; &gt;, ordered_non_unique&lt; tag&lt; by_to_asset_used &gt;, const_mem_fun&lt; blind_receipt, std::tuple&lt; <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">public_key_type</a>, asset_id_type, bool &gt;, &amp;blind_receipt::to_asset_used &gt; &gt;, ordered_unique&lt; tag&lt; by_from &gt;, const_mem_fun&lt; blind_receipt, std::pair&lt; <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">public_key_type</a>, <a class="el" href="classfc_1_1time__point.html">fc::time_point</a> &gt;, &amp;blind_receipt::from_date &gt; &gt; &gt;&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1wallet.html#ad9716b5e512a47a21832967fc0ced842">graphene::wallet::blind_receipt_index_type</a></td></tr>
+<tr class="memitem:aa742c71f07f1fa8b09fe8801b5c5055a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1wallet.html#aa742c71f07f1fa8b09fe8801b5c5055a">graphene::wallet::transaction_handle_type</a> = uint32_t</td></tr>
+<tr class="separator:aa742c71f07f1fa8b09fe8801b5c5055a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9716b5e512a47a21832967fc0ced842"><td class="memItemLeft" align="right" valign="top">typedef multi_index_container&lt; blind_receipt, indexed_by&lt; ordered_unique&lt; tag&lt; by_commitment &gt;, const_mem_fun&lt; blind_receipt, const commitment_type &amp;, &amp;blind_receipt::commitment &gt; &gt;, ordered_unique&lt; tag&lt; by_to &gt;, const_mem_fun&lt; blind_receipt, std::pair&lt; <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">public_key_type</a>, <a class="el" href="classfc_1_1time__point.html">fc::time_point</a> &gt;, &amp;blind_receipt::to_date &gt; &gt;, ordered_non_unique&lt; tag&lt; by_to_asset_used &gt;, const_mem_fun&lt; blind_receipt, std::tuple&lt; <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">public_key_type</a>, asset_id_type, bool &gt;, &amp;blind_receipt::to_asset_used &gt; &gt;, ordered_unique&lt; tag&lt; by_from &gt;, const_mem_fun&lt; blind_receipt, std::pair&lt; <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">public_key_type</a>, <a class="el" href="classfc_1_1time__point.html">fc::time_point</a> &gt;, &amp;blind_receipt::from_date &gt; &gt; &gt;&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1wallet.html#ad9716b5e512a47a21832967fc0ced842">graphene::wallet::blind_receipt_index_type</a></td></tr>
 <tr class="separator:ad9716b5e512a47a21832967fc0ced842"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00d96f68df9fc0364b97a1fdb077045c"><td class="memItemLeft" align="right" valign="top">typedef multi_index_container&lt; key_label, indexed_by&lt; ordered_unique&lt; tag&lt; by_label &gt;, member&lt; key_label, string, &amp;key_label::label &gt; &gt;, ordered_unique&lt; tag&lt; by_key &gt;, member&lt; key_label, <a class="el" href="structgraphene_1_1protocol_1_1public__key__type.html">public_key_type</a>, &amp;key_label::key &gt; &gt; &gt;&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1wallet.html#a00d96f68df9fc0364b97a1fdb077045c">graphene::wallet::key_label_index_type</a></td></tr>
 <tr class="separator:a00d96f68df9fc0364b97a1fdb077045c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,7 +141,7 @@ Typedefs</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:55 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:45 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

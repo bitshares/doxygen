@@ -2,6 +2,7 @@ var searchData=
 [
   ['network_5fbroadcast_5fapi',['network_broadcast_api',['../classgraphene_1_1app_1_1network__broadcast__api.html',1,'graphene::app']]],
   ['network_5fnode_5fapi',['network_node_api',['../classgraphene_1_1app_1_1network__node__api.html',1,'graphene::app']]],
+  ['next_5fobject_5fids_5findex',['next_object_ids_index',['../classgraphene_1_1api__helper__indexes_1_1next__object__ids__index.html',1,'graphene::api_helper_indexes']]],
   ['no_5fparallel_5fexecution_5fguard',['no_parallel_execution_guard',['../classgraphene_1_1net_1_1detail_1_1no__parallel__execution__guard.html',1,'graphene::net::detail']]],
   ['no_5fspecial_5fauthority',['no_special_authority',['../structgraphene_1_1protocol_1_1no__special__authority.html',1,'graphene::protocol']]],
   ['node',['node',['../classgraphene_1_1net_1_1node.html',1,'graphene::net']]],

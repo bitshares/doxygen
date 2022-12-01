@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -75,37 +75,22 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1utilities_1_1_curl_request.html">CurlRequest</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1utilities_1_1curl__wrapper.html">curl_wrapper</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1utilities_1_1_e_s.html">ES</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1utilities_1_1es__client.html">es_client</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraphene_1_1utilities_1_1es__data__adaptor.html">es_data_adaptor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1utilities_1_1padding__ostream.html">padding_ostream</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a344fd9252a509bfe40d5279595174660"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1utilities.html#a344fd9252a509bfe40d5279595174660">checkES</a> (<a class="el" href="classgraphene_1_1utilities_1_1_e_s.html">ES</a> &amp;<a class="el" href="elasticsearch__plugin_8cpp.html#a4f73904522f0f0d1285c448c56552cdf">es</a>)</td></tr>
-<tr class="separator:a344fd9252a509bfe40d5279595174660"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab52d6a4cd60cbe22dc55148f28941ae9"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1utilities.html#ab52d6a4cd60cbe22dc55148f28941ae9">simpleQuery</a> (<a class="el" href="classgraphene_1_1utilities_1_1_e_s.html">ES</a> &amp;<a class="el" href="elasticsearch__plugin_8cpp.html#a4f73904522f0f0d1285c448c56552cdf">es</a>)</td></tr>
-<tr class="separator:ab52d6a4cd60cbe22dc55148f28941ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad979680c6278d161e1273f0ade452551"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1utilities.html#ad979680c6278d161e1273f0ade452551">SendBulk</a> (<a class="el" href="classgraphene_1_1utilities_1_1_e_s.html">ES</a> &amp;&amp;<a class="el" href="elasticsearch__plugin_8cpp.html#a4f73904522f0f0d1285c448c56552cdf">es</a>)</td></tr>
-<tr class="separator:ad979680c6278d161e1273f0ade452551"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac351ff97ae9fa3896b62edf737efda13"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1utilities.html#ac351ff97ae9fa3896b62edf737efda13">joinBulkLines</a> (const std::vector&lt; std::string &gt; &amp;bulk)</td></tr>
-<tr class="separator:ac351ff97ae9fa3896b62edf737efda13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a4654603153b4d5898a32c1debab131"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1utilities.html#a1a4654603153b4d5898a32c1debab131">getResponseCode</a> (CURL *handler)</td></tr>
-<tr class="separator:a1a4654603153b4d5898a32c1debab131"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1e0a5db1e9d97647d405d272f9ba015"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1utilities.html#ac1e0a5db1e9d97647d405d272f9ba015">handleBulkResponse</a> (long http_code, const std::string &amp;CurlReadBuffer)</td></tr>
-<tr class="separator:ac1e0a5db1e9d97647d405d272f9ba015"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afaa7ede46f3e4e7293c94bea00121ed9"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1utilities.html#afaa7ede46f3e4e7293c94bea00121ed9">createBulk</a> (const <a class="el" href="classfc_1_1mutable__variant__object.html">fc::mutable_variant_object</a> &amp;bulk_header, std::string &amp;&amp;data)</td></tr>
-<tr class="separator:afaa7ede46f3e4e7293c94bea00121ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8838f6e46f53ced3a25bad077df72146"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1utilities.html#a8838f6e46f53ced3a25bad077df72146">deleteAll</a> (<a class="el" href="classgraphene_1_1utilities_1_1_e_s.html">ES</a> &amp;<a class="el" href="elasticsearch__plugin_8cpp.html#a4f73904522f0f0d1285c448c56552cdf">es</a>)</td></tr>
-<tr class="separator:a8838f6e46f53ced3a25bad077df72146"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5df9c27edc8f6f4a42ed57d9740eb24c"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1utilities.html#a5df9c27edc8f6f4a42ed57d9740eb24c">getEndPoint</a> (<a class="el" href="classgraphene_1_1utilities_1_1_e_s.html">ES</a> &amp;<a class="el" href="elasticsearch__plugin_8cpp.html#a4f73904522f0f0d1285c448c56552cdf">es</a>)</td></tr>
-<tr class="separator:a5df9c27edc8f6f4a42ed57d9740eb24c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21890442aceec251bb81143af7d13385"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1utilities.html#a21890442aceec251bb81143af7d13385">generateIndexName</a> (const <a class="el" href="classfc_1_1time__point__sec.html">fc::time_point_sec</a> &amp;block_date, const std::string &amp;_elasticsearch_index_prefix)</td></tr>
-<tr class="separator:a21890442aceec251bb81143af7d13385"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c2bf8b3151c59bccb60621d753d86a1"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1utilities.html#a2c2bf8b3151c59bccb60621d753d86a1">doCurl</a> (<a class="el" href="classgraphene_1_1utilities_1_1_curl_request.html">CurlRequest</a> &amp;curl)</td></tr>
-<tr class="separator:a2c2bf8b3151c59bccb60621d753d86a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbb8c9cf86f637a5b99e7a19a764b2a6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1utilities.html#adbb8c9cf86f637a5b99e7a19a764b2a6">createBulk</a> (const <a class="el" href="classfc_1_1mutable__variant__object.html">fc::mutable_variant_object</a> &amp;bulk_header, std::string &amp;&amp;data)</td></tr>
+<tr class="separator:adbb8c9cf86f637a5b99e7a19a764b2a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac124673ffe94cef23f313045010aeacb"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac124673ffe94cef23f313045010aeacb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1utilities.html#ac124673ffe94cef23f313045010aeacb">get_program_option</a> (const boost::program_options::variables_map &amp;from, const std::string &amp;key, T &amp;to)</td></tr>
+<tr class="separator:ac124673ffe94cef23f313045010aeacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33f09d0c0f741c8375082b6932bcdc58"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1utilities.html#a33f09d0c0f741c8375082b6932bcdc58">key_to_wif</a> (const <a class="el" href="classfc_1_1sha256.html">fc::sha256</a> &amp;private_secret)</td></tr>
 <tr class="separator:a33f09d0c0f741c8375082b6932bcdc58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01120dd3238ef646221bba49465a8acc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphene_1_1utilities.html#a01120dd3238ef646221bba49465a8acc">key_to_wif</a> (const <a class="el" href="classfc_1_1ecc_1_1private__key.html">fc::ecc::private_key</a> &amp;key)</td></tr>
@@ -127,34 +112,14 @@ Variables</h2></td></tr>
 <tr class="separator:a64ad8e1791fa4c7e0a6a803505467ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a344fd9252a509bfe40d5279595174660"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a344fd9252a509bfe40d5279595174660">&#9670;&nbsp;</a></span>checkES()</h2>
+<a id="adbb8c9cf86f637a5b99e7a19a764b2a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbb8c9cf86f637a5b99e7a19a764b2a6">&#9670;&nbsp;</a></span>createBulk()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool graphene::utilities::checkES </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classgraphene_1_1utilities_1_1_e_s.html">ES</a> &amp;&#160;</td>
-          <td class="paramname"><em>es</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="elasticsearch_8cpp_source.html#l00039">39</a> of file <a class="el" href="elasticsearch_8cpp_source.html">elasticsearch.cpp</a>.</p>
-
-</div>
-</div>
-<a id="afaa7ede46f3e4e7293c94bea00121ed9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afaa7ede46f3e4e7293c94bea00121ed9">&#9670;&nbsp;</a></span>createBulk()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::vector&lt; std::string &gt; graphene::utilities::createBulk </td>
+          <td class="memname">std::vector&lt; std::string &gt; graphene::utilities::createBulk </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classfc_1_1mutable__variant__object.html">fc::mutable_variant_object</a> &amp;&#160;</td>
           <td class="paramname"><em>bulk_header</em>, </td>
@@ -173,47 +138,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="elasticsearch_8cpp_source.html#l00122">122</a> of file <a class="el" href="elasticsearch_8cpp_source.html">elasticsearch.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a8838f6e46f53ced3a25bad077df72146"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8838f6e46f53ced3a25bad077df72146">&#9670;&nbsp;</a></span>deleteAll()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool graphene::utilities::deleteAll </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classgraphene_1_1utilities_1_1_e_s.html">ES</a> &amp;&#160;</td>
-          <td class="paramname"><em>es</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="elasticsearch_8cpp_source.html#l00133">133</a> of file <a class="el" href="elasticsearch_8cpp_source.html">elasticsearch.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a2c2bf8b3151c59bccb60621d753d86a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c2bf8b3151c59bccb60621d753d86a1">&#9670;&nbsp;</a></span>doCurl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::string graphene::utilities::doCurl </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classgraphene_1_1utilities_1_1_curl_request.html">CurlRequest</a> &amp;&#160;</td>
-          <td class="paramname"><em>curl</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="elasticsearch_8cpp_source.html#l00167">167</a> of file <a class="el" href="elasticsearch_8cpp_source.html">elasticsearch.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elasticsearch_8cpp_source.html#l00069">69</a> of file <a class="el" href="elasticsearch_8cpp_source.html">elasticsearch.cpp</a>.</p>
 
 </div>
 </div>
@@ -237,23 +162,31 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a21890442aceec251bb81143af7d13385"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21890442aceec251bb81143af7d13385">&#9670;&nbsp;</a></span>generateIndexName()</h2>
+<a id="ac124673ffe94cef23f313045010aeacb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac124673ffe94cef23f313045010aeacb">&#9670;&nbsp;</a></span>get_program_option()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const std::string graphene::utilities::generateIndexName </td>
+          <td class="memname">void graphene::utilities::get_program_option </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classfc_1_1time__point__sec.html">fc::time_point_sec</a> &amp;&#160;</td>
-          <td class="paramname"><em>block_date</em>, </td>
+          <td class="paramtype">const boost::program_options::variables_map &amp;&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>_elasticsearch_index_prefix</em>&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -263,97 +196,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="elasticsearch_8cpp_source.html#l00158">158</a> of file <a class="el" href="elasticsearch_8cpp_source.html">elasticsearch.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a5df9c27edc8f6f4a42ed57d9740eb24c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5df9c27edc8f6f4a42ed57d9740eb24c">&#9670;&nbsp;</a></span>getEndPoint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::string graphene::utilities::getEndPoint </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classgraphene_1_1utilities_1_1_e_s.html">ES</a> &amp;&#160;</td>
-          <td class="paramname"><em>es</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="elasticsearch_8cpp_source.html#l00147">147</a> of file <a class="el" href="elasticsearch_8cpp_source.html">elasticsearch.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a1a4654603153b4d5898a32c1debab131"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a4654603153b4d5898a32c1debab131">&#9670;&nbsp;</a></span>getResponseCode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">long graphene::utilities::getResponseCode </td>
-          <td>(</td>
-          <td class="paramtype">CURL *&#160;</td>
-          <td class="paramname"><em>handler</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="elasticsearch_8cpp_source.html#l00089">89</a> of file <a class="el" href="elasticsearch_8cpp_source.html">elasticsearch.cpp</a>.</p>
-
-</div>
-</div>
-<a id="ac1e0a5db1e9d97647d405d272f9ba015"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1e0a5db1e9d97647d405d272f9ba015">&#9670;&nbsp;</a></span>handleBulkResponse()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool graphene::utilities::handleBulkResponse </td>
-          <td>(</td>
-          <td class="paramtype">long&#160;</td>
-          <td class="paramname"><em>http_code</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>CurlReadBuffer</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="elasticsearch_8cpp_source.html#l00096">96</a> of file <a class="el" href="elasticsearch_8cpp_source.html">elasticsearch.cpp</a>.</p>
-
-</div>
-</div>
-<a id="ac351ff97ae9fa3896b62edf737efda13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac351ff97ae9fa3896b62edf737efda13">&#9670;&nbsp;</a></span>joinBulkLines()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::string graphene::utilities::joinBulkLines </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
-          <td class="paramname"><em>bulk</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="elasticsearch_8cpp_source.html#l00082">82</a> of file <a class="el" href="elasticsearch_8cpp_source.html">elasticsearch.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boost__program__options_8hpp_source.html#l00030">30</a> of file <a class="el" href="boost__program__options_8hpp_source.html">boost_program_options.hpp</a>.</p>
 
 </div>
 </div>
@@ -394,46 +237,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="key__conversion_8cpp_source.html#l00042">42</a> of file <a class="el" href="key__conversion_8cpp_source.html">key_conversion.cpp</a>.</p>
-
-</div>
-</div>
-<a id="ad979680c6278d161e1273f0ade452551"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad979680c6278d161e1273f0ade452551">&#9670;&nbsp;</a></span>SendBulk()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool graphene::utilities::SendBulk </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classgraphene_1_1utilities_1_1_e_s.html">ES</a> &amp;&amp;&#160;</td>
-          <td class="paramname"><em>es</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="elasticsearch_8cpp_source.html#l00064">64</a> of file <a class="el" href="elasticsearch_8cpp_source.html">elasticsearch.cpp</a>.</p>
-
-</div>
-</div>
-<a id="ab52d6a4cd60cbe22dc55148f28941ae9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab52d6a4cd60cbe22dc55148f28941ae9">&#9670;&nbsp;</a></span>simpleQuery()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::string graphene::utilities::simpleQuery </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classgraphene_1_1utilities_1_1_e_s.html">ES</a> &amp;&#160;</td>
-          <td class="paramname"><em>es</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="elasticsearch_8cpp_source.html#l00052">52</a> of file <a class="el" href="elasticsearch_8cpp_source.html">elasticsearch.cpp</a>.</p>
 
 </div>
 </div>
@@ -522,7 +325,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:59 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:48 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

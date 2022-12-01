@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -68,7 +68,6 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classgraphene_1_1chain_1_1asset__object-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">graphene::chain::asset_object Class Reference</div>  </div>
@@ -85,9 +84,10 @@ Inheritance diagram for graphene::chain::asset_object:</div>
  <div class="center">
   <img src="classgraphene_1_1chain_1_1asset__object.png" usemap="#graphene::chain::asset_5Fobject_map" alt=""/>
   <map id="graphene::chain::asset_5Fobject_map" name="graphene::chain::asset_5Fobject_map">
-<area href="classgraphene_1_1db_1_1abstract__object.html" alt="graphene::db::abstract_object&lt; asset_object &gt;" shape="rect" coords="0,56,272,80"/>
-<area href="classgraphene_1_1db_1_1object.html" title="base for all database objects " alt="graphene::db::object" shape="rect" coords="0,0,272,24"/>
-<area href="structgraphene_1_1app_1_1extended__asset__object.html" alt="graphene::app::extended_asset_object" shape="rect" coords="0,168,272,192"/>
+<area href="classgraphene_1_1db_1_1abstract__object.html" alt="graphene::db::abstract_object&lt; asset_object, protocol_ids, asset_object_type &gt;" shape="rect" coords="0,112,460,136"/>
+<area href="classgraphene_1_1db_1_1base__abstract__object.html" alt="graphene::db::base_abstract_object&lt; asset_object &gt;" shape="rect" coords="0,56,460,80"/>
+<area href="classgraphene_1_1db_1_1object.html" title="base for all database objects " alt="graphene::db::object" shape="rect" coords="0,0,460,24"/>
+<area href="structgraphene_1_1app_1_1extended__asset__object.html" alt="graphene::app::extended_asset_object" shape="rect" coords="0,224,460,248"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -140,8 +140,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0118c84ac2a7856e191d6c09ff2a3715"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1asset__object.html#a0118c84ac2a7856e191d6c09ff2a3715">amount_to_pretty_string</a> (const <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &amp;<a class="el" href="classgraphene_1_1chain_1_1asset__object.html#acb60f1912e9463316ae5c1577cafdaa5">amount</a>) const</td></tr>
 <tr class="memdesc:a0118c84ac2a7856e191d6c09ff2a3715"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an asset to a textual representation with symbol, i.e. "123.45 USD".  <a href="#a0118c84ac2a7856e191d6c09ff2a3715">More...</a><br /></td></tr>
 <tr class="separator:a0118c84ac2a7856e191d6c09ff2a3715"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14bea5d61d935e4f4890df38cde0e295"><td class="memItemLeft" align="right" valign="top">asset_id_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1asset__object.html#a14bea5d61d935e4f4890df38cde0e295">get_id</a> () const</td></tr>
-<tr class="separator:a14bea5d61d935e4f4890df38cde0e295"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7756248ee88ce97490c4261c7e1b75c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1asset__object.html#aa7756248ee88ce97490c4261c7e1b75c">validate</a> () const</td></tr>
 <tr class="separator:aa7756248ee88ce97490c4261c7e1b75c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92611ccbf1c28aef5649a96ec8c5b712"><td class="memTemplParams" colspan="2">template&lt;class DB &gt; </td></tr>
@@ -159,21 +157,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae3de155b1a09eff55855baf137b6386f"><td class="memTemplParams" colspan="2">template&lt;class DB &gt; </td></tr>
 <tr class="memitem:ae3de155b1a09eff55855baf137b6386f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1asset__object.html#ae3de155b1a09eff55855baf137b6386f">accumulate_fee</a> (DB &amp;db, const <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &amp;fee) const</td></tr>
 <tr class="separator:ae3de155b1a09eff55855baf137b6386f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classgraphene_1_1db_1_1abstract__object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgraphene_1_1db_1_1abstract__object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classgraphene_1_1db_1_1abstract__object.html">graphene::db::abstract_object&lt; asset_object &gt;</a></td></tr>
-<tr class="memitem:a189144fd7eef0317898bc83b30b143c6 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memItemLeft" align="right" valign="top">virtual unique_ptr&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html#a189144fd7eef0317898bc83b30b143c6">clone</a> () const</td></tr>
-<tr class="memdesc:a189144fd7eef0317898bc83b30b143c6 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">these methods are implemented for derived classes by inheriting abstract_object&lt;DerivedClass&gt;  <a href="classgraphene_1_1db_1_1abstract__object.html#a189144fd7eef0317898bc83b30b143c6">More...</a><br /></td></tr>
-<tr class="separator:a189144fd7eef0317898bc83b30b143c6 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7329292e8fa9035cf2596d72c4868b5 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html#ad7329292e8fa9035cf2596d72c4868b5">move_from</a> (<a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj)</td></tr>
-<tr class="separator:ad7329292e8fa9035cf2596d72c4868b5 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f0f2e9eb0399057ff3334bf328b5007 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfc_1_1variant.html">variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html#a6f0f2e9eb0399057ff3334bf328b5007">to_variant</a> () const</td></tr>
-<tr class="separator:a6f0f2e9eb0399057ff3334bf328b5007 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a792a9c05cfe1cf7628cb6f8c4a65b0f7 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memItemLeft" align="right" valign="top">virtual vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html#a792a9c05cfe1cf7628cb6f8c4a65b0f7">pack</a> () const</td></tr>
-<tr class="separator:a792a9c05cfe1cf7628cb6f8c4a65b0f7 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classgraphene_1_1db_1_1abstract__object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgraphene_1_1db_1_1abstract__object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classgraphene_1_1db_1_1abstract__object.html">graphene::db::abstract_object&lt; asset_object, protocol_ids, asset_object_type &gt;</a></td></tr>
+<tr class="memitem:a62b6a9a9290a38dc05763d920186872c inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html#a62b6a9a9290a38dc05763d920186872c">abstract_object</a> ()</td></tr>
+<tr class="separator:a62b6a9a9290a38dc05763d920186872c inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdd95dc811d3bf7dbdc9aa0251129f81 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1db_1_1object__id.html">object_id</a>&lt; SpaceID, TypeID &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html#abdd95dc811d3bf7dbdc9aa0251129f81">get_id</a> () const</td></tr>
+<tr class="separator:abdd95dc811d3bf7dbdc9aa0251129f81 inherit pub_methods_classgraphene_1_1db_1_1abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classgraphene_1_1db_1_1base__abstract__object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgraphene_1_1db_1_1base__abstract__object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classgraphene_1_1db_1_1base__abstract__object.html">graphene::db::base_abstract_object&lt; asset_object &gt;</a></td></tr>
+<tr class="memitem:af3a4c0e78138f72a0e5fd120f4105488 inherit pub_methods_classgraphene_1_1db_1_1base__abstract__object"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__abstract__object.html#af3a4c0e78138f72a0e5fd120f4105488">clone</a> () const override</td></tr>
+<tr class="separator:af3a4c0e78138f72a0e5fd120f4105488 inherit pub_methods_classgraphene_1_1db_1_1base__abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae411f8719b1a5d32781c71a06c2b9386 inherit pub_methods_classgraphene_1_1db_1_1base__abstract__object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__abstract__object.html#ae411f8719b1a5d32781c71a06c2b9386">move_from</a> (<a class="el" href="classgraphene_1_1db_1_1object.html">object</a> &amp;obj) override</td></tr>
+<tr class="separator:ae411f8719b1a5d32781c71a06c2b9386 inherit pub_methods_classgraphene_1_1db_1_1base__abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd7f3ea796b0f3ec9b4899b3e33e4b2 inherit pub_methods_classgraphene_1_1db_1_1base__abstract__object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1variant.html">fc::variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__abstract__object.html#a7dd7f3ea796b0f3ec9b4899b3e33e4b2">to_variant</a> () const override</td></tr>
+<tr class="separator:a7dd7f3ea796b0f3ec9b4899b3e33e4b2 inherit pub_methods_classgraphene_1_1db_1_1base__abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba1e81bf5d130ad4f61cc95c8c9861f inherit pub_methods_classgraphene_1_1db_1_1base__abstract__object"><td class="memItemLeft" align="right" valign="top">std::vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1base__abstract__object.html#a9ba1e81bf5d130ad4f61cc95c8c9861f">pack</a> () const override</td></tr>
+<tr class="separator:a9ba1e81bf5d130ad4f61cc95c8c9861f inherit pub_methods_classgraphene_1_1db_1_1base__abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classgraphene_1_1db_1_1object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgraphene_1_1db_1_1object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classgraphene_1_1db_1_1object.html">graphene::db::object</a></td></tr>
-<tr class="memitem:a64864992a46d9d52836afe1a52a2e394 inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#a64864992a46d9d52836afe1a52a2e394">object</a> ()</td></tr>
-<tr class="separator:a64864992a46d9d52836afe1a52a2e394 inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac457a859418c22014c07a3bcdc67ed04 inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#ac457a859418c22014c07a3bcdc67ed04">~object</a> ()</td></tr>
-<tr class="separator:ac457a859418c22014c07a3bcdc67ed04 inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57a6f64a9444b2f0fa0c937be480f54 inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#ae57a6f64a9444b2f0fa0c937be480f54">object</a> ()=default</td></tr>
+<tr class="separator:ae57a6f64a9444b2f0fa0c937be480f54 inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6d16d10de6c2e780d62918a458276f inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#abc6d16d10de6c2e780d62918a458276f">object</a> (uint8_t space_id, uint8_t type_id)</td></tr>
+<tr class="separator:abc6d16d10de6c2e780d62918a458276f inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f3fa315d81c80cd93cf5ea2853e65f inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#ae8f3fa315d81c80cd93cf5ea2853e65f">~object</a> ()=default</td></tr>
+<tr class="separator:ae8f3fa315d81c80cd93cf5ea2853e65f inherit pub_methods_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -196,30 +200,37 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a85367857043568d480de982ae1b6518c"><td class="memItemLeft" align="right" valign="top">asset_dynamic_data_id_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1asset__object.html#a85367857043568d480de982ae1b6518c">dynamic_asset_data_id</a></td></tr>
 <tr class="memdesc:a85367857043568d480de982ae1b6518c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current supply, fee pool, and collected fees are stored in a separate object as they change frequently.  <a href="#a85367857043568d480de982ae1b6518c">More...</a><br /></td></tr>
 <tr class="separator:a85367857043568d480de982ae1b6518c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a69d1ef467d5eb7163fb4c301937066"><td class="memItemLeft" align="right" valign="top">optional&lt; asset_bitasset_data_id_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1asset__object.html#a5a69d1ef467d5eb7163fb4c301937066">bitasset_data_id</a></td></tr>
+<tr class="memitem:a5a69d1ef467d5eb7163fb4c301937066"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1optional.html">optional</a>&lt; asset_bitasset_data_id_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1asset__object.html#a5a69d1ef467d5eb7163fb4c301937066">bitasset_data_id</a></td></tr>
 <tr class="memdesc:a5a69d1ef467d5eb7163fb4c301937066"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extra data associated with BitAssets. This field is non-null if and only if <a class="el" href="classgraphene_1_1chain_1_1asset__object.html#a5cd681e6cc216f87d99f60c1de63eba8">is_market_issued()</a> returns true.  <a href="#a5a69d1ef467d5eb7163fb4c301937066">More...</a><br /></td></tr>
 <tr class="separator:a5a69d1ef467d5eb7163fb4c301937066"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57ff2c36a04a2123d1dad48ea76049bc"><td class="memItemLeft" align="right" valign="top">optional&lt; account_id_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1asset__object.html#a57ff2c36a04a2123d1dad48ea76049bc">buyback_account</a></td></tr>
+<tr class="memitem:a57ff2c36a04a2123d1dad48ea76049bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1optional.html">optional</a>&lt; account_id_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1asset__object.html#a57ff2c36a04a2123d1dad48ea76049bc">buyback_account</a></td></tr>
 <tr class="separator:a57ff2c36a04a2123d1dad48ea76049bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a179fd11dac23e45085e27cca5ec8e794"><td class="memItemLeft" align="right" valign="top">optional&lt; liquidity_pool_id_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1asset__object.html#a179fd11dac23e45085e27cca5ec8e794">for_liquidity_pool</a></td></tr>
+<tr class="memitem:a179fd11dac23e45085e27cca5ec8e794"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1optional.html">optional</a>&lt; liquidity_pool_id_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1asset__object.html#a179fd11dac23e45085e27cca5ec8e794">for_liquidity_pool</a></td></tr>
 <tr class="memdesc:a179fd11dac23e45085e27cca5ec8e794"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ID of the liquidity pool if the asset is the share asset of a liquidity pool.  <a href="#a179fd11dac23e45085e27cca5ec8e794">More...</a><br /></td></tr>
 <tr class="separator:a179fd11dac23e45085e27cca5ec8e794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e4725c3ac6301c74e85e63d4f21e818"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1asset__object.html#a6e4725c3ac6301c74e85e63d4f21e818">creation_block_num</a> = 0</td></tr>
+<tr class="memdesc:a6e4725c3ac6301c74e85e63d4f21e818"><td class="mdescLeft">&#160;</td><td class="mdescRight">The block number when the asset object was created.  <a href="#a6e4725c3ac6301c74e85e63d4f21e818">More...</a><br /></td></tr>
+<tr class="separator:a6e4725c3ac6301c74e85e63d4f21e818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea9eddf02cd2496702bb55cf9b163e74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1time__point__sec.html">time_point_sec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1asset__object.html#aea9eddf02cd2496702bb55cf9b163e74">creation_time</a></td></tr>
+<tr class="memdesc:aea9eddf02cd2496702bb55cf9b163e74"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time when the asset object was created.  <a href="#aea9eddf02cd2496702bb55cf9b163e74">More...</a><br /></td></tr>
+<tr class="separator:aea9eddf02cd2496702bb55cf9b163e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classgraphene_1_1db_1_1object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classgraphene_1_1db_1_1object')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classgraphene_1_1db_1_1object.html">graphene::db::object</a></td></tr>
 <tr class="memitem:a2ce812569d565a45dda1420cfbdf79ad inherit pub_attribs_classgraphene_1_1db_1_1object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1db_1_1object__id__type.html">object_id_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1object.html#a2ce812569d565a45dda1420cfbdf79ad">id</a></td></tr>
 <tr class="separator:a2ce812569d565a45dda1420cfbdf79ad inherit pub_attribs_classgraphene_1_1db_1_1object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:add8ca6d9e7e0468d2fac122e32a9601e"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1asset__object.html#add8ca6d9e7e0468d2fac122e32a9601e">space_id</a> = protocol_ids</td></tr>
-<tr class="separator:add8ca6d9e7e0468d2fac122e32a9601e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b28040667050c6a0c1db5b647bcbc73"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1chain_1_1asset__object.html#a6b28040667050c6a0c1db5b647bcbc73">type_id</a> = asset_object_type</td></tr>
-<tr class="separator:a6b28040667050c6a0c1db5b647bcbc73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_attribs_classgraphene_1_1db_1_1abstract__object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classgraphene_1_1db_1_1abstract__object')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classgraphene_1_1db_1_1abstract__object.html">graphene::db::abstract_object&lt; asset_object, protocol_ids, asset_object_type &gt;</a></td></tr>
+<tr class="memitem:afb1fe30941a4e9e6d3ca3f4a55c9e59b inherit pub_static_attribs_classgraphene_1_1db_1_1abstract__object"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html#afb1fe30941a4e9e6d3ca3f4a55c9e59b">space_id</a></td></tr>
+<tr class="separator:afb1fe30941a4e9e6d3ca3f4a55c9e59b inherit pub_static_attribs_classgraphene_1_1db_1_1abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3d8c613dd39c1b04abfb7ac758246e6 inherit pub_static_attribs_classgraphene_1_1db_1_1abstract__object"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1db_1_1abstract__object.html#ab3d8c613dd39c1b04abfb7ac758246e6">type_id</a></td></tr>
+<tr class="separator:ab3d8c613dd39c1b04abfb7ac758246e6 inherit pub_static_attribs_classgraphene_1_1db_1_1abstract__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>tracks the parameters of an asset</p>
 <p>All assets have a globally unique symbol name that controls how they are traded and an issuer who has authority over the parameters of the asset. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00077">77</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00075">75</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae3de155b1a09eff55855baf137b6386f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae3de155b1a09eff55855baf137b6386f">&#9670;&nbsp;</a></span>accumulate_fee()</h2>
@@ -257,7 +268,7 @@ template&lt;class DB &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00204">204</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00201">201</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -284,7 +295,7 @@ template&lt;class DB &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00101">101</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00096">96</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -314,7 +325,7 @@ template&lt;class DB &gt; </div>
 
 <p>Helper function to get an asset object with the given amount in this asset's type. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00119">119</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00114">114</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -365,7 +376,7 @@ template&lt;class DB &gt; </div>
 
 <p>Convert an asset to a textual representation with symbol, i.e. "123.45 USD". </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00129">129</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00124">124</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -395,7 +406,7 @@ template&lt;class DB &gt; </div>
 
 <p>Convert an asset to a textual representation with symbol, i.e. "123.45 USD". </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00132">132</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00127">127</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -447,7 +458,7 @@ template&lt;class DB &gt; </div>
 
 <p>Convert an asset to a textual representation, i.e. "123.45". </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00126">126</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00121">121</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -477,7 +488,7 @@ template&lt;class DB &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00169">169</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00166">166</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -518,7 +529,7 @@ template&lt;class DB &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true if asset can accumulate fees in the given denomination </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00190">190</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00187">187</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -546,7 +557,7 @@ template&lt;class DB &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true if can bid collateral for the asset </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00116">116</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00111">111</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -574,7 +585,7 @@ template&lt;class DB &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true if can create new supply for the asset </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00106">106</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00101">101</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -602,7 +613,7 @@ template&lt;class DB &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true if users may request force-settlement of this market-issued asset; false otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00093">93</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00088">88</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -630,7 +641,7 @@ template&lt;class DB &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true if the issuer of this market-issued asset may globally settle the asset; false otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00095">95</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00090">90</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -657,7 +668,7 @@ template&lt;class DB &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00100">100</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00095">95</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -685,7 +696,7 @@ template&lt;class DB &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true if the asset owner can change black swan response method </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00114">114</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00109">109</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -713,7 +724,7 @@ template&lt;class DB &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true if the asset owner can update ICR directly </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00110">110</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00105">105</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -741,7 +752,7 @@ template&lt;class DB &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true if the asset owner can update MCR directly </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00108">108</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00103">103</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -769,7 +780,7 @@ template&lt;class DB &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true if the asset owner can update MSSR directly </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00112">112</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00107">107</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -797,7 +808,7 @@ template&lt;class DB &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true if max supply of the asset can be updated </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00104">104</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00099">99</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -825,7 +836,7 @@ template&lt;class DB &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true if this asset charges a fee for the issuer on market operations; false otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00097">97</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00092">92</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -855,34 +866,7 @@ template&lt;class DB &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00178">178</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a14bea5d61d935e4f4890df38cde0e295"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14bea5d61d935e4f4890df38cde0e295">&#9670;&nbsp;</a></span>get_id()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">asset_id_type graphene::chain::asset_object::get_id </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00155">155</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00175">175</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -910,7 +894,7 @@ template&lt;class DB &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true if this is a share asset of a liquidity pool; false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00091">91</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00086">86</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -938,7 +922,7 @@ template&lt;class DB &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true if this is a market-issued asset; false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00089">89</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00084">84</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -966,7 +950,7 @@ template&lt;class DB &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>true if this asset may only be transferred to/from the issuer or market orders </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00099">99</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00094">94</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -1024,7 +1008,7 @@ template&lt;class DB &gt; </div>
 </div><div class="memdoc">
 <p>The total amount of an asset that is reserved for future issuance. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00185">185</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00182">182</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -1051,7 +1035,7 @@ template&lt;class DB &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00157">157</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00154">154</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -1063,14 +1047,14 @@ template&lt;class DB &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">optional&lt;asset_bitasset_data_id_type&gt; graphene::chain::asset_object::bitasset_data_id</td>
+          <td class="memname"><a class="el" href="classfc_1_1optional.html">optional</a>&lt;asset_bitasset_data_id_type&gt; graphene::chain::asset_object::bitasset_data_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Extra data associated with BitAssets. This field is non-null if and only if <a class="el" href="classgraphene_1_1chain_1_1asset__object.html#a5cd681e6cc216f87d99f60c1de63eba8">is_market_issued()</a> returns true. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00148">148</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00142">142</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -1081,12 +1065,48 @@ template&lt;class DB &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">optional&lt;account_id_type&gt; graphene::chain::asset_object::buyback_account</td>
+          <td class="memname"><a class="el" href="classfc_1_1optional.html">optional</a>&lt;account_id_type&gt; graphene::chain::asset_object::buyback_account</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00144">144</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a6e4725c3ac6301c74e85e63d4f21e818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e4725c3ac6301c74e85e63d4f21e818">&#9670;&nbsp;</a></span>creation_block_num</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t graphene::chain::asset_object::creation_block_num = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The block number when the asset object was created. </p>
+
 <p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00150">150</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aea9eddf02cd2496702bb55cf9b163e74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea9eddf02cd2496702bb55cf9b163e74">&#9670;&nbsp;</a></span>creation_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfc_1_1time__point__sec.html">time_point_sec</a> graphene::chain::asset_object::creation_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The time when the asset object was created. </p>
+
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00152">152</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -1104,7 +1124,7 @@ template&lt;class DB &gt; </div>
 
 <p>Current supply, fee pool, and collected fees are stored in a separate object as they change frequently. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00146">146</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00140">140</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -1115,14 +1135,14 @@ template&lt;class DB &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">optional&lt;liquidity_pool_id_type&gt; graphene::chain::asset_object::for_liquidity_pool</td>
+          <td class="memname"><a class="el" href="classfc_1_1optional.html">optional</a>&lt;liquidity_pool_id_type&gt; graphene::chain::asset_object::for_liquidity_pool</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>The ID of the liquidity pool if the asset is the share asset of a liquidity pool. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00153">153</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00147">147</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -1140,7 +1160,7 @@ template&lt;class DB &gt; </div>
 
 <p>ID of the account which issued this asset. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00140">140</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00135">135</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -1156,7 +1176,7 @@ template&lt;class DB &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00142">142</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00137">137</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -1174,31 +1194,7 @@ template&lt;class DB &gt; </div>
 
 <p>Maximum number of digits after the decimal point (must be &lt;= 12) </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00138">138</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
-
-</div>
-</div>
-<a id="add8ca6d9e7e0468d2fac122e32a9601e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add8ca6d9e7e0468d2fac122e32a9601e">&#9670;&nbsp;</a></span>space_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr uint8_t graphene::chain::asset_object::space_id = protocol_ids</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00080">80</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00133">133</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -1216,31 +1212,7 @@ template&lt;class DB &gt; </div>
 
 <p>Ticker symbol for this asset, i.e. "USD". </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00136">136</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a6b28040667050c6a0c1db5b647bcbc73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b28040667050c6a0c1db5b647bcbc73">&#9670;&nbsp;</a></span>type_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr uint8_t graphene::chain::asset_object::type_id = asset_object_type</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00081">81</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__object_8hpp_source.html#l00131">131</a> of file <a class="el" href="asset__object_8hpp_source.html">asset_object.hpp</a>.</p>
 
 </div>
 </div>
@@ -1251,7 +1223,7 @@ template&lt;class DB &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:57 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:46 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

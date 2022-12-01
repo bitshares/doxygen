@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BitShares-Core
-   &#160;<span id="projectnumber">6.0.1</span>
+   &#160;<span id="projectnumber">6.1.0</span>
    </div>
    <div id="projectbrief">BitShares blockchain implementation and command-line interface software</div>
   </td>
@@ -80,6 +80,7 @@ Inheritance diagram for graphene::app::database_api_impl:</div>
  <div class="center">
   <img src="classgraphene_1_1app_1_1database__api__impl.png" usemap="#graphene::app::database_5Fapi_5Fimpl_map" alt=""/>
   <map id="graphene::app::database_5Fapi_5Fimpl_map" name="graphene::app::database_5Fapi_5Fimpl_map">
+<area href="classgraphene_1_1app_1_1database__api__helper.html" alt="graphene::app::database_api_helper" shape="rect" coords="314,0,618,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -101,10 +102,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aaa7ad36ef0da4021fc4dea51449014bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10a111caefade7a34e2561598a19e4e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a10a111caefade7a34e2561598a19e4e7">cancel_all_subscriptions</a> (bool reset_callback, bool reset_market_subscriptions)</td></tr>
 <tr class="separator:a10a111caefade7a34e2561598a19e4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1904524494af58def0aadbb5dd3d472e"><td class="memItemLeft" align="right" valign="top">optional&lt; <a class="el" href="classgraphene_1_1protocol_1_1block__header.html">block_header</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a1904524494af58def0aadbb5dd3d472e">get_block_header</a> (uint32_t block_num) const</td></tr>
-<tr class="separator:a1904524494af58def0aadbb5dd3d472e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb1446219a34d5f1a821b96bf6323541"><td class="memItemLeft" align="right" valign="top">map&lt; uint32_t, optional&lt; <a class="el" href="classgraphene_1_1protocol_1_1block__header.html">block_header</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#aeb1446219a34d5f1a821b96bf6323541">get_block_header_batch</a> (const vector&lt; uint32_t &gt; block_nums) const</td></tr>
-<tr class="separator:aeb1446219a34d5f1a821b96bf6323541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae307a17a892e39521b222d0ed87c670e"><td class="memItemLeft" align="right" valign="top">optional&lt; <a class="el" href="structgraphene_1_1app_1_1maybe__signed__block__header.html">maybe_signed_block_header</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ae307a17a892e39521b222d0ed87c670e">get_block_header</a> (uint32_t block_num, bool with_witness_signature) const</td></tr>
+<tr class="separator:ae307a17a892e39521b222d0ed87c670e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac142df8083ccdd157cf8f169a204b3fe"><td class="memItemLeft" align="right" valign="top">map&lt; uint32_t, optional&lt; <a class="el" href="structgraphene_1_1app_1_1maybe__signed__block__header.html">maybe_signed_block_header</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ac142df8083ccdd157cf8f169a204b3fe">get_block_header_batch</a> (const vector&lt; uint32_t &gt; &amp;block_nums, bool with_witness_signatures) const</td></tr>
+<tr class="separator:ac142df8083ccdd157cf8f169a204b3fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac58de247b5e405af56821a0d70f0770e"><td class="memItemLeft" align="right" valign="top">optional&lt; <a class="el" href="classgraphene_1_1protocol_1_1signed__block.html">signed_block</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ac58de247b5e405af56821a0d70f0770e">get_block</a> (uint32_t block_num) const</td></tr>
 <tr class="separator:ac58de247b5e405af56821a0d70f0770e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93356646b379ee79ad8700e7d6a93b22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1protocol_1_1processed__transaction.html">processed_transaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a93356646b379ee79ad8700e7d6a93b22">get_transaction</a> (uint32_t block_num, uint32_t trx_in_block) const</td></tr>
@@ -119,16 +120,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aac4b96fb3bb2446ebde410fa6a12fcc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d3a09112fe43b55cdb70c9654d6d9be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1chain_1_1dynamic__global__property__object.html">dynamic_global_property_object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a7d3a09112fe43b55cdb70c9654d6d9be">get_dynamic_global_properties</a> () const</td></tr>
 <tr class="separator:a7d3a09112fe43b55cdb70c9654d6d9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae17dfe68734112261c5e52451ab727f3"><td class="memItemLeft" align="right" valign="top">object_id_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ae17dfe68734112261c5e52451ab727f3">get_next_object_id</a> (uint8_t space_id, uint8_t type_id, bool with_pending_transactions) const</td></tr>
+<tr class="separator:ae17dfe68734112261c5e52451ab727f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af65b9b9bb05f936dca2cebd177566a2e"><td class="memItemLeft" align="right" valign="top">vector&lt; flat_set&lt; account_id_type &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#af65b9b9bb05f936dca2cebd177566a2e">get_key_references</a> (vector&lt; public_key_type &gt; key) const</td></tr>
 <tr class="separator:af65b9b9bb05f936dca2cebd177566a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80b46160a2181f5aa8cd3af6718793d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a80b46160a2181f5aa8cd3af6718793d2">is_public_key_registered</a> (string <a class="el" href="classfc_1_1ecc_1_1public__key.html">public_key</a>) const</td></tr>
+<tr class="memitem:a80b46160a2181f5aa8cd3af6718793d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a80b46160a2181f5aa8cd3af6718793d2">is_public_key_registered</a> (string public_key) const</td></tr>
 <tr class="separator:a80b46160a2181f5aa8cd3af6718793d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fa46086eeea3be1a582d52ecdb126d8"><td class="memItemLeft" align="right" valign="top">account_id_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a2fa46086eeea3be1a582d52ecdb126d8">get_account_id_from_string</a> (const std::string &amp;name_or_id) const</td></tr>
-<tr class="separator:a2fa46086eeea3be1a582d52ecdb126d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0808606b9d1aad5babf635a1b2607922"><td class="memItemLeft" align="right" valign="top">vector&lt; optional&lt; <a class="el" href="classgraphene_1_1chain_1_1account__object.html">account_object</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a0808606b9d1aad5babf635a1b2607922">get_accounts</a> (const vector&lt; std::string &gt; &amp;account_names_or_ids, optional&lt; bool &gt; subscribe) const</td></tr>
 <tr class="separator:a0808606b9d1aad5babf635a1b2607922"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d7b0e58cdc997f431dd80bfab9da0ea"><td class="memItemLeft" align="right" valign="top">std::map&lt; string, <a class="el" href="structgraphene_1_1app_1_1full__account.html">full_account</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a7d7b0e58cdc997f431dd80bfab9da0ea">get_full_accounts</a> (const vector&lt; string &gt; &amp;names_or_ids, optional&lt; bool &gt; subscribe)</td></tr>
-<tr class="separator:a7d7b0e58cdc997f431dd80bfab9da0ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7a3dd32adb8044faa14aafb88157d0f"><td class="memItemLeft" align="right" valign="top">map&lt; string, <a class="el" href="structgraphene_1_1app_1_1full__account.html">full_account</a>, std::less&lt;&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ad7a3dd32adb8044faa14aafb88157d0f">get_full_accounts</a> (const vector&lt; string &gt; &amp;names_or_ids, const optional&lt; bool &gt; &amp;subscribe)</td></tr>
+<tr class="separator:ad7a3dd32adb8044faa14aafb88157d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a506e86129365333c2b8646065996cae9"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1account__statistics__object.html">account_statistics_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a506e86129365333c2b8646065996cae9">get_top_voters</a> (uint32_t limit) const</td></tr>
 <tr class="separator:a506e86129365333c2b8646065996cae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a091be4e3a512dd7b83a19c58632ad19b"><td class="memItemLeft" align="right" valign="top">optional&lt; <a class="el" href="classgraphene_1_1chain_1_1account__object.html">account_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a091be4e3a512dd7b83a19c58632ad19b">get_account_by_name</a> (string name) const</td></tr>
@@ -137,8 +138,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad041e8618ad380a6e68375c6dc540028"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac248983aae44dc9b647cdb801c6691f0"><td class="memItemLeft" align="right" valign="top">vector&lt; optional&lt; <a class="el" href="classgraphene_1_1chain_1_1account__object.html">account_object</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ac248983aae44dc9b647cdb801c6691f0">lookup_account_names</a> (const vector&lt; string &gt; &amp;account_names) const</td></tr>
 <tr class="separator:ac248983aae44dc9b647cdb801c6691f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91e0e1b555175c62ce73d501c6d4e890"><td class="memItemLeft" align="right" valign="top">map&lt; string, account_id_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a91e0e1b555175c62ce73d501c6d4e890">lookup_accounts</a> (const string &amp;lower_bound_name, uint32_t limit, optional&lt; bool &gt; subscribe) const</td></tr>
-<tr class="separator:a91e0e1b555175c62ce73d501c6d4e890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f1d6a4a91b21497cd8f5ff09b71130"><td class="memItemLeft" align="right" valign="top">map&lt; string, account_id_type, std::less&lt;&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ab5f1d6a4a91b21497cd8f5ff09b71130">lookup_accounts</a> (const string &amp;lower_bound_name, uint32_t limit, const optional&lt; bool &gt; &amp;subscribe) const</td></tr>
+<tr class="separator:ab5f1d6a4a91b21497cd8f5ff09b71130"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a838b2ae1c363d6db501483636ec5222e"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a838b2ae1c363d6db501483636ec5222e">get_account_count</a> () const</td></tr>
 <tr class="separator:a838b2ae1c363d6db501483636ec5222e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8df3d2fdf444f1f87fd5b0f5700739ee"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a8df3d2fdf444f1f87fd5b0f5700739ee">get_account_balances</a> (const std::string &amp;account_name_or_id, const flat_set&lt; asset_id_type &gt; &amp;assets) const</td></tr>
@@ -153,8 +154,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9db99c2796a5723fdab8cddfe3e68385"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00b2ecfd8dfc971cca2b55839e60ae37"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a00b2ecfd8dfc971cca2b55839e60ae37">get_asset_count</a> () const</td></tr>
 <tr class="separator:a00b2ecfd8dfc971cca2b55839e60ae37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5be957d8d2b764b31d04c62fbdb3b5b"><td class="memItemLeft" align="right" valign="top">asset_id_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#aa5be957d8d2b764b31d04c62fbdb3b5b">get_asset_id_from_string</a> (const std::string &amp;symbol_or_id) const</td></tr>
-<tr class="separator:aa5be957d8d2b764b31d04c62fbdb3b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf3db752a9ba8e2e7ee3746878c28f7f"><td class="memItemLeft" align="right" valign="top">vector&lt; optional&lt; <a class="el" href="structgraphene_1_1app_1_1extended__asset__object.html">extended_asset_object</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#adf3db752a9ba8e2e7ee3746878c28f7f">get_assets</a> (const vector&lt; std::string &gt; &amp;asset_symbols_or_ids, optional&lt; bool &gt; subscribe) const</td></tr>
 <tr class="separator:adf3db752a9ba8e2e7ee3746878c28f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a0f59664d5abeeab1ca51a118170253"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1app_1_1extended__asset__object.html">extended_asset_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a4a0f59664d5abeeab1ca51a118170253">list_assets</a> (const string &amp;lower_bound_symbol, uint32_t limit) const</td></tr>
@@ -165,8 +164,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0241998fe02c90d26865415ce8ead82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5e0821636e116e7eefbb077e6ca8126"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html">limit_order_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ac5e0821636e116e7eefbb077e6ca8126">get_limit_orders</a> (const std::string &amp;a, const std::string &amp;b, uint32_t limit) const</td></tr>
 <tr class="separator:ac5e0821636e116e7eefbb077e6ca8126"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a465a681bf2f974ddb46d4a060a54cda0"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html">limit_order_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a465a681bf2f974ddb46d4a060a54cda0">get_limit_orders_by_account</a> (const string &amp;account_name_or_id, optional&lt; uint32_t &gt; limit, optional&lt; limit_order_id_type &gt; start_id)</td></tr>
-<tr class="separator:a465a681bf2f974ddb46d4a060a54cda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba8ef267b61497d98b25fa598ae5853"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html">limit_order_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a6ba8ef267b61497d98b25fa598ae5853">get_limit_orders_by_account</a> (const string &amp;account_name_or_id, const optional&lt; uint32_t &gt; &amp;limit, const optional&lt; limit_order_id_type &gt; &amp;start_id)</td></tr>
+<tr class="separator:a6ba8ef267b61497d98b25fa598ae5853"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1e87faca0ea7685d4981f560845a4c3"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html">limit_order_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ac1e87faca0ea7685d4981f560845a4c3">get_account_limit_orders</a> (const string &amp;account_name_or_id, const string &amp;base, const string &amp;quote, uint32_t limit, optional&lt; limit_order_id_type &gt; ostart_id, optional&lt; price &gt; ostart_price)</td></tr>
 <tr class="separator:ac1e87faca0ea7685d4981f560845a4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d4ec3cb19106bb0127f6886e1cfa6a5"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1call__order__object.html">call_order_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a2d4ec3cb19106bb0127f6886e1cfa6a5">get_call_orders</a> (const std::string &amp;a, uint32_t limit) const</td></tr>
@@ -177,8 +176,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab457c81432a51ee1503b451b0d4ed76e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a450c40ca59152d19bdc158ae7ad364fe"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1force__settlement__object.html">force_settlement_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a450c40ca59152d19bdc158ae7ad364fe">get_settle_orders_by_account</a> (const std::string &amp;account_name_or_id, force_settlement_id_type start, uint32_t limit) const</td></tr>
 <tr class="separator:a450c40ca59152d19bdc158ae7ad364fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac98844dec5d89556fd58257deb25d101"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1call__order__object.html">call_order_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ac98844dec5d89556fd58257deb25d101">get_margin_positions</a> (const std::string account_id_or_name) const</td></tr>
-<tr class="separator:ac98844dec5d89556fd58257deb25d101"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd1ecdb949d3a7db0800adc4775b61f8"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1collateral__bid__object.html">collateral_bid_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#acd1ecdb949d3a7db0800adc4775b61f8">get_collateral_bids</a> (const std::string &amp;<a class="el" href="structgraphene_1_1protocol_1_1asset.html">asset</a>, uint32_t limit, uint32_t start) const</td></tr>
 <tr class="separator:acd1ecdb949d3a7db0800adc4775b61f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7aebb8dd3c0a3ebd55a63a0cb2f77dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ae7aebb8dd3c0a3ebd55a63a0cb2f77dc">subscribe_to_market</a> (std::function&lt; void(const variant &amp;)&gt; callback, const std::string &amp;a, const std::string &amp;b)</td></tr>
@@ -189,50 +186,42 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa40820c96b22c9b7ddde4280d6e91b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa78e27ca738205c4f82ec80d60d75740"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1app_1_1market__volume.html">market_volume</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#aa78e27ca738205c4f82ec80d60d75740">get_24_volume</a> (const string &amp;base, const string &amp;quote) const</td></tr>
 <tr class="separator:aa78e27ca738205c4f82ec80d60d75740"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accf4a40359a34a0e748ec96a93cc0efc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1app_1_1order__book.html">order_book</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#accf4a40359a34a0e748ec96a93cc0efc">get_order_book</a> (const string &amp;base, const string &amp;quote, unsigned limit=50) const</td></tr>
-<tr class="separator:accf4a40359a34a0e748ec96a93cc0efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7450f6448b0868a4b611681545496bb6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1app_1_1order__book.html">order_book</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a7450f6448b0868a4b611681545496bb6">get_order_book</a> (const string &amp;base, const string &amp;quote, uint32_t limit) const</td></tr>
+<tr class="separator:a7450f6448b0868a4b611681545496bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c238daecb0b33712aafc96ccf671b33"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1app_1_1market__ticker.html">market_ticker</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a4c238daecb0b33712aafc96ccf671b33">get_top_markets</a> (uint32_t limit) const</td></tr>
 <tr class="separator:a4c238daecb0b33712aafc96ccf671b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a914253d37c580537ba4fa6aa7ce28cd5"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1app_1_1market__trade.html">market_trade</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a914253d37c580537ba4fa6aa7ce28cd5">get_trade_history</a> (const string &amp;base, const string &amp;quote, <a class="el" href="classfc_1_1time__point__sec.html">fc::time_point_sec</a> start, <a class="el" href="classfc_1_1time__point__sec.html">fc::time_point_sec</a> stop, unsigned limit=100) const</td></tr>
-<tr class="separator:a914253d37c580537ba4fa6aa7ce28cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc7f50a2cb3d05d5d8652e99965bf590"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1app_1_1market__trade.html">market_trade</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#afc7f50a2cb3d05d5d8652e99965bf590">get_trade_history_by_sequence</a> (const string &amp;base, const string &amp;quote, int64_t start, <a class="el" href="classfc_1_1time__point__sec.html">fc::time_point_sec</a> stop, unsigned limit=100) const</td></tr>
-<tr class="separator:afc7f50a2cb3d05d5d8652e99965bf590"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07ebc70fa0782faf482bf56c750827e6"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a07ebc70fa0782faf482bf56c750827e6">list_liquidity_pools</a> (optional&lt; uint32_t &gt; limit=101, optional&lt; liquidity_pool_id_type &gt; start_id=optional&lt; liquidity_pool_id_type &gt;(), optional&lt; bool &gt; with_statistics=false) const</td></tr>
-<tr class="separator:a07ebc70fa0782faf482bf56c750827e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac38ab45ee0d66d6a4b572185743b1584"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ac38ab45ee0d66d6a4b572185743b1584">get_liquidity_pools_by_asset_a</a> (std::string asset_symbol_or_id, optional&lt; uint32_t &gt; limit=101, optional&lt; liquidity_pool_id_type &gt; start_id=optional&lt; liquidity_pool_id_type &gt;(), optional&lt; bool &gt; with_statistics=false) const</td></tr>
-<tr class="separator:ac38ab45ee0d66d6a4b572185743b1584"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4de1d2a83e311e4acdd9ae065003f307"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a4de1d2a83e311e4acdd9ae065003f307">get_liquidity_pools_by_asset_b</a> (std::string asset_symbol_or_id, optional&lt; uint32_t &gt; limit=101, optional&lt; liquidity_pool_id_type &gt; start_id=optional&lt; liquidity_pool_id_type &gt;(), optional&lt; bool &gt; with_statistics=false) const</td></tr>
-<tr class="separator:a4de1d2a83e311e4acdd9ae065003f307"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92e71fc95e3c291ae0d4bdbfdb10f2d4"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a92e71fc95e3c291ae0d4bdbfdb10f2d4">get_liquidity_pools_by_one_asset</a> (const std::string &amp;asset_symbol_or_id, const optional&lt; uint32_t &gt; &amp;limit=101, const optional&lt; liquidity_pool_id_type &gt; &amp;start_id=optional&lt; liquidity_pool_id_type &gt;(), const optional&lt; bool &gt; &amp;with_statistics=false) const</td></tr>
-<tr class="separator:a92e71fc95e3c291ae0d4bdbfdb10f2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abee116fdbee19b211c2f4b4b71fc1e98"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#abee116fdbee19b211c2f4b4b71fc1e98">get_liquidity_pools_by_both_assets</a> (std::string asset_symbol_or_id_a, std::string asset_symbol_or_id_b, optional&lt; uint32_t &gt; limit=101, optional&lt; liquidity_pool_id_type &gt; start_id=optional&lt; liquidity_pool_id_type &gt;(), optional&lt; bool &gt; with_statistics=false) const</td></tr>
-<tr class="separator:abee116fdbee19b211c2f4b4b71fc1e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc2be7c0457ab4547e0be9e79aed9db6"><td class="memItemLeft" align="right" valign="top">vector&lt; optional&lt; <a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#adc2be7c0457ab4547e0be9e79aed9db6">get_liquidity_pools</a> (const vector&lt; liquidity_pool_id_type &gt; &amp;ids, optional&lt; bool &gt; subscribe=optional&lt; bool &gt;(), optional&lt; bool &gt; with_statistics=false) const</td></tr>
-<tr class="separator:adc2be7c0457ab4547e0be9e79aed9db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0a6141fa29d68d9325ecc39e88da5b7"><td class="memItemLeft" align="right" valign="top">vector&lt; optional&lt; <a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ac0a6141fa29d68d9325ecc39e88da5b7">get_liquidity_pools_by_share_asset</a> (const vector&lt; std::string &gt; &amp;asset_symbols_or_ids, optional&lt; bool &gt; subscribe=optional&lt; bool &gt;(), optional&lt; bool &gt; with_statistics=false) const</td></tr>
-<tr class="separator:ac0a6141fa29d68d9325ecc39e88da5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60cc173ae4ae70f8b506a7987164308c"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a60cc173ae4ae70f8b506a7987164308c">get_liquidity_pools_by_owner</a> (std::string account_name_or_id, optional&lt; uint32_t &gt; limit=101, optional&lt; asset_id_type &gt; start_id=optional&lt; asset_id_type &gt;(), optional&lt; bool &gt; with_statistics=false) const</td></tr>
-<tr class="separator:a60cc173ae4ae70f8b506a7987164308c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c665d79c3c25390ac5334d800aba7f8"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1app_1_1market__trade.html">market_trade</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a3c665d79c3c25390ac5334d800aba7f8">get_trade_history</a> (const string &amp;base, const string &amp;quote, <a class="el" href="classfc_1_1time__point__sec.html">fc::time_point_sec</a> start, <a class="el" href="classfc_1_1time__point__sec.html">fc::time_point_sec</a> stop, uint32_t limit) const</td></tr>
+<tr class="separator:a3c665d79c3c25390ac5334d800aba7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe049a1b99dd9e132fcdad54f52b2690"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1app_1_1market__trade.html">market_trade</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#afe049a1b99dd9e132fcdad54f52b2690">get_trade_history_by_sequence</a> (const string &amp;base, const string &amp;quote, int64_t start, <a class="el" href="classfc_1_1time__point__sec.html">fc::time_point_sec</a> stop, uint32_t limit) const</td></tr>
+<tr class="separator:afe049a1b99dd9e132fcdad54f52b2690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea599e24e0302b62bc8ddb5c4b8149c1"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#aea599e24e0302b62bc8ddb5c4b8149c1">get_liquidity_pools_by_one_asset</a> (const std::string &amp;asset_symbol_or_id, const optional&lt; uint32_t &gt; &amp;limit, const optional&lt; liquidity_pool_id_type &gt; &amp;start_id, const optional&lt; bool &gt; &amp;with_statistics) const</td></tr>
+<tr class="separator:aea599e24e0302b62bc8ddb5c4b8149c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0770c55ef2273eb99085732c91648d7e"><td class="memItemLeft" align="right" valign="top">vector&lt; optional&lt; <a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a0770c55ef2273eb99085732c91648d7e">get_liquidity_pools</a> (const vector&lt; liquidity_pool_id_type &gt; &amp;ids, const optional&lt; bool &gt; &amp;subscribe, const optional&lt; bool &gt; &amp;with_statistics) const</td></tr>
+<tr class="separator:a0770c55ef2273eb99085732c91648d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdeff949d0b886350e7299f29b1cbe1d"><td class="memItemLeft" align="right" valign="top">vector&lt; optional&lt; <a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#afdeff949d0b886350e7299f29b1cbe1d">get_liquidity_pools_by_share_asset</a> (const vector&lt; std::string &gt; &amp;asset_symbols_or_ids, const optional&lt; bool &gt; &amp;subscribe, const optional&lt; bool &gt; &amp;with_statistics) const</td></tr>
+<tr class="separator:afdeff949d0b886350e7299f29b1cbe1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa546caab4093114a346ab5210f175dac"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#aa546caab4093114a346ab5210f175dac">get_liquidity_pools_by_owner</a> (const std::string &amp;account_name_or_id, const optional&lt; uint32_t &gt; &amp;limit, const optional&lt; asset_id_type &gt; &amp;start_id, const optional&lt; bool &gt; &amp;with_statistics) const</td></tr>
+<tr class="separator:aa546caab4093114a346ab5210f175dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07a69c909b7f1c3f07f94f0e72a49055"><td class="memItemLeft" align="right" valign="top">vector&lt; optional&lt; <a class="el" href="classgraphene_1_1chain_1_1witness__object.html">witness_object</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a07a69c909b7f1c3f07f94f0e72a49055">get_witnesses</a> (const vector&lt; witness_id_type &gt; &amp;witness_ids) const</td></tr>
 <tr class="separator:a07a69c909b7f1c3f07f94f0e72a49055"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e2e71fc8e8919a9c3558a2b56969f33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1optional.html">fc::optional</a>&lt; <a class="el" href="classgraphene_1_1chain_1_1witness__object.html">witness_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a4e2e71fc8e8919a9c3558a2b56969f33">get_witness_by_account</a> (const std::string account_id_or_name) const</td></tr>
-<tr class="separator:a4e2e71fc8e8919a9c3558a2b56969f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8948113622033bc699c155041682d5b8"><td class="memItemLeft" align="right" valign="top">map&lt; string, witness_id_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a8948113622033bc699c155041682d5b8">lookup_witness_accounts</a> (const string &amp;lower_bound_name, uint32_t limit) const</td></tr>
-<tr class="separator:a8948113622033bc699c155041682d5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af30916c67c85018ff8443e57dac2868e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1optional.html">fc::optional</a>&lt; <a class="el" href="classgraphene_1_1chain_1_1witness__object.html">witness_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#af30916c67c85018ff8443e57dac2868e">get_witness_by_account</a> (const std::string &amp;account_id_or_name) const</td></tr>
+<tr class="separator:af30916c67c85018ff8443e57dac2868e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec543e4d39d2f170484fd49c6500f85"><td class="memItemLeft" align="right" valign="top">map&lt; string, witness_id_type, std::less&lt;&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#aeec543e4d39d2f170484fd49c6500f85">lookup_witness_accounts</a> (const string &amp;lower_bound_name, uint32_t limit) const</td></tr>
+<tr class="separator:aeec543e4d39d2f170484fd49c6500f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cfd97e7cea92f6dacedfc779a3dc239"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a4cfd97e7cea92f6dacedfc779a3dc239">get_witness_count</a> () const</td></tr>
 <tr class="separator:a4cfd97e7cea92f6dacedfc779a3dc239"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acab4f92a15d0509131a623e65c737de6"><td class="memItemLeft" align="right" valign="top">vector&lt; optional&lt; <a class="el" href="classgraphene_1_1chain_1_1committee__member__object.html">committee_member_object</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#acab4f92a15d0509131a623e65c737de6">get_committee_members</a> (const vector&lt; committee_member_id_type &gt; &amp;committee_member_ids) const</td></tr>
 <tr class="separator:acab4f92a15d0509131a623e65c737de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adec0baf2373ef1ce882c0b332829e547"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1optional.html">fc::optional</a>&lt; <a class="el" href="classgraphene_1_1chain_1_1committee__member__object.html">committee_member_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#adec0baf2373ef1ce882c0b332829e547">get_committee_member_by_account</a> (const std::string account_id_or_name) const</td></tr>
-<tr class="separator:adec0baf2373ef1ce882c0b332829e547"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fbfc32a908225d0d91b704dd1d05b1c"><td class="memItemLeft" align="right" valign="top">map&lt; string, committee_member_id_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a1fbfc32a908225d0d91b704dd1d05b1c">lookup_committee_member_accounts</a> (const string &amp;lower_bound_name, uint32_t limit) const</td></tr>
-<tr class="separator:a1fbfc32a908225d0d91b704dd1d05b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cef78e96fad36084b62d980a3315a10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfc_1_1optional.html">fc::optional</a>&lt; <a class="el" href="classgraphene_1_1chain_1_1committee__member__object.html">committee_member_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a8cef78e96fad36084b62d980a3315a10">get_committee_member_by_account</a> (const std::string &amp;account_id_or_name) const</td></tr>
+<tr class="separator:a8cef78e96fad36084b62d980a3315a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad15f14fc5c372b603013194e4c85cb8b"><td class="memItemLeft" align="right" valign="top">map&lt; string, committee_member_id_type, std::less&lt;&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ad15f14fc5c372b603013194e4c85cb8b">lookup_committee_member_accounts</a> (const string &amp;lower_bound_name, uint32_t limit) const</td></tr>
+<tr class="separator:ad15f14fc5c372b603013194e4c85cb8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82895e5ebfb9aaaab364d4a353cacd7d"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a82895e5ebfb9aaaab364d4a353cacd7d">get_committee_count</a> () const</td></tr>
 <tr class="separator:a82895e5ebfb9aaaab364d4a353cacd7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e7989587cf7abdcbb143fc2e77485a6"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1worker__object.html">worker_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a5e7989587cf7abdcbb143fc2e77485a6">get_all_workers</a> (const optional&lt; bool &gt; is_expired=optional&lt; bool &gt;()) const</td></tr>
-<tr class="separator:a5e7989587cf7abdcbb143fc2e77485a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3854702f942df7234892d35a12696e9"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1worker__object.html">worker_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ae3854702f942df7234892d35a12696e9">get_workers_by_account</a> (const std::string account_id_or_name) const</td></tr>
-<tr class="separator:ae3854702f942df7234892d35a12696e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00bbbd4d1d45b765a672d23068bba1d4"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1worker__object.html">worker_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a00bbbd4d1d45b765a672d23068bba1d4">get_all_workers</a> (const optional&lt; bool &gt; &amp;is_expired) const</td></tr>
+<tr class="separator:a00bbbd4d1d45b765a672d23068bba1d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca8b6679de891aba8961537eb9a02896"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1worker__object.html">worker_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#aca8b6679de891aba8961537eb9a02896">get_workers_by_account</a> (const std::string &amp;account_id_or_name) const</td></tr>
+<tr class="separator:aca8b6679de891aba8961537eb9a02896"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e6d2acff7e692f5ed8a95e16d513953"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a9e6d2acff7e692f5ed8a95e16d513953">get_worker_count</a> () const</td></tr>
 <tr class="separator:a9e6d2acff7e692f5ed8a95e16d513953"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f3c59402a1776da2951fdd666e20a16"><td class="memItemLeft" align="right" valign="top">vector&lt; variant &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a9f3c59402a1776da2951fdd666e20a16">lookup_vote_ids</a> (const vector&lt; vote_id_type &gt; &amp;votes) const</td></tr>
@@ -257,7 +246,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a271b721629f59bb58e810163ddbea745"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a031701d262a0df8d6c527b46912f8b"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1proposal__object.html">proposal_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a9a031701d262a0df8d6c527b46912f8b">get_proposed_transactions</a> (const std::string account_id_or_name) const</td></tr>
 <tr class="separator:a9a031701d262a0df8d6c527b46912f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78d42d6340af3cbb9ceb22dcbd3504b5"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1blinded__balance__object.html">blinded_balance_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a78d42d6340af3cbb9ceb22dcbd3504b5">get_blinded_balances</a> (const flat_set&lt; <a class="el" href="namespacefc_1_1ecc.html#a582249fe15693cc9c040286a8ef296f8">commitment_type</a> &gt; &amp;commitments) const</td></tr>
+<tr class="memitem:a78d42d6340af3cbb9ceb22dcbd3504b5"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1blinded__balance__object.html">blinded_balance_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a78d42d6340af3cbb9ceb22dcbd3504b5">get_blinded_balances</a> (const flat_set&lt; commitment_type &gt; &amp;commitments) const</td></tr>
 <tr class="separator:a78d42d6340af3cbb9ceb22dcbd3504b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac017503c7373cb66869548eba592ac1b"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1withdraw__permission__object.html">withdraw_permission_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ac017503c7373cb66869548eba592ac1b">get_withdraw_permissions_by_giver</a> (const std::string account_id_or_name, withdraw_permission_id_type start, uint32_t limit) const</td></tr>
 <tr class="separator:ac017503c7373cb66869548eba592ac1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -271,17 +260,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac32f81181fd254d200f3790916dae095"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a133faf3884cd7c0e337b41fea43e51ba"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1htlc__object.html">htlc_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a133faf3884cd7c0e337b41fea43e51ba">list_htlcs</a> (const htlc_id_type lower_bound_id, uint32_t limit) const</td></tr>
 <tr class="separator:a133faf3884cd7c0e337b41fea43e51ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac44e7478eeeacc0dc02a3767c4d3089c"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1ticket__object.html">ticket_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ac44e7478eeeacc0dc02a3767c4d3089c">list_tickets</a> (optional&lt; uint32_t &gt; limit=101, optional&lt; ticket_id_type &gt; start_id=optional&lt; ticket_id_type &gt;()) const</td></tr>
-<tr class="separator:ac44e7478eeeacc0dc02a3767c4d3089c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a662d2dbf6749e5636cc537bb6feee9bb"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1ticket__object.html">ticket_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a662d2dbf6749e5636cc537bb6feee9bb">get_tickets_by_account</a> (std::string account_name_or_id, optional&lt; uint32_t &gt; limit=101, optional&lt; ticket_id_type &gt; start_id=optional&lt; ticket_id_type &gt;()) const</td></tr>
-<tr class="separator:a662d2dbf6749e5636cc537bb6feee9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6578e0309e52c669b19ae617fc94d36"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgraphene_1_1chain_1_1account__object.html">account_object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ab6578e0309e52c669b19ae617fc94d36">get_account_from_string</a> (const std::string &amp;name_or_id, bool throw_if_not_found=true) const</td></tr>
-<tr class="separator:ab6578e0309e52c669b19ae617fc94d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05c344a5f21c141c00801803a3049789"><td class="memTemplParams" colspan="2">template&lt;class ASSET &gt; </td></tr>
 <tr class="memitem:a05c344a5f21c141c00801803a3049789"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1app_1_1extended__asset__object.html">extended_asset_object</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a05c344a5f21c141c00801803a3049789">extend_asset</a> (ASSET &amp;&amp;a) const</td></tr>
 <tr class="separator:a05c344a5f21c141c00801803a3049789"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38bbc4b2875da73b1a1776e9ee4d6cef"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgraphene_1_1chain_1_1asset__object.html">asset_object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a38bbc4b2875da73b1a1776e9ee4d6cef">get_asset_from_string</a> (const std::string &amp;symbol_or_id, bool throw_if_not_found=true) const</td></tr>
-<tr class="separator:a38bbc4b2875da73b1a1776e9ee4d6cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5d6df57392d20ef07eddd897fef2aca"><td class="memItemLeft" align="right" valign="top">vector&lt; optional&lt; <a class="el" href="structgraphene_1_1app_1_1extended__asset__object.html">extended_asset_object</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ae5d6df57392d20ef07eddd897fef2aca">get_assets</a> (const vector&lt; asset_id_type &gt; &amp;asset_ids, optional&lt; bool &gt; subscribe=optional&lt; bool &gt;()) const</td></tr>
 <tr class="separator:ae5d6df57392d20ef07eddd897fef2aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a859d03ff9d2ca9a5bf65d60fe1d33ee8"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1limit__order__object.html">limit_order_object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a859d03ff9d2ca9a5bf65d60fe1d33ee8">get_limit_orders</a> (const asset_id_type a, const asset_id_type b, const uint32_t limit) const</td></tr>
@@ -289,9 +270,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a62b9185af694c84733bebf2c7659249e"><td class="memTemplParams" colspan="2">template&lt;class LP &gt; </td></tr>
 <tr class="memitem:a62b9185af694c84733bebf2c7659249e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a62b9185af694c84733bebf2c7659249e">extend_liquidity_pool</a> (LP &amp;&amp;a, bool with_stats) const</td></tr>
 <tr class="separator:a62b9185af694c84733bebf2c7659249e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bceb904f3d573594a6d77e5f5ee52fb"><td class="memTemplParams" colspan="2">template&lt;typename X &gt; </td></tr>
-<tr class="memitem:a5bceb904f3d573594a6d77e5f5ee52fb"><td class="memTemplItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a5bceb904f3d573594a6d77e5f5ee52fb">get_liquidity_pools_by_asset_x</a> (std::string asset_symbol_or_id, optional&lt; uint32_t &gt; olimit, optional&lt; liquidity_pool_id_type &gt; ostart_id, optional&lt; bool &gt; with_statistics) const</td></tr>
-<tr class="separator:a5bceb904f3d573594a6d77e5f5ee52fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb97dd83e705123d76fac5ff04bf28dc"><td class="memTemplParams" colspan="2">template&lt;typename INDEX_TAG , typename... X&gt; </td></tr>
+<tr class="memitem:afb97dd83e705123d76fac5ff04bf28dc"><td class="memTemplItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#afb97dd83e705123d76fac5ff04bf28dc">get_liquidity_pools_by_asset_x</a> (const optional&lt; uint32_t &gt; &amp;olimit, const optional&lt; liquidity_pool_id_type &gt; &amp;ostart_id, const optional&lt; bool &gt; &amp;with_statistics, X... x) const</td></tr>
+<tr class="separator:afb97dd83e705123d76fac5ff04bf28dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad31f4a59a34a0ad6e411aa87e3f0d471"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ad31f4a59a34a0ad6e411aa87e3f0d471">get_whether_to_subscribe</a> (optional&lt; bool &gt; subscribe) const</td></tr>
 <tr class="separator:ad31f4a59a34a0ad6e411aa87e3f0d471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1d6f27c47fda9da08454bcbb4d1f218"><td class="memItemLeft" align="right" valign="top">vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ae1d6f27c47fda9da08454bcbb4d1f218">get_subscription_key</a> (const object_id_type &amp;item) const</td></tr>
@@ -310,11 +291,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6b507ea1f58b046fce6c0a72e835f33e"><td class="memItemLeft" align="right" valign="top">const std::pair&lt; asset_id_type, asset_id_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a6b507ea1f58b046fce6c0a72e835f33e">get_order_market</a> (const <a class="el" href="classgraphene_1_1chain_1_1force__settlement__object.html">force_settlement_object</a> &amp;<a class="el" href="structgraphene_1_1app_1_1order.html">order</a>)</td></tr>
 <tr class="separator:a6b507ea1f58b046fce6c0a72e835f33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac70659cf33483f0113f2559eb18b6903"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ac70659cf33483f0113f2559eb18b6903"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ac70659cf33483f0113f2559eb18b6903">enqueue_if_subscribed_to_market</a> (const object *obj, <a class="el" href="namespacegraphene_1_1app.html#a26804ee36d39c9a57ef54ba85f3ca894">market_queue_type</a> &amp;queue, bool full_object=true)</td></tr>
+<tr class="memitem:ac70659cf33483f0113f2559eb18b6903"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ac70659cf33483f0113f2559eb18b6903">enqueue_if_subscribed_to_market</a> (const object *obj, <a class="el" href="namespacegraphene_1_1app.html#a2cf28592987d2d9365802435969eb2f6">market_queue_type</a> &amp;queue, bool full_object=true)</td></tr>
 <tr class="separator:ac70659cf33483f0113f2559eb18b6903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55ff9f5836e67fc803189fa184d8dbcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a55ff9f5836e67fc803189fa184d8dbcb">broadcast_updates</a> (const vector&lt; variant &gt; &amp;updates)</td></tr>
 <tr class="separator:a55ff9f5836e67fc803189fa184d8dbcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cfc3b40b9187f22cc92d0859118edd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a7cfc3b40b9187f22cc92d0859118edd7">broadcast_market_updates</a> (const <a class="el" href="namespacegraphene_1_1app.html#a26804ee36d39c9a57ef54ba85f3ca894">market_queue_type</a> &amp;queue)</td></tr>
+<tr class="memitem:a7cfc3b40b9187f22cc92d0859118edd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a7cfc3b40b9187f22cc92d0859118edd7">broadcast_market_updates</a> (const <a class="el" href="namespacegraphene_1_1app.html#a2cf28592987d2d9365802435969eb2f6">market_queue_type</a> &amp;queue)</td></tr>
 <tr class="separator:a7cfc3b40b9187f22cc92d0859118edd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af32c7a64a34782f8cfc678098e63633a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#af32c7a64a34782f8cfc678098e63633a">handle_object_changed</a> (bool force_notify, bool full_object, const vector&lt; object_id_type &gt; &amp;ids, const flat_set&lt; account_id_type &gt; &amp;impacted_accounts, std::function&lt; const object *(object_id_type id)&gt; find_object)</td></tr>
 <tr class="separator:af32c7a64a34782f8cfc678098e63633a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -326,22 +307,30 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1bc7ccfd792ccbe1d2f852f3dcc1bfcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7b704ead77565a89c50fa327288d1a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ae7b704ead77565a89c50fa327288d1a1">on_applied_block</a> ()</td></tr>
 <tr class="separator:ae7b704ead77565a89c50fa327288d1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a02a06197131bcc759de96fcb75fc33d9"><td class="memTemplParams" colspan="2">template&lt;typename X &gt; </td></tr>
-<tr class="memitem:a02a06197131bcc759de96fcb75fc33d9"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a02a06197131bcc759de96fcb75fc33d9">make_tuple_if_multiple</a> (X x) const</td></tr>
-<tr class="separator:a02a06197131bcc759de96fcb75fc33d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a836e780e032f296481567e695355b516"><td class="memTemplParams" colspan="2">template&lt;typename... X&gt; </td></tr>
-<tr class="memitem:a836e780e032f296481567e695355b516"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a836e780e032f296481567e695355b516">make_tuple_if_multiple</a> (X... x) const</td></tr>
-<tr class="separator:a836e780e032f296481567e695355b516"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace15a9171081f2e071f0969bd985baa0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ace15a9171081f2e071f0969bd985baa0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ace15a9171081f2e071f0969bd985baa0">call_end_or_upper_bound</a> (const T &amp;t) const</td></tr>
-<tr class="separator:ace15a9171081f2e071f0969bd985baa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30d4e968f723af5a78229240349fe3cd"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... X&gt; </td></tr>
-<tr class="memitem:a30d4e968f723af5a78229240349fe3cd"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a30d4e968f723af5a78229240349fe3cd">call_end_or_upper_bound</a> (const T &amp;t, X... x) const</td></tr>
-<tr class="separator:a30d4e968f723af5a78229240349fe3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69f23aba305f8bd685717c77184abfdc"><td class="memTemplParams" colspan="2">template&lt;typename OBJ_TYPE , typename OBJ_ID_TYPE , typename INDEX_TYPE , typename T , typename... X&gt; </td></tr>
-<tr class="memitem:a69f23aba305f8bd685717c77184abfdc"><td class="memTemplItemLeft" align="right" valign="top">vector&lt; OBJ_TYPE &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a69f23aba305f8bd685717c77184abfdc">get_objects_by_x</a> (T application_options::*app_opt_member_ptr, const INDEX_TYPE &amp;idx, const optional&lt; uint32_t &gt; &amp;olimit, const optional&lt; OBJ_ID_TYPE &gt; &amp;ostart_id, X... x) const</td></tr>
-<tr class="separator:a69f23aba305f8bd685717c77184abfdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classgraphene_1_1app_1_1database__api__helper"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classgraphene_1_1app_1_1database__api__helper')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classgraphene_1_1app_1_1database__api__helper.html">graphene::app::database_api_helper</a></td></tr>
+<tr class="memitem:a57f872ba11b3e28e7636545ef0728094 inherit pub_methods_classgraphene_1_1app_1_1database__api__helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__helper.html#a57f872ba11b3e28e7636545ef0728094">database_api_helper</a> (<a class="el" href="classgraphene_1_1chain_1_1database.html">graphene::chain::database</a> &amp;db, const <a class="el" href="classgraphene_1_1app_1_1application__options.html">application_options</a> *app_options)</td></tr>
+<tr class="separator:a57f872ba11b3e28e7636545ef0728094 inherit pub_methods_classgraphene_1_1app_1_1database__api__helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4fdda5e6386d31015fd91d5db0c1b32 inherit pub_methods_classgraphene_1_1app_1_1database__api__helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__helper.html#ad4fdda5e6386d31015fd91d5db0c1b32">database_api_helper</a> (const <a class="el" href="classgraphene_1_1app_1_1application.html">graphene::app::application</a> &amp;app)</td></tr>
+<tr class="separator:ad4fdda5e6386d31015fd91d5db0c1b32 inherit pub_methods_classgraphene_1_1app_1_1database__api__helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad57a0aa7f2cc9775c2458f5cb7b3cb19 inherit pub_methods_classgraphene_1_1app_1_1database__api__helper"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgraphene_1_1chain_1_1account__object.html">account_object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__helper.html#ad57a0aa7f2cc9775c2458f5cb7b3cb19">get_account_from_string</a> (const std::string &amp;name_or_id, bool throw_if_not_found=true) const</td></tr>
+<tr class="separator:ad57a0aa7f2cc9775c2458f5cb7b3cb19 inherit pub_methods_classgraphene_1_1app_1_1database__api__helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad92ff45a2d96b10f3b613fbc8675febe inherit pub_methods_classgraphene_1_1app_1_1database__api__helper"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgraphene_1_1chain_1_1asset__object.html">asset_object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__helper.html#ad92ff45a2d96b10f3b613fbc8675febe">get_asset_from_string</a> (const std::string &amp;symbol_or_id, bool throw_if_not_found=true) const</td></tr>
+<tr class="separator:ad92ff45a2d96b10f3b613fbc8675febe inherit pub_methods_classgraphene_1_1app_1_1database__api__helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad90d7425bba21f237fc228b3351d6270 inherit pub_methods_classgraphene_1_1app_1_1database__api__helper"><td class="memTemplParams" colspan="2">template&lt;typename X &gt; </td></tr>
+<tr class="memitem:ad90d7425bba21f237fc228b3351d6270 inherit pub_methods_classgraphene_1_1app_1_1database__api__helper"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__helper.html#ad90d7425bba21f237fc228b3351d6270">make_tuple_if_multiple</a> (X x) const</td></tr>
+<tr class="separator:ad90d7425bba21f237fc228b3351d6270 inherit pub_methods_classgraphene_1_1app_1_1database__api__helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a602a7d5cd75c9e94be1f49723536f3e7 inherit pub_methods_classgraphene_1_1app_1_1database__api__helper"><td class="memTemplParams" colspan="2">template&lt;typename... X&gt; </td></tr>
+<tr class="memitem:a602a7d5cd75c9e94be1f49723536f3e7 inherit pub_methods_classgraphene_1_1app_1_1database__api__helper"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__helper.html#a602a7d5cd75c9e94be1f49723536f3e7">make_tuple_if_multiple</a> (X... x) const</td></tr>
+<tr class="separator:a602a7d5cd75c9e94be1f49723536f3e7 inherit pub_methods_classgraphene_1_1app_1_1database__api__helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa743b08bb41009aa39c51daf505cffe4 inherit pub_methods_classgraphene_1_1app_1_1database__api__helper"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa743b08bb41009aa39c51daf505cffe4 inherit pub_methods_classgraphene_1_1app_1_1database__api__helper"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__helper.html#aa743b08bb41009aa39c51daf505cffe4">call_end_or_upper_bound</a> (const T &amp;t) const</td></tr>
+<tr class="separator:aa743b08bb41009aa39c51daf505cffe4 inherit pub_methods_classgraphene_1_1app_1_1database__api__helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3f38dde207b28e6c4e56b421b3d6ddb inherit pub_methods_classgraphene_1_1app_1_1database__api__helper"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... X&gt; </td></tr>
+<tr class="memitem:af3f38dde207b28e6c4e56b421b3d6ddb inherit pub_methods_classgraphene_1_1app_1_1database__api__helper"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__helper.html#af3f38dde207b28e6c4e56b421b3d6ddb">call_end_or_upper_bound</a> (const T &amp;t, X... x) const</td></tr>
+<tr class="separator:af3f38dde207b28e6c4e56b421b3d6ddb inherit pub_methods_classgraphene_1_1app_1_1database__api__helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78bfa8142b4431eae91d450b87ca3af4 inherit pub_methods_classgraphene_1_1app_1_1database__api__helper"><td class="memTemplParams" colspan="2">template&lt;typename OBJ_TYPE , typename OBJ_ID_TYPE , typename INDEX_TYPE , typename T , typename... X&gt; </td></tr>
+<tr class="memitem:a78bfa8142b4431eae91d450b87ca3af4 inherit pub_methods_classgraphene_1_1app_1_1database__api__helper"><td class="memTemplItemLeft" align="right" valign="top">vector&lt; OBJ_TYPE &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__helper.html#a78bfa8142b4431eae91d450b87ca3af4">get_objects_by_x</a> (T application_options::*app_opt_member_ptr, const INDEX_TYPE &amp;idx, const <a class="el" href="classfc_1_1optional.html">optional</a>&lt; uint32_t &gt; &amp;olimit, const <a class="el" href="classfc_1_1optional.html">optional</a>&lt; OBJ_ID_TYPE &gt; &amp;ostart_id, X... x) const</td></tr>
+<tr class="separator:a78bfa8142b4431eae91d450b87ca3af4 inherit pub_methods_classgraphene_1_1app_1_1database__api__helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -371,14 +360,17 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a3a55e04699d428f42c9a69672d488105"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a466336fd22c476e6b2e0b4e52ef6dce5"><td class="memItemLeft" align="right" valign="top">map&lt; pair&lt; asset_id_type, asset_id_type &gt;, std::function&lt; void(const variant &amp;)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a466336fd22c476e6b2e0b4e52ef6dce5">_market_subscriptions</a></td></tr>
 <tr class="separator:a466336fd22c476e6b2e0b4e52ef6dce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1da4ab9154f9a30bae71e183b202d1e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1chain_1_1database.html">graphene::chain::database</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a1da4ab9154f9a30bae71e183b202d1e1">_db</a></td></tr>
-<tr class="separator:a1da4ab9154f9a30bae71e183b202d1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfa5d54e19c7fd76f2357dab88b305be"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgraphene_1_1app_1_1application__options.html">application_options</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#adfa5d54e19c7fd76f2357dab88b305be">_app_options</a> = nullptr</td></tr>
-<tr class="separator:adfa5d54e19c7fd76f2357dab88b305be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae878a059b25940c3128df69eac716387"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgraphene_1_1api__helper__indexes_1_1amount__in__collateral__index.html">graphene::api_helper_indexes::amount_in_collateral_index</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#ae878a059b25940c3128df69eac716387">amount_in_collateral_index</a></td></tr>
 <tr class="separator:ae878a059b25940c3128df69eac716387"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a763e2b91c01dfb19f0c353fe63a880c2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgraphene_1_1api__helper__indexes_1_1asset__in__liquidity__pools__index.html">graphene::api_helper_indexes::asset_in_liquidity_pools_index</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a763e2b91c01dfb19f0c353fe63a880c2">asset_in_liquidity_pools_index</a></td></tr>
 <tr class="separator:a763e2b91c01dfb19f0c353fe63a880c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5540b0ca8c0efc0b013a292d73befce2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgraphene_1_1api__helper__indexes_1_1next__object__ids__index.html">graphene::api_helper_indexes::next_object_ids_index</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__impl.html#a5540b0ca8c0efc0b013a292d73befce2">next_object_ids_index</a></td></tr>
+<tr class="separator:a5540b0ca8c0efc0b013a292d73befce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classgraphene_1_1app_1_1database__api__helper"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classgraphene_1_1app_1_1database__api__helper')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classgraphene_1_1app_1_1database__api__helper.html">graphene::app::database_api_helper</a></td></tr>
+<tr class="memitem:a5d29c9ad82ecfbb2a9ab6b4d2fb4e313 inherit pub_attribs_classgraphene_1_1app_1_1database__api__helper"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphene_1_1chain_1_1database.html">graphene::chain::database</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__helper.html#a5d29c9ad82ecfbb2a9ab6b4d2fb4e313">_db</a></td></tr>
+<tr class="separator:a5d29c9ad82ecfbb2a9ab6b4d2fb4e313 inherit pub_attribs_classgraphene_1_1app_1_1database__api__helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2880e144ca265f0ac59bb31aaf4a889 inherit pub_attribs_classgraphene_1_1app_1_1database__api__helper"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classgraphene_1_1app_1_1application__options.html">application_options</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphene_1_1app_1_1database__api__helper.html#ac2880e144ca265f0ac59bb31aaf4a889">_app_options</a> = nullptr</td></tr>
+<tr class="separator:ac2880e144ca265f0ac59bb31aaf4a889 inherit pub_attribs_classgraphene_1_1app_1_1database__api__helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -389,9 +381,6 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">graphene::app::database_api_impl::database_api_impl </td>
@@ -411,14 +400,9 @@ Public Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00055">55</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00069">69</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -445,7 +429,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00099">99</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00124">124</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -459,14 +443,14 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void graphene::app::database_api_impl::broadcast_market_updates </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacegraphene_1_1app.html#a26804ee36d39c9a57ef54ba85f3ca894">market_queue_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacegraphene_1_1app.html#a2cf28592987d2d9365802435969eb2f6">market_queue_type</a> &amp;&#160;</td>
           <td class="paramname"><em>queue</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03293">3293</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03172">3172</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -486,77 +470,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03282">3282</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
-
-</div>
-</div>
-<a id="ace15a9171081f2e071f0969bd985baa0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace15a9171081f2e071f0969bd985baa0">&#9670;&nbsp;</a></span>call_end_or_upper_bound() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto graphene::app::database_api_impl::call_end_or_upper_bound </td>
-          <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00358">358</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
-
-</div>
-</div>
-<a id="a30d4e968f723af5a78229240349fe3cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30d4e968f723af5a78229240349fe3cd">&#9670;&nbsp;</a></span>call_end_or_upper_bound() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename... X&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto graphene::app::database_api_impl::call_end_or_upper_bound </td>
-          <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">X...&#160;</td>
-          <td class="paramname"><em>x</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00362">362</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03161">3161</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -586,7 +500,7 @@ template&lt;typename T , typename... X&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00196">196</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00221">221</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -610,7 +524,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacegraphene_1_1app.html#a26804ee36d39c9a57ef54ba85f3ca894">market_queue_type</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacegraphene_1_1app.html#a2cf28592987d2d9365802435969eb2f6">market_queue_type</a> &amp;&#160;</td>
           <td class="paramname"><em>queue</em>, </td>
         </tr>
         <tr>
@@ -632,7 +546,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00470">470</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00384">384</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -662,7 +576,7 @@ template&lt;class ASSET &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00264">264</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00232">232</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -702,7 +616,7 @@ template&lt;class LP &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00296">296</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00262">262</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -732,7 +646,7 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01399">1399</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01431">1431</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -762,7 +676,7 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00787">787</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00835">835</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -782,7 +696,7 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00684">684</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00732">732</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -801,55 +715,7 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00770">770</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
-
-</div>
-</div>
-<a id="ab6578e0309e52c669b19ae617fc94d36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6578e0309e52c669b19ae617fc94d36">&#9670;&nbsp;</a></span>get_account_from_string()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classgraphene_1_1chain_1_1account__object.html">account_object</a> * graphene::app::database_api_impl::get_account_from_string </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>name_or_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>throw_if_not_found</em> = <code>true</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03163">3163</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a2fa46086eeea3be1a582d52ecdb126d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fa46086eeea3be1a582d52ecdb126d8">&#9670;&nbsp;</a></span>get_account_id_from_string()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">account_id_type graphene::app::database_api_impl::get_account_id_from_string </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>name_or_id</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00818">818</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -903,7 +769,7 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01072">1072</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01120">1120</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -923,7 +789,7 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00698">698</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00746">746</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -953,12 +819,12 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00450">450</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00498">498</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a5e7989587cf7abdcbb143fc2e77485a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e7989587cf7abdcbb143fc2e77485a6">&#9670;&nbsp;</a></span>get_all_workers()</h2>
+<a id="a00bbbd4d1d45b765a672d23068bba1d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00bbbd4d1d45b765a672d23068bba1d4">&#9670;&nbsp;</a></span>get_all_workers()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -966,14 +832,14 @@ template&lt;class LP &gt; </div>
         <tr>
           <td class="memname">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1worker__object.html">worker_object</a> &gt; graphene::app::database_api_impl::get_all_workers </td>
           <td>(</td>
-          <td class="paramtype">const optional&lt; bool &gt;&#160;</td>
-          <td class="paramname"><em>is_expired</em> = <code>optional&lt;bool&gt;()</code></td><td>)</td>
+          <td class="paramtype">const optional&lt; bool &gt; &amp;&#160;</td>
+          <td class="paramname"><em>is_expired</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02420">2420</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02358">2358</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -992,55 +858,7 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00954">954</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a38bbc4b2875da73b1a1776e9ee4d6cef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38bbc4b2875da73b1a1776e9ee4d6cef">&#9670;&nbsp;</a></span>get_asset_from_string()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classgraphene_1_1chain_1_1asset__object.html">asset_object</a> * graphene::app::database_api_impl::get_asset_from_string </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>symbol_or_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>throw_if_not_found</em> = <code>true</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03189">3189</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
-
-</div>
-</div>
-<a id="aa5be957d8d2b764b31d04c62fbdb3b5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5be957d8d2b764b31d04c62fbdb3b5b">&#9670;&nbsp;</a></span>get_asset_id_from_string()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asset_id_type graphene::app::database_api_impl::get_asset_id_from_string </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>symbol_or_id</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01002">1002</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1070,7 +888,7 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00905">905</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00953">953</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1100,7 +918,7 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03216">3216</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03095">3095</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1136,7 +954,7 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00965">965</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01013">1013</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1156,7 +974,7 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00824">824</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00872">872</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1169,14 +987,14 @@ template&lt;class LP &gt; </div>
         <tr>
           <td class="memname">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1blinded__balance__object.html">blinded_balance_object</a> &gt; graphene::app::database_api_impl::get_blinded_balances </td>
           <td>(</td>
-          <td class="paramtype">const flat_set&lt; <a class="el" href="namespacefc_1_1ecc.html#a582249fe15693cc9c040286a8ef296f8">commitment_type</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const flat_set&lt; commitment_type &gt; &amp;&#160;</td>
           <td class="paramname"><em>commitments</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02875">2875</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02813">2813</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1196,47 +1014,67 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00249">249</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00280">280</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a1904524494af58def0aadbb5dd3d472e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1904524494af58def0aadbb5dd3d472e">&#9670;&nbsp;</a></span>get_block_header()</h2>
+<a id="ae307a17a892e39521b222d0ed87c670e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae307a17a892e39521b222d0ed87c670e">&#9670;&nbsp;</a></span>get_block_header()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">optional&lt; <a class="el" href="classgraphene_1_1protocol_1_1block__header.html">block_header</a> &gt; graphene::app::database_api_impl::get_block_header </td>
+          <td class="memname">optional&lt; <a class="el" href="structgraphene_1_1app_1_1maybe__signed__block__header.html">maybe_signed_block_header</a> &gt; graphene::app::database_api_impl::get_block_header </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>block_num</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><em>block_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>with_witness_signature</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00221">221</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00248">248</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
-<a id="aeb1446219a34d5f1a821b96bf6323541"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb1446219a34d5f1a821b96bf6323541">&#9670;&nbsp;</a></span>get_block_header_batch()</h2>
+<a id="ac142df8083ccdd157cf8f169a204b3fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac142df8083ccdd157cf8f169a204b3fe">&#9670;&nbsp;</a></span>get_block_header_batch()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">map&lt; uint32_t, optional&lt; <a class="el" href="classgraphene_1_1protocol_1_1block__header.html">block_header</a> &gt; &gt; graphene::app::database_api_impl::get_block_header_batch </td>
+          <td class="memname">map&lt; uint32_t, optional&lt; <a class="el" href="structgraphene_1_1app_1_1maybe__signed__block__header.html">maybe_signed_block_header</a> &gt; &gt; graphene::app::database_api_impl::get_block_header_batch </td>
           <td>(</td>
-          <td class="paramtype">const vector&lt; uint32_t &gt;&#160;</td>
-          <td class="paramname"><em>block_nums</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const vector&lt; uint32_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>block_nums</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>with_witness_signatures</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00233">233</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00264">264</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1266,7 +1104,7 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01162">1162</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01211">1211</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1302,7 +1140,7 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01191">1191</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01240">1240</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1321,7 +1159,7 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00317">317</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00348">348</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1340,7 +1178,7 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00287">287</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00318">318</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1376,7 +1214,7 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01304">1304</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01336">1336</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1395,12 +1233,12 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02403">2403</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02341">2341</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
-<a id="adec0baf2373ef1ce882c0b332829e547"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adec0baf2373ef1ce882c0b332829e547">&#9670;&nbsp;</a></span>get_committee_member_by_account()</h2>
+<a id="a8cef78e96fad36084b62d980a3315a10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cef78e96fad36084b62d980a3315a10">&#9670;&nbsp;</a></span>get_committee_member_by_account()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1408,14 +1246,14 @@ template&lt;class LP &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classfc_1_1optional.html">fc::optional</a>&lt; <a class="el" href="classgraphene_1_1chain_1_1committee__member__object.html">committee_member_object</a> &gt; graphene::app::database_api_impl::get_committee_member_by_account </td>
           <td>(</td>
-          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>account_id_or_name</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02348">2348</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02286">2286</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1435,7 +1273,7 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02329">2329</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02267">2267</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1454,7 +1292,7 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00307">307</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00338">338</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1473,18 +1311,18 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00327">327</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00358">358</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a7d7b0e58cdc997f431dd80bfab9da0ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d7b0e58cdc997f431dd80bfab9da0ea">&#9670;&nbsp;</a></span>get_full_accounts()</h2>
+<a id="ad7a3dd32adb8044faa14aafb88157d0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7a3dd32adb8044faa14aafb88157d0f">&#9670;&nbsp;</a></span>get_full_accounts()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt; std::string, <a class="el" href="structgraphene_1_1app_1_1full__account.html">full_account</a> &gt; graphene::app::database_api_impl::get_full_accounts </td>
+          <td class="memname">std::map&lt; std::string, <a class="el" href="structgraphene_1_1app_1_1full__account.html">full_account</a>, std::less&lt;&gt; &gt; graphene::app::database_api_impl::get_full_accounts </td>
           <td>(</td>
           <td class="paramtype">const vector&lt; string &gt; &amp;&#160;</td>
           <td class="paramname"><em>names_or_ids</em>, </td>
@@ -1492,7 +1330,7 @@ template&lt;class LP &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">optional&lt; bool &gt;&#160;</td>
+          <td class="paramtype">const optional&lt; bool &gt; &amp;&#160;</td>
           <td class="paramname"><em>subscribe</em>&#160;</td>
         </tr>
         <tr>
@@ -1503,7 +1341,7 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00479">479</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00522">522</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1522,7 +1360,7 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00297">297</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00328">328</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1552,7 +1390,7 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02974">2974</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02912">2912</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1588,7 +1426,7 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02990">2990</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02928">2928</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1624,7 +1462,7 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03020">3020</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02958">2958</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1645,7 +1483,7 @@ template&lt;class LP &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>all accounts that referr to the key or account id in their owner or active authorities. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00346">346</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00394">394</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1681,7 +1519,7 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01010">1010</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01058">1058</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -1717,12 +1555,12 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03235">3235</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03114">3114</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a465a681bf2f974ddb46d4a060a54cda0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a465a681bf2f974ddb46d4a060a54cda0">&#9670;&nbsp;</a></span>get_limit_orders_by_account()</h2>
+<a id="a6ba8ef267b61497d98b25fa598ae5853"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ba8ef267b61497d98b25fa598ae5853">&#9670;&nbsp;</a></span>get_limit_orders_by_account()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1736,13 +1574,13 @@ template&lt;class LP &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">optional&lt; uint32_t &gt;&#160;</td>
+          <td class="paramtype">const optional&lt; uint32_t &gt; &amp;&#160;</td>
           <td class="paramname"><em>limit</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">optional&lt; limit_order_id_type &gt;&#160;</td>
+          <td class="paramtype">const optional&lt; limit_order_id_type &gt; &amp;&#160;</td>
           <td class="paramname"><em>start_id</em>&#160;</td>
         </tr>
         <tr>
@@ -1753,12 +1591,12 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01031">1031</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01079">1079</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
-<a id="adc2be7c0457ab4547e0be9e79aed9db6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc2be7c0457ab4547e0be9e79aed9db6">&#9670;&nbsp;</a></span>get_liquidity_pools()</h2>
+<a id="a0770c55ef2273eb99085732c91648d7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0770c55ef2273eb99085732c91648d7e">&#9670;&nbsp;</a></span>get_liquidity_pools()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1772,14 +1610,14 @@ template&lt;class LP &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">optional&lt; bool &gt;&#160;</td>
-          <td class="paramname"><em>subscribe</em> = <code>optional&lt;bool&gt;()</code>, </td>
+          <td class="paramtype">const optional&lt; bool &gt; &amp;&#160;</td>
+          <td class="paramname"><em>subscribe</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">optional&lt; bool &gt;&#160;</td>
-          <td class="paramname"><em>with_statistics</em> = <code>false</code>&#160;</td>
+          <td class="paramtype">const optional&lt; bool &gt; &amp;&#160;</td>
+          <td class="paramname"><em>with_statistics</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1789,101 +1627,17 @@ template&lt;class LP &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01935">1935</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01873">1873</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ac38ab45ee0d66d6a4b572185743b1584"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac38ab45ee0d66d6a4b572185743b1584">&#9670;&nbsp;</a></span>get_liquidity_pools_by_asset_a()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt; <a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a> &gt; graphene::app::database_api_impl::get_liquidity_pools_by_asset_a </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>asset_symbol_or_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">optional&lt; uint32_t &gt;&#160;</td>
-          <td class="paramname"><em>limit</em> = <code>101</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">optional&lt; liquidity_pool_id_type &gt;&#160;</td>
-          <td class="paramname"><em>start_id</em> = <code>optional&lt;liquidity_pool_id_type&gt;()</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">optional&lt; bool &gt;&#160;</td>
-          <td class="paramname"><em>with_statistics</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01779">1779</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a4de1d2a83e311e4acdd9ae065003f307"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4de1d2a83e311e4acdd9ae065003f307">&#9670;&nbsp;</a></span>get_liquidity_pools_by_asset_b()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt; <a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a> &gt; graphene::app::database_api_impl::get_liquidity_pools_by_asset_b </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>asset_symbol_or_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">optional&lt; uint32_t &gt;&#160;</td>
-          <td class="paramname"><em>limit</em> = <code>101</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">optional&lt; liquidity_pool_id_type &gt;&#160;</td>
-          <td class="paramname"><em>start_id</em> = <code>optional&lt;liquidity_pool_id_type&gt;()</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">optional&lt; bool &gt;&#160;</td>
-          <td class="paramname"><em>with_statistics</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01805">1805</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a5bceb904f3d573594a6d77e5f5ee52fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5bceb904f3d573594a6d77e5f5ee52fb">&#9670;&nbsp;</a></span>get_liquidity_pools_by_asset_x()</h2>
+<a id="afb97dd83e705123d76fac5ff04bf28dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb97dd83e705123d76fac5ff04bf28dc">&#9670;&nbsp;</a></span>get_liquidity_pools_by_asset_x()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename X &gt; </div>
+template&lt;typename INDEX_TAG , typename... X&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1891,26 +1645,26 @@ template&lt;typename X &gt; </div>
         <tr>
           <td class="memname">vector&lt;<a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a>&gt; graphene::app::database_api_impl::get_liquidity_pools_by_asset_x </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>asset_symbol_or_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">optional&lt; uint32_t &gt;&#160;</td>
+          <td class="paramtype">const optional&lt; uint32_t &gt; &amp;&#160;</td>
           <td class="paramname"><em>olimit</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">optional&lt; liquidity_pool_id_type &gt;&#160;</td>
+          <td class="paramtype">const optional&lt; liquidity_pool_id_type &gt; &amp;&#160;</td>
           <td class="paramname"><em>ostart_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">optional&lt; bool &gt;&#160;</td>
-          <td class="paramname"><em>with_statistics</em>&#160;</td>
+          <td class="paramtype">const optional&lt; bool &gt; &amp;&#160;</td>
+          <td class="paramname"><em>with_statistics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">X...&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1925,60 +1679,12 @@ template&lt;typename X &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00312">312</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00278">278</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
-<a id="abee116fdbee19b211c2f4b4b71fc1e98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abee116fdbee19b211c2f4b4b71fc1e98">&#9670;&nbsp;</a></span>get_liquidity_pools_by_both_assets()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt; <a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a> &gt; graphene::app::database_api_impl::get_liquidity_pools_by_both_assets </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>asset_symbol_or_id_a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>asset_symbol_or_id_b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">optional&lt; uint32_t &gt;&#160;</td>
-          <td class="paramname"><em>limit</em> = <code>101</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">optional&lt; liquidity_pool_id_type &gt;&#160;</td>
-          <td class="paramname"><em>start_id</em> = <code>optional&lt;liquidity_pool_id_type&gt;()</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">optional&lt; bool &gt;&#160;</td>
-          <td class="paramname"><em>with_statistics</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01885">1885</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a92e71fc95e3c291ae0d4bdbfdb10f2d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92e71fc95e3c291ae0d4bdbfdb10f2d4">&#9670;&nbsp;</a></span>get_liquidity_pools_by_one_asset()</h2>
+<a id="aea599e24e0302b62bc8ddb5c4b8149c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea599e24e0302b62bc8ddb5c4b8149c1">&#9670;&nbsp;</a></span>get_liquidity_pools_by_one_asset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1993,19 +1699,19 @@ template&lt;typename X &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const optional&lt; uint32_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>limit</em> = <code>101</code>, </td>
+          <td class="paramname"><em>limit</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const optional&lt; liquidity_pool_id_type &gt; &amp;&#160;</td>
-          <td class="paramname"><em>start_id</em> = <code>optional&lt;liquidity_pool_id_type&gt;()</code>, </td>
+          <td class="paramname"><em>start_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const optional&lt; bool &gt; &amp;&#160;</td>
-          <td class="paramname"><em>with_statistics</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>with_statistics</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2015,12 +1721,12 @@ template&lt;typename X &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01831">1831</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01804">1804</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a60cc173ae4ae70f8b506a7987164308c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60cc173ae4ae70f8b506a7987164308c">&#9670;&nbsp;</a></span>get_liquidity_pools_by_owner()</h2>
+<a id="aa546caab4093114a346ab5210f175dac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa546caab4093114a346ab5210f175dac">&#9670;&nbsp;</a></span>get_liquidity_pools_by_owner()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2028,26 +1734,26 @@ template&lt;typename X &gt; </div>
         <tr>
           <td class="memname">vector&lt; <a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a> &gt; graphene::app::database_api_impl::get_liquidity_pools_by_owner </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>account_name_or_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">optional&lt; uint32_t &gt;&#160;</td>
-          <td class="paramname"><em>limit</em> = <code>101</code>, </td>
+          <td class="paramtype">const optional&lt; uint32_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>limit</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">optional&lt; asset_id_type &gt;&#160;</td>
-          <td class="paramname"><em>start_id</em> = <code>optional&lt;asset_id_type&gt;()</code>, </td>
+          <td class="paramtype">const optional&lt; asset_id_type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>start_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">optional&lt; bool &gt;&#160;</td>
-          <td class="paramname"><em>with_statistics</em> = <code>false</code>&#160;</td>
+          <td class="paramtype">const optional&lt; bool &gt; &amp;&#160;</td>
+          <td class="paramname"><em>with_statistics</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2057,12 +1763,12 @@ template&lt;typename X &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02028">2028</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01966">1966</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ac0a6141fa29d68d9325ecc39e88da5b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0a6141fa29d68d9325ecc39e88da5b7">&#9670;&nbsp;</a></span>get_liquidity_pools_by_share_asset()</h2>
+<a id="afdeff949d0b886350e7299f29b1cbe1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdeff949d0b886350e7299f29b1cbe1d">&#9670;&nbsp;</a></span>get_liquidity_pools_by_share_asset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2076,14 +1782,14 @@ template&lt;typename X &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">optional&lt; bool &gt;&#160;</td>
-          <td class="paramname"><em>subscribe</em> = <code>optional&lt;bool&gt;()</code>, </td>
+          <td class="paramtype">const optional&lt; bool &gt; &amp;&#160;</td>
+          <td class="paramname"><em>subscribe</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">optional&lt; bool &gt;&#160;</td>
-          <td class="paramname"><em>with_statistics</em> = <code>false</code>&#160;</td>
+          <td class="paramtype">const optional&lt; bool &gt; &amp;&#160;</td>
+          <td class="paramname"><em>with_statistics</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2093,27 +1799,7 @@ template&lt;typename X &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01981">1981</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
-
-</div>
-</div>
-<a id="ac98844dec5d89556fd58257deb25d101"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac98844dec5d89556fd58257deb25d101">&#9670;&nbsp;</a></span>get_margin_positions()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1call__order__object.html">call_order_object</a> &gt; graphene::app::database_api_impl::get_margin_positions </td>
-          <td>(</td>
-          <td class="paramtype">const std::string&#160;</td>
-          <td class="paramname"><em>account_id_or_name</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01279">1279</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01919">1919</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2145,6 +1831,42 @@ template&lt;typename X &gt; </div>
 
 </div>
 </div>
+<a id="ae17dfe68734112261c5e52451ab727f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae17dfe68734112261c5e52451ab727f3">&#9670;&nbsp;</a></span>get_next_object_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">object_id_type graphene::app::database_api_impl::get_next_object_id </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>space_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>type_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>with_pending_transactions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00369">369</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a57335b9cc2874e1f69e3ccb9d221bf93"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a57335b9cc2874e1f69e3ccb9d221bf93">&#9670;&nbsp;</a></span>get_objects()</h2>
 
@@ -2171,70 +1893,12 @@ template&lt;typename X &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00115">115</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00140">140</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a69f23aba305f8bd685717c77184abfdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69f23aba305f8bd685717c77184abfdc">&#9670;&nbsp;</a></span>get_objects_by_x()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename OBJ_TYPE , typename OBJ_ID_TYPE , typename INDEX_TYPE , typename T , typename... X&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;OBJ_TYPE&gt; graphene::app::database_api_impl::get_objects_by_x </td>
-          <td>(</td>
-          <td class="paramtype">T application_options::*&#160;</td>
-          <td class="paramname"><em>app_opt_member_ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const INDEX_TYPE &amp;&#160;</td>
-          <td class="paramname"><em>idx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const optional&lt; uint32_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>olimit</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const optional&lt; OBJ_ID_TYPE &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ostart_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">X...&#160;</td>
-          <td class="paramname"><em>x</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00366">366</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
-
-</div>
-</div>
-<a id="accf4a40359a34a0e748ec96a93cc0efc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accf4a40359a34a0e748ec96a93cc0efc">&#9670;&nbsp;</a></span>get_order_book()</h2>
+<a id="a7450f6448b0868a4b611681545496bb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7450f6448b0868a4b611681545496bb6">&#9670;&nbsp;</a></span>get_order_book()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2254,8 +1918,8 @@ template&lt;typename OBJ_TYPE , typename OBJ_ID_TYPE , typename INDEX_TYPE , typ
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>limit</em> = <code>50</code>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>limit</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2265,7 +1929,7 @@ template&lt;typename OBJ_TYPE , typename OBJ_ID_TYPE , typename INDEX_TYPE , typ
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01418">1418</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01450">1450</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2295,7 +1959,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00454">454</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00368">368</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -2323,7 +1987,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00460">460</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00374">374</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -2343,7 +2007,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02654">2654</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02592">2592</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2363,7 +2027,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02615">2615</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02553">2553</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2383,7 +2047,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02839">2839</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02777">2777</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2413,7 +2077,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02805">2805</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02743">2743</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2443,7 +2107,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02590">2590</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02528">2528</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2473,7 +2137,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01218">1218</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01267">1267</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2509,7 +2173,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01249">1249</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01298">1298</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2537,7 +2201,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00421">421</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00335">335</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -2573,43 +2237,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01365">1365</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a662d2dbf6749e5636cc537bb6feee9bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a662d2dbf6749e5636cc537bb6feee9bb">&#9670;&nbsp;</a></span>get_tickets_by_account()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1ticket__object.html">ticket_object</a> &gt; graphene::app::database_api_impl::get_tickets_by_account </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>account_name_or_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">optional&lt; uint32_t &gt;&#160;</td>
-          <td class="paramname"><em>limit</em> = <code>101</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">optional&lt; ticket_id_type &gt;&#160;</td>
-          <td class="paramname"><em>start_id</em> = <code>optional&lt;ticket_id_type&gt;()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03124">3124</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01397">1397</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2629,7 +2257,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01470">1470</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01499">1499</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2649,12 +2277,12 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00658">658</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00706">706</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a914253d37c580537ba4fa6aa7ce28cd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a914253d37c580537ba4fa6aa7ce28cd5">&#9670;&nbsp;</a></span>get_trade_history()</h2>
+<a id="a3c665d79c3c25390ac5334d800aba7f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c665d79c3c25390ac5334d800aba7f8">&#9670;&nbsp;</a></span>get_trade_history()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2686,8 +2314,8 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>limit</em> = <code>100</code>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>limit</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2697,12 +2325,12 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01507">1507</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01536">1536</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
-<a id="afc7f50a2cb3d05d5d8652e99965bf590"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc7f50a2cb3d05d5d8652e99965bf590">&#9670;&nbsp;</a></span>get_trade_history_by_sequence()</h2>
+<a id="afe049a1b99dd9e132fcdad54f52b2690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe049a1b99dd9e132fcdad54f52b2690">&#9670;&nbsp;</a></span>get_trade_history_by_sequence()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2734,8 +2362,8 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>limit</em> = <code>100</code>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>limit</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2745,7 +2373,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01609">1609</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01638">1638</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2775,7 +2403,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00268">268</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00299">299</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2795,7 +2423,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02567">2567</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02505">2505</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2815,7 +2443,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02578">2578</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02516">2516</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2835,7 +2463,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00852">852</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00900">900</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2855,7 +2483,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00870">870</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00918">918</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2883,7 +2511,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00403">403</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00317">317</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -2919,7 +2547,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02904">2904</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02842">2842</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2955,12 +2583,12 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02938">2938</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02876">2876</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a4e2e71fc8e8919a9c3558a2b56969f33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e2e71fc8e8919a9c3558a2b56969f33">&#9670;&nbsp;</a></span>get_witness_by_account()</h2>
+<a id="af30916c67c85018ff8443e57dac2868e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af30916c67c85018ff8443e57dac2868e">&#9670;&nbsp;</a></span>get_witness_by_account()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2968,14 +2596,14 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classfc_1_1optional.html">fc::optional</a>&lt; <a class="el" href="classgraphene_1_1chain_1_1witness__object.html">witness_object</a> &gt; graphene::app::database_api_impl::get_witness_by_account </td>
           <td>(</td>
-          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>account_id_or_name</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02258">2258</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02196">2196</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -2994,7 +2622,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02312">2312</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02250">2250</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3014,7 +2642,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02241">2241</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02179">2179</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3033,12 +2661,12 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02472">2472</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02410">2410</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ae3854702f942df7234892d35a12696e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3854702f942df7234892d35a12696e9">&#9670;&nbsp;</a></span>get_workers_by_account()</h2>
+<a id="aca8b6679de891aba8961537eb9a02896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca8b6679de891aba8961537eb9a02896">&#9670;&nbsp;</a></span>get_workers_by_account()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3046,14 +2674,14 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1worker__object.html">worker_object</a> &gt; graphene::app::database_api_impl::get_workers_by_account </td>
           <td>(</td>
-          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>account_id_or_name</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02453">2453</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02391">2391</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3101,7 +2729,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03343">3343</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03222">3222</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3121,7 +2749,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03272">3272</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03151">3151</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3141,7 +2769,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00404">404</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00452">452</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3171,7 +2799,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00440">440</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00354">354</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3201,7 +2829,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00929">929</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00977">977</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3231,73 +2859,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03049">3049</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a07ebc70fa0782faf482bf56c750827e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07ebc70fa0782faf482bf56c750827e6">&#9670;&nbsp;</a></span>list_liquidity_pools()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt; <a class="el" href="structgraphene_1_1app_1_1extended__liquidity__pool__object.html">extended_liquidity_pool_object</a> &gt; graphene::app::database_api_impl::list_liquidity_pools </td>
-          <td>(</td>
-          <td class="paramtype">optional&lt; uint32_t &gt;&#160;</td>
-          <td class="paramname"><em>limit</em> = <code>101</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">optional&lt; liquidity_pool_id_type &gt;&#160;</td>
-          <td class="paramname"><em>start_id</em> = <code>optional&lt;liquidity_pool_id_type&gt;()</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">optional&lt; bool &gt;&#160;</td>
-          <td class="paramname"><em>with_statistics</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01734">1734</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
-
-</div>
-</div>
-<a id="ac44e7478eeeacc0dc02a3767c4d3089c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac44e7478eeeacc0dc02a3767c4d3089c">&#9670;&nbsp;</a></span>list_tickets()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt; <a class="el" href="classgraphene_1_1chain_1_1ticket__object.html">ticket_object</a> &gt; graphene::app::database_api_impl::list_tickets </td>
-          <td>(</td>
-          <td class="paramtype">optional&lt; uint32_t &gt;&#160;</td>
-          <td class="paramname"><em>limit</em> = <code>101</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">optional&lt; ticket_id_type &gt;&#160;</td>
-          <td class="paramname"><em>start_id</em> = <code>optional&lt;ticket_id_type&gt;()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03083">3083</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02987">2987</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3317,18 +2879,18 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00724">724</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00772">772</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a91e0e1b555175c62ce73d501c6d4e890"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91e0e1b555175c62ce73d501c6d4e890">&#9670;&nbsp;</a></span>lookup_accounts()</h2>
+<a id="ab5f1d6a4a91b21497cd8f5ff09b71130"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5f1d6a4a91b21497cd8f5ff09b71130">&#9670;&nbsp;</a></span>lookup_accounts()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">map&lt; string, account_id_type &gt; graphene::app::database_api_impl::lookup_accounts </td>
+          <td class="memname">map&lt; string, account_id_type, std::less&lt;&gt; &gt; graphene::app::database_api_impl::lookup_accounts </td>
           <td>(</td>
           <td class="paramtype">const string &amp;&#160;</td>
           <td class="paramname"><em>lower_bound_name</em>, </td>
@@ -3342,7 +2904,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">optional&lt; bool &gt;&#160;</td>
+          <td class="paramtype">const optional&lt; bool &gt; &amp;&#160;</td>
           <td class="paramname"><em>subscribe</em>&#160;</td>
         </tr>
         <tr>
@@ -3353,7 +2915,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00736">736</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00784">784</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3373,18 +2935,18 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00993">993</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01041">1041</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a1fbfc32a908225d0d91b704dd1d05b1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fbfc32a908225d0d91b704dd1d05b1c">&#9670;&nbsp;</a></span>lookup_committee_member_accounts()</h2>
+<a id="ad15f14fc5c372b603013194e4c85cb8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad15f14fc5c372b603013194e4c85cb8b">&#9670;&nbsp;</a></span>lookup_committee_member_accounts()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">map&lt; string, committee_member_id_type &gt; graphene::app::database_api_impl::lookup_committee_member_accounts </td>
+          <td class="memname">map&lt; string, committee_member_id_type, std::less&lt;&gt; &gt; graphene::app::database_api_impl::lookup_committee_member_accounts </td>
           <td>(</td>
           <td class="paramtype">const string &amp;&#160;</td>
           <td class="paramname"><em>lower_bound_name</em>, </td>
@@ -3403,7 +2965,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02365">2365</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02303">2303</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3423,18 +2985,18 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02490">2490</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02428">2428</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a8948113622033bc699c155041682d5b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8948113622033bc699c155041682d5b8">&#9670;&nbsp;</a></span>lookup_witness_accounts()</h2>
+<a id="aeec543e4d39d2f170484fd49c6500f85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeec543e4d39d2f170484fd49c6500f85">&#9670;&nbsp;</a></span>lookup_witness_accounts()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">map&lt; string, witness_id_type &gt; graphene::app::database_api_impl::lookup_witness_accounts </td>
+          <td class="memname">map&lt; string, witness_id_type, std::less&lt;&gt; &gt; graphene::app::database_api_impl::lookup_witness_accounts </td>
           <td>(</td>
           <td class="paramtype">const string &amp;&#160;</td>
           <td class="paramname"><em>lower_bound_name</em>, </td>
@@ -3453,68 +3015,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02274">2274</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a02a06197131bcc759de96fcb75fc33d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02a06197131bcc759de96fcb75fc33d9">&#9670;&nbsp;</a></span>make_tuple_if_multiple() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename X &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto graphene::app::database_api_impl::make_tuple_if_multiple </td>
-          <td>(</td>
-          <td class="paramtype">X&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Template functions for simple list_X and get_X_by_T APIs, to reduce duplicate code </p>
-
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00350">350</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
-
-</div>
-</div>
-<a id="a836e780e032f296481567e695355b516"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a836e780e032f296481567e695355b516">&#9670;&nbsp;</a></span>make_tuple_if_multiple() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename... X&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto graphene::app::database_api_impl::make_tuple_if_multiple </td>
-          <td>(</td>
-          <td class="paramtype">X...&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00354">354</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02212">2212</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3535,7 +3036,7 @@ template&lt;typename... X&gt; </div>
 <p>note: this method cannot yield because it is called in the middle of apply a block. </p>
 <p>we need to ensure the <a class="el" href="classgraphene_1_1app_1_1database__api.html" title="The database_api class implements the RPC API for the chain database. ">database_api</a> is not deleted for the life of the async operation </p>
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03405">3405</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03284">3284</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3565,7 +3066,7 @@ template&lt;typename... X&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03335">3335</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03214">3214</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3596,7 +3097,7 @@ template&lt;typename... X&gt; </div>
 </div><div class="memdoc">
 <p>called every time a block is applied to report the objects that were changed </p>
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03327">3327</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03206">3206</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3632,7 +3133,7 @@ template&lt;typename... X&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03309">3309</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l03188">3188</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3652,7 +3153,7 @@ template&lt;typename... X&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00166">166</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00191">191</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3672,7 +3173,7 @@ template&lt;typename... X&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00186">186</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00211">211</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3692,7 +3193,7 @@ template&lt;typename... X&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00176">176</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00201">201</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3722,7 +3223,7 @@ template&lt;typename... X&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00147">147</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l00172">172</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3752,7 +3253,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00427">427</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00341">341</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3788,7 +3289,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01334">1334</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01366">1366</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3818,7 +3319,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01350">1350</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l01382">1382</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3838,7 +3339,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02738">2738</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02676">2676</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3868,7 +3369,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02707">2707</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02645">2645</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
@@ -3888,27 +3389,11 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02688">2688</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api_8cpp_source.html#l02626">2626</a> of file <a class="el" href="database__api_8cpp_source.html">database_api.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="adfa5d54e19c7fd76f2357dab88b305be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfa5d54e19c7fd76f2357dab88b305be">&#9670;&nbsp;</a></span>_app_options</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classgraphene_1_1app_1_1application__options.html">application_options</a>* graphene::app::database_api_impl::_app_options = nullptr</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00521">521</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
-
-</div>
-</div>
 <a id="a3986f9637134d0f91d711c7ff4df7189"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3986f9637134d0f91d711c7ff4df7189">&#9670;&nbsp;</a></span>_applied_block_connection</h2>
 
@@ -3921,7 +3406,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00515">515</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00429">429</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3937,7 +3422,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00510">510</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00424">424</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3953,23 +3438,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00513">513</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
-
-</div>
-</div>
-<a id="a1da4ab9154f9a30bae71e183b202d1e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1da4ab9154f9a30bae71e183b202d1e1">&#9670;&nbsp;</a></span>_db</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classgraphene_1_1chain_1_1database.html">graphene::chain::database</a>&amp; graphene::app::database_api_impl::_db</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00520">520</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00427">427</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -3985,7 +3454,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00503">503</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00417">417</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4001,7 +3470,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00518">518</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00432">432</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4017,7 +3486,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00512">512</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00426">426</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4033,7 +3502,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00502">502</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00416">416</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4049,7 +3518,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00509">509</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00423">423</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4065,7 +3534,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00516">516</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00430">430</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4081,7 +3550,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00514">514</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00428">428</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4097,7 +3566,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00508">508</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00422">422</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4121,7 +3590,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00505">505</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00419">419</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4137,7 +3606,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00506">506</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00420">420</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4153,7 +3622,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00523">523</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00434">434</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4169,7 +3638,23 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00524">524</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00435">435</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
+
+</div>
+</div>
+<a id="a5540b0ca8c0efc0b013a292d73befce2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5540b0ca8c0efc0b013a292d73befce2">&#9670;&nbsp;</a></span>next_object_ids_index</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classgraphene_1_1api__helper__indexes_1_1next__object__ids__index.html">graphene::api_helper_indexes::next_object_ids_index</a>* graphene::app::database_api_impl::next_object_ids_index</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="database__api__impl_8hxx_source.html#l00436">436</a> of file <a class="el" href="database__api__impl_8hxx_source.html">database_api_impl.hxx</a>.</p>
 
 </div>
 </div>
@@ -4180,7 +3665,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 16 2021 08:58:56 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 1 2022 10:13:46 for BitShares-Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
