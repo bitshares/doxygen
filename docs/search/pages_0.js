@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bitshares_20core',['BitShares Core',['../index.html',1,'']]]
+  ['bitshares_20core_11839',['BitShares Core',['../index.html',1,'']]]
 ];
