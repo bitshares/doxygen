@@ -169,7 +169,7 @@ unlocked &gt;&gt;&gt;
 </pre><p>To import your initial (genesis) balances, import the private keys corresponding to the balances: </p><pre class="fragment">unlocked &gt;&gt;&gt; import_balance &lt;ACCOUNT_NAME&gt; [&lt;WIF_KEY&gt; ...] true
 </pre><p>Use <code>help</code> to see all available wallet commands. </p><pre class="fragment">&gt;&gt;&gt; help
 </pre><p>Use <code>gethelp &lt;COMMAND&gt;</code> to see more info about individual commands. E.G. </p><pre class="fragment">&gt;&gt;&gt; gethelp get_order_book
-</pre><p>The definition of all commands is available in the <a href="https://github.com/bitshares/bitshares-core/blob/master/libraries/wallet/include/graphene/wallet/wallet.hpp">wallet.hpp</a> souce code file. Corresponding documentation can be found in the <a href="https://bitshares.github.io/doxygen/classgraphene_1_1wallet_1_1wallet__api.html">Doxygen documentation</a>.</p>
+</pre><p>The definition of all commands is available in the <a href="https://github.com/bitshares/bitshares-core/blob/master/libraries/wallet/include/graphene/wallet/wallet.hpp">wallet.hpp</a> source code file. Corresponding documentation can be found in the <a href="https://bitshares.github.io/doxygen/classgraphene_1_1wallet_1_1wallet__api.html">Doxygen documentation</a>.</p>
 <p>You can run the program with <code>--help</code> parameter to see more info: </p><pre class="fragment">./programs/cli_wallet/cli_wallet --help
 </pre><p>There is also some info in the <a href="https://github.com/bitshares/bitshares-core/wiki/CLI-Wallet-Cookbook">Wiki</a>.</p>
 <h1><a class="anchor" id="autotoc_md4"></a>
@@ -234,7 +234,7 @@ Accessing restrictable node API sets</h1>
    ]
 }
 </pre><p>Note: the <code>login</code> API set is always accessible.</p>
-<p>Passwords are stored in <code>base64</code> as salted <code>sha256</code> hashes. A simple Python script, <a href="https://github.com/bitshares/bitshares-core/blob/master/programs/witness_node/saltpass.py"><code>saltpass.py</code></a> is avaliable to obtain hash and salt values from a password. A single asterisk <code>"*"</code> may be specified as username or password hash to accept any value.</p>
+<p>Passwords are stored in <code>base64</code> as salted <code>sha256</code> hashes. A simple Python script, <a href="https://github.com/bitshares/bitshares-core/blob/master/programs/witness_node/saltpass.py"><code>saltpass.py</code></a> is available to obtain hash and salt values from a password. A single asterisk <code>"*"</code> may be specified as username or password hash to accept any value.</p>
 <p>With the above configuration, here is an example of how to call the <code>add_node</code> API from the <code>network_node</code> API set: </p><pre class="fragment">{"id":1, "method":"call", "params":[1,"login",["bytemaster", "supersecret"]]}
 {"id":2, "method":"call", "params":[1,"network_node",[]]}
 {"id":3, "method":"call", "params":[2,"add_node",["127.0.0.1:9090"]]}
