@@ -169,7 +169,7 @@ unlocked &gt;&gt;&gt;
 </pre><p>To import your initial (genesis) balances, import the private keys corresponding to the balances: </p><pre class="fragment">unlocked &gt;&gt;&gt; import_balance &lt;ACCOUNT_NAME&gt; [&lt;WIF_KEY&gt; ...] true
 </pre><p>Use <code>help</code> to see all available wallet commands. </p><pre class="fragment">&gt;&gt;&gt; help
 </pre><p>Use <code>gethelp &lt;COMMAND&gt;</code> to see more info about individual commands. E.G. </p><pre class="fragment">&gt;&gt;&gt; gethelp get_order_book
-</pre><p>The definition of all commands is available in the <a href="https://github.com/bitshares/bitshares-core/blob/master/libraries/wallet/include/graphene/wallet/wallet.hpp">wallet.hpp</a> souce code file. Corresponding documentation can be found in the <a href="https://doxygen.bitshares.org/classgraphene_1_1wallet_1_1wallet__api.html">Doxygen documentation</a>.</p>
+</pre><p>The definition of all commands is available in the <a href="https://github.com/bitshares/bitshares-core/blob/master/libraries/wallet/include/graphene/wallet/wallet.hpp">wallet.hpp</a> souce code file. Corresponding documentation can be found in the <a href="https://bitshares.github.io/doxygen/classgraphene_1_1wallet_1_1wallet__api.html">Doxygen documentation</a>.</p>
 <p>You can run the program with <code>--help</code> parameter to see more info: </p><pre class="fragment">./programs/cli_wallet/cli_wallet --help
 </pre><p>There is also some info in the <a href="https://github.com/bitshares/bitshares-core/wiki/CLI-Wallet-Cookbook">Wiki</a>.</p>
 <h1><a class="anchor" id="autotoc_md4"></a>
@@ -178,7 +178,7 @@ Support</h1>
 <p>BitShares Core bugs can be reported directly to the <a href="https://github.com/bitshares/bitshares-core/issues">issue tracker</a>.</p>
 <p>Questions can be posted in <a href="https://github.com/bitshares/bitshares-core/discussions">Github Discussions</a>.</p>
 <p>BitShares UI bugs should be reported to the <a href="https://github.com/bitshares/bitshares-ui/issues">UI issue tracker</a>.</p>
-<p>Up to date online Doxygen documentation can be found at <a href="https://doxygen.bitshares.org/hierarchy.html">Doxygen.BitShares.org</a>.</p>
+<p>Up to date online Doxygen documentation can be found at <a href="https://bitshares.github.io/doxygen/hierarchy.html">https://bitshares.github.io/doxygen</a>.</p>
 <h1><a class="anchor" id="autotoc_md5"></a>
 Using Built-In APIs</h1>
 <h2><a class="anchor" id="autotoc_md6"></a>
@@ -196,8 +196,8 @@ $ wscat -c ws://127.0.0.1:8090
 {"id":1,"result":[{"id":"1.2.0","annotations":[],"membership_expiration_date":"1969-12-31T23:59:59","registrar":"1.2.0","referrer":"1.2.0","lifetime_referrer":"1.2.0","network_fee_percentage":2000,"lifetime_referrer_fee_percentage":8000,"referrer_rewards_percentage":0,"name":"committee-account","owner":{"weight_threshold":1,"account_auths":[],"key_auths":[],"address_auths":[]},"active":{"weight_threshold":6,"account_auths":[["1.2.5",1],["1.2.6",1],["1.2.7",1],["1.2.8",1],["1.2.9",1],["1.2.10",1],["1.2.11",1],["1.2.12",1],["1.2.13",1],["1.2.14",1]],"key_auths":[],"address_auths":[]},"options":{"memo_key":"GPH1111111111111111111111111111111114T1Anm","voting_account":"1.2.0","num_witness":0,"num_committee":0,"votes":[],"extensions":[]},"statistics":"2.7.0","whitelisting_accounts":[],"blacklisting_accounts":[]}]}
 </pre><p>When using an HTTP client, the API set ID can be replaced by the API set name, E.G. </p><pre class="fragment">$ curl --data '{"jsonrpc": "2.0", "method": "call", "params": ["database", "get_accounts", [["1.2.0"]]], "id": 1}' http://127.0.0.1:8090/
 </pre><p>The definition of all node APIs is available in the source code files including <a href="https://github.com/bitshares/bitshares-core/blob/master/libraries/app/include/graphene/app/database_api.hpp">database_api.hpp</a> and <a href="https://github.com/bitshares/bitshares-core/blob/master/libraries/app/include/graphene/app/api.hpp">api.hpp</a>. Corresponding documentation can be found in Doxygen:</p><ul>
-<li><a href="https://doxygen.bitshares.org/classgraphene_1_1app_1_1database__api.html">database API</a></li>
-<li><a href="https://doxygen.bitshares.org/namespacegraphene_1_1app.html">other APIs</a></li>
+<li><a href="https://bitshares.github.io/doxygen/classgraphene_1_1app_1_1database__api.html">database API</a></li>
+<li><a href="https://bitshares.github.io/doxygen/namespacegraphene_1_1app.html">other APIs</a></li>
 </ul>
 <h2><a class="anchor" id="autotoc_md7"></a>
 Wallet API</h2>
@@ -240,7 +240,7 @@ Accessing restrictable node API sets</h1>
 {"id":3, "method":"call", "params":[2,"add_node",["127.0.0.1:9090"]]}
 </pre><p>Note, the call to <code>network_node</code> is necessary to obtain the correct API set ID for the <code>network_node</code> API set. It is not guaranteed that the API set ID for the <code>network_node</code> API set will always be <code>2</code>.</p>
 <p>The restricted API sets are accessible via HTTP too using <em>basic access authentication</em>. E.G. </p><pre class="fragment">$ curl --data '{"jsonrpc": "2.0", "method": "call", "params": ["network_node", "add_node", ["127.0.0.1:9090"]], "id": 1}' http://bytemaster:supersecret@127.0.0.1:8090/
-</pre><p>Our <code>doxygen</code> documentation contains the most up-to-date information about APIs for the <a href="https://doxygen.bitshares.org/namespacegraphene_1_1app.html">node</a> and the <a href="https://doxygen.bitshares.org/classgraphene_1_1wallet_1_1wallet__api.html">wallet</a>.</p>
+</pre><p>Our <code>doxygen</code> documentation contains the most up-to-date information about APIs for the <a href="https://bitshares.github.io/doxygen/namespacegraphene_1_1app.html">node</a> and the <a href="https://bitshares.github.io/doxygen/classgraphene_1_1wallet_1_1wallet__api.html">wallet</a>.</p>
 <h1><a class="anchor" id="autotoc_md9"></a>
 FAQ</h1>
 <ul>
